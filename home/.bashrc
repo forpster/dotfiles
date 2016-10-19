@@ -46,13 +46,18 @@ fi
 # RVM - for ruby installation/management
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-# Rapid7 customisation
-. ~/.bash_rapid7
-
 # gitify the prompt
 GIT_PROMPT_ONLY_IN_REPO=1
-#GIT_PROMPT_END_USER="\n\[\033[0;37m\]$(date +%H:%M)\[\033[0;0m\] $"
 GIT_PROMPT_END_USER="\n\[\033[0;37m\]$PS1\[\033[0;0m\]"
+
+if [ -f ~/.bash_rapid7 ]; then
+    . ~/.bash_rapid7
+fi
+if [ -f ~/.bash_ross ]; then
+    . ~/.bash_ross
+fi
+
+# gitify the prompt
 . ~/src/bash-git-prompt/gitprompt.sh
 
 export PATH=$PATH:$HOME/bin
