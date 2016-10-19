@@ -1,0 +1,21 @@
+[user]
+	email = Ross_Kirk@rapid7.com
+	name = Ross Kirk
+[push]
+	default = current
+[color]
+	ui = auto
+[fetch]
+	prune = true
+[grep]
+	lineNumber = true
+[color "grep"]
+    linenumber = green
+    match = red bold
+    filename = magenta
+[diff]
+	tool = meld
+[difftool]
+	prompt = false
+[core]
+	pager = less -F -X

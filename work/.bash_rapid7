@@ -1,0 +1,92 @@
+# -*-sh-*-
+# nexpose environment
+. ~/rapid7/nexpose/src/environment.sh
+
+alias nuke-local='sudo chown -R $USER:$USER ~/rapid7; sudo chown -R $USER:$USER ~/.m2; sudo id && test -n $NEXPOSE_ROOT && cd $NEXPOSE_ROOT/src && sudo killall -u nxpgsql ; sudo rm -Rf ../deploy && ant clean compile full-redeploy-local; ./run.sh nexpose'
+alias splat-local='sudo chown -R $USER:$USER ~/rapid7; sudo chown -R $USER:$USER ~/.m2; sudo id && test -n $NEXPOSE_ROOT && cd $NEXPOSE_ROOT/src && sudo killall -u nxpgsql ; sudo rm -Rf ../deploy && ant clean compile full-redeploy-local'
+alias nuke='sudo chown -R $USER:$USER ~/rapid7; sudo chown -R $USER:$USER ~/.m2; sudo id && test -n $NEXPOSE_ROOT && cd $NEXPOSE_ROOT/src && sudo killall -u nxpgsql ; sudo rm -Rf ../deploy && ant clean compile full-redeploy; sudo ./run.sh nexpose'
+alias splat='sudo chown -R $USER:$USER ~/rapid7; sudo chown -R $USER:$USER ~/.m2; sudo id && test -n $NEXPOSE_ROOT && cd $NEXPOSE_ROOT/src && sudo killall -u nxpgsql ; sudo rm -Rf ../deploy && ant clean compile full-redeploy'
+alias run_engine='sudo id && test -n $NEXPOSE_ROOT && cd $NEXPOSE_ROOT/src; sudo rm -rf ../deploy-nse && sudo cp -R $NEXPOSE_ROOT/deploy/ $NEXPOSE_ROOT/deploy-nse/ && sudo ./run.sh engine'
+
+alias nexsrc='cd ~/rapid7/nexpose/src'
+alias cukesrc='cd ~/rapid7/nexpose/src/internal/private/cucumber'
+alias content='cd ~/rapid7/nexpose-content'
+alias content-schema='cd ~/rapid7/nexpose-content-schema'
+alias pfp='cd ~/rapid7/protocol-fingerprinter'
+alias r7shared='cd ~/rapid7/nexpose-r7shared'
+alias nsc='cd ~/rapid7/nexpose/deploy/nsc'
+alias nsclog='cd ~/rapid7/nexpose/deploy/nsc/logs'
+alias qa-tools='cd /home/rkirk/rapid7/vuln-tools/qa-tools/nexpose-tools'
+alias jess-resources='cd ~/rapid7/jess-resources/'
+alias jess-core='cd ~/rapid7/jess-core/'
+alias assessment-framework='cd ~/rapid7/assessment-framework/'
+alias network-client='cd ~/rapid7/network-client/'
+alias vuln-tools='cd ~/rapid7/vuln-tools/'
+
+alias eclipse='gksudo ~/bin/eclipse.install/eclipse'
+
+# RFCs
+alias update-rfcs='rsync -avz --delete ftp.rfc-editor.org::rfcs-text-only ~/rapid7/RFCs/rfc && rsync -avz --delete ftp.rfc-editor.org::ids-text-only ~/rapid7/RFCs/ids'
+
+# RFC search
+function rfcsearch
+{
+    for f in find ~/rapid7/RFCs -type f ; do head -n 20 $f | if [ $(grep -i "$1" - | wc -l) -ne 0 ]; then echo "$f: $(head -n 20 $f |grep -i "$1" - )";fi; done
+}
+
+# delete_sites_on some-console.dev.lax.rapid7.com
+delete_sites_on()
+{
+   ruby ~/.nexpose_helpers/delete_all_sites_on.rb "$1"
+}
+
+# delete_scan_templates_on some-console.dev.lax.rapid7.com
+delete_scan_templates_on()
+{
+  ruby ~/.nexpose_helpers/delete_all_scan_templates_on.rb "$1"
+}
+
+# get_reports_on some-console.dev.lax.rapid7.com
+get_reports_on()
+{
+  ruby ~/.nexpose_helpers/get_reports_on.rb "$1"
+}
+
+nxpwait()
+{
+    curDir=`pwd`
+    cd ~/rapid7/vuln-tools
+    bundle update
+    if [ -z $1 ]; then
+        ./qa-tools/nexpose-tools/nxpwait
+    else
+        ./qa-tools/nexpose-tools/nxpwait $1
+    fi
+    cd "$curDir"
+}
+
+# Enumerate .clp TAGS file
+clp-tags()
+{
+    curDir=`pwd`
+    cd ~/rapid7/jess-resources/
+    rm -f TAGS && find jess java -name "*.clp" -print0 | xargs -0 etags --append --language=lisp -o TAGS
+    cd "$curDir"
+}
+
+# Set debug logging
+nex_debug()
+{
+  for i in $NEXPOSE_ROOT/deploy/*/conf/logging.xml; do sed -i -e 's!<property name="default-level" value="INFO"/>!<property name="default-level" value="DEBUG"/>!' $i; done
+}
+
+# Set info logging
+nex_info()
+{
+  for i in $NEXPOSE_ROOT/deploy/*/conf/logging.xml; do sed -i -e 's!<property name="default-level" value="DEBUG"/>!<property name="default-level" value="INFO"/>!' $i; done
+}
+
+nex_truncate_logs()
+{
+    for i in $NEXPOSE_ROOT/deploy/nsc/logs/*.log; do sudo truncate -s 0 $i; done
+}
