@@ -26,8 +26,7 @@ alias whatgcc='echo "main(){}" | gcc -E -x c -dM - '
 # color not supported on all platforms so overridden in platform specific
 # sections later
 alias ls='ls --color=auto'
-alias ll='ls -l --color'
-alias lf='ls -lF --color'
+alias ll='ls -lF --color'
 alias ld='ls -al -d * | egrep "^d"' # only subdirectories
 alias lt='ls -alt | head -20' # recently changed files
 alias grep='grep --color=auto'
@@ -42,3 +41,8 @@ alias svnrepodiff="svn diff -r BASE:HEAD"
 
 alias remove_emacs_backup='find . -name "*~" -delete'
 alias ec='emacsclient -n'
+
+if [ "$(uname -s)" == "Darwin" ]; then
+    unalias ls
+    alias ll='ls -l'
+fi
