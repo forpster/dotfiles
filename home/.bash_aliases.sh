@@ -26,7 +26,8 @@ alias whatgcc='echo "main(){}" | gcc -E -x c -dM - '
 # color not supported on all platforms so overridden in platform specific
 # sections later
 alias ls='ls --color=auto'
-alias ll='ls -lF --color'
+alias ll='ls -l --color'
+alias lf='ls -lF --color'
 alias ld='ls -al -d * | egrep "^d"' # only subdirectories
 alias lt='ls -alt | head -20' # recently changed files
 alias grep='grep --color=auto'
