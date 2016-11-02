@@ -43,7 +43,7 @@ delete_sites_on()
 # delete_scan_templates_on some-console.dev.lax.rapid7.com
 delete_scan_templates_on()
 {
-  ruby ~/.nexpose_helpers/delete_all_scan_templates_on.rb "$1"
+  ruby ~/.nexpose_helpers/delete_scan_templates_on.rb "$1"
 }
 
 # get_reports_on some-console.dev.lax.rapid7.com
