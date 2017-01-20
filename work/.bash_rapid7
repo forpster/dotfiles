@@ -90,3 +90,7 @@ nex_truncate_logs()
 {
     for i in $NEXPOSE_ROOT/deploy/nsc/logs/*.log; do sudo truncate -s 0 $i; done
 }
+
+# brew token
+export HOMEBREW_GITHUB_API_TOKEN="4ee99a6b51280eb1fe720aca2cd70b8fb893af81"
+
