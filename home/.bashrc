@@ -65,5 +65,8 @@ export PATH=$PATH:$HOME/bin
 # perlbrew for PT stuff
 #source ~/perl5/perlbrew/etc/bashrc
 
+if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . ~/.bash_mac
+fi
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
