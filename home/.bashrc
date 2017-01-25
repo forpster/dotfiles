@@ -65,7 +65,7 @@ export PATH=$PATH:$HOME/bin
 # perlbrew for PT stuff
 #source ~/perl5/perlbrew/etc/bashrc
 
-if [ -f /usr/share/bash-completion/bash_completion ]; then
+if [ -f ~/.bash_mac ]; then
     . ~/.bash_mac
 fi
 
