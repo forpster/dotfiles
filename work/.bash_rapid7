@@ -22,6 +22,8 @@ alias jess-core='cd ~/rapid7/jess-core/'
 alias assessment-framework='cd ~/rapid7/assessment-framework/'
 alias network-client='cd ~/rapid7/network-client/'
 alias vuln-tools='cd ~/rapid7/vuln-tools/'
+alias puffins='cd ~/rapid7/puffins/'
+alias puffincuke='cd ~/rapid7/puffins/cucumber'
 
 alias eclipse='gksudo ~/bin/eclipse.install/eclipse'
 
