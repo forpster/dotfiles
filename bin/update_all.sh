@@ -6,7 +6,7 @@ for dir in `find * -maxdepth 0 -type d -print`;
 do
     if [ -e $dir/.git ]
     then
-        (cd $dir && echo -n "$dir " && git branch | grep \* | cut -d ' ' -f2- && echo && git fetch -ap && git pull)
+        (cd $dir && /bin/echo -n "$dir " && git branch | grep \* | cut -d ' ' -f2- && echo && git fetch -ap && git pull)
     fi
 done
 
