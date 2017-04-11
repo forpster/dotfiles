@@ -2,7 +2,7 @@
 
 GIT_CMD="git fetch -ap && git pull"
 
-while getopts ":a" opt; do
+while getopts ":m" opt; do
     case $opt in
         m)
             echo "Enabled switching everything to master"
@@ -11,6 +11,7 @@ while getopts ":a" opt; do
         \?)
             echo "Invalid option: -$OPTARG"
             echo "\t-m to switch all branches to master before pulling"
+            exit 1
             ;;
     esac
 done
@@ -21,12 +22,12 @@ for dir in `find * -maxdepth 0 -type d -print`;
 do
     if [ -e $dir/.git ]
     then
-        (cd $dir && /bin/echo -n "$dir " && git branch | grep \* | cut -d ' ' -f2- && echo && $GIT_CMD)
+        (cd $dir && /bin/echo -n "$dir " && git branch | grep \* | cut -d ' ' -f2- && echo && eval $GIT_CMD)
     fi
 done
 
 cd ~/src/dotfiles
-$GIT_CMD
+eval $GIT_CMD
 
 # bundle update some of the things
 echo "cukesrc bundle update"
