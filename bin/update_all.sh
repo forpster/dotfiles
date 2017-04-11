@@ -26,8 +26,7 @@ do
     fi
 done
 
-cd ~/src/dotfiles
-eval $GIT_CMD
+(cd ~/src/dotfiles && eval $GIT_CMD)
 
 # bundle update some of the things
 echo "cukesrc bundle update"
