@@ -58,11 +58,10 @@ nxpwait()
 {
     curDir=`pwd`
     cd ~/rapid7/vuln-tools
-    bundle update
     if [ -z $1 ]; then
-        ./qa-tools/nexpose-tools/nxpwait
+        bundle exec ./qa-tools/nexpose-tools/nxpwait
     else
-        ./qa-tools/nexpose-tools/nxpwait $1
+        bundle exec ./qa-tools/nexpose-tools/nxpwait $1
     fi
     cd "$curDir"
 }
