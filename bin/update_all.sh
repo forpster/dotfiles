@@ -29,7 +29,7 @@ done
 (cd ~/src/dotfiles && eval $GIT_CMD)
 
 # bundle update some of the things
-echo "cukesrc bundle update"
-cd ~/rapid7/nexpose/src/internal/private/cucumber && bundle update
-echo "vuln-tools bundle update"
-cd ~/rapid7/vuln-tools/ && bundle update
+#echo "cukesrc bundle update"
+#cd ~/rapid7/nexpose/src/internal/private/cucumber && bundle update
+#echo "vuln-tools bundle update"
+#cd ~/rapid7/vuln-tools/ && bundle update
