@@ -2,6 +2,14 @@
 # nexpose environment
 . ~/rapid7/nexpose/src/environment.sh
 
+platform='unknown'
+unamestr=$(uname)
+if [[ "$unamestr" == 'Linux' ]]; then
+   platform='linux'
+elif [[ "$unamestr" == 'FreeBSD' ]]; then
+   platform='freebsd'
+fi
+
 alias nuke-local='sudo chown -R $USER:$USER ~/rapid7; sudo chown -R $USER:$USER ~/.m2; sudo id && test -n $NEXPOSE_ROOT && cd $NEXPOSE_ROOT/src && sudo killall -u nxpgsql ; sudo rm -Rf ../deploy && ant clean compile full-redeploy-local; ./run.sh nexpose'
 alias splat-local='sudo chown -R $USER:$USER ~/rapid7; sudo chown -R $USER:$USER ~/.m2; sudo id && test -n $NEXPOSE_ROOT && cd $NEXPOSE_ROOT/src && sudo killall -u nxpgsql ; sudo rm -Rf ../deploy && ant clean compile full-redeploy-local'
 alias nuke='sudo chown -R $USER:$USER ~/rapid7; sudo chown -R $USER:$USER ~/.m2; sudo id && test -n $NEXPOSE_ROOT && cd $NEXPOSE_ROOT/src && sudo killall -u nxpgsql ; sudo rm -Rf ../deploy && ant clean compile full-redeploy; sudo ./run.sh nexpose'
@@ -91,3 +99,8 @@ nex_truncate_logs()
 {
     for i in $NEXPOSE_ROOT/deploy/nsc/logs/*.log; do sudo truncate -s 0 $i; done
 }
+
+# to run intellij
+if [[ $platform == 'linux' ]]; then
+    alias idea='/home/rkirk/src/idea-IU-173.4301.25/bin/idea.sh &> /dev/null&'
+fi
