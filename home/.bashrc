@@ -76,3 +76,5 @@ export PATH="~/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# C-a c-r to restore work first
+alias tmuxwork='tmux new-session -t work'
