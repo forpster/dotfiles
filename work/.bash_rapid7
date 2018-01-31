@@ -34,8 +34,6 @@ alias puffins='cd ~/rapid7/puffins/'
 alias puffincuke='cd ~/rapid7/puffins/cucumber'
 alias fingerprinting-base='cd ~/rapid7/fingerprinting-base'
 
-alias eclipse='gksudo ~/bin/eclipse.install/eclipse'
-
 # RFCs
 alias update-rfcs='rsync -avz --delete ftp.rfc-editor.org::rfcs-text-only ~/rapid7/RFCs/rfc && rsync -avz --delete ftp.rfc-editor.org::ids-text-only ~/rapid7/RFCs/ids'
 
