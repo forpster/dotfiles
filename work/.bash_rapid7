@@ -32,6 +32,7 @@ alias network-client='cd ~/rapid7/network-client/'
 alias vuln-tools='cd ~/rapid7/vuln-tools/'
 alias puffins='cd ~/rapid7/puffins/'
 alias puffincuke='cd ~/rapid7/puffins/cucumber'
+alias fingerprinting-base='cd ~/rapid7/fingerprinting-base'
 
 alias eclipse='gksudo ~/bin/eclipse.install/eclipse'
 
