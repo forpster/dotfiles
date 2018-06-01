@@ -78,3 +78,7 @@ eval "$(pyenv virtualenv-init -)"
 
 # C-a c-r to restore work first
 alias tmuxwork='tmux new-session -t work'
+
+# modern ls is a dick
+export QUOTING_STYLE=literal
+
