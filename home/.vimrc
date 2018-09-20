@@ -1,6 +1,9 @@
 "set ic ai sw=4 nows cindent cinkeys=0{,0},:,!^F,o,O,e shiftwidth=4 tabstop=4 expandtab
 "map q :e#^M
 
+" https://github.com/tpope/vim-pathogen
+execute pathogen#infect()
+
 " set tabs to be 4 spaces in width when displayed
 set shiftwidth=4
 set tabstop=4
