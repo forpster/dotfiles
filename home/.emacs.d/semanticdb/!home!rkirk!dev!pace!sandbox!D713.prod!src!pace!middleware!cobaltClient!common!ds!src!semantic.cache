@@ -1,0 +1,266 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "stb_ds_trans.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("cas_platform.h" include nil nil [657 682])
+            ("stb_commonlib.h" include nil nil [684 710])
+            ("latens_controller.h" include nil nil [712 742])
+            ("latens_global.h" include nil nil [743 769])
+            ("stb_error.h" include nil nil [770 792])
+            ("stb_ds_proto_public.h" include nil nil [794 826])
+            ("stb_ds_public.h" include nil nil [827 853])
+            ("stb_ds_private.h" include nil nil [854 881])
+            ("stb_ds_logger.h" include nil nil [882 908])
+            ("stb_dc_public.h" include nil nil [909 935])
+            ("zlib.h" include nil nil [936 953])
+            ("crc32.h" include nil nil [954 972])
+            ("stb_ds_apstdProcessMemoryMaps" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :type ("LATENS_STB_DS_MEMORYMAP" type (:type "class") nil nil))
+                nil [1329 1393])
+            ("stb_ds_trans_apstdTransportMappings" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :type ("STB_DS_TRANSPORT_MAPPING" type (:type "class") nil nil))
+                nil [1457 1529])
+            ("stb_ds_trans_GetGlobalMemory" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2493 2498]))                  
+                :type ("LATENS_STB_DOUBLE_LINKED_LIST" type (:type "class") nil nil))
+                nil [2433 3598])
+            ("stb_ds_trans_GetTransportFunc" function
+               (:pointer 1
+                :arguments 
+                  ( ("eTransportfunc" variable (:type ("STB_DS_TRANS_TRANSPORT_FUNC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4063 4106]))                  
+                :type "void")
+                nil [4027 5839])
+            ("stb_ds_trans_GenerateTransItem" function
+               (:arguments 
+                  ( ("pRequest" variable (:type ("LATENS_STB_COLLECTION_POSITION" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6199 6239])
+                    ("pstdTransItem" variable
+                       (:pointer 1
+                        :type ("STB_DS_TRANS_TRANSMISSION" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6289 6331])
+                    ("pszURL" variable
+                       (:pointer 2
+                        :type ("CAS_CHAR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6381 6399]))                  
+                :type ("RC" type (:type "class") nil nil))
+                nil [6165 9116])
+            ("stb_ds_trans_GetTransItem" function
+               (:arguments 
+                  ( ("pRequestItem" variable (:type ("LATENS_STB_COLLECTION_POSITION" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9691 9735])
+                    ("pstdTransList" variable
+                       (:pointer 1
+                        :type ("LATENS_STB_DOUBLE_LINKED_LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9808 9853]))                  
+                :type ("LATENS_STB_COLLECTION_POSITION" type (:type "class") nil nil))
+                nil [9634 11320])
+            ("stb_ds_trans_NotifyOnComplete" function
+               (:arguments 
+                  ( ("pstdTransItem" variable
+                       (:pointer 1
+                        :type ("STB_DS_TRANS_TRANSMISSION" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11784 11825])
+                    ("pData" variable
+                       (:pointer 1
+                        :type ("UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11826 11839])
+                    ("unSize" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11840 11854]))                  
+                :type ("RC" type (:type "class") nil nil))
+                nil [11751 15338])
+            ("stb_ds_trans_NotifyOnRawData" function
+               (:arguments 
+                  ( ("pstdTransItem" variable
+                       (:pointer 1
+                        :type ("STB_DS_TRANS_TRANSMISSION" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15909 15950])
+                    ("pData" variable
+                       (:pointer 1
+                        :type ("UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15951 15964])
+                    ("unSize" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15965 15979]))                  
+                :type ("RC" type (:type "class") nil nil))
+                nil [15877 17615])
+            ("stb_ds_trans_NotifyFailure" function
+               (:arguments 
+                  ( ("pstdTransItem" variable
+                       (:pointer 1
+                        :type ("STB_DS_TRANS_TRANSMISSION" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17912 17953]))                  
+                :type ("RC" type (:type "class") nil nil))
+                nil [17882 19333])
+            ("stb_ds_trans_AddDataBlockListItem" function
+               (:arguments 
+                  ( ("pstdTransItem" variable
+                       (:pointer 1
+                        :type ("STB_DS_TRANS_TRANSMISSION" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19888 19929])
+                    ("pData" variable
+                       (:pointer 1
+                        :type ("UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19982 19995])
+                    ("unAppDataSize" variable (:type ("UINT16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19996 20017])
+                    ("usBlockNumber" variable (:type ("UINT16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20070 20091])
+                    ("unBlockTransOffset" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20092 20118]))                  
+                :type ("RC" type (:type "class") nil nil))
+                nil [19851 24018])
+            ("stb_ds_trans_SetupStorage" function
+               (:pointer 1
+                :arguments 
+                  ( ("pstdTransItem" variable
+                       (:pointer 1
+                        :type ("STB_DS_TRANS_TRANSMISSION" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24314 24356])
+                    ("pstdRequest" variable
+                       (:pointer 2
+                        :type ("STB_DS_PROTO_REQUEST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24357 24392])
+                    ("bFragmented" variable (:type ("BOOL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24393 24410]))                  
+                :type "void")
+                nil [24282 27913])
+            ("stb_ds_trans_FileWrite" function
+               (:arguments 
+                  ( ("pbyData" variable
+                       (:pointer 1
+                        :type ("UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28199 28214])
+                    ("pstdTransItem" variable
+                       (:pointer 1
+                        :type ("STB_DS_TRANS_TRANSMISSION" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28215 28257])
+                    ("pstdProtoRequest" variable
+                       (:pointer 1
+                        :type ("STB_DS_PROTO_REQUEST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28258 28297]))                  
+                :type ("RC" type (:type "class") nil nil))
+                nil [28173 31020])
+            ("stb_ds_trans_ReAssembleData" function
+               (:arguments 
+                  ( ("pstdTransItem" variable
+                       (:pointer 1
+                        :type ("STB_DS_TRANS_TRANSMISSION" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31415 31457]))                  
+                :type ("RC" type (:type "class") nil nil))
+                nil [31384 45373])
+            ("stb_ds_trans_FlushDataBlocks" function
+               (:arguments 
+                  ( ("pstdTransItem" variable
+                       (:pointer 1
+                        :type ("STB_DS_TRANS_TRANSMISSION" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45670 45711]))                  
+                :type ("RC" type (:type "class") nil nil))
+                nil [45638 47620])
+            ("stb_ds_trans_CheckForCompletion" function
+               (:arguments 
+                  ( ("pbComplete" variable
+                       (:pointer 1
+                        :type ("BOOL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47925 47942])
+                    ("pstdTransItem" variable
+                       (:pointer 1
+                        :type ("STB_DS_TRANS_TRANSMISSION" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47943 47985]))                  
+                :type ("RC" type (:type "class") nil nil))
+                nil [47890 50174])
+            ("stb_ds_trans_AssembleData" function
+               (:arguments 
+                  ( ("pstdTransItem" variable
+                       (:pointer 1
+                        :type ("STB_DS_TRANS_TRANSMISSION" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50467 50508])
+                    ("pbComplete" variable
+                       (:pointer 1
+                        :type ("BOOL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50509 50526])
+                    ("pData" variable
+                       (:pointer 1
+                        :type ("UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50527 50540])
+                    ("unSize" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50541 50555]))                  
+                :type ("RC" type (:type "class") nil nil))
+                nil [50438 80544])
+            ("stb_ds_trans_Init" function
+               (:arguments 
+                  ( ("pstdTransList" variable
+                       (:pointer 2
+                        :type ("LATENS_STB_DOUBLE_LINKED_LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80869 80916]))                  
+                :type ("RC" type (:type "class") nil nil))
+                nil [80848 81246])
+            ("stb_ds_trans_Finish" function
+               (:arguments 
+                  ( ("pstdTransList" variable
+                       (:pointer 2
+                        :type ("LATENS_STB_DOUBLE_LINKED_LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81425 81472]))                  
+                :type ("RC" type (:type "class") nil nil))
+                nil [81401 81795])
+            ("stb_ds_trans_Create" function
+               (:arguments 
+                  ( ("pRequest" variable (:type ("LATENS_STB_COLLECTION_POSITION" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81975 82016]))                  
+                :type ("RC" type (:type "class") nil nil))
+                nil [81950 84085])
+            ("stb_ds_trans_Delete" function
+               (:arguments 
+                  ( ("pRequestListItem" variable (:type ("LATENS_STB_COLLECTION_POSITION" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84264 84313]))                  
+                :type ("RC" type (:type "class") nil nil))
+                nil [84240 87538])
+            ("stb_ds_trans_Transmit" function
+               (:arguments 
+                  ( ("pRequest" variable
+                       (:pointer 1
+                        :type ("STB_DS_PROTO_REQUEST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87721 87753]))                  
+                :type ("RC" type (:type "class") nil nil))
+                nil [87695 88996])
+            ("stb_ds_trans_DataHandler" function
+               (:arguments 
+                  ( ("pTransId" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [89185 89201])
+                    ("pData" variable
+                       (:pointer 1
+                        :type ("UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89202 89215])
+                    ("unSize" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89216 89230])
+                    ("pbComplete" variable
+                       (:pointer 1
+                        :type ("BOOL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89231 89249]))                  
+                :type ("RC" type (:type "class") nil nil))
+                nil [89156 93668]))          
+    :file "stb_ds_trans.c"
+    :pointmax 93669
+    :fsize 93668
+    :lastmodtime '(21541 25857 898146 775000)
+    :unmatched-syntax '((symbol 50423 . 50437) (symbol 47875 . 47889) (symbol 45623 . 45637) (symbol 31369 . 31383) (symbol 28158 . 28172) (symbol 24267 . 24281) (symbol 19836 . 19850) (symbol 17867 . 17881) (symbol 15862 . 15876) (symbol 11736 . 11750) (symbol 9619 . 9633) (symbol 6150 . 6164) (symbol 4012 . 4026) (symbol 2418 . 2432))
+    )
+   (semanticdb-table "stb_ds_private.h"
+    :file "stb_ds_private.h"
+    :fsize 4314
+    :lastmodtime '(21541 25857 899146 769000)
+    )
+   (semanticdb-table "stb_ds_logger.h"
+    :file "stb_ds_logger.h"
+    :fsize 1133
+    :lastmodtime '(21541 25857 897146 781000)
+    )
+   (semanticdb-table "crc32.h"
+    :file "crc32.h"
+    :fsize 431
+    :lastmodtime '(21541 25857 897146 781000)
+    )
+    )
+  :file "!home!rkirk!dev!pace!sandbox!D713.prod!src!pace!middleware!cobaltClient!common!ds!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

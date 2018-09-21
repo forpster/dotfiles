@@ -1,0 +1,632 @@
+;; Object pushvodmodel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pushvodmodel/"
+  :tables (list 
+   (semanticdb-table "cobalt_pushvod_package_downloader.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("COBALT_PUSHVOD_PACKAGE_DOWNLOADER_H__" variable (:constant-flag t) nil [55 92])
+            ("QObjectSharedDataPointer" include (:system-flag t) nil [94 129])
+            ("QSharedPointer" include (:system-flag t) nil [130 155])
+            ("QDateTime" include (:system-flag t) nil [156 176])
+            ("eventListModelBase.h" include (:system-flag t) nil [178 209])
+            ("DSMCCgetFileEvent.h" include nil nil [210 240])
+            ("serverAllocator.h" include nil nil [241 269])
+            ("handlers/pullVODAssetBitsControl.h" include nil nil [270 315])
+            ("handlers/pullVODNavigationFile.h" include nil nil [316 359])
+            ("assert.h" include (:system-flag t) nil [360 379])
+            ("cobalt_catalogue_processors/catalogue_processor_qjson.h" include nil nil [380 446])
+            ("cobalt_manifest_processors/manifest_processor_qjson.h" include nil nil [447 511])
+            ("vodnavigationfilefactory.h" include nil nil [512 549])
+            ("vodrenamer.h" include nil nil [550 573])
+            ("imetatransformer.h" include nil nil [574 603])
+            ("STRINGIFY" variable (:constant-flag t) nil [613 622])
+            ("XSTRINGIFY" variable (:constant-flag t) nil [648 658])
+            ("TEMP_MAX_EVENTS_PER_PACKAGE" variable (:constant-flag t) nil [674 701])
+            ("PACKAGE_TEMP_PREFIX" variable (:constant-flag t) nil [721 740])
+            ("PACKAGE_TEMP_SUFFIX" variable (:constant-flag t) nil [780 799])
+            ("PACKAGE_TEMP_ROOTDIR" variable (:constant-flag t) nil [828 848])
+            ("PACKAGE_TEMP_GUARD_TIME" variable (:constant-flag t) nil [914 937])
+            ("PACKAGE_TEMP_DURATION" variable (:constant-flag t) nil [987 1008])
+            ("PACKAGE_ID" variable (:constant-flag t) nil [1029 1039])
+            ("DSMCCManagerInterface" type
+               (:prototype t
+                :type "class")
+                nil [1097 1125])
+            ("CobaltPushVODComponentStatus" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1236 1243])
+                    ("componentStatus" variable (:type ("COBALT_PUSHVOD_COMPONENT_STATE_e" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1248 1297])
+                    ("schedule" variable (:type ("QList" type
+                         (:template-specifier 
+                            ( ("QDateTime" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1302 1328])
+                    ("duration" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1333 1350])
+                    ("adjustedDuration" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1355 1380])
+                    ("filename" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1385 1402]))                  
+                :type "class")
+                nil [1199 1405])
+            ("CobaltPushVODAssetStatus" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1440 1447])
+                    ("assetStatus" variable (:type ("COBALT_PUSHVOD_ASSET_STATE_e" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1452 1493])
+                    ("components" variable (:type ("QMap" type
+                         (:template-specifier 
+                            ( ("QString" type nil nil nil)
+                              ("CobaltPushVODComponentStatus" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1498 1553])
+                    ("recordingAdded" variable (:type "bool") (reparse-symbol classsubparts) [1558 1578])
+                    ("recordingFilename" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1583 1609]))                  
+                :type "class")
+                nil [1407 1612])
+            ("CobaltPushVODPackageDownloaderStatus" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1659 1666])
+                    ("packageDownloadStatus" variable (:type ("COBALT_PUSHVOD_PACKAGE_STATE_e" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1671 1724])
+                    ("packageDownloadProgress" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1729 1761])
+                    ("assets" variable (:type ("QMap" type
+                         (:template-specifier 
+                            ( ("QString" type nil nil nil)
+                              ("CobaltPushVODAssetStatus" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1766 1813])
+                    ("nextUrl" function
+                       (:arguments 
+                          ( ("componentStatus" variable (:type ("COBALT_PUSHVOD_COMPONENT_STATE_e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1835 1884]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1819 2529])
+                    ("nextUrlByAssetId" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("assetId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2560 2583])
+                            ("componentStatus" variable (:type ("COBALT_PUSHVOD_COMPONENT_STATE_e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2584 2633]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2535 2640])
+                    ("getComponentByURL" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("url" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2694 2713]))                          
+                        :type ("CobaltPushVODComponentStatus" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2646 3315])
+                    ("getAssetIdByURL" function
+                       (:arguments 
+                          ( ("url" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3345 3364]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3321 3975])
+                    ("updateComponentStateByURL" function
+                       (:arguments 
+                          ( ("url" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4012 4031])
+                            ("componentStatus" variable (:type ("COBALT_PUSHVOD_COMPONENT_STATE_e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4032 4081]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3981 4284])
+                    ("updateAssetStateByComponentURL" function
+                       (:arguments 
+                          ( ("url" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4326 4345])
+                            ("assetStatus" variable (:type ("COBALT_PUSHVOD_ASSET_STATE_e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4346 4387]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4290 4562])
+                    ("areAllComponentsInState" function
+                       (:arguments 
+                          ( ("assetId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4597 4620])
+                            ("componentStatus" variable (:type ("COBALT_PUSHVOD_COMPONENT_STATE_e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4621 4670]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4568 5208])
+                    ("areAllAssetsInState" function
+                       (:arguments 
+                          ( ("assetStatus" variable (:type ("COBALT_PUSHVOD_ASSET_STATE_e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5239 5280]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5214 5610])
+                    ("getAssetByURL" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("url" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5656 5675]))                          
+                        :type ("CobaltPushVODAssetStatus" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5616 6273]))                  
+                :type "class")
+                nil [1614 6276])
+            ("PushVODFileDownloadRequest" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [6417 6424])
+                    ("PushVODFileDownloadRequest" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("url" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6753 6772])
+                            ("destination" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6804 6831])
+                            ("startTime" variable (:type ("QDateTime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6863 6883])
+                            ("duration" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6915 6932]))                          
+                        :type ("PushVODFileDownloadRequest" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6726 7058])
+                    ("m_url" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7064 7078])
+                    ("m_destination" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7083 7105])
+                    ("m_startTime" variable (:type ("QDateTime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7110 7132])
+                    ("m_duration" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7137 7156])
+                    ("==" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PushVODFileDownloadRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7178 7218]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7162 7428]))                  
+                :type "class")
+                nil [6382 7431])
+            ("CobaltPushVODPackageDownloader" type
+               (:superclasses 
+                  ( ("QObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [7504 7511])
+                    ("CobaltPushVODPackageDownloader" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("catalogueAsset" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7548 7575])
+                            ("pEventListModel" variable
+                               (:pointer 1
+                                :type ("EventListModelBase" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7612 7648])
+                            ("dsmccInterface" variable
+                               (:pointer 1
+                                :type ("DSMCCManagerInterface" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7685 7723])
+                            ("serverAllocator" variable
+                               (:pointer 1
+                                :type ("IServerAllocator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7760 7794])
+                            ("vodRenamer" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IVODRenamer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7831 7861])
+                            ("vodNavigationFileFactory" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("VODNavigationFileFactory" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7898 7955])
+                            ("metaTransformer" variable
+                               (:pointer 1
+                                :type ("IMetaTransformer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7992 8063]))                          
+                        :type ("CobaltPushVODPackageDownloader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7516 8064])
+                    ("CobaltPushVODPackageDownloader" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8069 8103])
+                    ("deletePackage" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8109 8130])
+                    ("setManifestEntry" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("manifestEntry" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8158 8184]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8136 8185])
+                    ("getCatalogueEntry" function
+                       (:prototype-flag t
+                        :type ("QVariantMap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8191 8223])
+                    ("getStatus" function (:type ("CobaltPushVODPackageDownloaderStatus" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8229 8316])
+                    ("getGroupIds" function
+                       (:prototype-flag t
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8321 8352])
+                    ("downloadFile" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("fileDownloadRequest" variable (:type ("QSharedPointer" type
+                                 (:template-specifier 
+                                    ( ("PushVODFileDownloadRequest" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [8432 8495]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8406 8496])
+                    ("getFileDownloadRequest" function
+                       (:prototype-flag t
+                        :type ("QSharedPointer" type
+                             (:template-specifier 
+                                ( ("PushVODFileDownloadRequest" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8530 8598])
+                    ("getPackageId" function (:type ("quint64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8604 8672])
+                    ("private" label nil (reparse-symbol classsubparts) [8675 8683])
+                    ("setCatalogueEntry" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("catalogueEntry" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8711 8738]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8688 8739])
+                    ("createGetFileEvents" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8744 8771])
+                    ("isDownloadPossible" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8776 8802])
+                    ("getUniqueContentKey" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8835 8840]))                          
+                        :type ("qint64" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8807 8841])
+                    ("checkPackageAcquired" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8846 8874])
+                    ("checkPackageFailed" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8879 8905])
+                    ("handleStateRequested" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eventUrl" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8937 8961]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8911 8962])
+                    ("handleStateCompleted" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eventUrl" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8993 9017]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8967 9018])
+                    ("handleStateFailed" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eventUrl" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9046 9070]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9023 9071])
+                    ("addRecording" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("componentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9113 9140]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9095 9141])
+                    ("addSegment" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("url" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9162 9181]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9146 9182])
+                    ("renameAsset" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("componentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9204 9231]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9187 9232])
+                    ("renameUrl" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("url" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9252 9271]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9237 9272])
+                    ("beginNavigationFileGenerationForAsset" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("componentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9320 9347]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9277 9348])
+                    ("genNavigationFile" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [9353 9378])
+                    ("removeOutdatedFileDownloadRequests" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [9383 9425])
+                    ("removeAllDownloadRequestsWithGivenComponentId" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("componentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9698 9725]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9647 9726])
+                    ("removePrefixSuffix" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("in" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9763 9781])
+                            ("prefix" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9782 9804])
+                            ("suffix" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9805 9827]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9736 9828])
+                    ("extractIndexFromFilename" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9862 9886]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9833 9887])
+                    ("createFileDownloadRequest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("url" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9923 9942]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9892 9943])
+                    ("private" label nil (reparse-symbol classsubparts) [9946 9954])
+                    ("m_packageID" variable (:type ("quint64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9959 10023])
+                    ("m_packageGroupIds" variable (:type ("QList" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10028 10057])
+                    ("m_getFileEvents" variable (:type ("QList" type
+                         (:template-specifier 
+                            ( ("QObjectSharedDataPointer" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10062 10131])
+                    ("m_contentIds" variable (:type ("QMap" type
+                         (:template-specifier 
+                            ( ("QString" type nil nil nil)
+                              ("ContentID" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10333 10390])
+                    ("m_pEventListModel" variable
+                       (:pointer 1
+                        :type ("EventListModelBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10396 10459])
+                    ("m_dsmccInterface" variable
+                       (:pointer 1
+                        :type ("DSMCCManagerInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10464 10526])
+                    ("m_pServerAllocator" variable
+                       (:pointer 1
+                        :type ("IServerAllocator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10531 10595])
+                    ("m_mediaserver_updated" variable (:type "bool") (reparse-symbol classsubparts) [10600 10666])
+                    ("m_dir" variable
+                       (:pointer 1
+                        :type ("QDir" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10671 10722])
+                    ("m_catalogueEntryCopy" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10728 10793])
+                    ("m_pushVODNavigationFile" variable
+                       (:pointer 1
+                        :type ("IpullVODNavigationFile" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10829 10898])
+                    ("m_pushVODAssetBitsControl" variable (:type ("pullVODAssetBitsControl" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10903 10973])
+                    ("m_currentComponentId" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11010 11075])
+                    ("m_currentNavFilename" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11080 11145])
+                    ("m_currentRecordingFile" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11150 11217])
+                    ("m_currentUrl" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11222 11279])
+                    ("m_catalogueProcessor" variable (:type ("QSharedPointer" type
+                         (:template-specifier 
+                            ( ("CatalogueProcessorQJSON" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [11289 11354])
+                    ("m_manifestProcessor" variable (:type ("QSharedPointer" type
+                         (:template-specifier 
+                            ( ("ManifestProcessorQJSON" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [11359 11423])
+                    ("m_elapsedTime" variable (:type ("quint64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11481 11540])
+                    ("m_mapOfOrderedListsOfChunksForNavFileGeneration" variable (:type ("QMap" type
+                         (:template-specifier 
+                            ( ("QString" type nil nil nil)
+                              ("QStringList" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [11546 11639])
+                    ("m_status" variable (:type ("CobaltPushVODPackageDownloaderStatus" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11645 11699])
+                    ("m_vodRenamer" variable
+                       (:constant-flag t
+                        :type ("IVODRenamer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11705 11764])
+                    ("m_vodNavigationFileFactory" variable
+                       (:constant-flag t
+                        :type ("VODNavigationFileFactory" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11769 11842])
+                    ("m_fileDownloadRequests" variable (:type ("QList" type
+                         (:template-specifier 
+                            ( ("PushVODFileDownloadRequest" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [11848 11916])
+                    ("m_metadata_transformer" variable
+                       (:pointer 1
+                        :type ("IMetaTransformer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11922 11963])
+                    ("packageAcquired" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("packageID" variable (:type ("quint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12000 12018]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11979 12019])
+                    ("packageFailed" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("packageID" variable (:type ("quint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12043 12061]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12024 12062])
+                    ("fileDownloadFinished" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [12067 12095])
+                    ("enablePowerManager" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [12100 12126])
+                    ("disablePowerManager" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [12131 12158])
+                    ("public" label nil (reparse-symbol classsubparts) [12161 12174])
+                    ("on_eventMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pEvent" variable (:type ("QObjectSharedDataPointer" type
+                                 (:template-specifier 
+                                    ( ("EventBase" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [12233 12276])
+                            ("text" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12277 12291]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12210 12292])
+                    ("on_eventStatusChanged" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pEvent" variable (:type ("QObjectSharedDataPointer" type
+                                 (:template-specifier 
+                                    ( ("EventBase" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [12324 12367])
+                            ("" variable (:type ("EventBase::EVENT_STATUS_CHANGE_e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12368 12401])
+                            ("iteration" variable (:type "int") (reparse-symbol arg-sub-list) [12402 12416])
+                            ("cause" variable (:type ("ServerAllocator::TRIGGER_TYPE_e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12417 12455])
+                            ("causeEvent" variable (:type ("QObjectSharedDataPointer" type
+                                 (:template-specifier 
+                                    ( ("EventBase" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [12456 12503]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12297 12504])
+                    ("navFileCompletedSlot" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("index" variable (:type ("quint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12561 12575])
+                            ("elapsedTime" variable (:type ("quint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12576 12596])
+                            ("status" variable (:type "bool") (reparse-symbol arg-sub-list) [12597 12610]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12533 12611]))                  
+                :type "class")
+                nil [7433 12614]))          
+    :file "cobalt_pushvod_package_downloader.h"
+    :pointmax 12705
+    :fsize 12704
+    :lastmodtime '(21776 1393 150390 13000)
+    :unmatched-syntax '((punctuation 11973 . 11974) (symbol 11966 . 11973) (symbol 7493 . 7501))
+    :lexical-table 
+        '(("COBALT_PUSHVOD_PACKAGE_DOWNLOADER_H__")
+          ("PACKAGE_TEMP_ROOTDIR" . ((string "\"movies/\"" 856 . 865)))
+          ("XSTRINGIFY" (spp-arg-list ("x") 658 . 661) . ((punctuation "#" 662 . 663) (symbol "x" 663 . 664)))
+          ("PACKAGE_TEMP_SUFFIX" . ((string "\"?pid=6666\"" 808 . 819)))
+          ("PACKAGE_TEMP_GUARD_TIME" . ((number "30" 938 . 940)))
+          ("PACKAGE_TEMP_PREFIX" . ((string "\"dvb://13e.1bbc.3c97/\"" 749 . 771)))
+          ("STRINGIFY" (spp-arg-list ("x") 622 . 625) . ((symbol "XSTRINGIFY" 626 . 636) (semantic-list "(x)" 636 . 639)))
+          ("PACKAGE_TEMP_DURATION" . ((number "1000" 1015 . 1019)))
+          ("TEMP_MAX_EVENTS_PER_PACKAGE" . ((number "2" 702 . 703)))
+          ("PACKAGE_ID" . 
+              ((string "\"(pkgid\"" 1040 . 1048) (punctuation "<" 1049 . 1050) (punctuation "<" 1050 . 1051) (symbol "m_packageID" 1052 . 1063) (punctuation "<" 1064 . 1065) (punctuation "<" 1065 . 1066) (string "\")\"" 1067 . 1070) (punctuation "<" 1071 . 1072) (punctuation "<" 1072 . 1073) (symbol "__FILE__" 1074 . 1082) (punctuation "<" 1083 . 1084) (punctuation "<" 1084 . 1085) (symbol "__LINE__" 1086 . 1094) (punctuation ";" 1094 . 1095)))
+          )
+
+    )
+   (semanticdb-table "vodnavigationfilefactory.h"
+    :file "vodnavigationfilefactory.h"
+    :fsize 394
+    :lastmodtime '(21776 1393 149390 20000)
+    )
+   (semanticdb-table "vodrenamer.h"
+    :file "vodrenamer.h"
+    :fsize 934
+    :lastmodtime '(21776 1393 150390 13000)
+    )
+   (semanticdb-table "imetatransformer.h"
+    :file "imetatransformer.h"
+    :fsize 562
+    :lastmodtime '(21776 1393 259389 210000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!applications!library!models!pushvodmodel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

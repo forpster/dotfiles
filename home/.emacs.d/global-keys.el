@@ -13,3 +13,6 @@
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "C-x b") 'switch-to-buffer)
 (global-set-key (kbd "C-c C-v") 'uncomment-region)
+
+; apparently this is not properly mapped in emacs 25.x ???
+(define-key global-map "\M-*" 'pop-tag-mark)

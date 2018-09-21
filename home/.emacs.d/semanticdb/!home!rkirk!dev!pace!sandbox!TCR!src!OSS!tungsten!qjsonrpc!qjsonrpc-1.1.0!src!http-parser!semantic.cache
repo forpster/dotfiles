@@ -1,0 +1,1313 @@
+;; Object http-parser/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "http-parser/"
+  :tables (list 
+   (semanticdb-table "http_parser.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("http_parser_h" variable (:constant-flag t) nil [1186 1199])
+            ("HTTP_PARSER_VERSION_MAJOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1248 1273])
+            ("HTTP_PARSER_VERSION_MINOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1284 1309])
+            ("sys/types.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1313 1335])
+            ("stdint.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1705 1724])
+            ("HTTP_PARSER_STRICT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1851 1869])
+            ("HTTP_MAX_HEADER_SIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1923 1943])
+            ("http_parser" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "http_parser"
+                :typedef ("http_parser" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [1956 1995])
+            ("http_parser_settings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "http_parser_settings"
+                :typedef ("http_parser_settings" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [1996 2053])
+            ("http_data_cb" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [2720 2786])
+            ("http_cb" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [2795 2825])
+            ("HTTP_METHOD_MAP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2858 2873])
+            ("http_method" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158])
+                    ("HTTP_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4139 4158]))                  )
+                (reparse-symbol extern-c-contents) [4067 4173])
+            ("http_parser_type" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("HTTP_REQUEST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4200 4213])
+                    ("HTTP_RESPONSE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4214 4228])
+                    ("HTTP_BOTH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4229 4240]))                  )
+                (reparse-symbol extern-c-contents) [4176 4241])
+            ("flags" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("F_CHUNKED" variable
+                       (:constant-flag t
+                        :default-value (4331 4332)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4305 4332])
+                    ("F_CONNECTION_KEEP_ALIVE" variable
+                       (:constant-flag t
+                        :default-value (4368 4369)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4342 4369])
+                    ("F_CONNECTION_CLOSE" variable
+                       (:constant-flag t
+                        :default-value (4405 4406)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4379 4406])
+                    ("F_TRAILING" variable
+                       (:constant-flag t
+                        :default-value (4442 4443)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4416 4443])
+                    ("F_UPGRADE" variable
+                       (:constant-flag t
+                        :default-value (4479 4480)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4453 4480])
+                    ("F_SKIPBODY" variable
+                       (:constant-flag t
+                        :default-value (4516 4517)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4490 4517]))                  )
+                (reparse-symbol extern-c-contents) [4290 4527])
+            ("HTTP_ERRNO_MAP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4648 4662])
+            ("HTTP_ERRNO_GEN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7515 7529])
+            ("http_errno" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595])
+                    ("HTTP_ERRNO_GEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7565 7595]))                  )
+                (reparse-symbol extern-c-contents) [7545 7598])
+            ("HTTP_PARSER_ERRNO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7681 7698])
+            ("http_parser" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("type" variable
+                       (:suffix ":2"
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [7792 7815])
+                    ("flags" variable
+                       (:suffix ":6"
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [7850 7874])
+                    ("state" variable (:type "unsigned char") (reparse-symbol classsubparts) [7928 7948])
+                    ("header_state" variable (:type "unsigned char") (reparse-symbol classsubparts) [7994 8021])
+                    ("index" variable (:type "unsigned char") (reparse-symbol classsubparts) [8067 8087])
+                    ("nread" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8131 8146])
+                    ("content_length" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8198 8222])
+                    ("http_major" variable (:type "unsigned short") (reparse-symbol classsubparts) [8300 8326])
+                    ("http_minor" variable (:type "unsigned short") (reparse-symbol classsubparts) [8329 8355])
+                    ("status_code" variable (:type "unsigned short") (reparse-symbol classsubparts) [8358 8385])
+                    ("method" variable (:type "unsigned char") (reparse-symbol classsubparts) [8409 8430])
+                    ("http_errno" variable
+                       (:suffix ":7"
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [8459 8488])
+                    ("upgrade" variable
+                       (:suffix ":1"
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [8707 8733])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [8754 8765]))                  )
+                (reparse-symbol extern-c-contents) [7751 8835])
+            ("http_parser_settings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("on_message_begin" variable (:type ("http_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8870 8900])
+                    ("on_url" variable (:type ("http_data_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8903 8923])
+                    ("on_status_complete" variable (:type ("http_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8926 8958])
+                    ("on_header_field" variable (:type ("http_data_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8961 8990])
+                    ("on_header_value" variable (:type ("http_data_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8993 9022])
+                    ("on_headers_complete" variable (:type ("http_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9025 9058])
+                    ("on_body" variable (:type ("http_data_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9061 9082])
+                    ("on_message_complete" variable (:type ("http_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9085 9118]))                  )
+                (reparse-symbol extern-c-contents) [8838 9121])
+            ("http_parser_url_fields" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("UF_SCHEMA" variable
+                       (:constant-flag t
+                        :default-value (9178 9179)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9156 9179])
+                    ("UF_HOST" variable
+                       (:constant-flag t
+                        :default-value (9206 9207)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9184 9207])
+                    ("UF_PORT" variable
+                       (:constant-flag t
+                        :default-value (9234 9235)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9212 9235])
+                    ("UF_PATH" variable
+                       (:constant-flag t
+                        :default-value (9262 9263)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9240 9263])
+                    ("UF_QUERY" variable
+                       (:constant-flag t
+                        :default-value (9290 9291)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9268 9291])
+                    ("UF_FRAGMENT" variable
+                       (:constant-flag t
+                        :default-value (9318 9319)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9296 9319])
+                    ("UF_USERINFO" variable
+                       (:constant-flag t
+                        :default-value (9346 9347)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9324 9347])
+                    ("UF_MAX" variable
+                       (:constant-flag t
+                        :default-value (9374 9375)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9352 9375]))                  )
+                (reparse-symbol extern-c-contents) [9124 9380])
+            ("http_parser_url" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("field_set" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9696 9715])
+                    ("port" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9764 9778])
+                    ("field_data" variable
+                       (:dereference 1
+                        :type ("" type
+                             (:members 
+                                ( ("off" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9841 9854])
+                                  ("len" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9920 9933]))                                
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [9828 10001]))                  )
+                (reparse-symbol extern-c-contents) [9669 10004])
+            ("http_parser_init" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("parser" variable
+                       (:pointer 1
+                        :type ("http_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10029 10049])
+                    ("type" variable (:type ("http_parser_type" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [10050 10077]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10007 10078])
+            ("http_parser_execute" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("size_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("parser" variable
+                       (:pointer 1
+                        :type ("http_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10108 10128])
+                    ("settings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("http_parser_settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10156 10193])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10221 10238])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10266 10277]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10081 10278])
+            ("http_should_keep_alive" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("parser" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("http_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10594 10620]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10567 10621])
+            ("http_method_str" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("m" variable (:type ("http_method" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [10702 10721]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10674 10722])
+            ("http_errno_name" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("err" variable (:type ("http_errno" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [10798 10818]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10770 10819])
+            ("http_errno_description" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("err" variable (:type ("http_errno" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [10909 10929]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10874 10930])
+            ("http_parser_parse_url" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11003 11019])
+                    ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11020 11034])
+                    ("is_connect" variable (:type "int") (reparse-symbol arg-sub-list) [11061 11076])
+                    ("u" variable
+                       (:pointer 1
+                        :type ("http_parser_url" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11103 11129]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10977 11130])
+            ("http_parser_pause" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("parser" variable
+                       (:pointer 1
+                        :type ("http_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11214 11234])
+                    ("paused" variable (:type "int") (reparse-symbol arg-sub-list) [11235 11246]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11191 11247])
+            ("http_body_is_final" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("parser" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("http_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11325 11351]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11302 11352]))          
+    :file "http_parser.h"
+    :pointmax 11389
+    :fsize 11388
+    :lastmodtime '(21730 8708 0 0)
+    :unmatched-syntax '((semantic-list #("(UNKNOWN, \"an unknown error occurred\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(PAUSED, \"parser is paused\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(STRICT, \"strict mode assertion failed\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(INVALID_INTERNAL_STATE, \"encountered unexpected internal state\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(INVALID_CONSTANT, \"invalid constant string\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(INVALID_CHUNK_SIZE,                                             \\
+     \"invalid character in chunk size header\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(INVALID_CONTENT_LENGTH,                                         \\
+     \"invalid character in content-length header\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(INVALID_HEADER_TOKEN, \"invalid character in header\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(LF_EXPECTED, \"LF character expected\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(INVALID_FRAGMENT, \"invalid fragment\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(INVALID_QUERY_STRING, \"invalid query string\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(INVALID_PATH, \"invalid path\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(INVALID_PORT, \"invalid port\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(INVALID_HOST, \"invalid host\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(INVALID_URL, \"invalid URL\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(INVALID_METHOD, \"invalid HTTP method\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(INVALID_STATUS, \"invalid HTTP status code\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(INVALID_VERSION, \"invalid HTTP version\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(CLOSED_CONNECTION,                                              \\
+     \"data received after completed connection: close message\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(HEADER_OVERFLOW,                                                \\
+     \"too many header bytes seen; overflow detected\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(INVALID_EOF_STATE, \"stream ended at an unexpected time\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(CB_message_complete, \"the on_message_complete callback failed\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(CB_body, \"the on_body callback failed\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(CB_headers_complete, \"the on_headers_complete callback failed\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(CB_header_value, \"the on_header_value callback failed\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(CB_header_field, \"the on_header_field callback failed\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(CB_url, \"the on_url callback failed\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(CB_status_complete, \"the on_status_complete callback failed\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(CB_message_begin, \"the on_message_begin callback failed\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (semantic-list #("(OK, \"success\")" 0 1 (macros (("XX" symbol "HTTP_ERRNO_GEN" 7580 . 7594)))) 7565 . 7595) (number 4521 . 4522) (punctuation 4519 . 4520) (punctuation 4518 . 4519) (number 4484 . 4485) (punctuation 4482 . 4483) (punctuation 4481 . 4482) (number 4447 . 4448) (punctuation 4445 . 4446) (punctuation 4444 . 4445) (number 4410 . 4411) (punctuation 4408 . 4409) (punctuation 4407 . 4408) (number 4373 . 4374) (punctuation 4371 . 4372) (punctuation 4370 . 4371) (number 4336 . 4337) (punctuation 4334 . 4335) (punctuation 4333 . 4334) (spp-macro-undef 4166 . 4168) (semantic-list #("(25, PURGE,       PURGE)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(24, PATCH,       PATCH)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(23, UNSUBSCRIBE, UNSUBSCRIBE)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(22, SUBSCRIBE,   SUBSCRIBE)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(21, NOTIFY,      NOTIFY)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(20, MSEARCH,     M-SEARCH)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(19, MERGE,       MERGE)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(18, CHECKOUT,    CHECKOUT)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(17, MKACTIVITY,  MKACTIVITY)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(16, REPORT,      REPORT)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(15, UNLOCK,      UNLOCK)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(14, SEARCH,      SEARCH)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(13, PROPPATCH,   PROPPATCH)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(12, PROPFIND,    PROPFIND)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(11, MOVE,        MOVE)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(10, MKCOL,       MKCOL)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(9,  LOCK,        LOCK)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(8,  COPY,        COPY)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(7,  TRACE,       TRACE)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(6,  OPTIONS,     OPTIONS)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(5,  CONNECT,     CONNECT)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(4,  PUT,         PUT)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(3,  POST,        POST)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(2,  HEAD,        HEAD)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(1,  GET,         GET)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (semantic-list #("(0,  DELETE,      DELETE)" 0 1 (macros (("XX" symbol "HTTP_" 4155 . 4157)))) 4139 . 4158) (spp-macro-def 4096 . 4098) (TYPEDEF 2787 . 2794) (TYPEDEF 2712 . 2719))
+    :lexical-table 
+        '(("HTTP_PARSER_VERSION_MINOR" . ((number "0" 1310 . 1311)))
+          ("HTTP_ERRNO_MAP" (spp-arg-list ("XX") 4662 . 4666) . 
+              ((symbol "XX" 4784 . 4786) (semantic-list "(OK, \"success\")" 4786 . 4801) (symbol "XX" 4997 . 4999) (semantic-list "(CB_message_begin, \"the on_message_begin callback failed\")" 4999 . 5057) (symbol "XX" 5068 . 5070) (semantic-list "(CB_status_complete, \"the on_status_complete callback failed\")" 5070 . 5132) (symbol "XX" 5139 . 5141) (semantic-list "(CB_url, \"the on_url callback failed\")" 5141 . 5179) (symbol "XX" 5210 . 5212) (semantic-list "(CB_header_field, \"the on_header_field callback failed\")" 5212 . 5268) (symbol "XX" 5281 . 5283) (semantic-list "(CB_header_value, \"the on_header_value callback failed\")" 5283 . 5339) (symbol "XX" 5352 . 5354) (semantic-list "(CB_headers_complete, \"the on_headers_complete callback failed\")" 5354 . 5418) (symbol "XX" 5423 . 5425) (semantic-list "(CB_body, \"the on_body callback failed\")" 5425 . 5465) (symbol "XX" 5494 . 5496) (semantic-list "(CB_message_complete, \"the on_message_complete callback failed\")" 5496 . 5560) (symbol "XX" 5707 . 5709) (semantic-list "(INVALID_EOF_STATE, \"stream ended at an unexpected time\")" 5709 . 5766) (symbol "XX" 5778 . 5780) (semantic-list "(HEADER_OVERFLOW,                                                \\
+     \"too many header bytes seen; overflow detected\")" 5780 . 5900) (symbol "XX" 5920 . 5922) (semantic-list "(CLOSED_CONNECTION,                                              \\
+     \"data received after completed connection: close message\")" 5922 . 6052) (symbol "XX" 6062 . 6064) (semantic-list "(INVALID_VERSION, \"invalid HTTP version\")" 6064 . 6105) (symbol "XX" 6133 . 6135) (semantic-list "(INVALID_STATUS, \"invalid HTTP status code\")" 6135 . 6179) (symbol "XX" 6204 . 6206) (semantic-list "(INVALID_METHOD, \"invalid HTTP method\")" 6206 . 6245) (symbol "XX" 6275 . 6277) (semantic-list "(INVALID_URL, \"invalid URL\")" 6277 . 6305) (symbol "XX" 6346 . 6348) (semantic-list "(INVALID_HOST, \"invalid host\")" 6348 . 6378) (symbol "XX" 6417 . 6419) (semantic-list "(INVALID_PORT, \"invalid port\")" 6419 . 6449) (symbol "XX" 6488 . 6490) (semantic-list "(INVALID_PATH, \"invalid path\")" 6490 . 6520) (symbol "XX" 6559 . 6561) (semantic-list "(INVALID_QUERY_STRING, \"invalid query string\")" 6561 . 6607) (symbol "XX" 6630 . 6632) (semantic-list "(INVALID_FRAGMENT, \"invalid fragment\")" 6632 . 6670) (symbol "XX" 6701 . 6703) (semantic-list "(LF_EXPECTED, \"LF character expected\")" 6703 . 6741) (symbol "XX" 6772 . 6774) (semantic-list "(INVALID_HEADER_TOKEN, \"invalid character in header\")" 6774 . 6827) (symbol "XX" 6843 . 6845) (semantic-list "(INVALID_CONTENT_LENGTH,                                         \\
+     \"invalid character in content-length header\")" 6845 . 6962) (symbol "XX" 6985 . 6987) (semantic-list "(INVALID_CHUNK_SIZE,                                             \\
+     \"invalid character in chunk size header\")" 6987 . 7100) (symbol "XX" 7127 . 7129) (semantic-list "(INVALID_CONSTANT, \"invalid constant string\")" 7129 . 7174) (symbol "XX" 7198 . 7200) (semantic-list "(INVALID_INTERNAL_STATE, \"encountered unexpected internal state\")" 7200 . 7265) (symbol "XX" 7269 . 7271) (semantic-list "(STRICT, \"strict mode assertion failed\")" 7271 . 7311) (symbol "XX" 7340 . 7342) (semantic-list "(PAUSED, \"parser is paused\")" 7342 . 7370) (symbol "XX" 7411 . 7413) (semantic-list "(UNKNOWN, \"an unknown error occurred\")" 7413 . 7451)))
+          ("HTTP_MAX_HEADER_SIZE" . ((semantic-list "(80*1024)" 1944 . 1953)))
+          ("HTTP_PARSER_STRICT" . ((number "1" 1870 . 1871)))
+          ("HTTP_PARSER_ERRNO" (spp-arg-list ("p") 7698 . 7701) . ((semantic-list "((enum http_errno) (p)->http_errno)" 7713 . 7748)))
+          ("HTTP_PARSER_VERSION_MAJOR" . ((number "2" 1274 . 1275)))
+          ("HTTP_METHOD_MAP" (spp-arg-list ("XX") 2873 . 2877) . 
+              ((symbol "XX" 2890 . 2892) (semantic-list "(0,  DELETE,      DELETE)" 2892 . 2917) (symbol "XX" 2928 . 2930) (semantic-list "(1,  GET,         GET)" 2930 . 2952) (symbol "XX" 2966 . 2968) (semantic-list "(2,  HEAD,        HEAD)" 2968 . 2991) (symbol "XX" 3004 . 3006) (semantic-list "(3,  POST,        POST)" 3006 . 3029) (symbol "XX" 3042 . 3044) (semantic-list "(4,  PUT,         PUT)" 3044 . 3066) (symbol "XX" 3118 . 3120) (semantic-list "(5,  CONNECT,     CONNECT)" 3120 . 3146) (symbol "XX" 3156 . 3158) (semantic-list "(6,  OPTIONS,     OPTIONS)" 3158 . 3184) (symbol "XX" 3194 . 3196) (semantic-list "(7,  TRACE,       TRACE)" 3196 . 3220) (symbol "XX" 3270 . 3272) (semantic-list "(8,  COPY,        COPY)" 3272 . 3295) (symbol "XX" 3308 . 3310) (semantic-list "(9,  LOCK,        LOCK)" 3310 . 3333) (symbol "XX" 3346 . 3348) (semantic-list "(10, MKCOL,       MKCOL)" 3348 . 3372) (symbol "XX" 3384 . 3386) (semantic-list "(11, MOVE,        MOVE)" 3386 . 3409) (symbol "XX" 3422 . 3424) (semantic-list "(12, PROPFIND,    PROPFIND)" 3424 . 3451) (symbol "XX" 3460 . 3462) (semantic-list "(13, PROPPATCH,   PROPPATCH)" 3462 . 3490) (symbol "XX" 3498 . 3500) (semantic-list "(14, SEARCH,      SEARCH)" 3500 . 3525) (symbol "XX" 3536 . 3538) (semantic-list "(15, UNLOCK,      UNLOCK)" 3538 . 3563) (symbol "XX" 3612 . 3614) (semantic-list "(16, REPORT,      REPORT)" 3614 . 3639) (symbol "XX" 3650 . 3652) (semantic-list "(17, MKACTIVITY,  MKACTIVITY)" 3652 . 3681) (symbol "XX" 3688 . 3690) (semantic-list "(18, CHECKOUT,    CHECKOUT)" 3690 . 3717) (symbol "XX" 3726 . 3728) (semantic-list "(19, MERGE,       MERGE)" 3728 . 3752) (symbol "XX" 3802 . 3804) (semantic-list "(20, MSEARCH,     M-SEARCH)" 3804 . 3831) (symbol "XX" 3840 . 3842) (semantic-list "(21, NOTIFY,      NOTIFY)" 3842 . 3867) (symbol "XX" 3878 . 3880) (semantic-list "(22, SUBSCRIBE,   SUBSCRIBE)" 3880 . 3908) (symbol "XX" 3916 . 3918) (semantic-list "(23, UNSUBSCRIBE, UNSUBSCRIBE)" 3918 . 3948) (symbol "XX" 3992 . 3994) (semantic-list "(24, PATCH,       PATCH)" 3994 . 4018) (symbol "XX" 4030 . 4032) (semantic-list "(25, PURGE,       PURGE)" 4032 . 4056)))
+          ("http_parser_h")
+          )
+
+    )
+   (semanticdb-table "http_parser.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("http_parser.h" include nil nil [1299 1323])
+            ("assert.h" include (:system-flag t) nil [1324 1343])
+            ("stddef.h" include (:system-flag t) nil [1344 1363])
+            ("ctype.h" include (:system-flag t) nil [1364 1382])
+            ("stdlib.h" include (:system-flag t) nil [1383 1402])
+            ("string.h" include (:system-flag t) nil [1403 1422])
+            ("limits.h" include (:system-flag t) nil [1423 1442])
+            ("ULLONG_MAX" variable (:constant-flag t) nil [1472 1482])
+            ("MIN" variable (:constant-flag t) nil [1541 1544])
+            ("ARRAY_SIZE" variable (:constant-flag t) nil [1610 1620])
+            ("BIT_AT" variable (:constant-flag t) nil [1685 1691])
+            ("ELEM_AT" variable (:constant-flag t) nil [1888 1895])
+            ("SET_ERRNO" variable (:constant-flag t) nil [1975 1984])
+            ("CALLBACK_NOTIFY_" variable (:constant-flag t) nil [2261 2277])
+            ("CALLBACK_NOTIFY" variable (:constant-flag t) nil [3331 3346])
+            ("CALLBACK_NOTIFY_NOADVANCE" variable (:constant-flag t) nil [3477 3502])
+            ("CALLBACK_DATA_" variable (:constant-flag t) nil [3619 3633])
+            ("CALLBACK_DATA" variable (:constant-flag t) nil [4902 4915])
+            ("CALLBACK_DATA_NOADVANCE" variable (:constant-flag t) nil [5095 5118])
+            ("MARK" variable (:constant-flag t) nil [5280 5284])
+            ("PROXY_CONNECTION" variable (:constant-flag t) nil [5649 5665])
+            ("CONNECTION" variable (:constant-flag t) nil [5693 5703])
+            ("CONTENT_LENGTH" variable (:constant-flag t) nil [5725 5739])
+            ("TRANSFER_ENCODING" variable (:constant-flag t) nil [5765 5782])
+            ("UPGRADE" variable (:constant-flag t) nil [5811 5818])
+            ("CHUNKED" variable (:constant-flag t) nil [5837 5844])
+            ("KEEP_ALIVE" variable (:constant-flag t) nil [5863 5873])
+            ("CLOSE" variable (:constant-flag t) nil [5895 5900])
+            ("method_strings" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [5911 6028])
+            ("tokens" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [6354 8817])
+            ("unhex" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("int8_t" type (:type "class") nil nil))
+                nil [8820 9265])
+            ("T" variable (:constant-flag t) nil [9322 9323])
+            ("normal_url_char" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [9338 11813])
+            ("state" type
+               (:members 
+                  ( ("s_dead" variable
+                       (:constant-flag t
+                        :default-value (11849 11850)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11840 11850])
+                    ("s_start_req_or_res" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11889 11911])
+                    ("s_res_or_resp_H" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11912 11931])
+                    ("s_start_res" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11932 11947])
+                    ("s_res_H" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11948 11959])
+                    ("s_res_HT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11960 11972])
+                    ("s_res_HTT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11973 11986])
+                    ("s_res_HTTP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11987 12001])
+                    ("s_res_first_http_major" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12002 12028])
+                    ("s_res_http_major" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12029 12049])
+                    ("s_res_first_http_minor" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12050 12076])
+                    ("s_res_http_minor" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12077 12097])
+                    ("s_res_first_status_code" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12098 12125])
+                    ("s_res_status_code" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12126 12147])
+                    ("s_res_status" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12148 12164])
+                    ("s_res_line_almost_done" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12165 12192])
+                    ("s_start_req" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12193 12209])
+                    ("s_req_method" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12210 12226])
+                    ("s_req_spaces_before_url" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12227 12254])
+                    ("s_req_schema" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12255 12271])
+                    ("s_req_schema_slash" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12272 12294])
+                    ("s_req_schema_slash_slash" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12295 12323])
+                    ("s_req_server_start" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12324 12346])
+                    ("s_req_server" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12347 12363])
+                    ("s_req_server_with_at" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12364 12388])
+                    ("s_req_path" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12389 12403])
+                    ("s_req_query_string_start" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12404 12432])
+                    ("s_req_query_string" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12433 12455])
+                    ("s_req_fragment_start" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12456 12480])
+                    ("s_req_fragment" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12481 12499])
+                    ("s_req_http_start" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12500 12520])
+                    ("s_req_http_H" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12521 12537])
+                    ("s_req_http_HT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12538 12555])
+                    ("s_req_http_HTT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12556 12574])
+                    ("s_req_http_HTTP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12575 12594])
+                    ("s_req_first_http_major" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12595 12621])
+                    ("s_req_http_major" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12622 12642])
+                    ("s_req_first_http_minor" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12643 12669])
+                    ("s_req_http_minor" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12670 12690])
+                    ("s_req_line_almost_done" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12691 12718])
+                    ("s_header_field_start" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12719 12743])
+                    ("s_header_field" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12744 12762])
+                    ("s_header_value_start" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12763 12787])
+                    ("s_header_value" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12788 12806])
+                    ("s_header_value_lws" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12807 12830])
+                    ("s_header_almost_done" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12831 12856])
+                    ("s_chunk_size_start" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12857 12879])
+                    ("s_chunk_size" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12880 12896])
+                    ("s_chunk_parameters" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12897 12919])
+                    ("s_chunk_size_almost_done" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12920 12949])
+                    ("s_headers_almost_done" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12950 12975])
+                    ("s_headers_done" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12976 13190])
+                    ("s_chunk_data" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13191 13207])
+                    ("s_chunk_data_almost_done" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13208 13236])
+                    ("s_chunk_data_done" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13237 13259])
+                    ("s_body_identity" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13260 13279])
+                    ("s_body_identity_eof" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13280 13304])
+                    ("s_message_done" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13305 13323]))                  
+                :type "enum")
+                nil [11825 13324])
+            ("PARSING_HEADER" variable (:constant-flag t) nil [13335 13349])
+            ("header_states" type
+               (:members 
+                  ( ("h_general" variable
+                       (:constant-flag t
+                        :default-value (13420 13421)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13408 13421])
+                    ("h_C" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13426 13433])
+                    ("h_CO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13434 13442])
+                    ("h_CON" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13443 13453])
+                    ("h_matching_connection" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13454 13479])
+                    ("h_matching_proxy_connection" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13480 13511])
+                    ("h_matching_content_length" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13512 13541])
+                    ("h_matching_transfer_encoding" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13542 13574])
+                    ("h_matching_upgrade" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13575 13598])
+                    ("h_connection" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13599 13615])
+                    ("h_content_length" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13616 13636])
+                    ("h_transfer_encoding" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13637 13660])
+                    ("h_upgrade" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13661 13675])
+                    ("h_matching_transfer_encoding_chunked" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13676 13716])
+                    ("h_matching_connection_keep_alive" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13717 13753])
+                    ("h_matching_connection_close" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13754 13786])
+                    ("h_transfer_encoding_chunked" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13787 13818])
+                    ("h_connection_keep_alive" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13819 13846])
+                    ("h_connection_close" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13847 13869]))                  
+                :type "enum")
+                nil [13385 13870])
+            ("http_host_state" type
+               (:members 
+                  ( ("s_http_host_dead" variable
+                       (:constant-flag t
+                        :default-value (13920 13921)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13901 13921])
+                    ("s_http_userinfo_start" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13926 13951])
+                    ("s_http_userinfo" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13952 13971])
+                    ("s_http_host_start" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13972 13993])
+                    ("s_http_host_v6_start" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13994 14018])
+                    ("s_http_host" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14019 14034])
+                    ("s_http_host_v6" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14035 14053])
+                    ("s_http_host_v6_end" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14054 14076])
+                    ("s_http_host_port_start" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14077 14103])
+                    ("s_http_host_port" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14104 14122]))                  
+                :type "enum")
+                nil [13872 14123])
+            ("CR" variable (:constant-flag t) nil [14193 14195])
+            ("LF" variable (:constant-flag t) nil [14226 14228])
+            ("LOWER" variable (:constant-flag t) nil [14259 14264])
+            ("IS_ALPHA" variable (:constant-flag t) nil [14313 14321])
+            ("IS_NUM" variable (:constant-flag t) nil [14378 14384])
+            ("IS_ALPHANUM" variable (:constant-flag t) nil [14433 14444])
+            ("IS_HEX" variable (:constant-flag t) nil [14488 14494])
+            ("IS_MARK" variable (:constant-flag t) nil [14568 14575])
+            ("IS_USERINFO_CHAR" variable (:constant-flag t) nil [14730 14746])
+            ("TOKEN" variable (:constant-flag t) nil [15139 15144])
+            ("IS_URL_CHAR" variable (:constant-flag t) nil [15213 15224])
+            ("IS_HOST_CHAR" variable (:constant-flag t) nil [15356 15368])
+            ("start_state" variable (:constant-flag t) nil [15507 15518])
+            ("STRICT_CHECK" variable (:constant-flag t) nil [16135 16147])
+            ("NEW_MESSAGE" variable (:constant-flag t) nil [16163 16174])
+            ("HTTP_STRERROR_GEN" variable (:constant-flag t) nil [16266 16283])
+            ("http_strerror_tab" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("" type
+                     (:members 
+                        ( ("name" variable
+                             (:pointer 1
+                              :constant-flag t
+                              :type "char")
+                              (reparse-symbol classsubparts) [16326 16343])
+                          ("description" variable
+                             (:pointer 1
+                              :constant-flag t
+                              :type "char")
+                              (reparse-symbol classsubparts) [16346 16370]))                        
+                      :type "struct")
+                      nil nil))
+                nil [16308 16435])
+            ("http_message_needs_eof" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("parser" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("http_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16489 16515]))                  
+                :type "int")
+                nil [16462 16516])
+            ("parse_url_char" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable (:type ("state" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [17077 17090])
+                    ("ch" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17091 17105]))                  
+                :type ("state" type (:type "enum") nil nil))
+                nil [17044 19599])
+            ("http_parser_execute" function
+               (:arguments 
+                  ( ("parser" variable
+                       (:pointer 1
+                        :type ("http_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19629 19649])
+                    ("settings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("http_parser_settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19678 19715])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19744 19761])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19790 19801]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [19601 53785])
+            ("http_message_needs_eof" function
+               (:arguments 
+                  ( ("parser" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("http_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53889 53915]))                  
+                :type "int")
+                nil [53861 54389])
+            ("http_should_keep_alive" function
+               (:arguments 
+                  ( ("parser" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("http_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54420 54446]))                  
+                :type "int")
+                nil [54392 54759])
+            ("http_method_str" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("m" variable (:type ("http_method" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [54792 54811]))                  
+                :type "char")
+                nil [54762 54865])
+            ("http_parser_init" function
+               (:arguments 
+                  ( ("parser" variable
+                       (:pointer 1
+                        :type ("http_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54891 54911])
+                    ("t" variable (:type ("http_parser_type" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [54912 54936]))                  
+                :type "void")
+                nil [54868 55224])
+            ("http_errno_name" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("err" variable (:type ("http_errno" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [55255 55275]))                  
+                :type "char")
+                nil [55226 55391])
+            ("http_errno_description" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("err" variable (:type ("http_errno" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [55429 55449]))                  
+                :type "char")
+                nil [55393 55572])
+            ("http_parse_host_char" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable (:type ("http_host_state" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [55623 55646])
+                    ("ch" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [55647 55661]))                  
+                :type ("http_host_state" type (:type "enum") nil nil))
+                nil [55574 56740])
+            ("http_parse_host" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [56769 56786])
+                    ("u" variable
+                       (:pointer 1
+                        :type ("http_parser_url" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [56787 56813])
+                    ("found_at" variable (:type "int") (reparse-symbol arg-sub-list) [56814 56827]))                  
+                :type "int")
+                nil [56742 58498])
+            ("http_parser_parse_url" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [58526 58542])
+                    ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58543 58557])
+                    ("is_connect" variable (:type "int") (reparse-symbol arg-sub-list) [58558 58573])
+                    ("u" variable
+                       (:pointer 1
+                        :type ("http_parser_url" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [58596 58622]))                  
+                :type "int")
+                nil [58500 60666])
+            ("http_parser_pause" function
+               (:arguments 
+                  ( ("parser" variable
+                       (:pointer 1
+                        :type ("http_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60691 60711])
+                    ("paused" variable (:type "int") (reparse-symbol arg-sub-list) [60712 60723]))                  
+                :type "void")
+                nil [60668 61131])
+            ("http_body_is_final" function
+               (:arguments 
+                  ( ("parser" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("http_parser" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [61156 61189]))                  
+                :type "int")
+                nil [61133 61237]))          
+    :file "http_parser.c"
+    :pointmax 61238
+    :fsize 61237
+    :lastmodtime '(21730 8708 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ELEM_AT" (spp-arg-list ("a" "i" "v") 1895 . 1904) . ((semantic-list "((unsigned int) (i) < ARRAY_SIZE(a) ? (a)[(i)] : (v))" 1905 . 1958)))
+          ("PROXY_CONNECTION" . ((string "\"proxy-connection\"" 5666 . 5684)))
+          ("LOWER" (spp-arg-list ("c") 14264 . 14267) . ((semantic-list "(unsigned char)" 14279 . 14294) (semantic-list "(c | 0x20)" 14294 . 14304)))
+          ("MIN" (spp-arg-list ("a" "b") 1544 . 1549) . ((semantic-list "((a) < (b) ? (a) : (b))" 1550 . 1573)))
+          ("ARRAY_SIZE" (spp-arg-list ("a") 1620 . 1623) . ((semantic-list "(sizeof(a) / sizeof((a)[0]))" 1624 . 1652)))
+          ("BIT_AT" (spp-arg-list ("a" "i") 1691 . 1697) . ((semantic-list "(!!((unsigned int) (a)[(unsigned int) (i) >> 3] &                  \\
+   (1 << ((unsigned int) (i) & 7))))" 1749 . 1854)))
+          ("CALLBACK_NOTIFY_NOADVANCE" (spp-arg-list ("FOR") 3502 . 3507) . ((symbol "CALLBACK_NOTIFY_" 3509 . 3525) (semantic-list "(FOR, p - data)" 3525 . 3540)))
+          ("CALLBACK_DATA_NOADVANCE" (spp-arg-list ("FOR") 5118 . 5123) . ((symbol "CALLBACK_DATA_" 5162 . 5176) (semantic-list "(FOR, p - FOR##_mark, p - data)" 5176 . 5207)))
+          ("CALLBACK_NOTIFY" (spp-arg-list ("FOR") 3346 . 3351) . ((symbol "CALLBACK_NOTIFY_" 3363 . 3379) (semantic-list "(FOR, p - data + 1)" 3379 . 3398)))
+          ("CONNECTION" . ((string "\"connection\"" 5704 . 5716)))
+          ("TOKEN" (spp-arg-list ("c") 15144 . 15147) . ((semantic-list "((c == ' ') ? ' ' : tokens[(unsigned char)c])" 15159 . 15204)))
+          ("IS_ALPHANUM" (spp-arg-list ("c") 14444 . 14447) . ((semantic-list "(IS_ALPHA(c) || IS_NUM(c))" 14453 . 14479)))
+          ("STRICT_CHECK" (spp-arg-list ("cond") 16147 . 16153))
+          ("NEW_MESSAGE" (spp-arg-list nil 16174 . 16176) . ((symbol "start_state" 16177 . 16188)))
+          ("CLOSE" . ((string "\"close\"" 5901 . 5908)))
+          ("IS_USERINFO_CHAR" (spp-arg-list ("c") 14746 . 14749) . ((semantic-list "(IS_ALPHANUM(c) || IS_MARK(c) || (c) == '%' || \\
+  (c) == ';' || (c) == ':' || (c) == '&' || (c) == '=' || (c) == '+' || \\
+  (c) == '$' || (c) == ',')" 14750 . 14900)))
+          ("ULLONG_MAX" . ((semantic-list "((uint64_t) -1)" 1483 . 1498)))
+          ("CONTENT_LENGTH" . ((string "\"content-length\"" 5740 . 5756)))
+          ("IS_NUM" (spp-arg-list ("c") 14384 . 14387) . ((semantic-list "((c) >= '0' && (c) <= '9')" 14398 . 14424)))
+          ("IS_HEX" (spp-arg-list ("c") 14494 . 14497) . ((semantic-list "(IS_NUM(c) || (LOWER(c) >= 'a' && LOWER(c) <= 'f'))" 14508 . 14559)))
+          ("CALLBACK_NOTIFY_" (spp-arg-list ("FOR" "ER") 2277 . 2286) . 
+              ((DO "do" 2324 . 2326) (semantic-list "{                                                                 \\
+  assert(HTTP_PARSER_ERRNO(parser) == HPE_OK);                       \\
+                                                                     \\
+  if (settings->on_##FOR) {                                          \\
+    if (0 != settings->on_##FOR(parser)) {                           \\
+      SET_ERRNO(HPE_CB_##FOR);                                       \\
+    }                                                                \\
+                                                                     \\
+    /* We either errored above or got paused; get out */             \\
+    if (HTTP_PARSER_ERRNO(parser) != HPE_OK) {                       \\
+      return (ER);                                                   \\
+    }                                                                \\
+  }                                                                  \\
+}" 2327 . 3248) (WHILE "while" 3249 . 3254) (semantic-list "(0)" 3255 . 3258)))
+          ("MARK" (spp-arg-list ("FOR") 5284 . 5289) . 
+              ((DO "do" 5343 . 5345) (semantic-list "{                                                                 \\
+  if (!FOR##_mark) {                                                 \\
+    FOR##_mark = p;                                                  \\
+  }                                                                  \\
+}" 5346 . 5628) (WHILE "while" 5629 . 5634) (semantic-list "(0)" 5635 . 5638)))
+          ("TRANSFER_ENCODING" . ((string "\"transfer-encoding\"" 5783 . 5802)))
+          ("UPGRADE" . ((string "\"upgrade\"" 5819 . 5828)))
+          ("IS_MARK" (spp-arg-list ("c") 14575 . 14578) . ((semantic-list "((c) == '-' || (c) == '_' || (c) == '.' || \\
+  (c) == '!' || (c) == '~' || (c) == '*' || (c) == '\\'' || (c) == '(' || \\
+  (c) == ')')" 14588 . 14721)))
+          ("SET_ERRNO" (spp-arg-list ("e") 1984 . 1987) . 
+              ((DO "do" 2038 . 2040) (semantic-list "{                                                                 \\
+  parser->http_errno = (e);                                          \\
+}" 2041 . 2181) (WHILE "while" 2182 . 2187) (semantic-list "(0)" 2187 . 2190)))
+          ("CHUNKED" . ((string "\"chunked\"" 5845 . 5854)))
+          ("PARSING_HEADER" (spp-arg-list ("state") 13349 . 13356) . ((semantic-list "(state <= s_headers_done)" 13357 . 13382)))
+          ("CR" . ((string "'\\r'" 14213 . 14217)))
+          ("IS_URL_CHAR" (spp-arg-list ("c") 15224 . 15227) . ((semantic-list "(BIT_AT(normal_url_char, (unsigned char)c) || ((c) & 0x80))" 15288 . 15347)))
+          ("start_state" . ((semantic-list "(parser->type == HTTP_REQUEST ? s_start_req : s_start_res)" 15519 . 15577)))
+          ("CALLBACK_DATA_" (spp-arg-list ("FOR" "LEN" "ER") 3633 . 3647) . 
+              ((DO "do" 3682 . 3684) (semantic-list "{                                                                 \\
+  assert(HTTP_PARSER_ERRNO(parser) == HPE_OK);                       \\
+                                                                     \\
+  if (FOR##_mark) {                                                  \\
+    if (settings->on_##FOR) {                                        \\
+      if (0 != settings->on_##FOR(parser, FOR##_mark, (LEN))) {      \\
+        SET_ERRNO(HPE_CB_##FOR);                                     \\
+      }                                                              \\
+                                                                     \\
+      /* We either errored above or got paused; get out */           \\
+      if (HTTP_PARSER_ERRNO(parser) != HPE_OK) {                     \\
+        return (ER);                                                 \\
+      }                                                              \\
+    }                                                                \\
+    FOR##_mark = NULL;                                               \\
+  }                                                                  \\
+}" 3685 . 4819) (WHILE "while" 4820 . 4825) (semantic-list "(0)" 4826 . 4829)))
+          ("CALLBACK_DATA" (spp-arg-list ("FOR") 4915 . 4920) . ((symbol "CALLBACK_DATA_" 4969 . 4983) (semantic-list "(FOR, p - FOR##_mark, p - data + 1)" 4983 . 5018)))
+          ("IS_ALPHA" (spp-arg-list ("c") 14321 . 14324) . ((semantic-list "(LOWER(c) >= 'a' && LOWER(c) <= 'z')" 14333 . 14369)))
+          ("IS_HOST_CHAR" (spp-arg-list ("c") 15368 . 15371) . ((semantic-list "(IS_ALPHANUM(c) || (c) == '.' || (c) == '-' || (c) == '_')" 15431 . 15489)))
+          ("KEEP_ALIVE" . ((string "\"keep-alive\"" 5874 . 5886)))
+          ("LF" . ((string "'\\n'" 14246 . 14250)))
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!TCR!src!OSS!tungsten!qjsonrpc!qjsonrpc-1.1.0!src!http-parser!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

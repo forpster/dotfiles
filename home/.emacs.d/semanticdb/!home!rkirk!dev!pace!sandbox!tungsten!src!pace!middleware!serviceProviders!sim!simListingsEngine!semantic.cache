@@ -1,0 +1,1745 @@
+;; Object simListingsEngine/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "simListingsEngine/"
+  :tables (list 
+   (semanticdb-table "EcoAdapter.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QDebug" include (:system-flag t) nil [1 18])
+            ("QFile" include (:system-flag t) nil [19 35])
+            ("QDateTime" include (:system-flag t) nil [36 56])
+            ("QDBusConnection" include (:system-flag t) nil [57 83])
+            ("QString" include (:system-flag t) nil [84 102])
+            ("sim_simParserInterface.h" include nil nil [104 139])
+            ("EcoAdapter.h" include nil nil [140 163])
+            ("bleInterface.h" include nil nil [165 190])
+            ("EdcRequestTypes.h" include nil nil [308 336])
+            ("tipcconnection.h" include nil nil [337 364])
+            ("DEBUG_ECHO_ADAPTER_API" variable (:constant-flag t) nil [502 524])
+            ("service_manager_series_link_info_callback" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pObserver" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [589 605])
+                    ("seriesLinkId" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [606 626])
+                    ("seriesId" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [627 642])
+                    ("seasonId" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [643 658])
+                    ("seriesTitle" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [659 677])
+                    ("appData" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [678 692])
+                    ("appDataSize" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [693 712]))                  
+                :type "void")
+                nil [535 713])
+            ("service_manager_series_event_info_callback" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pObserver" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [769 785])
+                    ("seriesId" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [786 801])
+                    ("seasonId" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [802 817])
+                    ("events" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("LATENS_STB_ECO_SERIES_LINK_EVENT_DATA" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [818 874])
+                    ("appData" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [875 889])
+                    ("appDataSize" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [890 909]))                  
+                :type "void")
+                nil [714 910])
+            ("ENABLE_SERVICE_MANAGER_LOGGER" variable (:constant-flag t) nil [920 949])
+            ("LATENS_STB_THIS_PROCESS_TYPE_ID" variable (:constant-flag t) nil [958 989])
+            ("LATENS_STB_IPC_THIS_MSGID_SOURCE" variable (:constant-flag t) nil [1027 1059])
+            ("ECO_SERVICE" variable (:constant-flag t) nil [1102 1113])
+            ("ECO_IFACE" variable (:constant-flag t) nil [1185 1194])
+            ("ECO_INVALID_INDEX" variable (:constant-flag t) nil [1269 1286])
+            ("TARBALL_UNTAR_LOCATION" variable (:constant-flag t) nil [1337 1359])
+            ("TARBALL_WEBSERVER_URL_ROOT" variable (:constant-flag t) nil [1395 1421])
+            ("EcoAdapter" function
+               (:constructor-flag t
+                :parent "EcoAdapter"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1950 1966]))                  
+                :type ("EcoAdapter" type (:type "class") nil nil))
+                nil [1927 6758])
+            ("EcoAdapter" function
+               (:destructor-flag t
+                :parent "EcoAdapter"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7176 7182]))                  
+                :type "void")
+                nil [7151 7216])
+            ("Instance" function
+               (:pointer 1
+                :parent "EcoAdapter"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7764 7769]))                  
+                :type ("EcoAdapter" type (:type "class") nil nil))
+                nil [7731 7848])
+            ("setNeworkStatus" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("status" variable (:type "bool") (reparse-symbol arg-sub-list) [8356 8368]))                  
+                :type "void")
+                nil [8323 8495])
+            ("updateRequestTime" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("startTime" variable (:type "long int") (reparse-symbol arg-sub-list) [8974 8993]))                  
+                :type "int")
+                nil [8940 9208])
+            ("serviceListUpdated" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9246 9251]))                  
+                :type "void")
+                nil [9210 9287])
+            ("onSiDataReady" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9749 9754]))                  
+                :type "void")
+                nil [9718 9829])
+            ("onSiDataChanged" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10296 10301]))                  
+                :type "void")
+                nil [10263 10380])
+            ("onEpgDataReady" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("start" variable (:type "int") (reparse-symbol arg-sub-list) [11001 11011])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [11012 11020])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [11021 11030]))                  
+                :type "void")
+                nil [10969 11123])
+            ("onEpgDataChanged" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("start" variable (:type "int") (reparse-symbol arg-sub-list) [11751 11761])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [11762 11770])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [11771 11780]))                  
+                :type "void")
+                nil [11717 11877])
+            ("handleLinkageUpdate" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("broadcast_type" variable (:type ("BleInterface::BroadcastType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12631 12674])
+                    ("" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [12675 12697])
+                    ("linkage_key" variable (:type "int") (reparse-symbol arg-sub-list) [12694 12710])
+                    ("linkage_group" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12748 12775])
+                    ("linkage_type" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12776 12802]))                  
+                :type "void")
+                nil [12594 14542])
+            ("fakeLinkageUpdate" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15008 15013]))                  
+                :type "void")
+                nil [14973 15830])
+            ("notify_pipeline_start" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("uuid" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15871 15891])
+                    ("instance" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15892 15906])
+                    ("parser_band" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15907 15924])
+                    ("parser_type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15925 15952])
+                    ("mime_type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15953 15978])
+                    ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15979 15999]))                  
+                :type "void")
+                nil [15832 17160])
+            ("notify_pipeline_stop" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("uuid" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17200 17220])
+                    ("instance" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17221 17235])
+                    ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17236 17256]))                  
+                :type "void")
+                nil [17162 17847])
+            ("timeUpdateSlot" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("broadcast_type" variable (:type ("BleInterface::BroadcastType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18421 18464])
+                    ("" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [18465 18487])
+                    ("change_time" variable (:type "int") (reparse-symbol arg-sub-list) [18484 18500])
+                    ("time_now_secs" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [18501 18528])
+                    ("offset_now_mins" variable (:type "int") (reparse-symbol arg-sub-list) [18529 18549]))                  
+                :type "void")
+                nil [18389 19076])
+            ("newDataReady" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("msgType" variable (:type ("TUNGSTEN_SIMPSR_MSG_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19108 19141])
+                    ("simParserData" variable (:type ("SimParserData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19142 19170]))                  
+                :type "void")
+                nil [19078 19782])
+            ("get_carousel_info" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("carousel_info" variable
+                       (:reference 1
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("EcoCarouselInfo" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20324 20362]))                  
+                :type "bool")
+                nil [20289 23747])
+            ("getServiceInformation" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("channelId" variable (:type "int") (reparse-symbol arg-sub-list) [24000 24014])
+                    ("serviceInfo" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24015 24035]))                  
+                :type "int")
+                nil [23962 24152])
+            ("getAllChannels" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("entitledOnly" variable (:type "bool") (reparse-symbol arg-sub-list) [24185 24203])
+                    ("bIncludeBlocked" variable (:type "bool") (reparse-symbol arg-sub-list) [24204 24225])
+                    ("value" variable
+                       (:reference 1
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24226 24248])
+                    ("contentAttributeListOut" variable
+                       (:reference 1
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("ContentAttributeList" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24249 24302]))                  
+                :type "int")
+                nil [24154 24452])
+            ("getEpgData" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("contentId" variable (:type ("ContentID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24481 24520])
+                    ("startTime" variable (:type "long int") (reparse-symbol arg-sub-list) [24548 24587])
+                    ("endTime" variable (:type "int") (reparse-symbol arg-sub-list) [24615 24652])
+                    ("values" variable
+                       (:reference 1
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24680 24716])
+                    ("contentAttributeListOut" variable
+                       (:reference 1
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("ContentAttributeList" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24744 24797])
+                    ("status" variable
+                       (:reference 1
+                        :type ("SimParserStatus" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24825 24861]))                  
+                :type "int")
+                nil [24454 25016])
+            ("getExtendedEpgData" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("contentId" variable (:type ("ContentID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25053 25092])
+                    ("startTime" variable (:type "long int") (reparse-symbol arg-sub-list) [25128 25167])
+                    ("values" variable
+                       (:reference 1
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25203 25239])
+                    ("contentAttributeListOut" variable
+                       (:reference 1
+                        :type ("ContentAttributeList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25275 25328])
+                    ("status" variable
+                       (:reference 1
+                        :type ("SimParserStatus" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25364 25400]))                  
+                :type "int")
+                nil [25018 25554])
+            ("getEnhancedEpgData" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("contentId" variable (:type ("ContentID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25591 25630])
+                    ("startTime" variable (:type "long int") (reparse-symbol arg-sub-list) [25666 25705])
+                    ("values" variable
+                       (:reference 1
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25741 25777])
+                    ("contentAttributeListOut" variable
+                       (:reference 1
+                        :type ("ContentAttributeList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25813 25866])
+                    ("status" variable
+                       (:reference 1
+                        :type ("SimParserStatus" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25902 25938]))                  
+                :type "int")
+                nil [25556 26092])
+            ("getEpgRatings" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("ratingsXml" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26124 26144]))                  
+                :type "int")
+                nil [26094 26242])
+            ("getEpgSubRatings" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("subRatingsXml" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26277 26300]))                  
+                :type "int")
+                nil [26244 26404])
+            ("getEpgCategories" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("categoriesXml" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26439 26462]))                  
+                :type "int")
+                nil [26406 26566])
+            ("getEpgSubCategories" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("subCategoriesXml" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26604 26630]))                  
+                :type "int")
+                nil [26568 26740])
+            ("getEpgSubCategoriesMap" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("subCategoriesMap" variable
+                       (:reference 1
+                        :type ("QMap" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil)
+                                  ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26781 26814]))                  
+                :type "int")
+                nil [26742 26927])
+            ("getSiCategories" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("categoriesMap" variable
+                       (:reference 1
+                        :type ("QMap" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil)
+                                  ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26961 26996]))                  
+                :type "int")
+                nil [26929 27106])
+            ("getEpgInfo" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("formatType" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [27136 27152])
+                    ("version" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [27153 27175]))                  
+                :type "int")
+                nil [27108 27279])
+            ("getDeltaEpgData" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("type" variable (:type "int") (reparse-symbol arg-sub-list) [27313 27322])
+                    ("contentAttributeListOut" variable
+                       (:reference 1
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("ContentAttributeList" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27356 27409]))                  
+                :type "int")
+                nil [27281 27528])
+            ("getCarouselInfo" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("carousel_info" variable
+                       (:reference 1
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("EcoCarouselInfo" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27563 27601]))                  
+                :type "bool")
+                nil [27530 27693])
+            ("getSeriesLinkInfo" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("seriesLinkId" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [27729 27756]))                  
+                :type "int")
+                nil [27695 27914])
+            ("getSeriesEvents" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("seriesLinkId" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [27948 27975])
+                    ("seriesId" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27976 27994])
+                    ("seasonId" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27996 28014]))                  
+                :type "int")
+                nil [27916 28251])
+            ("seriesLinkSlot" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("seriesLinkId" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [28285 28312])
+                    ("seriesId" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28313 28331])
+                    ("seasonId" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28332 28350])
+                    ("seriesTitle" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28351 28372]))                  
+                :type "void")
+                nil [28253 28462])
+            ("seriesEventSlot" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("seriesLinkId" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [28497 28524])
+                    ("seriesId" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28525 28543])
+                    ("seasonId" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28544 28562])
+                    ("events" variable
+                       (:reference 1
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("EcoSeriesEventData" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28563 28597]))                  
+                :type "void")
+                nil [28464 28683])
+            ("service_manager_callback" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("pObserver" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [29292 29308])
+                    ("event" variable (:type ("TUNGSTEN_SIMPSR_CALLBACK_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29309 29345])
+                    ("data" variable (:type "long int") (reparse-symbol arg-sub-list) [29346 29360]))                  
+                :type "void")
+                nil [29250 31037])
+            ("epgRequestHandler" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("pObserver" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [31073 31089])
+                    ("request" variable
+                       (:reference 1
+                        :type ("EpgRequestData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31090 31114]))                  
+                :type "int")
+                nil [31039 31544])
+            ("service_manager_series_link_info_callback" function
+               (:arguments 
+                  ( ("pObserver" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [32406 32424])
+                    ("seriesLinkId" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32473 32494])
+                    ("seriesId" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32543 32560])
+                    ("seasonId" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32609 32626])
+                    ("seriesTitle" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32675 32695])
+                    ("appData" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [32744 32760])
+                    ("appDataSize" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32809 32829]))                  
+                :type "void")
+                nil [32358 33191])
+            ("service_manager_series_event_info_callback" function
+               (:arguments 
+                  ( ("pObserver" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [33997 34013])
+                    ("seriesId" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34063 34078])
+                    ("seasonId" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34128 34143])
+                    ("events" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("LATENS_STB_ECO_SERIES_LINK_EVENT_DATA" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34193 34249])
+                    ("appData" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [34299 34314])
+                    ("appDataSize" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34364 34383]))                  
+                :type "void")
+                nil [33948 36011])
+            ("setBackUpDbVersion" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("siVer" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36049 36060])
+                    ("epgCurVer" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36061 36076])
+                    ("epgPrevVer" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36077 36093])
+                    ("reqTime" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36094 36107]))                  
+                :type "void")
+                nil [36013 36218])
+            ("dispatchData" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("type" variable (:type ("TUNGSTEN_SIMPSR_MSG_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36250 36280])
+                    ("request" variable
+                       (:reference 1
+                        :type ("EpgRequestData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36281 36305])
+                    ("pData" variable
+                       (:pointer 1
+                        :type ("UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36306 36320])
+                    ("length" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36321 36336]))                  
+                :type "int")
+                nil [36220 38052])
+            ("printSectionDetails" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("request" variable
+                       (:reference 1
+                        :type ("EpgRequestData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38091 38115])
+                    ("length" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38116 38130]))                  
+                :type "void")
+                nil [38054 38383])
+            ("createSimParserData" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("request" variable
+                       (:reference 1
+                        :type ("EpgRequestData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38444 38468])
+                    ("pData" variable
+                       (:pointer 1
+                        :type ("UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38469 38483])
+                    ("length" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38484 38498])
+                    ("simParserData" variable
+                       (:reference 1
+                        :type ("SimParserData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38499 38528]))                  
+                :type "int")
+                nil [38408 39169])
+            ("onSiDataReady" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("request" variable
+                       (:reference 1
+                        :type ("EpgRequestData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39358 39382])
+                    ("pData" variable
+                       (:pointer 1
+                        :type ("UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39383 39397])
+                    ("length" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39398 39412]))                  
+                :type "int")
+                nil [39328 39703])
+            ("onEpgCar0DataReady" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("request" variable
+                       (:reference 1
+                        :type ("EpgRequestData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39902 39926])
+                    ("pData" variable
+                       (:pointer 1
+                        :type ("UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39927 39941])
+                    ("length" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39942 39956]))                  
+                :type "int")
+                nil [39867 40362])
+            ("onEpgDataReady" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("request" variable
+                       (:reference 1
+                        :type ("EpgRequestData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40553 40577])
+                    ("pData" variable
+                       (:pointer 1
+                        :type ("UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40578 40592])
+                    ("length" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40593 40607])
+                    ("type" variable (:type ("TUNGSTEN_SIMPSR_MSG_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40608 40638]))                  
+                :type "int")
+                nil [40522 41059])
+            ("epgRequest" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("request" variable
+                       (:reference 1
+                        :type ("EpgRequestData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41088 41112]))                  
+                :type "int")
+                nil [41061 42717])
+            ("handleTarballUpdate" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("params" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42757 42779]))                  
+                :type "void")
+                nil [42719 43222])
+            ("handleEdcResponseSignal" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("response" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43266 43290])
+                    ("requestId" variable (:type "int") (reparse-symbol arg-sub-list) [43291 43305])
+                    ("messageType" variable (:type "int") (reparse-symbol arg-sub-list) [43306 43322]))                  
+                :type ("uint" type (:type "class") nil nil))
+                nil [43224 45092])
+            ("txPartnerTarballDetailsOnStartup" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [45590 45595]))                  
+                :type "void")
+                nil [45539 47381])
+            ("handleEdcRequestStatus" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("fileUrl" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47426 47449])
+                    ("isSuccess" variable (:type "bool") (reparse-symbol arg-sub-list) [47450 47465]))                  
+                :type "void")
+                nil [47385 47593])
+            ("formSiRequestData" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("request" variable
+                       (:reference 1
+                        :type ("EpgRequestData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47631 47655]))                  
+                :type "void")
+                nil [47595 47856])
+            ("formEpg0RequestData" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("request" variable
+                       (:reference 1
+                        :type ("EpgRequestData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47896 47920]))                  
+                :type "void")
+                nil [47858 48126])
+            ("ecoReadyForData" function
+               (:parent "EcoAdapter"
+                :type "void")
+                nil [48128 49173])
+            ("redownloadCobaltData" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("" variable (:type ("BleInterface::BroadcastType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49214 49242]))                  
+                :type ("uint" type (:type "class") nil nil))
+                nil [49175 49699])
+            ("IsNetworkBleDatabaseOk" function
+               (:parent "EcoAdapter"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [49742 49747]))                  
+                :type "bool")
+                nil [49701 50364]))          
+    :file "EcoAdapter.cpp"
+    :pointmax 50366
+    :fsize 50365
+    :lastmodtime '(21453 3985 381134 542000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ENABLE_SERVICE_MANAGER_LOGGER")
+          ("ECO_IFACE" . ((string "\"/eco_adapter\"" 1200 . 1214)))
+          ("DEBUG_ECHO_ADAPTER_API" (spp-arg-list nil 524 . 526))
+          ("TARBALL_UNTAR_LOCATION" . ((string "\"/mnt/ffs/eco/UIBan/\"" 1365 . 1386)))
+          ("ECO_SERVICE" . ((string "\"org.pace.eco\"" 1117 . 1131)))
+          ("ECO_INVALID_INDEX" . ((punctuation "-" 1287 . 1288) (number "1" 1288 . 1289)))
+          ("TARBALL_WEBSERVER_URL_ROOT" . ((string "\"http://localhost/partner/\"" 1428 . 1455)))
+          ("LATENS_STB_THIS_PROCESS_TYPE_ID" . ((symbol "LATENS_STB_IPC_PROCESS_ECO" 992 . 1018)))
+          ("LATENS_STB_IPC_THIS_MSGID_SOURCE" . ((symbol "LATENS_STB_IPC_MSGID_SOURCE_ECO" 1061 . 1092)))
+          )
+
+    )
+   (semanticdb-table "EcoAdapter.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ECO_ADAPTER" variable (:constant-flag t) nil [29 40])
+            ("QObject" include (:system-flag t) nil [42 60])
+            ("QThread" include (:system-flag t) nil [61 79])
+            ("QTimer" include (:system-flag t) nil [80 97])
+            ("QMutex" include (:system-flag t) nil [98 115])
+            ("QMap" include (:system-flag t) nil [116 131])
+            ("EcoDbusAdapter_a.h" include nil nil [132 161])
+            ("CdcDbusInterface.h" include nil nil [162 191])
+            ("EcoMetaData.h" include nil nil [192 216])
+            ("bleInterface.h" include nil nil [217 242])
+            ("sim_simParserInterface.h" include nil nil [243 278])
+            ("string.h" include (:system-flag t) nil [280 299])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [300 320])
+            ("EcoCarouselInfo" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [346 353])
+                    ("EcoCarouselInfo" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("onid" variable (:type ("quint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [374 387])
+                            ("tsid" variable (:type ("quint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [408 421])
+                            ("sid" variable (:type ("quint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [442 454])
+                            ("pid" variable (:type ("quint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [475 487])
+                            ("bcastType" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [508 526]))                          
+                        :type ("EcoCarouselInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [358 815])
+                    ("networkId" function (:type ("quint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [822 893])
+                    ("transportId" function (:type ("quint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [898 962])
+                    ("serviceId" function (:type ("quint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [967 1030])
+                    ("pid" function (:type ("quint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1035 1099])
+                    ("broadcastType" function (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1104 1163])
+                    ("private" label nil (reparse-symbol classsubparts) [1165 1173])
+                    ("m_original_network_id" variable (:type ("quint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1178 1208])
+                    ("m_transport_id" variable (:type ("quint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1213 1236])
+                    ("m_service_pid" variable (:type ("quint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1241 1263])
+                    ("m_carousel_pid" variable (:type ("quint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1268 1291])
+                    ("m_broadcast_type" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1296 1321]))                  
+                :type "class")
+                nil [322 1324])
+            ("ECO_TARBALL_TYPE" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ECO_TARBALL_UI" variable
+                             (:constant-flag t
+                              :default-value (1364 1365)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1344 1365])
+                          ("ECO_TARBALL_UIBAN" variable
+                             (:constant-flag t
+                              :default-value (1390 1391)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1370 1391])
+                          ("ECO_TARBALL_NUMBER_OF" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1396 1419]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [1326 1437])
+            ("EcoAdapter" type
+               (:superclasses 
+                  ( ("QObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1522 1529])
+                    ("EcoAdapter" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1534 1548])
+                    ("Instance" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1582 1587]))                          
+                        :type ("EcoAdapter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1554 1588])
+                    ("getServiceInformation" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("channelId" variable (:type "int") (reparse-symbol arg-sub-list) [1762 1776])
+                            ("serviceInfo" variable
+                               (:reference 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1777 1797]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1735 1798])
+                    ("getAllChannels" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("entitledOnly" variable (:type "bool") (reparse-symbol arg-sub-list) [1823 1841])
+                            ("bIncludeBlocked" variable (:type "bool") (reparse-symbol arg-sub-list) [1842 1863])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("QString" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1864 1886])
+                            ("contentAttributeListOut" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("ContentAttributeList" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1887 1940]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1803 1941])
+                    ("getEpgData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("contentId" variable (:type ("ContentID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1962 2001])
+                            ("startTime" variable (:type "long int") (reparse-symbol arg-sub-list) [2022 2061])
+                            ("endTime" variable (:type "int") (reparse-symbol arg-sub-list) [2082 2119])
+                            ("values" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("QString" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2140 2176])
+                            ("contentAttributeListOut" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("ContentAttributeList" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2197 2250])
+                            ("status" variable
+                               (:reference 1
+                                :type ("SimParserStatus" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2271 2307]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1946 2308])
+                    ("getExtendedEpgData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("contentId" variable (:type ("ContentID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2337 2376])
+                            ("startTime" variable (:type "long int") (reparse-symbol arg-sub-list) [2405 2444])
+                            ("values" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("QString" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2473 2509])
+                            ("contentAttributeListOut" variable
+                               (:reference 1
+                                :type ("ContentAttributeList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2538 2591])
+                            ("status" variable
+                               (:reference 1
+                                :type ("SimParserStatus" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2620 2656]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2313 2657])
+                    ("getEnhancedEpgData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("contentId" variable (:type ("ContentID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2686 2725])
+                            ("startTime" variable (:type "long int") (reparse-symbol arg-sub-list) [2754 2793])
+                            ("values" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("QString" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2822 2858])
+                            ("contentAttributeListOut" variable
+                               (:reference 1
+                                :type ("ContentAttributeList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2887 2940])
+                            ("status" variable
+                               (:reference 1
+                                :type ("SimParserStatus" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2969 3005]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2662 3006])
+                    ("getEpgRatings" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ratingsXml" variable
+                               (:reference 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3030 3050]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3011 3051])
+                    ("getEpgSubRatings" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("subRatingsXml" variable
+                               (:reference 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3078 3101]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3056 3102])
+                    ("getEpgCategories" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("categoriesXml" variable
+                               (:reference 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3129 3152]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3107 3153])
+                    ("getEpgSubCategories" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("subCategoriesXml" variable
+                               (:reference 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3183 3209]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3158 3210])
+                    ("getEpgSubCategoriesMap" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("subCategoriesMap" variable
+                               (:reference 1
+                                :type ("QMap" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil)
+                                          ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3242 3275]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3215 3276])
+                    ("getSiCategories" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("categoriesMap" variable
+                               (:reference 1
+                                :type ("QMap" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil)
+                                          ("QString" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3302 3337]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3281 3338])
+                    ("getEpgInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("formatType" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3359 3375])
+                            ("version" variable
+                               (:reference 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [3376 3398]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3343 3399])
+                    ("getDeltaEpgData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("type" variable (:type "int") (reparse-symbol arg-sub-list) [3425 3459])
+                            ("contentAttributeListOut" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("ContentAttributeList" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3486 3539]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3404 3540])
+                    ("getCarouselInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("carousel_info" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("EcoCarouselInfo" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3566 3604]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3545 3605])
+                    ("setNeworkStatus" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("status" variable (:type "bool") (reparse-symbol arg-sub-list) [3631 3643]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3610 3644])
+                    ("getSeriesLinkInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("seriesLinkId" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3673 3700]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3650 3701])
+                    ("getSeriesEvents" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("seriesLinkId" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3727 3754])
+                            ("seriesId" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3755 3773])
+                            ("seasonId" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3774 3792]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3706 3793])
+                    ("simCollectorDataCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("pObserver" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [3834 3850])
+                            ("msgType" variable (:type ("TUNGSTEN_SIMPSR_MSG_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3851 3884])
+                            ("simParserData" variable (:type ("SimParserData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3885 3913]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3798 3914])
+                    ("epgRequestHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("pObserver" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [3948 3964])
+                            ("request" variable
+                               (:reference 1
+                                :type ("EpgRequestData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3965 3989]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3919 3990])
+                    ("service_manager_callback" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("pObserver" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [4032 4048])
+                            ("event" variable (:type ("TUNGSTEN_SIMPSR_CALLBACK_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4049 4085])
+                            ("data" variable (:type "long int") (reparse-symbol arg-sub-list) [4086 4100]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3995 4101])
+                    ("setBackUpDbVersion" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("siVer" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4130 4141])
+                            ("epgCurVer" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4142 4157])
+                            ("epgPrevVer" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4158 4174])
+                            ("reqTime" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4175 4188]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4106 4189])
+                    ("updateRequestTime" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("startTime" variable (:type "long int") (reparse-symbol arg-sub-list) [4217 4236]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4194 4237])
+                    ("serviceListUpdated" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4267 4272]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4243 4273])
+                    ("handleTarballUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4304 4326]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4278 4327])
+                    ("siDataReadySignal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4367 4372]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4344 4373])
+                    ("siDataChangedSignal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4403 4408]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4378 4409])
+                    ("epgDataReadySignal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("start" variable (:type "int") (reparse-symbol arg-sub-list) [4439 4449])
+                            ("end" variable (:type "int") (reparse-symbol arg-sub-list) [4450 4458])
+                            ("type" variable (:type "int") (reparse-symbol arg-sub-list) [4459 4468]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4415 4469])
+                    ("epgDataChangedSignal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("start" variable (:type "int") (reparse-symbol arg-sub-list) [4500 4510])
+                            ("end" variable (:type "int") (reparse-symbol arg-sub-list) [4511 4519])
+                            ("type" variable (:type "int") (reparse-symbol arg-sub-list) [4520 4529]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4474 4530])
+                    ("uiDownloadSignal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("version" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4558 4574])
+                            ("location" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4575 4592]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4536 4593])
+                    ("uiBanDownloadSignal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("version" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4623 4639])
+                            ("location" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4640 4657]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4598 4658])
+                    ("errorSignal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4681 4686]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4664 4687])
+                    ("simCarouselUpdateSignal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4722 4727]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4693 4728])
+                    ("seriesLinkSignal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("seriesLinkId" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [4755 4782])
+                            ("seriesId" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4783 4801])
+                            ("seasonId" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4802 4820])
+                            ("seriesTitle" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4821 4842]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4733 4843])
+                    ("seriesEventSignal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("seriesLinkId" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [4871 4898])
+                            ("seriesId" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4899 4917])
+                            ("seasonId" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4918 4936])
+                            ("events" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("EcoSeriesEventData" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4937 4971]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4848 4972])
+                    ("PartnerTarballProcessed" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("timeStamp" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5003 5021])
+                            ("location" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5022 5039]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4974 5040])
+                    ("public" label nil (reparse-symbol classsubparts) [5045 5059])
+                    ("handleEdcResponseSignal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("response" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5094 5118])
+                            ("requestId" variable (:type "int") (reparse-symbol arg-sub-list) [5119 5133])
+                            ("messageType" variable (:type "int") (reparse-symbol arg-sub-list) [5134 5150]))                          
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5064 5151])
+                    ("redownloadCobaltData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("BleInterface::BroadcastType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5183 5211]))                          
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5156 5212])
+                    ("handleEdcRequestStatus" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fileUrl" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5247 5270])
+                            ("isSuccess" variable (:type "bool") (reparse-symbol arg-sub-list) [5271 5286]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5217 5287])
+                    ("onSiDataReady" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5377 5382]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5358 5383])
+                    ("onSiDataChanged" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5409 5414]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5388 5415])
+                    ("onEpgDataReady" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("start" variable (:type "int") (reparse-symbol arg-sub-list) [5441 5451])
+                            ("end" variable (:type "int") (reparse-symbol arg-sub-list) [5452 5460])
+                            ("type" variable (:type "int") (reparse-symbol arg-sub-list) [5461 5470]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5421 5471])
+                    ("onEpgDataChanged" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("start" variable (:type "int") (reparse-symbol arg-sub-list) [5498 5508])
+                            ("end" variable (:type "int") (reparse-symbol arg-sub-list) [5509 5517])
+                            ("type" variable (:type "int") (reparse-symbol arg-sub-list) [5518 5527]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5476 5528])
+                    ("seriesLinkSlot" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("seriesLinkId" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [5554 5581])
+                            ("seriesId" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5582 5600])
+                            ("seasonId" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5601 5619])
+                            ("seriesTitle" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5620 5641]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5534 5642])
+                    ("seriesEventSlot" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("seriesLinkId" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [5668 5695])
+                            ("seriesId" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5696 5714])
+                            ("seasonId" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5715 5733])
+                            ("events" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("EcoSeriesEventData" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5734 5768]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5647 5769])
+                    ("handleLinkageUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("broadcast_type" variable (:type ("BleInterface::BroadcastType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5828 5871])
+                            ("" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [5872 5894])
+                            ("linkage_key" variable (:type "int") (reparse-symbol arg-sub-list) [5891 5907])
+                            ("linkage_group" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5937 5964])
+                            ("linkage_type" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5965 5991]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5803 5992])
+                    ("notify_pipeline_start" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("uuid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6029 6049])
+                            ("instance" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6050 6064])
+                            ("parser_band" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6065 6082])
+                            ("parser_type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6083 6110])
+                            ("mime_type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6142 6167])
+                            ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6168 6188]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6002 6189])
+                    ("notify_pipeline_stop" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("uuid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6225 6245])
+                            ("instance" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6246 6260])
+                            ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6261 6281]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6199 6282])
+                    ("timeUpdateSlot" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("broadcast_type" variable (:type ("BleInterface::BroadcastType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6312 6355])
+                            ("" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [6356 6378])
+                            ("change_time" variable (:type "int") (reparse-symbol arg-sub-list) [6375 6391])
+                            ("time_now_secs" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6392 6419])
+                            ("offset_now_mins" variable (:type "int") (reparse-symbol arg-sub-list) [6420 6440]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6292 6441])
+                    ("newDataReady" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msgType" variable (:type ("TUNGSTEN_SIMPSR_MSG_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6465 6498])
+                            ("simParserData" variable (:type ("SimParserData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6499 6527]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6447 6528])
+                    ("ecoReadyForData" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6535 6558])
+                    ("txPartnerTarballDetailsOnStartup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6603 6608]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6564 6609])
+                    ("dispatchData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("type" variable (:type ("TUNGSTEN_SIMPSR_MSG_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6633 6663])
+                            ("request" variable
+                               (:reference 1
+                                :type ("EpgRequestData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6664 6688])
+                            ("pData" variable
+                               (:pointer 1
+                                :type ("UINT8" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6689 6703])
+                            ("length" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6704 6719]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6615 6720])
+                    ("printSectionDetails" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :type ("EpgRequestData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6750 6774])
+                            ("length" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6775 6789]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6725 6790])
+                    ("createSimParserData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :type ("EpgRequestData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6819 6843])
+                            ("pData" variable
+                               (:pointer 1
+                                :type ("UINT8" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6844 6858])
+                            ("length" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6859 6873])
+                            ("simParserData" variable
+                               (:reference 1
+                                :type ("SimParserData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6874 6903]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6795 6904])
+                    ("onSiDataReady" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :type ("EpgRequestData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6927 6951])
+                            ("pData" variable
+                               (:pointer 1
+                                :type ("UINT8" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6952 6966])
+                            ("length" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6967 6981]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6909 6982])
+                    ("onEpgCar0DataReady" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :type ("EpgRequestData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7010 7034])
+                            ("pData" variable
+                               (:pointer 1
+                                :type ("UINT8" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7035 7049])
+                            ("length" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7050 7064]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6987 7065])
+                    ("onEpgDataReady" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :type ("EpgRequestData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7089 7113])
+                            ("pData" variable
+                               (:pointer 1
+                                :type ("UINT8" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7114 7128])
+                            ("length" variable (:type ("UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7129 7143])
+                            ("type" variable (:type ("TUNGSTEN_SIMPSR_MSG_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7144 7174]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7070 7175])
+                    ("epgRequest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :type ("EpgRequestData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7195 7219]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7180 7220])
+                    ("formSiRequestData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :type ("EpgRequestData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7249 7273]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7225 7274])
+                    ("formEpg0RequestData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :type ("EpgRequestData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7305 7329]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7279 7330])
+                    ("private" label nil (reparse-symbol classsubparts) [7339 7347])
+                    ("EcoAdapter" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("parent" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7363 7379]))                          
+                        :type ("EcoAdapter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7352 7382])
+                    ("init" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7429 7434]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7419 7435])
+                    ("finish" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7452 7457]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7440 7458])
+                    ("dispatch" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pstdMessage" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [7480 7499]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7464 7500])
+                    ("dispatchMain" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("subClass" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [7576 7600])
+                            ("pData" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [7601 7623])
+                            ("length" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7624 7645]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7558 7646])
+                    ("sendAck" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ackType" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7730 7752])
+                            ("pData" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [7753 7775])
+                            ("length" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7776 7797]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7717 7798])
+                    ("getCarouselIndex" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("uri" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7894 7906]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7872 7907])
+                    ("get_carousel_info" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("carousel_info" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("EcoCarouselInfo" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7988 8026]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7965 8027])
+                    ("set_tarball_version" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("type" variable (:type ("ECO_TARBALL_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8160 8182])
+                            ("version" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8183 8199]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8135 8200])
+                    ("emitNewDataReady" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msgType" variable (:type ("TUNGSTEN_SIMPSR_MSG_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8228 8261])
+                            ("simParserData" variable (:type ("SimParserData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8262 8290]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8206 8291])
+                    ("fakeLinkageUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8407 8412]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8384 8413])
+                    ("IsNetworkBleDatabaseOk" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8452 8457]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8423 8458])
+                    ("m_simParser" variable
+                       (:pointer 1
+                        :type ("TSimParserInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8522 8562])
+                    ("m_AdapterMutex" variable (:type ("QMutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8668 8711])
+                    ("m_AdapterThread" variable (:type ("QThread" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8753 8797])
+                    ("m_dbus_adapter" variable (:type ("EcoDbusAdapter_a" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8823 8866])
+                    ("m_monitor_session" variable (:type "int") (reparse-symbol classsubparts) [8928 8974])
+                    ("m_monitor_active" variable (:type "bool") (reparse-symbol classsubparts) [9040 9085])
+                    ("m_cdcConfigured" variable (:type "bool") (reparse-symbol classsubparts) [9090 9134])
+                    ("m_simParserRequestTime" variable (:type "long int") (reparse-symbol classsubparts) [9139 9190])
+                    ("m_carousel_list" variable (:type ("QList" type
+                         (:template-specifier 
+                            ( ("EcoCarouselInfo" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [9248 9292])
+                    ("m_TarBallUIVersion" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9349 9396])
+                    ("m_TarBallMWVersion" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9401 9448])
+                    ("m_TarBallTimeStamp" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9453 9500])
+                    ("m_BanTarBallVesion" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9505 9552])
+                    ("m_source_type" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9596 9638])
+                    ("m_uri" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9643 9677])
+                    ("m_parser_band" variable (:type "int") (reparse-symbol classsubparts) [9682 9724])
+                    ("m_CdcSignalTimer" variable (:type ("QTimer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9826 9871])
+                    ("m_txPartnerTarballDetailsTimer" variable (:type ("QTimer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9980 10039])
+                    ("m_TarballProcessedCount" variable (:type "int") (reparse-symbol classsubparts) [10044 10096])
+                    ("m_sent_version_info" variable (:type "bool") (reparse-symbol classsubparts) [10165 10213])
+                    ("m_serviceListUpdated" variable (:type "bool") (reparse-symbol classsubparts) [10218 10267])
+                    ("m_got_time" variable (:type "bool") (reparse-symbol classsubparts) [10328 10367])
+                    ("mCdcInterface" variable
+                       (:pointer 1
+                        :type ("OrgPaceCdcInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10372 10414])
+                    ("m_epgRequestDataMap" variable (:type ("QMap" type
+                         (:template-specifier 
+                            ( ("UINT32" type nil nil nil)
+                              ("EpgRequestData" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10419 10468])
+                    ("m_initialCdcIngest" variable (:type "bool") (reparse-symbol classsubparts) [10474 10521]))                  
+                :type "class")
+                nil [1472 10524]))          
+    :file "EcoAdapter.h"
+    :pointmax 10552
+    :fsize 10551
+    :lastmodtime '(21453 3985 383134 527000)
+    :unmatched-syntax '((number 7379 . 7380) (punctuation 7378 . 7379) (punctuation 4338 . 4339) (symbol 4331 . 4338) (symbol 1510 . 1518) (punctuation 815 . 816))
+    :lexical-table 
+        '(("ECO_ADAPTER")
+          )
+
+    )
+   (semanticdb-table "EcoDbusAdapter_a.h"
+    :file "EcoDbusAdapter_a.h"
+    :fsize 1700
+    :lastmodtime '(21453 6790 656054 352000)
+    )
+   (semanticdb-table "CdcDbusInterface.h"
+    :file "CdcDbusInterface.h"
+    :fsize 2531
+    :lastmodtime '(21453 11595 706338 936000)
+    )
+   (semanticdb-table "EcoMetaData.h"
+    :file "EcoMetaData.h"
+    :fsize 4295
+    :lastmodtime '(21453 3985 384134 522000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!serviceProviders!sim!simListingsEngine!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

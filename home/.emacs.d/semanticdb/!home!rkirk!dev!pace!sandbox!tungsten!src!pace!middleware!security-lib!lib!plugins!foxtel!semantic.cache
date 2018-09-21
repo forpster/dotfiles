@@ -1,0 +1,3168 @@
+;; Object foxtel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "foxtel/"
+  :tables (list 
+   (semanticdb-table "foxtelinitialiser.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("fstream" include (:system-flag t) nil [1 19])
+            ("cstring" include (:system-flag t) nil [20 38])
+            ("ctime" include (:system-flag t) nil [39 55])
+            ("foxtelinitialiser.h" include nil nil [156 186])
+            ("foxtelutilities.h" include nil nil [187 215])
+            ("foxtelfsdheader.h" include nil nil [216 244])
+            ("foxtelfsdsecurecontent.h" include nil nil [245 280])
+            ("foxtelfsdsecuredinfo.h" include nil nil [281 314])
+            ("foxtelhdrheader.h" include nil nil [315 343])
+            ("foxtelhdrsecurecontent.h" include nil nil [344 379])
+            ("foxtelhdrsecuredinfo.h" include nil nil [380 413])
+            ("foxtelcdeheader.h" include nil nil [414 442])
+            ("foxtelcdesecurecontent.h" include nil nil [443 478])
+            ("foxtelcdesecuredinfo.h" include nil nil [479 512])
+            ("foxtelsemaphore.h" include nil nil [513 541])
+            ("securecontentfactory.h" include nil nil [542 575])
+            ("initialisationprovider.h" include nil nil [576 611])
+            ("hyp_defs.h" include nil nil [612 633])
+            ("utilities.h" include nil nil [634 656])
+            ("namedsemaphore.h" include nil nil [657 684])
+            ("nexus_platform.h" include nil nil [686 713])
+            ("nexus_security_datatypes.h" include nil nil [714 751])
+            ("tlogger.h" include nil nil [753 773])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [774 798])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [799 846])
+            ("fsd.h" include nil nil [848 864])
+            ("PRIORITY" variable (:constant-flag t) nil [1048 1056])
+            ("FOXTEL_MAX_MEMORY" variable (:constant-flag t) nil [1113 1130])
+            ("FoxtelInitialiser::m_registerInstance" variable (:type ("FoxtelInitialiser" type (:type "class") nil nil)) nil [1210 1266])
+            ("FoxtelInitialiser" function
+               (:constructor-flag t
+                :parent "FoxtelInitialiser"
+                :type ("FoxtelInitialiser" type (:type "class") nil nil))
+                nil [1268 1378])
+            ("FoxtelInitialiser" function
+               (:destructor-flag t
+                :parent "FoxtelInitialiser"
+                :type "void")
+                nil [1380 1517])
+            ("initialise" function
+               (:parent "FoxtelInitialiser"
+                :type "bool")
+                nil [1706 2587])
+            ("deinitialise" function
+               (:parent "FoxtelInitialiser"
+                :type "void")
+                nil [2637 4755])
+            ("initComponents" function
+               (:parent "FoxtelInitialiser"
+                :type "bool")
+                nil [4860 4994])
+            ("registerIdentifiers" function
+               (:parent "FoxtelInitialiser"
+                :type "bool")
+                nil [5157 6169])
+            ("registerSecureContentTypes" function
+               (:parent "FoxtelInitialiser"
+                :type "bool")
+                nil [6338 7200])
+            ("registerSecuredInfo" function
+               (:parent "FoxtelInitialiser"
+                :type "bool")
+                nil [7370 8178])
+            ("loadRsaBlobFile" function
+               (:parent "FoxtelInitialiser"
+                :type "bool")
+                nil [8312 9722])
+            ("initFsl" function
+               (:parent "FoxtelInitialiser"
+                :type "bool")
+                nil [9845 11761])
+            ("initGlib" function
+               (:parent "FoxtelInitialiser"
+                :type "void")
+                nil [11802 12096]))          
+    :file "foxtelinitialiser.cpp"
+    :pointmax 12097
+    :fsize 12096
+    :lastmodtime '(21843 1391 752814 534000)
+    :unmatched-syntax '((symbol 935 . 944) (symbol 932 . 934) (symbol 927 . 931) (symbol 904 . 926) (symbol 898 . 903) (punctuation 897 . 898) (string 825 . 844))
+    :lexical-table 
+        '(("FOXTEL_MAX_MEMORY" . ((number "0x01000000" 1131 . 1141)))
+          ("PRIORITY" . ((number "0" 1057 . 1058)))
+          )
+
+    )
+   (semanticdb-table "foxtelinitialiser.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("FOXTEL_INITIALISER_H__" variable (:constant-flag t) nil [40 62])
+            ("cstddef" include (:system-flag t) nil [64 82])
+            ("iinitialiser.h" include nil nil [83 108])
+            ("stbdetails.h" include nil nil [109 132])
+            ("fsl.h" include nil nil [133 149])
+            ("FoxtelInitialiser" type
+               (:superclasses 
+                  ( ("IInitialiser" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [199 206])
+                    ("FoxtelInitialiser" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [210 239])
+                    ("initialise" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [244 270])
+                    ("deinitialise" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [274 302])
+                    ("private" label nil (reparse-symbol classsubparts) [304 312])
+                    ("FoxtelInitialiser" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [316 336])
+                    ("FoxtelInitialiser" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelInitialiser" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [392 417]))                          
+                        :type ("FoxtelInitialiser" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [374 418])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelInitialiser" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [451 476]))                          
+                        :type ("FoxtelInitialiser" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [422 477])
+                    ("initComponents" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [482 504])
+                    ("registerIdentifiers" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [508 535])
+                    ("registerSecureContentTypes" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [539 573])
+                    ("registerSecuredInfo" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [577 604])
+                    ("loadRsaBlobFile" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [608 631])
+                    ("initFsl" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [635 650])
+                    ("initGlib" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [654 670])
+                    ("m_registerInstance" variable
+                       (:typemodifiers ("static")
+                        :type ("FoxtelInitialiser" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [675 719])
+                    ("m_rsaBuffer" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [790 810])
+                    ("m_rsaBufferSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [886 909])
+                    ("m_stbDetails" variable (:type ("StbDetails" type (:type "class") nil nil)) (reparse-symbol classsubparts) [961 985]))                  
+                :type "class")
+                nil [151 1051]))          
+    :file "foxtelinitialiser.h"
+    :pointmax 1086
+    :fsize 1085
+    :lastmodtime '(21843 1391 459816 42000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FOXTEL_INITIALISER_H__")
+          )
+
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("SRCS" variable (:default-value ("plugins/foxtel/foxtelfsdheader.cpp" "plugins/foxtel/foxtelfsdsecurecontent.cpp" "plugins/foxtel/foxtelinitialiser.cpp" "plugins/foxtel/foxtelhdrheader.cpp" "plugins/foxtel/foxtelhdrsecurecontent.cpp" "plugins/foxtel/foxtelcdeheader.cpp" "plugins/foxtel/foxtelcdesecurecontent.cpp" "plugins/foxtel/foxtelbasesecurecontent.cpp" "plugins/foxtel/foxtelbaseheader.cpp" "plugins/foxtel/foxtelutilities.cpp" "plugins/foxtel/stbdetails.cpp" "plugins/foxtel/foxtelcdesecuredinfo.cpp" "plugins/foxtel/foxtelhdrsecuredinfo.cpp" "plugins/foxtel/foxtelfsdsecuredinfo.cpp")) nil [109 682])
+            ("INCPATH" variable (:default-value ("-Iplugins/foxtel/fsl/include" "-Iplugins/foxtel/fsd/include" "-Iplugins/foxtel/interface")) nil [683 778])
+            ("ARCHIVE_LIBS" variable (:default-value ("plugins/foxtel/fsd/lib/nx/fsd_release.a" "plugins/foxtel/fsl/lib/nx/fsl_release.a")) nil [778 874])
+            ("EXPORT_HEADERS" variable (:default-value ("plugins/foxtel/interface/foxtelsecuredinfo_public.h")) nil [874 944]))          
+    :file "Makefile"
+    :pointmax 950
+    :fsize 949
+    :lastmodtime '(21843 1391 752814 534000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "foxtelhdrheader.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("FOXTEL_HDR_HEADER_H__" variable (:constant-flag t) nil [39 60])
+            ("string" include (:system-flag t) nil [62 79])
+            ("iidentifier.h" include nil nil [80 104])
+            ("foxtelbaseheader.h" include nil nil [105 134])
+            ("stbdetails.h" include nil nil [135 158])
+            ("FHDR_OFFSET_HEADER_LENGTH" variable (:constant-flag t) nil [168 193])
+            ("FHDR_OFFSET_IDENTIFIER" variable (:constant-flag t) nil [238 260])
+            ("FHDR_OFFSET_FORMAT_VERSION" variable (:constant-flag t) nil [313 339])
+            ("FHDR_OFFSET_SOFTWARE_VERSION" variable (:constant-flag t) nil [384 412])
+            ("FHDR_OFFSET_MANUF_LOOP_LENGTH" variable (:constant-flag t) nil [457 486])
+            ("FHDR_SIZE_HEADER_LENGTH" variable (:constant-flag t) nil [539 562])
+            ("FHDR_SIZE_IDENTIFIER" variable (:constant-flag t) nil [613 633])
+            ("FHDR_SIZE_SOFTWARE_VERSION" variable (:constant-flag t) nil [685 711])
+            ("FHDR_SIZE_PADDING_LENGTH" variable (:constant-flag t) nil [762 786])
+            ("FHDR_FORMAT_VERSION" variable (:constant-flag t) nil [842 861])
+            ("FoxtelHdrHeader" type
+               (:superclasses 
+                  ( ("IIdentifier" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("FoxtelBaseHeader" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1007 1014])
+                    ("FoxtelHdrHeader" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("stbDetails" variable
+                               (:reference 1
+                                :type ("StbDetails" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1034 1057]))                          
+                        :type ("FoxtelHdrHeader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1018 1058])
+                    ("FoxtelHdrHeader" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1062 1089])
+                    ("getIdentifierType" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1094 1140])
+                    ("identifyContent" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1173 1194])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [1195 1218])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [1219 1240]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1144 1247])
+                    ("clone" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::auto_ptr" type
+                             (:template-specifier 
+                                ( ("IIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1251 1300])
+                    ("parseAndValidateHeader" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1333 1354])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [1355 1378])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [1379 1400]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1305 1401])
+                    ("private" label nil (reparse-symbol classsubparts) [1403 1411])
+                    ("FoxtelHdrHeader" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelHdrHeader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1464 1487]))                          
+                        :type ("FoxtelHdrHeader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1448 1488])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelHdrHeader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1519 1542]))                          
+                        :type ("FoxtelHdrHeader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1492 1543])
+                    ("validateHeaderLength" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1574 1595])
+                            ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1596 1610])
+                            ("streamLength" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1611 1631]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1548 1632])
+                    ("m_identifier" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1637 1675]))                  
+                :type "class")
+                nil [937 1721]))          
+    :file "foxtelhdrheader.h"
+    :pointmax 1755
+    :fsize 1754
+    :lastmodtime '(21843 1391 957813 480000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FHDR_OFFSET_HEADER_LENGTH" . ((number "0" 194 . 195)))
+          ("FHDR_OFFSET_SOFTWARE_VERSION" . ((number "10" 413 . 415)))
+          ("FHDR_OFFSET_FORMAT_VERSION" . ((number "9" 340 . 341)))
+          ("FHDR_SIZE_IDENTIFIER" . ((number "7" 634 . 635)))
+          ("FHDR_OFFSET_MANUF_LOOP_LENGTH" . ((number "14" 487 . 489)))
+          ("FHDR_OFFSET_IDENTIFIER" . ((number "2" 261 . 262)))
+          ("FHDR_SIZE_HEADER_LENGTH" . ((number "2" 563 . 564)))
+          ("FOXTEL_HDR_HEADER_H__")
+          ("FHDR_SIZE_PADDING_LENGTH" . ((number "1" 787 . 788)))
+          ("FHDR_SIZE_SOFTWARE_VERSION" . ((number "4" 712 . 713)))
+          ("FHDR_FORMAT_VERSION" . ((number "2" 862 . 863)))
+          )
+
+    )
+   (semanticdb-table "foxtelhdrheader.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cstdio" include (:system-flag t) nil [1 18])
+            ("foxtelhdrheader.h" include nil nil [19 47])
+            ("foxtelutilities.h" include nil nil [48 76])
+            ("tlogger.h" include nil nil [78 98])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [99 123])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [124 171])
+            ("m_identifier" function
+               (:prototype-flag t
+                :parent "FoxtelHdrHeader"
+                :constant-flag t
+                :type ("std::string" type (:type "class") nil nil))
+                nil [199 258])
+            ("FoxtelHdrHeader" function
+               (:constructor-flag t
+                :parent "FoxtelHdrHeader"
+                :arguments 
+                  ( ("stbDetails" variable
+                       (:reference 1
+                        :type ("StbDetails" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [293 316]))                  
+                :type ("FoxtelHdrHeader" type (:type "class") nil nil))
+                nil [260 394])
+            ("FoxtelHdrHeader" function
+               (:destructor-flag t
+                :parent "FoxtelHdrHeader"
+                :type "void")
+                nil [396 436])
+            ("getIdentifierType" function
+               (:parent "FoxtelHdrHeader"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [603 685])
+            ("identifyContent" function
+               (:parent "FoxtelHdrHeader"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1130 1151])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1152 1175])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1176 1197]))                  
+                :type "bool")
+                nil [1092 2292])
+            ("clone" function
+               (:parent "FoxtelHdrHeader"
+                :type ("std::auto_ptr" type
+                     (:template-specifier 
+                        ( ("IIdentifier" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2400 2549])
+            ("parseAndValidateHeader" function
+               (:parent "FoxtelHdrHeader"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3002 3023])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [3024 3047])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [3048 3069]))                  
+                :type "bool")
+                nil [2957 4223])
+            ("validateHeaderLength" function
+               (:parent "FoxtelHdrHeader"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4680 4701])
+                    ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4702 4716])
+                    ("streamLength" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4717 4737]))                  
+                :type "bool")
+                nil [4637 5505]))          
+    :file "foxtelhdrheader.cpp"
+    :pointmax 5506
+    :fsize 5505
+    :lastmodtime '(21843 1391 460816 37000)
+    :unmatched-syntax '((string 247 . 256) (string 150 . 169))
+    )
+   (semanticdb-table "foxtelcdeheader.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("foxtelcdeheader.h" include nil nil [1 29])
+            ("foxtelutilities.h" include nil nil [30 58])
+            ("fsl.h" include nil nil [59 75])
+            ("tlogger.h" include nil nil [77 97])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [98 122])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [123 170])
+            ("m_identifier" function
+               (:prototype-flag t
+                :parent "FoxtelCdeHeader"
+                :constant-flag t
+                :type ("std::string" type (:type "class") nil nil))
+                nil [198 257])
+            ("FoxtelCdeHeader" function
+               (:constructor-flag t
+                :parent "FoxtelCdeHeader"
+                :arguments 
+                  ( ("stbDetails" variable
+                       (:reference 1
+                        :type ("StbDetails" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [292 315]))                  
+                :type ("FoxtelCdeHeader" type (:type "class") nil nil))
+                nil [259 393])
+            ("FoxtelCdeHeader" function
+               (:destructor-flag t
+                :parent "FoxtelCdeHeader"
+                :type "void")
+                nil [395 435])
+            ("getIdentifierType" function
+               (:parent "FoxtelCdeHeader"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [602 684])
+            ("identifyContent" function
+               (:parent "FoxtelCdeHeader"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1129 1150])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1151 1174])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1175 1196]))                  
+                :type "bool")
+                nil [1091 2291])
+            ("clone" function
+               (:parent "FoxtelCdeHeader"
+                :type ("std::auto_ptr" type
+                     (:template-specifier 
+                        ( ("IIdentifier" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2399 2548]))          
+    :file "foxtelcdeheader.cpp"
+    :pointmax 2549
+    :fsize 2548
+    :lastmodtime '(21843 1391 961813 459000)
+    :unmatched-syntax '((string 246 . 255) (string 149 . 168))
+    )
+   (semanticdb-table "foxtelcdeheader.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("FOXTEL_CDE_HEADER_H__" variable (:constant-flag t) nil [39 60])
+            ("string" include (:system-flag t) nil [62 79])
+            ("iidentifier.h" include nil nil [80 104])
+            ("foxtelbaseheader.h" include nil nil [105 134])
+            ("stbdetails.h" include nil nil [135 158])
+            ("FCDE_OFFSET_IDENTIFIER" variable (:constant-flag t) nil [168 190])
+            ("FCDE_SIZE_IDENTIFIER" variable (:constant-flag t) nil [235 255])
+            ("FoxtelCdeHeader" type
+               (:superclasses 
+                  ( ("IIdentifier" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("FoxtelBaseHeader" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [402 409])
+                    ("FoxtelCdeHeader" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("stbDetails" variable
+                               (:reference 1
+                                :type ("StbDetails" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [429 452]))                          
+                        :type ("FoxtelCdeHeader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [413 453])
+                    ("FoxtelCdeHeader" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [457 484])
+                    ("getIdentifierType" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [489 535])
+                    ("identifyContent" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [568 589])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [590 613])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [614 635]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [539 642])
+                    ("clone" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::auto_ptr" type
+                             (:template-specifier 
+                                ( ("IIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [646 695])
+                    ("private" label nil (reparse-symbol classsubparts) [697 705])
+                    ("FoxtelCdeHeader" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelCdeHeader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [758 781]))                          
+                        :type ("FoxtelCdeHeader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [742 782])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelCdeHeader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [813 836]))                          
+                        :type ("FoxtelCdeHeader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [786 837])
+                    ("m_identifier" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [842 880]))                  
+                :type "class")
+                nil [332 926]))          
+    :file "foxtelcdeheader.h"
+    :pointmax 960
+    :fsize 959
+    :lastmodtime '(21843 1391 751814 539000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FCDE_OFFSET_IDENTIFIER" . ((number "4" 191 . 192)))
+          ("FOXTEL_CDE_HEADER_H__")
+          ("FCDE_SIZE_IDENTIFIER" . ((number "7" 258 . 259)))
+          )
+
+    )
+   (semanticdb-table "foxtelhdrsecurecontent.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("FOXTEL_HDR_SECURE_CONTENT_H__" variable (:constant-flag t) nil [47 76])
+            ("isecurecontent.h" include nil nil [78 105])
+            ("foxtelhdrheader.h" include nil nil [106 134])
+            ("foxtelbasesecurecontent.h" include nil nil [135 171])
+            ("stbdetails.h" include nil nil [172 195])
+            ("FoxtelHdrSecureContent" type
+               (:superclasses 
+                  ( ("ISecureContent" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("FoxtelBaseSecureContent" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [284 291])
+                    ("FoxtelHdrSecureContent" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("stbDetails" variable
+                               (:reference 1
+                                :type ("StbDetails" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [318 341]))                          
+                        :type ("FoxtelHdrSecureContent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [295 342])
+                    ("FoxtelHdrSecureContent" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [346 380])
+                    ("clone" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::auto_ptr" type
+                             (:template-specifier 
+                                ( ("ISecureContent" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [385 437])
+                    ("supportsContentType" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [475 499]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [442 506])
+                    ("getContentType" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [510 553])
+                    ("verify" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [581 602])
+                            ("startOffset" variable (:type "long") (reparse-symbol arg-sub-list) [603 620])
+                            ("endOffset" variable (:type "long") (reparse-symbol arg-sub-list) [621 636]))                          
+                        :type ("SLSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [557 637])
+                    ("unProtect" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [668 689])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [690 713])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [714 735])
+                            ("outData" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [736 758]))                          
+                        :type ("SLSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [641 759])
+                    ("private" label nil (reparse-symbol classsubparts) [761 769])
+                    ("FoxtelHdrSecureContent" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelHdrSecureContent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [829 859]))                          
+                        :type ("FoxtelHdrSecureContent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [806 860])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelHdrSecureContent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [898 928]))                          
+                        :type ("FoxtelHdrSecureContent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [864 929])
+                    ("m_header" variable (:type ("FoxtelHdrHeader" type (:type "class") nil nil)) (reparse-symbol classsubparts) [934 959]))                  
+                :type "class")
+                nil [197 1009]))          
+    :file "foxtelhdrsecurecontent.h"
+    :pointmax 1051
+    :fsize 1050
+    :lastmodtime '(21843 1391 460816 37000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FOXTEL_HDR_SECURE_CONTENT_H__")
+          )
+
+    )
+   (semanticdb-table "foxtelhdrsecurecontent.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [1 19])
+            ("nexus_platform.h" include nil nil [21 48])
+            ("foxtelhdrsecurecontent.h" include nil nil [50 85])
+            ("foxtelsemaphore.h" include nil nil [86 114])
+            ("foxtelutilities.h" include nil nil [115 143])
+            ("namedsemaphore.h" include nil nil [144 171])
+            ("tlogger.h" include nil nil [173 193])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [194 218])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [219 266])
+            ("FoxtelHdrSecureContent" function
+               (:constructor-flag t
+                :parent "FoxtelHdrSecureContent"
+                :arguments 
+                  ( ("stbDetails" variable
+                       (:reference 1
+                        :type ("StbDetails" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [315 338]))                  
+                :type ("FoxtelHdrSecureContent" type (:type "class") nil nil))
+                nil [268 414])
+            ("FoxtelHdrSecureContent" function
+               (:destructor-flag t
+                :parent "FoxtelHdrSecureContent"
+                :type "void")
+                nil [416 470])
+            ("clone" function
+               (:parent "FoxtelHdrSecureContent"
+                :type ("std::auto_ptr" type
+                     (:template-specifier 
+                        ( ("ISecureContent" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [615 797])
+            ("supportsContentType" function
+               (:parent "FoxtelHdrSecureContent"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1055 1079]))                  
+                :type "bool")
+                nil [1006 1137])
+            ("getContentType" function
+               (:parent "FoxtelHdrSecureContent"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1229 1331])
+            ("verify" function
+               (:parent "FoxtelHdrSecureContent"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1776 1797])
+                    ("startOffset" variable (:type "long") (reparse-symbol arg-sub-list) [1798 1815])
+                    ("endOffset" variable (:type "long") (reparse-symbol arg-sub-list) [1816 1831]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [1736 3892])
+            ("unProtect" function
+               (:parent "FoxtelHdrSecureContent"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4493 4514])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [4515 4538])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [4539 4560])
+                    ("outData" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4561 4583]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [4450 4767]))          
+    :file "foxtelhdrsecurecontent.cpp"
+    :pointmax 4768
+    :fsize 4767
+    :lastmodtime '(21843 1391 752814 534000)
+    :unmatched-syntax '((string 245 . 264))
+    )
+   (semanticdb-table "foxtelcdesecurecontent.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("FOXTEL_CDE_SECURE_CONTENT_H__" variable (:constant-flag t) nil [47 76])
+            ("vector" include (:system-flag t) nil [78 95])
+            ("isecurecontent.h" include nil nil [97 124])
+            ("foxtelcdeheader.h" include nil nil [125 153])
+            ("foxtelbasesecurecontent.h" include nil nil [154 190])
+            ("stbdetails.h" include nil nil [191 214])
+            ("FoxtelCdeSecureContent" type
+               (:superclasses 
+                  ( ("ISecureContent" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("FoxtelBaseSecureContent" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [303 310])
+                    ("FoxtelCdeSecureContent" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("stbDetails" variable
+                               (:reference 1
+                                :type ("StbDetails" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [337 360]))                          
+                        :type ("FoxtelCdeSecureContent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [314 361])
+                    ("FoxtelCdeSecureContent" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [365 399])
+                    ("clone" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::auto_ptr" type
+                             (:template-specifier 
+                                ( ("ISecureContent" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [404 456])
+                    ("supportsContentType" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [494 518]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [461 525])
+                    ("getContentType" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [529 572])
+                    ("verify" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [600 621])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [622 645])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [646 667]))                          
+                        :type ("SLSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [576 668])
+                    ("unProtect" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [699 720])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [721 744])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [745 766])
+                            ("outData" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [767 789]))                          
+                        :type ("SLSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [672 790])
+                    ("private" label nil (reparse-symbol classsubparts) [792 800])
+                    ("FoxtelCdeSecureContent" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelCdeSecureContent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [860 890]))                          
+                        :type ("FoxtelCdeSecureContent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [837 891])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelCdeSecureContent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [929 959]))                          
+                        :type ("FoxtelCdeSecureContent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [895 960])
+                    ("m_header" variable (:type ("FoxtelCdeHeader" type (:type "class") nil nil)) (reparse-symbol classsubparts) [965 990]))                  
+                :type "class")
+                nil [216 1040]))          
+    :file "foxtelcdesecurecontent.h"
+    :pointmax 1082
+    :fsize 1081
+    :lastmodtime '(21843 1391 960813 464000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FOXTEL_CDE_SECURE_CONTENT_H__")
+          )
+
+    )
+   (semanticdb-table "foxtelcdesecurecontent.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [1 19])
+            ("ext/stdio_filebuf.h" include (:system-flag t) nil [20 50])
+            ("openssl/sha.h" include (:system-flag t) nil [51 75])
+            ("nexus_platform.h" include nil nil [77 104])
+            ("tlogger.h" include nil nil [106 126])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [127 151])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [152 199])
+            ("foxtelcdesecurecontent.h" include nil nil [201 236])
+            ("foxtelutilities.h" include nil nil [237 265])
+            ("foxtelsemaphore.h" include nil nil [266 294])
+            ("namedsemaphore.h" include nil nil [295 322])
+            ("fsd.h" include nil nil [324 340])
+            ("FoxtelCdeSecureContent" function
+               (:constructor-flag t
+                :parent "FoxtelCdeSecureContent"
+                :arguments 
+                  ( ("stbDetails" variable
+                       (:reference 1
+                        :type ("StbDetails" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [389 412]))                  
+                :type ("FoxtelCdeSecureContent" type (:type "class") nil nil))
+                nil [342 488])
+            ("FoxtelCdeSecureContent" function
+               (:destructor-flag t
+                :parent "FoxtelCdeSecureContent"
+                :type "void")
+                nil [491 545])
+            ("clone" function
+               (:parent "FoxtelCdeSecureContent"
+                :type ("std::auto_ptr" type
+                     (:template-specifier 
+                        ( ("ISecureContent" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [690 872])
+            ("supportsContentType" function
+               (:parent "FoxtelCdeSecureContent"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1130 1154]))                  
+                :type "bool")
+                nil [1081 1212])
+            ("getContentType" function
+               (:parent "FoxtelCdeSecureContent"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1304 1406])
+            ("verify" function
+               (:parent "FoxtelCdeSecureContent"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1851 1872])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1873 1896])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1897 1918]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [1811 3546])
+            ("unProtect" function
+               (:parent "FoxtelCdeSecureContent"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4147 4168])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [4169 4192])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [4193 4214])
+                    ("outData" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4215 4237]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [4104 4421]))          
+    :file "foxtelcdesecurecontent.cpp"
+    :pointmax 4422
+    :fsize 4421
+    :lastmodtime '(21843 1391 461816 31000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "foxtelsemaphore.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("FOXTEL_SEMAPHORE_H__" variable (:constant-flag t) nil [38 58])
+            ("FSL_SEMAPHORE" variable (:constant-flag t) nil [68 81])
+            ("FSL_SEMAPHORE_TIMEOUT" variable (:constant-flag t) nil [100 121]))          
+    :file "foxtelsemaphore.h"
+    :pointmax 158
+    :fsize 157
+    :lastmodtime '(21843 1391 461816 31000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FOXTEL_SEMAPHORE_H__")
+          ("FSL_SEMAPHORE_TIMEOUT" . ((number "120" 122 . 125)))
+          ("FSL_SEMAPHORE" . ((string "\"/sl_fsl\"" 82 . 91)))
+          )
+
+    )
+   (semanticdb-table "foxtelbasesecurecontent.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [1 19])
+            ("vector" include (:system-flag t) nil [20 37])
+            ("nexus_platform.h" include nil nil [39 66])
+            ("foxtelbasesecurecontent.h" include nil nil [68 104])
+            ("utilities.h" include nil nil [105 127])
+            ("tlogger.h" include nil nil [128 148])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [149 173])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [174 221])
+            ("FoxtelBaseSecureContent" function
+               (:constructor-flag t
+                :parent "FoxtelBaseSecureContent"
+                :type ("FoxtelBaseSecureContent" type (:type "class") nil nil))
+                nil [223 278])
+            ("FoxtelBaseSecureContent" function
+               (:destructor-flag t
+                :parent "FoxtelBaseSecureContent"
+                :type "void")
+                nil [280 336])
+            ("readAllData" function
+               (:parent "FoxtelBaseSecureContent"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [973 994])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [995 1018])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1019 1040])
+                    ("data" variable
+                       (:pointer 2
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1041 1055])
+                    ("dataSize" variable
+                       (:reference 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1056 1073]))                  
+                :type "bool")
+                nil [931 1418])
+            ("allocateNexusBuffer" function
+               (:parent "FoxtelBaseSecureContent"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 2
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1676 1690])
+                    ("dataSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1691 1707]))                  
+                :type "bool")
+                nil [1626 2425]))          
+    :file "foxtelbasesecurecontent.cpp"
+    :pointmax 2426
+    :fsize 2425
+    :lastmodtime '(21843 1391 458816 47000)
+    :unmatched-syntax '((string 200 . 219))
+    )
+   (semanticdb-table "foxtelbasesecurecontent.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("FOXTEL_BASE_SECURE_CONTENT_H__" variable (:constant-flag t) nil [48 78])
+            ("istream" include (:system-flag t) nil [80 98])
+            ("fsl.h" include nil nil [100 116])
+            ("FoxtelBaseSecureContent" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [212 219])
+                    ("FoxtelBaseSecureContent" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("FoxtelBaseSecureContent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [223 249])
+                    ("FoxtelBaseSecureContent" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [253 288])
+                    ("protected" label nil (reparse-symbol classsubparts) [290 300])
+                    ("allocateNexusBuffer" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:pointer 2
+                                :type ("FSL_U8" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [329 343])
+                            ("dataSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [344 360]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [304 367])
+                    ("readAllData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [388 409])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [410 433])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [434 455])
+                            ("data" variable
+                               (:pointer 2
+                                :type ("FSL_U8" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [456 470])
+                            ("dataSize" variable
+                               (:reference 1
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [471 488]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [371 495])
+                    ("private" label nil (reparse-symbol classsubparts) [497 505])
+                    ("FoxtelBaseSecureContent" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelBaseSecureContent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [566 597]))                          
+                        :type ("FoxtelBaseSecureContent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [542 598])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelBaseSecureContent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [637 668]))                          
+                        :type ("FoxtelBaseSecureContent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [602 669]))                  
+                :type "class")
+                nil [180 672]))          
+    :file "foxtelbasesecurecontent.h"
+    :pointmax 715
+    :fsize 714
+    :lastmodtime '(21843 1391 753814 529000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FOXTEL_BASE_SECURE_CONTENT_H__")
+          )
+
+    )
+   (semanticdb-table "foxtelbaseheader.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vector" include (:system-flag t) nil [1 18])
+            ("foxtelbaseheader.h" include nil nil [20 49])
+            ("foxtelutilities.h" include nil nil [50 78])
+            ("tlogger.h" include nil nil [80 100])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [101 125])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [126 173])
+            ("IMAGE_TYPE_FLAG" variable (:constant-flag t) nil [183 198])
+            ("FoxtelBaseHeader" function
+               (:constructor-flag t
+                :parent "FoxtelBaseHeader"
+                :arguments 
+                  ( ("sigStartOffset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [237 259])
+                    ("stbDetails" variable
+                       (:reference 1
+                        :type ("StbDetails" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [260 283]))                  
+                :type ("FoxtelBaseHeader" type (:type "class") nil nil))
+                nil [202 441])
+            ("FoxtelBaseHeader" function
+               (:destructor-flag t
+                :parent "FoxtelBaseHeader"
+                :type "void")
+                nil [443 599])
+            ("getSignatureStartOffset" function
+               (:parent "FoxtelBaseHeader"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [764 852])
+            ("getHeaderSize" function
+               (:parent "FoxtelBaseHeader"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [970 1044])
+            ("setHeaderSize" function
+               (:parent "FoxtelBaseHeader"
+                :arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1202 1214]))                  
+                :type "void")
+                nil [1165 1242])
+            ("incrementHeaderSize" function
+               (:parent "FoxtelBaseHeader"
+                :arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1416 1428]))                  
+                :type "void")
+                nil [1373 1457])
+            ("getContainerLength" function
+               (:parent "FoxtelBaseHeader"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [1547 1631])
+            ("setContainerLength" function
+               (:parent "FoxtelBaseHeader"
+                :arguments 
+                  ( ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1790 1804]))                  
+                :type "void")
+                nil [1748 1839])
+            ("isCompressed" function
+               (:parent "FoxtelBaseHeader"
+                :type "bool")
+                nil [1951 2024])
+            ("isEncrypted" function
+               (:parent "FoxtelBaseHeader"
+                :type "bool")
+                nil [2141 2212])
+            ("validateFormatVersion" function
+               (:parent "FoxtelBaseHeader"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2603 2624])
+                    ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2625 2639])
+                    ("expectedValue" variable (:type "int") (reparse-symbol arg-sub-list) [2640 2658]))                  
+                :type "bool")
+                nil [2558 3151])
+            ("validateManufacturerDetails" function
+               (:parent "FoxtelBaseHeader"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3639 3660])
+                    ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3661 3675])
+                    ("check" variable (:type ("MANUFACTURER_CHECK" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3676 3701]))                  
+                :type "bool")
+                nil [3588 7913])
+            ("validateFlags" function
+               (:parent "FoxtelBaseHeader"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8219 8240])
+                    ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8241 8255]))                  
+                :type "bool")
+                nil [8182 9097])
+            ("validateActivationTime" function
+               (:parent "FoxtelBaseHeader"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9438 9459])
+                    ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9460 9474]))                  
+                :type "bool")
+                nil [9392 10537])
+            ("validateExpirationTime" function
+               (:parent "FoxtelBaseHeader"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10878 10899])
+                    ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10900 10914]))                  
+                :type "bool")
+                nil [10832 11959])
+            ("isDateUnset" function
+               (:parent "FoxtelBaseHeader"
+                :arguments 
+                  ( ("date" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("FSL_U8" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12142 12174]))                  
+                :type "bool")
+                nil [12107 12655])
+            ("getStbDetails" function
+               (:parent "FoxtelBaseHeader"
+                :type ("StbDetails" type (:type "class") nil nil))
+                nil [12758 12837])
+            ("getManufacturerDetails" function
+               (:parent "FoxtelBaseHeader"
+                :arguments 
+                  ( ("stbModelId" variable
+                       (:reference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13115 13135])
+                    ("stbOui" variable
+                       (:reference 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13136 13153]))                  
+                :type "bool")
+                nil [13069 13235]))          
+    :file "foxtelbaseheader.cpp"
+    :pointmax 12959
+    :fsize 13235
+    :lastmodtime '(21843 1391 459816 42000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("IMAGE_TYPE_FLAG" . ((number "4" 199 . 200)))
+          )
+
+    )
+   (semanticdb-table "foxtelbaseheader.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("FOXTEL_BASE_HEADER_H__" variable (:constant-flag t) nil [40 62])
+            ("cstddef" include (:system-flag t) nil [64 82])
+            ("vector" include (:system-flag t) nil [83 100])
+            ("istream" include (:system-flag t) nil [101 119])
+            ("stdint.h" include (:system-flag t) nil [120 139])
+            ("stbdetails.h" include nil nil [141 164])
+            ("fsl.h" include nil nil [165 181])
+            ("FBASE_SIZE_FORMAT_VERSION" variable (:constant-flag t) nil [191 216])
+            ("FBASE_SIZE_MANUF_LOOP_LENGTH" variable (:constant-flag t) nil [271 299])
+            ("FBASE_SIZE_OUI" variable (:constant-flag t) nil [357 371])
+            ("FBASE_SIZE_HARDWARE_LENGTH" variable (:constant-flag t) nil [439 465])
+            ("FBASE_SIZE_MODEL_ID" variable (:constant-flag t) nil [520 539])
+            ("FBASE_SIZE_FLAGS" variable (:constant-flag t) nil [594 610])
+            ("FBASE_SIZE_ACTIVE_DATE" variable (:constant-flag t) nil [666 688])
+            ("FBASE_SIZE_EXPIRE_DATE" variable (:constant-flag t) nil [752 774])
+            ("FBASE_FLAGS_ENCRYPTED" variable (:constant-flag t) nil [839 860])
+            ("FBASE_FLAGS_COMPRESSED" variable (:constant-flag t) nil [922 944])
+            ("MANUFACTURER_CHECK" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("MC_ALLOWED_EMPTY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1089 1106])
+                          ("MC_EXPLICIT_MATCH" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1174 1261]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [1071 1281])
+            ("FoxtelBaseHeader" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1367 1374])
+                    ("FoxtelBaseHeader" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("sigStartOffset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1395 1417])
+                            ("stbDetails" variable
+                               (:reference 1
+                                :type ("StbDetails" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1418 1441]))                          
+                        :type ("FoxtelBaseHeader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1378 1442])
+                    ("FoxtelBaseHeader" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1446 1474])
+                    ("getSignatureStartOffset" function
+                       (:prototype-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1479 1518])
+                    ("getHeaderSize" function
+                       (:prototype-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1522 1551])
+                    ("getContainerLength" function
+                       (:prototype-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1555 1589])
+                    ("isCompressed" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1593 1619])
+                    ("isEncrypted" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1623 1648])
+                    ("getStbDetails" function
+                       (:prototype-flag t
+                        :type ("StbDetails" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1652 1686])
+                    ("protected" label nil (reparse-symbol classsubparts) [1688 1698])
+                    ("setHeaderSize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1721 1733]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1702 1734])
+                    ("incrementHeaderSize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1763 1775]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1738 1776])
+                    ("setContainerLength" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1804 1818]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1780 1819])
+                    ("validateFormatVersion" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1850 1871])
+                            ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1872 1886])
+                            ("expectedValue" variable (:type "int") (reparse-symbol arg-sub-list) [1887 1905]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1823 1906])
+                    ("validateManufacturerDetails" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1943 1964])
+                            ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1965 1979])
+                            ("check" variable (:type ("MANUFACTURER_CHECK" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1980 2005]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1910 2006])
+                    ("validateFlags" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2029 2050])
+                            ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2051 2065]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2010 2066])
+                    ("validateActivationTime" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2098 2119])
+                            ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2120 2134]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2070 2135])
+                    ("validateExpirationTime" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2167 2188])
+                            ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2189 2203]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2139 2204])
+                    ("private" label nil (reparse-symbol classsubparts) [2206 2214])
+                    ("FoxtelBaseHeader" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelBaseHeader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2268 2292]))                          
+                        :type ("FoxtelBaseHeader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2251 2293])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelBaseHeader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2325 2349]))                          
+                        :type ("FoxtelBaseHeader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2297 2350])
+                    ("isDateUnset" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("date" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("FSL_U8" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2372 2404]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2355 2411])
+                    ("getManufacturerDetails" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stbModelId" variable
+                               (:reference 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2443 2463])
+                            ("stbOui" variable
+                               (:reference 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2464 2481]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2415 2482])
+                    ("m_stbDetails" variable (:type ("StbDetails" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2487 2512])
+                    ("m_sigStartOffset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2565 2589])
+                    ("m_headerSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2637 2657])
+                    ("m_containerLength" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2712 2737])
+                    ("m_isCompressed" variable (:type "bool") (reparse-symbol classsubparts) [2800 2820])
+                    ("m_isEncrypted" variable (:type "bool") (reparse-symbol classsubparts) [2875 2894]))                  
+                :type "class")
+                nil [1342 2948]))          
+    :file "foxtelbaseheader.h"
+    :pointmax 2983
+    :fsize 2982
+    :lastmodtime '(21843 1391 957813 480000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FBASE_SIZE_MANUF_LOOP_LENGTH" . ((number "1" 300 . 301)))
+          ("FBASE_FLAGS_COMPRESSED" . ((number "0x80" 945 . 949)))
+          ("FBASE_SIZE_FLAGS" . ((number "1" 611 . 612)))
+          ("FOXTEL_BASE_HEADER_H__")
+          ("FBASE_SIZE_EXPIRE_DATE" . ((number "5" 775 . 776)))
+          ("FBASE_SIZE_MODEL_ID" . ((number "1" 540 . 541)))
+          ("FBASE_SIZE_FORMAT_VERSION" . ((number "1" 217 . 218)))
+          ("FBASE_FLAGS_ENCRYPTED" . ((number "0x40" 862 . 866)))
+          ("FBASE_SIZE_HARDWARE_LENGTH" . ((number "1" 466 . 467)))
+          ("FBASE_SIZE_OUI" . ((number "3" 372 . 373)))
+          ("FBASE_SIZE_ACTIVE_DATE" . ((number "5" 689 . 690)))
+          )
+
+    )
+   (semanticdb-table "foxtelutilities.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ctime" include (:system-flag t) nil [1 17])
+            ("cerrno" include (:system-flag t) nil [18 35])
+            ("foxtelutilities.h" include nil nil [36 64])
+            ("nexus_memory.h" include nil nil [66 91])
+            ("nexus_platform.h" include nil nil [92 119])
+            ("tlogger.h" include nil nil [121 141])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [142 166])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [167 214])
+            ("BINARY_TO_BCD" variable (:constant-flag t) nil [224 237])
+            ("DAYS_TO_1_JAN_1996" variable (:constant-flag t) nil [283 301])
+            ("g_daysInMonth" variable
+               (:dereference 1
+                :constant-flag t
+                :type "unsigned int")
+                nil [309 403])
+            ("dayMonthYearToMJDDays" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("time" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tm" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [453 475]))                  
+                :type "unsigned short int")
+                nil [405 476])
+            ("get16BitValue" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [686 699]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [663 798])
+            ("get24BitValue" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1008 1021]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [985 1156])
+            ("get32BitValue" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1366 1379]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1343 1550])
+            ("getCurrentTime" function
+               (:arguments 
+                  ( ("timeValue" variable
+                       (:reference 1
+                        :type ("FSL_DATETIME" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1727 1751]))                  
+                :type "void")
+                nil [1707 2179])
+            ("dayMonthYearToMJDDays" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("time" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tm" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2429 2451]))                  
+                :type "unsigned short int")
+                nil [2381 3151])
+            ("memoryAlloc" function
+               (:arguments 
+                  ( ("ptr" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3420 3431])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3432 3444]))                  
+                :type "int")
+                nil [3404 4281])
+            ("memoryFree" function
+               (:arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4465 4475]))                  
+                :type "int")
+                nil [4450 4545]))          
+    :file "foxtelutilities.cpp"
+    :pointmax 4546
+    :fsize 4545
+    :lastmodtime '(21843 1391 752814 534000)
+    :unmatched-syntax '((string 193 . 212))
+    :lexical-table 
+        '(("BINARY_TO_BCD" (spp-arg-list ("n") 237 . 240) . ((semantic-list "(((n) % 10) + (((n) / 10) << 4 ))" 241 . 274)))
+          ("DAYS_TO_1_JAN_1996" . ((number "50083" 302 . 307)))
+          )
+
+    )
+   (semanticdb-table "foxtelutilities.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("FOXTEL_UTILITIES_H__" variable (:constant-flag t) nil [38 58])
+            ("cstdlib" include (:system-flag t) nil [60 78])
+            ("stdint.h" include (:system-flag t) nil [79 98])
+            ("fsl.h" include nil nil [99 115])
+            ("get16BitValue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [206 219]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [183 220])
+            ("get24BitValue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [244 257]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [221 258])
+            ("get32BitValue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [282 295]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [259 296])
+            ("getCurrentTime" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("time" variable
+                       (:reference 1
+                        :type ("FSL_DATETIME" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [359 378]))                  
+                :type "void")
+                nil [339 379])
+            ("memoryAlloc" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [454 465])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [466 478]))                  
+                :type "int")
+                nil [438 479])
+            ("memoryFree" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [495 505]))                  
+                :type "int")
+                nil [480 506]))          
+    :file "foxtelutilities.h"
+    :pointmax 539
+    :fsize 538
+    :lastmodtime '(21843 1391 459816 42000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FOXTEL_UTILITIES_H__")
+          )
+
+    )
+   (semanticdb-table "stbdetails.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stbdetails.h" include nil nil [1 24])
+            ("tlogger.h" include nil nil [115 135])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [136 160])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [161 208])
+            ("StbDetails" function
+               (:constructor-flag t
+                :parent "StbDetails"
+                :type ("StbDetails" type (:type "class") nil nil))
+                nil [210 339])
+            ("StbDetails" function
+               (:destructor-flag t
+                :parent "StbDetails"
+                :type "void")
+                nil [341 488])
+            ("connect" function
+               (:parent "StbDetails"
+                :type "bool")
+                nil [586 1971])
+            ("getModelId" function
+               (:parent "StbDetails"
+                :arguments 
+                  ( ("modelId" variable
+                       (:reference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2140 2157]))                  
+                :type "bool")
+                nil [2112 2904])
+            ("getOui" function
+               (:parent "StbDetails"
+                :arguments 
+                  ( ("oui" variable
+                       (:reference 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3048 3062]))                  
+                :type "bool")
+                nil [3024 3785]))          
+    :file "stbdetails.cpp"
+    :pointmax 3786
+    :fsize 3785
+    :lastmodtime '(21843 1391 458816 47000)
+    :unmatched-syntax '((string 187 . 206))
+    )
+   (semanticdb-table "stbdetails.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("STB_DETAILS_H__" variable (:constant-flag t) nil [33 48])
+            ("stdint.h" include (:system-flag t) nil [50 69])
+            ("StbDetails" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [211 218])
+                    ("StbDetails" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("StbDetails" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [222 235])
+                    ("StbDetails" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [239 253])
+                    ("getModelId" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("modelId" variable
+                               (:reference 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [274 291]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [258 292])
+                    ("getOui" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("oui" variable
+                               (:reference 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [308 322]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [296 323])
+                    ("private" label nil (reparse-symbol classsubparts) [325 333])
+                    ("StbDetails" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StbDetails" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [381 399]))                          
+                        :type ("StbDetails" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [370 400])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StbDetails" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [426 444]))                          
+                        :type ("StbDetails" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [404 445])
+                    ("connect" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [450 465]))                  
+                :type "class")
+                nil [192 588]))          
+    :file "stbdetails.h"
+    :pointmax 616
+    :fsize 615
+    :lastmodtime '(21843 1391 753814 529000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("STB_DETAILS_H__")
+          )
+
+    )
+   (semanticdb-table "foxtelfsdheader.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("FOXTEL_FSD_HEADER_H__" variable (:constant-flag t) nil [39 60])
+            ("string" include (:system-flag t) nil [62 79])
+            ("iidentifier.h" include nil nil [80 104])
+            ("foxtelbaseheader.h" include nil nil [105 134])
+            ("stbdetails.h" include nil nil [135 158])
+            ("FFSD_OFFSET_IDENTIFIER" variable (:constant-flag t) nil [168 190])
+            ("FFSD_SIZE_IDENTIFIER" variable (:constant-flag t) nil [235 255])
+            ("FoxtelFsdHeader" type
+               (:superclasses 
+                  ( ("IIdentifier" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("FoxtelBaseHeader" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [402 409])
+                    ("FoxtelFsdHeader" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("stbDetails" variable
+                               (:reference 1
+                                :type ("StbDetails" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [429 452]))                          
+                        :type ("FoxtelFsdHeader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [413 453])
+                    ("FoxtelFsdHeader" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [457 484])
+                    ("getIdentifierType" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [489 535])
+                    ("identifyContent" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [568 589])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [590 613])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [614 635]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [539 642])
+                    ("clone" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::auto_ptr" type
+                             (:template-specifier 
+                                ( ("IIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [646 695])
+                    ("parseAndValidateHeader" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [728 749])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [750 773])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [774 795]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [700 796])
+                    ("private" label nil (reparse-symbol classsubparts) [798 806])
+                    ("FoxtelFsdHeader" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelFsdHeader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [859 882]))                          
+                        :type ("FoxtelFsdHeader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [843 883])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelFsdHeader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [914 937]))                          
+                        :type ("FoxtelFsdHeader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [887 938])
+                    ("m_identifier" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [943 981]))                  
+                :type "class")
+                nil [332 1027]))          
+    :file "foxtelfsdheader.h"
+    :pointmax 1061
+    :fsize 1060
+    :lastmodtime '(21843 1391 461816 31000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FFSD_SIZE_IDENTIFIER" . ((number "7" 256 . 257)))
+          ("FFSD_OFFSET_IDENTIFIER" . ((number "0" 191 . 192)))
+          ("FOXTEL_FSD_HEADER_H__")
+          )
+
+    )
+   (semanticdb-table "foxtelfsdsecurecontent.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("FOXTEL_FSD_SECURE_CONTENT_H__" variable (:constant-flag t) nil [47 76])
+            ("cstddef" include (:system-flag t) nil [78 96])
+            ("vector" include (:system-flag t) nil [97 114])
+            ("isecurecontent.h" include nil nil [115 142])
+            ("foxtelfsdheader.h" include nil nil [143 171])
+            ("foxtelbasesecurecontent.h" include nil nil [172 208])
+            ("stbdetails.h" include nil nil [209 232])
+            ("fsd.h" include nil nil [234 250])
+            ("FoxtelFsdSecureContent" type
+               (:superclasses 
+                  ( ("ISecureContent" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("FoxtelBaseSecureContent" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [339 346])
+                    ("FoxtelFsdSecureContent" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("stbDetails" variable
+                               (:reference 1
+                                :type ("StbDetails" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [373 396]))                          
+                        :type ("FoxtelFsdSecureContent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [350 397])
+                    ("FoxtelFsdSecureContent" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [401 435])
+                    ("clone" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::auto_ptr" type
+                             (:template-specifier 
+                                ( ("ISecureContent" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [440 492])
+                    ("supportsContentType" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [530 554]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [497 561])
+                    ("getContentType" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [565 608])
+                    ("verify" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [636 657])
+                            ("startOffset" variable (:type "long") (reparse-symbol arg-sub-list) [658 675])
+                            ("endOffset" variable (:type "long") (reparse-symbol arg-sub-list) [676 691]))                          
+                        :type ("SLSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [612 692])
+                    ("unProtect" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [723 744])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [745 768])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [769 790])
+                            ("outData" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [791 813]))                          
+                        :type ("SLSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [696 814])
+                    ("private" label nil (reparse-symbol classsubparts) [816 824])
+                    ("FoxtelFsdSecureContent" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelFsdSecureContent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [884 914]))                          
+                        :type ("FoxtelFsdSecureContent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [861 915])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelFsdSecureContent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [953 983]))                          
+                        :type ("FoxtelFsdSecureContent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [919 984])
+                    ("verifyAndExtract" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1011 1032])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [1033 1056])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [1057 1078])
+                            ("outBuffer" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1079 1111]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [989 1112])
+                    ("m_header" variable (:type ("FoxtelFsdHeader" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1117 1142]))                  
+                :type "class")
+                nil [252 1192]))          
+    :file "foxtelfsdsecurecontent.h"
+    :pointmax 1234
+    :fsize 1233
+    :lastmodtime '(21843 1391 459816 42000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FOXTEL_FSD_SECURE_CONTENT_H__")
+          )
+
+    )
+   (semanticdb-table "foxtelfsdsecurecontent.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [1 19])
+            ("nexus_platform.h" include nil nil [21 48])
+            ("utilities.h" include nil nil [50 72])
+            ("tlogger.h" include nil nil [73 93])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [94 118])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [119 166])
+            ("foxtelfsdsecurecontent.h" include nil nil [168 203])
+            ("foxtelutilities.h" include nil nil [204 232])
+            ("foxtelsemaphore.h" include nil nil [233 261])
+            ("namedsemaphore.h" include nil nil [262 289])
+            ("fsl.h" include nil nil [291 307])
+            ("FoxtelFsdSecureContent" function
+               (:constructor-flag t
+                :parent "FoxtelFsdSecureContent"
+                :arguments 
+                  ( ("stbDetails" variable
+                       (:reference 1
+                        :type ("StbDetails" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [356 379]))                  
+                :type ("FoxtelFsdSecureContent" type (:type "class") nil nil))
+                nil [309 455])
+            ("FoxtelFsdSecureContent" function
+               (:destructor-flag t
+                :parent "FoxtelFsdSecureContent"
+                :type "void")
+                nil [458 512])
+            ("clone" function
+               (:parent "FoxtelFsdSecureContent"
+                :type ("std::auto_ptr" type
+                     (:template-specifier 
+                        ( ("ISecureContent" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [657 839])
+            ("supportsContentType" function
+               (:parent "FoxtelFsdSecureContent"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1097 1121]))                  
+                :type "bool")
+                nil [1048 1179])
+            ("getContentType" function
+               (:parent "FoxtelFsdSecureContent"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1271 1373])
+            ("verify" function
+               (:parent "FoxtelFsdSecureContent"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1808 1829])
+                    ("startOffset" variable (:type "long") (reparse-symbol arg-sub-list) [1830 1847])
+                    ("endOffset" variable (:type "long") (reparse-symbol arg-sub-list) [1848 1863]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [1768 2291])
+            ("unProtect" function
+               (:parent "FoxtelFsdSecureContent"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2876 2897])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [2898 2921])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [2922 2943])
+                    ("outData" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2944 2966]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [2833 3547])
+            ("verifyAndExtract" function
+               (:parent "FoxtelFsdSecureContent"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4077 4098])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [4099 4122])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [4123 4144])
+                    ("outBuffer" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4145 4177]))                  
+                :type "bool")
+                nil [4031 6525]))          
+    :file "foxtelfsdsecurecontent.cpp"
+    :pointmax 6526
+    :fsize 6525
+    :lastmodtime '(21843 1391 752814 534000)
+    :unmatched-syntax '((string 145 . 164))
+    )
+   (semanticdb-table "foxtelcdesecuredinfo.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("FOXTEL_CDE_SECURED_INFO_H__" variable (:constant-flag t) nil [45 72])
+            ("isecuredinfo.h" include nil nil [74 99])
+            ("foxtelcdeheader.h" include nil nil [100 128])
+            ("stbdetails.h" include nil nil [129 152])
+            ("FoxtelCdeSecuredInfo" type
+               (:superclasses 
+                  ( ("ISecuredInfo" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [244 251])
+                    ("FoxtelCdeSecuredInfo" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("stbDetails" variable
+                               (:reference 1
+                                :type ("StbDetails" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [276 299]))                          
+                        :type ("FoxtelCdeSecuredInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [255 300])
+                    ("FoxtelCdeSecuredInfo" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [304 336])
+                    ("clone" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::auto_ptr" type
+                             (:template-specifier 
+                                ( ("ISecuredInfo" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [341 391])
+                    ("supportsIdentifiedType" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [432 456]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [396 463])
+                    ("getIdentifiedType" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [467 513])
+                    ("getSecuredInfo" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [549 570])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [571 594])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [595 616])
+                            ("type" variable
+                               (:pointer 1
+                                :type ("SLINFOTYPE" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [617 634])
+                            ("info" variable
+                               (:pointer 2
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [635 647]))                          
+                        :type ("SLSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [517 648])
+                    ("releaseSecuredInfo" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("info" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [684 695]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [652 702])
+                    ("private" label nil (reparse-symbol classsubparts) [704 712])
+                    ("FoxtelCdeSecuredInfo" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelCdeSecuredInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [770 798]))                          
+                        :type ("FoxtelCdeSecuredInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [749 799])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelCdeSecuredInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [835 863]))                          
+                        :type ("FoxtelCdeSecuredInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [803 864])
+                    ("m_identifier" variable (:type ("FoxtelCdeHeader" type (:type "class") nil nil)) (reparse-symbol classsubparts) [869 898])
+                    ("m_stbDetails" variable (:type ("StbDetails" type (:type "class") nil nil)) (reparse-symbol classsubparts) [949 974]))                  
+                :type "class")
+                nil [193 1026]))          
+    :file "foxtelcdesecuredinfo.h"
+    :pointmax 1066
+    :fsize 1065
+    :lastmodtime '(21843 1391 460816 37000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FOXTEL_CDE_SECURED_INFO_H__")
+          )
+
+    )
+   (semanticdb-table "foxtelcdesecuredinfo.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [1 19])
+            ("cstring" include (:system-flag t) nil [20 38])
+            ("foxtelcdesecuredinfo.h" include nil nil [40 73])
+            ("foxtelutilities.h" include nil nil [74 102])
+            ("foxtelsecuredinfo_public.h" include nil nil [103 140])
+            ("tlogger.h" include nil nil [142 162])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [163 187])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [188 235])
+            ("FoxtelCdeSecuredInfo" function
+               (:constructor-flag t
+                :parent "FoxtelCdeSecuredInfo"
+                :arguments 
+                  ( ("stbDetails" variable
+                       (:reference 1
+                        :type ("StbDetails" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [280 303]))                  
+                :type ("FoxtelCdeSecuredInfo" type (:type "class") nil nil))
+                nil [237 397])
+            ("FoxtelCdeSecuredInfo" function
+               (:destructor-flag t
+                :parent "FoxtelCdeSecuredInfo"
+                :type "void")
+                nil [399 449])
+            ("clone" function
+               (:parent "FoxtelCdeSecuredInfo"
+                :type ("std::auto_ptr" type
+                     (:template-specifier 
+                        ( ("ISecuredInfo" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [594 756])
+            ("supportsIdentifiedType" function
+               (:parent "FoxtelCdeSecuredInfo"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1013 1037]))                  
+                :type "bool")
+                nil [963 1099])
+            ("getIdentifiedType" function
+               (:parent "FoxtelCdeSecuredInfo"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1191 1298])
+            ("getSecuredInfo" function
+               (:parent "FoxtelCdeSecuredInfo"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1884 1905])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1906 1929])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1930 1951])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("SLINFOTYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1952 1969])
+                    ("info" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1970 1982]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [1838 2901])
+            ("releaseSecuredInfo" function
+               (:parent "FoxtelCdeSecuredInfo"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3084 3095]))                  
+                :type "void")
+                nil [3038 3348]))          
+    :file "foxtelcdesecuredinfo.cpp"
+    :pointmax 3349
+    :fsize 3348
+    :lastmodtime '(21843 1391 957813 480000)
+    :unmatched-syntax '((string 214 . 233))
+    )
+   (semanticdb-table "foxtelfsdheader.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdint.h" include (:system-flag t) nil [1 20])
+            ("foxtelfsdheader.h" include nil nil [22 50])
+            ("foxtelutilities.h" include nil nil [51 79])
+            ("tlogger.h" include nil nil [81 101])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [102 126])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [127 174])
+            ("m_identifier" function
+               (:prototype-flag t
+                :parent "FoxtelFsdHeader"
+                :constant-flag t
+                :type ("std::string" type (:type "class") nil nil))
+                nil [202 261])
+            ("FoxtelFsdHeader" function
+               (:constructor-flag t
+                :parent "FoxtelFsdHeader"
+                :arguments 
+                  ( ("stbDetails" variable
+                       (:reference 1
+                        :type ("StbDetails" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [296 319]))                  
+                :type ("FoxtelFsdHeader" type (:type "class") nil nil))
+                nil [263 397])
+            ("FoxtelFsdHeader" function
+               (:destructor-flag t
+                :parent "FoxtelFsdHeader"
+                :type "void")
+                nil [399 439])
+            ("getIdentifierType" function
+               (:parent "FoxtelFsdHeader"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [606 688])
+            ("identifyContent" function
+               (:parent "FoxtelFsdHeader"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1133 1154])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1155 1178])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1179 1200]))                  
+                :type "bool")
+                nil [1095 2295])
+            ("clone" function
+               (:parent "FoxtelFsdHeader"
+                :type ("std::auto_ptr" type
+                     (:template-specifier 
+                        ( ("IIdentifier" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2403 2552])
+            ("parseAndValidateHeader" function
+               (:parent "FoxtelFsdHeader"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3005 3026])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [3027 3050])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [3051 3072]))                  
+                :type "bool")
+                nil [2960 3357]))          
+    :file "foxtelfsdheader.cpp"
+    :pointmax 3358
+    :fsize 3357
+    :lastmodtime '(21843 1391 957813 480000)
+    :unmatched-syntax '((string 250 . 259) (string 153 . 172))
+    )
+   (semanticdb-table "foxtelhdrsecuredinfo.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("FOXTEL_HDR_SECURED_INFO_H__" variable (:constant-flag t) nil [45 72])
+            ("isecuredinfo.h" include nil nil [74 99])
+            ("foxtelhdrheader.h" include nil nil [100 128])
+            ("stbdetails.h" include nil nil [129 152])
+            ("FoxtelHdrSecuredInfo" type
+               (:superclasses 
+                  ( ("ISecuredInfo" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [244 251])
+                    ("FoxtelHdrSecuredInfo" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("stbDetails" variable
+                               (:reference 1
+                                :type ("StbDetails" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [276 299]))                          
+                        :type ("FoxtelHdrSecuredInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [255 300])
+                    ("FoxtelHdrSecuredInfo" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [304 336])
+                    ("clone" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::auto_ptr" type
+                             (:template-specifier 
+                                ( ("ISecuredInfo" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [341 391])
+                    ("supportsIdentifiedType" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [432 456]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [396 463])
+                    ("getIdentifiedType" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [467 513])
+                    ("getSecuredInfo" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [549 570])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [571 594])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [595 616])
+                            ("type" variable
+                               (:pointer 1
+                                :type ("SLINFOTYPE" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [617 634])
+                            ("info" variable
+                               (:pointer 2
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [635 647]))                          
+                        :type ("SLSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [517 648])
+                    ("releaseSecuredInfo" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("info" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [684 695]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [652 702])
+                    ("private" label nil (reparse-symbol classsubparts) [704 712])
+                    ("FoxtelHdrSecuredInfo" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelHdrSecuredInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [770 798]))                          
+                        :type ("FoxtelHdrSecuredInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [749 799])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelHdrSecuredInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [835 863]))                          
+                        :type ("FoxtelHdrSecuredInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [803 864])
+                    ("m_identifier" variable (:type ("FoxtelHdrHeader" type (:type "class") nil nil)) (reparse-symbol classsubparts) [869 898])
+                    ("m_stbDetails" variable (:type ("StbDetails" type (:type "class") nil nil)) (reparse-symbol classsubparts) [949 974]))                  
+                :type "class")
+                nil [193 1026]))          
+    :file "foxtelhdrsecuredinfo.h"
+    :pointmax 1066
+    :fsize 1065
+    :lastmodtime '(21843 1391 751814 539000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FOXTEL_HDR_SECURED_INFO_H__")
+          )
+
+    )
+   (semanticdb-table "foxtelhdrsecuredinfo.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [1 19])
+            ("cstring" include (:system-flag t) nil [20 38])
+            ("foxtelhdrsecuredinfo.h" include nil nil [40 73])
+            ("foxtelutilities.h" include nil nil [74 102])
+            ("foxtelsecuredinfo_public.h" include nil nil [103 140])
+            ("tlogger.h" include nil nil [142 162])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [163 187])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [188 235])
+            ("FoxtelHdrSecuredInfo" function
+               (:constructor-flag t
+                :parent "FoxtelHdrSecuredInfo"
+                :arguments 
+                  ( ("stbDetails" variable
+                       (:reference 1
+                        :type ("StbDetails" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [280 303]))                  
+                :type ("FoxtelHdrSecuredInfo" type (:type "class") nil nil))
+                nil [237 397])
+            ("FoxtelHdrSecuredInfo" function
+               (:destructor-flag t
+                :parent "FoxtelHdrSecuredInfo"
+                :type "void")
+                nil [399 449])
+            ("clone" function
+               (:parent "FoxtelHdrSecuredInfo"
+                :type ("std::auto_ptr" type
+                     (:template-specifier 
+                        ( ("ISecuredInfo" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [594 756])
+            ("supportsIdentifiedType" function
+               (:parent "FoxtelHdrSecuredInfo"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1013 1037]))                  
+                :type "bool")
+                nil [963 1099])
+            ("getIdentifiedType" function
+               (:parent "FoxtelHdrSecuredInfo"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1191 1298])
+            ("getSecuredInfo" function
+               (:parent "FoxtelHdrSecuredInfo"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1884 1905])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1906 1929])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1930 1951])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("SLINFOTYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1952 1969])
+                    ("info" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1970 1982]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [1838 2901])
+            ("releaseSecuredInfo" function
+               (:parent "FoxtelHdrSecuredInfo"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3084 3095]))                  
+                :type "void")
+                nil [3038 3348]))          
+    :file "foxtelhdrsecuredinfo.cpp"
+    :pointmax 3349
+    :fsize 3348
+    :lastmodtime '(21843 1391 960813 464000)
+    :unmatched-syntax '((string 214 . 233))
+    )
+   (semanticdb-table "foxtelfsdsecuredinfo.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("FOXTEL_FSD_SECURED_INFO_H__" variable (:constant-flag t) nil [45 72])
+            ("isecuredinfo.h" include nil nil [74 99])
+            ("foxtelfsdheader.h" include nil nil [100 128])
+            ("stbdetails.h" include nil nil [129 152])
+            ("FoxtelFsdSecuredInfo" type
+               (:superclasses 
+                  ( ("ISecuredInfo" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [244 251])
+                    ("FoxtelFsdSecuredInfo" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("stbDetails" variable
+                               (:reference 1
+                                :type ("StbDetails" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [276 299]))                          
+                        :type ("FoxtelFsdSecuredInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [255 300])
+                    ("FoxtelFsdSecuredInfo" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [304 336])
+                    ("clone" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::auto_ptr" type
+                             (:template-specifier 
+                                ( ("ISecuredInfo" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [341 391])
+                    ("supportsIdentifiedType" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [432 456]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [396 463])
+                    ("getIdentifiedType" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [467 513])
+                    ("getSecuredInfo" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [549 570])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [571 594])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [595 616])
+                            ("type" variable
+                               (:pointer 1
+                                :type ("SLINFOTYPE" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [617 634])
+                            ("info" variable
+                               (:pointer 2
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [635 647]))                          
+                        :type ("SLSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [517 648])
+                    ("releaseSecuredInfo" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("info" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [684 695]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [652 702])
+                    ("private" label nil (reparse-symbol classsubparts) [704 712])
+                    ("FoxtelFsdSecuredInfo" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelFsdSecuredInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [770 798]))                          
+                        :type ("FoxtelFsdSecuredInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [749 799])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelFsdSecuredInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [835 863]))                          
+                        :type ("FoxtelFsdSecuredInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [803 864])
+                    ("m_identifier" variable (:type ("FoxtelFsdHeader" type (:type "class") nil nil)) (reparse-symbol classsubparts) [869 898])
+                    ("m_stbDetails" variable (:type ("StbDetails" type (:type "class") nil nil)) (reparse-symbol classsubparts) [949 974]))                  
+                :type "class")
+                nil [193 1026]))          
+    :file "foxtelfsdsecuredinfo.h"
+    :pointmax 1066
+    :fsize 1065
+    :lastmodtime '(21843 1391 461816 31000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FOXTEL_FSD_SECURED_INFO_H__")
+          )
+
+    )
+   (semanticdb-table "foxtelfsdsecuredinfo.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cstring" include (:system-flag t) nil [1 19])
+            ("foxtelfsdsecuredinfo.h" include nil nil [21 54])
+            ("foxtelsecuredinfo_public.h" include nil nil [55 92])
+            ("tlogger.h" include nil nil [94 114])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [115 139])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [140 187])
+            ("FoxtelFsdSecuredInfo" function
+               (:constructor-flag t
+                :parent "FoxtelFsdSecuredInfo"
+                :arguments 
+                  ( ("stbDetails" variable
+                       (:reference 1
+                        :type ("StbDetails" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [232 255]))                  
+                :type ("FoxtelFsdSecuredInfo" type (:type "class") nil nil))
+                nil [189 356])
+            ("FoxtelFsdSecuredInfo" function
+               (:destructor-flag t
+                :parent "FoxtelFsdSecuredInfo"
+                :type "void")
+                nil [358 408])
+            ("clone" function
+               (:parent "FoxtelFsdSecuredInfo"
+                :type ("std::auto_ptr" type
+                     (:template-specifier 
+                        ( ("ISecuredInfo" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [553 715])
+            ("supportsIdentifiedType" function
+               (:parent "FoxtelFsdSecuredInfo"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [972 996]))                  
+                :type "bool")
+                nil [922 1058])
+            ("getIdentifiedType" function
+               (:parent "FoxtelFsdSecuredInfo"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1150 1257])
+            ("getSecuredInfo" function
+               (:parent "FoxtelFsdSecuredInfo"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1860 1881])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1882 1905])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1906 1927])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("SLINFOTYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1928 1945])
+                    ("info" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1946 1958]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [1814 2424])
+            ("releaseSecuredInfo" function
+               (:parent "FoxtelFsdSecuredInfo"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2607 2618]))                  
+                :type "void")
+                nil [2561 2763]))          
+    :file "foxtelfsdsecuredinfo.cpp"
+    :pointmax 2764
+    :fsize 2763
+    :lastmodtime '(21843 1391 960813 464000)
+    :unmatched-syntax '((string 166 . 185))
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!security-lib!lib!plugins!foxtel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

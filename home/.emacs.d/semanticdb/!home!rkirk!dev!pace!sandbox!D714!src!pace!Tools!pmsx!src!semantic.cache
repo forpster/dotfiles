@@ -1,0 +1,158 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "pmsx.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("unistd.h" include (:system-flag t) nil [40 59])
+            ("getopt.h" include (:system-flag t) nil [60 79])
+            ("signal.h" include (:system-flag t) nil [82 101])
+            ("sys/types.h" include (:system-flag t) nil [102 124])
+            ("sys/stat.h" include (:system-flag t) nil [125 146])
+            ("sys/wait.h" include (:system-flag t) nil [147 168])
+            ("pwd.h" include (:system-flag t) nil [170 186])
+            ("errno.h" include (:system-flag t) nil [187 205])
+            ("sys/resource.h" include (:system-flag t) nil [206 231])
+            ("sys/mount.h" include (:system-flag t) nil [232 254])
+            ("cap-ng.h" include (:system-flag t) nil [255 274])
+            ("string.h" include (:system-flag t) nil [275 294])
+            ("signal.h" include (:system-flag t) nil [295 314])
+            ("_GNU_SOURCE" variable (:constant-flag t) nil [324 335])
+            ("sys/prctl.h" include (:system-flag t) nil [336 358])
+            ("sys/capability.h" include (:system-flag t) nil [359 386])
+            ("sched.h" include (:system-flag t) nil [388 406])
+            ("sys/reboot.h" include (:system-flag t) nil [408 431])
+            ("MS_REC" variable (:constant-flag t) nil [456 462])
+            ("MS_PRIVATE" variable (:constant-flag t) nil [505 515])
+            ("USAGE_STRING" variable (:constant-flag t) nil [538 550])
+            ("DEFAULT_PATH" variable (:constant-flag t) nil [705 717])
+            ("MAX_PATH" variable (:constant-flag t) nil [730 738])
+            ("MAX_PATH_LEN" variable (:constant-flag t) nil [754 766])
+            ("set_capabilities" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("uid" variable (:type ("uid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [801 811])
+                    ("gid" variable (:type ("gid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [812 822])
+                    ("caps_l" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [823 836]))                  
+                :type "int")
+                nil [772 2357])
+            ("set_signal_handles" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3115 3120]))                  
+                :type "int")
+                nil [3085 3507])
+            ("do_umount" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3530 3546])
+                    ("dst" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3547 3563]))                  
+                :type "int")
+                nil [3509 3800])
+            ("do_mkdir" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3822 3839])
+                    ("mode" variable (:type ("mode_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3840 3852]))                  
+                :type "int")
+                nil [3802 4209])
+            ("mkpath" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4230 4247])
+                    ("mode" variable (:type ("mode_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4248 4260]))                  
+                :type "int")
+                nil [4212 4802])
+            ("do_mount" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4825 4841])
+                    ("dst" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4842 4858])
+                    ("dir_perm" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4859 4880]))                  
+                :type "int")
+                nil [4805 5397])
+            ("m_overlay" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("over_s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6222 6235])
+                    ("home_s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6236 6255])
+                    ("mflag" variable (:type "int") (reparse-symbol arg-sub-list) [6256 6266])
+                    ("dir_perm" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6267 6289]))                  
+                :type "int")
+                nil [6200 7169])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7180 7189])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7190 7202]))                  
+                :type "int")
+                nil [7171 17762]))          
+    :file "pmsx.c"
+    :pointmax 17763
+    :fsize 17782
+    :lastmodtime '(21578 10181 76046 689000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DEFAULT_PATH" . ((string "\"\"" 718 . 720)))
+          ("_GNU_SOURCE")
+          ("MS_PRIVATE" . 
+              ((number "1" 516 . 517) (punctuation "<" 517 . 518) (punctuation "<" 518 . 519) (number "18" 519 . 521)))
+          ("USAGE_STRING" . ((string "\"USAGE: sdb [ -h home ] [ -o overlay ] [ -u uid ] [ -g gid ] [ -c caps ] [ -m memory max] [ -d file size max ] [ -s stack size max ] --  command\"" 551 . 696)))
+          ("MS_REC" . ((number "0x4000" 463 . 469)))
+          ("MAX_PATH" . ((number "40" 743 . 745)))
+          ("MAX_PATH_LEN" . ((number "256" 767 . 770)))
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D714!src!pace!Tools!pmsx!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

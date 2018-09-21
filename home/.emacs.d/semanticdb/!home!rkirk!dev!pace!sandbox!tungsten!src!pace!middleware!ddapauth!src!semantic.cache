@@ -1,0 +1,33 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "iddapclient.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iddapclient.h" include nil nil [1 25])
+            ("DDAPAUTH" using (:type ("DDAPAUTH" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [27 52])
+            ("IDdapClient" function
+               (:constructor-flag t
+                :parent "IDdapClient"
+                :type ("IDdapClient" type (:type "class") nil nil))
+                nil [54 85])
+            ("IDdapClient" function
+               (:destructor-flag t
+                :parent "IDdapClient"
+                :type "void")
+                nil [87 119]))          
+    :file "iddapclient.cpp"
+    :pointmax 120
+    :fsize 119
+    :lastmodtime '(21864 9228 590102 576000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!ddapauth!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

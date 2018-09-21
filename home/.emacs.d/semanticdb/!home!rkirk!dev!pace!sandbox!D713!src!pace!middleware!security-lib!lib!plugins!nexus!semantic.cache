@@ -1,0 +1,515 @@
+;; Object nexus/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "nexus/"
+  :tables (list 
+   (semanticdb-table "daemonnexusinitialisation.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("fstream" include (:system-flag t) nil [1 19])
+            ("cassert" include (:system-flag t) nil [20 38])
+            ("sys/types.h" include (:system-flag t) nil [39 61])
+            ("sys/stat.h" include (:system-flag t) nil [62 83])
+            ("unistd.h" include (:system-flag t) nil [84 103])
+            ("daemonnexusinitialisation.h" include nil nil [105 143])
+            ("tlvparser.h" include nil nil [144 166])
+            ("namedsemaphore.h" include nil nil [167 194])
+            ("utilities.h" include nil nil [195 217])
+            ("nexussemaphore.h" include nil nil [218 245])
+            ("nexus_security_rsa.h" include nil nil [247 278])
+            ("nexus_memory.h" include nil nil [279 304])
+            ("nexus_platform.h" include nil nil [305 332])
+            ("nexus_security.h" include nil nil [334 361])
+            ("nexus_keyladder.h" include nil nil [362 390])
+            ("hyp_defs.h" include nil nil [391 412])
+            ("tlogger.h" include nil nil [492 512])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [513 537])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [538 585])
+            ("PROCIN_SIZE" variable (:constant-flag t) nil [928 939])
+            ("KEYBUNDLE_TAG" variable (:constant-flag t) nil [952 965])
+            ("KEYBUNDLE_OFFSET_KPK10" variable (:constant-flag t) nil [981 1003])
+            ("KEYBUNDLE_OFFSET_KPK10_SIG" variable (:constant-flag t) nil [1030 1056])
+            ("KEYBUNDLE_OFFSET_PKE4" variable (:constant-flag t) nil [1106 1127])
+            ("KEYBUNDLE_OFFSET_PKE4_SIG" variable (:constant-flag t) nil [1186 1211])
+            ("KEYBUNDLE_OFFSET_KEY3_DECRYPTION" variable (:constant-flag t) nil [1261 1293])
+            ("KEYBUNDLE_OFFSET_KEY3_DECRYPTION_SIG" variable (:constant-flag t) nil [1340 1376])
+            ("KEYBUNDLE_OFFSET_KEY3_HMAC" variable (:constant-flag t) nil [1426 1452])
+            ("KEYBUNDLE_OFFSET_KEY3_HMAC_SIG" variable (:constant-flag t) nil [1516 1546])
+            ("RSA_KEY_OFFSET_0" variable (:constant-flag t) nil [1597 1613])
+            ("RSA_KEY_OFFSET_2" variable (:constant-flag t) nil [1639 1655])
+            ("Security" using (:type ("Security" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1674 1699])
+            ("DaemonNexusInitialisation" function
+               (:constructor-flag t
+                :parent "DaemonNexusInitialisation"
+                :type ("DaemonNexusInitialisation" type (:type "class") nil nil))
+                nil [1701 1829])
+            ("DaemonNexusInitialisation" function
+               (:destructor-flag t
+                :parent "DaemonNexusInitialisation"
+                :type "void")
+                nil [1831 2060])
+            ("getInstance" function
+               (:parent "DaemonNexusInitialisation"
+                :type ("DaemonNexusInitialisation" type (:type "class") nil nil))
+                nil [2162 2299])
+            ("join" function
+               (:parent "DaemonNexusInitialisation"
+                :type "bool")
+                nil [2403 3143])
+            ("release" function
+               (:parent "DaemonNexusInitialisation"
+                :type "void")
+                nil [3243 3432])
+            ("readRsaBlob" function
+               (:parent "DaemonNexusInitialisation"
+                :type "bool")
+                nil [3517 3987])
+            ("loadRsaBlob" function
+               (:parent "DaemonNexusInitialisation"
+                :type "bool")
+                nil [4128 4807])
+            ("loadFile" function
+               (:parent "DaemonNexusInitialisation"
+                :arguments 
+                  ( ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5188 5216])
+                    ("buffer" variable
+                       (:pointer 2
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5217 5234])
+                    ("bufferSize" variable
+                       (:reference 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5235 5254]))                  
+                :type "bool")
+                nil [5147 6659])
+            ("loadKeyBundle" function
+               (:parent "DaemonNexusInitialisation"
+                :type "bool")
+                nil [6804 9713])
+            ("loadKeyBundle" function
+               (:parent "DaemonNexusInitialisation"
+                :arguments 
+                  ( ("fileHandle" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9956 9973]))                  
+                :type "bool")
+                nil [9910 11853])
+            ("loadKpk" function
+               (:parent "DaemonNexusInitialisation"
+                :type "bool")
+                nil [11957 13221])
+            ("loadPke4" function
+               (:parent "DaemonNexusInitialisation"
+                :type "bool")
+                nil [13327 14439])
+            ("loadDecryptionKey3" function
+               (:parent "DaemonNexusInitialisation"
+                :type "bool")
+                nil [14576 15991])
+            ("loadHmacKey3" function
+               (:parent "DaemonNexusInitialisation"
+                :type "bool")
+                nil [16122 17482])
+            ("loadKeyladders" function
+               (:parent "DaemonNexusInitialisation"
+                :type "bool")
+                nil [17609 18578])
+            ("loadKeyladders" function
+               (:parent "DaemonNexusInitialisation"
+                :arguments 
+                  ( ("fileHandle" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18809 18826]))                  
+                :type "bool")
+                nil [18762 19757])
+            ("setupDecryptionKeyLadder" function
+               (:parent "DaemonNexusInitialisation"
+                :type "bool")
+                nil [19901 22722])
+            ("setupHmacKeyLadder" function
+               (:parent "DaemonNexusInitialisation"
+                :type "bool")
+                nil [22855 25594]))          
+    :file "daemonnexusinitialisation.cpp"
+    :pointmax 25595
+    :fsize 1563
+    :lastmodtime '(21845 53629 771346 152000)
+    :unmatched-syntax '((symbol 733 . 742) (symbol 730 . 732) (symbol 725 . 729) (symbol 707 . 724) (symbol 701 . 706) (punctuation 700 . 701) (symbol 656 . 665) (symbol 653 . 655) (symbol 648 . 652) (symbol 625 . 647) (symbol 619 . 624) (punctuation 618 . 619) (string 564 . 583))
+    :lexical-table 
+        '(("KEYBUNDLE_OFFSET_KPK10_SIG" . ((semantic-list "(KEYBUNDLE_OFFSET_KPK10 + 272)" 1067 . 1097)))
+          ("KEYBUNDLE_OFFSET_KEY3_HMAC_SIG" . ((semantic-list "(KEYBUNDLE_OFFSET_KEY3_HMAC + 272)" 1553 . 1587)))
+          ("KEYBUNDLE_OFFSET_KPK10" . ((semantic-list "(0)" 1018 . 1021)))
+          ("KEYBUNDLE_OFFSET_KEY3_DECRYPTION" . ((semantic-list "(KEYBUNDLE_OFFSET_PKE4_SIG + 256)" 1298 . 1331)))
+          ("KEYBUNDLE_OFFSET_KEY3_HMAC" . ((semantic-list "(KEYBUNDLE_OFFSET_KEY3_DECRYPTION_SIG + 256)" 1463 . 1507)))
+          ("KEYBUNDLE_OFFSET_PKE4_SIG" . ((semantic-list "(KEYBUNDLE_OFFSET_PKE4 + 528)" 1223 . 1252)))
+          ("KEYBUNDLE_OFFSET_KEY3_DECRYPTION_SIG" . ((semantic-list "(KEYBUNDLE_OFFSET_KEY3_DECRYPTION + 272)" 1377 . 1417)))
+          ("KEYBUNDLE_TAG" . ((number "0x1000" 966 . 972)))
+          ("KEYBUNDLE_OFFSET_PKE4" . ((semantic-list "(KEYBUNDLE_OFFSET_KPK10_SIG + 256)" 1143 . 1177)))
+          ("RSA_KEY_OFFSET_0" . ((semantic-list "(64 + (0 * 256))" 1614 . 1630)))
+          ("PROCIN_SIZE" . ((number "16" 940 . 942)))
+          ("RSA_KEY_OFFSET_2" . ((semantic-list "(64 + (2 * 256))" 1656 . 1672)))
+          )
+
+    )
+   (semanticdb-table "nexussemaphore.h"
+    :file "nexussemaphore.h"
+    :fsize 293
+    :lastmodtime '(21845 53629 770346 158000)
+    )
+   (semanticdb-table "nexus_hmac.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [1 19])
+            ("cstring" include (:system-flag t) nil [20 38])
+            ("cerrno" include (:system-flag t) nil [39 56])
+            ("nexus_platform.h" include nil nil [58 85])
+            ("nexus_memory.h" include nil nil [86 111])
+            ("nexus_keyladder.h" include nil nil [112 140])
+            ("nexus_hmac.h" include nil nil [142 165])
+            ("nexussemaphore.h" include nil nil [166 193])
+            ("hyp_defs.h" include nil nil [194 215])
+            ("tlogger.h" include nil nil [217 237])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [238 262])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [263 310])
+            ("NexusHmac" function
+               (:constructor-flag t
+                :parent "NexusHmac"
+                :type ("NexusHmac" type (:type "class") nil nil))
+                nil [312 435])
+            ("NexusHmac" function
+               (:destructor-flag t
+                :parent "NexusHmac"
+                :type "void")
+                nil [437 526])
+            ("initialise" function
+               (:parent "NexusHmac"
+                :arguments 
+                  ( ("keyProvider" variable
+                       (:pointer 1
+                        :type ("IKeyProvider" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [849 875])
+                    ("shaType" variable (:type ("NEXUS_HMACSHA_SHAType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [876 906]))                  
+                :type "bool")
+                nil [822 2537])
+            ("hmacBlocks" function
+               (:parent "NexusHmac"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3215 3248])
+                    ("final" variable (:type "bool") (reparse-symbol arg-sub-list) [3249 3260]))                  
+                :type "bool")
+                nil [3188 3648])
+            ("fillSourceBuffer" function
+               (:parent "NexusHmac"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3889 3922])
+                    ("sizeProcessed" variable
+                       (:reference 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3923 3945]))                  
+                :type "void")
+                nil [3856 4537])
+            ("isDataConsumed" function
+               (:parent "NexusHmac"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4801 4834])
+                    ("sizeProcessed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4835 4856]))                  
+                :type "bool")
+                nil [4770 4949])
+            ("shouldPerformHmac" function
+               (:parent "NexusHmac"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5329 5362])
+                    ("sizeProcessed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5363 5384])
+                    ("final" variable (:type "bool") (reparse-symbol arg-sub-list) [5385 5396]))                  
+                :type "bool")
+                nil [5295 5678])
+            ("processJob" function
+               (:parent "NexusHmac"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6070 6103])
+                    ("sizeProcessed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6104 6125])
+                    ("final" variable (:type "bool") (reparse-symbol arg-sub-list) [6126 6137]))                  
+                :type "bool")
+                nil [6043 7164])
+            ("isBufferFull" function
+               (:parent "NexusHmac"
+                :type "bool")
+                nil [7290 7417])
+            ("getHmacValue" function
+               (:parent "NexusHmac"
+                :arguments 
+                  ( ("hmac" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7591 7618]))                  
+                :type "void")
+                nil [7562 7815])
+            ("setKey" function
+               (:parent "NexusHmac"
+                :arguments 
+                  ( ("keyProvider" variable
+                       (:pointer 1
+                        :type ("IKeyProvider" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8117 8143]))                  
+                :type "bool")
+                nil [8094 11785]))          
+    :file "nexus_hmac.cpp"
+    :pointmax 11800
+    :fsize 12332
+    :lastmodtime '(21845 53629 772346 147000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "nexus_hmac.h"
+    :file "nexus_hmac.h"
+    :fsize 1632
+    :lastmodtime '(21845 53629 768346 169000)
+    )
+   (semanticdb-table "daemonnexusinitialisationimpl.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("fstream" include (:system-flag t) nil [1 19])
+            ("cassert" include (:system-flag t) nil [20 38])
+            ("sys/types.h" include (:system-flag t) nil [39 61])
+            ("sys/stat.h" include (:system-flag t) nil [62 83])
+            ("unistd.h" include (:system-flag t) nil [84 103])
+            ("daemonnexusinitialisationimpl.h" include nil nil [105 147])
+            ("tlvparser.h" include nil nil [148 170])
+            ("namedsemaphore.h" include nil nil [171 198])
+            ("utilities.h" include nil nil [199 221])
+            ("nexussemaphore.h" include nil nil [222 249])
+            ("tlvtags.h" include nil nil [250 270])
+            ("nexus_memory.h" include nil nil [366 391])
+            ("nexus_platform.h" include nil nil [392 419])
+            ("nexus_security.h" include nil nil [421 448])
+            ("nexus_keyladder.h" include nil nil [449 477])
+            ("hyp_defs.h" include nil nil [478 499])
+            ("tlogger.h" include nil nil [599 619])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [620 644])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [645 692])
+            ("Security" using (:type ("Security" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1027 1052])
+            ("DaemonNexusInitialisationImpl" function
+               (:constructor-flag t
+                :parent "DaemonNexusInitialisationImpl"
+                :type ("DaemonNexusInitialisationImpl" type (:type "class") nil nil))
+                nil [1054 1271])
+            ("DaemonNexusInitialisationImpl" function
+               (:destructor-flag t
+                :parent "DaemonNexusInitialisationImpl"
+                :type "void")
+                nil [1273 1584])
+            ("join" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :type "bool")
+                nil [1907 2924])
+            ("release" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :type "void")
+                nil [3024 3217])
+            ("loadKeyladders" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :type "bool")
+                nil [3344 4229])
+            ("loadKeyladders" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :arguments 
+                  ( ("fileHandle" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4464 4481]))                  
+                :type "bool")
+                nil [4413 5324])
+            ("loadKeyBundle" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :type "bool")
+                nil [5469 7463])
+            ("loadKeyBundle" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :arguments 
+                  ( ("fileHandle" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7710 7727]))                  
+                :type "bool")
+                nil [7660 8663])
+            ("secureRsaInit" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :arguments 
+                  ( ("keyInitData" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8974 9008]))                  
+                :type "bool")
+                nil [8924 10752])
+            ("cuskeyInit" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :arguments 
+                  ( ("keyInitData" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11076 11110]))                  
+                :type "bool")
+                nil [11029 12752])
+            ("setupDecryptionKeyLadder" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :type "bool")
+                nil [22480 25305])
+            ("setupHmacKeyLadder" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :type "bool")
+                nil [25438 28181])
+            ("generateCusKeyLadder" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :arguments 
+                  ( ("cusKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28677 28692])
+                    ("keyVarLow" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28693 28711])
+                    ("keyVarHigh" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28712 28731])
+                    ("key3Procin" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28732 28771]))                  
+                :type "bool")
+                nil [28620 32763]))          
+    :file "daemonnexusinitialisationimpl.cpp"
+    :pointmax 32764
+    :fsize 32763
+    :lastmodtime '(21845 53629 770346 158000)
+    :unmatched-syntax '((symbol 840 . 849) (symbol 837 . 839) (symbol 832 . 836) (symbol 814 . 831) (symbol 808 . 813) (punctuation 807 . 808) (symbol 763 . 772) (symbol 760 . 762) (symbol 755 . 759) (symbol 732 . 754) (symbol 726 . 731) (punctuation 725 . 726) (string 671 . 690))
+    )
+   (semanticdb-table "daemonnexusinitialisationimpl.h"
+    :file "daemonnexusinitialisationimpl.h"
+    :fsize 1810
+    :lastmodtime '(21845 53629 770346 158000)
+    )
+   (semanticdb-table "tlvtags.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("TLVTAGS_H__" variable (:constant-flag t) nil [29 40])
+            ("PROCIN_SIZE" variable (:constant-flag t) nil [158 169])
+            ("CUSKEY_SIZE" variable (:constant-flag t) nil [225 236])
+            ("CUSKEY_PROTECTED_KEY_SIZE" variable (:constant-flag t) nil [293 318])
+            ("RSA_INIT_TAG" variable (:constant-flag t) nil [491 503])
+            ("CUSKEY_INIT_TAG" variable (:constant-flag t) nil [566 581])
+            ("PROCIN1_TAG" variable (:constant-flag t) nil [637 648])
+            ("PROCIN2_TAG" variable (:constant-flag t) nil [703 714])
+            ("OK1_KEY4_TAG" variable (:constant-flag t) nil [769 781])
+            ("OK2_KEY4_TAG" variable (:constant-flag t) nil [839 851])
+            ("CUSKEY_KEYBUNDLE_CUSKEY" variable (:constant-flag t) nil [2141 2164])
+            ("CUSKEY_KEYBUNDLE_KEYVAR_LOW" variable (:constant-flag t) nil [2204 2231])
+            ("CUSKEY_KEYBUNDLE_KEYVAR_HIGH" variable (:constant-flag t) nil [2272 2300])
+            ("CUSKEY_KEYBUNDLE_KEY3_PROCIN" variable (:constant-flag t) nil [2341 2369])
+            ("CUSKEY_KEYBUNDLE_KEY4_PROCIN" variable (:constant-flag t) nil [2411 2439]))          
+    :file "tlvtags.h"
+    :pointmax 2496
+    :fsize 2495
+    :lastmodtime '(21845 53629 771346 152000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PROCIN2_TAG" . ((number "0x0002" 719 . 725)))
+          ("CUSKEY_KEYBUNDLE_CUSKEY" . ((number "0x0001" 2170 . 2176)))
+          ("CUSKEY_KEYBUNDLE_KEYVAR_LOW" . ((number "0x0002" 2233 . 2239)))
+          ("CUSKEY_PROTECTED_KEY_SIZE" . ((number "16" 319 . 321)))
+          ("RSA_INIT_TAG" . ((number "0x1000" 507 . 513)))
+          ("PROCIN_SIZE" . ((number "16" 170 . 172)))
+          ("CUSKEY_INIT_TAG" . ((number "0x1001" 582 . 588)))
+          ("CUSKEY_KEYBUNDLE_KEYVAR_HIGH" . ((number "0x0003" 2301 . 2307)))
+          ("CUSKEY_SIZE" . ((number "1" 237 . 238)))
+          ("OK1_KEY4_TAG" . ((number "0x0003" 785 . 791)))
+          ("CUSKEY_KEYBUNDLE_KEY3_PROCIN" . ((number "0x0004" 2370 . 2376)))
+          ("PROCIN1_TAG" . ((number "0x0001" 653 . 659)))
+          ("OK2_KEY4_TAG" . ((number "0x0004" 855 . 861)))
+          ("TLVTAGS_H__")
+          ("CUSKEY_KEYBUNDLE_KEY4_PROCIN" . ((number "0x0005" 2440 . 2446)))
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D713!src!pace!middleware!security-lib!lib!plugins!nexus!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

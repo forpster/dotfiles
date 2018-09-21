@@ -1,0 +1,223 @@
+;; Object dsmcc_manager/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dsmcc_manager/"
+  :tables (list 
+   (semanticdb-table "dsmccInterface.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("DSMCCINTERFACE_ORIG_H_1403280312" variable (:constant-flag t) nil [451 483])
+            ("QtCore/QObject" include (:system-flag t) nil [485 510])
+            ("QtCore/QByteArray" include (:system-flag t) nil [511 539])
+            ("QtCore/QList" include (:system-flag t) nil [540 563])
+            ("QtCore/QMap" include (:system-flag t) nil [564 586])
+            ("QtCore/QString" include (:system-flag t) nil [587 612])
+            ("QtCore/QStringList" include (:system-flag t) nil [613 642])
+            ("QtCore/QVariant" include (:system-flag t) nil [643 669])
+            ("tipc/tipcinterface.h" include (:system-flag t) nil [670 701])
+            ("tipc/tipcreply.h" include (:system-flag t) nil [702 729])
+            ("tipc/tipcpendingreply.h" include (:system-flag t) nil [730 764])
+            ("dsmccInterfacebase.h" include nil nil [765 796])
+            ("dsmccManager_if.h" include nil nil [797 825])
+            ("dsmccInterface" type
+               (:superclasses 
+                  ( ("DSMCCInterfaceBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1177 1184])
+                    ("staticInterfaceName" function
+                       (:pointer 1
+                        :typemodifiers ("static" "inline")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [1189 1276])
+                    ("public" label nil (reparse-symbol classsubparts) [1278 1285])
+                    ("dsmccInterface" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("service" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1305 1328])
+                            ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1329 1349])
+                            ("connection" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TipcConnection" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1350 1383])
+                            ("parent" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1384 1401]))                          
+                        :type ("dsmccInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1290 1405])
+                    ("dsmccInterface" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1411 1429])
+                    ("tipcProperty" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1457 1474]))                          
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1435 1481])
+                    ("public" label nil (reparse-symbol classsubparts) [1483 1498])
+                    ("cacheCarouselDirectory" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("url" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1549 1569]))                          
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1514 1790])
+                    ("cacheCarouselFile" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("url" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1826 1846]))                          
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1796 2062])
+                    ("cancelRequest" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("requestId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2094 2109]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2068 2327])
+                    ("getFile" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("url" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2353 2373])
+                            ("priority" variable (:type "int") (reparse-symbol arg-sub-list) [2374 2387])
+                            ("directory" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2388 2414])
+                            ("timeout" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2415 2428]))                          
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2333 2733])
+                    ("maintainFile" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("url" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2764 2784])
+                            ("directory" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2785 2811])
+                            ("constantMonitoring" variable (:type "bool") (reparse-symbol arg-sub-list) [2812 2836]))                          
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2739 3124])
+                    ("monitorDirectory" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("url" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3159 3179])
+                            ("constantMonitoring" variable (:type "bool") (reparse-symbol arg-sub-list) [3180 3204]))                          
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3130 3462])
+                    ("directoryUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("requestId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3511 3526]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3490 3527])
+                    ("downloadTimeout" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("requestId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3553 3568]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3532 3569])
+                    ("fileDownloaded" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("requestId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3594 3609])
+                            ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3610 3630]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3574 3631])
+                    ("fileFailure" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("requestId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3653 3668]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3636 3669])
+                    ("monitoringRestarted" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("requestId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3699 3714]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3674 3715])
+                    ("monitoringStopped" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("requestId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3743 3758]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3720 3759]))                  
+                :type "class")
+                nil [1091 3762])
+            ("org" type
+               (:members 
+                  ( ("pace" type
+                       (:members 
+                          ( ("DSMCCManager" variable (:type ("dsmccInterface" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [3813 3841]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3782 3845]))                  
+                :type "namespace")
+                nil [3764 3847]))          
+    :file "dsmccInterface.h"
+    :pointmax 3855
+    :fsize 3854
+    :lastmodtime '(21412 23480 908283 682000)
+    :unmatched-syntax '((punctuation 3812 . 3813) (punctuation 3811 . 3812) (TYPEDEF 3803 . 3810) (punctuation 3473 . 3474) (symbol 3464 . 3473) (number 1402 . 1403) (punctuation 1400 . 1401) (symbol 1168 . 1176))
+    :lexical-table 
+        '(("DSMCCINTERFACE_ORIG_H_1403280312")
+          )
+
+    )
+   (semanticdb-table "dsmccInterfacebase.h"
+    :file "dsmccInterfacebase.h"
+    :fsize 530
+    :lastmodtime '(21412 3676 787570 782000)
+    )
+   (semanticdb-table "dsmccManager_if.h"
+    :file "dsmccManager_if.h"
+    :fsize 966
+    :lastmodtime '(21412 3676 786570 788000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!build!target!DEBUG_INITRAMFS!staging!usr!include!dsmcc_manager!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

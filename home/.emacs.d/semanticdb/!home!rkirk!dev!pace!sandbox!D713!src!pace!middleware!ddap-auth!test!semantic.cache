@@ -1,0 +1,79 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("CP" variable (:default-value ("cp")) nil [12 18])
+            ("RM" variable (:default-value ("rm")) nil [18 24])
+            ("CC" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [24 77])
+            ("CXX" variable (:default-value ("mipsel-linux-uclibc-g++" "--sysroot=$(STAGING_PATH)")) nil [77 131])
+            ("LD" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [131 184])
+            ("LIBS" variable nil nil [185 191])
+            ("LDFLAGS_TOOL" variable (:default-value ("$(filter-out -lgtest_main, $(filter-out -lgtest, $(LDFLAGS)))" "-Wl,-O1")) nil [305 390])
+            ("LDFLAGS" variable (:default-value ("$(filter-out -lddapauth, $(LDFLAGS))" "-Wl,-O1" "$(LIBS)")) nil [447 510])
+            ("CFLAGS" variable (:default-value ("$(CFLAGS)")) nil [511 530])
+            ("CFLAGS" variable (:default-value ("-Wextra" "-mips32")) nil [530 556])
+            ("CXXFLAGS" variable (:default-value ("$(CXXFLAGS)" "$(CFLAGS)" "-I../lib")) nil [557 599])
+            ("EXECUTABLES" variable (:default-value ("ddaptool")) nil [600 623])
+            ("EXECUTABLES_INSTALL" variable (:default-value ("$(addprefix $(STAGING_PATH)/usr/bin/, $(EXECUTABLES))")) nil [623 698])
+            (".SUFFIXES" function (:arguments (".o" ".c" ".cpp")) nil [699 721])
+            (".cpp.o" function nil nil [721 765])
+            (".c.o" function nil nil [766 805])
+            ("all" function (:arguments ("$(EXECUTABLES)")) nil [806 826])
+            ("install" function (:arguments ("$(EXECUTABLES)")) nil [827 906])
+            ("ddaptool" function (:arguments ("ddaptool.o")) nil [954 1016])
+            ("sectest-keyprovider" function (:arguments ("keyprovider.o")) nil [1039 1134])
+            (".PHONY" function (:arguments ("clean")) nil [1135 1149])
+            ("clean" function nil nil [1149 1209]))          
+    :file "Makefile"
+    :pointmax 2105
+    :fsize 1208
+    :lastmodtime '(21851 16314 53290 494000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ddaptool.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("exception" include (:system-flag t) nil [1 21])
+            ("iostream" include (:system-flag t) nil [22 41])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [42 73])
+            ("ddapfactory.h" include nil nil [75 99])
+            ("tlogger.h" include nil nil [101 121])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [122 146])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [147 194])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [196 216])
+            ("DDAPAUTH" using (:type ("DDAPAUTH" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [217 242])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [253 257])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [258 265]))                  
+                :type "int")
+                nil [244 3294]))          
+    :file "ddaptool.cpp"
+    :pointmax 3295
+    :fsize 3294
+    :lastmodtime '(21853 62030 564105 573000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D713!src!pace!middleware!ddap-auth!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

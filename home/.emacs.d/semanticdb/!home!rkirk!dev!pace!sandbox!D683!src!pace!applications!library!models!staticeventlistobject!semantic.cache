@@ -1,0 +1,1687 @@
+;; Object staticeventlistobject/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "staticeventlistobject/"
+  :tables (list 
+   (semanticdb-table "staticeventlistobject.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("StaticEventListObject_H" variable (:constant-flag t) nil [41 64])
+            ("QAbstractListModel" include (:system-flag t) nil [66 95])
+            ("models/modelcachequery/modelcachequery.h" include nil nil [96 147])
+            ("models/servicelistmodel/iservicelistmodel.h" include nil nil [148 202])
+            ("models/avobject/iavobject.h" include nil nil [203 241])
+            ("models/recordingsmodel/irecordingsmodel.h" include nil nil [242 294])
+            ("models/remindersmodel/iremindermodel.h" include nil nil [295 344])
+            ("models/mediabrowsermodel/imediabrowsermodel.h" include nil nil [345 401])
+            ("models/playermodel/iplayermodel.h" include nil nil [402 446])
+            ("fasteventlist.h" include nil nil [447 473])
+            ("models/displaysettingsmodel/displaysettingsmodel.h" include nil nil [474 535])
+            ("FastQuery" type
+               (:prototype t
+                :type "class")
+                nil [538 554])
+            ("StaticEventListObject" type
+               (:superclasses 
+                  ( ("QObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [617 624])
+                    ("Event" type
+                       (:members 
+                          ( ("StaticEventListObject" friend nil (reparse-symbol classsubparts) [655 689])
+                            ("public" label nil (reparse-symbol classsubparts) [695 702])
+                            ("Event" function
+                               (:constructor-flag t
+                                :type ("Event" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [711 1116])
+                            ("id" function (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1126 1165])
+                            ("serviceId" function (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1174 1222])
+                            ("start" function (:type "int") (reparse-symbol classsubparts) [1231 1268])
+                            ("duration" function (:type "int") (reparse-symbol classsubparts) [1277 1320])
+                            ("name" function
+                               (:constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1329 1375])
+                            ("record" function (:type "int") (reparse-symbol classsubparts) [1384 1423])
+                            ("remind" function (:type "int") (reparse-symbol classsubparts) [1432 1471])
+                            ("parental" function (:type "int") (reparse-symbol classsubparts) [1480 1523])
+                            ("description" function
+                               (:prototype-flag t
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1532 1567])
+                            ("seriesId" function (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1577 1624])
+                            ("isSeriesLinked" function (:type "int") (reparse-symbol classsubparts) [1633 1688])
+                            ("flags" function (:type "int") (reparse-symbol classsubparts) [1697 1734])
+                            ("seriesName" function (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1743 1794])
+                            ("advisoryList" function (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1803 1858])
+                            ("actorList" function
+                               (:prototype-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1867 1894])
+                            ("directorList" function
+                               (:prototype-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1903 1934])
+                            ("year" function
+                               (:prototype-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [1943 1960])
+                            ("isCurrent" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1969 1992])
+                            ("isPpv" function (:type "bool") (reparse-symbol classsubparts) [2001 2039])
+                            ("genre" function (:type "int") (reparse-symbol classsubparts) [2048 2084])
+                            ("subgenre" function (:type "int") (reparse-symbol classsubparts) [2093 2135])
+                            ("seasonId" function (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2144 2191])
+                            ("private" label nil (reparse-symbol classsubparts) [2197 2205])
+                            ("extinfo" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("token" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2231 2245]))                                  
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2214 2252])
+                            ("Event" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("id" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2268 2278])
+                                    ("serviceId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2293 2310])
+                                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [2325 2335])
+                                    ("duration" variable (:type "int") (reparse-symbol arg-sub-list) [2350 2363])
+                                    ("name" variable
+                                       (:reference 1
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2378 2392])
+                                    ("record" variable (:type "int") (reparse-symbol arg-sub-list) [2407 2418])
+                                    ("remind" variable (:type "int") (reparse-symbol arg-sub-list) [2433 2444])
+                                    ("parental" variable (:type "int") (reparse-symbol arg-sub-list) [2459 2472])
+                                    ("seriesId" variable
+                                       (:reference 1
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2487 2506])
+                                    ("isSeriesLinked" variable (:type "int") (reparse-symbol arg-sub-list) [2521 2540])
+                                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [2555 2565])
+                                    ("seriesName" variable
+                                       (:reference 1
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2580 2600])
+                                    ("advisoryList" variable
+                                       (:reference 1
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2615 2637])
+                                    ("genre" variable (:type "int") (reparse-symbol arg-sub-list) [2652 2662])
+                                    ("seasonId" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2677 2695]))                                  
+                                :type ("Event" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2262 3221])
+                            ("Event" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("id" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3265 3275])
+                                    ("serviceId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3290 3307])
+                                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [3322 3332])
+                                    ("duration" variable (:type "int") (reparse-symbol arg-sub-list) [3347 3360])
+                                    ("name" variable
+                                       (:reference 1
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3375 3389])
+                                    ("record" variable (:type "int") (reparse-symbol arg-sub-list) [3404 3415])
+                                    ("remind" variable (:type "int") (reparse-symbol arg-sub-list) [3430 3441])
+                                    ("parental" variable (:type "int") (reparse-symbol arg-sub-list) [3456 3469])
+                                    ("seriesId" variable
+                                       (:reference 1
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3484 3503])
+                                    ("isSeriesLinked" variable (:type "int") (reparse-symbol arg-sub-list) [3518 3537])
+                                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [3552 3562])
+                                    ("seriesName" variable
+                                       (:reference 1
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3577 3597])
+                                    ("advisoryList" variable
+                                       (:reference 1
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3612 3634])
+                                    ("isPpv" variable (:type "bool") (reparse-symbol arg-sub-list) [3649 3660])
+                                    ("genre" variable (:type "int") (reparse-symbol arg-sub-list) [3675 3685])
+                                    ("subgenre" variable (:type "int") (reparse-symbol arg-sub-list) [3700 3714]))                                  
+                                :type ("Event" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3259 4270])
+                            ("Event" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("id" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4287 4297])
+                                    ("serviceId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4312 4329])
+                                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [4344 4354])
+                                    ("duration" variable (:type "int") (reparse-symbol arg-sub-list) [4369 4382])
+                                    ("seriesId" variable
+                                       (:reference 1
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4397 4415])
+                                    ("isSeriesLinked" variable (:type "int") (reparse-symbol arg-sub-list) [4430 4449])
+                                    ("name" variable
+                                       (:reference 1
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4464 4493]))                                  
+                                :type ("Event" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4281 4939])
+                            ("Event" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("id" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5022 5032])
+                                    ("serviceId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5047 5064])
+                                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [5079 5089])
+                                    ("duration" variable (:type "int") (reparse-symbol arg-sub-list) [5104 5117])
+                                    ("name" variable
+                                       (:reference 1
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5132 5146])
+                                    ("parental" variable (:type "int") (reparse-symbol arg-sub-list) [5161 5189]))                                  
+                                :type ("Event" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5016 5594])
+                            ("m_eventId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5612 5629])
+                            ("m_serviceId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5638 5657])
+                            ("m_start" variable (:type "int") (reparse-symbol classsubparts) [5666 5678])
+                            ("m_duration" variable (:type "int") (reparse-symbol classsubparts) [5687 5702])
+                            ("m_name" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5711 5726])
+                            ("m_record" variable (:type "int") (reparse-symbol classsubparts) [5735 5748])
+                            ("m_remind" variable (:type "int") (reparse-symbol classsubparts) [5757 5770])
+                            ("m_parental" variable (:type "int") (reparse-symbol classsubparts) [5779 5794])
+                            ("m_description" variable
+                               (:typemodifiers ("mutable")
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5803 5833])
+                            ("m_seriesId" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5842 5861])
+                            ("m_isSeriesLinked" variable (:type "int") (reparse-symbol classsubparts) [5870 5891])
+                            ("m_flags" variable (:type "int") (reparse-symbol classsubparts) [5900 5912])
+                            ("m_seriesName" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5921 5942])
+                            ("m_advisoryList" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5951 5974])
+                            ("m_extInfo" variable
+                               (:typemodifiers ("mutable")
+                                :type ("QMap" type
+                                     (:template-specifier 
+                                        ( ("QString" type nil nil nil)
+                                          ("QString" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [5983 6023])
+                            ("m_isPpv" variable (:type "bool") (reparse-symbol classsubparts) [6032 6045])
+                            ("m_genre" variable (:type "int") (reparse-symbol classsubparts) [6054 6066])
+                            ("m_subgenre" variable (:type "int") (reparse-symbol classsubparts) [6075 6090])
+                            ("m_seasonId" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6099 6118])
+                            ("m_recordingStatus" variable (:type ("QVariant" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6127 6154]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [629 6161])
+                    ("m_attribute_name_map" variable
+                       (:typemodifiers ("static")
+                        :type ("QHash" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil)
+                                  ("EVENT_ATTRIBUTE_TYPE" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6173 6238])
+                    ("m_sub_genre_map" variable
+                       (:typemodifiers ("static")
+                        :type ("QMultiMap" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil)
+                                  ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6243 6292])
+                    ("m_attribute_underscore_map" variable
+                       (:typemodifiers ("static")
+                        :type ("QMap" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil)
+                                  ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6297 6354])
+                    ("m_attribute_newtoold_map" variable
+                       (:typemodifiers ("static")
+                        :type ("QMap" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil)
+                                  ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6359 6414])
+                    ("m_attribute_exrtname_dbname" variable
+                       (:typemodifiers ("static")
+                        :type ("QMap" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil)
+                                  ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6419 6477])
+                    ("StaticEventListObject" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("serviceId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6504 6521])
+                            ("startTime" variable (:type "int") (reparse-symbol arg-sub-list) [6522 6536])
+                            ("endTime" variable (:type "int") (reparse-symbol arg-sub-list) [6537 6549])
+                            ("maxCount" variable (:type "int") (reparse-symbol arg-sub-list) [6550 6564])
+                            ("parent" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6569 6586]))                          
+                        :type ("StaticEventListObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6482 6590])
+                    ("StaticEventListObject" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("searchName" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6617 6637])
+                            ("searchOrder" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6638 6659])
+                            ("endsAfter" variable (:type "int") (reparse-symbol arg-sub-list) [6660 6675])
+                            ("maxCount" variable (:type "int") (reparse-symbol arg-sub-list) [6680 6694])
+                            ("parent" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6699 6716]))                          
+                        :type ("StaticEventListObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6595 6720])
+                    ("StaticEventListObject" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("eventId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6747 6762])
+                            ("parent" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6763 6780]))                          
+                        :type ("StaticEventListObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6725 6784])
+                    ("StaticEventListObject" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("eventId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6811 6826])
+                            ("recModel" variable
+                               (:pointer 1
+                                :type ("IRecordingsModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6853 6882])
+                            ("remModel" variable
+                               (:pointer 1
+                                :type ("IReminderModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6909 6938])
+                            ("pullVodModel" variable
+                               (:pointer 1
+                                :type ("IPullVodModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6965 6993])
+                            ("bQueryEvents" variable (:type "bool") (reparse-symbol arg-sub-list) [7020 7053])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7054 7060])
+                            ("parent" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7087 7115]))                          
+                        :type ("StaticEventListObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6789 7119])
+                    ("StaticEventListObject" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("seriesId" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7146 7164])
+                            ("channelUid" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7165 7183])
+                            ("startTime" variable (:type "int") (reparse-symbol arg-sub-list) [7184 7198])
+                            ("parent" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7199 7215]))                          
+                        :type ("StaticEventListObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7124 7218])
+                    ("StaticEventListObject" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("serviceId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7245 7262])
+                            ("startTime" variable (:type "int") (reparse-symbol arg-sub-list) [7263 7277])
+                            ("parent" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7278 7294]))                          
+                        :type ("StaticEventListObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7223 7297])
+                    ("StaticEventListObject" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("eventId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7324 7339])
+                            ("usingCobolt" variable (:type "bool") (reparse-symbol arg-sub-list) [7340 7357])
+                            ("parent" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7358 7374]))                          
+                        :type ("StaticEventListObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7302 7377])
+                    ("StaticEventListObject" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("simProgramId" variable (:type ("qint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7404 7424])
+                            ("parent" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7425 7441]))                          
+                        :type ("StaticEventListObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7382 7442])
+                    ("StaticEventListObject" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("contentProviderId" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7469 7496])
+                            ("parent" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7497 7513]))                          
+                        :type ("StaticEventListObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7447 7514])
+                    ("StaticEventListObject" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("parent" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7541 7557])
+                            ("recordingModel" variable
+                               (:pointer 1
+                                :type ("IRecordingsModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7586 7621])
+                            ("" variable (:type ("NULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7621 7626])
+                            ("reminderModel" variable
+                               (:pointer 1
+                                :type ("IReminderModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7653 7687])
+                            ("" variable (:type ("NULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7687 7692])
+                            ("pullVodModel" variable
+                               (:pointer 1
+                                :type ("IPullVodModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7719 7747])
+                            ("" variable (:type ("NULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7747 7752]))                          
+                        :type ("StaticEventListObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7519 7753])
+                    ("getAlternativeShowingsForScheduler" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("options" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7805 7825]))                          
+                        :type ("QVariantMap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7758 7826])
+                    ("getSeriesLinkEventDataForSchedular" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("options" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7878 7898]))                          
+                        :type ("QVariantMap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7831 7899])
+                    ("initialize" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("serviceListModel" variable
+                               (:pointer 1
+                                :type ("IServiceListModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7928 7964])
+                            ("avObject" variable
+                               (:pointer 1
+                                :type ("IAVObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7965 7985])
+                            ("playerModel" variable
+                               (:pointer 1
+                                :type ("IPlayerModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7986 8012])
+                            ("db" variable (:type ("QSqlDatabase" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8013 8029]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7905 8030])
+                    ("isCurrent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("start" variable (:type "int") (reparse-symbol arg-sub-list) [8051 8061])
+                            ("duration" variable (:type "int") (reparse-symbol arg-sub-list) [8061 8074])
+                            ("serviceId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8074 8091]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8036 8092])
+                    ("isCurrentService" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("serviceId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8119 8136]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8097 8137])
+                    ("qhashAttributesIntitialize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8174 8179]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8142 8180])
+                    ("getFinalQuery" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pFastQuery" variable
+                               (:pointer 1
+                                :type ("FastQuery" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8205 8227])
+                            ("whereClauseList" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("WhereClause" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8228 8264])
+                            ("queryMap" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8265 8287])
+                            ("cacheQuery" variable
+                               (:reference 1
+                                :type ("ModelCacheQuery" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8288 8316]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8186 8317])
+                    ("getFinalQuery" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pFastQuery" variable
+                               (:pointer 1
+                                :type ("FastQuery" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8341 8363])
+                            ("whereClause" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8363 8384])
+                            ("queryMap" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8385 8407])
+                            ("cacheQuery" variable
+                               (:reference 1
+                                :type ("ModelCacheQuery" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8408 8436]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8322 8437])
+                    ("getOrderByLimitMappings" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("options" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8471 8492])
+                            ("orderByLimitMap" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8493 8522]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8442 8523])
+                    ("getEPGEventsData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pFastQuery" variable
+                               (:pointer 1
+                                :type ("FastQuery" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8557 8579])
+                            ("options" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8580 8601])
+                            ("whereClauseList" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("WhereClause" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8602 8638]))                          
+                        :type ("QVariantMap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8528 8639])
+                    ("getEPGEventsData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pFastQuery" variable
+                               (:pointer 1
+                                :type ("FastQuery" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8673 8695])
+                            ("options" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8696 8717])
+                            ("whereClause" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8718 8739]))                          
+                        :type ("QVariantMap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8644 8740])
+                    ("getEPGEventsData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pFastQuery" variable
+                               (:pointer 1
+                                :type ("FastQuery" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8767 8789])
+                            ("options" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8790 8811])
+                            ("whereClause" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8812 8833])
+                            ("retMap" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8834 8854]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8745 8855])
+                    ("getTotalNumberofPrograms" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("whereStatement" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8890 8914]))                          
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8860 8915])
+                    ("getEPGEventsInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pFastQuery" variable
+                               (:pointer 1
+                                :type ("FastQuery" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8950 8972])
+                            ("options" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8973 8994]))                          
+                        :type ("QVariantMap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8921 8995])
+                    ("getEPGEventsInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pFastQuery" variable
+                               (:pointer 1
+                                :type ("FastQuery" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9029 9051])
+                            ("options" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9052 9073])
+                            ("retMap" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9074 9094]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9000 9095])
+                    ("getEPGEventsFeilds" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("options" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9131 9152])
+                            ("currEventsInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9153 9181]))                          
+                        :type ("QVariantMap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9100 9182])
+                    ("getEPGStats" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("options" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9211 9232]))                          
+                        :type ("QVariantMap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9187 9233])
+                    ("getEpgSubGenres" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("genreId" variable (:type "int") (reparse-symbol arg-sub-list) [9267 9279]))                          
+                        :type ("QVariantList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9238 9280])
+                    ("getEpgFields" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9310 9315]))                          
+                        :type ("QStringList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9285 9316])
+                    ("getEvent" function
+                       (:constant-flag t
+                        :arguments 
+                          ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [9344 9354]))                          
+                        :type ("Event" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9322 9382])
+                    ("count" function (:type "int") (reparse-symbol classsubparts) [9387 9433])
+                    ("doCreateSubGenreMap" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [9438 9472])
+                    ("processEventAttributeStringList" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9522 9536])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9537 9560])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9561 9581])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9582 9598])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [9599 9620])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [9621 9636]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9478 9637])
+                    ("processEventAttributeXmlStringMap" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9688 9702])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9703 9726])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9727 9747])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9748 9764])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [9765 9786])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [9787 9802]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9642 9803])
+                    ("processEventAttributeIsFlagSet" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9851 9865])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9866 9889])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9890 9910])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9911 9927])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [9928 9949])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [9950 9965]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9808 9966])
+                    ("processEventAttributeEndTime" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10012 10026])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10027 10050])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10051 10071])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10072 10088])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [10089 10110])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [10111 10126]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9971 10127])
+                    ("processContentId" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10161 10175])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10176 10199])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10200 10220])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10221 10237])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [10238 10259])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [10260 10275]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10132 10276])
+                    ("processEventAttributeTitle" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10320 10334])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10335 10358])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10359 10379])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10380 10396])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [10397 10418])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [10419 10434]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10281 10435])
+                    ("processEventAttributeBool" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10478 10492])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10493 10516])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10517 10537])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10538 10554])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [10555 10576])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [10577 10592]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10440 10593])
+                    ("processEventAttributeHasAltAudio" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10643 10657])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10658 10681])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10682 10702])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10703 10719])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [10720 10741])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [10742 10757]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10598 10758])
+                    ("processEventAttributeHasCC" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10802 10816])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10817 10840])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10841 10861])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10862 10878])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [10879 10900])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [10901 10916]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10763 10917])
+                    ("processEventAttributeHasSubtitles" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10968 10982])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10983 11006])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11007 11027])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11028 11044])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [11045 11066])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [11067 11082]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10922 11083])
+                    ("processEventAttributeAudioLang" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11131 11145])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11146 11169])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11170 11190])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11191 11207])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [11208 11229])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [11230 11245]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11088 11246])
+                    ("processEventAttributeSubLang" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11292 11306])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11307 11330])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11331 11351])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11352 11368])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [11369 11390])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [11391 11406]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11251 11407])
+                    ("processEventAttributeCCLang" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11452 11466])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11467 11490])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11491 11511])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11512 11528])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [11529 11550])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [11551 11566]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11412 11567])
+                    ("processEventAttributePPV" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11609 11623])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11624 11647])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11648 11668])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11669 11685])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [11686 11707])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [11708 11723]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11572 11724])
+                    ("processEventAttributeRatings" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11770 11784])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11785 11808])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11809 11829])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11830 11846])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [11847 11868])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [11869 11884]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11729 11885])
+                    ("processEventAttributeSubRatings" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11934 11948])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11949 11972])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11973 11993])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11994 12010])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [12011 12032])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [12033 12048]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11890 12049])
+                    ("processEventAttributeGenres" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12094 12108])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12109 12132])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12133 12153])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12154 12170])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [12171 12192])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [12193 12208]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12054 12209])
+                    ("processEventAttributeSubGenres" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12257 12271])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12272 12295])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12296 12316])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12317 12333])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [12334 12355])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [12356 12371]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12214 12372])
+                    ("processEventAttributeVideo" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12416 12430])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12431 12454])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12455 12475])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12476 12492])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [12493 12514])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [12515 12530]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12377 12531])
+                    ("processEventAttributeEpisode" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12577 12591])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12592 12615])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12616 12636])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12637 12653])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [12654 12675])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [12676 12691]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12536 12692])
+                    ("processEventAttributeSeries" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12737 12751])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12752 12775])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12776 12796])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12797 12813])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [12814 12835])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [12836 12851]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12697 12852])
+                    ("processEventAttributePeople" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12897 12911])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12912 12935])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12936 12956])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12957 12973])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [12974 12995])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [12996 13011]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12857 13012])
+                    ("processEventAttributePeopleSplitStringList" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13072 13086])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13087 13110])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13111 13131])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13132 13148])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [13149 13170])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [13171 13186]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13017 13187])
+                    ("processEventAttributePeopleSplitIntList" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13244 13258])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13259 13282])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13283 13303])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13304 13320])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [13321 13342])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [13343 13358]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13192 13359])
+                    ("processEventAttributeCustomFields" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13410 13424])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13425 13448])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13449 13469])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13470 13486])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [13487 13508])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [13509 13524]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13364 13525])
+                    ("processEventAttributeTitleTranslation" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13580 13594])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13595 13618])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13619 13639])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13640 13656])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [13657 13678])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [13679 13694]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13530 13695])
+                    ("processEventAttributeDescriptionTranslation" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13756 13770])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13771 13794])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13795 13815])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13816 13832])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [13833 13854])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [13855 13870]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13700 13871])
+                    ("processEventAttributeTitleDescriptionSubTitleTranslation" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13945 13959])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13960 13983])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13984 14004])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14005 14021])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [14022 14043])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [14044 14059]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13876 14060])
+                    ("processEventAttributePeopleWithName" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14113 14127])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14128 14151])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14152 14172])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14173 14189])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [14190 14211])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [14212 14227]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14065 14228])
+                    ("processEventAttributeDummy" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14272 14286])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14287 14310])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14311 14331])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14332 14348])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [14349 14370])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [14371 14386]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14233 14387])
+                    ("processEventAttributeDescription" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14437 14451])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14452 14475])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14476 14496])
+                            ("param" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14497 14513])
+                            ("bCurrentService" variable (:type "bool") (reparse-symbol arg-sub-list) [14514 14535])
+                            ("pContext" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [14536 14551]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14392 14552])
+                    ("private" label nil (reparse-symbol classsubparts) [14554 14562])
+                    ("EventInfoForActions" type
+                       (:members 
+                          ( ("scheduledRecordingsEventIds" variable (:type ("QMap" type
+                                 (:template-specifier 
+                                    ( ("qlonglong" type nil nil nil)
+                                      ("uint" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [14705 14755])
+                            ("scheduledRecordingsUniqueContentIds" variable (:type ("QMap" type
+                                 (:template-specifier 
+                                    ( ("QString" type nil nil nil)
+                                      ("qlonglong" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [14873 14934])
+                            ("remindersEventIds" variable (:type ("QMap" type
+                                 (:template-specifier 
+                                    ( ("qlonglong" type nil nil nil)
+                                      ("uint" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [15028 15068])
+                            ("remindersUniqueContentIds" variable (:type ("QMap" type
+                                 (:template-specifier 
+                                    ( ("QString" type nil nil nil)
+                                      ("qlonglong" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [15165 15217])
+                            ("recordedEventIds" variable (:type ("QHash" type
+                                 (:template-specifier 
+                                    ( ("QString" type nil nil nil)
+                                      ("QList" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [15297 15353])
+                            ("pullVodEventsRecorded" variable (:type ("QHash" type
+                                 (:template-specifier 
+                                    ( ("QString" type nil nil nil)
+                                      ("RecordInfo" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [15428 15477]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [14568 15605])
+                    ("getInfoForActions" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("infoForActions" variable
+                               (:reference 1
+                                :type ("EventInfoForActions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15634 15671]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15611 15672])
+                    ("getMainQuery" function
+                       (:prototype-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15681 15704])
+                    ("performQuery" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cacheQuery" variable
+                               (:reference 1
+                                :type ("ModelCacheQuery" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15728 15756])
+                            ("maxCount" variable (:type "int") (reparse-symbol arg-sub-list) [15757 15771]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15709 15778])
+                    ("writeFastJSONEventsAttributes" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pFastQuery" variable
+                               (:pointer 1
+                                :type ("FastQuery" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15818 15840])
+                            ("channelId" variable (:type ("quint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15880 15898])
+                            ("groupBy" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15938 15955])
+                            ("cacheQuery" variable
+                               (:reference 1
+                                :type ("ModelCacheQuery" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15995 16023])
+                            ("resultsMap" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16063 16088]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15783 16089])
+                    ("writeJSONStaticEventsAttributes" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("options" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16132 16153])
+                            ("cacheQuery" variable
+                               (:reference 1
+                                :type ("ModelCacheQuery" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16153 16181])
+                            ("resultsMap" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16181 16205]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16094 16206])
+                    ("processActionsData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16235 16258])
+                            ("infoForActions" variable
+                               (:reference 1
+                                :type ("EventInfoForActions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16259 16296]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16211 16297])
+                    ("m_serviceListModel" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("IServiceListModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [16302 16347])
+                    ("m_avObject" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("IAVObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [16352 16381])
+                    ("m_playerModel" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("IPlayerModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [16386 16421])
+                    ("m_db" variable
+                       (:typemodifiers ("static")
+                        :type ("QSqlDatabase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [16426 16451])
+                    ("m_events" variable (:type ("QList" type
+                         (:template-specifier 
+                            ( ("Event" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [16456 16478])
+                    ("m_recordingsModel" variable
+                       (:pointer 1
+                        :type ("IRecordingsModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [16483 16522])
+                    ("m_reminderModel" variable
+                       (:pointer 1
+                        :type ("IReminderModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [16527 16564])
+                    ("m_pullVodModel" variable
+                       (:pointer 1
+                        :type ("IPullVodModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [16569 16600])
+                    ("m_currentChannelId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16605 16631]))                  
+                :type "class")
+                nil [556 16634]))          
+    :file "staticeventlistobject.h"
+    :pointmax 16670
+    :fsize 16669
+    :lastmodtime '(21750 63522 5964 765000)
+    :unmatched-syntax '((number 15772 . 15775) (punctuation 15770 . 15771) (punctuation 7746 . 7747) (punctuation 7686 . 7687) (punctuation 7620 . 7621) (number 7557 . 7558) (punctuation 7556 . 7557) (number 7374 . 7375) (punctuation 7373 . 7374) (number 7294 . 7295) (punctuation 7293 . 7294) (number 7215 . 7216) (punctuation 7214 . 7215) (number 7116 . 7117) (punctuation 7114 . 7115) (punctuation 7052 . 7053) (number 6781 . 6782) (punctuation 6779 . 6780) (number 6717 . 6718) (punctuation 6715 . 6716) (number 6696 . 6697) (punctuation 6695 . 6696) (punctuation 6693 . 6694) (number 6677 . 6678) (punctuation 6676 . 6677) (punctuation 6674 . 6675) (number 6587 . 6588) (punctuation 6585 . 6586) (number 6566 . 6567) (punctuation 6565 . 6566) (punctuation 6563 . 6564) (number 2696 . 2697) (punctuation 2694 . 2695) (punctuation 689 . 690) (number 2696 . 2697) (punctuation 2694 . 2695) (punctuation 689 . 690) (symbol 607 . 615) (punctuation 7746 . 7747) (punctuation 7686 . 7687) (punctuation 7620 . 7621) (number 7557 . 7558) (punctuation 7556 . 7557) (number 7374 . 7375) (punctuation 7373 . 7374) (number 7294 . 7295) (punctuation 7293 . 7294) (number 7215 . 7216) (punctuation 7214 . 7215) (number 7116 . 7117) (punctuation 7114 . 7115) (punctuation 7052 . 7053) (number 6781 . 6782) (punctuation 6779 . 6780) (number 6717 . 6718) (punctuation 6715 . 6716) (number 6696 . 6697) (punctuation 6695 . 6696) (punctuation 6693 . 6694) (number 6677 . 6678) (punctuation 6676 . 6677) (punctuation 6674 . 6675) (number 6587 . 6588) (punctuation 6585 . 6586) (number 6566 . 6567) (punctuation 6565 . 6566) (punctuation 6563 . 6564) (number 2696 . 2697) (punctuation 2694 . 2695) (punctuation 689 . 690) (number 2696 . 2697) (punctuation 2694 . 2695) (punctuation 689 . 690) (symbol 607 . 615))
+    :lexical-table 
+        '(("StaticEventListObject_H")
+          )
+
+    )
+   (semanticdb-table "fasteventlist.h"
+    :file "fasteventlist.h"
+    :fsize 2371
+    :lastmodtime '(21750 63522 4964 773000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D683!src!pace!applications!library!models!staticeventlistobject!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

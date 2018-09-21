@@ -1,0 +1,408 @@
+;; Object securityfilesd/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "securityfilesd/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("CC" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [872 938])
+            ("CXX" variable (:default-value ("mipsel-linux-uclibc-g++" "--sysroot=$(STAGING_PATH)")) nil [938 1004])
+            ("DEFINES" variable (:default-value ("-DFREESAT_NETWORK" "-DD714" "-DQT_OGL_PLF_NAME=eglnullws" "-DBLE_API_2" "-DPULL_VOD_SUPPORT" "-DK3PROCINS_OVERRIDE_ENABLED" "-DUSE_NEXUS" "-DPMW_DBUS_SYSTEM" "-DQT_NO_DEBUG" "-DQT_DBUS_LIB" "-DQT_GUI_LIB" "-DQT_NETWORK_LIB" "-DQT_CORE_LIB")) nil [1004 1235])
+            ("CFLAGS" variable (:default-value ("-pipe" "-g" "-Wall" "-mips32" "-DQT_DIRECTFB_TIMING" "-DQT_NO_GETADDRINFO" "--sysroot=$(STAGING_PATH)" "-g" "-Wall" "-DTLOG_SUPPORT_WITH_LOG4CPLUS=1" "-DTLOGGER_SYSLOG_IP=136.170.193.146" "-fexceptions" "-I/home/rkirk/dev/pace/sandbox/D714/build//target/DEBUG_INITRAMFS//staging/usr/include/tipc" "-I/home/rkirk/dev/pace/sandbox/D714/build//target/DEBUG_INITRAMFS//staging/usr/include/posixqueuebuffer" "-I/home/rkirk/dev/pace/sandbox/D714/build//target/DEBUG_INITRAMFS//staging/usr/include/security" "-I/home/rkirk/dev/pace/sandbox/D714/build//target/DEBUG_INITRAMFS//staging/usr/include/tlogger" "-I/home/rkirk/dev/pace/sandbox/D714/build//target/DEBUG_INITRAMFS//staging/usr/include/cdc" "-g" "-Wall" "-DSL_OKPROCINS_FILE=\\\"$(SECURITY_LIBRARY_OKPROCINS_FILE)\\\"" "-DSL_K3PROCINS_OVERRIDE_FILE=\\\"$(SECURITY_LIBRARY_K3PROCINS_OVERRIDE_FILE)\\\"" "-DSL_K3PROCINS_FILE=\\\"$(SECURITY_LIBRARY_K3PROCINS_FILE)\\\"" "-O2" "-Wall" "-W" "-D_REENTRANT" "$(DEFINES)")) nil [1235 2150])
+            ("CXXFLAGS" variable (:default-value ("-pipe" "-fstack-protector" "-g" "-mips32" "-DQT_DIRECTFB_TIMING" "-DQT_NO_GETADDRINFO" "--sysroot=$(STAGING_PATH)" "-g" "-Wall" "-DTLOG_SUPPORT_WITH_LOG4CPLUS=1" "-DTLOGGER_SYSLOG_IP=136.170.193.146" "-fexceptions" "-I/home/rkirk/dev/pace/sandbox/D714/build//target/DEBUG_INITRAMFS//staging/usr/include/tipc" "-I/home/rkirk/dev/pace/sandbox/D714/build//target/DEBUG_INITRAMFS//staging/usr/include/posixqueuebuffer" "-I/home/rkirk/dev/pace/sandbox/D714/build//target/DEBUG_INITRAMFS//staging/usr/include/security" "-I/home/rkirk/dev/pace/sandbox/D714/build//target/DEBUG_INITRAMFS//staging/usr/include/tlogger" "-I/home/rkirk/dev/pace/sandbox/D714/build//target/DEBUG_INITRAMFS//staging/usr/include/cdc" "-g" "-Wall" "-DSL_OKPROCINS_FILE=\\\"$(SECURITY_LIBRARY_OKPROCINS_FILE)\\\"" "-DSL_K3PROCINS_OVERRIDE_FILE=\\\"$(SECURITY_LIBRARY_K3PROCINS_OVERRIDE_FILE)\\\"" "-DSL_K3PROCINS_FILE=\\\"$(SECURITY_LIBRARY_K3PROCINS_FILE)\\\"" "-O2" "-Wall" "-W" "-D_REENTRANT" "$(DEFINES)")) nil [2150 3077])
+            ("INCPATH" variable (:default-value ("-I/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/default" "-I." "-I${STAGING_PATH}/usr/include/QtCore" "-I${STAGING_PATH}/usr/include/QtNetwork" "-I${STAGING_PATH}/usr/include/QtGui" "-I${STAGING_PATH}/usr/include/QtDBus" "-I${STAGING_PATH}/usr/include" "-Iobj" "-I$(STAGING_PATH)/usr/include" "-I$(STAGING_PATH)/usr/include/dbus-1.0" "-I$(STAGING_PATH)/usr/lib/dbus-1.0/include" "-I$(STAGING_PATH)/usr/include/glib-2.0" "-I$(STAGING_PATH)/usr/lib/glib-2.0/include" "-I$(STAGING_PATH)/usr/include/libxml2/" "-I$(STAGING_PATH)/usr/include/freetype2")) nil [3077 3649])
+            ("LINK" variable (:default-value ("mipsel-linux-uclibc-g++" "--sysroot=$(STAGING_PATH)")) nil [3649 3715])
+            ("LFLAGS" variable (:default-value ("--sysroot=$(STAGING_PATH)" "-ltipc" "-lposixqueuebuffer" "-lsecurity" "-ltlogger" "-llog4cplus" "-Wl,-rpath-link,/home/rkirk/dev/pace/sandbox/D714/build//target/DEBUG_INITRAMFS//staging/usr/lib" "-Wl,-O1")) nil [3715 3921])
+            ("LIBS" variable (:default-value ("$(SUBLIBS)" "-L$(STAGING_PATH)/usr/lib" "-L${STAGING_PATH}/usr/lib" "-ldbus-1" "-lssl" "-lcrypto" "-lglib-2.0" "-lffi" "-lz" "-lintl" "-lgthread-2.0" "-lgobject-2.0" "-lgmodule-2.0" "-lxml2" "-lpng" "-lsqlite3" "-lfreetype" "-ldirect" "-lfusion" "-lQtDBus" "-lQtGui" "-lQtNetwork" "-lQtCore" "-lpthread")) nil [3921 4196])
+            ("AR" variable (:default-value ("mipsel-linux-uclibc-ar" "cqs")) nil [4196 4239])
+            ("RANLIB" variable nil nil [4239 4256])
+            ("QMAKE" variable (:default-value ("/usr/bin/qmake")) nil [4256 4287])
+            ("TAR" variable (:default-value ("tar" "-cf")) nil [4287 4311])
+            ("COMPRESS" variable (:default-value ("gzip" "-9f")) nil [4311 4336])
+            ("COPY" variable (:default-value ("cp" "-f")) nil [4336 4358])
+            ("SED" variable (:default-value ("sed")) nil [4358 4378])
+            ("COPY_FILE" variable (:default-value ("$(COPY)")) nil [4378 4402])
+            ("COPY_DIR" variable (:default-value ("$(COPY)" "-r")) nil [4402 4429])
+            ("STRIP" variable (:default-value ("echo")) nil [4429 4450])
+            ("INSTALL_FILE" variable (:default-value ("install" "-m" "644" "-p")) nil [4450 4484])
+            ("INSTALL_DIR" variable (:default-value ("$(COPY_DIR)")) nil [4484 4512])
+            ("INSTALL_PROGRAM" variable (:default-value ("install" "-m" "755" "-p")) nil [4512 4548])
+            ("DEL_FILE" variable (:default-value ("rm" "-f")) nil [4548 4570])
+            ("SYMLINK" variable (:default-value ("ln" "-f" "-s")) nil [4570 4595])
+            ("DEL_DIR" variable (:default-value ("rmdir")) nil [4595 4617])
+            ("MOVE" variable (:default-value ("mv" "-f")) nil [4617 4639])
+            ("CHK_DIR_EXISTS" variable (:default-value ("test" "-d")) nil [4639 4663])
+            ("MKDIR" variable (:default-value ("mkdir" "-p")) nil [4663 4688])
+            ("OBJECTS_DIR" variable (:default-value ("obj/")) nil [4715 4736])
+            ("SOURCES" variable (:default-value ("securityfilesd.cpp" "procinsdownloader.cpp" "CdcDbusInterface.cpp" "obj/moc_procinsdownloader.cpp" "obj/moc_CdcDbusInterface.cpp")) nil [4752 4901])
+            ("OBJECTS" variable (:default-value ("obj/securityfilesd.o" "obj/procinsdownloader.o" "obj/CdcDbusInterface.o" "obj/moc_procinsdownloader.o" "obj/moc_CdcDbusInterface.o")) nil [4901 5056])
+            ("DIST" variable (:default-value ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/common/unix.conf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/common/linux.conf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/common/gcc-base.conf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/common/gcc-base-unix.conf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/common/g++-base.conf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/common/g++-unix.conf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/common/qws.conf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/qconfig.pri" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/qt_functions.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/qt_config.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/exclusive_builds.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/default_pre.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/release.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/default_post.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/shared.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/warn_on.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/qt.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/moc.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/dbusinterfaces.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/dbusadaptors.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/unix/thread.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/resources.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/uic.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/yacc.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/lex.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/include_source_dir.prf" "secfilesd.pro")) nil [5056 7911])
+            ("QMAKE_TARGET" variable (:default-value ("securityfilesd")) nil [7911 7942])
+            ("DESTDIR" variable nil nil [7942 7959])
+            ("TARGET" variable (:default-value ("securityfilesd")) nil [7959 7990])
+            ("first" function (:arguments ("all")) nil [7991 8002])
+            (".SUFFIXES" function (:arguments (".o" ".c" ".cpp" ".cc" ".cxx" ".C")) nil [8026 8060])
+            (".cpp.o" function nil nil [8061 8116])
+            (".cc.o" function nil nil [8117 8171])
+            (".cxx.o" function nil nil [8172 8227])
+            (".C.o" function nil nil [8228 8281])
+            (".c.o" function nil nil [8282 8332])
+            ("all" function (:arguments ("Makefile" "$(TARGET)")) nil [8354 8378])
+            ("$(TARGET)" function (:arguments ("$(OBJECTS)")) nil [8379 8466])
+            ("Makefile" function (:arguments ("secfilesd.pro" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/default/qmake.conf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/common/unix.conf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/common/linux.conf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/common/gcc-base.conf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/common/gcc-base-unix.conf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/common/g++-base.conf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/common/g++-unix.conf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/common/qws.conf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/qconfig.pri" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/qt_functions.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/qt_config.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/exclusive_builds.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/default_pre.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/release.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/default_post.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/shared.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/warn_on.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/qt.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/moc.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/dbusinterfaces.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/dbusadaptors.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/unix/thread.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/resources.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/uic.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/yacc.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/lex.prf" "/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/include_source_dir.prf")) nil [8467 11926])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/common/unix.conf" function nil nil [11926 12027])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/common/linux.conf" function nil nil [12027 12129])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/common/gcc-base.conf" function nil nil [12129 12234])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/common/gcc-base-unix.conf" function nil nil [12234 12344])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/common/qws.conf" function nil nil [12554 12654])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/qconfig.pri" function nil nil [12654 12750])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/qt_functions.prf" function nil nil [12750 12860])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/qt_config.prf" function nil nil [12860 12967])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/exclusive_builds.prf" function nil nil [12967 13081])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/default_pre.prf" function nil nil [13081 13190])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/release.prf" function nil nil [13190 13295])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/default_post.prf" function nil nil [13295 13405])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/shared.prf" function nil nil [13405 13509])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/warn_on.prf" function nil nil [13509 13614])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/qt.prf" function nil nil [13614 13714])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/moc.prf" function nil nil [13714 13815])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/dbusinterfaces.prf" function nil nil [13815 13927])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/dbusadaptors.prf" function nil nil [13927 14037])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/unix/thread.prf" function nil nil [14037 14146])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/resources.prf" function nil nil [14146 14253])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/uic.prf" function nil nil [14253 14354])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/yacc.prf" function nil nil [14354 14456])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/lex.prf" function nil nil [14456 14557])
+            ("/home/rkirk/dev/pace/sandbox/D714/build/target/DEBUG_INITRAMFS/staging/usr/mkspecs/features/include_source_dir.prf" function nil nil [14557 14673])
+            ("qmake" function (:arguments ("FORCE")) nil [14673 15199])
+            ("dist" function nil nil [15200 15810])
+            ("clean" function (:arguments ("compiler_clean")) nil [15812 15888])
+            ("distclean" function (:arguments ("clean")) nil [15913 15978])
+            ("check" function (:arguments ("first")) nil [15980 15993])
+            ("mocclean" function (:arguments ("compiler_moc_header_clean" "compiler_moc_source_clean")) nil [15994 16056])
+            ("mocables" function (:arguments ("compiler_moc_header_make_all" "compiler_moc_source_make_all")) nil [16057 16125])
+            ("compiler_moc_header_make_all" function (:arguments ("obj/moc_procinsdownloader.cpp" "obj/moc_CdcDbusInterface.cpp")) nil [16126 16215])
+            ("compiler_moc_header_clean" function nil nil [16215 16315])
+            ("obj/moc_procinsdownloader.cpp" function (:arguments ("CdcDbusInterface.h" "procinsdownloader.h")) nil [16315 16493])
+            ("obj/moc_CdcDbusInterface.cpp" function (:arguments ("CdcDbusInterface.h")) nil [16494 16645])
+            ("compiler_dbus_interface_source_make_all" function nil nil [16646 16687])
+            ("compiler_dbus_interface_source_clean" function nil nil [16687 16725])
+            ("compiler_dbus_adaptor_source_make_all" function nil nil [16725 16764])
+            ("compiler_dbus_adaptor_source_clean" function nil nil [16764 16800])
+            ("compiler_rcc_make_all" function nil nil [16800 16823])
+            ("compiler_rcc_clean" function nil nil [16823 16843])
+            ("compiler_image_collection_make_all" function (:arguments ("qmake_image_collection.cpp")) nil [16843 16906])
+            ("compiler_image_collection_clean" function nil nil [16906 16980])
+            ("compiler_moc_source_make_all" function nil nil [16980 17010])
+            ("compiler_moc_source_clean" function nil nil [17010 17037])
+            ("compiler_dbus_interface_header_make_all" function nil nil [17037 17078])
+            ("compiler_dbus_interface_header_clean" function nil nil [17078 17116])
+            ("compiler_dbus_interface_moc_make_all" function nil nil [17116 17154])
+            ("compiler_dbus_interface_moc_clean" function nil nil [17154 17189])
+            ("compiler_dbus_adaptor_header_make_all" function nil nil [17189 17228])
+            ("compiler_dbus_adaptor_header_clean" function nil nil [17228 17264])
+            ("compiler_dbus_adaptor_moc_make_all" function nil nil [17264 17300])
+            ("compiler_dbus_adaptor_moc_clean" function nil nil [17300 17333])
+            ("compiler_uic_make_all" function nil nil [17333 17356])
+            ("compiler_uic_clean" function nil nil [17356 17376])
+            ("compiler_yacc_decl_make_all" function nil nil [17376 17405])
+            ("compiler_yacc_decl_clean" function nil nil [17405 17431])
+            ("compiler_yacc_impl_make_all" function nil nil [17431 17460])
+            ("compiler_yacc_impl_clean" function nil nil [17460 17486])
+            ("compiler_lex_make_all" function nil nil [17486 17509])
+            ("compiler_lex_clean" function nil nil [17509 17529])
+            ("compiler_clean" function (:arguments ("compiler_moc_header_clean")) nil [17529 17572])
+            ("obj/securityfilesd.o" function (:arguments ("securityfilesd.cpp" "procinsdownloader.h" "CdcDbusInterface.h")) nil [17590 17751])
+            ("obj/procinsdownloader.o" function (:arguments ("procinsdownloader.cpp" "procinsdownloader.h" "CdcDbusInterface.h")) nil [17752 17925])
+            ("obj/CdcDbusInterface.o" function (:arguments ("CdcDbusInterface.cpp" "CdcDbusInterface.h")) nil [17926 18071])
+            ("obj/moc_procinsdownloader.o" function (:arguments ("obj/moc_procinsdownloader.cpp")) nil [18072 18227])
+            ("obj/moc_CdcDbusInterface.o" function (:arguments ("obj/moc_CdcDbusInterface.cpp")) nil [18228 18379])
+            ("install_target" function (:arguments ("first" "FORCE")) nil [18397 18930])
+            ("uninstall_target" function (:arguments ("FORCE")) nil [18931 19195])
+            ("install" function (:arguments ("install_target" "FORCE")) nil [19197 19229])
+            ("uninstall" function (:arguments ("uninstall_target" "FORCE")) nil [19230 19266])
+            ("FORCE" function nil nil [19267 19274]))          
+    :file "Makefile"
+    :pointmax 19275
+    :fsize 19274
+    :lastmodtime '(21511 18974 834130 588000)
+    :unmatched-syntax '((punctuation 12552 . 12553) (symbol 12542 . 12552) (punctuation 12541 . 12542) (punctuation 12540 . 12541) (symbol 12449 . 12540) (bol 12449 . 12449) (punctuation 12447 . 12448) (symbol 12437 . 12447) (punctuation 12436 . 12437) (punctuation 12435 . 12436) (symbol 12344 . 12435) (bol 12344 . 12344))
+    )
+   (semanticdb-table "procinsdownloader.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QTimer" include (:system-flag t) nil [1 18])
+            ("QFile" include (:system-flag t) nil [19 35])
+            ("QDataStream" include (:system-flag t) nil [36 58])
+            ("QVariant" include (:system-flag t) nil [59 78])
+            ("cerrno" include (:system-flag t) nil [79 96])
+            ("cassert" include (:system-flag t) nil [97 115])
+            ("vector" include (:system-flag t) nil [116 133])
+            ("stdint.h" include (:system-flag t) nil [134 153])
+            ("sys/types.h" include (:system-flag t) nil [154 176])
+            ("sys/stat.h" include (:system-flag t) nil [177 198])
+            ("unistd.h" include (:system-flag t) nil [199 218])
+            ("procinsdownloader.h" include nil nil [220 250])
+            ("security.h" include nil nil [251 272])
+            ("EdcRequestTypes.h" include nil nil [273 301])
+            ("tlogger.h" include nil nil [303 323])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [324 348])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [349 396])
+            ("RETRY_TIMER_VALUE" variable (:constant-flag t) nil [868 885])
+            ("ProcinsDownloader" function
+               (:constructor-flag t
+                :parent "ProcinsDownloader"
+                :type ("ProcinsDownloader" type (:type "class") nil nil))
+                nil [893 1319])
+            ("ProcinsDownloader" function
+               (:destructor-flag t
+                :parent "ProcinsDownloader"
+                :type "void")
+                nil [1321 1365])
+            ("downloaded" function
+               (:parent "ProcinsDownloader"
+                :arguments 
+                  ( ("response" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1605 1629])
+                    ("requestId" variable (:type "int") (reparse-symbol arg-sub-list) [1630 1644])
+                    ("messageType" variable (:type "int") (reparse-symbol arg-sub-list) [1645 1661]))                  
+                :type "void")
+                nil [1570 8499])
+            ("persistFile" function
+               (:parent "ProcinsDownloader"
+                :arguments 
+                  ( ("downloadedFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8729 8750])
+                    ("persistentPath" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8751 8785]))                  
+                :type "void")
+                nil [8693 10833])
+            ("retryUnprotectingFile" function
+               (:parent "ProcinsDownloader"
+                :type "void")
+                nil [10912 11863])
+            ("areFilesIdentical" function
+               (:parent "ProcinsDownloader"
+                :arguments 
+                  ( ("persistedFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12181 12201])
+                    ("downloadedFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12202 12223]))                  
+                :type "bool")
+                nil [12139 13913])
+            ("verifyOkprocins" function
+               (:parent "ProcinsDownloader"
+                :arguments 
+                  ( ("downloadedFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14113 14134]))                  
+                :type "bool")
+                nil [14073 14670])
+            ("verifyK3procins" function
+               (:parent "ProcinsDownloader"
+                :arguments 
+                  ( ("downloadedFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14870 14891]))                  
+                :type "bool")
+                nil [14830 15260])
+            ("updateKeyladders" function
+               (:parent "ProcinsDownloader"
+                :arguments 
+                  ( ("downloadedFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15492 15513]))                  
+                :type "bool")
+                nil [15451 16376]))          
+    :file "procinsdownloader.cpp"
+    :pointmax 16377
+    :fsize 16376
+    :lastmodtime '(21511 16959 600590 699000)
+    :unmatched-syntax '((symbol 842 . 851) (symbol 839 . 841) (symbol 834 . 838) (symbol 816 . 833) (symbol 810 . 815) (punctuation 809 . 810) (symbol 457 . 466) (symbol 454 . 456) (symbol 449 . 453) (symbol 431 . 448) (symbol 425 . 430) (punctuation 424 . 425) (string 375 . 394))
+    :lexical-table 
+        '(("RETRY_TIMER_VALUE" . ((number "30000" 886 . 891)))
+          )
+
+    )
+   (semanticdb-table "procinsdownloader.h"
+    :file "procinsdownloader.h"
+    :fsize 1109
+    :lastmodtime '(21483 21693 942743 885000)
+    )
+   (semanticdb-table "CdcDbusInterface.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("CDCDBUSINTERFACE_H_1409763870" variable (:constant-flag t) nil [469 498])
+            ("QtCore/QObject" include (:system-flag t) nil [500 525])
+            ("QtCore/QByteArray" include (:system-flag t) nil [526 554])
+            ("QtCore/QList" include (:system-flag t) nil [555 578])
+            ("QtCore/QMap" include (:system-flag t) nil [579 601])
+            ("QtCore/QString" include (:system-flag t) nil [602 627])
+            ("QtCore/QStringList" include (:system-flag t) nil [628 657])
+            ("QtCore/QVariant" include (:system-flag t) nil [658 684])
+            ("QtDBus/QtDBus" include (:system-flag t) nil [685 709])
+            ("OrgPaceCdcInterface" type
+               (:superclasses 
+                  ( ("QDBusAbstractInterface" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [832 839])
+                    ("staticInterfaceName" function
+                       (:pointer 1
+                        :typemodifiers ("static" "inline")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [844 922])
+                    ("public" label nil (reparse-symbol classsubparts) [924 931])
+                    ("OrgPaceCdcInterface" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("service" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [956 979])
+                            ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [980 1000])
+                            ("connection" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QDBusConnection" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1001 1035])
+                            ("parent" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1036 1053]))                          
+                        :type ("OrgPaceCdcInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [936 1057])
+                    ("OrgPaceCdcInterface" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1063 1086])
+                    ("public" label nil (reparse-symbol classsubparts) [1088 1103])
+                    ("configureDVBParams" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("onid" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1169 1179])
+                            ("tsid" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1180 1190])
+                            ("pid" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1191 1200])
+                            ("parserBand" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1201 1217]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("uint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1119 1503])
+                    ("requestFileDownload" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("url" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1560 1579])
+                            ("secondaryUrl" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1580 1608])
+                            ("requestId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1609 1624]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("uint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1509 1889])
+                    ("startMonitor" function
+                       (:typemodifiers ("inline")
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("uint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1895 2077])
+                    ("stopMonitor" function
+                       (:typemodifiers ("inline")
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("uint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2083 2263])
+                    ("downloadReqSuccess" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filePath" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2315 2339])
+                            ("success" variable (:type "bool") (reparse-symbol arg-sub-list) [2340 2353]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2291 2354])
+                    ("fileDownloaded" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filePath" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2379 2403])
+                            ("requestId" variable (:type "int") (reparse-symbol arg-sub-list) [2404 2418])
+                            ("messageType" variable (:type "int") (reparse-symbol arg-sub-list) [2419 2435]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2359 2436]))                  
+                :type "class")
+                nil [760 2439])
+            ("org" type
+               (:members 
+                  ( ("pace" type
+                       (:members 
+                          ( ("cdc" variable (:type ("OrgPaceCdcInterface" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [2490 2514]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2459 2518]))                  
+                :type "namespace")
+                nil [2441 2520]))          
+    :file "CdcDbusInterface.h"
+    :pointmax 2528
+    :fsize 2527
+    :lastmodtime '(21511 18974 416133 499000)
+    :unmatched-syntax '((punctuation 2489 . 2490) (punctuation 2488 . 2489) (TYPEDEF 2480 . 2487) (punctuation 2274 . 2275) (symbol 2265 . 2274) (number 1054 . 1055) (punctuation 1052 . 1053) (symbol 823 . 831))
+    :lexical-table 
+        '(("CDCDBUSINTERFACE_H_1409763870")
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D714!src!pace!middleware!security-lib!securityfilesd!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

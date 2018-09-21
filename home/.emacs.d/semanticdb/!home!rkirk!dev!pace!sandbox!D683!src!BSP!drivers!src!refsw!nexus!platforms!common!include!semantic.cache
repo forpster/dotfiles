@@ -1,0 +1,72 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "nexus_platform_client.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NEXUS_PLATFORM_CLIENT_H__" variable (:constant-flag t) nil [2663 2688])
+            ("nexus_platform_common.h" include nil nil [2690 2724])
+            ("NEXUS_Platform_GetDefaultClientAuthenticationSettings" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("pSettings" variable
+                       (:pointer 1
+                        :type ("NEXUS_ClientAuthenticationSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2906 2969]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2842 2970])
+            ("NEXUS_Platform_AuthenticatedJoin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("pSettings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_ClientAuthenticationSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4305 4389]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4255 4390])
+            ("NEXUS_Platform_Join" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4491 4510])
+            ("NEXUS_Platform_Uninit" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5295 5300]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5268 5301])
+            ("NEXUS_Platform_GetClientConfiguration" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("pSettings" variable
+                       (:pointer 1
+                        :type ("NEXUS_ClientConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5425 5479]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5377 5480]))          
+    :file "nexus_platform_client.h"
+    :pointmax 5520
+    :fsize 5519
+    :lastmodtime '(21674 23286 313702 213000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NEXUS_PLATFORM_CLIENT_H__")
+          ("NEXUS_Platform_Join" (spp-arg-list nil 4510 . 4512) . ((symbol "NEXUS_Platform_AuthenticatedJoin" 4513 . 4545) (semantic-list "(NULL)" 4545 . 4551)))
+          )
+
+    )
+   (semanticdb-table "nexus_platform_common.h"
+    :file "nexus_platform_common.h"
+    :fsize 4412
+    :lastmodtime '(21674 23286 313702 213000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D683!src!BSP!drivers!src!refsw!nexus!platforms!common!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

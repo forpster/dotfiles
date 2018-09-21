@@ -1,0 +1,789 @@
+;; Object dsm-cc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dsm-cc/"
+  :tables (list 
+   (semanticdb-table "bla_carousel_dsm-cc.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__BLA_CAROUSEL_DSMCC_H__" variable (:constant-flag t) nil [705 729])
+            ("bla_types.h" include nil nil [731 753])
+            ("bla_dvb-si.h" include nil nil [754 777])
+            ("bla_prod_carousel.h" include nil nil [778 808])
+            ("bla_prod_image.h" include nil nil [809 836])
+            ("BLA_DSMCC_FOXTEL_SPECIFIC_FORMAT" variable (:constant-flag t) nil [899 931])
+            ("BLA_SIGNATURE_PROVIDER_RESERVED" variable (:constant-flag t) nil [946 977])
+            ("BLA_SIGNATURE_PROVIDER_FOXTEL" variable (:constant-flag t) nil [997 1026])
+            ("BLA_SIGNATURE_PROVIDER_BROADCOM" variable (:constant-flag t) nil [1048 1079])
+            ("BLA_SIGNATURE_PROVIDER_IRDETO" variable (:constant-flag t) nil [1099 1128])
+            ("BLA_SIGNATURE_PROVIDER_NDS" variable (:constant-flag t) nil [1150 1176])
+            ("BAT_TIMEOUT_PERIOD" variable (:constant-flag t) nil [1208 1226])
+            ("NIT_TIMEOUT_PERIOD" variable (:constant-flag t) nil [1265 1283])
+            ("SDT_TIMEOUT_PERIOD" variable (:constant-flag t) nil [1322 1340])
+            ("PAT_TIMEOUT_PERIOD" variable (:constant-flag t) nil [1379 1397])
+            ("PMT_TIMEOUT_PERIOD" variable (:constant-flag t) nil [1436 1454])
+            ("DSI_TIMEOUT_PERIOD" variable (:constant-flag t) nil [1494 1512])
+            ("DII_TIMEOUT_PERIOD" variable (:constant-flag t) nil [1551 1569])
+            ("DDB_TIMEOUT_PERIOD" variable (:constant-flag t) nil [1608 1626])
+            ("TOT_TIMEOUT_PERIOD" variable (:constant-flag t) nil [1716 1734])
+            ("TDT_TIMEOUT_PERIOD" variable (:constant-flag t) nil [1777 1795])
+            ("DOWNLOAD_TIMEOUT_PERIOD" variable (:constant-flag t) nil [1994 2017])
+            ("CODEMODULE_DATA_TIMEOUT_PERIOD" variable (:constant-flag t) nil [2075 2105])
+            ("PRIVATE_SECTION_TIMEOUT_PERIOD" variable (:constant-flag t) nil [2147 2177])
+            ("DIRECTORY_MODULE_TIMEOUT_PERIOD" variable (:constant-flag t) nil [2199 2230])
+            ("MAX_NUMBER_PIDS" variable (:constant-flag t) nil [2252 2267])
+            ("DESC_TAG_NETWORK_NAME" variable (:constant-flag t) nil [2300 2321])
+            ("DESC_TAG_SERVICE_LIST" variable (:constant-flag t) nil [2347 2368])
+            ("DESC_TAG_SAT_DEL_SYSTEM" variable (:constant-flag t) nil [2394 2417])
+            ("DESC_TAG_CAB_DEL_SYSTEM" variable (:constant-flag t) nil [2441 2464])
+            ("DESC_TAG_PRIVATE_DATA_SPECIFIER" variable (:constant-flag t) nil [2488 2519])
+            ("DESC_TAG_SERVICE" variable (:constant-flag t) nil [2535 2551])
+            ("DESC_TAG_LINKAGE" variable (:constant-flag t) nil [2616 2632])
+            ("DESC_TAG_DATA_BROADCAST" variable (:constant-flag t) nil [2663 2686])
+            ("DESC_TAG_DATA_BROADCAST_ID" variable (:constant-flag t) nil [2710 2736])
+            ("DESC_TAG_DL_SIGNATURE" variable (:constant-flag t) nil [2757 2778])
+            ("DOWNLOAD_LINKAGE_TYPE" variable (:constant-flag t) nil [2805 2826])
+            ("DOWNLOAD_SERVICE_TYPE" variable (:constant-flag t) nil [2852 2873])
+            ("DOWNLOAD_DESCRIPTOR" variable (:constant-flag t) nil [2899 2918])
+            ("SSU_LINKAGE_TYPE" variable (:constant-flag t) nil [2946 2962])
+            ("SSU_SCAN_LINKAGE_TYPE" variable (:constant-flag t) nil [2993 3014])
+            ("OTV_SPECIFIC_DATA" variable (:constant-flag t) nil [3041 3058])
+            ("OTV_DL_TID" variable (:constant-flag t) nil [3095 3105])
+            ("DOWNLOAD_SIGN" variable (:constant-flag t) nil [3163 3176])
+            ("SIGNATURE_SIZE_OFFSET" variable (:constant-flag t) nil [3217 3238])
+            ("DESC_TAG_PMT_PRIVATE_DATA" variable (:constant-flag t) nil [3265 3290])
+            ("DESC_TAG_PMT_USER_PRIVATE" variable (:constant-flag t) nil [3312 3337])
+            ("PMT_DISASTERRECOVERY_TID" variable (:constant-flag t) nil [3360 3384])
+            ("BLA_ORIGINAL_NETWORK_ID" variable (:constant-flag t) nil [3408 3431])
+            ("MODULE_ID_OFFSET" variable (:constant-flag t) nil [3461 3477])
+            ("APPLICATION_INSTANCE_ID_OFFSET" variable (:constant-flag t) nil [3504 3534])
+            ("DIRECTORY_MODULE_ID" variable (:constant-flag t) nil [3548 3567])
+            ("DIRECTORY_LAST_OFFSET" variable (:constant-flag t) nil [3591 3612])
+            ("NATIVE_CODE_MODULE_ID" variable (:constant-flag t) nil [3636 3657])
+            ("CODE_MODULE_MIN_SIZE" variable (:constant-flag t) nil [3717 3737])
+            ("MAX_DL_SECTIONS" variable (:constant-flag t) nil [3764 3779])
+            ("DL_STATUS" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("START_DOWNLOAD" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3936 3951])
+                          ("ACQUIRE_SDT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3956 3968])
+                          ("ACQUIRE_PAT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3973 3985])
+                          ("ACQUIRE_PMT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3990 4002])
+                          ("ACQUIRE_NIT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4007 4019])
+                          ("ACQUIRE_NITRETUNE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4024 4042])
+                          ("ACQUIRE_NITLINKAGE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4047 4066])
+                          ("ACQUIRE_TOT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4071 4083])
+                          ("ACQUIRE_TDT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4088 4100])
+                          ("ACQUIRE_DSI" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4105 4117])
+                          ("ACQUIRE_DII" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4122 4134])
+                          ("ACQUIRE_DDB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4139 4151])
+                          ("ACQUIRE_DIRECTORY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4156 4174])
+                          ("ACQUIRE_NATIVECODE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4179 4198])
+                          ("END_OF_DOWNLOAD" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4203 4221]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [3917 4232])
+            ("SDT_DESCRIPTOR_SCAN_STATUS" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("SDT_SCAN_PRIVATE_DATA" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4315 4337])
+                          ("SDT_SCAN_SERVICE_DESCRIPTOR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4342 4372]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [4296 4400])
+            ("ES_DESCRIPTOR_SCAN_STATUS" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("PMT_SCAN_PRIVATE_DATA" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4473 4495])
+                          ("PMT_SCAN_DL_INFO" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4500 4519]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [4454 4546])
+            ("PRIVATE_TABLES" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("DIRECTORY_MODULE" variable
+                             (:constant-flag t
+                              :default-value (4618 4619)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4599 4619])
+                          ("NATIVECODE_MODULE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4625 4643])
+                          ("PRIVATE_SECTION_MODULE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4648 4672]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [4580 4688])
+            ("TABLE_FILTER_PARAMS" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("pid" variable (:type ("L_PID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4758 4768])
+                          ("TableId" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4796 4812])
+                          ("TimeOut" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4833 4850]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [4737 4895])
+            ("DL_HEADER_INFO" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("application_instance_id" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4994 5027])
+                          ("module_version" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5062 5086])
+                          ("module_offset" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5121 5144])
+                          ("module_size" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5179 5200]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [4973 5248])
+            ("SERIALISATION_INFO" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("manufacturer_id" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5328 5353])
+                          ("model_type" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5380 5400]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [5307 5460])
+            ("DIRECTORY_TABLE" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("stHeaderInfo" variable (:type ("DL_HEADER_INFO" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5531 5559])
+                          ("stSeriInfo" variable (:type ("SERIALISATION_INFO" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5604 5634])
+                          ("comp_module_size" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5639 5665])
+                          ("module_memory_requirement" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5707 5742])
+                          ("manufacturer_reserved" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5777 5808])
+                          ("module_decompression_flag" variable (:type ("L_BOOL" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5882 5915]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [5510 5961])
+            ("NATIVECODE_TABLE" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("stHeaderInfo" variable (:type ("DL_HEADER_INFO" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6035 6063])
+                          ("Data" variable
+                             (:pointer 1
+                              :type ("L_UINT8" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [6101 6115])
+                          ("DataLength" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6173 6193])
+                          ("SectionNumber" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6237 6259])
+                          ("LastSectionNumber" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6291 6317]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [6014 6365])
+            ("PRIV_DL_TID_DESCRIPTOR" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("private_DL_tag" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6456 6479])
+                          ("private_DL_descriptor_length" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6527 6564])
+                          ("private_runtime_Tid" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6593 6621])
+                          ("private_res_Tid" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6661 6685]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [6435 6750])
+            ("BLA_CAROUSEL_INITPARAMS" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("bUseRandomSearch" variable (:type ("L_BOOL" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6815 6839])
+                          ("BytesPerPartition" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6899 6926]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [6794 6998])
+            ("BLA_CAROUSEL_init" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("L_VOID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7275 7282]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [7238 7283])
+            ("BLA_CAROUSEL_acquireDownloadImage" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("BLA_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7822 7854]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [7769 7855])
+            ("BLA_CAROUSEL_acquireStreamTime" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("utcTime" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7907 7924]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [7857 7925])
+            ("BLA_CAROUSEL_SI_resetAcquisition" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("L_VOID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8237 8244]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [8185 8245]))          
+    :file "bla_carousel_dsm-cc.h"
+    :pointmax 10576
+    :fsize 10575
+    :lastmodtime '(21299 45406 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DESC_TAG_DATA_BROADCAST" . ((number "0x64" 2697 . 2701)))
+          ("DESC_TAG_PMT_PRIVATE_DATA" . ((number "0x5f" 3299 . 3303)))
+          ("CODE_MODULE_MIN_SIZE" . ((number "1024" 3750 . 3754)))
+          ("BLA_SIGNATURE_PROVIDER_RESERVED" . ((number "0x0000" 982 . 988)))
+          ("BLA_SIGNATURE_PROVIDER_BROADCOM" . ((number "0x0002" 1084 . 1090)))
+          ("SDT_TIMEOUT_PERIOD" . ((number "10000" 1356 . 1361)))
+          ("PMT_TIMEOUT_PERIOD" . ((number "10000" 1470 . 1475)))
+          ("DII_TIMEOUT_PERIOD" . ((number "10000" 1585 . 1590)))
+          ("DDB_TIMEOUT_PERIOD" . ((number "30000" 1642 . 1647)))
+          ("DESC_TAG_PRIVATE_DATA_SPECIFIER" . ((number "0x5f" 2522 . 2526)))
+          ("PAT_TIMEOUT_PERIOD" . ((number "10000" 1413 . 1418)))
+          ("TOT_TIMEOUT_PERIOD" . ((semantic-list "(30*1000)" 1750 . 1759)))
+          ("DOWNLOAD_SERVICE_TYPE" . ((number "0x84" 2886 . 2890)))
+          ("DOWNLOAD_DESCRIPTOR" . ((number "0x2" 2933 . 2936)))
+          ("BLA_SIGNATURE_PROVIDER_FOXTEL" . ((number "0x0001" 1033 . 1039)))
+          ("SIGNATURE_SIZE_OFFSET" . ((number "0x08" 3251 . 3255)))
+          ("MODULE_ID_OFFSET" . ((number "3" 3494 . 3495)))
+          ("DIRECTORY_LAST_OFFSET" . ((number "32" 3624 . 3626)))
+          ("NIT_TIMEOUT_PERIOD" . ((number "10000" 1299 . 1304)))
+          ("TDT_TIMEOUT_PERIOD" . ((semantic-list "(30*1000)" 1811 . 1820)))
+          ("SSU_SCAN_LINKAGE_TYPE" . ((number "0x0A" 3027 . 3031)))
+          ("DOWNLOAD_SIGN" . ((number "0x5349474E" 3197 . 3207)))
+          ("BLA_ORIGINAL_NETWORK_ID" . ((number "0x0A" 3442 . 3446)))
+          ("MAX_DL_SECTIONS" . ((semantic-list "(BLA_MAX_DOWNLOAD_RAM_SIZE / CODE_MODULE_MIN_SIZE)" 3797 . 3847)))
+          ("DOWNLOAD_TIMEOUT_PERIOD" . ((number "0xFFFFFFFF" 2028 . 2038)))
+          ("DESC_TAG_CAB_DEL_SYSTEM" . ((number "0x44" 2475 . 2479)))
+          ("DESC_TAG_LINKAGE" . ((number "0x4A" 2650 . 2654)))
+          ("PMT_DISASTERRECOVERY_TID" . ((number "0xB6" 3394 . 3398)))
+          ("BLA_SIGNATURE_PROVIDER_NDS" . ((number "0x0004" 1186 . 1192)))
+          ("CODEMODULE_DATA_TIMEOUT_PERIOD" . ((semantic-list "(15*60*1000)" 2109 . 2121)))
+          ("DESC_TAG_DL_SIGNATURE" . ((number "0xF0" 2791 . 2795)))
+          ("OTV_SPECIFIC_DATA" . ((number "0x4F545600" 3075 . 3085)))
+          ("__BLA_CAROUSEL_DSMCC_H__")
+          ("PRIVATE_SECTION_TIMEOUT_PERIOD" . ((semantic-list "(60*1000)" 2181 . 2190)))
+          ("MAX_NUMBER_PIDS" . ((number "255" 2286 . 2289)))
+          ("DESC_TAG_SERVICE" . ((number "0x48" 2569 . 2573)))
+          ("APPLICATION_INSTANCE_ID_OFFSET" . ((number "8" 3537 . 3538)))
+          ("BLA_DSMCC_FOXTEL_SPECIFIC_FORMAT" . ((number "2" 935 . 936)))
+          ("DOWNLOAD_LINKAGE_TYPE" . ((number "0x81" 2839 . 2843)))
+          ("BLA_SIGNATURE_PROVIDER_IRDETO" . ((number "0x0003" 1135 . 1141)))
+          ("NATIVE_CODE_MODULE_ID" . ((number "1" 3669 . 3670)))
+          ("DSI_TIMEOUT_PERIOD" . ((number "10000" 1528 . 1533)))
+          ("DESC_TAG_NETWORK_NAME" . ((number "0x40" 2334 . 2338)))
+          ("DESC_TAG_PMT_USER_PRIVATE" . ((number "0x90" 3346 . 3350)))
+          ("BAT_TIMEOUT_PERIOD" . ((number "20000" 1242 . 1247)))
+          ("DIRECTORY_MODULE_TIMEOUT_PERIOD" . ((semantic-list "(30*1000)" 2233 . 2242)))
+          ("DESC_TAG_SERVICE_LIST" . ((number "0x41" 2381 . 2385)))
+          ("DESC_TAG_SAT_DEL_SYSTEM" . ((number "0x43" 2428 . 2432)))
+          ("DESC_TAG_DATA_BROADCAST_ID" . ((number "0x66" 2744 . 2748)))
+          ("SSU_LINKAGE_TYPE" . ((number "0x09" 2980 . 2984)))
+          ("OTV_DL_TID" . ((number "0x86" 3129 . 3133)))
+          ("DIRECTORY_MODULE_ID" . ((number "0" 3581 . 3582)))
+          )
+
+    )
+   (semanticdb-table "bla_prod_carousel.h"
+    :file "bla_prod_carousel.h"
+    :fsize 841
+    :lastmodtime '(20744 42537 0 0)
+    )
+   (semanticdb-table "bla_carousel_dsm-cc.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("bla_types.h" include nil nil [666 688])
+            ("bla_debug.h" include nil nil [689 711])
+            ("bla_utils.h" include nil nil [712 734])
+            ("bla_prod_hw.h" include nil nil [735 759])
+            ("bla_carousel_dsm-cc.h" include nil nil [760 792])
+            ("bla_os.h" include nil nil [793 812])
+            ("bla_dvb-si.h" include nil nil [813 836])
+            ("bla_nvram.h" include nil nil [837 859])
+            ("bla_prod_nvram.h" include nil nil [860 887])
+            ("bla_osd.h" include nil nil [888 908])
+            ("bla_main.h" include nil nil [909 930])
+            ("bla_image.h" include nil nil [931 953])
+            ("bla_ui.h" include nil nil [954 973])
+            ("bla_prod_ui.h" include nil nil [974 998])
+            ("bla_prod_security.h" include nil nil [999 1029])
+            ("support_fe.h" include nil nil [1031 1054])
+            ("flash_map.h" include nil nil [1055 1077])
+            ("bla_prod_hw.h" include nil nil [1078 1102])
+            ("BLA_IMAGE_displayError" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("thisDL_ErrorCode" variable (:type ("L_ERRORCODE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1141 1170]))                  
+                :type ("L_VOID" type (:type "class") nil nil))
+                nil [1104 1171])
+            ("DLStartTime" variable
+               (:typemodifiers ("static")
+                :type ("L_UINT32" type (:type "class") nil nil))
+                nil [1194 1226])
+            ("CopySize" variable
+               (:typemodifiers ("static")
+                :type ("L_UINT32" type (:type "class") nil nil))
+                nil [1227 1256])
+            ("service_id" variable
+               (:typemodifiers ("static")
+                :type ("L_UINT16" type (:type "class") nil nil))
+                nil [1257 1288])
+            ("ModuleDownloaded" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("L_UINT8" type (:type "class") nil nil))
+                nil [1289 1338])
+            ("ledUpdated" variable
+               (:typemodifiers ("static")
+                :type ("L_UINT8" type (:type "class") nil nil))
+                nil [1339 1369])
+            ("TotTable" variable
+               (:typemodifiers ("static")
+                :type ("BLA_CAROUSEL_TOT_TABLE" type (:type "class") nil nil))
+                nil [1370 1409])
+            ("TdtTable" variable
+               (:typemodifiers ("static")
+                :type ("BLA_CAROUSEL_TDT_TABLE" type (:type "class") nil nil))
+                nil [1410 1449])
+            ("gModuleId" variable
+               (:typemodifiers ("static")
+                :type ("L_UINT16" type (:type "class") nil nil))
+                nil [1450 1476])
+            ("gModuleSize" variable
+               (:typemodifiers ("static")
+                :type ("L_UINT32" type (:type "class") nil nil))
+                nil [1477 1505])
+            ("gBlockSize" variable
+               (:typemodifiers ("static")
+                :type ("L_UINT16" type (:type "class") nil nil))
+                nil [1506 1533])
+            ("moduleVersionConfigured" variable
+               (:typemodifiers ("static")
+                :type ("L_BOOL" type (:type "class") nil nil))
+                nil [1534 1580])
+            ("TUNE_MODE" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("NEW_TUNE" variable
+                             (:constant-flag t
+                              :default-value (1721 1722)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1710 1722])
+                          ("RETUNE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1728 1736]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [1691 1747])
+            ("NIT_DOWNLOAD_DATA" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("bLinkageDescFound" variable (:type ("L_BOOL" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1770 1795])
+                          ("bSatDelDescFound" variable (:type ("L_BOOL" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1800 1824])
+                          ("bCabDelDescFound" variable (:type ("L_BOOL" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1829 1853])
+                          ("bServiceDescFound" variable (:type ("L_BOOL" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1858 1883])
+                          ("TsId" variable (:type ("L_UINT16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1888 1902])
+                          ("OriginalNetworkId" variable (:type ("L_UINT16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1907 1934])
+                          ("ServiceId" variable (:type ("L_UINT16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1939 1958])
+                          ("TsLoopOffset" variable (:type ("L_UINT16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1963 1985])
+                          ("satDeliveryDescriptor" variable (:type ("SATELLITE_DELIVERY_DESCRIPTOR" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1990 2042])
+                          ("cabDeliveryDescriptor" variable (:type ("CABLE_DELIVERY_DESCRIPTOR" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2047 2095]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1749 2116])
+            ("NitSavedDownloadData" variable (:type ("NIT_DOWNLOAD_DATA" type (:type "class") nil nil)) nil [2118 2157])
+            ("NIT_TableFilterParams" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type ("TABLE_FILTER_PARAMS" type (:type "class") nil nil))
+                nil [2248 2355])
+            ("PAT_TableFilterParams" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type ("TABLE_FILTER_PARAMS" type (:type "class") nil nil))
+                nil [2357 2465])
+            ("TDT_TableFilterParams" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type ("TABLE_FILTER_PARAMS" type (:type "class") nil nil))
+                nil [2467 2574])
+            ("TOT_TableFilterParams" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type ("TABLE_FILTER_PARAMS" type (:type "class") nil nil))
+                nil [2576 2683])
+            ("carouselInitParams" variable
+               (:typemodifiers ("static")
+                :type ("BLA_CAROUSEL_INITPARAMS" type (:type "class") nil nil))
+                nil [2736 2859])
+            ("BLA_CAROUSEL_acquirePATTable" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pid" variable (:type ("L_PID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2987 2997])
+                    ("TableId" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2998 3014])
+                    ("TimeOut" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3015 3032])
+                    ("program_pid" variable
+                       (:pointer 1
+                        :type ("L_PID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3033 3052])
+                    ("Length" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3053 3069]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [2939 3070])
+            ("BLA_CAROUSEL_acquirePMTTable" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pid" variable (:type ("L_PID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3119 3129])
+                    ("TableId" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3130 3146])
+                    ("TimeOut" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3147 3164])
+                    ("download_pid" variable
+                       (:pointer 1
+                        :type ("L_PID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3165 3185])
+                    ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("BLA_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3186 3218]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [3071 3219])
+            ("BLA_CAROUSEL_acquireTDTTable" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pid" variable (:type ("L_PID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3268 3278])
+                    ("TableId" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3279 3295])
+                    ("TimeOut" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3296 3313])
+                    ("utcTime" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3362 3379])
+                    ("Length" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3380 3396]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [3220 3397])
+            ("BLA_CAROUSEL_acquireTOTTable" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pid" variable (:type ("L_PID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3446 3456])
+                    ("TableId" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3457 3473])
+                    ("TimeOut" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3474 3491])
+                    ("utcTime" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3492 3509])
+                    ("Length" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3510 3526]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [3398 3527])
+            ("BLA_CAROUSEL_acquireDIITable" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pid" variable (:type ("L_PID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3729 3739])
+                    ("TableId" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3740 3756])
+                    ("TimeOut" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3757 3774])
+                    ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("BLA_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3775 3807]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [3681 3808])
+            ("BLA_CAROUSEL_acquireDDBTable" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pid" variable (:type ("L_PID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3857 3867])
+                    ("TableId" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3868 3884])
+                    ("TimeOut" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3885 3902])
+                    ("StartPtr" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3903 3921])
+                    ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("BLA_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3922 3954]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [3809 3955])
+            ("BLA_CAROUSEL_ValidateSignature" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("signedData" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4631 4651])
+                    ("carouselDataSrc" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4652 4677])
+                    ("carouselDataSize" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4678 4704])
+                    ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("BLA_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4705 4737]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [4588 4738])
+            ("BLA_CAROUSEL_init" function
+               (:arguments 
+                  ( ("" variable (:type ("L_VOID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4892 4899]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [4862 4962])
+            ("BLA_CAROUSEL_acquireDownloadImage" function
+               (:arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("BLA_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5285 5317]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [5239 32000])
+            ("BLA_CAROUSEL_acquireStreamTime" function
+               (:arguments 
+                  ( ("utcTime" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32045 32062]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [32002 36813])
+            ("BLA_CAROUSEL_acquirePATTable" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pid" variable (:type ("L_PID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37259 37269])
+                    ("TableId" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37270 37286])
+                    ("TimeOut" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37287 37304])
+                    ("program_pid" variable
+                       (:pointer 1
+                        :type ("L_PID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37354 37373])
+                    ("Length" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37374 37390]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [37211 38456])
+            ("BLA_CAROUSEL_acquirePMTTable" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pid" variable (:type ("L_PID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38923 38933])
+                    ("TableId" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38934 38950])
+                    ("TimeOut" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38951 38968])
+                    ("download_pid" variable
+                       (:pointer 1
+                        :type ("L_PID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38969 38989])
+                    ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("BLA_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38990 39022]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [38875 47786])
+            ("BLA_CAROUSEL_acquireTDTTable" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pid" variable (:type ("L_PID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48232 48242])
+                    ("TableId" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48243 48259])
+                    ("TimeOut" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48260 48277])
+                    ("utcTime" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48338 48355])
+                    ("Length" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48356 48372]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [48184 49168])
+            ("BLA_CAROUSEL_acquireTOTTable" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pid" variable (:type ("L_PID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49612 49622])
+                    ("TableId" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49623 49639])
+                    ("TimeOut" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49640 49657])
+                    ("utcTime" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49706 49723])
+                    ("Length" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49724 49740]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [49564 50793])
+            ("BLA_CAROUSEL_validatePostDDBModule" function
+               (:arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("BLA_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50842 50874])
+                    ("thisStartPtr" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50875 50897])
+                    ("thisCopySize" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50898 50920])
+                    ("mode" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50921 50934]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [50795 81960])
+            ("BLA_CAROUSEL_processDDBModule" function
+               (:arguments 
+                  ( ("thisDDBTable" variable
+                       (:pointer 1
+                        :type ("BLA_CAROUSEL_DDB_TABLE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82004 82041])
+                    ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("BLA_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82042 82115])
+                    ("thisModuleDownloaded" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82116 82146])
+                    ("maxDLSections" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82147 82211])
+                    ("thisOtvCarouselParams" variable
+                       (:pointer 1
+                        :type ("BLA_CAROUSEL_INITPARAMS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82212 82300])
+                    ("thisStartPtr" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82301 82323])
+                    ("thisCopySize" variable
+                       (:pointer 1
+                        :type ("L_UINT32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82324 82388])
+                    ("thisPercentageDownloaded" variable
+                       (:pointer 1
+                        :type ("L_UINT32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82389 82424]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [81962 86703])
+            ("BLA_CAROUSEL_validatePostDIIModule" function
+               (:arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("BLA_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86752 86784])
+                    ("thisStartPtr" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86785 86807])
+                    ("thisCopySize" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86808 86830]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [86705 97674])
+            ("BLA_CAROUSEL_acquireDIITable" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pid" variable (:type ("L_PID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [142356 142366])
+                    ("TableId" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [142367 142383])
+                    ("TimeOut" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [142384 142401])
+                    ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("BLA_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [142402 142434]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [142308 149769])
+            ("BLA_CAROUSEL_acquireDDBTable" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pid" variable (:type ("L_PID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [149819 149829])
+                    ("TableId" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [149830 149846])
+                    ("TimeOut" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [149847 149864])
+                    ("StartPtr" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [149865 149883])
+                    ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("BLA_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [149884 149916]))                  
+                :type ("L_ERRORCODE" type (:type "class") nil nil))
+                nil [149771 155799]))          
+    :file "bla_carousel_dsm-cc.c"
+    :pointmax 165854
+    :fsize 165853
+    :lastmodtime '(21343 17150 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!bootloader!platform!dx820_tdx850!products!B044!bla!Foxtel!IQ3!carousel!dsm-cc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

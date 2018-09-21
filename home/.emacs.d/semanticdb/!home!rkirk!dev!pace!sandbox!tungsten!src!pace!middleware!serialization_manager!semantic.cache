@@ -1,0 +1,324 @@
+;; Object serialization_manager/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "serialization_manager/"
+  :tables (list 
+   (semanticdb-table "sman_dbusinterface.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SMAN_DBUSINTERFACE_H_1399571645" variable (:constant-flag t) nil [488 519])
+            ("QtCore/QObject" include (:system-flag t) nil [521 546])
+            ("QtCore/QByteArray" include (:system-flag t) nil [547 575])
+            ("QtCore/QList" include (:system-flag t) nil [576 599])
+            ("QtCore/QMap" include (:system-flag t) nil [600 622])
+            ("QtCore/QString" include (:system-flag t) nil [623 648])
+            ("QtCore/QStringList" include (:system-flag t) nil [649 678])
+            ("QtCore/QVariant" include (:system-flag t) nil [679 705])
+            ("QtDBus/QtDBus" include (:system-flag t) nil [706 730])
+            ("SmanDBusInterface" type
+               (:superclasses 
+                  ( ("QDBusAbstractInterface" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [853 860])
+                    ("staticInterfaceName" function
+                       (:pointer 1
+                        :typemodifiers ("static" "inline")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [865 945])
+                    ("public" label nil (reparse-symbol classsubparts) [947 954])
+                    ("SmanDBusInterface" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("service" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [977 1000])
+                            ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1001 1021])
+                            ("connection" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QDBusConnection" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1022 1056])
+                            ("parent" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1057 1074]))                          
+                        :type ("SmanDBusInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [959 1078])
+                    ("SmanDBusInterface" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1084 1105])
+                    ("public" label nil (reparse-symbol classsubparts) [1107 1122])
+                    ("get_cpu_usage" function
+                       (:typemodifiers ("inline")
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1138 1325])
+                    ("get_dev_key" function
+                       (:typemodifiers ("inline")
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1331 1514])
+                    ("get_dns1" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("network_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1563 1591]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1520 1783])
+                    ("get_free_disk_space" function
+                       (:typemodifiers ("inline")
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1789 1988])
+                    ("get_free_memory" function
+                       (:typemodifiers ("inline")
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1994 2185])
+                    ("get_gateway" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("network_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2237 2265]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2191 2460])
+                    ("get_hmac_dev_key" function
+                       (:typemodifiers ("inline")
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2466 2659])
+                    ("get_ip_address" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("network_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2714 2742]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2665 2940])
+                    ("get_iptv_bitrate" function
+                       (:typemodifiers ("inline")
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2946 3139])
+                    ("get_link_connected" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("network_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3195 3223]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3145 3425])
+                    ("get_link_disconnected" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("network_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3484 3512]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3431 3717])
+                    ("get_link_status" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("network_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3773 3801]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3723 4000])
+                    ("get_netmask" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("network_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4052 4080]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4006 4275])
+                    ("get_serialisation_element_as_base64_string" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("elementName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4358 4385]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4281 4610])
+                    ("get_serialisation_element_as_integer" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("elementName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4684 4711]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("uint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4616 4930])
+                    ("get_serialisation_element_as_string" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("elementName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5006 5033]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4936 5251])
+                    ("get_uptime" function
+                       (:typemodifiers ("inline")
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5257 5438])
+                    ("request_mac" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("network_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5490 5518]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5444 5713])
+                    ("set_serialisation_element_as_integer" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("elementName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5783 5810])
+                            ("elementData" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5811 5828]))                          
+                        :type ("QDBusPendingReply" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5719 6083])
+                    ("set_serialisation_element_as_string" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("elementName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6152 6179])
+                            ("elementData" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6180 6207]))                          
+                        :type ("QDBusPendingReply" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6089 6461]))                  
+                :type "class")
+                nil [783 6487])
+            ("org" type
+               (:members 
+                  ( ("pace" type
+                       (:members 
+                          ( ("s_man" variable (:type ("SmanDBusInterface" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [6538 6562]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [6507 6566]))                  
+                :type "namespace")
+                nil [6489 6568]))          
+    :file "sman_dbusinterface.h"
+    :pointmax 6576
+    :fsize 6575
+    :lastmodtime '(21355 50365 392874 418000)
+    :unmatched-syntax '((punctuation 6537 . 6538) (punctuation 6536 . 6537) (TYPEDEF 6528 . 6535) (punctuation 6472 . 6473) (symbol 6463 . 6472) (number 1075 . 1076) (punctuation 1073 . 1074) (symbol 844 . 852))
+    :lexical-table 
+        '(("SMAN_DBUSINTERFACE_H_1399571645")
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!serialization_manager!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

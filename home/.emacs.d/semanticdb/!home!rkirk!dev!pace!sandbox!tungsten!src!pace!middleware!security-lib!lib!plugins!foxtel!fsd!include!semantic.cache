@@ -1,0 +1,384 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "fsd.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__FSD_H__" variable (:constant-flag t) nil [300 309])
+            ("stddef.h" include (:system-flag t) nil [311 330])
+            ("time.h" include (:system-flag t) nil [331 348])
+            ("FSD_RETURN" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "fsd_return"
+                :typedef ("fsd_return" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [741 2216])
+            ("fsd_return" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("FSD_INTERNAL_ERROR" variable
+                       (:constant-flag t
+                        :default-value (790 795)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [768 795])
+                    ("FSD_FILE_CANTSTAT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [835 853])
+                    ("FSD_FILE_CANTOPEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [896 914])
+                    ("FSD_FILE_CANTSEEK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [959 977])
+                    ("FSD_FILE_NOTCLOSED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1017 1036])
+                    ("FSD_FILE_TOOSHORT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1078 1096])
+                    ("FSD_TIME_TOOEARLY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1219 1237])
+                    ("FSD_TIME_EXPIRED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1319 1336])
+                    ("FSD_BUFFER_TOOSMALL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1425 1445])
+                    ("FSD_FSL_VALIDATEFAILED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1527 1550])
+                    ("FSD_FSL_DECRYPTFAILED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1595 1617])
+                    ("FSD_FSL_DECOMPRESSFAILED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1661 1686])
+                    ("FSD_FORMAT_BADDATA" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1730 1749])
+                    ("FSD_OUTOFMEMORY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1788 1804])
+                    ("FSD_MEMORY_TOOLARGE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1847 1867])
+                    ("FSD_FUNCTION_MISSING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1904 1925])
+                    ("FSD_INVALID_READER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1969 1988])
+                    ("FSD_INVALID_FORMAT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2025 2044])
+                    ("FSD_INVALID_PARAMETER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2086 2108])
+                    ("FSD_OK" variable
+                       (:constant-flag t
+                        :default-value (2165 2166)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2152 2166]))                  )
+                (reparse-symbol extern-c-contents) [741 2216])
+            ("FSD_BOOL" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "fsd_bool"
+                :typedef ("fsd_bool" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [2481 2642])
+            ("fsd_bool" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("FSD_FALSE" variable
+                       (:constant-flag t
+                        :default-value (2518 2519)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2506 2519])
+                    ("FSD_TRUE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2572 2632]))                  )
+                (reparse-symbol extern-c-contents) [2481 2642])
+            ("FSD_U8" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "unsigned char"
+                :typedef ("unsigned char"))
+                (reparse-symbol extern-c-contents) [2645 2674])
+            ("FSD_U16" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "unsigned short"
+                :typedef ("unsigned short"))
+                (reparse-symbol extern-c-contents) [2716 2747])
+            ("FSD_U32" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "unsigned int"
+                :typedef ("unsigned int"))
+                (reparse-symbol extern-c-contents) [2788 2817])
+            ("FSD_S8" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "signed char"
+                :typedef ("signed char"))
+                (reparse-symbol extern-c-contents) [2859 2887])
+            ("FSD_S16" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "signed short"
+                :typedef ("signed short"))
+                (reparse-symbol extern-c-contents) [2927 2956])
+            ("FSD_S32" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "signed int"
+                :typedef ("signed int"))
+                (reparse-symbol extern-c-contents) [2996 3024])
+            ("FSD" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "fsd"
+                :typedef ("fsd" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [3065 3088])
+            ("FSD_VERSION" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "fsd_version"
+                :typedef ("fsd_version" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [3551 3664])
+            ("fsd_version" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("major_" variable (:type ("FSD_U8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3581 3595])
+                    ("minor_" variable (:type ("FSD_U8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3598 3612])
+                    ("version_" variable (:type ("FSD_U8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3615 3631])
+                    ("build_" variable (:type ("FSD_U8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3634 3648]))                  )
+                (reparse-symbol extern-c-contents) [3551 3664])
+            ("FSD_MALLOC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [4172 4221])
+            ("FSD_FREE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [4852 4884])
+            ("FSD_TIME" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("time_t" type (:type "class") nil nil)
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [5401 5436])
+            ("FSD_INFO" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "fsd_info"
+                :typedef ("fsd_info" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [5828 6134])
+            ("fsd_info" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("filename_" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5855 5876])
+                    ("permissions_" variable (:type ("FSD_U32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5925 5947])
+                    ("originalsize_" variable (:type ("FSD_U32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5993 6016])
+                    ("version_" variable (:type ("FSD_VERSION" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6060 6081]))                  )
+                (reparse-symbol extern-c-contents) [5828 6134])
+            ("FSD_CONFIG" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "fsd_config"
+                :typedef ("fsd_config" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [6479 7339])
+            ("fsd_config" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("OUI_" variable (:type ("FSD_U32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6508 6522])
+                    ("hardware_" variable (:type ("FSD_U8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6655 6673])
+                    ("maxmalloc_" variable (:type ("FSD_U32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6809 6829])
+                    ("malloc_" variable (:type ("FSD_MALLOC" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6931 6950])
+                    ("free_" variable (:type ("FSD_FREE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7048 7063])
+                    ("time_" variable (:type ("FSD_TIME" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7164 7179]))                  )
+                (reparse-symbol extern-c-contents) [6479 7339])
+            ("FSD_SetDefaults" function
+               (:type ("FSD_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_config" variable
+                       (:pointer 1
+                        :type ("FSD_CONFIG" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7781 7801]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7747 7802])
+            ("FSD_Init" function
+               (:type ("FSD_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_config" variable
+                       (:pointer 1
+                        :type ("FSD_CONFIG" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8296 8316]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8269 8317])
+            ("FSD_OpenMemory" function
+               (:type ("FSD_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_handle" variable
+                       (:pointer 2
+                        :type ("FSD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9091 9105])
+                    ("_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9106 9118])
+                    ("_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9119 9134]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9058 9135])
+            ("FSD_OpenFile" function
+               (:type ("FSD_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_handle" variable
+                       (:pointer 2
+                        :type ("FSD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9772 9786])
+                    ("_filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9787 9803]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9741 9804])
+            ("FSD_Information" function
+               (:type ("FSD_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_handle" variable
+                       (:pointer 1
+                        :type ("FSD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10382 10395])
+                    ("_info" variable
+                       (:pointer 1
+                        :type ("FSD_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10396 10412]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10348 10413])
+            ("FSD_WriteMemory" function
+               (:type ("FSD_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_handle" variable
+                       (:pointer 1
+                        :type ("FSD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11133 11146])
+                    ("_buffer" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11147 11161])
+                    ("_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11162 11177]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11099 11178])
+            ("FSD_WriteFile" function
+               (:type ("FSD_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_handle" variable
+                       (:pointer 1
+                        :type ("FSD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11732 11745])
+                    ("_filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11746 11762]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11700 11763])
+            ("FSD_Close" function
+               (:type ("FSD_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_handle" variable
+                       (:pointer 1
+                        :type ("FSD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12261 12274]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12233 12275])
+            ("FSD_VerifyFilename" function
+               (:type ("FSD_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12839 12855]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12802 12856])
+            ("FSD_VerifyStream" function
+               (:type ("FSD_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_fsd" variable
+                       (:pointer 2
+                        :type ("FSD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13844 13855])
+                    ("_handle" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13867 13881])
+                    ("_offset" variable (:type "long") (reparse-symbol arg-sub-list) [13893 13906])
+                    ("_length" variable (:type "long") (reparse-symbol arg-sub-list) [13918 13931]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13809 13932])
+            ("FSD_ErrorText" function
+               (:type "char"
+                :arguments 
+                  ( ("_error" variable (:type ("FSD_RETURN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14404 14422]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14377 14423]))          
+    :file "fsd.h"
+    :pointmax 14461
+    :fsize 14460
+    :lastmodtime '(21467 26915 614193 84000)
+    :unmatched-syntax '((TYPEDEF 5393 . 5400) (TYPEDEF 4844 . 4851) (TYPEDEF 4164 . 4171))
+    :lexical-table 
+        '(("__FSD_H__")
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!security-lib!lib!plugins!foxtel!fsd!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

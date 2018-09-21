@@ -1,0 +1,503 @@
+;; Object Foxtel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Foxtel/"
+  :tables (list 
+   (semanticdb-table "FoxtelUpdCtrlClient.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QFile" include (:system-flag t) nil [1 17])
+            ("FoxtelUpdCtrlClient.h" include nil nil [18 50])
+            ("liveServicePlayEvent.h" include nil nil [51 84])
+            ("gophercommand.h" include nil nil [85 111])
+            ("RebootEvent.h" include nil nil [112 136])
+            ("tipcconnection.h" include (:system-flag t) nil [137 164])
+            ("unnamed" type
+               (:members 
+                  ( ("SERVICE_NAME" variable (:constant-flag t) (reparse-symbol namespacesubparts) [334 346])
+                    ("NOTIFICATION_PATH" variable (:constant-flag t) (reparse-symbol namespacesubparts) [432 449])
+                    ("INVALID_DOWNLOAD_PID" variable (:constant-flag t) (reparse-symbol namespacesubparts) [488 508])
+                    ("ETSI_DOWNLOAD_LINKAGE_TYPE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [533 559])
+                    ("NIT_TIME_OUT_PERIOD" variable (:constant-flag t) (reparse-symbol namespacesubparts) [576 595])
+                    ("PMT_TIME_OUT_PERIOD" variable (:constant-flag t) (reparse-symbol namespacesubparts) [633 652])
+                    ("RETRY_TIME_OUT_PERIOD" variable (:constant-flag t) (reparse-symbol namespacesubparts) [690 711])
+                    ("MS_IN_ONE_SECOND" variable (:constant-flag t) (reparse-symbol namespacesubparts) [747 763])
+                    ("DOWNLOAD_START_PERIOD" variable (:constant-flag t) (reparse-symbol namespacesubparts) [789 810])
+                    ("BINARY_TO_BCD" variable (:constant-flag t) (reparse-symbol namespacesubparts) [845 858])
+                    ("DAYS_TO_1_JAN_1996" variable (:constant-flag t) (reparse-symbol namespacesubparts) [913 931])
+                    ("daysInMonth" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [939 1031])
+                    ("runTimeFileName" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [1032 1073])
+                    ("bootloaderFileName" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [1074 1116])
+                    ("runTimeHeaderName" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [1117 1165])
+                    ("bootloaderHeaderName" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [1166 1215])
+                    ("runTimeInfoFileName" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [1216 1264])
+                    ("bootloaderInfoFileName" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [1265 1314])
+                    ("OWMPayloadImageTypeString" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [1316 1369])
+                    ("OWMPayloadDownloadTypeString" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [1370 1420])
+                    ("OWMPayloadRTSWVersionString" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [1421 1474])
+                    ("OWMPayloadBL2SWVersionString" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [1475 1529])
+                    ("OWMPayloadDownloadURLString" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [1530 1577]))                  
+                :type "namespace")
+                nil [315 1579])
+            ("FoxtelUpdCtrlClient" function
+               (:constructor-flag t
+                :parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("params" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("UpdateController::CtrlParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1638 1681]))                  
+                :type ("FoxtelUpdCtrlClient" type (:type "class") nil nil))
+                nil [1597 9345])
+            ("FoxtelUpdCtrlClient" function
+               (:destructor-flag t
+                :parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9401 9406]))                  
+                :type "void")
+                nil [9359 9755])
+            ("acquireDeviceInfo" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("_manufacturerID_" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10356 10382])
+                    ("_modelType_" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10382 10403])
+                    ("_hardwareType_" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10404 10428])
+                    ("_serialNumber_" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10429 10453]))                  
+                :type "bool")
+                nil [10312 10608])
+            ("acquireZoneID" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("_zoneID_" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11050 11068]))                  
+                :type "bool")
+                nil [11010 11146])
+            ("acquireCurrentSWInfo" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("imageType" variable (:type ("sdl_image_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11747 11772])
+                    ("softwareVersion" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11773 11798])
+                    ("lsn" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11799 11812]))                  
+                :type "bool")
+                nil [11700 11932])
+            ("executeDownload" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("sdl" variable (:type ("sdl_image_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12482 12501])
+                    ("fileName" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12502 12519])
+                    ("url" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12520 12532])
+                    ("flag" variable (:type ("sdl_flag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12533 12547]))                  
+                :type "bool")
+                nil [12440 14166])
+            ("executeReboot" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("sdlType" variable (:type ("sdl_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14678 14695])
+                    ("sdl" variable (:type ("sdl_image_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14695 14714]))                  
+                :type "bool")
+                nil [14638 14822])
+            ("acquireDriverSupportStatus" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("yesOrNo" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [15313 15327]))                  
+                :type "bool")
+                nil [15260 15379])
+            ("acquireLastSWDownloadStatus" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("dlType" variable (:type ("sdl_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15902 15918])
+                    ("imageType" variable (:type ("sdl_image_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15919 15944])
+                    ("status" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [15945 15967]))                  
+                :type "bool")
+                nil [15848 16149])
+            ("acquireLastSWDownloadTime" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("dlType" variable (:type ("sdl_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16670 16686])
+                    ("imageType" variable (:type ("sdl_image_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16687 16712])
+                    ("utcTime" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [16713 16735]))                  
+                :type "bool")
+                nil [16617 16914])
+            ("pmt_notification" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17379 17384]))                  
+                :type "void")
+                nil [17336 18221])
+            ("receiveBleUpdate" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("type" variable (:type ("BleInterface::BroadcastType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18737 18770])
+                    ("" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [18771 18793])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [18790 18798])
+                    ("param1" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [18799 18819])
+                    ("param2" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [18820 18840]))                  
+                :type "void")
+                nil [18694 18973])
+            ("rebootSignalReceived" function
+               (:parent "FoxtelUpdCtrlClient"
+                :type "void")
+                nil [19382 19773])
+            ("matchDownloadDevice" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("manufacture_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [20335 20363])
+                    ("hardware_model_id" variable (:type ("QList" type
+                         (:template-specifier 
+                            ( ("uint" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [20364 20394])
+                    ("matchedHwModelID" variable
+                       (:reference 1
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("uint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20395 20425]))                  
+                :type "bool")
+                nil [20289 21530])
+            ("executeDownload" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("sdlType" variable (:type ("sdl_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22063 22080])
+                    ("imageType" variable (:type ("sdl_image_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22081 22106])
+                    ("flag" variable (:type ("sdl_flag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22107 22121])
+                    ("startTime" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22122 22140])
+                    ("durationLimit" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22141 22168]))                  
+                :type "bool")
+                nil [22021 24555])
+            ("checkNITTimeStamp" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("imageType" variable (:type ("sdl_image_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25060 25085])
+                    ("EnableTimer" variable (:type "bool") (reparse-symbol arg-sub-list) [25085 25102]))                  
+                :type "bool")
+                nil [25016 25877])
+            ("startDownloadTimer" function
+               (:parent "FoxtelUpdCtrlClient"
+                :type "bool")
+                nil [25879 26329])
+            ("startWaitTimer" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("imageType" variable (:type ("sdl_image_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26372 26397]))                  
+                :type "bool")
+                nil [26331 26853])
+            ("ValidatePMTPid" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("imageType" variable (:type ("sdl_image_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27347 27372])
+                    ("EnableTimer" variable (:type "bool") (reparse-symbol arg-sub-list) [27372 27389]))                  
+                :type "bool")
+                nil [27306 28151])
+            ("nitTimerTimeout" function
+               (:parent "FoxtelUpdCtrlClient"
+                :type "void")
+                nil [28530 30060])
+            ("matchLinkageDescriptor" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("linkageType" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [30515 30541]))                  
+                :type "bool")
+                nil [30466 30681])
+            ("pmtTimerTimerout" function
+               (:parent "FoxtelUpdCtrlClient"
+                :type "void")
+                nil [31061 31468])
+            ("downloadWaitTimerTimerout" function
+               (:parent "FoxtelUpdCtrlClient"
+                :type "void")
+                nil [31857 32891])
+            ("downloadStartTimerTimerout" function
+               (:parent "FoxtelUpdCtrlClient"
+                :type "void")
+                nil [33281 34673])
+            ("owmCheckNitTimerTimeout" function
+               (:parent "FoxtelUpdCtrlClient"
+                :type "void")
+                nil [35060 35638])
+            ("tuneToDownloadService" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("broadcastType" variable (:type "int") (reparse-symbol arg-sub-list) [36197 36215])
+                    ("originalNetworkId" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [36264 36295])
+                    ("transportStreamId" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [36344 36375])
+                    ("serviceId" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [36424 36447]))                  
+                :type "bool")
+                nil [36149 38164])
+            ("tuneToDownloadService" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [38641 38663])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [38660 38668]))                  
+                :type "bool")
+                nil [38593 38806])
+            ("extractVariantIDfromCAstatusString" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("caStatus" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39306 39323]))                  
+                :type ("uint" type (:type "class") nil nil))
+                nil [39244 39701])
+            ("acquireVariantID" function
+               (:parent "FoxtelUpdCtrlClient"
+                :type ("uint" type (:type "class") nil nil))
+                nil [39702 39764])
+            ("notifyNewDownload" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("sdlType" variable (:type ("sdl_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40250 40267])
+                    ("imageType" variable (:type ("sdl_image_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40268 40293]))                  
+                :type "bool")
+                nil [40206 40766])
+            ("notifyDownloadFailure" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("sdlType" variable (:type ("sdl_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41260 41277])
+                    ("imageType" variable (:type ("sdl_image_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41278 41303]))                  
+                :type "void")
+                nil [41212 41523])
+            ("setRebootEnableFlag" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("reboot" variable (:type "bool") (reparse-symbol arg-sub-list) [42002 42014]))                  
+                :type "bool")
+                nil [41956 42070])
+            ("getImageTypeFromModelID" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("hwModelID" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42122 42137]))                  
+                :type "int")
+                nil [42073 42560])
+            ("requestDownload" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("downloadParams" variable (:type ("FORCE_SW_DOWNLOAD_PARAMS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43061 43101]))                  
+                :type "bool")
+                nil [43019 43220])
+            ("requestDownload" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("command" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43740 43763])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [43764 43775]))                  
+                :type "bool")
+                nil [43698 45604])
+            ("acquireDownloadFileInfo" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("imageType" variable (:type ("sdl_image_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46140 46165])
+                    ("fileName" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46166 46184])
+                    ("url" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46185 46198]))                  
+                :type "bool")
+                nil [46090 46335])
+            ("acquireDownloadedFileInfo" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("imageType" variable (:type ("sdl_image_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46975 47000])
+                    ("imageName" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47001 47020])
+                    ("headerfileName" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47021 47045])
+                    ("imageVersion" variable
+                       (:reference 1
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47046 47065]))                  
+                :type "bool")
+                nil [46923 48923])
+            ("updateDownloadedImage" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("imageType" variable (:type ("sdl_image_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49479 49504])
+                    ("updateType" variable (:type "int") (reparse-symbol arg-sub-list) [49505 49520])
+                    ("updateTimeOrDelay" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [49521 49552]))                  
+                :type "bool")
+                nil [49431 54653])
+            ("setUINotifyControlFlags" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("enableUINotify" variable (:type "bool") (reparse-symbol arg-sub-list) [55180 55200])
+                    ("userAction" variable (:type "bool") (reparse-symbol arg-sub-list) [55201 55217]))                  
+                :type "bool")
+                nil [55130 55317])
+            ("resetDownload" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("imageType" variable (:type ("sdl_image_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55787 55812])
+                    ("dlComplete" variable (:type "bool") (reparse-symbol arg-sub-list) [55813 55829]))                  
+                :type "void")
+                nil [55747 56435])
+            ("createRebootEvent" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("isBackgroundDownload" variable (:type "bool") (reparse-symbol arg-sub-list) [56897 56923]))                  
+                :type "bool")
+                nil [56853 57660])
+            ("convertImageType" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("imageType" variable (:type ("sdl_image_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58154 58179]))                  
+                :type ("SDL_SOFTWARE_TYPE" type (:type "class") nil nil))
+                nil [58098 58489])
+            ("processDownloadCompletionNotification" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("imageType" variable (:type ("sdl_image_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59072 59097])
+                    ("filePath" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59098 59115])
+                    ("auxFilePath" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59116 59136]))                  
+                :type "bool")
+                nil [59008 60517])
+            ("dayMonthYearToMJDDays" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("day" variable (:type "int") (reparse-symbol arg-sub-list) [60584 60592])
+                    ("month" variable (:type "int") (reparse-symbol arg-sub-list) [60593 60603])
+                    ("year" variable (:type "int") (reparse-symbol arg-sub-list) [60604 60614]))                  
+                :type "unsigned short int")
+                nil [60520 61257])
+            ("ansiTimeToMJDUTC" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("currentTime" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [61637 61662])
+                    ("mjd" variable
+                       (:reference 1
+                        :type "unsigned short int")
+                        (reparse-symbol arg-sub-list) [61663 61687])
+                    ("hoursMinutesSeconds" variable
+                       (:reference 1
+                        :type ("QByteArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61688 61720]))                  
+                :type "void")
+                nil [61592 62191])
+            ("downloadComplete" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("requestId" variable (:type "int") (reparse-symbol arg-sub-list) [62597 62611])
+                    ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [62612 62632]))                  
+                :type "void")
+                nil [62554 63589])
+            ("downloadComplete" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("requestId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63634 63649])
+                    ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63650 63670]))                  
+                :type "void")
+                nil [63591 63716])
+            ("downloadFailure" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("requestId" variable (:type "int") (reparse-symbol arg-sub-list) [63759 63773])
+                    ("errorCode" variable (:type "int") (reparse-symbol arg-sub-list) [63774 63788]))                  
+                :type "void")
+                nil [63717 64462])
+            ("downloadFailure" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("requestId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64505 64520]))                  
+                :type "void")
+                nil [64463 64565])
+            ("retryTimerTimerout" function
+               (:parent "FoxtelUpdCtrlClient"
+                :type "void")
+                nil [64947 65669])
+            ("fileSystemSync" function
+               (:parent "FoxtelUpdCtrlClient"
+                :type "void")
+                nil [66360 66924])
+            ("cleanUpTempFiles" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("imageType" variable (:type ("sdl_image_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66968 66993]))                  
+                :type "void")
+                nil [66925 67408])
+            ("checkWaitTimer" function
+               (:parent "FoxtelUpdCtrlClient"
+                :arguments 
+                  ( ("imageType" variable (:type ("sdl_image_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67450 67475]))                  
+                :type "bool")
+                nil [67409 67796]))          
+    :file "FoxtelUpdCtrlClient.cpp"
+    :pointmax 67797
+    :fsize 67796
+    :lastmodtime '(21362 20496 641349 335000)
+    :unmatched-syntax '((punctuation 1579 . 1580))
+    :lexical-table 
+        '(("SERVICE_NAME" . ((string "\"org.pace.updctrlinterface\"" 352 . 379)))
+          ("BINARY_TO_BCD" (spp-arg-list ("n") 858 . 863) . ((semantic-list "( ( (n) % 10 )  + (( (n) / 10 ) << 4 ) )" 864 . 904)))
+          ("DOWNLOAD_START_PERIOD" . ((number "2" 818 . 819)))
+          ("RETRY_TIME_OUT_PERIOD" . 
+              ((number "15" 719 . 721) (punctuation "*" 721 . 722) (number "60" 722 . 724)))
+          ("NIT_TIME_OUT_PERIOD" . ((number "60" 605 . 607)))
+          ("INVALID_DOWNLOAD_PID" . ((number "0x1fff" 517 . 523)))
+          ("NOTIFICATION_PATH" . ((string "\"/org/pace/updctrlinterface\"" 450 . 478)))
+          ("DAYS_TO_1_JAN_1996" . ((number "50083" 932 . 937)))
+          ("PMT_TIME_OUT_PERIOD" . ((number "10" 662 . 664)))
+          ("ETSI_DOWNLOAD_LINKAGE_TYPE" . ((number "0x09" 562 . 566)))
+          ("MS_IN_ONE_SECOND" . ((number "1000" 776 . 780)))
+          )
+
+    )
+   (semanticdb-table "FoxtelUpdCtrlClient.h"
+    :file "FoxtelUpdCtrlClient.h"
+    :fsize 5883
+    :lastmodtime '(21362 20496 654349 261000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!updatectrl!Foxtel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

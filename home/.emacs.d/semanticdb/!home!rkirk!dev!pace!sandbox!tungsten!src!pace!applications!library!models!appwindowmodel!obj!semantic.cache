@@ -1,0 +1,192 @@
+;; Object obj/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "obj/"
+  :tables (list 
+   (semanticdb-table "moc_privilegedapplicationmanager.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("../manager/privilegedapplicationmanager.h" include nil nil [361 413])
+            ("qt_meta_data_StartupHelper" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("uint" type (:type "class") nil nil))
+                nil [775 1301])
+            ("qt_meta_stringdata_StartupHelper" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [1303 1529])
+            ("qt_static_metacall" function
+               (:parent "StartupHelper"
+                :arguments 
+                  ( ("_o" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1570 1582])
+                    ("_c" variable (:type ("QMetaObject::Call" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1583 1604])
+                    ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [1605 1613])
+                    ("_a" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1614 1624]))                  
+                :type "void")
+                nil [1531 2271])
+            ("StartupHelper::staticMetaObjectExtraData" variable
+               (:constant-flag t
+                :type ("QMetaObjectExtraData" type (:type "class") nil nil))
+                nil [2273 2375])
+            ("StartupHelper::staticMetaObject" variable
+               (:constant-flag t
+                :type ("QMetaObject" type (:type "class") nil nil))
+                nil [2377 2564])
+            ("metaObject" function
+               (:pointer 1
+                :parent "StartupHelper"
+                :constant-flag t
+                :type ("QMetaObject" type (:type "class") nil nil))
+                nil [2710 2854])
+            ("qt_metacast" function
+               (:pointer 1
+                :parent "StartupHelper"
+                :arguments 
+                  ( ("_clname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2889 2909]))                  
+                :type "void")
+                nil [2856 3113])
+            ("qt_metacall" function
+               (:parent "StartupHelper"
+                :arguments 
+                  ( ("_c" variable (:type ("QMetaObject::Call" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3146 3167])
+                    ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [3168 3176])
+                    ("_a" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3177 3187]))                  
+                :type "int")
+                nil [3115 3432])
+            ("notifyLaunchApp" function
+               (:parent "StartupHelper"
+                :arguments 
+                  ( ("_t1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3482 3502])
+                    ("_t2" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3503 3512])
+                    ("_t3" variable (:type "bool") (reparse-symbol arg-sub-list) [3513 3522])
+                    ("_t4" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3523 3543])
+                    ("_t5" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3544 3564]))                  
+                :type "void")
+                nil [3446 3931])
+            ("qt_meta_data_PrivilegedApplicationManager" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("uint" type (:type "class") nil nil))
+                nil [3932 4881])
+            ("qt_meta_stringdata_PrivilegedApplicationManager" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [4883 5723])
+            ("qt_static_metacall" function
+               (:parent "PrivilegedApplicationManager"
+                :arguments 
+                  ( ("_o" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5779 5791])
+                    ("_c" variable (:type ("QMetaObject::Call" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5792 5813])
+                    ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [5814 5822])
+                    ("_a" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5823 5833]))                  
+                :type "void")
+                nil [5725 8373])
+            ("PrivilegedApplicationManager::staticMetaObjectExtraData" variable
+               (:constant-flag t
+                :type ("QMetaObjectExtraData" type (:type "class") nil nil))
+                nil [8375 8492])
+            ("PrivilegedApplicationManager::staticMetaObject" variable
+               (:constant-flag t
+                :type ("QMetaObject" type (:type "class") nil nil))
+                nil [8494 8737])
+            ("metaObject" function
+               (:pointer 1
+                :parent "PrivilegedApplicationManager"
+                :constant-flag t
+                :type ("QMetaObject" type (:type "class") nil nil))
+                nil [8898 9057])
+            ("qt_metacast" function
+               (:pointer 1
+                :parent "PrivilegedApplicationManager"
+                :arguments 
+                  ( ("_clname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9107 9127]))                  
+                :type "void")
+                nil [9059 9516])
+            ("qt_metacall" function
+               (:parent "PrivilegedApplicationManager"
+                :arguments 
+                  ( ("_c" variable (:type ("QMetaObject::Call" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9564 9585])
+                    ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [9586 9594])
+                    ("_a" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9595 9605]))                  
+                :type "int")
+                nil [9518 9863])
+            ("logAmsEvent" function
+               (:parent "PrivilegedApplicationManager"
+                :arguments 
+                  ( ("_t1" variable
+                       (:pointer 1
+                        :type ("AmsPacket" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9924 9940]))                  
+                :type "void")
+                nil [9877 10083])
+            ("asyncStartup" function
+               (:parent "PrivilegedApplicationManager"
+                :arguments 
+                  ( ("_t1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10145 10165])
+                    ("_t2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10166 10186])
+                    ("_t3" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10187 10196]))                  
+                :type "void")
+                nil [10097 10451]))          
+    :file "moc_privilegedapplicationmanager.cpp"
+    :pointmax 10473
+    :fsize 10472
+    :lastmodtime '(21776 12361 309962 416000)
+    :unmatched-syntax '((symbol 10452 . 10472) (symbol 752 . 774) (string 710 . 743) (symbol 704 . 709) (punctuation 703 . 704) (string 638 . 702) (symbol 632 . 637) (punctuation 631 . 632) (string 576 . 630) (symbol 570 . 575) (punctuation 569 . 570) (string 457 . 534) (symbol 451 . 456) (punctuation 450 . 451))
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!applications!library!models!appwindowmodel!obj!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

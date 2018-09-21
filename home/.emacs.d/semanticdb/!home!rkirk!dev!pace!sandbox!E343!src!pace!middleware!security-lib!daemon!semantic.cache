@@ -1,0 +1,153 @@
+;; Object daemon/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "daemon/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("PWD" variable (:default-value ("$(shell pwd)")) nil [12 29])
+            ("CP" variable (:default-value ("cp")) nil [29 35])
+            ("RM" variable (:default-value ("rm")) nil [35 41])
+            ("MKDIR" variable (:default-value ("mkdir")) nil [41 53])
+            ("LIBS" variable nil nil [54 61])
+            ("HEADER_PATH" variable (:default-value ("$(PWD)/../interface")) nil [62 97])
+            ("LDFLAGS" variable (:default-value ("$(LDFLAGS)" "-Wl,-O1" "$(LIBS)")) nil [97 134])
+            ("CFLAGS" variable (:default-value ("$(CFLAGS)" "$(CPPFLAGS)")) nil [134 165])
+            ("CFLAGS" variable (:default-value ("-Wall" "-Wextra" "-I$(HDW_DEFS_DIR)" "-I$(HEADER_PATH)")) nil [165 224])
+            ("CXXFLAGS" variable (:default-value ("$(CXXFLAGS)" "$(CFLAGS)" "\"-DSL_NEXUS_RSA_BLOB_FILE=\\\"$(SECURITY_LIBRARY_NEXUS_RSA_BLOB_FILE)\\\"\"")) nil [486 590])
+            ("SECURITYD_OBJS" variable (:default-value ("daemon.o")) nil [591 618])
+            ("BLOB_OBJS" variable nil nil [618 631])
+            ("EXECUTABLES" variable (:default-value ("securityd")) nil [631 654])
+            ("EXECUTABLES_INSTALL" variable (:default-value ("$(addprefix $(STAGING_PATH)/usr/sbin/, $(EXECUTABLES))")) nil [1009 1085])
+            (".SUFFIXES" function (:arguments (".o" ".c" ".cpp")) nil [1086 1108])
+            (".cpp.o" function nil nil [1109 1153])
+            (".c.o" function nil nil [1154 1193])
+            ("install" function (:arguments ("all")) nil [1194 1263])
+            ("all" function (:arguments ("$(EXECUTABLES)")) nil [1264 1284])
+            ("securityd" function (:arguments ("$(SECURITYD_OBJS)")) nil [1285 1357])
+            ("blob-extractor" function (:arguments ("$(BLOB_OBJS)")) nil [1358 1425])
+            (".PHONY" function (:arguments ("clean")) nil [1426 1440])
+            ("clean" function nil nil [1440 1509]))          
+    :file "Makefile"
+    :pointmax 1677
+    :fsize 1508
+    :lastmodtime '(21947 11375 737385 791000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "blob-extractor.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [1 19])
+            ("exception" include (:system-flag t) nil [20 40])
+            ("vector" include (:system-flag t) nil [41 58])
+            ("fstream" include (:system-flag t) nil [59 77])
+            ("sys/types.h" include (:system-flag t) nil [78 100])
+            ("stdint.h" include (:system-flag t) nil [167 186])
+            ("unistd.h" include (:system-flag t) nil [187 206])
+            ("glib.h" include (:system-flag t) nil [208 225])
+            ("glib-object.h" include (:system-flag t) nil [226 250])
+            ("dbus/dbus-glib.h" include (:system-flag t) nil [251 278])
+            ("dbus/dbus-glib-bindings.h" include (:system-flag t) nil [279 315])
+            ("s_man_client-bindings.h" include nil nil [317 351])
+            ("tlogger.h" include nil nil [353 373])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [374 398])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [399 446])
+            ("DBUS_RETRY_TIME" variable (:constant-flag t) nil [456 471])
+            ("DBUS_RETRY_LIMIT" variable (:constant-flag t) nil [487 503])
+            ("writeRsaBlobFile" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("guchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [537 556])
+                    ("length" variable (:type ("gsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [557 570]))                  
+                :type "bool")
+                nil [508 571])
+            ("isRsaBlobValid" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("blob" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("guchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [599 618])
+                    ("length" variable (:type ("gsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [619 632]))                  
+                :type "bool")
+                nil [572 633])
+            ("diffRsaBlob" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("blob" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("guchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [658 677])
+                    ("length" variable (:type ("gsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [678 691]))                  
+                :type "bool")
+                nil [634 692])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [703 707])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [708 716]))                  
+                :type "int")
+                nil [694 5029])
+            ("writeRsaBlobFile" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("guchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5274 5293])
+                    ("length" variable (:type ("gsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5294 5307]))                  
+                :type "bool")
+                nil [5252 6301])
+            ("isRsaBlobValid" function
+               (:arguments 
+                  ( ("blob" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("guchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6572 6591])
+                    ("length" variable (:type ("gsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6592 6605]))                  
+                :type "bool")
+                nil [6552 7262])
+            ("diffRsaBlob" function
+               (:arguments 
+                  ( ("blob" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("guchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7560 7579])
+                    ("length" variable (:type ("gsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7580 7593]))                  
+                :type "bool")
+                nil [7543 8969]))          
+    :file "blob-extractor.cpp"
+    :pointmax 8970
+    :fsize 8969
+    :lastmodtime '(21946 14320 334356 379000)
+    :unmatched-syntax '((string 425 . 444))
+    :lexical-table 
+        '(("DBUS_RETRY_TIME" . ((number "300000" 472 . 478)))
+          ("DBUS_RETRY_LIMIT" . ((number "15" 504 . 506)))
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!E343!src!pace!middleware!security-lib!daemon!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,261 @@
+;; Object install4j/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "install4j/"
+  :tables (list 
+   (semanticdb-table "Test_SigarSysInfoUtils.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.rapid7.nexpose.install4j" package nil nil [354 391])
+            ("com.rapid7.nexpose.install4j.exceptions.InstallerInfoGatheringException" include nil nil [393 472])
+            ("com.rapid7.test.Test_MockitoUnitTest" include nil nil [473 517])
+            ("org.hyperic.sigar.Sigar" include nil nil [518 549])
+            ("org.hyperic.sigar.SigarException" include nil nil [550 590])
+            ("org.hyperic.sigar.SysInfo" include nil nil [591 624])
+            ("org.junit.Before" include nil nil [625 649])
+            ("org.junit.Ignore" include nil nil [650 674])
+            ("org.junit.Test" include nil nil [675 697])
+            ("org.mockito.Mock" include nil nil [698 722])
+            ("Test_SigarSysInfoUtils" type
+               (:typemodifiers ("public")
+                :superclasses "Test_MockitoUnitTest"
+                :members 
+                  ( ("setUp" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1275 1375])
+                    ("nullSysInfo" function
+                       (:throws ("SigarException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1516 1624])
+                    ("is32BitArchitecturei686" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1685 1882])
+                    ("is64BitArchitecturei686" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1943 2141])
+                    ("is32BitArchitecturei586" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2202 2399])
+                    ("is64BitArchitecturei586" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2460 2658])
+                    ("is32BitArchitecturei486" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2719 2916])
+                    ("is64BitArchitecturei486" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2977 3175])
+                    ("is32BitArchitecturei386" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3236 3433])
+                    ("is64BitArchitecturei386" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3494 3692])
+                    ("is32BitArchitecturei286" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3753 3950])
+                    ("is64BitArchitecturei286" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4011 4209])
+                    ("is32BitArchitectureamd64" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4271 4471])
+                    ("is64BitArchitectureamd64" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4533 4732])
+                    ("is32BitArchitecturex86_64" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4795 4997])
+                    ("is64BitArchitecturex86_64" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5060 5261])
+                    ("is32BitArchitectureInvalidArch" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5331 5539])
+                    ("is64BitArchitectureInvalidArch" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5609 5817])
+                    ("is32BitArchitectureNullArch" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5934 6132])
+                    ("is64BitArchitectureNullArch" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6249 6447])
+                    ("getOSName" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6525 6729])
+                    ("getVendor" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6805 7134])
+                    ("getVendorVersion" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7226 7469])
+                    ("getVersion" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7547 7764])
+                    ("isLinuxNullOS" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7876 8048])
+                    ("isLinuxOSTrue" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8110 8301])
+                    ("isLinuxOSFalse" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8364 8559])
+                    ("isSupportedLinuxKernelNotLinux" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8640 8873])
+                    ("isSupportedLinuxKernelInvalidKernelVersion" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8967 9330])
+                    ("isSupportedLinuxKernelUnsupportedKernelVersion" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9428 9780])
+                    ("isSupportedLinuxKernelSupportedKernel3Version" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9877 10226])
+                    ("isRecommendedLinuxVersionTrue" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10305 10839])
+                    ("isRecommendedLinuxVersionFalse" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10919 11454])
+                    ("isRecommendegdLinuxVersionNotLinux" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11539 11960])
+                    ("isNewerThanRecommendedInvalidVersion" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12047 12600])
+                    ("isNewerThanRecommendedUnsupported" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12796 13334])
+                    ("isNewerThanRecommendedLinuxOlderVersion" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13550 14091])
+                    ("isNewerThanRecommendedLinuxNewerVersion" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14182 14724])
+                    ("isNewerThanRecommendedLinuxVersionNotLinux" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14819 15243])
+                    ("getDistroName" function
+                       (:throws ("SigarException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [15520 16014])
+                    ("getArchitecture" function
+                       (:throws ("SigarException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16295 16647])
+                    ("isUbuntuFalse" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16708 17041])
+                    ("isUbuntuTrue" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17101 17429])
+                    ("isKaliFalse" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17488 17816])
+                    ("isKaliTrue" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17874 18203])
+                    ("isSuSEFalse" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [18263 18590])
+                    ("isSuSETrue" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [18649 18967])
+                    ("isRHELFalse" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [19026 19353])
+                    ("isRedHatButNotEnterprise" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [19428 19875])
+                    ("isDebianFalse" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [19936 20269])
+                    ("isDebianTrue" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [20329 20657])
+                    ("isCentOSFalse" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [20719 21052])
+                    ("isCentOSTrue" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21113 21441])
+                    ("m_logger" variable
+                       (:typemodifiers ("private")
+                        :type "IInstallerLogger")
+                        (reparse-symbol class_member_declaration) [21634 21668])
+                    ("m_mockSysInfo" variable
+                       (:typemodifiers ("private")
+                        :type "SysInfo")
+                        (reparse-symbol class_member_declaration) [21682 21712])
+                    ("m_sysInfoUtils" variable
+                       (:typemodifiers ("private")
+                        :type "SigarSysInfoUtils")
+                        (reparse-symbol class_member_declaration) [21717 21758]))                  
+                :type "class")
+                nil [985 21760]))          
+    :file "Test_SigarSysInfoUtils.java"
+    :pointmax 21761
+    :fsize 21760
+    :lastmodtime '(22113 48428 0 0)
+    :unmatched-syntax '((CLASS 7866 . 7871) (IDENTIFIER 7823 . 7831) (EQ 7832 . 7833) (CLASS 6239 . 6244) (IDENTIFIER 6196 . 6204) (EQ 6205 . 6206) (CLASS 5924 . 5929) (IDENTIFIER 5881 . 5889) (EQ 5890 . 5891) (CLASS 1506 . 1511) (IDENTIFIER 1470 . 1478) (EQ 1479 . 1480) (IDENTIFIER 892 . 897) (DOT 891 . 892) (IDENTIFIER 881 . 891) (DOT 880 . 881) (IDENTIFIER 873 . 880) (DOT 872 . 873) (IMPORT 855 . 861) (STATIC 862 . 868) (IDENTIFIER 869 . 872) (IDENTIFIER 843 . 853) (DOT 842 . 843) (IDENTIFIER 836 . 842) (DOT 835 . 836) (IDENTIFIER 830 . 835) (DOT 829 . 830) (IMPORT 812 . 818) (STATIC 819 . 825) (IDENTIFIER 826 . 829) (IDENTIFIER 799 . 810) (DOT 798 . 799) (IDENTIFIER 792 . 798) (DOT 791 . 792) (IDENTIFIER 786 . 791) (DOT 785 . 786) (IMPORT 768 . 774) (STATIC 775 . 781) (IDENTIFIER 782 . 785) (IDENTIFIER 754 . 766) (DOT 753 . 754) (IDENTIFIER 747 . 753) (DOT 746 . 747) (IDENTIFIER 741 . 746) (DOT 740 . 741) (IMPORT 723 . 729) (STATIC 730 . 736) (IDENTIFIER 737 . 740))
+    )
+   )
+  :file "!home!rkirk!rapid7!nexpose!src!nexpose!dist!installer!src!test!java!com!rapid7!nexpose!install4j!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

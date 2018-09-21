@@ -1,0 +1,1495 @@
+;; Object camodel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "camodel/"
+  :tables (list 
+   (semanticdb-table "camodel.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("CAMODEL_H" variable (:constant-flag t) nil [752 761])
+            ("QObject" include (:system-flag t) nil [763 781])
+            ("QMap" include (:system-flag t) nil [782 797])
+            ("QStringList" include (:system-flag t) nil [798 820])
+            ("QtXml/QDomNode" include (:system-flag t) nil [821 846])
+            ("QVariant" include (:system-flag t) nil [847 866])
+            ("cadaemonproxy.h" include nil nil [868 894])
+            ("coraModels/models/tuners/ituners.h" include nil nil [957 1002])
+            ("SignalAggregator" type
+               (:prototype t
+                :type "class")
+                nil [1129 1152])
+            ("CaModelStrategy" type
+               (:prototype t
+                :type "class")
+                nil [1153 1175])
+            ("CaPlatform" type
+               (:superclasses 
+                  ( ("QObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1297 1304])
+                    ("CaPlatform" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("CaPlatform" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1308 1322])
+                    ("CaPlatform" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1326 1350])
+                    ("querySmanByString" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1381 1395]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1355 1396])
+                    ("getSetTopBoxSerial" function (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1400 1462])
+                    ("getHardwareOptions" function (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1466 1529])
+                    ("getPlatformXML" function
+                       (:prototype-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1533 1558])
+                    ("test" function (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1562 1633])
+                    ("private" label nil (reparse-symbol classsubparts) [1634 1642])
+                    ("m_stb_serial" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1646 1667])
+                    ("m_stb_hw_opts" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1671 1693]))                  
+                :type "class")
+                nil [1248 1696])
+            ("CaModel" type
+               (:superclasses 
+                  ( ("QObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1812 1819])
+                    ("Id" type
+                       (:members 
+                          ( ("NONE" variable
+                               (:constant-flag t
+                                :default-value (1849 1850)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1842 1850])
+                            ("IRDETO" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1858 1865])
+                            ("NDS" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1872 1876])
+                            ("NOCAPVR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1883 1891])
+                            ("PLATFORM" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1898 1907])
+                            ("LATENS" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1914 1921])
+                            ("LAST" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1928 1937]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [1823 1938])
+                    ("MessageDisplay_e" type
+                       (:members 
+                          ( ("TEMP_DISPLAY" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1976 1993]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [1943 1994])
+                    ("Origin_e" type
+                       (:members 
+                          ( ("ORIGIN_UNKNOWN" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2024 2039])
+                            ("ORIGIN_LIVE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2046 2058])
+                            ("ORIGIN_RECORD" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2065 2079])
+                            ("ORIGIN_PLAYBACK" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2086 2106]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [1999 2107])
+                    ("MessageType_e" type
+                       (:members 
+                          ( ("MESSAGE_TYPE_UNKNOWN" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2142 2163])
+                            ("MESSAGE_TYPE_REMOVE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2170 2190])
+                            ("MESSAGE_TYPE_PERMANENT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2197 2220])
+                            ("MESSAGE_TYPE_DISMISSABLE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2227 2252])
+                            ("MESSAGE_TYPE_TIME_OUT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2259 2281])
+                            ("MESSAGE_TYPE_CHANNEL_CHANGE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2288 2320]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [2112 2321])
+                    ("CardStatus_e" type
+                       (:members 
+                          ( ("CARD_STATUS_UNKNOWN" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2355 2375])
+                            ("CARD_STATUS_VALID" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2382 2400])
+                            ("CARD_STATUS_REMOVED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2407 2427])
+                            ("CARD_STATUS_EXPIRED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2434 2454])
+                            ("CARD_STATUS_BLACKLISTED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2461 2485])
+                            ("CARD_STATUS_CARDLESS" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2492 2513])
+                            ("CARD_STATUS_INSERTED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2520 2541])
+                            ("CARD_STATUS_ERROR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2548 2566])
+                            ("CARD_STATUS_MUTE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2573 2590])
+                            ("CARD_STATUS_SUSPENDED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2597 2619])
+                            ("CARD_STATUS_NEVER_PAIRED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2626 2651])
+                            ("CARD_STATUS_NOT_PAIRED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2658 2681])
+                            ("CARD_STATUS_NOT_CERTIFIED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2688 2714])
+                            ("CARD_STATUS_INCOMPATIBLE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2721 2746])
+                            ("CARD_STATUS_INVALID" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2753 2773])
+                            ("CARD_STATUS_VERIFYING" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2780 2806]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [2326 2807])
+                    ("BlockedCause_e" type
+                       (:members 
+                          ( ("CAUSE_GRANTED" variable
+                               (:constant-flag t
+                                :default-value (2859 2860)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2843 2860])
+                            ("CAUSE_NO_RIGHTS" variable
+                               (:constant-flag t
+                                :default-value (2886 2887)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2868 2887])
+                            ("CAUSE_USE_ALTERNATIVE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2895 2917])
+                            ("CAUSE_NO_CREDIT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2924 2940])
+                            ("CAUSE_PAIRING_REQUIRED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2947 2970])
+                            ("CAUSE_CHIPSET_PAIRING_REQUIRED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2977 3008])
+                            ("BLOCKED_CAUSE_UNKNOWN" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3015 3037])
+                            ("CAUSE_TEMPORARY_SERVICE_BLOCKING" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3044 3077])
+                            ("CA_STATUS_INVALID_PIN" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3084 3110]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [2812 3111])
+                    ("PpvProductHistory_t" type
+                       (:members 
+                          ( ("productId" variable (:type "int") (reparse-symbol classsubparts) [3154 3168])
+                            ("name" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3175 3188])
+                            ("description" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3195 3215])
+                            ("watchStatus" variable (:type "bool") (reparse-symbol classsubparts) [3222 3239])
+                            ("purchaseDate" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3246 3267])
+                            ("cost" variable (:type "double") (reparse-symbol classsubparts) [3274 3286])
+                            ("startDate" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3293 3311])
+                            ("endDate" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3318 3334]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [3116 3340])
+                    ("Status_e" type
+                       (:members 
+                          ( ("STATUS_MONITOR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3370 3385])
+                            ("STATUS_BOUQUET" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3392 3407])
+                            ("STATUS_SUBBOUQUET" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3414 3432])
+                            ("STATUS_POSTCODE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3439 3455])
+                            ("STATUS_ENTITLEMENT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3462 3481])
+                            ("STATUS_DOWNLOAD" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3488 3504])
+                            ("STATUS_VODENTITLEMENT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3511 3533])
+                            ("STATUS_UNKNOWN" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3540 3559]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [3345 3560])
+                    ("caTextType_e" type
+                       (:members 
+                          ( ("CA_TEXT_TYPE_MESSAGE" variable
+                               (:constant-flag t
+                                :default-value (3617 3618)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3594 3618])
+                            ("CA_TEXT_TYPE_BILLING" variable
+                               (:constant-flag t
+                                :default-value (3649 3650)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3626 3650]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [3565 3656])
+                    ("vendorsEnumLookup" variable
+                       (:typemodifiers ("static")
+                        :type ("QMap" type
+                             (:template-specifier 
+                                ( ("Id" type nil nil nil)
+                                  ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3680 3722])
+                    ("originEnumLookup" variable
+                       (:typemodifiers ("static")
+                        :type ("QMap" type
+                             (:template-specifier 
+                                ( ("Origin_e" type nil nil nil)
+                                  ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3726 3773])
+                    ("messageTypeEnumLookup" variable
+                       (:typemodifiers ("static")
+                        :type ("QMap" type
+                             (:template-specifier 
+                                ( ("MessageType_e" type nil nil nil)
+                                  ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3777 3834])
+                    ("cardStatusEnumLookup" variable
+                       (:typemodifiers ("static")
+                        :type ("QMap" type
+                             (:template-specifier 
+                                ( ("CardStatus_e" type nil nil nil)
+                                  ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3838 3893])
+                    ("blockedCauseEnumLookup" variable
+                       (:typemodifiers ("static")
+                        :type ("QMap" type
+                             (:template-specifier 
+                                ( ("BlockedCause_e" type nil nil nil)
+                                  ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3897 3956])
+                    ("statusTypeEnumLookup" variable
+                       (:typemodifiers ("static")
+                        :type ("QMap" type
+                             (:template-specifier 
+                                ( ("Status_e" type nil nil nil)
+                                  ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3960 4011])
+                    ("PpvProductHistoryList_t" type
+                       (:typedef ("QList" type
+                             (:template-specifier 
+                                ( ("PpvProductHistory_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "QList"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [4016 4075])
+                    ("CaModel" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("strategy" variable
+                               (:pointer 1
+                                :type ("CaModelStrategy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4089 4115]))                          
+                        :type ("CaModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4080 4116])
+                    ("CaModel" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4120 4139])
+                    ("getNumVendors" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4144 4171])
+                    ("getVendorList" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("list" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("Id" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4194 4210]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4175 4217])
+                    ("defaultCAS" function
+                       (:prototype-flag t
+                        :type ("CaModel::Id" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4222 4247])
+                    ("PvrCAS" function
+                       (:prototype-flag t
+                        :type ("CaModel::Id" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4251 4272])
+                    ("getCaSystemId" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4297 4306]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4277 4308])
+                    ("getSerialNumber" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4337 4345]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4313 4346])
+                    ("getStatusInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4374 4382])
+                            ("options" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4383 4399]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4351 4400])
+                    ("getStatusInfo" function
+                       (:arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4427 4436]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4404 4474])
+                    ("getStatusInfoJ" function
+                       (:arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4505 4513])
+                            ("options" variable (:type ("QVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4514 4532]))                          
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4479 4575])
+                    ("getStatusInfoJ" function
+                       (:arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4618 4627]))                          
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4592 4662])
+                    ("getStatusInfoJSON" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4709 4717])
+                            ("options" variable (:type ("QVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4718 4736]))                          
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4680 4737])
+                    ("getStatusInfoJSON" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4770 4779]))                          
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4741 4780])
+                    ("setStatusInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4823 4831])
+                            ("options" variable (:type ("QVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4832 4849]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4803 4850])
+                    ("setStatusInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4896 4904])
+                            ("info" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4905 4918]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4873 4919])
+                    ("pushEMM" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4939 4947])
+                            ("emm" variable (:type ("QVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4948 4961]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4923 4962])
+                    ("getZoneId" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4986 4995]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4966 4996])
+                    ("getUsageId" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5021 5030]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5000 5031])
+                    ("isEntitled" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5052 5060]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5035 5061])
+                    ("isEntitled" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5082 5090])
+                            ("options" variable (:type ("QVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5091 5108]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5065 5109])
+                    ("getMessageTimeout" function
+                       (:arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5136 5145]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5113 5205])
+                    ("setMessageTimeout" function
+                       (:arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5233 5241])
+                            ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [5242 5255]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5209 5315])
+                    ("recurseXML" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("node" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QDomNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5341 5363]))                          
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5319 5364])
+                    ("withAttributes" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("node" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QDomNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5397 5418])
+                            ("value" variable (:type ("QVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5419 5436]))                          
+                        :type ("QVariantMap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5368 5437])
+                    ("applyTypes" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("node" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QDomNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5459 5480])
+                            ("value" variable (:type ("QVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5481 5498]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5441 5499])
+                    ("NodelistToNodeMap" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("childList" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5528 5552])
+                            ("qv_map" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5553 5574]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5503 5575])
+                    ("walkNodes" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("childList" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5596 5620])
+                            ("domNode" variable
+                               (:reference 1
+                                :type ("QDomNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5621 5640]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5579 5641])
+                    ("preparePpvRequest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5674 5683]))                          
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5645 5684])
+                    ("cancelPpvRequest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5712 5720])
+                            ("ppvRequest" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5721 5749]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5688 5750])
+                    ("requestEntitlement" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5779 5787])
+                            ("purchase" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5788 5813]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5754 5814])
+                    ("configureDebugData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5846 5854])
+                            ("options" variable (:type ("QVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5855 5872]))                          
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5818 5873])
+                    ("getStringForId" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5902 5911]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5877 5918])
+                    ("getIdForString" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5942 5962]))                          
+                        :type ("Id" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5922 5969])
+                    ("getAggregators" function (:type ("QList" type
+                         (:template-specifier 
+                            ( ("SignalAggregator" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5973 6039])
+                    ("getMessageTimeout" function (:type "int") (reparse-symbol classsubparts) [6043 6102])
+                    ("setMessageTimeout" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [6131 6144]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6106 6145])
+                    ("convertCardStatus" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("status" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6189 6205]))                          
+                        :type ("CardStatus_e" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6149 6206])
+                    ("convertMessageType" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("status" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6252 6268]))                          
+                        :type ("MessageType_e" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6210 6269])
+                    ("convertBlockedCause" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("status" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6317 6333]))                          
+                        :type ("BlockedCause_e" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6273 6334])
+                    ("enableMonitoring" function
+                       (:arguments 
+                          ( ("caId" variable (:type "int") (reparse-symbol arg-sub-list) [6363 6372])
+                            ("emm" variable (:type "bool") (reparse-symbol arg-sub-list) [6373 6382])
+                            ("ecm" variable (:type "bool") (reparse-symbol arg-sub-list) [6383 6392])
+                            ("general" variable (:type "bool") (reparse-symbol arg-sub-list) [6393 6407]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6339 6490])
+                    ("getZoneId" function (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6495 6535])
+                    ("getUsageId" function (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6539 6580])
+                    ("getPurchaseHistory" function (:type ("PpvProductHistoryList_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6584 6667])
+                    ("getProxy" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("id" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6697 6704]))                          
+                        :type ("CaDaemonProxy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6671 6711])
+                    ("parseDisplayMethod" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("iDisplayMethod" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6739 6762])
+                            ("oFlashing" variable
+                               (:reference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [6763 6779])
+                            ("oTitleBar" variable
+                               (:reference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [6780 6796])
+                            ("oCoveringPercentage" variable
+                               (:reference 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [6797 6831]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6715 6832])
+                    ("parseMessageText" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("text" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6858 6872])
+                            ("title" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6873 6888])
+                            ("titleBar" variable
+                               (:reference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [6889 6904]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6836 6905])
+                    ("processChannelBlockedChanged" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [6944 6951])
+                            ("blocked" variable (:type "bool") (reparse-symbol arg-sub-list) [6952 6965])
+                            ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6966 6989])
+                            ("cause" variable (:type "int") (reparse-symbol arg-sub-list) [6990 7001])
+                            ("blackout" variable (:type "bool") (reparse-symbol arg-sub-list) [7002 7016])
+                            ("altChannel" variable (:type "int") (reparse-symbol arg-sub-list) [7017 7032]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6909 7033])
+                    ("emitNotifyMessage" function
+                       (:arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [7084 7091])
+                            ("display" variable (:type "int") (reparse-symbol arg-sub-list) [7092 7104])
+                            ("type" variable (:type "int") (reparse-symbol arg-sub-list) [7105 7114])
+                            ("duration" variable (:type "int") (reparse-symbol arg-sub-list) [7115 7128])
+                            ("text" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7129 7142])
+                            ("flashing" variable (:type "bool") (reparse-symbol arg-sub-list) [7143 7157])
+                            ("titleBar" variable (:type "bool") (reparse-symbol arg-sub-list) [7158 7172])
+                            ("title" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7173 7187])
+                            ("coverage" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7189 7212]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7059 7322])
+                    ("emitNotifyMessageTMS" function
+                       (:arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [7355 7362])
+                            ("display" variable (:type "int") (reparse-symbol arg-sub-list) [7363 7375])
+                            ("type" variable (:type "int") (reparse-symbol arg-sub-list) [7376 7385])
+                            ("duration" variable (:type "int") (reparse-symbol arg-sub-list) [7386 7399])
+                            ("text" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7400 7413])
+                            ("flashing" variable (:type "bool") (reparse-symbol arg-sub-list) [7414 7428])
+                            ("titleBar" variable (:type "bool") (reparse-symbol arg-sub-list) [7429 7443])
+                            ("title" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7444 7458])
+                            ("coverage" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7460 7483]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7327 7596])
+                    ("emitCardStatusChanged" function
+                       (:arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [7630 7637])
+                            ("status" variable (:type "int") (reparse-symbol arg-sub-list) [7638 7650]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7601 7742])
+                    ("emitChannelBlockedChanged" function
+                       (:arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [7778 7785])
+                            ("blocked" variable (:type "bool") (reparse-symbol arg-sub-list) [7786 7799])
+                            ("message" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7800 7816])
+                            ("cause" variable (:type "int") (reparse-symbol arg-sub-list) [7817 7828])
+                            ("blackout" variable (:type "bool") (reparse-symbol arg-sub-list) [7829 7843])
+                            ("altChannel" variable (:type "int") (reparse-symbol arg-sub-list) [7844 7859]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7747 7944])
+                    ("emitStatusInfoChanged" function
+                       (:arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [7976 7983])
+                            ("type" variable (:type "int") (reparse-symbol arg-sub-list) [7984 7993])
+                            ("message" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7994 8010]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7949 8104])
+                    ("emitStatusInfoChanged" function
+                       (:arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [8136 8143])
+                            ("type" variable (:type "int") (reparse-symbol arg-sub-list) [8144 8153])
+                            ("data" variable (:type ("QVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8154 8168]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8109 8259])
+                    ("emitNotifyMailMessage" function
+                       (:arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [8291 8298])
+                            ("title" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8299 8313])
+                            ("isoDate" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8314 8330])
+                            ("description" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8331 8351])
+                            ("messageType" variable (:type ("caTextType_e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8352 8377]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8264 8470])
+                    ("emitNotifyDownloadMessage" function
+                       (:arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [8506 8513])
+                            ("data" variable (:type ("QVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8514 8528]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8475 8571])
+                    ("emitResetChannelOrder" function (:type "void") (reparse-symbol classsubparts) [8576 8635])
+                    ("emitRescanChannels" function (:type "void") (reparse-symbol classsubparts) [8640 8693])
+                    ("emitReconnectBox" function (:type "void") (reparse-symbol classsubparts) [8698 8747])
+                    ("emitTuneToChannel" function
+                       (:arguments 
+                          ( ("channel" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8775 8790]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8752 8824])
+                    ("emitFactoryReset" function (:type "void") (reparse-symbol classsubparts) [8829 8878])
+                    ("emitUserPayload" function
+                       (:arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [8905 8912])
+                            ("message" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8913 8930]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8883 8967])
+                    ("emitHomingChannelChanged" function
+                       (:arguments 
+                          ( ("hc" variable (:type ("TUNER_TUNING_PARAMS_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9033 9058]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9003 9094])
+                    ("public" label nil (reparse-symbol classsubparts) [9327 9340])
+                    ("handleMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [9365 9372])
+                            ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9373 9394]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9344 9395])
+                    ("handleNotifyCaStatus" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("origin" variable (:type "int") (reparse-symbol arg-sub-list) [9425 9436])
+                            ("id" variable (:type "int") (reparse-symbol arg-sub-list) [9437 9444])
+                            ("handle" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9445 9458])
+                            ("status" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9459 9472])
+                            ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9473 9497]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9399 9498])
+                    ("handleStatusCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [9528 9535])
+                            ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9537 9561]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9502 9562])
+                    ("updateHomingChannel" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [9566 9593])
+                    ("notifyMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [9628 9635])
+                            ("display" variable (:type "int") (reparse-symbol arg-sub-list) [9636 9648])
+                            ("type" variable (:type "int") (reparse-symbol arg-sub-list) [9649 9658])
+                            ("duration" variable (:type "int") (reparse-symbol arg-sub-list) [9659 9672])
+                            ("text" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9673 9686])
+                            ("flashing" variable (:type "bool") (reparse-symbol arg-sub-list) [9687 9701])
+                            ("titleBar" variable (:type "bool") (reparse-symbol arg-sub-list) [9702 9716])
+                            ("title" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9717 9731])
+                            ("coverage" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9732 9755]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9607 9756])
+                    ("notifyMessageTMS" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [9784 9791])
+                            ("display" variable (:type "int") (reparse-symbol arg-sub-list) [9792 9804])
+                            ("type" variable (:type "int") (reparse-symbol arg-sub-list) [9805 9814])
+                            ("duration" variable (:type "int") (reparse-symbol arg-sub-list) [9815 9828])
+                            ("text" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9829 9842])
+                            ("flashing" variable (:type "bool") (reparse-symbol arg-sub-list) [9843 9857])
+                            ("titleBar" variable (:type "bool") (reparse-symbol arg-sub-list) [9858 9872])
+                            ("title" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9873 9887])
+                            ("coverage" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9888 9911]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9760 9912])
+                    ("notifyStatus" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [9936 9944])
+                            ("handle" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9945 9958])
+                            ("signal" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9959 9972])
+                            ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9973 9997]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9916 9998])
+                    ("cardStatusChanged" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [10027 10034])
+                            ("status" variable (:type "int") (reparse-symbol arg-sub-list) [10035 10047]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10002 10048])
+                    ("channelBlockedChanged" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [10079 10086])
+                            ("blocked" variable (:type "bool") (reparse-symbol arg-sub-list) [10087 10100])
+                            ("" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10101 10109])
+                            ("cause" variable (:type "int") (reparse-symbol arg-sub-list) [10110 10121])
+                            ("blackout" variable (:type "bool") (reparse-symbol arg-sub-list) [10122 10136])
+                            ("altChannel" variable (:type "int") (reparse-symbol arg-sub-list) [10137 10152]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10052 10153])
+                    ("statusInfoChanged" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [10180 10187])
+                            ("type" variable (:type "int") (reparse-symbol arg-sub-list) [10188 10197])
+                            ("message" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10198 10214]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10157 10215])
+                    ("statusInfoChanged" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [10242 10249])
+                            ("type" variable (:type "int") (reparse-symbol arg-sub-list) [10250 10259])
+                            ("data" variable (:type ("QVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10260 10274]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10219 10275])
+                    ("notifyMailMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [10302 10306])
+                            ("" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10307 10315])
+                            ("" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10316 10324])
+                            ("" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10325 10333])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [10334 10338]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10279 10339])
+                    ("notifyDownloadMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [10370 10374])
+                            ("" variable (:type ("QVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10375 10384]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10343 10385])
+                    ("resetChannelOrder" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [10389 10414])
+                    ("rescanChannels" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [10418 10440])
+                    ("reconnectBox" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [10444 10464])
+                    ("tuneToChannel" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10487 10494]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10468 10495])
+                    ("factoryReset" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [10499 10519])
+                    ("userPayload" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [10540 10544])
+                            ("" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10545 10553]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10523 10554])
+                    ("homingChannelChanged" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TUNER_TUNING_PARAMS_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10608 10630]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10582 10631])
+                    ("private" label nil (reparse-symbol classsubparts) [10640 10648])
+                    ("m_strategy" variable
+                       (:pointer 1
+                        :type ("CaModelStrategy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10652 10680])
+                    ("m_caDaemonProxyMap" variable (:type ("QMap" type
+                         (:template-specifier 
+                            ( ("Id" type nil nil nil)
+                              ("CaDaemonProxy" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10684 10729])
+                    ("m_aggregators" variable (:type ("QList" type
+                         (:template-specifier 
+                            ( ("SignalAggregator" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10733 10773])
+                    ("m_messageTimeout" variable (:type "int") (reparse-symbol classsubparts) [10777 10798])
+                    ("m_caPlatform" variable
+                       (:pointer 1
+                        :type ("CaPlatform" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10802 10827])
+                    ("m_services" variable (:type ("QStringList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10831 10854])
+                    ("m_cacheStatusInfos" variable (:type ("QMap" type
+                         (:template-specifier 
+                            ( ("Id" type nil nil nil)
+                              ("QVariant" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10861 10898])
+                    ("initialiseDBus" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("services" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QStringList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10924 10952]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10903 10953])
+                    ("initialiseStrLookup" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [10957 10984])
+                    ("updateCacheStatusInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("caId" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11016 11024]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10988 11025])
+                    ("dumpQVariantMap" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("qvm" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11053 11069])
+                            ("str" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11070 11083]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11029 11088]))                  
+                :type "class")
+                nil [1766 11091])
+            ("SignalAggregator" type
+               (:superclasses 
+                  ( ("QObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [11225 11232])
+                    ("SignalAggregator" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("id" variable (:type ("CaModel::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11255 11270])
+                            ("model" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("CaModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11271 11292])
+                            ("proxy" variable
+                               (:pointer 1
+                                :type ("CaDaemonProxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11293 11315]))                          
+                        :type ("SignalAggregator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11236 11316])
+                    ("SignalAggregator" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [11320 11349])
+                    ("public" label nil (reparse-symbol classsubparts) [11351 11364])
+                    ("handleMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11389 11410]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11368 11411])
+                    ("handleNotifyCaStatus" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11441 11447])
+                            ("" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11448 11454])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11455 11471]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11415 11472])
+                    ("handlePvrPlaybackNotifyStatus" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11511 11517])
+                            ("" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11518 11524])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11525 11541]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11476 11542])
+                    ("handlePvrRecordNotifyStatus" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11579 11585])
+                            ("" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11586 11592])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11593 11609]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11546 11610])
+                    ("handleStatusCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11640 11656]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11614 11657])
+                    ("message_received" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [11695 11702])
+                            ("text" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11703 11717]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11671 11718])
+                    ("ca_status_received" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("origin" variable (:type "int") (reparse-symbol arg-sub-list) [11746 11757])
+                            ("id" variable (:type "int") (reparse-symbol arg-sub-list) [11758 11766])
+                            ("handle" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11767 11780])
+                            ("signal" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11781 11794])
+                            ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11795 11819]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11722 11820])
+                    ("status_callback_received" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [11856 11863])
+                            ("text" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11864 11878]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11824 11879])
+                    ("private" label nil (reparse-symbol classsubparts) [11881 11889])
+                    ("m_id" variable
+                       (:constant-flag t
+                        :type ("CaModel::Id" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11893 11917])
+                    ("m_model" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CaModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11921 11948]))                  
+                :type "class")
+                nil [11170 11951])
+            ("XMLtoVariant" type
+               (:superclasses 
+                  ( ("QObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [12064 12071])
+                    ("XMLtoVariant" function
+                       (:constructor-flag t
+                        :type ("XMLtoVariant" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12075 12091])
+                    ("XMLtoVariant" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [12095 12120])
+                    ("getTypeAttribute" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("node" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QDomNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12152 12175]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12125 12176])
+                    ("withAttributes" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("node" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QDomNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12209 12230])
+                            ("value" variable (:type ("QVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12231 12248]))                          
+                        :type ("QVariantMap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12180 12249])
+                    ("recurseXML" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("node" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QDomNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12275 12297]))                          
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12253 12298])
+                    ("NodelistToNodeMap" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("childList" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12327 12351])
+                            ("qv_map" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12352 12373]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [12302 12374])
+                    ("walkNodes" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("childList" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12395 12419])
+                            ("domNode" variable
+                               (:reference 1
+                                :type ("QDomNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12420 12439]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [12378 12440]))                  
+                :type "class")
+                nil [12026 12443])
+            ("CaVendor" type
+               (:superclasses 
+                  ( ("QObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [12546 12553])
+                    ("Id" type
+                       (:typedef ("CaModel::Id" type (:type "class") nil nil)
+                        :superclasses "CaModel::Id"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [12557 12580])
+                    ("BlockedCause_e" type
+                       (:typedef ("CaModel::BlockedCause_e" type (:type "class") nil nil)
+                        :superclasses "CaModel::BlockedCause_e"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [12584 12631])
+                    ("MessageType_e" type
+                       (:typedef ("CaModel::MessageType_e" type (:type "class") nil nil)
+                        :superclasses "CaModel::MessageType_e"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [12635 12681])
+                    ("MessageDisplay_e" type
+                       (:typedef ("CaModel::MessageDisplay_e" type (:type "class") nil nil)
+                        :superclasses "CaModel::MessageDisplay_e"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [12685 12736])
+                    ("CardStatus_e" type
+                       (:typedef ("CaModel::CardStatus_e" type (:type "class") nil nil)
+                        :superclasses "CaModel::CardStatus_e"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [12740 12783])
+                    ("CaVendor" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("caModel" variable
+                               (:pointer 1
+                                :type ("CaModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12798 12816]))                          
+                        :type ("CaVendor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12788 12817])
+                    ("CaVendor" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [12821 12842])
+                    ("handleNotifyCaStatus" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("origin" variable (:type "int") (reparse-symbol arg-sub-list) [12880 12891])
+                            ("id" variable (:type "int") (reparse-symbol arg-sub-list) [12892 12900])
+                            ("handle" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12901 12914])
+                            ("status" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12915 12928])
+                            ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12929 12952]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12846 12953])
+                    ("handleStatusCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [12993 13000])
+                            ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13001 13025]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12957 13026])
+                    ("handleMessage" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [13057 13061])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13062 13077]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13030 13078])
+                    ("configureDebugData" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("caId" variable (:type ("CaModel::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13120 13137])
+                            ("input" variable (:type ("QVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13138 13154]))                          
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13082 13155])
+                    ("getCaModel" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("CaModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13159 13190])
+                    ("private" label nil (reparse-symbol classsubparts) [13192 13200])
+                    ("m_caModel" variable
+                       (:pointer 1
+                        :type ("CaModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13204 13223]))                  
+                :type "class")
+                nil [12499 13226])
+            ("CaIrdeto" type
+               (:superclasses 
+                  ( ("CaVendor" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [13330 13337])
+                    ("CaIrdeto" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("caModel" variable
+                               (:pointer 1
+                                :type ("CaModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13351 13369]))                          
+                        :type ("CaIrdeto" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13341 13370])
+                    ("CaIrdeto" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [13374 13395])
+                    ("configureDebugData" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("caId" variable (:type ("CaModel::Id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13437 13454])
+                            ("input" variable (:type ("QVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13455 13471]))                          
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13399 13472])
+                    ("private" label nil (reparse-symbol classsubparts) [13474 13482])
+                    ("m_caModel" variable
+                       (:pointer 1
+                        :type ("CaModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13486 13505]))                  
+                :type "class")
+                nil [13282 13508])
+            ("CaNDS" type
+               (:superclasses 
+                  ( ("CaVendor" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [13606 13613])
+                    ("CaNDS" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("caModel" variable
+                               (:pointer 1
+                                :type ("CaModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13624 13642]))                          
+                        :type ("CaNDS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13617 13643])
+                    ("CaNDS" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [13647 13665])
+                    ("private" label nil (reparse-symbol classsubparts) [13667 13675])
+                    ("m_caModel" variable
+                       (:pointer 1
+                        :type ("CaModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13679 13698]))                  
+                :type "class")
+                nil [13561 13701])
+            ("CaLatens" type
+               (:superclasses 
+                  ( ("CaVendor" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [13805 13812])
+                    ("CaLatens" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("caModel" variable
+                               (:pointer 1
+                                :type ("CaModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13826 13844]))                          
+                        :type ("CaLatens" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13816 13845])
+                    ("CaLatens" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [13849 13870])
+                    ("private" label nil (reparse-symbol classsubparts) [13872 13880])
+                    ("m_caModel" variable
+                       (:pointer 1
+                        :type ("CaModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13884 13903]))                  
+                :type "class")
+                nil [13757 13906]))          
+    :file "camodel.h"
+    :pointmax 13927
+    :fsize 13926
+    :lastmodtime '(21785 11155 225317 256000)
+    :unmatched-syntax '((symbol 13795 . 13803) (symbol 13596 . 13604) (symbol 13320 . 13328) (symbol 12536 . 12544) (punctuation 11666 . 11667) (symbol 11659 . 11666) (symbol 11215 . 11223) (string 11084 . 11086) (punctuation 11082 . 11083) (punctuation 9602 . 9603) (symbol 9595 . 9602) (symbol 1802 . 1810) (symbol 1287 . 1295))
+    :lexical-table 
+        '(("CAMODEL_H")
+          )
+
+    )
+   (semanticdb-table "cadaemonproxy.h"
+    :file "cadaemonproxy.h"
+    :fsize 11709
+    :lastmodtime '(21785 18708 783024 249000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!applications!library!models!camodel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

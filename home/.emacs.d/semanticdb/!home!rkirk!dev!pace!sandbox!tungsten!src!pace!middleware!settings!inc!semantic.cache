@@ -1,0 +1,392 @@
+;; Object inc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "inc/"
+  :tables (list 
+   (semanticdb-table "settingsClient.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__SETTINGS_CLIENT_H__" variable (:constant-flag t) nil [778 799])
+            ("QString" include (:system-flag t) nil [801 818])
+            ("QStringList" include (:system-flag t) nil [819 840])
+            ("QVariant" include (:system-flag t) nil [841 859])
+            ("OrgPaceSettingsInternalInterface" type
+               (:prototype t
+                :type "class")
+                nil [862 901])
+            ("Settings" type
+               (:members 
+                  ( ("ClientNotification" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1063 1070])
+                            ("ClientNotification" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("ClientNotification" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1077 1098])
+                            ("ClientNotification" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1105 1127])
+                            ("registerClient" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("clientObj" variable
+                                       (:pointer 1
+                                        :type ("QObject" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1156 1175])
+                                    ("keyName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1176 1200]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1134 1201])
+                            ("unRegisterClient" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("clientObj" variable
+                                       (:pointer 1
+                                        :type ("QObject" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1232 1251])
+                                    ("keyName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1252 1276]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1208 1277])
+                            ("getRegisteredClient" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("clientObj" variable
+                                       (:pointer 1
+                                        :type ("QObject" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1311 1330])
+                                    ("keyName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1331 1355]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1284 1356])
+                            ("private" label nil (reparse-symbol classsubparts) [1360 1368])
+                            ("m_registeredClientMap" variable (:type ("QMap" type
+                                 (:template-specifier 
+                                    ( ("QObject" type (:pointer 1) nil nil)
+                                      ("QStringList" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1375 1428]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1030 1434])
+                    ("SettingsChangeEvent" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1439 1465])
+                    ("SettingsClient" type
+                       (:superclasses 
+                          ( ("QObject" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1600 1607])
+                            ("SettingsClient" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("obj" variable
+                                       (:pointer 1
+                                        :type ("QObject" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1631 1645])
+                                    ("" variable (:type ("NULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1646 1652]))                                  
+                                :type ("SettingsClient" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1614 1653])
+                            ("SettingsClient" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1660 1679])
+                            ("registerSettingsUpdate" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("clientObj" variable
+                                       (:pointer 1
+                                        :type ("QObject" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1715 1734])
+                                    ("keyName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1735 1759]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [1686 1760])
+                            ("unRegisterSettingsUpdate" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("clientObj" variable
+                                       (:pointer 1
+                                        :type ("QObject" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1798 1817])
+                                    ("keyName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1818 1842]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [1767 1843])
+                            ("setAllToDefault" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("clientObj" variable
+                                       (:pointer 1
+                                        :type ("QObject" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1873 1893]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1850 1894])
+                            ("setToDefault" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("clientObj" variable
+                                       (:pointer 1
+                                        :type ("QObject" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1921 1940])
+                                    ("keyName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1941 1965]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1901 1966])
+                            ("setSetting" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("clientObj" variable
+                                       (:pointer 1
+                                        :type ("QObject" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1991 2010])
+                                    ("keyName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2011 2034])
+                                    ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QVariant" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2035 2058]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1973 2059])
+                            ("getSetting" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("clientObj" variable
+                                       (:pointer 1
+                                        :type ("QObject" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2084 2103])
+                                    ("keyName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2104 2127])
+                                    ("value" variable
+                                       (:reference 1
+                                        :type ("QVariant" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2128 2145]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2066 2146])
+                            ("deleteSetting" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("clientObj" variable
+                                       (:pointer 1
+                                        :type ("QObject" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2174 2193])
+                                    ("keyName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2194 2218]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2153 2219])
+                            ("getKeys" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("clientObj" variable
+                                       (:pointer 1
+                                        :type ("QObject" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2241 2260])
+                                    ("keyGroup" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2261 2285])
+                                    ("groupKeyList" variable
+                                       (:reference 1
+                                        :type ("QStringList" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2286 2313]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2226 2314])
+                            ("prepareKey" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("module" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2342 2361])
+                                    ("name" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2362 2380]))                                  
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2321 2381])
+                            ("public" label nil (reparse-symbol classsubparts) [2386 2399])
+                            ("notifyRegisteredClient" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("keyName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2436 2460]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2406 2461])
+                            ("private" label nil (reparse-symbol classsubparts) [2466 2474])
+                            ("connectToSettingsServer" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :type ("OrgPaceSettingsInternalInterface" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2481 2541])
+                            ("m_pSMInterface" variable
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :type ("OrgPaceSettingsInternalInterface" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2548 2604])
+                            ("m_pObjSetEvent" variable
+                               (:pointer 1
+                                :type ("SettingsChangeEvent" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2611 2647])
+                            ("m_pClientNotification" variable
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :type ("ClientNotification" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2654 2703]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1469 2709]))                  
+                :type "namespace")
+                nil [903 2713]))          
+    :file "settingsClient.h"
+    :pointmax 2722
+    :fsize 3868
+    :lastmodtime '(21471 25800 255828 303000)
+    :unmatched-syntax '((punctuation 1644 . 1645) (semantic-list 1545 . 1595) (symbol 1533 . 1544) (string 1566 . 1593) (string 1547 . 1564) (symbol 1518 . 1526) (string 1566 . 1593) (string 1547 . 1564))
+    :lexical-table 
+        '(("__SETTINGS_CLIENT_H__")
+          )
+
+    )
+   (semanticdb-table "settingsClientCInterface.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__SETTINGS_CLIENT_C_INTERFACE_H__" variable (:constant-flag t) nil [794 827])
+            ("getSetting_int" function
+               (:type "int"
+                :arguments 
+                  ( ("keyName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [897 917])
+                    ("value" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [918 930]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [869 931])
+            ("getSetting_string" function
+               (:type "int"
+                :arguments 
+                  ( ("keyName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [963 983])
+                    ("value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [984 997]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [932 998])
+            ("getSetting_uint" function
+               (:type "int"
+                :arguments 
+                  ( ("keyName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1028 1048])
+                    ("value" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [1049 1070]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [999 1071])
+            ("setSetting_int" function
+               (:type "int"
+                :arguments 
+                  ( ("keyName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1100 1120])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [1121 1132]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1072 1133])
+            ("setSetting_string" function
+               (:type "int"
+                :arguments 
+                  ( ("keyName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1165 1185])
+                    ("value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1186 1199]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1134 1200])
+            ("setSetting_uint" function
+               (:type "int"
+                :arguments 
+                  ( ("keyName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1230 1250])
+                    ("value" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1251 1271]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1201 1272]))          
+    :file "settingsClientCInterface.h"
+    :pointmax 1310
+    :fsize 1309
+    :lastmodtime '(21471 25800 288828 95000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__SETTINGS_CLIENT_C_INTERFACE_H__")
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!settings!inc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

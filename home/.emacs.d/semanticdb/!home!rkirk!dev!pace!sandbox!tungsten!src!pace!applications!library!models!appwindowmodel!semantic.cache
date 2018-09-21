@@ -1,0 +1,216 @@
+;; Object appwindowmodel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "appwindowmodel/"
+  :tables (list 
+   (semanticdb-table "datatypes.h"
+    :file "datatypes.h"
+    :fsize 947
+    :lastmodtime '(21785 11160 321279 710000)
+    )
+   (semanticdb-table "appfactory.h"
+    :file "appfactory.h"
+    :fsize 625
+    :lastmodtime '(21785 11160 322279 703000)
+    )
+   (semanticdb-table "applicationmanageradaptor.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("applicationmanageradaptor.h" include nil nil [398 436])
+            ("QtCore/QMetaObject" include (:system-flag t) nil [437 466])
+            ("QtCore/QByteArray" include (:system-flag t) nil [467 495])
+            ("QtCore/QList" include (:system-flag t) nil [496 519])
+            ("QtCore/QMap" include (:system-flag t) nil [520 542])
+            ("QtCore/QString" include (:system-flag t) nil [543 568])
+            ("QtCore/QStringList" include (:system-flag t) nil [569 598])
+            ("QtCore/QVariant" include (:system-flag t) nil [599 625])
+            ("ApplicationManagerAdaptor" function
+               (:constructor-flag t
+                :parent "ApplicationManagerAdaptor"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [749 765]))                  
+                :type ("ApplicationManagerAdaptor" type (:type "class") nil nil))
+                nil [696 885])
+            ("ApplicationManagerAdaptor" function
+               (:destructor-flag t
+                :parent "ApplicationManagerAdaptor"
+                :type "void")
+                nil [887 964])
+            ("addKeyGroups" function
+               (:parent "ApplicationManagerAdaptor"
+                :arguments 
+                  ( ("keyGroups" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1011 1036])
+                    ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1037 1053]))                  
+                :type "bool")
+                nil [966 1300])
+            ("bringToFront" function
+               (:parent "ApplicationManagerAdaptor"
+                :arguments 
+                  ( ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1347 1363]))                  
+                :type "bool")
+                nil [1302 1583])
+            ("getGraphicsResolution" function
+               (:parent "ApplicationManagerAdaptor"
+                :type "int")
+                nil [1585 1850])
+            ("getKeyResponder" function
+               (:parent "ApplicationManagerAdaptor"
+                :arguments 
+                  ( ("keyCode" variable (:type "int") (reparse-symbol arg-sub-list) [1900 1912]))                  
+                :type ("uint" type (:type "class") nil nil))
+                nil [1852 2134])
+            ("killApplication" function
+               (:parent "ApplicationManagerAdaptor"
+                :arguments 
+                  ( ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2184 2200]))                  
+                :type "bool")
+                nil [2136 2426])
+            ("launchApplication" function
+               (:parent "ApplicationManagerAdaptor"
+                :arguments 
+                  ( ("appId" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2478 2499])
+                    ("params" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2500 2522])
+                    ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2523 2539]))                  
+                :type ("uint" type (:type "class") nil nil))
+                nil [2428 2816])
+            ("listOfInstalledApplications" function
+               (:parent "ApplicationManagerAdaptor"
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("ListOfInstalledApps" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2818 3170])
+            ("listOfRunningApplications" function
+               (:parent "ApplicationManagerAdaptor"
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("ListOfRunningApps" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3172 3512])
+            ("removeKeyGroups" function
+               (:parent "ApplicationManagerAdaptor"
+                :arguments 
+                  ( ("keyGroups" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3562 3587])
+                    ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3588 3604]))                  
+                :type "bool")
+                nil [3514 3857])
+            ("sendMessage" function
+               (:parent "ApplicationManagerAdaptor"
+                :arguments 
+                  ( ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3902 3918])
+                    ("destinationId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3919 3938])
+                    ("messageData" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3939 3966]))                  
+                :type "int")
+                nil [3859 4239])
+            ("sendToBack" function
+               (:parent "ApplicationManagerAdaptor"
+                :arguments 
+                  ( ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4284 4300]))                  
+                :type "bool")
+                nil [4241 4516])
+            ("setGraphicsResolution" function
+               (:parent "ApplicationManagerAdaptor"
+                :arguments 
+                  ( ("graphSize" variable (:type "int") (reparse-symbol arg-sub-list) [4572 4586]))                  
+                :type "bool")
+                nil [4518 4822])
+            ("setVisible" function
+               (:parent "ApplicationManagerAdaptor"
+                :arguments 
+                  ( ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4867 4883])
+                    ("visibility" variable (:type "bool") (reparse-symbol arg-sub-list) [4884 4900]))                  
+                :type "bool")
+                nil [4824 5141]))          
+    :file "applicationmanageradaptor.cpp"
+    :pointmax 5143
+    :fsize 5142
+    :lastmodtime '(21785 18989 759806 839000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "applicationmanageradaptor.h"
+    :file "applicationmanageradaptor.h"
+    :fsize 8399
+    :lastmodtime '(21785 18989 759806 839000)
+    )
+   (semanticdb-table "appfactory.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("appfactory.h" include nil nil [1 24])
+            ("manager/privilegedapplicationmanager.h" include nil nil [26 75])
+            ("manager/clientapplicationmanager.h" include nil nil [76 121])
+            ("tlogger/tlogger.h" include nil nil [509 537])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [538 562])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [563 615])
+            ("ApplicationFactory::m_window" variable
+               (:pointer 1
+                :type ("IGuiWindow" type (:type "class") nil nil))
+                nil [617 665])
+            ("ApplicationFactory::m_controller" variable
+               (:pointer 1
+                :type ("IApplicationController" type (:type "class") nil nil))
+                nil [727 791])
+            ("getWindow" function
+               (:pointer 1
+                :parent "ApplicationFactory"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [836 845])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [846 858])
+                    ("priv" variable (:type "bool") (reparse-symbol arg-sub-list) [859 869]))                  
+                :type ("IGuiWindow" type (:type "class") nil nil))
+                nil [794 1473])
+            ("getController" function
+               (:pointer 1
+                :parent "ApplicationFactory"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1534 1543])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1544 1556])
+                    ("priv" variable (:type "bool") (reparse-symbol arg-sub-list) [1557 1567]))                  
+                :type ("IApplicationController" type (:type "class") nil nil))
+                nil [1476 2282]))          
+    :file "appfactory.cpp"
+    :pointmax 2367
+    :fsize 2442
+    :lastmodtime '(21785 11160 321279 710000)
+    :unmatched-syntax '((punctuation 2282 . 2283) (punctuation 1473 . 1474) (string 591 . 612))
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!applications!library!models!appwindowmodel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

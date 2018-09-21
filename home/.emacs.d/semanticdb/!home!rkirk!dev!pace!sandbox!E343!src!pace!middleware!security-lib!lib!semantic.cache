@@ -1,0 +1,46 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("CP" variable (:default-value ("cp")) nil [199 205])
+            ("RM" variable (:default-value ("rm")) nil [205 211])
+            ("MKDIR" variable (:default-value ("mkdir")) nil [211 223])
+            ("EXPORT_HEADERS" variable (:default-value ("../interface/security.h")) nil [224 266])
+            ("LIBS" variable (:default-value ("-lcrypto")) nil [357 371])
+            ("INCPATH" variable (:default-value ("-I../interface" "-I$(shell pwd)" "-I$(HDW_DEFS_DIR)")) nil [371 427])
+            ("LDFLAGS" variable (:default-value ("$(LDFLAGS)" "-Wl,-O1" "$(LIBS)")) nil [428 465])
+            ("CFLAGS" variable (:default-value ("$(CFLAGS)" "-Wextra")) nil [465 492])
+            ("CXXFLAGS" variable (:default-value ("$(CXXFLAGS)" "$(CFLAGS)")) nil [1580 1614])
+            ("SRCS" variable (:default-value ("security.cpp" "securecontentprocessor.cpp" "iidentifier.cpp" "identifierfactory.cpp" "isecurecontent.cpp" "securecontentfactory.cpp" "ihmac.cpp" "cryptographicfactory.cpp" "ikeyprovider.cpp" "idecrypt.cpp" "initialisationprovider.cpp" "iinitialiser.cpp" "tlvparser.cpp" "namedsemaphore.cpp" "arraystreambuf.cpp" "utilities.cpp" "ihash.cpp" "isecuredinfo.cpp" "securedinfofactory.cpp")) nil [1615 1984])
+            ("OBJS" variable (:default-value ("$(SRCS:.cpp=.o)")) nil [1984 2007])
+            ("ARCHIVE_LIBS" variable nil nil [2066 2082])
+            ("plugins/*/Makefile" include nil nil [2129 2156])
+            ("LIBRARY" variable (:default-value ("libsecurity.so")) nil [2157 2181])
+            ("ARCHIVE" variable (:default-value ("libsecurity.a")) nil [2181 2204])
+            ("LIBRARY_INSTALL_PATH" variable (:default-value ("$(STAGING_PATH)/usr/lib/$(LIBRARY)")) nil [2204 2260])
+            (".SUFFIXES" function (:arguments (".o" ".c" ".cpp")) nil [2261 2283])
+            (".cpp.o" function nil nil [2284 2345])
+            (".c.o" function nil nil [2346 2402])
+            ("install" function (:arguments ("all" "$(LIBRARY_INSTALL_PATH)" "headers_install")) nil [2403 2456])
+            ("install_pmw" function (:arguments ("all" "$(LIBRARY_INSTALL_PATH)" "headers_install")) nil [2457 2514])
+            ("all" function (:arguments ("$(LIBRARY)" "$(ARCHIVE)")) nil [2515 2542])
+            ("$(LIBRARY_INSTALL_PATH)" function (:arguments ("$(LIBRARY)")) nil [2543 2626])
+            ("headers_install" function nil nil [2627 2765])
+            ("$(LIBRARY)" function (:arguments ("$(OBJS)")) nil [2766 2909])
+            ("$(ARCHIVE)" function (:arguments ("$(OBJS)")) nil [2910 3002])
+            (".PHONY" function (:arguments ("clean")) nil [3003 3017])
+            ("clean" function nil nil [3017 3127]))          
+    :file "Makefile"
+    :pointmax 3127
+    :fsize 3126
+    :lastmodtime '(21947 11364 168536 321000)
+    :unmatched-syntax '((shell-command 3025 . 3126) (bol 3024 . 3024) (symbol 1544 . 1572) (punctuation 1542 . 1543) (punctuation 1541 . 1542) (symbol 1534 . 1540) (bol 1532 . 1532) (symbol 1466 . 1485) (punctuation 1464 . 1465) (punctuation 1463 . 1464) (symbol 1456 . 1462) (bol 1454 . 1454) (symbol 1403 . 1420) (punctuation 1401 . 1402) (punctuation 1400 . 1401) (symbol 1393 . 1399) (bol 1391 . 1391) (shell-command 1323 . 1355) (bol 1322 . 1322) (ENDIF 1265 . 1270) (bol 1263 . 1263) (symbol 1239 . 1262) (punctuation 1237 . 1238) (punctuation 1236 . 1237) (symbol 1229 . 1235) (bol 1225 . 1225) (semantic-list 1196 . 1224) (IFEQ 1191 . 1195) (bol 1189 . 1189) (bol 1149 . 1149) (symbol 1111 . 1147) (symbol 1079 . 1110) (symbol 1038 . 1078) (punctuation 1036 . 1037) (punctuation 1035 . 1036) (symbol 1020 . 1034) (bol 1018 . 1018) (semantic-list 982 . 1017) (punctuation 981 . 982) (semantic-list 939 . 980) (punctuation 938 . 939) (semantic-list 842 . 937) (punctuation 841 . 842) (punctuation 839 . 840) (punctuation 838 . 839) (symbol 831 . 837) (bol 829 . 829) (symbol 805 . 828) (semantic-list 789 . 805) (punctuation 788 . 789) (symbol 777 . 788) (semantic-list 766 . 777) (punctuation 765 . 766) (INCLUDE 757 . 764) (bol 755 . 755) (semantic-list 744 . 754) (punctuation 743 . 744) (punctuation 742 . 743) (symbol 728 . 742) (bol 726 . 726) (ENDIF 719 . 724) (bol 717 . 717) (semantic-list 696 . 716) (punctuation 695 . 696) (symbol 694 . 695) (punctuation 693 . 694) (symbol 685 . 693) (bol 681 . 681) (semantic-list 666 . 680) (IFEQ 661 . 665) (bol 659 . 659) (bol 648 . 648) (bol 574 . 574) (bol 528 . 528) (semantic-list 158 . 185) (punctuation 157 . 158) (bol 157 . 157) (semantic-list 58 . 86) (punctuation 57 . 58) (bol 57 . 57))
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!E343!src!pace!middleware!security-lib!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

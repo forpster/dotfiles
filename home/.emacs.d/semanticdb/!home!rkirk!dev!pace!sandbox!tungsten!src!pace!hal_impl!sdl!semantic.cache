@@ -1,0 +1,1292 @@
+;; Object sdl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sdl/"
+  :tables (list 
+   (semanticdb-table "sdl.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("sdl.h" include nil nil [1058 1074])
+            ("unistd.h" include (:system-flag t) nil [1075 1094])
+            ("string.h" include (:system-flag t) nil [1095 1114])
+            ("stdio.h" include (:system-flag t) nil [1115 1133])
+            ("errno.h" include (:system-flag t) nil [1165 1183])
+            ("sys/types.h" include (:system-flag t) nil [1185 1207])
+            ("sys/stat.h" include (:system-flag t) nil [1208 1229])
+            ("fcntl.h" include (:system-flag t) nil [1230 1248])
+            ("stdarg.h" include nil nil [1249 1268])
+            ("stdlib.h" include (:system-flag t) nil [1269 1288])
+            ("glib.h" include (:system-flag t) nil [1336 1353])
+            ("pthread.h" include (:system-flag t) nil [1354 1374])
+            ("dbus/dbus-glib.h" include (:system-flag t) nil [1375 1402])
+            ("dbus/dbus-glib-bindings.h" include (:system-flag t) nil [1403 1439])
+            ("nvram_server-client_bindings.h" include nil nil [1440 1481])
+            ("hyp_defs.h" include nil nil [1575 1596])
+            ("security.h" include nil nil [1645 1666])
+            ("foxtelsecuredinfo_public.h" include nil nil [1667 1704])
+            ("SDL_BLECA_OFFSET" variable (:constant-flag t) nil [2096 2112])
+            ("SDL_BLECA_SIZE" variable (:constant-flag t) nil [2157 2171])
+            ("SDL_EMMC_DEVICE" variable (:constant-flag t) nil [2245 2260])
+            ("SDL_HDD_MOUNT_POINT" variable (:constant-flag t) nil [2317 2336])
+            ("SDL_EMMC_MOUNT_POINT" variable (:constant-flag t) nil [2384 2404])
+            ("SDL_NAND_MOUNT_POINT" variable (:constant-flag t) nil [2452 2472])
+            ("SDL_NOR_MOUNT_POINT" variable (:constant-flag t) nil [2512 2531])
+            ("SDL_PATH" variable (:constant-flag t) nil [2572 2580])
+            ("SDL_MAX_FILE_PATH_SIZE" variable (:constant-flag t) nil [2636 2658])
+            ("SDL_RT_DOWNLOAD_FLAG" variable (:constant-flag t) nil [2697 2717])
+            ("SDL_BL2_DOWNLOAD_FLAG" variable (:constant-flag t) nil [2799 2820])
+            ("SDL_DISASTER_RECOVERY_LIST_ENTRIES" variable (:constant-flag t) nil [3003 3037])
+            ("SDL_FPANEL_KEY_HISTORY_LENGTH" variable (:constant-flag t) nil [3106 3135])
+            ("SDL_NVRAM_FP_MAX_KEYPRESSES" variable (:constant-flag t) nil [3167 3194])
+            ("SDL_NVRAM_RESERVEDAREA_ENTRIES" variable (:constant-flag t) nil [3254 3284])
+            ("SDL_DL_REASON_HISTORY_ENTRIES" variable (:constant-flag t) nil [3353 3382])
+            ("SDL_NVRAM_BLECA_NVRAM_BLOCK_SIZE" variable (:constant-flag t) nil [3449 3481])
+            ("SDL_MAX_IMAGE_SIGNATURE_SIZE" variable (:constant-flag t) nil [3511 3539])
+            ("SDL_SIGNATURE_LEN_FIELD_SIZE" variable (:constant-flag t) nil [3586 3614])
+            ("SDL_HEADER_LEN_FIELD_SIZE" variable (:constant-flag t) nil [3645 3670])
+            ("SDL_CODE_LEN_FIELD_SIZE" variable (:constant-flag t) nil [3704 3727])
+            ("SDL_PARTITION_LOAD_SIZE" variable (:constant-flag t) nil [3763 3786])
+            ("SDL_DATA_READ_SIZE" variable (:constant-flag t) nil [3871 3889])
+            ("SDL_FLASH_MAP_MBR_SIZE" variable (:constant-flag t) nil [3951 3973])
+            ("SDL_FLASH_MAP_MBR_START" variable (:constant-flag t) nil [4031 4054])
+            ("SDL_FLASH_MAP_BLDR2_PARTITION0_SIZE" variable (:constant-flag t) nil [4159 4194])
+            ("SDL_FLASH_MAP_BLDR2_PARTITION0_START" variable (:constant-flag t) nil [4280 4316])
+            ("SDL_FLASH_MAP_BLDR2_PARTITION1_SIZE" variable (:constant-flag t) nil [4524 4559])
+            ("SDL_FLASH_MAP_BLDR2_PARTITION1_START" variable (:constant-flag t) nil [4602 4638])
+            ("SDL_FLASH_MAP_RT_PARTITION0_SIZE" variable (:constant-flag t) nil [4869 4901])
+            ("SDL_FLASH_MAP_RT_PARTITION0_START" variable (:constant-flag t) nil [4987 5020])
+            ("SDL_FLASH_MAP_RT_PARTITION1_SIZE" variable (:constant-flag t) nil [5268 5300])
+            ("SDL_FLASH_MAP_RT_PARTITION1_START" variable (:constant-flag t) nil [5352 5385])
+            ("SDL_UTC_TIME_SIZE" variable (:constant-flag t) nil [5539 5556])
+            ("SDL_SIGNATURE_PROVIDER_FOXTEL" variable (:constant-flag t) nil [5598 5627])
+            ("SDL_DSMCC_FOXTEL_SPECIFIC_FORMAT" variable (:constant-flag t) nil [5715 5747])
+            ("SDL_IMAGE_EMMC" variable (:constant-flag t) nil [5793 5807])
+            ("SDL_IMAGE_FILE" variable (:constant-flag t) nil [5852 5866])
+            ("SDL_TEMP_BUFFER_MAX_IMAGE_SIZE" variable (:constant-flag t) nil [5992 6022])
+            ("SDL_IMAGE_FLAG_COMPRESSED_MASK" variable (:constant-flag t) nil [6072 6102])
+            ("SDL_IMAGE_FLAG_ENCRYPTED_MASK" variable (:constant-flag t) nil [6134 6163])
+            ("SDL_IMAGE_FLAG_ENDIAN_MASK" variable (:constant-flag t) nil [6196 6222])
+            ("SDL_IMAGE_FLAG_BL2_MASK" variable (:constant-flag t) nil [6258 6281])
+            ("SDL_IMAGE_FLAG_BL2_SUPER_MASK" variable (:constant-flag t) nil [6320 6349])
+            ("SDL_IMAGE_FLAG_RESERVED_MASK" variable (:constant-flag t) nil [6382 6410])
+            ("SDL_FLASH_HEADER_COOKIE" variable (:constant-flag t) nil [6491 6514])
+            ("SDL_PAYLOAD_CRC_SIZE" variable (:constant-flag t) nil [6594 6614])
+            ("SDL_FLASH_MAP_RT_PARTITION0_NUMBER" variable (:constant-flag t) nil [6652 6686])
+            ("SDL_FLASH_MAP_BLDR2_PARTITION0_NUMBER" variable (:constant-flag t) nil [6711 6748])
+            ("SDL_DOWNLOAD_REASON_EMM" variable (:constant-flag t) nil [6770 6793])
+            ("SDL_DOWNLOAD_WILDCARD" variable (:constant-flag t) nil [6883 6904])
+            ("SDL_FOXTEL_BLDR2_MODELTYPE_BIT" variable (:constant-flag t) nil [6968 6998])
+            ("FIRST_VALID_MJD" variable (:constant-flag t) nil [7278 7293])
+            ("LAST_VALID_MJD" variable (:constant-flag t) nil [7362 7376])
+            ("CONST1" variable (:constant-flag t) nil [7485 7491])
+            ("CONST2" variable (:constant-flag t) nil [7586 7592])
+            ("CONST3" variable (:constant-flag t) nil [7654 7660])
+            ("CONST4" variable (:constant-flag t) nil [7756 7762])
+            ("CONST5" variable (:constant-flag t) nil [7825 7831])
+            ("SDL_FLASH_READ_SIZE" variable (:constant-flag t) nil [8307 8326])
+            ("ENABLE_EXTRA_DEBUGS" variable (:constant-flag t) nil [8781 8800])
+            ("SDL_DBUG_ERROR" variable (:constant-flag t) nil [8839 8853])
+            ("SDL_DBUG_WARNING" variable (:constant-flag t) nil [8869 8885])
+            ("SDL_DBUG_MSG" variable (:constant-flag t) nil [8901 8913])
+            ("SDL_DBUG_ENTER_API" variable (:constant-flag t) nil [8929 8947])
+            ("SDL_DBUG_EXIT_API" variable (:constant-flag t) nil [8963 8980])
+            ("SDL_IMAGE_TYPE" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("SDL_IMAGE_TYPE_NONE" variable
+                             (:constant-flag t
+                              :default-value (9825 9829)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [9797 9829])
+                          ("SDL_IMAGE_TYPE_PLATFORM" variable
+                             (:constant-flag t
+                              :default-value (9863 9867)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [9835 9867])
+                          ("SDL_IMAGE_TYPE_BLDR2" variable
+                             (:constant-flag t
+                              :default-value (9901 9905)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [9873 9905])
+                          ("SDL_IMAGE_TYPE_BLDR1" variable
+                             (:constant-flag t
+                              :default-value (9939 9943)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [9911 9943])
+                          ("SDL_IMAGE_TYPE_NEXTIMAGE" variable
+                             (:constant-flag t
+                              :default-value (9977 9981)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [9949 9981]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [9778 9999])
+            ("SDL_IMAGE_DOWNLOAD" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("downloadOUI_ModelType" variable (:type "unsigned long") (reparse-symbol classsubparts) [10266 10302])
+                          ("downloadSoftwareVersion" variable (:type "unsigned long") (reparse-symbol classsubparts) [10307 10345])
+                          ("downloadRetryCount" variable (:type "unsigned long") (reparse-symbol classsubparts) [10350 10383])
+                          ("downloadDateTime" variable (:type "unsigned long") (reparse-symbol classsubparts) [10388 10419])
+                          ("expirationDateTime" variable (:type "unsigned long") (reparse-symbol classsubparts) [10424 10457])
+                          ("downloadImageType" variable (:type "unsigned char") (reparse-symbol classsubparts) [10462 10494])
+                          ("downloadReason" variable (:type "unsigned char") (reparse-symbol classsubparts) [10499 10528])
+                          ("downloadFlags" variable (:type "unsigned char") (reparse-symbol classsubparts) [10533 10561]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [10245 10582])
+            ("SDL_PARTITION_HEADER" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("Cookie" variable (:type "unsigned long") (reparse-symbol classsubparts) [10605 10626])
+                          ("PayloadSize" variable (:type "unsigned long") (reparse-symbol classsubparts) [10634 10660])
+                          ("RollingVersion" variable (:type "unsigned long") (reparse-symbol classsubparts) [10668 10697])
+                          ("DownloadReason" variable (:type ("SDL_IMAGE_DOWNLOAD" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11147 11181])
+                          ("SignatureSize" variable (:type "unsigned long") (reparse-symbol classsubparts) [11190 11218])
+                          ("SignatureOffset" variable (:type "unsigned long") (reparse-symbol classsubparts) [11227 11257])
+                          ("Padding" variable
+                             (:dereference 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [11266 11293])
+                          ("HeaderCRC" variable (:type "unsigned long") (reparse-symbol classsubparts) [11379 11403]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [10584 11431])
+            ("SDL_HEADER_FORMAT" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("H" variable (:type ("SDL_PARTITION_HEADER" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11454 11477]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [11433 11497])
+            ("SDL_PARTITION_FORMAT" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("Header" variable (:type ("SDL_HEADER_FORMAT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11601 11626])
+                          ("Payload" variable
+                             (:dereference 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [11713 11738]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [11580 11918])
+            ("ReadImageFn" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pSource" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [11952 11974])
+                    ("pDestination" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [12007 12035])
+                    ("Size" variable (:type "long") (reparse-symbol arg-sub-list) [12068 12078]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [11928 12079])
+            ("WriteImageFn" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pSource" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [12114 12137])
+                    ("pDestination" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [12171 12198])
+                    ("Size" variable (:type "long") (reparse-symbol arg-sub-list) [12232 12242]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [12089 12243])
+            ("IsDifferentImageFn" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12288 12309])
+                    ("partitionHeader" variable
+                       (:pointer 1
+                        :type ("SDL_HEADER_FORMAT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12353 12388]))                  
+                :type "unsigned char")
+                nil [12253 12389])
+            ("SDL_IMAGE_STATS" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("PartitionBuffer" variable
+                             (:pointer 1
+                              :type ("SDL_PARTITION_FORMAT" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [12476 12514])
+                          ("MaxPartitionSize" variable (:type "unsigned long") (reparse-symbol classsubparts) [12601 12632])
+                          ("ImageWriteSize" variable (:type "unsigned long") (reparse-symbol classsubparts) [12719 12748])
+                          ("ImageLoadSize" variable (:type "unsigned long") (reparse-symbol classsubparts) [12835 12863])
+                          ("ImageDownloadSize" variable (:type "unsigned long") (reparse-symbol classsubparts) [12950 12982])
+                          ("MaxImageSize" variable (:type "unsigned long") (reparse-symbol classsubparts) [13069 13096])
+                          ("PayloadStart" variable
+                             (:pointer 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [13183 13211])
+                          ("PayloadSize" variable (:type "unsigned long") (reparse-symbol classsubparts) [13263 13289])
+                          ("SignatureOffset" variable (:type "unsigned long") (reparse-symbol classsubparts) [13369 13399])
+                          ("SignatureSize" variable (:type "unsigned long") (reparse-symbol classsubparts) [13444 13472])
+                          ("SignatureValidationOffset" variable (:type "unsigned long") (reparse-symbol classsubparts) [13510 13550])
+                          ("SignatureValidationSize" variable (:type "unsigned long") (reparse-symbol classsubparts) [13623 13661])
+                          ("SignedLength" variable (:type "unsigned long") (reparse-symbol classsubparts) [13740 13767])
+                          ("requestedDownloadSoftwareVersion" variable (:type "unsigned long") (reparse-symbol classsubparts) [13824 13871])
+                          ("ImageType" variable (:type ("SDL_IMAGE_TYPE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13877 13902])
+                          ("ImageId" variable (:type "unsigned char") (reparse-symbol classsubparts) [13986 14008])
+                          ("ImageMatch" variable (:type "unsigned char") (reparse-symbol classsubparts) [14014 14039])
+                          ("PartitionAddress1" variable
+                             (:pointer 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [14045 14078])
+                          ("PartitionAddress2" variable
+                             (:pointer 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [14114 14147])
+                          ("PartitionAddress" variable
+                             (:pointer 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [14183 14215])
+                          ("PartitionAddressSet" variable (:type "unsigned char") (reparse-symbol classsubparts) [14249 14283])
+                          ("PartitionSize" variable (:type "unsigned long") (reparse-symbol classsubparts) [14289 14317])
+                          ("PartitionCorrupt" variable (:type "unsigned char") (reparse-symbol classsubparts) [14348 14379])
+                          ("PartitionReadFn" variable
+                             (:pointer 1
+                              :type ("ReadImageFn" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [14418 14447])
+                          ("PartitionWriteFn" variable
+                             (:pointer 1
+                              :type ("WriteImageFn" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [14453 14484])
+                          ("PartitionIsDifferentFn" variable
+                             (:pointer 1
+                              :type ("IsDifferentImageFn" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [14490 14533])
+                          ("PartitionNumber" variable (:type "unsigned char") (reparse-symbol classsubparts) [14539 14569])
+                          ("PartitionExpireTimestamp" variable
+                             (:dereference 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [14575 14633])
+                          ("PartitionDownloadHeader" variable (:type ("SDL_HEADER_FORMAT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14688 14730])
+                          ("PartitionLatestHeader" variable (:type ("SDL_HEADER_FORMAT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14735 14775])
+                          ("PartitionHeaderValid" variable (:type "unsigned char") (reparse-symbol classsubparts) [14780 14815])
+                          ("PartitionHeader1" variable (:type ("SDL_HEADER_FORMAT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14820 14855])
+                          ("PartitionHeader1Valid" variable (:type "unsigned char") (reparse-symbol classsubparts) [14860 14896])
+                          ("PartitionHeader2" variable (:type ("SDL_HEADER_FORMAT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14901 14936])
+                          ("PartitionHeader2Valid" variable (:type "unsigned char") (reparse-symbol classsubparts) [14941 14977])
+                          ("PartitionCurrentSet" variable (:type "unsigned char") (reparse-symbol classsubparts) [14982 15016])
+                          ("DownloadReason" variable (:type ("SDL_IMAGE_DOWNLOAD" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15021 15055])
+                          ("RetryCount" variable (:type "unsigned long") (reparse-symbol classsubparts) [15060 15085]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [12455 15103])
+            ("SDL_SERIALISATION_INFO" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("manuId" variable (:type "unsigned char") (reparse-symbol classsubparts) [15961 15982])
+                          ("modelId" variable (:type "unsigned char") (reparse-symbol classsubparts) [16083 16105])
+                          ("OUI" variable (:type "unsigned long") (reparse-symbol classsubparts) [16204 16222]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [15940 16533])
+            ("CRC16_VALUE" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("I" variable (:type "unsigned short") (reparse-symbol classsubparts) [16622 16639])
+                          ("B" variable
+                             (:dereference 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [16643 16662]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [16603 16676])
+            ("SDL_IMAGE_DOWNLOAD_HISTORY" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("execution_count" variable (:type "unsigned long") (reparse-symbol classsubparts) [17112 17142])
+                          ("software_version" variable (:type "unsigned long") (reparse-symbol classsubparts) [17309 17340])
+                          ("downloadRetryCount" variable (:type "unsigned long") (reparse-symbol classsubparts) [17427 17460])
+                          ("download_date_time" variable (:type "unsigned long") (reparse-symbol classsubparts) [17679 17712])
+                          ("download_reason" variable (:type "unsigned char") (reparse-symbol classsubparts) [17799 17829])
+                          ("download_flags" variable (:type "unsigned char") (reparse-symbol classsubparts) [17978 18007])
+                          ("reserved" variable (:type "unsigned short") (reparse-symbol classsubparts) [18094 18118]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [17091 18228])
+            ("SDL_NVRAM_BLECA_FORMAT" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("S" variable (:type ("" type
+                               (:members 
+                                  ( ("Version" variable (:type "unsigned char") (reparse-symbol classsubparts) [18679 18701])
+                                    ("HDMIFormat" variable (:type "unsigned char") (reparse-symbol classsubparts) [18711 18736])
+                                    ("RTDownloadTrigger" variable (:type "unsigned char") (reparse-symbol classsubparts) [18746 18778])
+                                    ("BL2DownloadTrigger" variable (:type "unsigned char") (reparse-symbol classsubparts) [18869 18902])
+                                    ("RTDownloadSoftwareVersion" variable (:type "unsigned long") (reparse-symbol classsubparts) [18993 19033])
+                                    ("BL2DownloadSoftwareVersion" variable (:type "unsigned long") (reparse-symbol classsubparts) [19124 19165])
+                                    ("RetryCount" variable (:type "unsigned long") (reparse-symbol classsubparts) [19256 19281])
+                                    ("DemodFlags" variable (:type "unsigned long") (reparse-symbol classsubparts) [19523 19548])
+                                    ("LastGoodDownload_Desc" variable (:type ("generic_descriptor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19781 19822])
+                                    ("LastGoodDownload_LNB" variable (:type ("demodulator_lnb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19913 19950])
+                                    ("DisasterRecoveryList" variable
+                                       (:dereference 1
+                                        :type ("generic_descriptor" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [20041 20117])
+                                    ("dlReasonHistory" variable
+                                       (:dereference 1
+                                        :type ("SDL_IMAGE_DOWNLOAD_HISTORY" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [20278 20352])
+                                    ("keyCodes" variable
+                                       (:dereference 1
+                                        :type "unsigned long")
+                                        (reparse-symbol classsubparts) [20443 20495])
+                                    ("ReservedArea" variable
+                                       (:dereference 1
+                                        :type "unsigned char")
+                                        (reparse-symbol classsubparts) [20505 20564])
+                                    ("CRC16" variable (:type "unsigned short") (reparse-symbol classsubparts) [20574 20595]))                                  
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [18583 20603])
+                          ("B" variable
+                             (:dereference 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [20608 20658]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [18563 20683])
+            ("sdlEmmcRead" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pSource" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [21214 21236])
+                    ("pDestination" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [21290 21318])
+                    ("Size" variable (:type "long") (reparse-symbol arg-sub-list) [21367 21377]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [21192 21378])
+            ("sdlEmmcWrite" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pSource" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [21451 21474])
+                    ("pDestination" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [21529 21556])
+                    ("Size" variable (:type "long") (reparse-symbol arg-sub-list) [21606 21616]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [21428 21617])
+            ("sdlImageIsPartitionDifferent" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("voidImageStats" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [21690 21711])
+                    ("partitionHeader" variable
+                       (:pointer 1
+                        :type ("SDL_HEADER_FORMAT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21755 21790]))                  
+                :type "unsigned char")
+                nil [21647 21791])
+            ("sdlUtilCrc32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("start_address" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [21820 21840])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [21841 21860]))                  
+                :type "unsigned long")
+                nil [21793 21861])
+            ("sdlUtilCrc16" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("start_address" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [21891 21911])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [21912 21931]))                  
+                :type "unsigned short")
+                nil [21863 21932])
+            ("sdlNvramBlecaUpdate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21964 21969]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [21934 21970])
+            ("sdlGetSerialisationData" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("SerialData" variable
+                       (:pointer 1
+                        :type ("SDL_SERIALISATION_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22006 22041]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [21972 22042])
+            ("sdlSetupRtImageStats" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rtImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22075 22105]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [22044 22106])
+            ("sdlSetupBldr2ImageStats" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("bl2ImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22142 22173]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [22108 22174])
+            ("sdlGet8Bits" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pData" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [22202 22223]))                  
+                :type "unsigned char")
+                nil [22176 22224])
+            ("sdlGet16Bits" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pData" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [22254 22275]))                  
+                :type "unsigned short")
+                nil [22226 22276])
+            ("sdlGet32Bits" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pData" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [22305 22326]))                  
+                :type "unsigned long")
+                nil [22278 22327])
+            ("sdlGet24Bits" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pData" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [22356 22377]))                  
+                :type "unsigned long")
+                nil [22329 22378])
+            ("sdlUpdateDataPtr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pData" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [22410 22432])
+                    ("Length" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [22463 22485])
+                    ("bPtrUseInc" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [22516 22541])
+                    ("bLengthUseInc" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [22572 22600])
+                    ("change" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [22631 22652]))                  
+                :type "signed short")
+                nil [22380 22653])
+            ("sdlIsUtcTimestampEmpty" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("TimeDate" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [22692 22716]))                  
+                :type "unsigned char")
+                nil [22655 22717])
+            ("sdlBcd2Bin" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("BCDInput" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [22744 22767])
+                    ("ByteCount" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [22768 22792]))                  
+                :type "unsigned long")
+                nil [22719 22793])
+            ("sdlGetYearMonthDayFromMJD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mjd" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [22826 22844])
+                    ("y" variable
+                       (:pointer 1
+                        :type "unsigned short")
+                        (reparse-symbol arg-sub-list) [22876 22894])
+                    ("m" variable
+                       (:pointer 1
+                        :type "unsigned short")
+                        (reparse-symbol arg-sub-list) [22926 22944])
+                    ("d" variable
+                       (:pointer 1
+                        :type "unsigned short")
+                        (reparse-symbol arg-sub-list) [22976 22994]))                  
+                :type "void")
+                nil [22795 22995])
+            ("sdlPrintUTCTimestamp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("currentTime" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [23022 23049]))                  
+                :type "int")
+                nil [22997 23050])
+            ("sdlVerifySignatureData" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("carouselDataSrc" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [23085 23116])
+                    ("carouselDataSize" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [23150 23181])
+                    ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23215 23247]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [23052 23248])
+            ("sdlValidateHeader" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23278 23310])
+                    ("thisStartPtr" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [23339 23367])
+                    ("thisCopySize" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [23396 23423]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [23250 23424])
+            ("sdlValidateCode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23452 23484])
+                    ("thisStartPtr" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [23511 23539])
+                    ("thisCopySize" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [23566 23593])
+                    ("mode" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [23620 23639]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [23426 23640])
+            ("sdlStoreCrc" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("PayLoadStart" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [23664 23692])
+                    ("PayloadSize" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [23693 23719]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [23642 23720])
+            ("sdlUpdateFlashHeader" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23753 23785]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [23722 23786])
+            ("sdlSetToNextWritePartition" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23825 23857]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [23788 23858])
+            ("sdlWritePartition" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23888 23920]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [23860 23921])
+            ("sdlEraseHeader" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23948 23980])
+                    ("partitionHeaderAddress" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [24006 24044]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [23923 24045])
+            ("sdlIsPartitionCorrupt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24083 24115])
+                    ("partitionHeader" variable
+                       (:pointer 1
+                        :type ("SDL_HEADER_FORMAT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24152 24187])
+                    ("mode" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [24224 24243])
+                    ("PartitionTempBuffer" variable
+                       (:pointer 1
+                        :type ("SDL_PARTITION_FORMAT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24280 24322]))                  
+                :type "unsigned char")
+                nil [24047 24323])
+            ("sdlIsHeaderCorrupt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24358 24390])
+                    ("partitionAddress" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [24424 24456])
+                    ("partitionHeader" variable
+                       (:pointer 1
+                        :type ("SDL_HEADER_FORMAT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24490 24525]))                  
+                :type "unsigned char")
+                nil [24325 24526])
+            ("sdlGetHeader" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24551 24583])
+                    ("partitionAddress" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [24607 24639])
+                    ("partitionHeader" variable
+                       (:pointer 1
+                        :type ("SDL_HEADER_FORMAT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24663 24698]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [24528 24699])
+            ("sdlGetCurrentPartition" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24734 24766])
+                    ("mode" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [24800 24819])
+                    ("partitionAddress1" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [24853 24886])
+                    ("partitionAddress2" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [24920 24953])
+                    ("PartitionTempBuffer" variable
+                       (:pointer 1
+                        :type ("SDL_PARTITION_FORMAT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24987 25029]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [24701 25030])
+            ("sdlUpdateFlashHeaderFromDownloadHeader" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25081 25113]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [25032 25114])
+            ("sdlWriteImage" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25140 25172]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [25116 25173])
+            ("sdlWriteDownloadReasonHistory" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25215 25247]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [25175 25248])
+            ("sdlDbusConnection" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("DBusGConnection" type (:type "class") nil nil))
+                nil [25574 25623])
+            ("sdlNvmProxy" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("DBusGProxy" type (:type "class") nil nil))
+                nil [25706 25744])
+            ("rtImageStats" variable
+               (:typemodifiers ("static")
+                :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                nil [25855 25891])
+            ("bl2ImageStats" variable
+               (:typemodifiers ("static")
+                :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                nil [25893 25930])
+            ("sdlCrcTable16" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "unsigned short")
+                nil [25932 28160])
+            ("sdlCrcTable32" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "unsigned long")
+                nil [28162 31797])
+            ("signatureData" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "unsigned char")
+                nil [31851 31916])
+            ("sdlSerialData" variable
+               (:typemodifiers ("static")
+                :type ("SDL_SERIALISATION_INFO" type (:type "class") nil nil))
+                nil [31949 31993])
+            ("sdlBleca" variable
+               (:typemodifiers ("static")
+                :type ("SDL_NVRAM_BLECA_FORMAT" type (:type "class") nil nil))
+                nil [32026 32065])
+            ("sdlBlecaWriteMutex" variable
+               (:typemodifiers ("static")
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [32120 32190])
+            ("sdlEpochCurrTime" variable
+               (:typemodifiers ("static")
+                :type "unsigned long")
+                nil [32192 32234])
+            ("sdlDriverInitDone" variable
+               (:typemodifiers ("static")
+                :type "unsigned char")
+                nil [32236 32279])
+            ("sdlSigBuffer" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "unsigned char")
+                nil [32337 32372])
+            ("sdlSigBufferFile" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "unsigned char")
+                nil [32420 32459])
+            ("sdlCheckDataValue" variable
+               (:typemodifiers ("static")
+                :type "unsigned long")
+                nil [32461 32500])
+            ("sdlHeaderFilePath" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [32555 32609])
+            ("sdlCodeFilePath" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [32662 32714])
+            ("sdlEmmcRead" function
+               (:arguments 
+                  ( ("pSource" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [33246 33268])
+                    ("pDestination" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [33322 33350])
+                    ("Size" variable (:type "long") (reparse-symbol arg-sub-list) [33399 33409]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [33224 34886])
+            ("sdlEmmcWrite" function
+               (:arguments 
+                  ( ("pSource" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [34931 34954])
+                    ("pDestination" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [35009 35036])
+                    ("Size" variable (:type "long") (reparse-symbol arg-sub-list) [35086 35096]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [34908 36405])
+            ("sdlImageIsPartitionDifferent" function
+               (:arguments 
+                  ( ("voidImageStats" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [36450 36471])
+                    ("partitionHeader" variable
+                       (:pointer 1
+                        :type ("SDL_HEADER_FORMAT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36515 36550]))                  
+                :type "unsigned char")
+                nil [36407 39685])
+            ("sdlUtilCrc32" function
+               (:arguments 
+                  ( ("start_address" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [39714 39734])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [39735 39754]))                  
+                :type "unsigned long")
+                nil [39687 40130])
+            ("sdlUtilCrc16" function
+               (:arguments 
+                  ( ("start_address" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [40179 40199])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [40200 40219]))                  
+                :type "unsigned short")
+                nil [40151 40621])
+            ("sdlNvramBlecaUpdate" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [40916 40921]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [40886 41825])
+            ("sdlGetSerialisationData" function
+               (:arguments 
+                  ( ("SerialData" variable
+                       (:pointer 1
+                        :type ("SDL_SERIALISATION_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41886 41921]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [41852 44239])
+            ("sdlSetupRtImageStats" function
+               (:arguments 
+                  ( ("rtImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44272 44302]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [44241 46795])
+            ("sdlSetupBldr2ImageStats" function
+               (:arguments 
+                  ( ("bl2ImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46831 46862]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [46797 49327])
+            ("sdlGet8Bits" function
+               (:arguments 
+                  ( ("pData" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [49490 49511]))                  
+                :type "unsigned char")
+                nil [49464 49599])
+            ("sdlGet16Bits" function
+               (:arguments 
+                  ( ("pData" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [49766 49787]))                  
+                :type "unsigned short")
+                nil [49738 49921])
+            ("sdlGet32Bits" function
+               (:arguments 
+                  ( ("pData" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [50086 50107]))                  
+                :type "unsigned long")
+                nil [50059 50376])
+            ("sdlGet24Bits" function
+               (:arguments 
+                  ( ("pData" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [50541 50562]))                  
+                :type "unsigned long")
+                nil [50514 50771])
+            ("sdlUpdateDataPtr" function
+               (:arguments 
+                  ( ("pData" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [51160 51182])
+                    ("Length" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [51213 51235])
+                    ("bPtrUseInc" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [51266 51291])
+                    ("bLengthUseInc" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [51322 51350])
+                    ("change" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [51381 51402]))                  
+                :type "signed short")
+                nil [51130 52091])
+            ("sdlIsUtcTimestampEmpty" function
+               (:arguments 
+                  ( ("TimeDate" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [52130 52154]))                  
+                :type "unsigned char")
+                nil [52093 52604])
+            ("sdlBcd2Bin" function
+               (:arguments 
+                  ( ("BCDInput" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [53355 53378])
+                    ("ByteCount" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [53379 53403]))                  
+                :type "unsigned long")
+                nil [53330 54416])
+            ("sdlGetYearMonthDayFromMJD" function
+               (:arguments 
+                  ( ("mjd" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [54450 54468])
+                    ("y" variable
+                       (:pointer 1
+                        :type "unsigned short")
+                        (reparse-symbol arg-sub-list) [54500 54518])
+                    ("m" variable
+                       (:pointer 1
+                        :type "unsigned short")
+                        (reparse-symbol arg-sub-list) [54550 54568])
+                    ("d" variable
+                       (:pointer 1
+                        :type "unsigned short")
+                        (reparse-symbol arg-sub-list) [54600 54618]))                  
+                :type "void")
+                nil [54419 55672])
+            ("sdlPrintUTCTimestamp" function
+               (:arguments 
+                  ( ("currentTime" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [55699 55726]))                  
+                :type "int")
+                nil [55674 56388])
+            ("sdlVerifySignatureData" function
+               (:arguments 
+                  ( ("carouselDataSrc" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [56423 56454])
+                    ("carouselDataSize" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [56488 56519])
+                    ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56553 56585]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [56390 61991])
+            ("sdlValidateHeader" function
+               (:arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63398 63430])
+                    ("thisStartPtr" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [63459 63487])
+                    ("thisCopySize" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [63516 63543]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [63370 76103])
+            ("sdlValidateCode" function
+               (:arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78220 78252])
+                    ("thisStartPtr" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [78279 78307])
+                    ("thisCopySize" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [78334 78361])
+                    ("mode" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [78388 78407]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [78194 98097])
+            ("sdlStoreCrc" function
+               (:arguments 
+                  ( ("PayLoadStart" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [98166 98194])
+                    ("PayloadSize" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [98195 98221]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [98144 99258])
+            ("sdlUpdateFlashHeader" function
+               (:arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [99553 99585]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [99522 103212])
+            ("sdlSetToNextWritePartition" function
+               (:arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [103278 103310]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [103241 104226])
+            ("sdlWritePartition" function
+               (:arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [104256 104288]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [104228 111716])
+            ("sdlEraseHeader" function
+               (:arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111768 111800])
+                    ("partitionHeaderAddress" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [111826 111864]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [111743 112622])
+            ("sdlIsPartitionCorrupt" function
+               (:arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112660 112692])
+                    ("partitionHeader" variable
+                       (:pointer 1
+                        :type ("SDL_HEADER_FORMAT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112729 112764])
+                    ("mode" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [112801 112820])
+                    ("PartitionTempBuffer" variable
+                       (:pointer 1
+                        :type ("SDL_PARTITION_FORMAT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112857 112899]))                  
+                :type "unsigned char")
+                nil [112624 117734])
+            ("sdlIsHeaderCorrupt" function
+               (:arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [117797 117829])
+                    ("partitionAddress" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [117863 117895])
+                    ("partitionHeader" variable
+                       (:pointer 1
+                        :type ("SDL_HEADER_FORMAT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [117929 117964]))                  
+                :type "unsigned char")
+                nil [117764 119164])
+            ("sdlGetHeader" function
+               (:arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [119190 119222])
+                    ("partitionAddress" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [119246 119278])
+                    ("partitionHeader" variable
+                       (:pointer 1
+                        :type ("SDL_HEADER_FORMAT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [119302 119337]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [119167 120298])
+            ("sdlGetCurrentPartition" function
+               (:arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [120335 120367])
+                    ("mode" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [120401 120420])
+                    ("partitionAddress1" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [120454 120487])
+                    ("partitionAddress2" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [120521 120554])
+                    ("PartitionTempBuffer" variable
+                       (:pointer 1
+                        :type ("SDL_PARTITION_FORMAT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [120588 120630]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [120302 134611])
+            ("sdlUpdateFlashHeaderFromDownloadHeader" function
+               (:arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134662 134694]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [134613 135576])
+            ("sdlWriteImage" function
+               (:arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135603 135635]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [135579 142005])
+            ("sdlWriteDownloadReasonHistory" function
+               (:arguments 
+                  ( ("thisImageStats" variable
+                       (:pointer 1
+                        :type ("SDL_IMAGE_STATS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [142066 142098]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [142026 146759])
+            ("SDL_UpdateDlImageToFlash" function
+               (:arguments 
+                  ( ("imageType" variable (:type ("SDL_SOFTWARE_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [147629 147657])
+                    ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [147693 147704])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [147740 147759]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [147594 155292])
+            ("SDL_DlHeader" function
+               (:arguments 
+                  ( ("imageType" variable (:type ("SDL_SOFTWARE_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [155902 155930])
+                    ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [155954 155965])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [155989 156008]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [155879 160021])
+            ("SDL_SwDownloadAction" function
+               (:arguments 
+                  ( ("download" variable
+                       (:pointer 1
+                        :type ("sdl_download_action" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [160224 160254]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [160193 164222])
+            ("SDL_GetDeviceStatus" function
+               (:arguments 
+                  ( ("type" variable (:type ("SDL_DEVICE_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [164857 164878])
+                    ("devices" variable
+                       (:pointer 1
+                        :type ("devices_available" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [164879 164906]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [164827 167374])
+            ("SDL_Init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [167603 167608]))                  
+                :type ("SDL_ERROR" type (:type "class") nil nil))
+                nil [167584 175492]))          
+    :file "sdl.c"
+    :pointmax 175737
+    :fsize 175736
+    :lastmodtime '(21674 23370 311156 263000)
+    :unmatched-syntax '((TYPEDEF 12245 . 12252) (TYPEDEF 12081 . 12088) (TYPEDEF 11920 . 11927))
+    :lexical-table 
+        '(("SDL_NAND_MOUNT_POINT" . ((string "\"\"" 2500 . 2502)))
+          ("SDL_PATH" . ((string "\"/sdl\"" 2620 . 2626)))
+          ("SDL_FLASH_MAP_MBR_START" . ((number "0x00000000" 4079 . 4089)))
+          ("SDL_FLASH_MAP_RT_PARTITION0_SIZE" . ((number "0x0EBE0000" 4917 . 4927)))
+          ("SDL_FLASH_HEADER_COOKIE" . ((number "0x4A42A007" 6538 . 6548)))
+          ("SDL_FOXTEL_BLDR2_MODELTYPE_BIT" . ((number "0x10" 7016 . 7020)))
+          ("SDL_DBUG_MSG" (spp-arg-list ("x") 8913 . 8916))
+          ("SDL_BL2_DOWNLOAD_FLAG" . ((number "0x1" 2847 . 2850)))
+          ("SDL_DISASTER_RECOVERY_LIST_ENTRIES" . ((number "36" 3051 . 3053)))
+          ("SDL_CODE_LEN_FIELD_SIZE" . ((number "4" 3752 . 3753)))
+          ("SDL_PARTITION_LOAD_SIZE" . ((number "0x00040800" 3811 . 3821)))
+          ("SDL_DATA_READ_SIZE" . ((number "0x00040000" 3919 . 3929)))
+          ("SDL_FLASH_MAP_BLDR2_PARTITION0_START" . ((semantic-list "(SDL_FLASH_MAP_MBR_START + \\
+                                                         SDL_FLASH_MAP_MBR_SIZE)" 4328 . 4437)))
+          ("SDL_FLASH_MAP_BLDR2_PARTITION1_SIZE" . ((number "0x00400000" 4572 . 4582)))
+          ("SDL_DBUG_WARNING" (spp-arg-list ("x") 8885 . 8888))
+          ("SDL_NOR_MOUNT_POINT" . ((string "\"\"" 2560 . 2562)))
+          ("SDL_DL_REASON_HISTORY_ENTRIES" . ((number "32" 3401 . 3403)))
+          ("SDL_FLASH_MAP_BLDR2_PARTITION1_START" . ((semantic-list "(SDL_FLASH_MAP_BLDR2_PARTITION0_START + \\
+                                                         SDL_FLASH_MAP_BLDR2_PARTITION0_SIZE)" 4650 . 4785)))
+          ("SDL_RT_DOWNLOAD_FLAG" . ((number "0x2" 2745 . 2748)))
+          ("SDL_IMAGE_FLAG_ENDIAN_MASK" . ((number "0x20" 6244 . 6248)))
+          ("LAST_VALID_MJD" . ((symbol "88127U" 7406 . 7412)))
+          ("CONST1" . ((number "15078.2" 7529 . 7536)))
+          ("SDL_DBUG_ERROR" (spp-arg-list ("x") 8853 . 8856))
+          ("SDL_FLASH_MAP_MBR_SIZE" . ((number "0x00040000" 3999 . 4009)))
+          ("SDL_FLASH_MAP_RT_PARTITION0_START" . ((semantic-list "(SDL_FLASH_MAP_BLDR2_PARTITION1_START + \\
+                                                         SDL_FLASH_MAP_BLDR2_PARTITION1_SIZE)" 5035 . 5170)))
+          ("SDL_DOWNLOAD_REASON_EMM" . ((number "7" 6818 . 6819)))
+          ("FIRST_VALID_MJD" . ((symbol "15079U" 7322 . 7328)))
+          ("CONST2" . ((number "365.25" 7630 . 7636)))
+          ("SDL_DBUG_EXIT_API" (spp-arg-list ("x") 8980 . 8983))
+          ("SDL_HDD_MOUNT_POINT" . ((string "\"/mnt/hd\"" 2365 . 2374)))
+          ("SDL_NVRAM_RESERVEDAREA_ENTRIES" . ((semantic-list "(782 - (SDL_NVRAM_FP_MAX_KEYPRESSES * 4))" 3302 . 3343)))
+          ("SDL_FLASH_MAP_BLDR2_PARTITION0_SIZE" . ((number "0x00400000" 4207 . 4217)))
+          ("SDL_FLASH_MAP_RT_PARTITION1_START" . ((semantic-list "(SDL_FLASH_MAP_RT_PARTITION0_START + \\
+                                                         SDL_FLASH_MAP_RT_PARTITION0_SIZE)" 5400 . 5529)))
+          ("SDL_SIGNATURE_PROVIDER_FOXTEL" . ((number "0x0001" 5646 . 5652)))
+          ("SDL_FLASH_MAP_RT_PARTITION0_NUMBER" . ((number "1" 6700 . 6701)))
+          ("SDL_FLASH_MAP_BLDR2_PARTITION0_NUMBER" . ((number "1" 6759 . 6760)))
+          ("CONST3" . ((number "14956.1" 7698 . 7705)))
+          ("ENABLE_EXTRA_DEBUGS" . ((number "0" 8825 . 8826)))
+          ("SDL_EMMC_MOUNT_POINT" . ((string "\"/mnt/ffs\"" 2432 . 2442)))
+          ("SDL_HEADER_LEN_FIELD_SIZE" . ((number "2" 3693 . 3694)))
+          ("CONST4" . ((number "30.6001" 7800 . 7807)))
+          ("SDL_FLASH_READ_SIZE" . ((number "32" 8351 . 8353)))
+          ("SDL_MAX_FILE_PATH_SIZE" . ((number "256" 2684 . 2687)))
+          ("SDL_DSMCC_FOXTEL_SPECIFIC_FORMAT" . ((number "2" 5763 . 5764)))
+          ("SDL_IMAGE_EMMC" . ((number "1" 5841 . 5842)))
+          ("SDL_TEMP_BUFFER_MAX_IMAGE_SIZE" . ((number "0x10000000" 6040 . 6050)))
+          ("SDL_DOWNLOAD_WILDCARD" . ((semantic-list "((unsigned long)0xFFFFFFFF)" 6931 . 6958)))
+          ("CONST5" . ((number "14956" 7869 . 7874)))
+          ("SDL_BLECA_SIZE" . ((SIZEOF "sizeof" 2205 . 2211) (semantic-list "(SDL_NVRAM_BLECA_FORMAT)" 2211 . 2235)))
+          ("SDL_EMMC_DEVICE" . ((string "\"/dev/mmcblk0\"" 2293 . 2307)))
+          ("SDL_FPANEL_KEY_HISTORY_LENGTH" . ((number "100" 3154 . 3157)))
+          ("SDL_UTC_TIME_SIZE" . ((number "5" 5587 . 5588)))
+          ("SDL_IMAGE_FLAG_ENCRYPTED_MASK" . ((number "0x40" 6182 . 6186)))
+          ("SDL_SIGNATURE_LEN_FIELD_SIZE" . ((number "2" 3634 . 3635)))
+          ("SDL_FLASH_MAP_RT_PARTITION1_SIZE" . ((number "0x0EBE0000" 5316 . 5326)))
+          ("SDL_IMAGE_FILE" . ((number "2" 5900 . 5901)))
+          ("SDL_IMAGE_FLAG_COMPRESSED_MASK" . ((number "0x80" 6120 . 6124)))
+          ("SDL_IMAGE_FLAG_BL2_SUPER_MASK" . ((number "0x08" 6368 . 6372)))
+          ("SDL_IMAGE_FLAG_RESERVED_MASK" . ((number "0x07" 6430 . 6434)))
+          ("SDL_BLECA_OFFSET" . ((number "0x0" 2144 . 2147)))
+          ("SDL_NVRAM_FP_MAX_KEYPRESSES" . ((symbol "SDL_FPANEL_KEY_HISTORY_LENGTH" 3215 . 3244)))
+          ("SDL_NVRAM_BLECA_NVRAM_BLOCK_SIZE" . ((number "2048" 3497 . 3501)))
+          ("SDL_IMAGE_FLAG_BL2_MASK" . ((number "0x10" 6306 . 6310)))
+          ("SDL_PAYLOAD_CRC_SIZE" . ((number "2" 6641 . 6642)))
+          ("SDL_DBUG_ENTER_API" (spp-arg-list ("x") 8947 . 8950))
+          ("SDL_MAX_IMAGE_SIGNATURE_SIZE" . ((number "0x10000" 3559 . 3566)))
+          )
+
+    )
+   (semanticdb-table "sdl.h"
+    :file "sdl.h"
+    :fsize 11959
+    :lastmodtime '(21674 23370 312156 256000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!hal_impl!sdl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

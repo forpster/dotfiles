@@ -1,0 +1,61 @@
+;; Object Altibox/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Altibox/"
+  :tables (list 
+   (semanticdb-table "example.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SLSECUREDINFO" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("SL_LATENS_INFO" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [90 105])
+                          ("SL_INVALID_INFO" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [109 126]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [72 141])
+            ("getSecuredInfo" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("inData" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [904 931])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("SLSECUREDINFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [932 952])
+                    ("information" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [953 972]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [880 973])
+            ("releaseSecuredInfo" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("type" variable (:type ("SLSECUREDINFO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1177 1196])
+                    ("information" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1197 1215]))                  
+                :type "void")
+                nil [1153 1216]))          
+    :file "example.h"
+    :pointmax 1217
+    :fsize 1216
+    :lastmodtime '(21462 33410 971138 869000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!Documents!Tungsten!Altibox!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

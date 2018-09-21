@@ -1,0 +1,937 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "sh_storman.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [981 999])
+            ("stdlib.h" include (:system-flag t) nil [1000 1019])
+            ("errno.h" include (:system-flag t) nil [1020 1038])
+            ("pthread.h" include (:system-flag t) nil [1039 1059])
+            ("sys/poll.h" include (:system-flag t) nil [1060 1081])
+            ("sys/socket.h" include (:system-flag t) nil [1082 1105])
+            ("sys/types.h" include (:system-flag t) nil [1106 1128])
+            ("unistd.h" include (:system-flag t) nil [1129 1148])
+            ("linux/types.h" include (:system-flag t) nil [1149 1173])
+            ("linux/netlink.h" include (:system-flag t) nil [1174 1200])
+            ("string.h" include (:system-flag t) nil [1201 1220])
+            ("dirent.h" include (:system-flag t) nil [1221 1240])
+            ("sys/vfs.h" include (:system-flag t) nil [1241 1261])
+            ("sys/types.h" include (:system-flag t) nil [1262 1284])
+            ("sys/stat.h" include (:system-flag t) nil [1285 1306])
+            ("inttypes.h" include (:system-flag t) nil [1307 1328])
+            ("sys/mount.h" include (:system-flag t) nil [1329 1351])
+            ("fcntl.h" include (:system-flag t) nil [1352 1370])
+            ("scsi/sg.h" include (:system-flag t) nil [1371 1391])
+            ("sys/statvfs.h" include (:system-flag t) nil [1392 1416])
+            ("ctype.h" include (:system-flag t) nil [1417 1435])
+            ("linux/kstorman.h" include (:system-flag t) nil [1436 1463])
+            ("linux/hdreg.h" include (:system-flag t) nil [1464 1488])
+            ("sys/ioctl.h" include (:system-flag t) nil [1489 1511])
+            ("sh_storman.h" include nil nil [1513 1536])
+            ("event_flag_to_str" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("event" variable (:type "char") (reparse-symbol arg-sub-list) [1922 1934]))                  
+                :type "char")
+                nil [1883 2193])
+            ("__lookup_bdev" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6051 6062])
+                    ("dev" variable (:type ("dev_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6063 6074]))                  
+                :type "char")
+                nil [6022 7155])
+            ("__lookup_cdev" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7589 7600])
+                    ("dev" variable (:type ("dev_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7601 7612]))                  
+                :type "char")
+                nil [7560 8693])
+            ("trimwhitespace" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9030 9041]))                  
+                :type "char")
+                nil [9000 9280])
+            ("lookup_bdev" function
+               (:pointer 1
+                :arguments 
+                  ( ("major" variable (:type "int") (reparse-symbol arg-sub-list) [9733 9743])
+                    ("minor" variable (:type "int") (reparse-symbol arg-sub-list) [9744 9755]))                  
+                :type "char")
+                nil [9713 9914])
+            ("lookup_cdev" function
+               (:pointer 1
+                :arguments 
+                  ( ("major" variable (:type "int") (reparse-symbol arg-sub-list) [10366 10376])
+                    ("minor" variable (:type "int") (reparse-symbol arg-sub-list) [10377 10388]))                  
+                :type "char")
+                nil [10346 10547])
+            ("get_device_size_block" function
+               (:arguments 
+                  ( ("device" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10934 10954]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [10901 11365])
+            ("get_device_size" function
+               (:arguments 
+                  ( ("device" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11728 11748]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [11701 12085])
+            ("get_freespace" function
+               (:arguments 
+                  ( ("dir" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12408 12425]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [12383 12602])
+            ("disk_monitor_thread" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13186 13199]))                  
+                :type "void")
+                nil [13151 15952])
+            ("sh_storman_init" function
+               (:arguments 
+                  ( ("sh_storman" variable
+                       (:pointer 1
+                        :type ("sh_storman_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16443 16469]))                  
+                :type "int")
+                nil [16421 17089])
+            ("sh_storman_cleanup" function
+               (:arguments 
+                  ( ("sh_storman" variable
+                       (:pointer 1
+                        :type ("sh_storman_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17454 17480]))                  
+                :type "int")
+                nil [17429 17989])
+            ("INQ_REPLY_LEN" variable (:constant-flag t) nil [18000 18013])
+            ("INQ_CMD_CODE" variable (:constant-flag t) nil [18025 18037])
+            ("INQ_CMD_LEN" variable (:constant-flag t) nil [18051 18062])
+            ("sh_storman_sg_inq" function
+               (:arguments 
+                  ( ("dev" variable (:type "int") (reparse-symbol arg-sub-list) [18567 18575])
+                    ("inq" variable
+                       (:pointer 1
+                        :type ("sh_storman_sg_inq_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18576 18602]))                  
+                :type "int")
+                nil [18543 21155])
+            ("START_STOP_CMD" variable (:constant-flag t) nil [21165 21179])
+            ("sh_storman_sg_start_stop" function
+               (:arguments 
+                  ( ("dev_fd" variable (:type "int") (reparse-symbol arg-sub-list) [21626 21637])
+                    ("action" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [21638 21660]))                  
+                :type "int")
+                nil [21595 22634])
+            ("ATA_OP_SETIDLE" variable (:constant-flag t) nil [22644 22658])
+            ("sh_storman_setidle" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [23209 23216])
+                    ("time_to_spindown" variable (:type "int") (reparse-symbol arg-sub-list) [23217 23239]))                  
+                :type "int")
+                nil [23184 23775])
+            ("sh_storman_getblocklist" function
+               (:arguments 
+                  ( ("sh_storman" variable
+                       (:pointer 1
+                        :type ("sh_storman_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24388 24414]))                  
+                :type ("kstorman_ioc_getblocks_t" type (:type "class") nil nil))
+                nil [24337 24749])
+            ("sh_storman_getmtdlist" function
+               (:arguments 
+                  ( ("sh_storman" variable
+                       (:pointer 1
+                        :type ("sh_storman_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25375 25401]))                  
+                :type ("kstorman_ioc_getmtd_t" type (:type "class") nil nil))
+                nil [25329 25593])
+            ("sh_storman_getmtdinfo" function
+               (:arguments 
+                  ( ("device" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26068 26087])
+                    ("mtd_info" variable
+                       (:pointer 1
+                        :type ("mtd_info_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26088 26110]))                  
+                :type "int")
+                nil [26040 26395])
+            ("sh_storman_getmountlist" function
+               (:arguments 
+                  ( ("sh_storman" variable
+                       (:pointer 1
+                        :type ("sh_storman_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27019 27045]))                  
+                :type ("kstorman_ioc_getmounts_t" type (:type "class") nil nil))
+                nil [26968 27694])
+            ("SPIN_UP_DEVICE" variable (:constant-flag t) nil [27704 27718])
+            ("SPIN_DOWN_DEVICE" variable (:constant-flag t) nil [27734 27750])
+            ("sh_storman_spindown_disk" function
+               (:arguments 
+                  ( ("device" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28477 28496])
+                    ("time_to_wait" variable (:type "int") (reparse-symbol arg-sub-list) [28497 28515]))                  
+                :type "int")
+                nil [28446 29207])
+            ("sh_storman_spinup_disk" function
+               (:arguments 
+                  ( ("device" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29525 29544])
+                    ("wait_period" variable (:type "int") (reparse-symbol arg-sub-list) [29545 29562]))                  
+                :type "int")
+                nil [29496 29791])
+            ("sh_storman_sh_storman_selftestDevice" function
+               (:arguments 
+                  ( ("device" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31419 31439]))                  
+                :type "int")
+                nil [31376 32395]))          
+    :file "sh_storman.c"
+    :pointmax 32396
+    :fsize 32395
+    :lastmodtime '(21492 52163 95852 60000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("INQ_CMD_LEN" . ((number "6" 18063 . 18064)))
+          ("SPIN_DOWN_DEVICE" . ((number "0x00" 27751 . 27755)))
+          ("INQ_CMD_CODE" . ((number "0x12" 18038 . 18042)))
+          ("SPIN_UP_DEVICE" . ((number "0x01" 27721 . 27725)))
+          ("START_STOP_CMD" . ((number "0x1b" 21180 . 21184)))
+          ("INQ_REPLY_LEN" . ((number "96" 18014 . 18016)))
+          ("ATA_OP_SETIDLE" . ((number "0xe3" 22661 . 22665)))
+          )
+
+    )
+   (semanticdb-table "sh_storman_ata.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1013 1032])
+            ("unistd.h" include (:system-flag t) nil [1033 1052])
+            ("fcntl.h" include (:system-flag t) nil [1053 1071])
+            ("stdio.h" include (:system-flag t) nil [1072 1090])
+            ("string.h" include (:system-flag t) nil [1091 1110])
+            ("errno.h" include (:system-flag t) nil [1111 1129])
+            ("sys/ioctl.h" include (:system-flag t) nil [1130 1152])
+            ("scsi/sg.h" include (:system-flag t) nil [1153 1173])
+            ("errno.h" include (:system-flag t) nil [1174 1192])
+            ("sys/ioctl.h" include (:system-flag t) nil [1193 1215])
+            ("sys/types.h" include (:system-flag t) nil [1216 1238])
+            ("sys/stat.h" include (:system-flag t) nil [1239 1260])
+            ("linux/hdreg.h" include (:system-flag t) nil [1261 1285])
+            ("regex.h" include (:system-flag t) nil [1286 1304])
+            ("inttypes.h" include (:system-flag t) nil [1305 1326])
+            ("sh_storman.h" include nil nil [1328 1351])
+            ("sh_storman_ata.h" include nil nil [1352 1379])
+            ("drive_vendor_list" variable
+               (:dereference 1
+                :constant-flag t
+                :type ("drive_vendor_list_t" type (:type "class") nil nil))
+                nil [1563 1919])
+            ("default_ssd_attrs" variable
+               (:dereference 1
+                :type ("default_attr_t" type (:type "class") nil nil))
+                nil [1921 3229])
+            ("default_hdd_attrs" variable
+               (:dereference 1
+                :type ("default_attr_t" type (:type "class") nil nil))
+                nil [3231 5035])
+            ("sg_command" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("device" variable (:type "int") (reparse-symbol arg-sub-list) [5250 5261])
+                    ("direction" variable (:type "int") (reparse-symbol arg-sub-list) [5262 5276])
+                    ("command" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [5277 5300])
+                    ("command_size" variable (:type "int") (reparse-symbol arg-sub-list) [5301 5318])
+                    ("buff" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5319 5330])
+                    ("buff_size" variable (:type "int") (reparse-symbol arg-sub-list) [5331 5345])
+                    ("sense_buff" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [5370 5396])
+                    ("sense_buff_size" variable (:type "int") (reparse-symbol arg-sub-list) [5397 5418]))                  
+                :type "int")
+                nil [5226 7476])
+            ("sg_command2" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("device" variable (:type "int") (reparse-symbol arg-sub-list) [7503 7514])
+                    ("direction" variable (:type "int") (reparse-symbol arg-sub-list) [7515 7529])
+                    ("command" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [7530 7553])
+                    ("command_size" variable (:type "int") (reparse-symbol arg-sub-list) [7554 7571])
+                    ("buff" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7572 7583])
+                    ("buff_size" variable (:type "int") (reparse-symbol arg-sub-list) [7609 7624]))                  
+                :type "int")
+                nil [7478 7766])
+            ("SAT_ATA_PASS_THROUGH16" variable (:constant-flag t) nil [7776 7798])
+            ("SAT_ATA_PASS_THROUGH16_LEN" variable (:constant-flag t) nil [7812 7838])
+            ("SAT_ATA_PASS_THROUGH12" variable (:constant-flag t) nil [7850 7872])
+            ("SAT_ATA_PASS_THROUGH12_LEN" variable (:constant-flag t) nil [7886 7912])
+            ("ATA_IDENTIFY_DEVICE" variable (:constant-flag t) nil [7925 7944])
+            ("ATA_IDENTIFY_DEVICE_RESPONSE_LEN" variable (:constant-flag t) nil [7958 7990])
+            ("ataioc_identify" function
+               (:arguments 
+                  ( ("device" variable (:type "int") (reparse-symbol arg-sub-list) [8041 8052])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("hd_driveid" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8053 8078]))                  
+                :type "int")
+                nil [8019 8876])
+            ("ATA_SMART" variable (:constant-flag t) nil [8886 8895])
+            ("ATA_SMART_READ_DATA" variable (:constant-flag t) nil [8910 8929])
+            ("SMART_READ_DATA_RESPONSE_LEN" variable (:constant-flag t) nil [8943 8971])
+            ("ataioc_read_smart_values" function
+               (:arguments 
+                  ( ("device" variable (:type "int") (reparse-symbol arg-sub-list) [9008 9019])
+                    ("data" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9020 9032]))                  
+                :type "int")
+                nil [8977 10012])
+            ("ATA_SMART_READ_THRESHOLDS" variable (:constant-flag t) nil [10022 10047])
+            ("SMART_READ_THRESHOLDS_RESPONSE_LEN" variable (:constant-flag t) nil [10061 10095])
+            ("ataioc_read_smart_thresholds" function
+               (:arguments 
+                  ( ("device" variable (:type "int") (reparse-symbol arg-sub-list) [10136 10147])
+                    ("data" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10148 10160]))                  
+                :type "int")
+                nil [10101 11152])
+            ("ATA_SMART_ENABLE" variable (:constant-flag t) nil [11162 11178])
+            ("ataioc_enable_smart" function
+               (:arguments 
+                  ( ("device" variable (:type "int") (reparse-symbol arg-sub-list) [11226 11238]))                  
+                :type "int")
+                nil [11200 12192])
+            ("ATA_SMART_DISABLE" variable (:constant-flag t) nil [12202 12219])
+            ("ataioc_disable_smart" function
+               (:arguments 
+                  ( ("device" variable (:type "int") (reparse-symbol arg-sub-list) [12267 12279]))                  
+                :type "int")
+                nil [12240 13234])
+            ("ATA_SMART_STATUS" variable (:constant-flag t) nil [13244 13260])
+            ("ataioc_read_smart_status" function
+               (:arguments 
+                  ( ("device" variable (:type "int") (reparse-symbol arg-sub-list) [13313 13325]))                  
+                :type "int")
+                nil [13282 14361])
+            ("ATA_CHECK_POWER_MODE" variable (:constant-flag t) nil [14371 14391])
+            ("SAT_ATA_RETURN_DESC" variable (:constant-flag t) nil [14416 14435])
+            ("ataioc_read_power_mode" function
+               (:arguments 
+                  ( ("device" variable (:type "int") (reparse-symbol arg-sub-list) [14480 14492]))                  
+                :type "int")
+                nil [14451 16461])
+            ("get_msb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [16706 16727]))                  
+                :type "int")
+                nil [16685 16865])
+            ("ata_convert_be_le" function
+               (:arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [16892 16917])
+                    ("dst" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16918 16928])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [16929 16939]))                  
+                :type "void")
+                nil [16867 17696])
+            ("ata_is_smart_supported" function
+               (:arguments 
+                  ( ("drive" variable (:type ("hd_driveid" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [17727 17752]))                  
+                :type "int")
+                nil [17698 17942])
+            ("ata_is_smart_enabled" function
+               (:arguments 
+                  ( ("drive" variable (:type ("hd_driveid" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [17971 17996]))                  
+                :type "int")
+                nil [17944 18184])
+            ("ata_is_removable" function
+               (:arguments 
+                  ( ("drive" variable (:type ("hd_driveid" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [18209 18234]))                  
+                :type "int")
+                nil [18186 18337])
+            ("ata_get_disk_vendor" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("drive" variable (:type ("hd_driveid" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [18374 18399]))                  
+                :type "char")
+                nil [18340 18954])
+            ("ata_get_ata_major_version" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("drive" variable (:type ("hd_driveid" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [18997 19022]))                  
+                :type "char")
+                nil [18957 19515])
+            ("ata_get_ata_minor_version" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("drive" variable (:type ("hd_driveid" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [19558 19583]))                  
+                :type "char")
+                nil [19518 22784])
+            ("ata_get_sata_version" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("drive" variable (:type ("hd_driveid" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [22822 22847]))                  
+                :type "char")
+                nil [22787 23419])
+            ("ata_get_sata_curspeed" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("drive" variable (:type ("hd_driveid" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [23458 23483]))                  
+                :type "char")
+                nil [23422 23902])
+            ("ata_get_sata_maxspeed" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("drive" variable (:type ("hd_driveid" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [23941 23966]))                  
+                :type "char")
+                nil [23905 24391])
+            ("ata_get_rotation_rate" function
+               (:arguments 
+                  ( ("drive" variable (:type ("hd_driveid" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [24538 24563]))                  
+                :type "int")
+                nil [24510 24875])
+            ("ata_get_size_info" function
+               (:arguments 
+                  ( ("drive" variable (:type ("hd_driveid" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [24902 24926])
+                    ("sizes" variable
+                       (:pointer 1
+                        :type ("drive_size_info_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24927 24953]))                  
+                :type "int")
+                nil [24878 26809])
+            ("ata_get_smartattr_name" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [26848 26855])
+                    ("rpm" variable (:type "int") (reparse-symbol arg-sub-list) [26856 26865]))                  
+                :type "char")
+                nil [26811 27337])
+            ("ata_get_power_mode_str" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("power_mode" variable (:type "int") (reparse-symbol arg-sub-list) [27376 27392]))                  
+                :type "char")
+                nil [27339 27784])
+            ("print_value" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("value_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27805 27816])
+                    ("t" variable
+                       (:pointer 1
+                        :type ("threshold_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27817 27833]))                  
+                :type "void")
+                nil [27786 28174])
+            ("offline_status_text" variable
+               (:dereference 1
+                :type ("" type
+                     (:members 
+                        ( ("value" variable (:type ("__u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [28189 28200])
+                          ("text" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [28204 28215]))                        
+                      :type "struct")
+                      nil nil))
+                nil [28177 28375])
+            ("get_offline_text" function
+               (:pointer 1
+                :arguments 
+                  ( ("status" variable (:type "int") (reparse-symbol arg-sub-list) [28403 28415]))                  
+                :type "char")
+                nil [28377 28625])
+            ("print_values" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("values_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28648 28660])
+                    ("t" variable
+                       (:pointer 1
+                        :type ("thresholds_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28661 28678]))                  
+                :type "void")
+                nil [28628 29693])
+            ("print_thresholds" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("thresholds_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29721 29738]))                  
+                :type "void")
+                nil [29697 30142]))          
+    :file "sh_storman_ata.c"
+    :pointmax 30144
+    :fsize 30143
+    :lastmodtime '(21492 52163 95852 60000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sh_storman_dbus.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [916 934])
+            ("stdlib.h" include (:system-flag t) nil [935 954])
+            ("string.h" include (:system-flag t) nil [955 974])
+            ("glib.h" include (:system-flag t) nil [975 992])
+            ("unistd.h" include (:system-flag t) nil [993 1012])
+            ("sys/stat.h" include (:system-flag t) nil [1013 1034])
+            ("fcntl.h" include (:system-flag t) nil [1035 1053])
+            ("dbus/dbus-glib.h" include (:system-flag t) nil [1054 1081])
+            ("sh_storman.h" include nil nil [1083 1106])
+            ("sh_storman_ata.h" include nil nil [1107 1134])
+            ("sh_storman" variable (:type ("sh_storman_t" type (:type "class") nil nil)) nil [1136 1166])
+            ("mutex" variable (:type ("pthread_mutex_t" type (:type "class") nil nil)) nil [1167 1189])
+            ("S_MUTEX_INIT" variable (:constant-flag t) nil [1386 1398])
+            ("S_MUTEX_LOCK" variable (:constant-flag t) nil [1594 1606])
+            ("S_MUTEX_UNLOCK" variable (:constant-flag t) nil [1796 1810])
+            ("get_devicelist" function
+               (:pointer 2
+                :typemodifiers ("static")
+                :type "char")
+                nil [2280 3923])
+            ("get_mountlist" function
+               (:pointer 2
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4269 4275]))                  
+                :type "char")
+                nil [4239 5546])
+            ("get_deviceinfo_scsi" function
+               (:pointer 2
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6084 6100])
+                    ("blkdev" variable (:type ("kstorman_blkdev_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6101 6127]))                  
+                :type "char")
+                nil [6048 11213])
+            ("get_deviceinfo" function
+               (:pointer 2
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11574 11591]))                  
+                :type "char")
+                nil [11543 16546])
+            ("PFS_SERVER_DBUS_NAME" variable (:constant-flag t) nil [16743 16763])
+            ("PFS_SERVER_DBUS_PATH" variable (:constant-flag t) nil [16799 16819])
+            ("Psf" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("parent" variable (:type ("GObject" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16856 16871]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [16836 16878])
+            ("PsfClass" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("parent" variable (:type ("GObjectClass" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16900 16920]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [16880 16932])
+            ("psf_get_type" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16955 16961]))                  
+                :type ("GType" type (:type "class") nil nil))
+                nil [16934 16962])
+            ("PSF_TYPE" variable (:constant-flag t) nil [16972 16980])
+            ("PSF" variable (:constant-flag t) nil [17007 17010])
+            ("PSF_CLASS" variable (:constant-flag t) nil [17091 17100])
+            ("IS_PSF" variable (:constant-flag t) nil [17177 17183])
+            ("IS_PSF_CLASS" variable (:constant-flag t) nil [17257 17269])
+            ("PSF_GET_CLASS" variable (:constant-flag t) nil [17333 17346])
+            ("psf_get" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("Psf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17477 17486])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17487 17504])
+                    ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17505 17517])
+                    ("ret" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17518 17529])
+                    ("status" variable
+                       (:pointer 1
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17530 17543])
+                    ("error" variable
+                       (:pointer 2
+                        :type ("GError" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17544 17560]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [17458 17561])
+            ("psf_set" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("Psf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17581 17590])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17591 17608])
+                    ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17609 17621])
+                    ("ret" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17622 17633])
+                    ("status" variable
+                       (:pointer 1
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17634 17647])
+                    ("error" variable
+                       (:pointer 2
+                        :type ("GError" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17648 17664]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [17562 17665])
+            ("psf_exec" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("Psf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17686 17695])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17696 17713])
+                    ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17714 17726])
+                    ("ret" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17727 17738])
+                    ("status" variable
+                       (:pointer 1
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17739 17752])
+                    ("error" variable
+                       (:pointer 2
+                        :type ("GError" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17753 17769]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [17666 17770])
+            ("server_bindings.h" include nil nil [17773 17801])
+            ("" type
+               (:members 
+                  ( ("SIGNAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17813 17820])
+                    ("LAST_SIGNAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17824 17837]))                  
+                :type "enum")
+                nil [17803 17838])
+            ("signals" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("guint" type (:type "class") nil nil))
+                nil [17840 17874])
+            ("psf_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("Psf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17899 17909]))                  
+                :type "void")
+                nil [17876 17942])
+            ("psf_class_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("klass" variable
+                       (:pointer 1
+                        :type ("PsfClass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18281 18298]))                  
+                :type "void")
+                nil [18252 18721])
+            ("psf_get" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("Psf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18980 18989])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18990 19007])
+                    ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19008 19020])
+                    ("ret" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19021 19032])
+                    ("status" variable
+                       (:pointer 1
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19033 19046])
+                    ("error" variable
+                       (:pointer 2
+                        :type ("GError" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19047 19063]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [18961 19863])
+            ("psf_set" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("Psf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20122 20131])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20132 20149])
+                    ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20150 20162])
+                    ("ret" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20163 20174])
+                    ("status" variable
+                       (:pointer 1
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20175 20188])
+                    ("error" variable
+                       (:pointer 2
+                        :type ("GError" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20189 20205]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [20103 20225])
+            ("psf_exec" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("Psf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20958 20967])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20968 20985])
+                    ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20986 20998])
+                    ("pargv_out" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20999 21017])
+                    ("status" variable
+                       (:pointer 1
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21018 21031])
+                    ("error" variable
+                       (:pointer 2
+                        :type ("GError" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21032 21048]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [20938 22251])
+            ("psf" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("Psf" type (:type "class") nil nil))
+                nil [22254 22270])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [22686 22696])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22697 22710]))                  
+                :type "int")
+                nil [22675 24746])
+            ("psf_emit_signal" function
+               (:arguments 
+                  ( ("message" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25169 25184]))                  
+                :type "void")
+                nil [25146 25304]))          
+    :file "sh_storman_dbus.c"
+    :pointmax 25306
+    :fsize 25305
+    :lastmodtime '(21492 52163 95852 60000)
+    :unmatched-syntax '((semantic-list 17429 . 17456) (symbol 17415 . 17428))
+    :lexical-table 
+        '(("S_MUTEX_UNLOCK" (spp-arg-list ("mutex") 1810 . 1817) . 
+              ((IF "if" 1834 . 1836) (semantic-list "(pthread_mutex_unlock (mutex))" 1837 . 1867) (semantic-list "{ \\
+                perror (\"[sh_storman] pthread_mutex_unlock\"); \\
+                exit (1); \\
+            }" 1882 . 1991)))
+          ("PSF_TYPE" . ((semantic-list "(psf_get_type())" 16981 . 16997)))
+          ("PFS_SERVER_DBUS_NAME" . ((string "\"org.pace.psf.sh_storman\"" 16765 . 16790)))
+          ("PFS_SERVER_DBUS_PATH" . ((string "\"/sh_storman\"" 16821 . 16834)))
+          ("PSF_CLASS" (spp-arg-list ("klass") 17100 . 17107) . ((semantic-list "(G_TYPE_CHECK_CLASS_CAST((klass), PSF_TYPE, PsfClass))" 17114 . 17168)))
+          ("IS_PSF_CLASS" (spp-arg-list ("klass") 17269 . 17276) . ((semantic-list "(G_TYPE_CHECK_CLASS_TYPE((klass), PSF_TYPE))" 17280 . 17324)))
+          ("PSF_GET_CLASS" (spp-arg-list ("object") 17346 . 17354) . ((semantic-list "(G_TYPE_INSTANCE_GET_CLASS((object), PSF_TYPE, PsfClass))" 17356 . 17413)))
+          ("S_MUTEX_LOCK" (spp-arg-list ("mutex") 1606 . 1613) . 
+              ((IF "if" 1629 . 1631) (semantic-list "(pthread_mutex_lock (mutex))" 1632 . 1660) (semantic-list "{ \\
+                 perror (\"[sh_storman] pthread_mutex_lock\"); \\
+                 exit (1); \\
+             }" 1676 . 1786)))
+          ("S_MUTEX_INIT" (spp-arg-list ("mutex") 1398 . 1405) . 
+              ((IF "if" 1421 . 1423) (semantic-list "(pthread_mutex_init (mutex, NULL))" 1424 . 1458) (semantic-list "{ \\
+                 perror (\"[sh_storman] pthread_mutex_init\"); \\
+                 exit (1); \\
+             }" 1474 . 1584)))
+          ("PSF" (spp-arg-list ("object") 17010 . 17018) . ((semantic-list "(G_TYPE_CHECK_INSTANCE_CAST((object),PSF_TYPE, Psf))" 17030 . 17082)))
+          ("IS_PSF" (spp-arg-list ("object") 17183 . 17191) . ((semantic-list "(G_TYPE_CHECK_INSTANCE_TYPE((object), PSF_TYPE))" 17200 . 17248)))
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D713!src!pace!middleware!storman!sh_storman!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

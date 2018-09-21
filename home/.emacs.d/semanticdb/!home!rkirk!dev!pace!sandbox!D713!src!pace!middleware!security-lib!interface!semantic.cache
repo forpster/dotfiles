@@ -1,0 +1,373 @@
+;; Object interface/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "interface/"
+  :tables (list 
+   (semanticdb-table "security.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SECURITY_H__" variable (:constant-flag t) nil [30 42])
+            ("stdint.h" include (:system-flag t) nil [44 63])
+            ("cstdio" include (:system-flag t) nil [83 101])
+            ("SLSTATUS" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("SL_OK" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [247 253])
+                          ("SL_NO_OUTER_SIGNATURE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [307 329])
+                          ("SL_FAILURE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [385 396])
+                          ("SL_OPERATION_NOT_SUPPORTED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [447 562]))                        
+                      :type "enum")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [229 572])
+            ("SLALLOC" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("SL_ALLOC_NONE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [670 684])
+                          ("SL_ALLOC_NEW" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [725 738])
+                          ("SL_ALLOC_MALLOC" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [774 824]))                        
+                      :type "enum")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [652 833])
+            ("SLINFOTYPE" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("SLINFOTYPE_NOT_SUPPORTED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [946 971])
+                          ("SLINFOTYPE_PSEC" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1022 1038])
+                          ("SLINFOTYPE_FOXTEL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1087 1105])
+                          ("SLINFOTYPE_LATENS" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1154 1219]))                        
+                      :type "enum")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [928 1231])
+            ("SecureBuffer" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "_SecureBuffer"
+                :typedef ("_SecureBuffer" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [1323 1539])
+            ("_SecureBuffer" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1357 1371])
+                    ("dataLength" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1422 1440])
+                    ("type" variable (:type ("SLALLOC" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1474 1487]))                  )
+                (reparse-symbol extern-c-contents) [1323 1539])
+            ("initialise" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("SLSTATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1722 1727]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1702 1728])
+            ("deinitialise" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1792 1797]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1774 1798])
+            ("identify" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("SLSTATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("inData" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2084 2111]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2066 2112])
+            ("identifyFile" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("SLSTATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2404 2417]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2382 2418])
+            ("identifyFileOffset" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("SLSTATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3041 3054])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [3055 3078])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [3079 3100]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3013 3101])
+            ("unProtectFile" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("SLSTATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3517 3530])
+                    ("outFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3531 3545]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3494 3546])
+            ("unProtectFileOffset" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("SLSTATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4295 4308])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [4309 4332])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [4333 4354])
+                    ("outFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4355 4369]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4266 4370])
+            ("unProtectFileToBuffer" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("SLSTATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4847 4860])
+                    ("outData" variable
+                       (:pointer 1
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4861 4883]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4816 4884])
+            ("unProtectFileOffsetToBuffer" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("SLSTATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5641 5654])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [5655 5678])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [5679 5700])
+                    ("outData" variable
+                       (:pointer 1
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5701 5723]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5604 5724])
+            ("unProtect" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("SLSTATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("inData" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6186 6213])
+                    ("outData" variable
+                       (:pointer 1
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6214 6236]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6167 6237])
+            ("verifyFile" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("SLSTATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6703 6716]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6683 6717])
+            ("verifyFileOffset" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("SLSTATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7514 7527])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [7528 7551])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [7552 7573]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7488 7574])
+            ("verify" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("SLSTATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("inData" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8034 8061]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8018 8062])
+            ("unProtectRelease" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8304 8323]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8282 8324])
+            ("getSecuredInfo" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("SLSTATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("inData" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9340 9367])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("SLINFOTYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9368 9385])
+                    ("info" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9386 9398]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9316 9399])
+            ("getSecuredInfoFile" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("SLSTATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10407 10420])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("SLINFOTYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10421 10438])
+                    ("info" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10439 10451]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10379 10452])
+            ("getSecuredInfoFileOffset" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("SLSTATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11702 11715])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [11716 11739])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [11740 11761])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("SLINFOTYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11762 11779])
+                    ("info" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11780 11792]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11668 11793])
+            ("securedInfoRelease" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("type" variable (:type ("SLINFOTYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12033 12049])
+                    ("info" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12050 12061]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12009 12062]))          
+    :file "security.h"
+    :pointmax 12119
+    :fsize 12118
+    :lastmodtime '(21483 37804 172352 731000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SECURITY_H__")
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D713!src!pace!middleware!security-lib!interface!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

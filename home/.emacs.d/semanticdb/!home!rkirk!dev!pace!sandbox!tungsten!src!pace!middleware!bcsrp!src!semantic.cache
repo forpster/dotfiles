@@ -1,0 +1,438 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "bcsrp.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("bcsrp.h" include nil nil [667 685])
+            ("srp.c" include nil nil [885 901])
+            ("padN" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("BIGNUM" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1649 1666])
+                    ("bin" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1667 1686])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [1687 1695]))                  
+                :type "void")
+                nil [1632 1967])
+            ("Hpad_nn" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("alg" variable (:type ("SRP_HashAlgorithm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2073 2095])
+                    ("n1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("BIGNUM" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2096 2114])
+                    ("n2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("BIGNUM" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2115 2133]))                  
+                :type ("BIGNUM" type (:type "class") nil nil))
+                nil [2049 2679])
+            ("hashPad_num" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("alg" variable (:type ("SRP_HashAlgorithm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2765 2787])
+                    ("n" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("BIGNUM" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2788 2805])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2806 2827])
+                    ("len" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2828 2842]))                  
+                :type "void")
+                nil [2740 3315])
+            ("bc_calculate_M" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("alg" variable (:type ("SRP_HashAlgorithm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3407 3429])
+                    ("ng" variable
+                       (:pointer 1
+                        :type ("NGConstant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3436 3451])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [3458 3479])
+                    ("u" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("BIGNUM" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3486 3503])
+                    ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("BIGNUM" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3510 3527])
+                    ("A" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("BIGNUM" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3534 3551])
+                    ("B" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("BIGNUM" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3558 3575])
+                    ("K" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [3582 3606]))                  
+                :type "void")
+                nil [3373 4596])
+            ("srp_create_unsalted_verification_key" function
+               (:arguments 
+                  ( ("alg" variable (:type ("SRP_HashAlgorithm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4714 4736])
+                    ("ng_type" variable (:type ("SRP_NGType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4743 4762])
+                    ("username" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4769 4791])
+                    ("password" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [4798 4829])
+                    ("len_password" variable (:type "int") (reparse-symbol arg-sub-list) [4836 4853])
+                    ("bytes_v" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [4860 4891])
+                    ("len_v" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4898 4910])
+                    ("n_hex" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4917 4936])
+                    ("g_hex" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4943 4969]))                  
+                :type "void")
+                nil [4665 5761])
+            ("srp_verifier_new_part1" function
+               (:pointer 1
+                :arguments 
+                  ( ("alg" variable (:type ("SRP_HashAlgorithm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5836 5858])
+                    ("ng_type" variable (:type ("SRP_NGType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5865 5884])
+                    ("username" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5891 5913])
+                    ("bytes_s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [5920 5950])
+                    ("len_s" variable (:type "int") (reparse-symbol arg-sub-list) [5957 5967])
+                    ("bytes_v" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [5974 6004])
+                    ("len_v" variable (:type "int") (reparse-symbol arg-sub-list) [6011 6021])
+                    ("bytes_B" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [6028 6059])
+                    ("len_B" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6066 6078])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("BIGNUM" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6085 6095])
+                    ("n_hex" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6102 6121])
+                    ("g_hex" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6128 6154]))                  
+                :type ("SRPVerifier" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5784 8012])
+            ("srp_verifier_new_part2" function
+               (:arguments 
+                  ( ("ver" variable
+                       (:pointer 1
+                        :type ("SRPVerifier" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8048 8073])
+                    ("bytes_s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [8080 8110])
+                    ("len_s" variable (:type "int") (reparse-symbol arg-sub-list) [8117 8127])
+                    ("bytes_v" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [8134 8164])
+                    ("len_v" variable (:type "int") (reparse-symbol arg-sub-list) [8171 8181])
+                    ("bytes_A" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [8188 8218])
+                    ("len_A" variable (:type "int") (reparse-symbol arg-sub-list) [8225 8235])
+                    ("bytes_B" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [8242 8271])
+                    ("len_B" variable (:type "int") (reparse-symbol arg-sub-list) [8278 8288])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("BIGNUM" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8295 8312]))                  
+                :type "int")
+                nil [8014 9623])
+            ("bc_srp_verifier_new" function
+               (:pointer 1
+                :arguments 
+                  ( ("alg" variable (:type ("SRP_HashAlgorithm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9714 9736])
+                    ("ng_type" variable (:type ("SRP_NGType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9743 9762])
+                    ("username" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9769 9791])
+                    ("bytes_s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9798 9828])
+                    ("len_s" variable (:type "int") (reparse-symbol arg-sub-list) [9835 9845])
+                    ("bytes_v" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9852 9882])
+                    ("len_v" variable (:type "int") (reparse-symbol arg-sub-list) [9889 9899])
+                    ("bytes_A" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9906 9936])
+                    ("len_A" variable (:type "int") (reparse-symbol arg-sub-list) [9943 9953])
+                    ("bytes_B" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9960 9991])
+                    ("len_B" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9998 10010])
+                    ("n_hex" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10017 10036])
+                    ("g_hex" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10043 10069]))                  
+                :type ("SRPVerifier" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [9667 13093])
+            ("bc_srp_verifier_new_part1" function
+               (:pointer 1
+                :arguments 
+                  ( ("alg" variable (:type ("SRP_HashAlgorithm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13150 13172])
+                    ("ng_type" variable (:type ("SRP_NGType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13179 13198])
+                    ("username" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13205 13227])
+                    ("bytes_s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [13234 13264])
+                    ("len_s" variable (:type "int") (reparse-symbol arg-sub-list) [13271 13281])
+                    ("bytes_v" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [13288 13318])
+                    ("len_v" variable (:type "int") (reparse-symbol arg-sub-list) [13325 13335])
+                    ("bytes_B" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [13342 13373])
+                    ("len_B" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13380 13392])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("BIGNUM" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13399 13409])
+                    ("n_hex" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13416 13435])
+                    ("g_hex" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13442 13468]))                  
+                :type ("SRPVerifier" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13095 15329])
+            ("bc_srp_verifier_new_part2" function
+               (:arguments 
+                  ( ("ver" variable
+                       (:pointer 1
+                        :type ("SRPVerifier" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15368 15393])
+                    ("bytes_s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [15400 15430])
+                    ("len_s" variable (:type "int") (reparse-symbol arg-sub-list) [15437 15447])
+                    ("bytes_v" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [15454 15484])
+                    ("len_v" variable (:type "int") (reparse-symbol arg-sub-list) [15491 15501])
+                    ("bytes_A" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [15508 15538])
+                    ("len_A" variable (:type "int") (reparse-symbol arg-sub-list) [15545 15555])
+                    ("bytes_B" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [15562 15591])
+                    ("len_B" variable (:type "int") (reparse-symbol arg-sub-list) [15598 15608])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("BIGNUM" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15615 15632]))                  
+                :type "int")
+                nil [15331 17199])
+            ("bc_srp_user_start_authentication" function
+               (:arguments 
+                  ( ("usr" variable
+                       (:pointer 1
+                        :type ("SRPUser" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17246 17267])
+                    ("username" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17274 17297])
+                    ("bytes_A" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [17304 17335])
+                    ("len_A" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [17342 17361]))                  
+                :type "void")
+                nil [17201 17938])
+            ("bc_srp_user_process_challenge" function
+               (:arguments 
+                  ( ("usr" variable
+                       (:pointer 1
+                        :type ("SRPUser" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17982 18003])
+                    ("bytes_s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [18010 18040])
+                    ("len_s" variable (:type "int") (reparse-symbol arg-sub-list) [18047 18057])
+                    ("bytes_B" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [18064 18094])
+                    ("len_B" variable (:type "int") (reparse-symbol arg-sub-list) [18101 18111])
+                    ("bytes_M" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [18118 18149])
+                    ("len_M" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [18156 18175]))                  
+                :type "void")
+                nil [17940 21462]))          
+    :file "bcsrp.c"
+    :pointmax 20961
+    :fsize 21462
+    :lastmodtime '(21761 27631 499561 918000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "bcsrp.h"
+    :file "bcsrp.h"
+    :fsize 3895
+    :lastmodtime '(21758 65093 197830 152000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!bcsrp!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

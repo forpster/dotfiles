@@ -1,0 +1,39 @@
+;; Object inc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "inc/"
+  :tables (list 
+   (semanticdb-table "engine_debug.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__ENGINE_DEBUG_H_" variable (:constant-flag t) nil [35 52])
+            ("QDebug" include (:system-flag t) nil [54 71])
+            ("debug_common.h" include nil nil [72 97])
+            ("NO_DEBUG_MSG" variable (:constant-flag t) nil [305 317])
+            ("DSMCC_SERVICE_DEBUG" variable (:constant-flag t) nil [139 158])
+            ("DSMCC_ENGINE_SM_DEBUG" variable (:constant-flag t) nil [167 188])
+            ("DSMCC_ENGINE_CAROUSEL_DEBUG" variable (:constant-flag t) nil [197 224])
+            ("DSMCC_ENGINE_PIPELINE_DEBUG" variable (:constant-flag t) nil [233 260])
+            ("DSMCC_ENGINE_CACHE_DEBUG" variable (:constant-flag t) nil [269 293])
+            ("NO_DEBUG_MSG" variable (:constant-flag t) nil [305 317]))          
+    :file "engine_debug.h"
+    :pointmax 377
+    :fsize 366
+    :lastmodtime '(21364 47162 9472 306000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__ENGINE_DEBUG_H_")
+          ("DSMCC_ENGINE_PIPELINE_DEBUG")
+          ("DSMCC_ENGINE_SM_DEBUG")
+          ("DSMCC_ENGINE_CACHE_DEBUG")
+          ("DSMCC_ENGINE_CAROUSEL_DEBUG")
+          ("DSMCC_SERVICE_DEBUG")
+          ("NO_DEBUG_MSG" . 
+              ((WHILE "while" 318 . 323) (semantic-list "(0)" 324 . 327) (symbol "qDebug" 328 . 334) (semantic-list "()" 334 . 336)))
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!dsmcc!engine!inc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,191 @@
+;; Object unix/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "unix/"
+  :tables
+  (list
+    (semanticdb-table "OSProvider.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.rapid7.nexpose.os.unix" package nil nil [349 384])
+            ("com.rapid7.net.LocalExecutionService" include nil nil [386 430])
+            ("com.rapid7.nexpose.os.BaseOSProvider" include nil nil [431 475])
+            ("com.rapid7.os.IOSVersion" include nil nil [476 508])
+            ("com.rapid7.os.OSException" include nil nil [509 542])
+            ("com.rapid7.os.OSProcess" include nil nil [543 574])
+            ("com.rapid7.os.unix.OSVersion" include nil nil [575 611])
+            ("com.rapid7.plugin.auth.linux.DistroDetector" include nil nil [612 663])
+            ("java.io.IOException" include nil nil [664 691])
+            ("OSProvider" type
+               (:typemodifiers ("public" "abstract")
+                :superclasses "BaseOSProvider"
+                :members 
+                  ( ("OSProvider" function
+                       (:constructor-flag t
+                        :throws ("OSException")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("os" variable (:type "String") (reparse-symbol formal_parameters) [970 979]))                          )
+                        (reparse-symbol class_member_declaration) [949 1063])
+                    ("OSProvider" function
+                       (:constructor-flag t
+                        :throws ("OSException")
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [1169 1244])
+                    ("getDaemonStatus" function
+                       (:throws ("OSException" "IOException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [1376 1387]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1340 1427])
+                    ("startDaemon" function
+                       (:throws ("OSException" "IOException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [1629 1640]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1596 1680])
+                    ("stopDaemon" function
+                       (:throws ("OSException" "IOException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [1877 1888]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1845 1928])
+                    ("createDaemon" function
+                       (:throws ("OSException" "IOException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [2250 2261])
+                            ("startOpts" variable (:type "String") (reparse-symbol formal_parameters) [2263 2279]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2216 2319])
+                    ("deleteDaemon" function
+                       (:throws ("OSException" "IOException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [2559 2570]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2525 2610])
+                    ("getCurrentUserName" function
+                       (:throws ("OSException")
+                        :typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2683 2798])
+                    ("getKernelVersion" function
+                       (:throws ("OSException")
+                        :typemodifiers ("private" "native")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2977 3043])
+                    ("createOSVersion" function
+                       (:throws ("OSException")
+                        :typemodifiers ("public")
+                        :type "IOSVersion")
+                        (reparse-symbol class_member_declaration) [3170 3657])
+                    ("executeCommand" function
+                       (:throws ("IOException" "OSException")
+                        :typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("cmd" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [3900 3912]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3865 3952])
+                    ("isSuperUser" function
+                       (:throws ("OSException")
+                        :typemodifiers ("public" "native")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4088 4149])
+                    ("getComputerName" function
+                       (:throws ("OSException")
+                        :typemodifiers ("public" "native")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [4219 4283])
+                    ("getRunningProcesses" function
+                       (:throws ("OSException")
+                        :typemodifiers ("public" "native")
+                        :type "OSProcess[]")
+                        (reparse-symbol class_member_declaration) [4389 4462])
+                    ("getTotalMemory" function
+                       (:throws ("OSException")
+                        :typemodifiers ("public" "native")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [4667 4728])
+                    ("getFreeMemory" function
+                       (:throws ("OSException")
+                        :typemodifiers ("public" "native")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [4843 4903])
+                    ("getCPUMHz" function
+                       (:throws ("OSException")
+                        :typemodifiers ("public" "native")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5015 5070])
+                    ("getNumberOfCPUs" function
+                       (:throws ("OSException")
+                        :typemodifiers ("public" "native")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5152 5213])
+                    ("setSystemTime" function
+                       (:throws ("OSException")
+                        :typemodifiers ("public" "native")
+                        :arguments 
+                          ( ("time" variable (:type "long") (reparse-symbol formal_parameters) [5393 5402]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5360 5429])
+                    ("getBytesFree" function
+                       (:throws ("IOException" "OSException")
+                        :typemodifiers ("protected" "native")
+                        :arguments 
+                          ( ("filename" variable (:type "String") (reparse-symbol formal_parameters) [5706 5721]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [5671 5761])
+                    ("changeOwner" function
+                       (:throws ("IOException" "OSException")
+                        :typemodifiers ("protected" "native")
+                        :arguments 
+                          ( ("filename" variable (:type "String") (reparse-symbol formal_parameters) [6037 6052])
+                            ("userName" variable (:type "String") (reparse-symbol formal_parameters) [6054 6069]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6003 6109])
+                    ("getOwner" function
+                       (:throws ("IOException" "OSException")
+                        :typemodifiers ("protected" "native")
+                        :arguments 
+                          ( ("filename" variable (:type "String") (reparse-symbol formal_parameters) [6374 6389]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6341 6429])
+                    ("execAsUser" function
+                       (:throws ("OSException" "IOException")
+                        :typemodifiers ("protected" "native")
+                        :arguments 
+                          ( ("userName" variable (:type "String") (reparse-symbol formal_parameters) [7014 7029])
+                            ("password" variable (:type "String") (reparse-symbol formal_parameters) [7031 7046])
+                            ("cmdarray" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [7048 7065])
+                            ("env" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [7067 7079])
+                            ("dir" variable (:type "String") (reparse-symbol formal_parameters) [7090 7100])
+                            ("pipeIn" variable (:type "int") (reparse-symbol formal_parameters) [7102 7112])
+                            ("stdin" variable (:type "String") (reparse-symbol formal_parameters) [7114 7126])
+                            ("pipeOut" variable (:type "int") (reparse-symbol formal_parameters) [7128 7139])
+                            ("stdout" variable (:type "String") (reparse-symbol formal_parameters) [7141 7154])
+                            ("pipeErr" variable (:type "int") (reparse-symbol formal_parameters) [7156 7167])
+                            ("stderr" variable (:type "String") (reparse-symbol formal_parameters) [7169 7182]))                          
+                        :type "OSProcess")
+                        (reparse-symbol class_member_declaration) [6976 7222]))                  
+                :type "class")
+                nil [760 7224]))          
+      :file "OSProvider.java"
+      :pointmax 7225
+      :fsize 7224
+      :lastmodtime '(22932 26901 497138 596000)
+      :unmatched-syntax nil))
+  :file "!home!rkirk!rapid7!nexpose!src!nexpose!shared!src!main!java!com!rapid7!nexpose!os!unix!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

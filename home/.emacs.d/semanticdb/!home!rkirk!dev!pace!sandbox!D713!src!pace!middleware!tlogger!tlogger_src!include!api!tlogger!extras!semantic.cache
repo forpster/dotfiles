@@ -1,0 +1,88 @@
+;; Object extras/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "extras/"
+  :tables (list 
+   (semanticdb-table "backward_compatibility.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("TLOGGER_BACKWARD_COMPATIBILITY_H" variable (:constant-flag t) nil [757 789])
+            ("tlogger/tlogger.h" include (:system-flag t) nil [791 819])
+            ("TLOG_INFO" variable (:constant-flag t) nil [874 883])
+            ("TLOG_TRACE" variable (:constant-flag t) nil [958 968])
+            ("TLOG_WARN" variable (:constant-flag t) nil [1044 1053])
+            ("TLOG_ERROR" variable (:constant-flag t) nil [1130 1140])
+            ("TLOG_FATAL" variable (:constant-flag t) nil [1214 1224])
+            ("TLOG_PERF" variable (:constant-flag t) nil [1299 1308])
+            ("TLOG_FUNC_ENTER" variable (:constant-flag t) nil [1385 1400])
+            ("TLOG_FUNC_EXIT" variable (:constant-flag t) nil [1489 1503])
+            ("sstream" include (:system-flag t) nil [2309 2331])
+            ("iomanip" include (:system-flag t) nil [2332 2354])
+            ("TLOG_DUMP_MEMORY" variable (:constant-flag t) nil [2367 2383])
+            ("TLOG_DEFINE_MODULE_LOGGER" variable (:constant-flag t) nil [3621 3646])
+            ("tlogger_extras_bc_registerModule" function
+               (:type ("TLoggerModuleMeta" type (:type "class") nil nil)
+                :arguments 
+                  ( ("module" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4196 4216]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4136 4217])
+            ("tlogger" type (:type "namespace") nil [4272 4352])
+            ("cassert" include (:system-flag t) nil [4354 4372])
+            ("fstream" include (:system-flag t) nil [4373 4391])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [4458 4478])
+            ("TLOG_REGISTER_FRIENDLY_NAME" variable (:constant-flag t) nil [4706 4733]))          
+    :file "backward_compatibility.h"
+    :pointmax 4793
+    :fsize 4792
+    :lastmodtime '(21845 53585 916594 503000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("TLOG_TRACE" (spp-arg-list ("MESSAGE") 968 . 977) . 
+              ((DO "do" 981 . 983) (semantic-list "{ TLOG( this, TDETAIL)  << MESSAGE ;}" 984 . 1021) (WHILE "while" 1022 . 1027) (semantic-list "(0)" 1027 . 1030) (punctuation ";" 1030 . 1031)))
+          ("TLOGGER_BACKWARD_COMPATIBILITY_H")
+          ("TLOG_ERROR" (spp-arg-list ("MESSAGE") 1140 . 1149) . 
+              ((DO "do" 1153 . 1155) (semantic-list "{ TLOG( this, TERROR) << MESSAGE ;}" 1156 . 1191) (WHILE "while" 1192 . 1197) (semantic-list "(0)" 1197 . 1200) (punctuation ";" 1200 . 1201)))
+          ("TLOG_PERF" (spp-arg-list ("MESSAGE") 1308 . 1317) . 
+              ((DO "do" 1322 . 1324) (semantic-list "{ TLOG( this, TALWAYS)  << MESSAGE ;}" 1325 . 1362) (WHILE "while" 1363 . 1368) (semantic-list "(0)" 1368 . 1371) (punctuation ";" 1371 . 1372)))
+          ("TLOG_FUNC_ENTER" (spp-arg-list nil 1400 . 1403) . 
+              ((DO "do" 1408 . 1410) (semantic-list "{ TLOG( this, TDETAIL) << \"ENTER :: \" << __FUNCTION__;}" 1411 . 1466) (WHILE "while" 1467 . 1472) (semantic-list "(0)" 1472 . 1475) (punctuation ";" 1475 . 1476)))
+          ("TLOG_WARN" (spp-arg-list ("MESSAGE") 1053 . 1062) . 
+              ((DO "do" 1067 . 1069) (semantic-list "{ TLOG( this, TWARNING) << MESSAGE ;}" 1070 . 1107) (WHILE "while" 1108 . 1113) (semantic-list "(0)" 1113 . 1116) (punctuation ";" 1116 . 1117)))
+          ("TLOG_FUNC_EXIT" (spp-arg-list nil 1503 . 1505) . 
+              ((DO "do" 1512 . 1514) (semantic-list "{ TLOG( this, TDETAIL) << \"EXIT  :: \" << __FUNCTION__;}" 1515 . 1570) (WHILE "while" 1571 . 1576) (semantic-list "(0)" 1576 . 1579) (punctuation ";" 1579 . 1580)))
+          ("TLOG_INFO" (spp-arg-list ("MESSAGE") 883 . 892) . 
+              ((DO "do" 897 . 899) (semantic-list "{ TLOG( this, TINFO)  << MESSAGE ;}" 900 . 935) (WHILE "while" 936 . 941) (semantic-list "(0)" 941 . 944) (punctuation ";" 944 . 945)))
+          ("TLOG_FATAL" (spp-arg-list ("MESSAGE") 1224 . 1233) . 
+              ((DO "do" 1237 . 1239) (semantic-list "{ TLOG( this, TERROR)  << MESSAGE ;}" 1240 . 1276) (WHILE "while" 1277 . 1282) (semantic-list "(0)" 1282 . 1285) (punctuation ";" 1285 . 1286)))
+          ("TLOG_DUMP_MEMORY" (spp-arg-list ("msg" "_dump_memory" "_size" "_align") 2383 . 2417) . ((semantic-list "{ \\
+                  int _iCounter=0; \\
+                  std::stringstream _dump_buf;  \\
+                  while(_iCounter < _size)  { \\
+                     if(_iCounter%_align == 0) { \\
+                        _dump_buf << \"\\n\"; \\
+                        _dump_buf << \" 0x\" << hex << std::setfill('0') << std::setw(8) <<  _iCounter << \" - \" ; \\
+                     } \\
+                     _dump_buf << \" 0x\" << hex << std::setfill('0') << std::setw(2) << (unsigned int)*((unsigned char*)_dump_memory+_iCounter);  \\
+                     _iCounter++; \\
+                  } \\
+                  tcDebug( TMODULEDI(this), TLOGGER_SEVERITY_LEVEL_TINFO) << msg << \" :: \" << _dump_buf.str() << \"\\n\"; \\
+            }" 2432 . 3145)))
+          ("TLOG_REGISTER_FRIENDLY_NAME" (spp-arg-list ("friendly_name") 4733 . 4748))
+          ("TLOG_DEFINE_MODULE_LOGGER" (spp-arg-list ("module") 3646 . 3654) . 
+              ((symbol "__attribute__" 3655 . 3668) (semantic-list "((unused))" 3669 . 3679) (STATIC "static" 3680 . 3686) (symbol "TLoggerModuleMeta" 3687 . 3704) (punctuation "*" 3704 . 3705) (symbol "__tlogger_module_this" 3706 . 3727) (punctuation "=" 3728 . 3729) (symbol "tlogger_extras_bc_registerModule" 3731 . 3763) (semantic-list "( module )" 3763 . 3773) (punctuation ";" 3773 . 3774)))
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D713!src!pace!middleware!tlogger!tlogger_src!include!api!tlogger!extras!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

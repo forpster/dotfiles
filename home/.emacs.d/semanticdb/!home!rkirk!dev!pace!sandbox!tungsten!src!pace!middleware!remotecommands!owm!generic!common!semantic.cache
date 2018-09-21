@@ -1,0 +1,490 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables (list 
+   (semanticdb-table "owmCommon.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("OWMCOMMON_H_" variable (:constant-flag t) nil [682 694])
+            ("stringify" variable (:constant-flag t) nil [706 715])
+            ("stringify_literal" variable (:constant-flag t) nil [752 769])
+            ("MAX_MAC_ADD_SIZE" variable (:constant-flag t) nil [788 804])
+            ("MessageId_t" type
+               (:typedef ("_MessageId_t" type (:type "enum") nil nil)
+                :superclasses "_MessageId_t"
+                :type "typedef")
+                nil [810 2387])
+            ("_MessageId_t" type
+               (:members 
+                  ( ("OWM_TYPE_UNKNOWN" variable
+                       (:constant-flag t
+                        :default-value (872 882)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [841 882])
+                    ("OWM_TYPE_CALLERID" variable
+                       (:constant-flag t
+                        :default-value (918 928)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [887 928])
+                    ("OWM_TYPE_EAS" variable
+                       (:constant-flag t
+                        :default-value (1013 1023)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [982 1023])
+                    ("OWM_TYPE_RESET_PIN" variable
+                       (:constant-flag t
+                        :default-value (1108 1118)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1077 1118])
+                    ("OWM_TYPE_FACTORY_RESET" variable
+                       (:constant-flag t
+                        :default-value (1195 1205)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1164 1205])
+                    ("OWM_TYPE_UI_MESSAGE" variable
+                       (:constant-flag t
+                        :default-value (1278 1288)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1247 1288])
+                    ("OWM_TYPE_REBOOT_STB" variable
+                       (:constant-flag t
+                        :default-value (1391 1401)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1360 1401])
+                    ("OWM_TYPE_FORCE_TUNE" variable
+                       (:constant-flag t
+                        :default-value (1468 1478)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1437 1478])
+                    ("OWM_TYPE_FORCE_SW_DOWNLOAD" variable
+                       (:constant-flag t
+                        :default-value (1558 1568)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1527 1568])
+                    ("OWM_TYPE_FORCE_SCAN" variable
+                       (:constant-flag t
+                        :default-value (1642 1652)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1611 1652])
+                    ("OWM_TYPE_ADD_SCHEDULE_RULE" variable
+                       (:constant-flag t
+                        :default-value (1730 1740)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1699 1740])
+                    ("OWM_TYPE_DEL_SCHEDULE_RULE" variable
+                       (:constant-flag t
+                        :default-value (1866 1876)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1835 1876])
+                    ("OWM_TYPE_FORMAT_DVR" variable
+                       (:constant-flag t
+                        :default-value (2008 2018)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1977 2018])
+                    ("OWM_TYPE_SET_SETTING" variable
+                       (:constant-flag t
+                        :default-value (2120 2130)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2089 2130])
+                    ("OWM_TYPE_REMOTE_CONTROL" variable
+                       (:constant-flag t
+                        :default-value (2224 2234)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2193 2234])
+                    ("OWM_TYPE_CUSTOM" variable
+                       (:constant-flag t
+                        :default-value (2306 2316)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2275 2316]))                  
+                :type "enum")
+                nil [810 2387])
+            ("eOWM_VALIDITY_t" type
+               (:typedef ("OWM_VALIDITY" type (:type "enum") nil nil)
+                :superclasses "OWM_VALIDITY"
+                :type "typedef")
+                nil [2390 2680])
+            ("OWM_VALIDITY" type
+               (:members 
+                  ( ("OWM_VALIDITY_UNKNOWN" variable
+                       (:constant-flag t
+                        :default-value (2447 2451)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2421 2451])
+                    ("OWM_VALIDITY_IMMEDIATE" variable
+                       (:constant-flag t
+                        :default-value (2482 2486)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2456 2486])
+                    ("OWM_VALIDITY_DELAYED" variable
+                       (:constant-flag t
+                        :default-value (2517 2521)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2491 2521])
+                    ("OWM_VALIDITY_BYTIME" variable
+                       (:constant-flag t
+                        :default-value (2552 2556)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2526 2556])
+                    ("OWM_VALIDITY_NEXTREBOOT" variable
+                       (:constant-flag t
+                        :default-value (2587 2591)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2561 2591])
+                    ("OWM_VALIDITY_ONSTANDBY" variable
+                       (:constant-flag t
+                        :default-value (2622 2626)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2596 2626])
+                    ("OWM_VALIDITY_USERIDLE" variable
+                       (:constant-flag t
+                        :default-value (2657 2661)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2631 2661]))                  
+                :type "enum")
+                nil [2390 2680])
+            ("eOWM_FORCE_TUNE_TYPES_t" type
+               (:typedef ("OWM_FORCE_TUNE_TYPES" type (:type "enum") nil nil)
+                :superclasses "OWM_FORCE_TUNE_TYPES"
+                :type "typedef")
+                nil [2683 2864])
+            ("OWM_FORCE_TUNE_TYPES" type
+               (:members 
+                  ( ("OWM_FORCE_TUNE_TYPE_CHANNEL" variable
+                       (:constant-flag t
+                        :default-value (2753 2757)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2722 2757])
+                    ("OWM_FORCE_TUNE_TYPE_DVB" variable
+                       (:constant-flag t
+                        :default-value (2793 2797)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2762 2797])
+                    ("OWM_FORCE_TUNE_TYPE_CUSTOM" variable
+                       (:constant-flag t
+                        :default-value (2833 2837)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2802 2837]))                  
+                :type "enum")
+                nil [2683 2864])
+            ("eOWM_SCHEDULE_ACTION_TYPES" type
+               (:typedef ("OWM_SCHEDULE_ACTION_TYPES" type (:type "enum") nil nil)
+                :superclasses "OWM_SCHEDULE_ACTION_TYPES"
+                :type "typedef")
+                nil [2866 3059])
+            ("OWM_SCHEDULE_ACTION_TYPES" type
+               (:members 
+                  ( ("SCHEDULE_ACTION_TYPE_RECORD" variable
+                       (:constant-flag t
+                        :default-value (2942 2946)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2910 2946])
+                    ("SCHEDULE_ACTION_TYPE_NOTIFY" variable
+                       (:constant-flag t
+                        :default-value (2983 2987)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2951 2987])
+                    ("SCHEDULE_ACTION_TYPE_AUTOTUNE" variable
+                       (:constant-flag t
+                        :default-value (3024 3028)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2992 3028]))                  
+                :type "enum")
+                nil [2866 3059])
+            ("eOWM_SCHEDULE_RULE_TYPES_t" type
+               (:typedef ("OWM_SCHEDULE_RULE_TYPES" type (:type "enum") nil nil)
+                :superclasses "OWM_SCHEDULE_RULE_TYPES"
+                :type "typedef")
+                nil [3062 3420])
+            ("OWM_SCHEDULE_RULE_TYPES" type
+               (:members 
+                  ( ("OWM_SCHEDULE_RULE_TYPE_BYTIME" variable
+                       (:constant-flag t
+                        :default-value (3142 3146)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3104 3146])
+                    ("OWM_SCHEDULE_RULE_TYPE_DAILYREPEAT" variable
+                       (:constant-flag t
+                        :default-value (3189 3193)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3151 3193])
+                    ("OWM_SCHEDULE_RULE_TYPE_WEEKLYREPEAT" variable
+                       (:constant-flag t
+                        :default-value (3292 3296)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3254 3296])
+                    ("OWM_SCHEDULE_RULE_TYPE_BYEVENT" variable
+                       (:constant-flag t
+                        :default-value (3339 3343)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3301 3343])
+                    ("OWM_SCHEDULE_RULE_TYPE_SERIES" variable
+                       (:constant-flag t
+                        :default-value (3386 3390)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3348 3390]))                  
+                :type "enum")
+                nil [3062 3420])
+            ("eOWM_SECTION_TYPE_t" type
+               (:typedef ("OWM_SECTION_TYPE" type (:type "enum") nil nil)
+                :superclasses "OWM_SECTION_TYPE"
+                :type "typedef")
+                nil [3422 3541])
+            ("OWM_SECTION_TYPE" type
+               (:members 
+                  ( ("OWM_SECTION_MESSAGE" variable
+                       (:constant-flag t
+                        :default-value (3481 3485)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3457 3485])
+                    ("OWM_SECTION_BP" variable
+                       (:constant-flag t
+                        :default-value (3514 3518)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3490 3518]))                  
+                :type "enum")
+                nil [3422 3541])
+            ("eOWM_FILTER_TYPE_t" type
+               (:typedef ("OWM_FILTER_TYPE" type (:type "enum") nil nil)
+                :superclasses "OWM_FILTER_TYPE"
+                :type "typedef")
+                nil [3544 3881])
+            ("OWM_FILTER_TYPE" type
+               (:members 
+                  ( ("OWM_FILTER_TYPE_NONE" variable
+                       (:constant-flag t
+                        :default-value (3610 3616)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3578 3616])
+                    ("OWM_FILTER_TYPE_PARTNER" variable
+                       (:constant-flag t
+                        :default-value (3653 3659)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3621 3659])
+                    ("OWM_FILTER_TYPE_REGION" variable
+                       (:constant-flag t
+                        :default-value (3696 3702)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3664 3702])
+                    ("OWM_FILTER_TYPE_DEVICE_IP" variable
+                       (:constant-flag t
+                        :default-value (3739 3745)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3707 3745])
+                    ("OWM_FILTER_TYPE_DEVICE_MAC" variable
+                       (:constant-flag t
+                        :default-value (3782 3788)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3750 3788])
+                    ("OWM_FILTER_TYPE_DEVICE_CAS_ID" variable
+                       (:constant-flag t
+                        :default-value (3825 3831)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3793 3831])
+                    ("OWM_FILTER_TYPE_INVALID" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3836 3861]))                  
+                :type "enum")
+                nil [3544 3881])
+            ("eOWM_PROTOCOL_VERSION_t" type
+               (:typedef ("OWM_PROTOCOL_VERSION" type (:type "enum") nil nil)
+                :superclasses "OWM_PROTOCOL_VERSION"
+                :type "typedef")
+                nil [3883 4037])
+            ("OWM_PROTOCOL_VERSION" type
+               (:members 
+                  ( ("OWM_PROTOCOL_VERSION_1" variable
+                       (:constant-flag t
+                        :default-value (3947 3948)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3922 3948])
+                    ("OWM_PROTOCOL_VERSION_2" variable
+                       (:constant-flag t
+                        :default-value (3978 3979)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3953 3979])
+                    ("OWM_PROTOCOL_VERSION_3" variable
+                       (:constant-flag t
+                        :default-value (4009 4010)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3984 4010]))                  
+                :type "enum")
+                nil [3883 4037])
+            ("eOWM_ERROR_TYPES_t" type
+               (:typedef ("OWM_ERROR_TYPES" type (:type "enum") nil nil)
+                :superclasses "OWM_ERROR_TYPES"
+                :type "typedef")
+                nil [4039 4235])
+            ("OWM_ERROR_TYPES" type
+               (:members 
+                  ( ("OWM_FAILURE" variable
+                       (:constant-flag t
+                        :default-value (4087 4089)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4073 4089])
+                    ("OWM_SUCCESS" variable
+                       (:constant-flag t
+                        :default-value (4109 4110)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4094 4110])
+                    ("OWM_ERROR_BAD_PARAMETERS" variable
+                       (:constant-flag t
+                        :default-value (4144 4145)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4115 4145])
+                    ("OWM_ERROR_IN_GST_PIPELINE_CREATION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4150 4185])
+                    ("OWM_ERROR_ALLOC_FAILURE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4189 4213]))                  
+                :type "enum")
+                nil [4039 4235])
+            ("eOWM_SHOW_MESSAGE_TYPES_t" type
+               (:typedef ("OWM_SHOW_MESSAGE_TYPES" type (:type "enum") nil nil)
+                :superclasses "OWM_SHOW_MESSAGE_TYPES"
+                :type "typedef")
+                nil [4237 4548])
+            ("OWM_SHOW_MESSAGE_TYPES" type
+               (:members 
+                  ( ("OWM_SHOW_MESSAGE_TYPE_NONE" variable
+                       (:constant-flag t
+                        :default-value (4317 4321)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4278 4321])
+                    ("OWM_SHOW_MESSAGE_TYPE_USER_DISMISS" variable
+                       (:constant-flag t
+                        :default-value (4366 4370)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4327 4370])
+                    ("OWM_SHOW_MESSAGE_TYPE_TIMED_DISPLAY" variable
+                       (:constant-flag t
+                        :default-value (4415 4419)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4376 4419])
+                    ("OWM_SHOW_MESSAGE_TYPE_NO_DISMISS" variable
+                       (:constant-flag t
+                        :default-value (4464 4468)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4425 4468])
+                    ("OWM_SHOW_MESSAGE_TYPE_CUSTOM" variable
+                       (:constant-flag t
+                        :default-value (4513 4517)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4474 4517]))                  
+                :type "enum")
+                nil [4237 4548])
+            ("owmValidity_t" type
+               (:typedef ("_owmValidity" type (:type "struct") nil nil)
+                :superclasses "_owmValidity"
+                :type "typedef")
+                nil [4550 4693])
+            ("_owmValidity" type
+               (:members 
+                  ( ("Type" variable (:type ("quint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4583 4596])
+                    ("Timestamp" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4600 4618])
+                    ("Delay" variable (:type ("quint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4622 4636])
+                    ("Expiry" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4640 4655])
+                    ("Owner_ID" variable (:type ("quint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4659 4676]))                  
+                :type "struct")
+                nil [4550 4693])
+            ("MAX_CUSTOM_FILTER_DATA_SIZE" variable (:constant-flag t) nil [4703 4730])
+            ("owmPayloadHeader_t" type
+               (:typedef ("_owmPayloadHeader_t" type (:type "struct") nil nil)
+                :superclasses "_owmPayloadHeader_t"
+                :type "typedef")
+                nil [4736 5299])
+            ("_owmPayloadHeader_t" type
+               (:members 
+                  ( ("protocol_version" variable (:type ("quint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4776 4802])
+                    ("reserved" variable (:type ("quint8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4883 4901])
+                    ("message_type" variable (:type ("quint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4949 4971])
+                    ("message_length" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5026 5050])
+                    ("custom_filter_length" variable (:type ("quint16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5086 5116]))                  
+                :type "struct")
+                nil [4736 5299])
+            ("owmError_t" type
+               (:typedef ("eOWM_ERROR_TYPES_t" type (:type "class") nil nil)
+                :superclasses "eOWM_ERROR_TYPES_t"
+                :type "typedef")
+                nil [5302 5340])
+            ("NULL_CHECK" variable (:constant-flag t) nil [5350 5360])
+            ("IS_LITTLE_ENDIAN" variable (:constant-flag t) nil [5396 5412])
+            ("EXTRACT_UINT16" variable (:constant-flag t) nil [5537 5551])
+            ("EXTRACT_UINT32" variable (:constant-flag t) nil [5947 5961])
+            ("EXTRACT_UINT48" variable (:constant-flag t) nil [6450 6464]))          
+    :file "owmCommon.h"
+    :pointmax 7041
+    :fsize 7042
+    :lastmodtime '(21362 20468 923504 574000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAX_MAC_ADD_SIZE" . ((number "6" 807 . 808)))
+          ("EXTRACT_UINT48" (spp-arg-list ("buffer" "data") 6464 . 6478) . ((semantic-list "{ \\
+   if(false == NULL_CHECK ( buffer ) )  { \\
+   const qulonglong b0 = buffer[0], b1 = buffer[1], b2 = buffer[2], b3 = buffer[3], b4 = buffer[4], b5 = buffer[5]; \\
+   TLOG_DUMP_MEMORY ( \"UINT48 dump \", buffer, 6, 16); \\
+   bool isLittleEndian = true; \\
+   IS_LITTLE_ENDIAN(isLittleEndian) \\
+   if ( isLittleEndian ) \\
+   { \\
+      data = ( b0 << 40 ) | ( b1 << 32 ) | ( b2 << 24 ) | ( b3 << 16 ) | ( b4 << 8 ) | b5; \\
+   } \\
+   else \\
+   { \\
+      data = b0 | ( b1 << 8 ) | ( b2 << 16 ) | ( b3 << 24 ) | ( b4 << 32 ) | ( b5 << 40 ); \\
+   } \\
+   } \\
+}" 6481 . 7033)))
+          ("stringify_literal" (spp-arg-list ("x") 769 . 774) . ((punctuation "#" 775 . 776) (symbol "x" 777 . 778)))
+          ("EXTRACT_UINT16" (spp-arg-list ("buffer" "data") 5551 . 5565) . ((semantic-list "{ \\
+   if(false == NULL_CHECK ( buffer ) )  { \\
+   const unsigned char b0 = buffer[0], b1 = buffer[1]; \\
+   TLOG_DUMP_MEMORY ( \"UINT16 dump\", buffer, 2, 16); \\
+   bool isLittleEndian = true; \\
+   IS_LITTLE_ENDIAN(isLittleEndian) \\
+   if ( isLittleEndian ) \\
+   { \\
+      data = ( b0 << 8 ) | b1; \\
+   } \\
+   else \\
+   { \\
+      data = b0 | ( b1 << 8 ); \\
+   } \\
+  } \\
+}" 5568 . 5937)))
+          ("OWMCOMMON_H_")
+          ("MAX_CUSTOM_FILTER_DATA_SIZE" . ((number "100" 4731 . 4734)))
+          ("EXTRACT_UINT32" (spp-arg-list ("buffer" "data") 5961 . 5975) . ((semantic-list "{ \\
+   if(false == NULL_CHECK ( buffer ) )  { \\
+   const unsigned char b0 = buffer[0], b1 = buffer[1], b2 = buffer[2], b3 = buffer[3]; \\
+   TLOG_DUMP_MEMORY ( \"UINT32 dump \", buffer, 4, 16); \\
+   bool isLittleEndian = true; \\
+   IS_LITTLE_ENDIAN(isLittleEndian) \\
+   if ( isLittleEndian ) \\
+   { \\
+      data = ( b0 << 24 ) | ( b1 << 16 ) | ( b2 << 8 ) | b3; \\
+   } \\
+   else \\
+   { \\
+      data = b0 | ( b1 << 8 ) | ( b2 << 16 ) | ( b3 << 24 ); \\
+   } \\
+  } \\
+}" 5978 . 6440)))
+          ("stringify" (spp-arg-list ("x") 715 . 720) . ((symbol "stringify_literal" 721 . 738) (semantic-list "( x )" 738 . 743)))
+          ("NULL_CHECK" (spp-arg-list ("data") 5360 . 5366) . ((semantic-list "( NULL == data )" 5370 . 5386)))
+          ("IS_LITTLE_ENDIAN" (spp-arg-list ("data") 5412 . 5418) . ((semantic-list "{ \\
+   unsigned int i = 1; \\
+   unsigned char *c = ( unsigned char * ) &i; \\
+   data = *c?true:false; \\
+}" 5422 . 5527)))
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!remotecommands!owm!generic!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

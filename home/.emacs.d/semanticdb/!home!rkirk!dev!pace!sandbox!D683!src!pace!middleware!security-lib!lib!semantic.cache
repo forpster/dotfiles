@@ -1,0 +1,1637 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("CP" variable (:default-value ("cp")) nil [199 205])
+            ("RM" variable (:default-value ("rm")) nil [205 211])
+            ("MKDIR" variable (:default-value ("mkdir")) nil [211 223])
+            ("CC" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [223 276])
+            ("CXX" variable (:default-value ("mipsel-linux-uclibc-g++" "--sysroot=$(STAGING_PATH)")) nil [276 330])
+            ("LD" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [330 383])
+            ("AR" variable (:default-value ("mipsel-linux-uclibc-ar")) nil [383 409])
+            ("RANLIB" variable (:default-value ("mipsel-linux-uclibc-ranlib")) nil [409 443])
+            ("EXPORT_HEADERS" variable (:default-value ("../interface/security.h")) nil [444 486])
+            ("LIBS" variable (:default-value ("-lcrypto")) nil [577 591])
+            ("INCPATH" variable (:default-value ("-I../interface" "-I$(shell pwd)" "-I$(HDW_DEFS_DIR)")) nil [591 647])
+            ("LDFLAGS" variable (:default-value ("$(LDFLAGS)" "-Wl,-O1" "$(LIBS)")) nil [648 685])
+            ("CFLAGS" variable (:default-value ("$(CFLAGS)" "-Wextra")) nil [685 712])
+            ("CXXFLAGS" variable (:default-value ("$(CXXFLAGS)" "$(CFLAGS)")) nil [2021 2055])
+            ("SRCS" variable (:default-value ("security.cpp" "securecontentprocessor.cpp" "iidentifier.cpp" "identifierfactory.cpp" "isecurecontent.cpp" "securecontentfactory.cpp" "ihmac.cpp" "cryptographicfactory.cpp" "ikeyprovider.cpp" "idecrypt.cpp" "initialisationprovider.cpp" "iinitialiser.cpp" "tlvparser.cpp" "namedsemaphore.cpp" "arraystreambuf.cpp" "utilities.cpp" "ihash.cpp" "isecuredinfo.cpp" "securedinfofactory.cpp")) nil [2056 2425])
+            ("OBJS" variable (:default-value ("$(SRCS:.cpp=.o)")) nil [2425 2448])
+            ("ARCHIVE_LIBS" variable nil nil [2507 2523])
+            ("plugins/*/Makefile" include nil nil [2570 2597])
+            ("LIBRARY" variable (:default-value ("libsecurity.so")) nil [2598 2622])
+            ("ARCHIVE" variable (:default-value ("libsecurity.a")) nil [2622 2645])
+            ("LIBRARY_INSTALL_PATH" variable (:default-value ("$(STAGING_PATH)/usr/lib/$(LIBRARY)")) nil [2645 2701])
+            (".SUFFIXES" function (:arguments (".o" ".c" ".cpp")) nil [2702 2724])
+            (".cpp.o" function nil nil [2725 2786])
+            (".c.o" function nil nil [2787 2843])
+            ("install" function (:arguments ("all" "$(LIBRARY_INSTALL_PATH)" "headers_install")) nil [2844 2897])
+            ("install_pmw" function (:arguments ("all" "$(LIBRARY_INSTALL_PATH)" "headers_install")) nil [2898 2955])
+            ("all" function (:arguments ("$(LIBRARY)" "$(ARCHIVE)")) nil [2956 2983])
+            ("$(LIBRARY_INSTALL_PATH)" function (:arguments ("$(LIBRARY)")) nil [2984 3067])
+            ("headers_install" function nil nil [3068 3206])
+            ("$(LIBRARY)" function (:arguments ("$(OBJS)")) nil [3207 3321])
+            ("$(ARCHIVE)" function (:arguments ("$(OBJS)")) nil [3322 3414])
+            (".PHONY" function (:arguments ("clean")) nil [3415 3429])
+            ("clean" function nil nil [3429 3539]))          
+    :file "Makefile"
+    :pointmax 3539
+    :fsize 3538
+    :lastmodtime '(21726 4486 958296 351000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "tlvparser.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("TLV_PARSER_H__" variable (:constant-flag t) nil [32 46])
+            ("vector" include (:system-flag t) nil [48 65])
+            ("stdint.h" include (:system-flag t) nil [66 85])
+            ("Tag" type
+               (:typedef ("uint16_t" type (:type "class") nil nil)
+                :superclasses "uint16_t"
+                :type "typedef")
+                nil [87 108])
+            ("TlvParser" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [308 315])
+                    ("TlvParser" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [329 362]))                          
+                        :type ("TlvParser" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [319 363])
+                    ("TlvParser" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [367 380])
+                    ("getNextTag" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tag" variable
+                               (:reference 1
+                                :type ("Tag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [401 410])
+                            ("value" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [411 439]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [385 440])
+                    ("getSpecificTag" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tag" variable
+                               (:constant-flag t
+                                :type ("Tag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [464 478])
+                            ("value" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [479 507]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [444 514])
+                    ("exists" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tag" variable
+                               (:constant-flag t
+                                :type ("Tag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [530 544]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [518 551])
+                    ("private" label nil (reparse-symbol classsubparts) [553 561])
+                    ("TlvParser" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TlvParser" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [608 625]))                          
+                        :type ("TlvParser" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [598 626])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TlvParser" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [651 668]))                          
+                        :type ("TlvParser" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [630 669])
+                    ("getTag" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pos" variable
+                               (:reference 1
+                                :type ("std::vector::size_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [686 723])
+                            ("tag" variable
+                               (:reference 1
+                                :type ("Tag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [724 733])
+                            ("value" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [734 762]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [674 769])
+                    ("findTag" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pos" variable
+                               (:reference 1
+                                :type ("std::vector::size_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [786 823])
+                            ("tag" variable
+                               (:constant-flag t
+                                :type ("Tag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [824 838]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [773 845])
+                    ("m_data" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("uint8_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [850 878])
+                    ("m_pos" variable (:type ("std::vector::size_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [916 954]))                  
+                :type "class")
+                nil [290 1038]))          
+    :file "tlvparser.h"
+    :pointmax 1065
+    :fsize 1064
+    :lastmodtime '(21726 4486 950296 415000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("TLV_PARSER_H__")
+          )
+
+    )
+   (semanticdb-table "tlvparser.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cstring" include (:system-flag t) nil [1 19])
+            ("arpa/inet.h" include (:system-flag t) nil [20 42])
+            ("tlvparser.h" include nil nil [44 66])
+            ("tlogger.h" include nil nil [68 88])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [89 113])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [114 161])
+            ("TAG_LENGTH" variable (:constant-flag t) nil [171 181])
+            ("LENGTH_LENGTH" variable (:constant-flag t) nil [192 205])
+            ("TlvParser" function
+               (:constructor-flag t
+                :parent "TlvParser"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [230 263]))                  
+                :type ("TlvParser" type (:type "class") nil nil))
+                nil [209 296])
+            ("TlvParser" function
+               (:destructor-flag t
+                :parent "TlvParser"
+                :type "void")
+                nil [298 326])
+            ("getNextTag" function
+               (:parent "TlvParser"
+                :arguments 
+                  ( ("tag" variable
+                       (:reference 1
+                        :type ("Tag" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [574 583])
+                    ("value" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [584 612]))                  
+                :type "bool")
+                nil [547 941])
+            ("getSpecificTag" function
+               (:parent "TlvParser"
+                :arguments 
+                  ( ("tag" variable
+                       (:constant-flag t
+                        :type ("Tag" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1189 1203])
+                    ("value" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1204 1232]))                  
+                :type "bool")
+                nil [1158 1752])
+            ("exists" function
+               (:parent "TlvParser"
+                :arguments 
+                  ( ("tag" variable
+                       (:constant-flag t
+                        :type ("Tag" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1955 1969]))                  
+                :type "bool")
+                nil [1932 2052])
+            ("getTag" function
+               (:parent "TlvParser"
+                :arguments 
+                  ( ("pos" variable
+                       (:reference 1
+                        :type ("std::vector::size_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2390 2427])
+                    ("tag" variable
+                       (:reference 1
+                        :type ("Tag" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2428 2437])
+                    ("value" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2438 2466]))                  
+                :type "bool")
+                nil [2367 3640])
+            ("findTag" function
+               (:parent "TlvParser"
+                :arguments 
+                  ( ("pos" variable
+                       (:reference 1
+                        :type ("std::vector::size_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3935 3972])
+                    ("tag" variable
+                       (:constant-flag t
+                        :type ("Tag" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3973 3987]))                  
+                :type "bool")
+                nil [3911 4939]))          
+    :file "tlvparser.cpp"
+    :pointmax 4940
+    :fsize 4939
+    :lastmodtime '(21726 4487 178294 598000)
+    :unmatched-syntax '((string 140 . 159))
+    :lexical-table 
+        '(("TAG_LENGTH" . ((number "2" 182 . 183)))
+          ("LENGTH_LENGTH" . ((number "2" 206 . 207)))
+          )
+
+    )
+   (semanticdb-table "ikeyprovider.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("IKEY_PROVIDER_H__" variable (:constant-flag t) nil [35 52])
+            ("vector" include (:system-flag t) nil [54 71])
+            ("stdint.h" include (:system-flag t) nil [72 91])
+            ("SLPROCINALGORITHM" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("SL_PA_NONE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [111 122])
+                          ("SL_PA_AES128" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [161 174])
+                          ("SL_PA_TDES" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [233 300]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [93 319])
+            ("IKeyProvider" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [466 473])
+                    ("IKeyProvider" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("IKeyProvider" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [477 492])
+                    ("IKeyProvider" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [496 520])
+                    ("hasClearKey" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [525 556])
+                    ("getKeyMaterial" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [588 614]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [560 619])
+                    ("releaseKeyMaterial" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [647 673]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [623 680])
+                    ("getDerivationAlgorithm" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("SLPROCINALGORITHM" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [684 745]))                  
+                :type "class")
+                nil [445 748]))          
+    :file "ikeyprovider.h"
+    :pointmax 778
+    :fsize 777
+    :lastmodtime '(21726 4486 934296 543000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("IKEY_PROVIDER_H__")
+          )
+
+    )
+   (semanticdb-table "initialisationprovider.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [1 19])
+            ("utility" include (:system-flag t) nil [20 38])
+            ("initialisationprovider.h" include nil nil [40 75])
+            ("InitialisationProvider" function
+               (:constructor-flag t
+                :parent "InitialisationProvider"
+                :type ("InitialisationProvider" type (:type "class") nil nil))
+                nil [77 130])
+            ("InitialisationProvider" function
+               (:destructor-flag t
+                :parent "InitialisationProvider"
+                :type "void")
+                nil [132 186])
+            ("getInstance" function
+               (:parent "InitialisationProvider"
+                :type ("InitialisationProvider" type (:type "class") nil nil))
+                nil [286 428])
+            ("registerInitialiser" function
+               (:parent "InitialisationProvider"
+                :arguments 
+                  ( ("initialiser" variable
+                       (:pointer 1
+                        :type ("IInitialiser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [703 729])
+                    ("priority" variable (:type "int") (reparse-symbol arg-sub-list) [730 743]))                  
+                :type "void")
+                nil [654 844])
+            ("hasInitialisers" function
+               (:parent "InitialisationProvider"
+                :type "bool")
+                nil [1007 1098])
+            ("begin" function
+               (:parent "InitialisationProvider"
+                :type ("InitialiserIterator" type (:type "class") nil nil))
+                nil [1216 1388])
+            ("end" function
+               (:parent "InitialisationProvider"
+                :type ("InitialiserIterator" type (:type "class") nil nil))
+                nil [1518 1609])
+            ("rbegin" function
+               (:parent "InitialisationProvider"
+                :type ("InitialiserReverseIterator" type (:type "class") nil nil))
+                nil [1729 1911])
+            ("rend" function
+               (:parent "InitialisationProvider"
+                :type ("InitialiserReverseIterator" type (:type "class") nil nil))
+                nil [2057 2157])
+            ("getCryptographicFactory" function
+               (:parent "InitialisationProvider"
+                :type ("CryptographicFactory" type (:type "class") nil nil))
+                nil [2269 2371])
+            ("getIdentifierFactory" function
+               (:parent "InitialisationProvider"
+                :type ("IdentifierFactory" type (:type "class") nil nil))
+                nil [2477 2577])
+            ("getSecureContentFactory" function
+               (:parent "InitialisationProvider"
+                :type ("SecureContentFactory" type (:type "class") nil nil))
+                nil [2701 2810])
+            ("getSecuredInfoFactory" function
+               (:parent "InitialisationProvider"
+                :type ("SecuredInfoFactory" type (:type "class") nil nil))
+                nil [2927 3030]))          
+    :file "initialisationprovider.cpp"
+    :pointmax 3031
+    :fsize 3030
+    :lastmodtime '(21722 3759 205075 670000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "initialisationprovider.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("INITIALISATION_PROVIDER_H__" variable (:constant-flag t) nil [45 72])
+            ("map" include (:system-flag t) nil [74 88])
+            ("iinitialiser.h" include nil nil [90 115])
+            ("cryptographicfactory.h" include nil nil [116 149])
+            ("identifierfactory.h" include nil nil [150 180])
+            ("securecontentfactory.h" include nil nil [181 214])
+            ("securedinfofactory.h" include nil nil [215 246])
+            ("InitialiserMap" type
+               (:typedef ("std::multimap" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("IInitialiser" type (:pointer 1) nil nil)
+                          ("std::greater" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "std::multimap"
+                :type "typedef")
+                nil [248 325])
+            ("InitialiserIterator" type
+               (:typedef ("InitialiserMap::const_iterator" type (:type "class") nil nil)
+                :superclasses "InitialiserMap::const_iterator"
+                :type "typedef")
+                nil [326 385])
+            ("InitialiserReverseIterator" type
+               (:typedef ("InitialiserMap::const_reverse_iterator" type (:type "class") nil nil)
+                :superclasses "InitialiserMap::const_reverse_iterator"
+                :type "typedef")
+                nil [386 460])
+            ("InitialisationProvider" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [589 596])
+                    ("InitialisationProvider" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [600 626])
+                    ("getInstance" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type ("InitialisationProvider" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [630 675])
+                    ("registerInitialiser" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("initialiser" variable
+                               (:pointer 1
+                                :type ("IInitialiser" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [705 731])
+                            ("priority" variable (:type "int") (reparse-symbol arg-sub-list) [732 745]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [680 746])
+                    ("hasInitialisers" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [751 780])
+                    ("begin" function
+                       (:prototype-flag t
+                        :type ("InitialiserIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [784 818])
+                    ("end" function
+                       (:prototype-flag t
+                        :type ("InitialiserIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [822 854])
+                    ("rbegin" function
+                       (:prototype-flag t
+                        :type ("InitialiserReverseIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [858 900])
+                    ("rend" function
+                       (:prototype-flag t
+                        :type ("InitialiserReverseIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [904 944])
+                    ("getCryptographicFactory" function
+                       (:prototype-flag t
+                        :type ("CryptographicFactory" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [949 997])
+                    ("getIdentifierFactory" function
+                       (:prototype-flag t
+                        :type ("IdentifierFactory" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1001 1043])
+                    ("getSecureContentFactory" function
+                       (:prototype-flag t
+                        :type ("SecureContentFactory" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1047 1095])
+                    ("getSecuredInfoFactory" function
+                       (:prototype-flag t
+                        :type ("SecuredInfoFactory" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1099 1143])
+                    ("private" label nil (reparse-symbol classsubparts) [1145 1153])
+                    ("InitialisationProvider" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("InitialisationProvider" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1157 1182])
+                    ("InitialisationProvider" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InitialisationProvider" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1242 1272]))                          
+                        :type ("InitialisationProvider" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1219 1273])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InitialisationProvider" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1311 1341]))                          
+                        :type ("InitialisationProvider" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1277 1342])
+                    ("m_initialisers" variable (:type ("InitialiserMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1347 1377])
+                    ("m_cryptoFactory" variable (:type ("CryptographicFactory" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1422 1459])
+                    ("m_identifierFactory" variable (:type ("IdentifierFactory" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1512 1550])
+                    ("m_secureContentFactory" variable (:type ("SecureContentFactory" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1600 1644])
+                    ("m_securedInfoFactory" variable (:type ("SecuredInfoFactory" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1708 1748]))                  
+                :type "class")
+                nil [558 1799]))          
+    :file "initialisationprovider.h"
+    :pointmax 1839
+    :fsize 1838
+    :lastmodtime '(21722 3759 20077 132000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("INITIALISATION_PROVIDER_H__")
+          )
+
+    )
+   (semanticdb-table "security.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [1 19])
+            ("stdexcept" include (:system-flag t) nil [20 40])
+            ("cstring" include (:system-flag t) nil [41 59])
+            ("ext/stdio_filebuf.h" include (:system-flag t) nil [60 90])
+            ("ostream" include (:system-flag t) nil [91 109])
+            ("fstream" include (:system-flag t) nil [110 128])
+            ("string" include (:system-flag t) nil [129 146])
+            ("algorithm" include (:system-flag t) nil [147 167])
+            ("unistd.h" include (:system-flag t) nil [168 187])
+            ("sys/types.h" include (:system-flag t) nil [188 210])
+            ("cstdio" include (:system-flag t) nil [211 228])
+            ("sstream" include (:system-flag t) nil [229 247])
+            ("openssl/crypto.h" include (:system-flag t) nil [249 276])
+            ("security.h" include nil nil [278 299])
+            ("securecontentprocessor.h" include nil nil [300 335])
+            ("initialisationprovider.h" include nil nil [336 371])
+            ("arraystreambuf.h" include nil nil [372 399])
+            ("tlogger.h" include nil nil [401 421])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [422 446])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [447 494])
+            ("identify" function
+               (:arguments 
+                  ( ("inData" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [630 657]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [612 1774])
+            ("identifyFile" function
+               (:arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1912 1925]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [1890 2839])
+            ("identifyFileOffset" function
+               (:arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3034 3047])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [3048 3071])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [3072 3093]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [3006 3996])
+            ("unProtectFile" function
+               (:arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4125 4138])
+                    ("outFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4139 4153]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [4102 5395])
+            ("unProtectFileOffset" function
+               (:arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5530 5543])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [5544 5567])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [5568 5589])
+                    ("outFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5590 5604]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [5501 6846])
+            ("unProtectFileToBuffer" function
+               (:arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7007 7020])
+                    ("outData" variable
+                       (:pointer 1
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7021 7043]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [6976 8309])
+            ("unProtectFileOffsetToBuffer" function
+               (:arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8476 8489])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [8490 8513])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [8514 8535])
+                    ("outData" variable
+                       (:pointer 1
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8536 8558]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [8439 9903])
+            ("unProtect" function
+               (:arguments 
+                  ( ("inData" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10053 10080])
+                    ("outData" variable
+                       (:pointer 1
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10081 10103]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [10034 11597])
+            ("verifyFileOffset" function
+               (:arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11710 11723])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [11724 11747])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [11748 11769]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [11684 12743])
+            ("verifyFile" function
+               (:arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12815 12828]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [12795 13808])
+            ("verify" function
+               (:arguments 
+                  ( ("inData" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13878 13905]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [13862 15073])
+            ("unProtectRelease" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15148 15167]))                  
+                :type "void")
+                nil [15126 16040])
+            ("initialise" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16114 16119]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [16094 17060])
+            ("deinitialise" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17135 17140]))                  
+                :type "void")
+                nil [17117 17585])
+            ("getSecuredInfo" function
+               (:arguments 
+                  ( ("inData" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17666 17693])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("SLINFOTYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17694 17711])
+                    ("info" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [17712 17724]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [17642 19019])
+            ("getSecuredInfoFile" function
+               (:arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19104 19117])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("SLINFOTYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19118 19135])
+                    ("info" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19136 19148]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [19076 20307])
+            ("getSecuredInfoFileOffset" function
+               (:arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20398 20411])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [20412 20435])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [20436 20457])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("SLINFOTYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20458 20475])
+                    ("info" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [20476 20488]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [20364 21640])
+            ("securedInfoRelease" function
+               (:arguments 
+                  ( ("type" variable (:type ("SLINFOTYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21711 21727])
+                    ("info" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [21728 21739]))                  
+                :type "void")
+                nil [21687 22472]))          
+    :file "security.cpp"
+    :pointmax 22473
+    :fsize 22472
+    :lastmodtime '(21722 3759 202075 693000)
+    :unmatched-syntax '((string 473 . 492))
+    )
+   (semanticdb-table "securecontentprocessor.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SECURE_CONTENT_PROCESSOR_H__" variable (:constant-flag t) nil [46 74])
+            ("iostream" include (:system-flag t) nil [76 95])
+            ("string" include (:system-flag t) nil [96 113])
+            ("memory" include (:system-flag t) nil [114 131])
+            ("security.h" include nil nil [132 153])
+            ("iidentifier.h" include nil nil [154 178])
+            ("identifierfactory.h" include nil nil [179 209])
+            ("securecontentfactory.h" include nil nil [210 243])
+            ("securedinfofactory.h" include nil nil [244 275])
+            ("SecureContentProcessor" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [432 439])
+                    ("SecureContentProcessor" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("identifierFactory" variable
+                               (:reference 1
+                                :type ("IdentifierFactory" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [466 503])
+                            ("secureContentFactory" variable
+                               (:reference 1
+                                :type ("SecureContentFactory" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [504 547])
+                            ("infoFactory" variable
+                               (:reference 1
+                                :type ("SecuredInfoFactory" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [574 606]))                          
+                        :type ("SecureContentProcessor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [443 607])
+                    ("SecureContentProcessor" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [611 637])
+                    ("unProtect" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [661 682])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [683 706])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [707 728])
+                            ("outData" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [729 751]))                          
+                        :type ("SLSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [642 758])
+                    ("verify" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [778 799])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [800 823])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [824 845]))                          
+                        :type ("SLSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [762 852])
+                    ("identify" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [870 891])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [892 915])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [916 937]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [856 944])
+                    ("getSecuredInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [972 993])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [994 1017])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [1018 1039])
+                            ("type" variable
+                               (:pointer 1
+                                :type ("SLINFOTYPE" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1040 1057])
+                            ("info" variable
+                               (:pointer 2
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [1058 1070]))                          
+                        :type ("SLSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [948 1077])
+                    ("private" label nil (reparse-symbol classsubparts) [1079 1087])
+                    ("SecureContentProcessor" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SecureContentProcessor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1147 1177]))                          
+                        :type ("SecureContentProcessor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1124 1178])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SecureContentProcessor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1216 1246]))                          
+                        :type ("SecureContentProcessor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1182 1247])
+                    ("identifyType" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1270 1291])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [1292 1315])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [1316 1337])
+                            ("type" variable
+                               (:reference 1
+                                :type ("std::auto_ptr" type
+                                     (:template-specifier 
+                                        ( ("IIdentifier" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1338 1371]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1252 1378])
+                    ("m_identifierFactory" variable (:type ("IdentifierFactory" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1383 1422])
+                    ("m_secureContentFactory" variable (:type ("SecureContentFactory" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1457 1502])
+                    ("m_infoFactory" variable (:type ("SecuredInfoFactory" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1537 1571]))                  
+                :type "class")
+                nil [401 1603]))          
+    :file "securecontentprocessor.h"
+    :pointmax 1644
+    :fsize 1643
+    :lastmodtime '(21722 3759 18077 148000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SECURE_CONTENT_PROCESSOR_H__")
+          )
+
+    )
+   (semanticdb-table "arraystreambuf.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ARRAY_STREAM_BUF_H__" variable (:constant-flag t) nil [38 58])
+            ("streambuf" include (:system-flag t) nil [60 80])
+            ("cstdio" include (:system-flag t) nil [81 98])
+            ("ArrayStreamBuf" type
+               (:superclasses 
+                  ( ("std::streambuf" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [199 206])
+                    ("ArrayStreamBuf" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("bufferSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [225 244])
+                            ("" variable (:type ("BUFSIZ" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [245 252])
+                            ("bufferIncrementSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [253 281])
+                            ("" variable (:type ("BUFSIZ" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [282 289]))                          
+                        :type ("ArrayStreamBuf" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [210 290])
+                    ("ArrayStreamBuf" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("buffer" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [309 322])
+                            ("bufferSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [323 341]))                          
+                        :type ("ArrayStreamBuf" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [294 342])
+                    ("ArrayStreamBuf" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [346 372])
+                    ("releaseBuffer" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 2
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [396 407])
+                            ("length" variable
+                               (:reference 1
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [408 423]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [377 424])
+                    ("data" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [428 453])
+                    ("size" function
+                       (:prototype-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [457 477])
+                    ("protected" label nil (reparse-symbol classsubparts) [479 489])
+                    ("overflow" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("ch" variable (:type ("int_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [519 531]))                          
+                        :type ("int_type" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [493 532])
+                    ("seekoff" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("off" variable (:type ("std::streamoff" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [567 586])
+                            ("way" variable (:type ("std::ios_base::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [587 614])
+                            ("which" variable (:type ("std::ios_base::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [649 680])
+                            ("" variable (:type ("std::ios_base::in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [681 700])
+                            ("" variable (:type ("std::ios_base::out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [701 720]))                          
+                        :type ("std::streampos" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [536 721])
+                    ("seekpos" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("sp" variable (:type ("std::streampos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [756 774])
+                            ("which" variable (:type ("std::ios_base::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [775 806])
+                            ("" variable (:type ("std::ios_base::in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [807 826])
+                            ("" variable (:type ("std::ios_base::out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [827 846]))                          
+                        :type ("std::streampos" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [725 847])
+                    ("private" label nil (reparse-symbol classsubparts) [849 857])
+                    ("m_buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [861 876])
+                    ("m_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [880 894])
+                    ("m_increment" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [898 923])
+                    ("m_dynamic" variable (:type "bool") (reparse-symbol classsubparts) [927 942]))                  
+                :type "class")
+                nil [152 945]))          
+    :file "arraystreambuf.h"
+    :pointmax 978
+    :fsize 977
+    :lastmodtime '(21722 3759 19077 140000)
+    :unmatched-syntax '((punctuation 825 . 826) (punctuation 805 . 806) (punctuation 699 . 700) (punctuation 679 . 680) (punctuation 280 . 281) (punctuation 243 . 244))
+    :lexical-table 
+        '(("ARRAY_STREAM_BUF_H__")
+          )
+
+    )
+   (semanticdb-table "iinitialiser.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iinitialiser.h" include nil nil [1 26])
+            ("initialisationprovider.h" include nil nil [27 62])
+            ("IInitialiser" function
+               (:constructor-flag t
+                :parent "IInitialiser"
+                :arguments 
+                  ( ("priority" variable (:type "int") (reparse-symbol arg-sub-list) [91 104]))                  
+                :type ("IInitialiser" type (:type "class") nil nil))
+                nil [64 164])
+            ("IInitialiser" function
+               (:destructor-flag t
+                :parent "IInitialiser"
+                :type "void")
+                nil [166 200])
+            ("addRef" function
+               (:parent "IInitialiser"
+                :type "bool")
+                nil [357 466])
+            ("decRef" function
+               (:parent "IInitialiser"
+                :type "bool")
+                nil [620 729])
+            ("registerInstance" function
+               (:parent "IInitialiser"
+                :arguments 
+                  ( ("priority" variable (:type "int") (reparse-symbol arg-sub-list) [823 836]))                  
+                :type "void")
+                nil [787 918])
+            ("getRefCount" function
+               (:parent "IInitialiser"
+                :type "unsigned int")
+                nil [1008 1086]))          
+    :file "iinitialiser.cpp"
+    :pointmax 1087
+    :fsize 1086
+    :lastmodtime '(21722 3759 204075 677000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "iinitialiser.h"
+    :file "iinitialiser.h"
+    :fsize 639
+    :lastmodtime '(21722 3759 19077 140000)
+    )
+   (semanticdb-table "cryptographicfactory.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("CRYPTOGRAPHIC_FACTORY_H__" variable (:constant-flag t) nil [43 68])
+            ("vector" include (:system-flag t) nil [70 87])
+            ("memory" include (:system-flag t) nil [88 105])
+            ("ihmac.h" include nil nil [106 124])
+            ("idecrypt.h" include nil nil [125 146])
+            ("ihash.h" include nil nil [147 165])
+            ("CryptographicFactory" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [277 284])
+                    ("CryptographicFactory" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("CryptographicFactory" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [288 311])
+                    ("CryptographicFactory" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [315 339])
+                    ("registerHmac" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("provider" variable
+                               (:pointer 1
+                                :type ("IHmac" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [362 378]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [344 379])
+                    ("deregisterHmac" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("type" variable (:type ("HMAC_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [403 418]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [383 419])
+                    ("registerDecrypter" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("provider" variable
+                               (:pointer 1
+                                :type ("IDecrypt" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [446 465]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [423 466])
+                    ("deregisterDecrypter" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("type" variable (:type ("DECRYPTION_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [495 516]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [470 517])
+                    ("registerHash" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("provider" variable
+                               (:pointer 1
+                                :type ("IHash" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [539 555]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [521 556])
+                    ("deregisterHash" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("type" variable (:type ("HASH_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [580 595]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [560 596])
+                    ("getHmac" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("type" variable (:type ("HMAC_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [629 644]))                          
+                        :type ("std::auto_ptr" type
+                             (:template-specifier 
+                                ( ("IHmac" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [600 651])
+                    ("getDecrypter" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("type" variable (:type ("DECRYPTION_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [692 713]))                          
+                        :type ("std::auto_ptr" type
+                             (:template-specifier 
+                                ( ("IDecrypt" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [655 720])
+                    ("getHash" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("type" variable (:type ("HASH_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [753 768]))                          
+                        :type ("std::auto_ptr" type
+                             (:template-specifier 
+                                ( ("IHash" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [724 775])
+                    ("private" label nil (reparse-symbol classsubparts) [777 785])
+                    ("CryptographicFactory" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CryptographicFactory" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [843 871]))                          
+                        :type ("CryptographicFactory" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [822 872])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CryptographicFactory" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [908 936]))                          
+                        :type ("CryptographicFactory" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [876 937])
+                    ("m_hmacProviders" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("IHmac" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [942 978])
+                    ("m_decryptionProviders" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("IDecrypt" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1038 1083])
+                    ("m_hashProviders" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("IHash" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1149 1185]))                  
+                :type "class")
+                nil [248 1244]))          
+    :file "cryptographicfactory.h"
+    :pointmax 1282
+    :fsize 1281
+    :lastmodtime '(21722 3759 17077 156000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("CRYPTOGRAPHIC_FACTORY_H__")
+          )
+
+    )
+   (semanticdb-table "identifierfactory.h"
+    :file "identifierfactory.h"
+    :fsize 801
+    :lastmodtime '(21722 3759 17077 156000)
+    )
+   (semanticdb-table "securecontentfactory.h"
+    :file "securecontentfactory.h"
+    :fsize 864
+    :lastmodtime '(21722 3759 203075 685000)
+    )
+   (semanticdb-table "securedinfofactory.h"
+    :file "securedinfofactory.h"
+    :fsize 929
+    :lastmodtime '(21722 3759 202075 693000)
+    )
+   (semanticdb-table "ihmac.h"
+    :file "ihmac.h"
+    :fsize 1017
+    :lastmodtime '(21722 3759 204075 677000)
+    )
+   (semanticdb-table "idecrypt.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("IDECRYPT_H__" variable (:constant-flag t) nil [30 42])
+            ("memory" include (:system-flag t) nil [44 61])
+            ("vector" include (:system-flag t) nil [62 79])
+            ("ostream" include (:system-flag t) nil [80 98])
+            ("ikeyprovider.h" include nil nil [100 125])
+            ("DECRYPTION_TYPE" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("DECRYPTION_TYPE_AES_128_CBC" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [218 246])
+                          ("DECRYPTION_TYPE_RANDOM_KEY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [281 308])
+                          ("DECRYPTION_TYPE_AES_128_ECB" variable
+                             (:constant-flag t
+                              :default-value (429 496)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [399 496]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [200 513])
+            ("IDecrypt" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [649 656])
+                    ("IDecrypt" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type ("DECRYPTION_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [669 685]))                          
+                        :type ("IDecrypt" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [660 686])
+                    ("IDecrypt" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [690 710])
+                    ("clone" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::auto_ptr" type
+                             (:template-specifier 
+                                ( ("IDecrypt" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [715 765])
+                    ("supportsType" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("type" variable (:type ("DECRYPTION_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [787 808]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [769 815])
+                    ("getType" function
+                       (:prototype-flag t
+                        :type ("DECRYPTION_TYPE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [819 851])
+                    ("init" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("keyProvider" variable (:type ("std::auto_ptr" type
+                                 (:template-specifier 
+                                    ( ("IKeyProvider" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [874 914])
+                            ("iv" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [915 946]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [856 951])
+                    ("init" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("keyProvider" variable (:type ("std::auto_ptr" type
+                                 (:template-specifier 
+                                    ( ("IKeyProvider" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [973 1013]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [955 1018])
+                    ("update" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1041 1074])
+                            ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1075 1093]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1022 1098])
+                    ("final" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1120 1138]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1102 1143])
+                    ("protected" label nil (reparse-symbol classsubparts) [1145 1155])
+                    ("m_keyProvider" variable (:type ("std::auto_ptr" type
+                         (:template-specifier 
+                            ( ("IKeyProvider" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1159 1201])
+                    ("private" label nil (reparse-symbol classsubparts) [1276 1284])
+                    ("m_type" variable (:type ("DECRYPTION_TYPE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1288 1311]))                  
+                :type "class")
+                nil [632 1384]))          
+    :file "idecrypt.h"
+    :pointmax 1409
+    :fsize 1408
+    :lastmodtime '(21726 4487 193294 478000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("IDECRYPT_H__")
+          )
+
+    )
+   (semanticdb-table "ihash.h"
+    :file "ihash.h"
+    :fsize 750
+    :lastmodtime '(21722 3759 16077 164000)
+    )
+   (semanticdb-table "arraystreambuf.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [1 19])
+            ("cstdlib" include (:system-flag t) nil [20 38])
+            ("openssl/crypto.h" include (:system-flag t) nil [39 66])
+            ("arraystreambuf.h" include nil nil [68 95])
+            ("ArrayStreamBuf" function
+               (:constructor-flag t
+                :parent "ArrayStreamBuf"
+                :arguments 
+                  ( ("bufferSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [490 508])
+                    ("bufferIncrementSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [509 536]))                  
+                :type ("ArrayStreamBuf" type (:type "class") nil nil))
+                nil [459 780])
+            ("ArrayStreamBuf" function
+               (:constructor-flag t
+                :parent "ArrayStreamBuf"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1024 1037])
+                    ("bufferSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1038 1056]))                  
+                :type ("ArrayStreamBuf" type (:type "class") nil nil))
+                nil [993 1184])
+            ("ArrayStreamBuf" function
+               (:destructor-flag t
+                :parent "ArrayStreamBuf"
+                :type "void")
+                nil [1186 1501])
+            ("overflow" function
+               (:parent "ArrayStreamBuf"
+                :arguments 
+                  ( ("ch" variable (:type ("std::streambuf::int_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1840 1868]))                  
+                :type ("std::streambuf::int_type" type (:type "class") nil nil))
+                nil [1790 3462])
+            ("releaseBuffer" function
+               (:parent "ArrayStreamBuf"
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3811 3822])
+                    ("length" variable
+                       (:reference 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3823 3838]))                  
+                :type "void")
+                nil [3776 4138])
+            ("seekoff" function
+               (:parent "ArrayStreamBuf"
+                :arguments 
+                  ( ("off" variable (:type ("std::streamoff" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4559 4578])
+                    ("way" variable (:type ("std::ios_base::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4579 4606])
+                    ("which" variable (:type ("std::ios_base::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4607 4637]))                  
+                :type ("std::streampos" type (:type "class") nil nil))
+                nil [4520 7240])
+            ("seekpos" function
+               (:parent "ArrayStreamBuf"
+                :arguments 
+                  ( ("sp" variable (:type ("std::streampos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7595 7613])
+                    ("which" variable (:type ("std::ios_base::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7614 7644]))                  
+                :type ("std::streampos" type (:type "class") nil nil))
+                nil [7556 8188])
+            ("data" function
+               (:pointer 1
+                :parent "ArrayStreamBuf"
+                :constant-flag t
+                :type "char")
+                nil [8358 8422])
+            ("size" function
+               (:parent "ArrayStreamBuf"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [8552 8620]))          
+    :file "arraystreambuf.cpp"
+    :pointmax 8621
+    :fsize 8620
+    :lastmodtime '(21726 4487 186294 534000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "iidentifier.h"
+    :file "iidentifier.h"
+    :fsize 665
+    :lastmodtime '(21722 3759 16077 164000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D683!src!pace!middleware!security-lib!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

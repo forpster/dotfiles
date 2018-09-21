@@ -1,0 +1,483 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("CP" variable (:default-value ("cp")) nil [1 7])
+            ("RM" variable (:default-value ("rm")) nil [7 13])
+            ("MKDIR" variable (:default-value ("mkdir")) nil [13 25])
+            ("CC" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [25 78])
+            ("CXX" variable (:default-value ("mipsel-linux-uclibc-g++" "--sysroot=$(STAGING_PATH)")) nil [78 132])
+            ("LD" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [132 185])
+            ("AR" variable (:default-value ("mipsel-linux-uclibc-ar")) nil [185 211])
+            ("RANLIB" variable (:default-value ("mipsel-linux-uclibc-ranlib")) nil [211 245])
+            ("EXPORT_HEADERS" variable (:default-value ("../interface/ddapfactory.h" "../interface/iddapauthenticationtoken.h" "../interface/iddapauthenticationtokenvalidator.h" "../interface/iddapauthenticator.h" "../interface/iddapclient.h" "../interface/iddapprotectedtoken.h")) nil [246 496])
+            ("LIBS" variable nil nil [497 504])
+            ("INCPATH" variable (:default-value ("-I../interface" "-I$(shell pwd)" "-I$(shell pwd)/psec")) nil [504 563])
+            ("LDFLAGS" variable (:default-value ("$(LDFLAGS)" "-Wl,-O1" "$(LIBS)")) nil [564 601])
+            ("CFLAGS" variable (:default-value ("$(CFLAGS)" "-Wextra")) nil [601 628])
+            ("CXXFLAGS" variable (:default-value ("$(CXXFLAGS)" "$(CFLAGS)")) nil [628 662])
+            ("SRCS" variable (:default-value ("ddapfactory.cpp" "ddapfactoryimpl.cpp" "iddapauthenticationtoken.cpp" "iddapauthenticationtokenvalidator.cpp" "iddapauthenticator.cpp" "iddapprotectedtoken.cpp" "iddapclient.cpp")) nil [663 845])
+            ("SRCS" variable (:default-value ("psec/psecauthenticator.cpp" "psec/psecclient.cpp" "psec/psecauthenticationtoken.cpp" "psec/psecprotectedtoken.cpp")) nil [948 1064])
+            ("OBJS" variable (:default-value ("$(SRCS:.cpp=.o)")) nil [1065 1088])
+            ("LIBRARY" variable (:default-value ("libddapauth.so")) nil [1089 1113])
+            ("LIBRARY_INSTALL_PATH" variable (:default-value ("$(STAGING_PATH)/usr/lib/$(LIBRARY)")) nil [1113 1169])
+            (".SUFFIXES" function (:arguments (".o" ".c" ".cpp")) nil [1170 1192])
+            (".cpp.o" function nil nil [1193 1254])
+            (".c.o" function nil nil [1255 1311])
+            ("install" function (:arguments ("all" "$(LIBRARY_INSTALL_PATH)" "headers_install")) nil [1312 1365])
+            ("install_pmw" function (:arguments ("all" "$(LIBRARY_INSTALL_PATH)" "headers_install")) nil [1366 1423])
+            ("all" function (:arguments ("$(LIBRARY)")) nil [1424 1440])
+            ("$(LIBRARY_INSTALL_PATH)" function (:arguments ("$(LIBRARY)")) nil [1441 1524])
+            ("headers_install" function nil nil [1525 1663])
+            ("$(LIBRARY)" function (:arguments ("$(OBJS)")) nil [1664 1762])
+            (".PHONY" function (:arguments ("clean")) nil [1763 1777])
+            ("clean" function nil nil [1777 1876]))          
+    :file "Makefile"
+    :pointmax 1876
+    :fsize 1875
+    :lastmodtime '(21853 41767 798480 909000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "iddapauthenticator.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iddapauthenticator.h" include nil nil [1 32])
+            ("DDAPAUTH" using (:type ("DDAPAUTH" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [34 59])
+            ("IDdapAuthenticator" function
+               (:constructor-flag t
+                :parent "IDdapAuthenticator"
+                :type ("IDdapAuthenticator" type (:type "class") nil nil))
+                nil [61 106])
+            ("IDdapAuthenticator" function
+               (:destructor-flag t
+                :parent "IDdapAuthenticator"
+                :type "void")
+                nil [108 154]))          
+    :file "iddapauthenticator.cpp"
+    :pointmax 155
+    :fsize 154
+    :lastmodtime '(21851 11976 785365 77000)
+    :unmatched-syntax '((punctuation 53 . 54) (punctuation 52 . 53) (symbol 34 . 52) (punctuation 53 . 54) (punctuation 52 . 53) (symbol 34 . 52))
+    )
+   (semanticdb-table "iddapclient.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iddapclient.h" include nil nil [1 25])
+            ("DDAPAUTH" using (:type ("DDAPAUTH" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [27 52])
+            ("IDdapClient" function
+               (:constructor-flag t
+                :parent "IDdapClient"
+                :type ("IDdapClient" type (:type "class") nil nil))
+                nil [54 85])
+            ("IDdapClient" function
+               (:destructor-flag t
+                :parent "IDdapClient"
+                :type "void")
+                nil [87 119]))          
+    :file "iddapclient.cpp"
+    :pointmax 120
+    :fsize 119
+    :lastmodtime '(21851 11985 81318 532000)
+    :unmatched-syntax '((punctuation 75 . 76) (punctuation 74 . 75) (symbol 63 . 74) (punctuation 39 . 40) (punctuation 38 . 39) (symbol 27 . 38))
+    )
+   (semanticdb-table "ddapfactory.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ddapfactory.h" include nil nil [1 25])
+            ("ddapfactoryimpl.h" include nil nil [26 54])
+            ("DDAPAUTH" using (:type ("DDAPAUTH" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [56 81])
+            ("DdapFactory" function
+               (:constructor-flag t
+                :parent "DdapFactory"
+                :arguments 
+                  ( ("type" variable (:type ("DdapFactoryType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [108 129]))                  
+                :type ("DdapFactory" type (:type "class") nil nil))
+                nil [83 173])
+            ("DdapFactory" function
+               (:destructor-flag t
+                :parent "DdapFactory"
+                :type "void")
+                nil [175 207])
+            ("createAuthenticator" function
+               (:parent "DdapFactory"
+                :type ("boost::shared_ptr" type
+                     (:template-specifier 
+                        ( ("IDdapAuthenticator" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [330 541])
+            ("createAuthenticationToken" function
+               (:parent "DdapFactory"
+                :type ("boost::shared_ptr" type
+                     (:template-specifier 
+                        ( ("IDdapAuthenticationToken" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [667 902])
+            ("createAuthenticationToken" function
+               (:parent "DdapFactory"
+                :arguments 
+                  ( ("tokenData" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("DdapTokenData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1176 1207]))                  
+                :type ("boost::shared_ptr" type
+                     (:template-specifier 
+                        ( ("IDdapAuthenticationToken" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1093 1367])
+            ("createProtectedToken" function
+               (:parent "DdapFactory"
+                :type ("boost::shared_ptr" type
+                     (:template-specifier 
+                        ( ("IDdapProtectedToken" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1483 1698])
+            ("createProtectedToken" function
+               (:parent "DdapFactory"
+                :arguments 
+                  ( ("protectedData" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("DdapProtectedTokenData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1966 2010]))                  
+                :type ("boost::shared_ptr" type
+                     (:template-specifier 
+                        ( ("IDdapProtectedToken" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1893 2164])
+            ("createClientDetails" function
+               (:parent "DdapFactory"
+                :type ("boost::shared_ptr" type
+                     (:template-specifier 
+                        ( ("IDdapClient" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2259 2456]))          
+    :file "ddapfactory.cpp"
+    :pointmax 2457
+    :fsize 2456
+    :lastmodtime '(21852 27455 883457 735000)
+    :unmatched-syntax '((CONST 2312 . 2317) (semantic-list 2309 . 2311) (symbol 2290 . 2309) (punctuation 2288 . 2289) (symbol 2277 . 2288) (punctuation 2276 . 2277) (symbol 2266 . 2276) (punctuation 2265 . 2266) (punctuation 2264 . 2265) (symbol 2259 . 2264) (CONST 2312 . 2317) (semantic-list 2309 . 2311))
+    )
+   (semanticdb-table "iddapauthenticationtokenvalidator.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iddapauthenticationtokenvalidator.h" include nil nil [1 47])
+            ("DDAPAUTH" using (:type ("DDAPAUTH" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [49 74])
+            ("IDdapAuthenticationTokenValidator" function
+               (:constructor-flag t
+                :parent "IDdapAuthenticationTokenValidator"
+                :type ("IDdapAuthenticationTokenValidator" type (:type "class") nil nil))
+                nil [76 151])
+            ("IDdapAuthenticationTokenValidator" function
+               (:destructor-flag t
+                :parent "IDdapAuthenticationTokenValidator"
+                :type "void")
+                nil [153 229]))          
+    :file "iddapauthenticationtokenvalidator.cpp"
+    :pointmax 230
+    :fsize 229
+    :lastmodtime '(21851 11941 601564 383000)
+    :unmatched-syntax '((punctuation 163 . 164) (punctuation 162 . 163) (symbol 129 . 162) (symbol 84 . 117) (punctuation 83 . 84) (punctuation 82 . 83) (symbol 49 . 82) (punctuation 83 . 84) (punctuation 82 . 83) (symbol 49 . 82))
+    )
+   (semanticdb-table "iddapauthenticationtoken.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iddapauthenticationtoken.h" include nil nil [1 38])
+            ("DDAPAUTH" using (:type ("DDAPAUTH" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [40 65])
+            ("IDdapAuthenticationToken" function
+               (:constructor-flag t
+                :parent "IDdapAuthenticationToken"
+                :type ("IDdapAuthenticationToken" type (:type "class") nil nil))
+                nil [67 124])
+            ("IDdapAuthenticationToken" function
+               (:destructor-flag t
+                :parent "IDdapAuthenticationToken"
+                :type "void")
+                nil [126 184]))          
+    :file "iddapauthenticationtoken.cpp"
+    :pointmax 185
+    :fsize 184
+    :lastmodtime '(21851 11929 833631 45000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "iddapprotectedtoken.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iddapprotectedtoken.h" include nil nil [1 33])
+            ("DDAPAUTH" using (:type ("DDAPAUTH" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [35 60])
+            ("IDdapProtectedToken" function
+               (:constructor-flag t
+                :parent "IDdapProtectedToken"
+                :type ("IDdapProtectedToken" type (:type "class") nil nil))
+                nil [62 109])
+            ("IDdapProtectedToken" function
+               (:destructor-flag t
+                :parent "IDdapProtectedToken"
+                :type "void")
+                nil [111 159]))          
+    :file "iddapprotectedtoken.cpp"
+    :pointmax 160
+    :fsize 159
+    :lastmodtime '(21851 11994 985263 144000)
+    :unmatched-syntax 'nil
+    )
+    (semanticdb-table "ddapfactoryimpl.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("DDAPFACTORYIMPL_H" variable (:constant-flag t) nil [35 52])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [54 85])
+            ("ddapfactory.h" include nil nil [86 110])
+            ("iddapauthenticator.h" include nil nil [111 142])
+            ("iddapauthenticationtoken.h" include nil nil [143 180])
+            ("iddapprotectedtoken.h" include nil nil [181 213])
+            ("DDAPAUTH" type
+               (:members 
+                  ( ("DdapFactoryImpl" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [316 323])
+                            ("DdapFactoryImpl" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("type" variable (:type ("DdapFactoryType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [343 364]))                                  
+                                :type ("DdapFactoryImpl" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [327 365])
+                            ("DdapFactoryImpl" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [369 388])
+                            ("createAuthenticator" function
+                               (:prototype-flag t
+                                :type ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("IDdapAuthenticator" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [393 459])
+                            ("createAuthenticationToken" function
+                               (:prototype-flag t
+                                :type ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("IDdapAuthenticationToken" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [463 541])
+                            ("createAuthenticationToken" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("tokenData" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DdapTokenData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [615 646]))                                  
+                                :type ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("IDdapAuthenticationToken" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [545 653])
+                            ("createProtectedToken" function
+                               (:prototype-flag t
+                                :type ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("IDdapProtectedToken" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [657 725])
+                            ("createProtectedToken" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("protectedData" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DdapProtectedTokenData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [789 833]))                                  
+                                :type ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("IDdapProtectedToken" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [729 840])
+                            ("createClientDetails" function
+                               (:prototype-flag t
+                                :type ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("IDdapClient" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [844 903])
+                            ("private" label nil (reparse-symbol classsubparts) [905 913])
+                            ("DdapFactoryImpl" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DdapFactoryImpl" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [966 989]))                                  
+                                :type ("DdapFactoryImpl" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [950 990])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DdapFactoryImpl" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1021 1044]))                                  
+                                :type ("DdapFactoryImpl" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [994 1045])
+                            ("m_type" variable (:type ("DdapFactoryType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1050 1073]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [292 1076]))                  
+                :type "namespace")
+                nil [215 1079]))          
+    :file "ddapfactoryimpl.h"
+    :pointmax 1132
+    :fsize 1131
+    :lastmodtime '(21852 27487 755278 275000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DDAPFACTORYIMPL_H")
+          )
+
+    )
+   (semanticdb-table "ddapfactoryimpl.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ddapfactoryimpl.h" include nil nil [1 29])
+            ("psecauthenticator.h" include nil nil [30 60])
+            ("psecclient.h" include nil nil [61 84])
+            ("psecauthenticationtoken.h" include nil nil [85 121])
+            ("psecprotectedtoken.h" include nil nil [122 153])
+            ("tlogger.h" include nil nil [155 175])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [176 200])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [201 248])
+            ("DDAPAUTH" using (:type ("DDAPAUTH" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [250 275])
+            ("DdapFactoryImpl" function
+               (:constructor-flag t
+                :parent "DdapFactoryImpl"
+                :arguments 
+                  ( ("type" variable (:type ("DdapFactoryType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [310 331]))                  
+                :type ("DdapFactoryImpl" type (:type "class") nil nil))
+                nil [277 354])
+            ("DdapFactoryImpl" function
+               (:destructor-flag t
+                :parent "DdapFactoryImpl"
+                :type "void")
+                nil [356 396])
+            ("createAuthenticator" function
+               (:parent "DdapFactoryImpl"
+                :type ("boost::shared_ptr" type
+                     (:template-specifier 
+                        ( ("IDdapAuthenticator" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [519 870])
+            ("createAuthenticationToken" function
+               (:parent "DdapFactoryImpl"
+                :type ("boost::shared_ptr" type
+                     (:template-specifier 
+                        ( ("IDdapAuthenticationToken" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [996 1353])
+            ("createAuthenticationToken" function
+               (:parent "DdapFactoryImpl"
+                :arguments 
+                  ( ("tokenData" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("DdapTokenData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1631 1662]))                  
+                :type ("boost::shared_ptr" type
+                     (:template-specifier 
+                        ( ("IDdapAuthenticationToken" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1544 1968])
+            ("createProtectedToken" function
+               (:parent "DdapFactoryImpl"
+                :type ("boost::shared_ptr" type
+                     (:template-specifier 
+                        ( ("IDdapProtectedToken" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2084 2443])
+            ("createProtectedToken" function
+               (:parent "DdapFactoryImpl"
+                :arguments 
+                  ( ("protectedData" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("DdapProtectedTokenData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2715 2759]))                  
+                :type ("boost::shared_ptr" type
+                     (:template-specifier 
+                        ( ("IDdapProtectedToken" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2638 3096])
+            ("createClientDetails" function
+               (:parent "DdapFactoryImpl"
+                :type ("boost::shared_ptr" type
+                     (:template-specifier 
+                        ( ("IDdapClient" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3191 3493]))          
+    :file "ddapfactoryimpl.cpp"
+    :pointmax 3494
+    :fsize 3493
+    :lastmodtime '(21853 39025 219342 335000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "psec"
+    :file "psec"
+    :fsize 4096
+    :lastmodtime '(21855 10029 23005 848000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D713!src!pace!middleware!ddap-auth!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,169 @@
+;; Object generic/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "generic/"
+  :tables (list 
+   (semanticdb-table "foxtelStanzaCreatorStrategy.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("foxtelStanzaCreatorStrategy.h" include nil nil [690 730])
+            ("rebootStbStanzaProcessor.h" include nil nil [731 768])
+            ("resetPinStanzaProcessor.h" include nil nil [769 805])
+            ("volumeStanzaProcessor.h" include nil nil [806 840])
+            ("hddDiagStanzaProcessor.h" include nil nil [841 876])
+            ("stbModelStanzaProcessor.h" include nil nil [877 913])
+            ("dvbtSerStanzaProcessor.h" include nil nil [914 949])
+            ("curProgStanzaProcessor.h" include nil nil [950 985])
+            ("systemInfoStanzaProcessor.h" include nil nil [986 1024])
+            ("tunerDiagStanzaProcessor.h" include nil nil [1025 1062])
+            ("loggingStanzaProcessor.h" include nil nil [1063 1098])
+            ("codedownloadStanzaProcessor.h" include nil nil [1099 1139])
+            ("diagSpeedTestStanzaProcessor.h" include nil nil [1140 1181])
+            ("popupMsgStanzaProcessor.h" include nil nil [1182 1218])
+            ("curViewingStanzaProcessor.h" include nil nil [1219 1257])
+            ("plannerMgmtStanzaProcessor.h" include nil nil [1258 1297])
+            ("remoteControlStanzaProcessor.h" include nil nil [1298 1339])
+            ("remoteBookingStanzaProcessor.h" include nil nil [1340 1381])
+            ("keyValueStanzaProcessor.h" include nil nil [1382 1418])
+            ("FoxtelStanzaCreatorStrategy" function
+               (:constructor-flag t
+                :parent "FoxtelStanzaCreatorStrategy"
+                :type ("FoxtelStanzaCreatorStrategy" type (:type "class") nil nil))
+                nil [1726 2142])
+            ("FoxtelStanzaCreatorStrategy" function
+               (:destructor-flag t
+                :parent "FoxtelStanzaCreatorStrategy"
+                :type "void")
+                nil [2436 2643])
+            ("registerProcessors" function
+               (:parent "FoxtelStanzaCreatorStrategy"
+                :arguments 
+                  ( ("pFactory" variable
+                       (:pointer 1
+                        :type ("StanzaFactory" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3106 3131]))                  
+                :type "void")
+                nil [3051 6072])
+            ("speedTestStatus" function
+               (:parent "FoxtelStanzaCreatorStrategy"
+                :type "bool")
+                nil [6399 6615])
+            ("startTest" function
+               (:parent "FoxtelStanzaCreatorStrategy"
+                :arguments 
+                  ( ("url" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7002 7015]))                  
+                :type "void")
+                nil [6956 7265]))          
+    :file "foxtelStanzaCreatorStrategy.cpp"
+    :pointmax 7431
+    :fsize 7265
+    :lastmodtime '(21880 2654 236272 280000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "foxtelStanzaCreatorStrategy.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("FOXTEL_STANZA_CREATOR_STRATEGY_H__" variable (:constant-flag t) nil [747 781])
+            ("stanzaFactory.h" include nil nil [783 809])
+            ("stanzaCreatorStrategy.h" include nil nil [810 844])
+            ("QObject" include (:system-flag t) nil [845 863])
+            ("SpeedTestObject" type
+               (:prototype t
+                :type "class")
+                nil [865 887])
+            ("FoxtelStanzaCreatorStrategy" type
+               (:superclasses 
+                  ( ("QObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("StanzaCreatorStrategy" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1180 1187])
+                    ("FoxtelStanzaCreatorStrategy" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("FoxtelStanzaCreatorStrategy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1192 1223])
+                    ("FoxtelStanzaCreatorStrategy" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1227 1266])
+                    ("registerProcessors" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pFactory" variable
+                               (:pointer 1
+                                :type ("StanzaFactory" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1296 1321]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1270 1322])
+                    ("speedTestStatus" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1326 1349])
+                    ("startTest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("url" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1370 1383]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1353 1384])
+                    ("private" label nil (reparse-symbol classsubparts) [1386 1394])
+                    ("m_pSpeedTestObject" variable
+                       (:pointer 1
+                        :type ("SpeedTestObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1399 1435])
+                    ("FoxtelStanzaCreatorStrategy" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelStanzaCreatorStrategy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1542 1579]))                          
+                        :type ("FoxtelStanzaCreatorStrategy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1512 1580])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FoxtelStanzaCreatorStrategy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1731 1768]))                          
+                        :type ("FoxtelStanzaCreatorStrategy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1683 1769])
+                    ("speedTestComplete" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1810 1817])
+                            ("" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1818 1826])
+                            ("" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1827 1835])
+                            ("" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1836 1844])
+                            ("" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1845 1854]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1785 1855]))                  
+                :type "class")
+                nil [1084 1859]))          
+    :file "foxtelStanzaCreatorStrategy.h"
+    :pointmax 1905
+    :fsize 1904
+    :lastmodtime '(21878 42586 670531 484000)
+    :unmatched-syntax '((punctuation 1780 . 1781) (symbol 1771 . 1780) (symbol 1170 . 1178))
+    :lexical-table 
+        '(("FOXTEL_STANZA_CREATOR_STRATEGY_H__")
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!remotecommands!xmpp!foxtel!generic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,56 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("CP" variable (:default-value ("cp")) nil [199 205])
+            ("RM" variable (:default-value ("rm")) nil [205 211])
+            ("MKDIR" variable (:default-value ("mkdir")) nil [211 223])
+            ("CC" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [223 276])
+            ("CXX" variable (:default-value ("mipsel-linux-uclibc-g++" "--sysroot=$(STAGING_PATH)")) nil [276 330])
+            ("LD" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [330 383])
+            ("AR" variable (:default-value ("mipsel-linux-uclibc-ar")) nil [383 409])
+            ("RANLIB" variable (:default-value ("mipsel-linux-uclibc-ranlib")) nil [409 443])
+            ("EXPORT_HEADERS" variable (:default-value ("../interface/security.h")) nil [444 486])
+            ("LIBS" variable (:default-value ("-lcrypto")) nil [577 591])
+            ("INCPATH" variable (:default-value ("-I../interface" "-I$(shell pwd)" "-I$(HDW_DEFS_DIR)")) nil [591 647])
+            ("LDFLAGS" variable (:default-value ("$(LDFLAGS)" "-Wl,-O1" "$(LIBS)")) nil [648 685])
+            ("CFLAGS" variable (:default-value ("$(CFLAGS)" "-Wextra")) nil [685 712])
+            ("PLATFORM" variable (:default-value ("9$(PLATFORM_BCOM_CHIP)")) nil [1114 1146])
+            ("NEXUS_PLATFORM" variable (:default-value ("$(PLATFORM)")) nil [1153 1180])
+            ("$(NEXUS_TOP)/platforms/$(NEXUS_PLATFORM)/build/platform_app.inc" include nil nil [1180 1252])
+            ("CFLAGS" variable (:default-value ("$(filter-out -pedantic,$(filter-out -std=c89,$(filter-out -Wstrict-prototypes,$(NEXUS_CFLAGS))))" "$(addprefix -I,$(NEXUS_APP_INCLUDE_PATHS))" "$(addprefix -D,$(NEXUS_APP_DEFINES))")) nil [1252 1439])
+            ("EXPORT_HEADERS" variable (:default-value ("../interface/daemonnexusinitialisation.h" "../interface/k3procinverifier.h" "../interface/ssl_certificate_files.h")) nil [1439 1567])
+            ("CXXFLAGS" variable (:default-value ("$(CXXFLAGS)" "$(CFLAGS)")) nil [1876 1910])
+            ("SRCS" variable (:default-value ("security.cpp" "securecontentprocessor.cpp" "iidentifier.cpp" "identifierfactory.cpp" "isecurecontent.cpp" "securecontentfactory.cpp" "ihmac.cpp" "cryptographicfactory.cpp" "ikeyprovider.cpp" "idecrypt.cpp" "initialisationprovider.cpp" "iinitialiser.cpp" "tlvparser.cpp" "namedsemaphore.cpp" "arraystreambuf.cpp" "utilities.cpp" "ihash.cpp" "isecuredinfo.cpp" "securedinfofactory.cpp")) nil [1911 2280])
+            ("OBJS" variable (:default-value ("$(SRCS:.cpp=.o)")) nil [2280 2303])
+            ("ARCHIVE_LIBS" variable nil nil [2362 2378])
+            ("plugins/*/Makefile" include nil nil [2425 2452])
+            ("LIBRARY" variable (:default-value ("libsecurity.so")) nil [2453 2477])
+            ("ARCHIVE" variable (:default-value ("libsecurity.a")) nil [2477 2500])
+            ("LIBRARY_INSTALL_PATH" variable (:default-value ("$(STAGING_PATH)/usr/lib/$(LIBRARY)")) nil [2500 2556])
+            (".SUFFIXES" function (:arguments (".o" ".c" ".cpp")) nil [2557 2579])
+            (".cpp.o" function nil nil [2580 2641])
+            (".c.o" function nil nil [2642 2698])
+            ("install" function (:arguments ("all" "$(LIBRARY_INSTALL_PATH)" "headers_install")) nil [2699 2752])
+            ("install_pmw" function (:arguments ("all" "$(LIBRARY_INSTALL_PATH)" "headers_install")) nil [2753 2810])
+            ("all" function (:arguments ("$(LIBRARY)" "$(ARCHIVE)")) nil [2811 2838])
+            ("$(LIBRARY_INSTALL_PATH)" function (:arguments ("$(LIBRARY)")) nil [2839 2922])
+            ("headers_install" function nil nil [2923 3061])
+            ("$(LIBRARY)" function (:arguments ("$(OBJS)")) nil [3062 3176])
+            ("$(ARCHIVE)" function (:arguments ("$(OBJS)")) nil [3177 3269])
+            (".PHONY" function (:arguments ("clean")) nil [3270 3284])
+            ("clean" function nil nil [3284 3394]))          
+    :file "Makefile"
+    :pointmax 3394
+    :fsize 3393
+    :lastmodtime '(21591 53944 895526 213000)
+    :unmatched-syntax '((shell-command 3292 . 3393) (bol 3291 . 3291) (symbol 1840 . 1868) (punctuation 1838 . 1839) (punctuation 1837 . 1838) (symbol 1830 . 1836) (bol 1828 . 1828) (symbol 1762 . 1781) (punctuation 1760 . 1761) (punctuation 1759 . 1760) (symbol 1752 . 1758) (bol 1750 . 1750) (symbol 1699 . 1716) (punctuation 1697 . 1698) (punctuation 1696 . 1697) (symbol 1689 . 1695) (bol 1687 . 1687) (shell-command 1619 . 1651) (bol 1618 . 1618) (ENDIF 962 . 967) (bol 960 . 960) (semantic-list 941 . 959) (punctuation 940 . 941) (punctuation 938 . 939) (punctuation 937 . 938) (symbol 929 . 936) (bol 925 . 925) (semantic-list 907 . 924) (punctuation 906 . 907) (punctuation 904 . 905) (punctuation 903 . 904) (symbol 896 . 902) (bol 892 . 892) (symbol 861 . 891) (semantic-list 850 . 861) (punctuation 849 . 850) (INCLUDE 841 . 848) (bol 837 . 837) (symbol 818 . 836) (punctuation 816 . 817) (punctuation 815 . 816) (symbol 807 . 813) (bol 803 . 803) (semantic-list 779 . 802) (IFEQ 774 . 778) (bol 772 . 772) (semantic-list 158 . 185) (punctuation 157 . 158) (bol 157 . 157) (semantic-list 58 . 86) (punctuation 57 . 58) (bol 57 . 57))
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D713.fd!src!pace!middleware!security-lib!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,759 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "sectool.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("string" include (:system-flag t) nil [21 38])
+            ("cstring" include (:system-flag t) nil [39 57])
+            ("unistd.h" include (:system-flag t) nil [58 77])
+            ("cstdlib" include (:system-flag t) nil [78 96])
+            ("signal.h" include (:system-flag t) nil [97 116])
+            ("security.h" include nil nil [117 138])
+            ("tlogger.h" include nil nil [140 160])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [161 185])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [186 233])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [235 255])
+            ("g_longlived" variable (:type "bool") nil [257 282])
+            ("sigHandler" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [358 362]))                  
+                :type "void")
+                nil [342 456])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [467 476])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [477 489]))                  
+                :type "int")
+                nil [458 11284]))          
+    :file "sectool.cpp"
+    :pointmax 11285
+    :fsize 11284
+    :lastmodtime '(21907 45102 484915 15000)
+    :unmatched-syntax '((string 212 . 231))
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("CP" variable (:default-value ("cp")) nil [12 18])
+            ("RM" variable (:default-value ("rm")) nil [18 24])
+            ("CC" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [24 77])
+            ("CXX" variable (:default-value ("mipsel-linux-uclibc-g++" "--sysroot=$(STAGING_PATH)")) nil [77 131])
+            ("LD" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [131 184])
+            ("LIBS" variable (:default-value ("-lpthread" "-lcrypto")) nil [185 209])
+            ("LDFLAGS_TOOL" variable (:default-value ("$(filter-out -lgtest_main, $(filter-out -lgtest, $(LDFLAGS)))" "-Wl,-O1" "-lpthread")) nil [368 463])
+            ("LDFLAGS" variable (:default-value ("$(filter-out -lsecurity, $(LDFLAGS))" "-Wl,-O1" "$(LIBS)")) nil [614 677])
+            ("CFLAGS" variable (:default-value ("$(CFLAGS)")) nil [678 697])
+            ("CFLAGS" variable (:default-value ("-Wextra" "-mips32")) nil [697 723])
+            ("CXXFLAGS" variable (:default-value ("$(CXXFLAGS)" "$(CFLAGS)" "-I../lib" "-I../lib/plugins/pace/" "-I../lib/plugins/openssl")) nil [809 899])
+            ("EXECUTABLES" variable (:default-value ("sectool" "sectest-keyprovider" "sectest-paceheader" "sectest-tlvparser" "sectest-keymaterial" "sectest-arraystreambuf")) nil [900 1022])
+            ("EXECUTABLES_INSTALL" variable (:default-value ("$(addprefix $(STAGING_PATH)/usr/bin/, $(EXECUTABLES))")) nil [1022 1097])
+            (".SUFFIXES" function (:arguments (".o" ".c" ".cpp")) nil [1098 1120])
+            (".cpp.o" function nil nil [1120 1164])
+            (".c.o" function nil nil [1165 1204])
+            ("all" function (:arguments ("$(EXECUTABLES)")) nil [1205 1225])
+            ("install" function (:arguments ("$(EXECUTABLES)")) nil [1226 1305])
+            ("sectool" function (:arguments ("sectool.o")) nil [1413 1472])
+            ("sectest-keyprovider" function (:arguments ("keyprovider.o")) nil [1495 1590])
+            ("sectest-paceheader" function (:arguments ("paceheader.o" "paceheadercreator.o")) nil [1591 1723])
+            ("sectest-tlvparser" function (:arguments ("tlvparser.o")) nil [1724 1813])
+            ("sectest-keymaterial" function (:arguments ("keymaterial.o")) nil [1814 1909])
+            ("sectest-arraystreambuf" function (:arguments ("sectest-arraystreambuf.o")) nil [1910 2030])
+            (".PHONY" function (:arguments ("clean")) nil [2031 2045])
+            ("clean" function nil nil [2045 2105]))          
+    :file "Makefile"
+    :pointmax 2105
+    :fsize 2104
+    :lastmodtime '(21907 45102 485915 10000)
+    :unmatched-syntax '((shell-command 2053 . 2104) (bol 2052 . 2052) (shell-command 769 . 801) (bol 768 . 768))
+    )
+   (semanticdb-table "paceheader.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vector" include (:system-flag t) nil [1 18])
+            ("utility" include (:system-flag t) nil [19 37])
+            ("iostream" include (:system-flag t) nil [38 57])
+            ("sstream" include (:system-flag t) nil [58 76])
+            ("string" include (:system-flag t) nil [77 94])
+            ("openssl/rand.h" include (:system-flag t) nil [95 120])
+            ("gtest/gtest.h" include nil nil [122 146])
+            ("paceheadercreator.h" include nil nil [148 178])
+            ("signature.h" include nil nil [180 202])
+            ("encryption.h" include nil nil [203 226])
+            ("securitycontainerheader.h" include nil nil [227 263])
+            ("TEST_SIG_TYPE_NONE" variable (:constant-flag t) nil [293 311])
+            ("TEST_SIG_TYPE_SHA_256_1" variable (:constant-flag t) nil [333 356])
+            ("TEST_SIG_TYPE_T_SHA_256" variable (:constant-flag t) nil [373 396])
+            ("TEST_SIG_TYPE_SHA_256_2" variable (:constant-flag t) nil [413 436])
+            ("TEST_SIG_TYPE_SHA_256_1_HC" variable (:constant-flag t) nil [453 479])
+            ("TEST_SIG_TYPE_T_SHA_256_HC" variable (:constant-flag t) nil [493 519])
+            ("TEST_SIG_TYPE_SHA_256_2_HC" variable (:constant-flag t) nil [533 559])
+            ("TEST_SIG_TYPE_INVALID" variable (:constant-flag t) nil [573 594])
+            ("TEST_ENC_TYPE_NONE" variable (:constant-flag t) nil [635 653])
+            ("TEST_ENC_TYPE_RANDOM_KEY" variable (:constant-flag t) nil [676 700])
+            ("TEST_ENC_TYPE_AES_128" variable (:constant-flag t) nil [717 738])
+            ("TEST_ENC_TYPE_RANDOM_KEY_HC" variable (:constant-flag t) nil [758 785])
+            ("TEST_ENC_TYPE_AES_128_HC" variable (:constant-flag t) nil [799 823])
+            ("TEST_ENC_TYPE_INVALID" variable (:constant-flag t) nil [840 861])
+            ("TEST_KEYID_NONE" variable (:constant-flag t) nil [899 914])
+            ("TEST_KEYID_11" variable (:constant-flag t) nil [931 944])
+            ("TEST_KEYID_12" variable (:constant-flag t) nil [963 976])
+            ("TEST_KEYID_13" variable (:constant-flag t) nil [995 1008])
+            ("TEST_KEYID_14" variable (:constant-flag t) nil [1027 1040])
+            ("TEST_KEYID_15" variable (:constant-flag t) nil [1059 1072])
+            ("TEST_KEYID_16" variable (:constant-flag t) nil [1091 1104])
+            ("TEST_KEYID_17" variable (:constant-flag t) nil [1123 1136])
+            ("TEST_KEYID_18" variable (:constant-flag t) nil [1155 1168])
+            ("TEST_KEYID_19" variable (:constant-flag t) nil [1187 1200])
+            ("TEST_KEYID_1A" variable (:constant-flag t) nil [1219 1232])
+            ("TEST_KEYID_1B" variable (:constant-flag t) nil [1251 1264])
+            ("TEST_KEYID_1C" variable (:constant-flag t) nil [1283 1296])
+            ("TEST_KEYID_HC" variable (:constant-flag t) nil [1315 1328])
+            ("TEST_KEYID_INVALID" variable (:constant-flag t) nil [1347 1365])
+            ("SHA256_DIGEST_LEN" variable (:constant-flag t) nil [1398 1415])
+            ("TRUNCATED_SHA256_DIGEST_LEN" variable (:constant-flag t) nil [1437 1464])
+            ("RSA_2048_DIGEST_LEN" variable (:constant-flag t) nil [1497 1516])
+            ("HEADER_SIZE" variable (:constant-flag t) nil [1554 1565])
+            ("IV_SIZE" variable (:constant-flag t) nil [1585 1592])
+            ("HEADER_SIZE_WITH_IV" variable (:constant-flag t) nil [1616 1635])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1661 1681])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("Signature" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1874 1884])
+                    ("" variable (:type ("NotEnabled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1885 1896]))                  
+                :type "int")
+                nil [1869 2212])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("Signature" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2219 2229])
+                    ("" variable (:type ("HmacSha256" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2230 2241]))                  
+                :type "int")
+                nil [2214 6879])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("Signature" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6886 6896])
+                    ("" variable (:type ("Invalid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6897 6905]))                  
+                :type "int")
+                nil [6881 15153])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("Encryption" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15347 15358])
+                    ("" variable (:type ("NotEnabled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15359 15370]))                  
+                :type "int")
+                nil [15342 15766])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("Encryption" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15773 15784])
+                    ("" variable (:type ("Aes128Cbc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15785 15795]))                  
+                :type "int")
+                nil [15768 17468])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("Encryption" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17475 17486])
+                    ("" variable (:type ("RandomKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17487 17497]))                  
+                :type "int")
+                nil [17470 19104])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("Encryption" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19111 19122])
+                    ("" variable (:type ("Invalid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19123 19131]))                  
+                :type "int")
+                nil [19106 25029])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("SecurityContainerHeader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25231 25255])
+                    ("" variable (:type ("Identification" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25256 25271]))                  
+                :type "int")
+                nil [25226 26436])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("SecurityContainerHeader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26443 26467])
+                    ("" variable (:type ("Signed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26468 26475]))                  
+                :type "int")
+                nil [26438 34587])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("SecurityContainerHeader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34594 34618])
+                    ("" variable (:type ("Encrypted" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34619 34629]))                  
+                :type "int")
+                nil [34589 40006])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("SecurityContainerHeader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40013 40037])
+                    ("" variable (:type ("EncryptedSigned" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40038 40054]))                  
+                :type "int")
+                nil [40008 57727])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("SecurityContainerHeader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57734 57758])
+                    ("" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57759 57764]))                  
+                :type "int")
+                nil [57729 59761]))          
+    :file "paceheader.cpp"
+    :pointmax 59762
+    :fsize 59761
+    :lastmodtime '(21907 45102 482915 26000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("TEST_ENC_TYPE_NONE" . ((number "0x00" 663 . 667)))
+          ("TEST_ENC_TYPE_INVALID" . ((number "0xF0" 868 . 872)))
+          ("TEST_KEYID_14" . ((number "0x14" 1046 . 1050)))
+          ("TEST_KEYID_1A" . ((number "0x1A" 1238 . 1242)))
+          ("TEST_KEYID_15" . ((number "0x15" 1078 . 1082)))
+          ("TEST_KEYID_1B" . ((number "0x1B" 1270 . 1274)))
+          ("IV_SIZE" . ((number "16" 1605 . 1607)))
+          ("TEST_KEYID_16" . ((number "0x16" 1110 . 1114)))
+          ("TEST_KEYID_1C" . ((number "0x1C" 1302 . 1306)))
+          ("TEST_ENC_TYPE_AES_128_HC" . ((number "0xFE" 827 . 831)))
+          ("TEST_KEYID_NONE" . ((number "0x00" 918 . 922)))
+          ("TEST_KEYID_17" . ((number "0x17" 1142 . 1146)))
+          ("TEST_KEYID_INVALID" . ((number "0xF0" 1366 . 1370)))
+          ("TEST_KEYID_18" . ((number "0x18" 1174 . 1178)))
+          ("TEST_SIG_TYPE_SHA_256_1" . ((number "0x02" 360 . 364)))
+          ("TEST_SIG_TYPE_INVALID" . ((number "0xF0" 600 . 604)))
+          ("TEST_ENC_TYPE_RANDOM_KEY_HC" . ((number "0xFD" 786 . 790)))
+          ("TEST_KEYID_19" . ((number "0x19" 1206 . 1210)))
+          ("SHA256_DIGEST_LEN" . ((number "32" 1426 . 1428)))
+          ("TEST_SIG_TYPE_T_SHA_256" . ((number "0x03" 400 . 404)))
+          ("TEST_SIG_TYPE_SHA_256_2" . ((number "0x04" 440 . 444)))
+          ("TEST_KEYID_HC" . ((number "0xFE" 1334 . 1338)))
+          ("TEST_SIG_TYPE_NONE" . ((number "0x00" 320 . 324)))
+          ("HEADER_SIZE" . ((number "12" 1574 . 1576)))
+          ("TEST_SIG_TYPE_SHA_256_1_HC" . ((number "0xFC" 480 . 484)))
+          ("TEST_ENC_TYPE_RANDOM_KEY" . ((number "0x02" 704 . 708)))
+          ("HEADER_SIZE_WITH_IV" . ((semantic-list "(HEADER_SIZE + IV_SIZE)" 1636 . 1659)))
+          ("TEST_SIG_TYPE_T_SHA_256_HC" . ((number "0xFD" 520 . 524)))
+          ("TEST_SIG_TYPE_SHA_256_2_HC" . ((number "0xFE" 560 . 564)))
+          ("TEST_KEYID_11" . ((number "0x11" 950 . 954)))
+          ("TRUNCATED_SHA256_DIGEST_LEN" . ((semantic-list "(SHA256_DIGEST_LEN / 2)" 1465 . 1488)))
+          ("TEST_ENC_TYPE_AES_128" . ((number "0x03" 745 . 749)))
+          ("TEST_KEYID_12" . ((number "0x12" 982 . 986)))
+          ("RSA_2048_DIGEST_LEN" . ((number "256" 1525 . 1528)))
+          ("TEST_KEYID_13" . ((number "0x13" 1014 . 1018)))
+          )
+
+    )
+   (semanticdb-table "paceheadercreator.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("TEST_PACE_HEADER_CREATOR_H__" variable (:constant-flag t) nil [46 74])
+            ("stdint.h" include (:system-flag t) nil [76 95])
+            ("iostream" include (:system-flag t) nil [96 115])
+            ("vector" include (:system-flag t) nil [116 133])
+            ("PaceHeaderCreator" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [161 168])
+                    ("createHeader" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sigType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [190 206])
+                            ("sigKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [207 222])
+                            ("encType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [223 239])
+                            ("encKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [240 255])
+                            ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [256 274]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [172 281])
+                    ("createHeader" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sigType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [303 319])
+                            ("sigKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [320 335])
+                            ("encType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [336 352])
+                            ("encKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [353 368])
+                            ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [369 385])
+                            ("payload" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [386 422])
+                            ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [423 441]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [285 448])
+                    ("createHeader" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sigType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [470 486])
+                            ("sigKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [487 502])
+                            ("encType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [503 519])
+                            ("encKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [520 535])
+                            ("iv" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [536 567])
+                            ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [568 586]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [452 593])
+                    ("createHeader" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sigType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [615 631])
+                            ("sigKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [632 647])
+                            ("encType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [648 664])
+                            ("encKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [665 680])
+                            ("iv" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [681 712])
+                            ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [713 729])
+                            ("payload" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [730 766])
+                            ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [767 785]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [597 792])
+                    ("badIdentifier" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [815 833]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [796 840])
+                    ("private" label nil (reparse-symbol classsubparts) [842 850])
+                    ("setFlags" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sigType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [868 884])
+                            ("sigKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [885 900])
+                            ("encType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [901 917])
+                            ("encKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [918 933])
+                            ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [934 950])
+                            ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [951 969]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [854 976])
+                    ("setData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("payload" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [993 1029])
+                            ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1030 1048]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [980 1055]))                  
+                :type "class")
+                nil [135 1058]))          
+    :file "paceheadercreator.h"
+    :pointmax 1099
+    :fsize 1098
+    :lastmodtime '(21907 45102 484915 15000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("TEST_PACE_HEADER_CREATOR_H__")
+          )
+
+    )
+   (semanticdb-table "paceheadercreator.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("paceheadercreator.h" include nil nil [1 31])
+            ("arpa/inet.h" include (:system-flag t) nil [32 54])
+            ("createHeader" function
+               (:parent "PaceHeaderCreator"
+                :arguments 
+                  ( ("sigType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [402 418])
+                    ("sigKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [419 434])
+                    ("encType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [435 451])
+                    ("encKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [452 467])
+                    ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [468 486]))                  
+                :type "void")
+                nil [365 551])
+            ("createHeader" function
+               (:parent "PaceHeaderCreator"
+                :arguments 
+                  ( ("sigType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1028 1044])
+                    ("sigKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1045 1060])
+                    ("encType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1061 1077])
+                    ("encKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1078 1093])
+                    ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1094 1110])
+                    ("payload" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1111 1147])
+                    ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1148 1166]))                  
+                :type "void")
+                nil [991 1262])
+            ("createHeader" function
+               (:parent "PaceHeaderCreator"
+                :arguments 
+                  ( ("sigType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1678 1694])
+                    ("sigKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1695 1710])
+                    ("encType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1711 1727])
+                    ("encKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1728 1743])
+                    ("iv" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1744 1775])
+                    ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1776 1794]))                  
+                :type "void")
+                nil [1641 1984])
+            ("createHeader" function
+               (:parent "PaceHeaderCreator"
+                :arguments 
+                  ( ("sigType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2494 2510])
+                    ("sigKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2511 2526])
+                    ("encType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2527 2543])
+                    ("encKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2544 2559])
+                    ("iv" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2560 2591])
+                    ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2629 2645])
+                    ("payload" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2646 2682])
+                    ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2683 2701]))                  
+                :type "void")
+                nil [2457 2923])
+            ("badIdentifier" function
+               (:parent "PaceHeaderCreator"
+                :arguments 
+                  ( ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3095 3113]))                  
+                :type "void")
+                nil [3057 3503])
+            ("setFlags" function
+               (:parent "PaceHeaderCreator"
+                :arguments 
+                  ( ("sigType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3860 3876])
+                    ("sigKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3877 3892])
+                    ("encType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3893 3909])
+                    ("encKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3910 3925])
+                    ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3926 3942])
+                    ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3943 3961]))                  
+                :type "void")
+                nil [3827 4476])
+            ("setData" function
+               (:parent "PaceHeaderCreator"
+                :arguments 
+                  ( ("payload" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4666 4702])
+                    ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4703 4721]))                  
+                :type "void")
+                nil [4634 4843]))          
+    :file "paceheadercreator.cpp"
+    :pointmax 4844
+    :fsize 4843
+    :lastmodtime '(21907 45102 483915 21000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sectest-arraystreambuf.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("istream" include (:system-flag t) nil [1 19])
+            ("string" include (:system-flag t) nil [20 37])
+            ("vector" include (:system-flag t) nil [38 55])
+            ("gtest/gtest.h" include nil nil [56 80])
+            ("arraystreambuf.h" include nil nil [81 108])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [110 130])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [211 226])
+                    ("" variable (:type ("WriteSmall" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [227 238]))                  
+                :type "int")
+                nil [206 470])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [543 558])
+                    ("" variable (:type ("WriteLarge" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [559 570]))                  
+                :type "int")
+                nil [538 846])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [930 945])
+                    ("" variable (:type ("WriteMultiAllocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [946 967]))                  
+                :type "int")
+                nil [925 1277])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1360 1375])
+                    ("" variable (:type ("ReadSmall" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1376 1386]))                  
+                :type "int")
+                nil [1355 2237])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2312 2327])
+                    ("" variable (:type ("ReadLarge" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2328 2338]))                  
+                :type "int")
+                nil [2307 3206])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3292 3307])
+                    ("" variable (:type ("ReadMultiAllocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3308 3328]))                  
+                :type "int")
+                nil [3287 4222])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4254 4269])
+                    ("" variable (:type ("SeekGet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4270 4278]))                  
+                :type "int")
+                nil [4249 6218])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6260 6275])
+                    ("" variable (:type ("SeekGetBad" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6276 6287]))                  
+                :type "int")
+                nil [6255 8225])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8257 8272])
+                    ("" variable (:type ("SeekPut" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8273 8281]))                  
+                :type "int")
+                nil [8252 10220])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10262 10277])
+                    ("" variable (:type ("SeekPutBad" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10278 10289]))                  
+                :type "int")
+                nil [10257 12227])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12269 12284])
+                    ("" variable (:type ("ReadOnlyBuffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12285 12300]))                  
+                :type "int")
+                nil [12264 13688]))          
+    :file "sectest-arraystreambuf.cpp"
+    :pointmax 13689
+    :fsize 13688
+    :lastmodtime '(21907 45102 482915 26000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "keymaterial.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vector" include (:system-flag t) nil [1 18])
+            ("utility" include (:system-flag t) nil [19 37])
+            ("stdint.h" include (:system-flag t) nil [38 57])
+            ("keymaterialcache.h" include nil nil [59 88])
+            ("securitycontainerheadertypes.h" include nil nil [89 130])
+            ("gtest/gtest.h" include nil nil [131 155])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [157 177])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("KeyMaterial" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [497 509])
+                    ("" variable (:type ("ValidKeyMaterial" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [510 527]))                  
+                :type "int")
+                nil [492 1508])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("KeyMaterial" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1572 1584])
+                    ("" variable (:type ("ValidKeyMaterialWithoutParamaters" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1585 1619]))                  
+                :type "int")
+                nil [1567 2099])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("KeyMaterial" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2147 2159])
+                    ("" variable (:type ("Assignments" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2160 2172]))                  
+                :type "int")
+                nil [2142 3592])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("KeyMaterial" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3638 3650])
+                    ("" variable (:type ("LessThanOperator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3651 3668]))                  
+                :type "int")
+                nil [3633 4399])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("KeyMaterialCache" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4675 4692])
+                    ("" variable (:type ("EmptyCache" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4693 4704]))                  
+                :type "int")
+                nil [4670 5277])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("KeyMaterialCache" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5284 5301])
+                    ("" variable (:type ("RetrieveValues" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5302 5317]))                  
+                :type "int")
+                nil [5279 7068])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("KeyMaterialCache" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7075 7092])
+                    ("" variable (:type ("UpdateValues" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7093 7106]))                  
+                :type "int")
+                nil [7070 11255])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("SecurityContainerKeyProvider" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11262 11291])
+                    ("" variable (:type ("HardCodedKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11292 11305]))                  
+                :type "int")
+                nil [11257 12072]))          
+    :file "keymaterial.cpp"
+    :pointmax 12073
+    :fsize 19126
+    :lastmodtime '(21907 45102 484915 15000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "keyprovider.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vector" include (:system-flag t) nil [1 18])
+            ("stdint.h" include (:system-flag t) nil [19 38])
+            ("gtest/gtest.h" include nil nil [40 64])
+            ("securitycontainerkeyprovider.h" include nil nil [65 106])
+            ("keymaterialcache.h" include nil nil [107 136])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("SecurityContainerKeyProvider" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [849 878])
+                    ("" variable (:type ("InvalidKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [879 890]))                  
+                :type "int")
+                nil [844 1063]))          
+    :file "keyprovider.cpp"
+    :pointmax 1064
+    :fsize 1063
+    :lastmodtime '(21907 45102 483915 21000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "tlvparser.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdint.h" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("tlvparser.h" include nil nil [40 62])
+            ("gtest/gtest.h" include nil nil [63 87])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [89 109])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("TlvParser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [309 319])
+                    ("" variable (:type ("GoodData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [320 329]))                  
+                :type "int")
+                nil [304 4878])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("TlvParser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5073 5083])
+                    ("" variable (:type ("EmptyData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5084 5094]))                  
+                :type "int")
+                nil [5068 5326])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("TlvParser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5525 5535])
+                    ("" variable (:type ("MalformedData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5536 5550]))                  
+                :type "int")
+                nil [5520 7049]))          
+    :file "tlvparser.cpp"
+    :pointmax 7050
+    :fsize 7049
+    :lastmodtime '(21907 45102 483915 21000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!security-lib!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

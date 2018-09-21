@@ -1,0 +1,801 @@
+;; Object ApplicationManagerConsole/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ApplicationManagerConsole/"
+  :tables (list 
+   (semanticdb-table "ApplicationManagerConsole.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BAMClient.h" include nil nil [2545 2567])
+            ("APPClient.h" include nil nil [2568 2590])
+            ("IWindow.h" include nil nil [2591 2611])
+            ("stdio.h" include (:system-flag t) nil [2612 2630])
+            ("stdlib.h" include (:system-flag t) nil [2631 2650])
+            ("string.h" include (:system-flag t) nil [2651 2670])
+            ("iostream" include (:system-flag t) nil [2672 2691])
+            ("sstream" include (:system-flag t) nil [2692 2710])
+            ("string" include (:system-flag t) nil [2711 2728])
+            ("map" include (:system-flag t) nil [2729 2743])
+            ("algorithm" include (:system-flag t) nil [2744 2764])
+            ("Trellis" using (:type ("Trellis" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2766 2790])
+            ("TRLS_DBG_MODULE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("ApplicationManagerConsole" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2808 2834]))                  
+                :type "int")
+                nil [2792 2835])
+            ("ApplicationManagerConsole" type
+               (:superclasses 
+                  ( ("IWindowManager::IWindowManagerListener" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("IWindow::IWindowListener" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("IPackageManager::IPackageManagerListener" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("IPackageInstaller::IPackageInstallerListener" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3033 3040])
+                    ("MethodEntry" type
+                       (:typedef ("std::pair" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("Method" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::pair"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [3127 3178])
+                    ("MethodMap" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("MethodEntry" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [3183 3236])
+                    ("MethodMapPair" type
+                       (:typedef ("std::pair" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("MethodEntry" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::pair"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [3241 3299])
+                    ("InterfaceMap" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("MethodMap" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [3304 3358])
+                    ("InterfaceMapPair" type
+                       (:typedef ("std::pair" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("MethodMap" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::pair"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [3363 3422])
+                    ("public" label nil (reparse-symbol classsubparts) [3424 3431])
+                    ("onWindowListChange" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("windowManager" variable
+                               (:reference 1
+                                :type ("IWindowManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3468 3498])
+                            ("windowList" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IWindowManager::WindowList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3499 3544]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3436 3715])
+                    ("onFocusChange" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("windowManager" variable
+                               (:reference 1
+                                :type ("IWindowManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3748 3778])
+                            ("oldFocus" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3779 3807])
+                            ("newFocus" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3808 3836]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3721 4021])
+                    ("onLayoutChange" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("windowManager" variable
+                               (:reference 1
+                                :type ("IWindowManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4055 4085])
+                            ("oldLayout" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4086 4115])
+                            ("newLayout" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4116 4145]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4027 4334])
+                    ("onError" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("uid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4361 4384])
+                            ("errorType" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4385 4414]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4340 4547])
+                    ("onKeepAlive" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("uid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4578 4601])
+                            ("state" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4602 4627]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4553 4752])
+                    ("onStateChange" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("uid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4785 4808])
+                            ("oldState" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4809 4837])
+                            ("newState" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4838 4866]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4758 5027])
+                    ("onFocusChange" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("uid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5060 5083])
+                            ("oldIsFocused" variable (:type "bool") (reparse-symbol arg-sub-list) [5084 5102])
+                            ("newIsFocused" variable (:type "bool") (reparse-symbol arg-sub-list) [5103 5121]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5033 5282])
+                    ("onVisibilityChange" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("uid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5320 5343])
+                            ("oldVisibility" variable (:type "bool") (reparse-symbol arg-sub-list) [5344 5363])
+                            ("newVisibility" variable (:type "bool") (reparse-symbol arg-sub-list) [5364 5383]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5288 5548])
+                    ("onOpacityChange" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("uid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5583 5606])
+                            ("oldOpacity" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5607 5627])
+                            ("newOpacity" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5628 5648]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5554 5801])
+                    ("onZOrderChange" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("uid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5835 5858])
+                            ("oldZOrder" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5859 5878])
+                            ("newZOrder" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5879 5898]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5807 6047])
+                    ("onLocationChange" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("uid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6083 6106])
+                            ("oldLocation" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IWindow::Rect" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6107 6140])
+                            ("newLocation" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IWindow::Rect" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6141 6174]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6053 6371])
+                    ("onPackageInfoChanged" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [6377 6492])
+                    ("onPackageManifestChanged" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [6498 6617])
+                    ("onRequestEnd" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("packages" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("VectorObject" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6649 6691])
+                            ("action" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6692 6718])
+                            ("result" variable
+                               (:constant-flag t
+                                :type ("ReturnCode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6719 6743]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6623 6988])
+                    ("public" label nil (reparse-symbol classsubparts) [6990 6997])
+                    ("testInterfaceMap" variable (:type ("MethodMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7002 7029])
+                    ("applicationInterfaceMap" variable (:type ("MethodMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7034 7068])
+                    ("windowInterfaceMap" variable (:type ("MethodMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7073 7102])
+                    ("serviceInterfaceMap" variable (:type ("MethodMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7107 7137])
+                    ("windowManagerInterfaceMap" variable (:type ("MethodMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7142 7178])
+                    ("serviceManagerInterfaceMap" variable (:type ("MethodMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7183 7220])
+                    ("settingsDBInterfaceMap" variable (:type ("MethodMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7225 7258])
+                    ("packageManagerInterfaceMap" variable (:type ("MethodMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7263 7300])
+                    ("packageInstallerInterfaceMap" variable (:type ("MethodMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7305 7344])
+                    ("interfaceMap" variable (:type ("InterfaceMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7349 7375])
+                    ("bamClient" variable
+                       (:pointer 1
+                        :type ("BAMClient" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7380 7402])
+                    ("currentWindow" variable
+                       (:pointer 1
+                        :type ("APPClient" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7407 7433])
+                    ("currentService" variable
+                       (:pointer 1
+                        :type ("APPClient" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7438 7465])
+                    ("public" label nil (reparse-symbol classsubparts) [7467 7474])
+                    ("getCurrentApplication" function
+                       (:pointer 1
+                        :type ("IApplication" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7479 7874])
+                    ("getCurrentWindow" function
+                       (:pointer 1
+                        :type ("IWindow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7880 8128])
+                    ("getCurrentService" function
+                       (:pointer 1
+                        :type ("IService" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8134 8387])
+                    ("Test_help" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8408 8434]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8393 8930])
+                    ("Test_quit" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8951 8977]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8936 9014])
+                    ("Test_setCurrent" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9041 9067]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9020 10660])
+                    ("Test_getCurrent" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10687 10713]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10666 11185])
+                    ("IApplication_getState" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11218 11244]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11191 11720])
+                    ("IApplication_setState" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11753 11779]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11726 12233])
+                    ("IApplication_activate" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12266 12292]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12239 12722])
+                    ("IApplication_suspend" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12754 12780]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12728 13209])
+                    ("IApplication_terminate" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13243 13269]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13215 13701])
+                    ("IWindow_handleFocus" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13732 13758]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13707 13853])
+                    ("IWindow_isFocused" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13882 13908]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13859 14384])
+                    ("IWindow_handleEvent" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14415 14441]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14390 14536])
+                    ("IWindow_setVisibility" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14569 14595]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14542 15162])
+                    ("IWindow_getVisibility" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15195 15221]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15168 15696])
+                    ("IWindow_setOpacity" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15726 15752]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15702 16272])
+                    ("IWindow_getOpacity" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16302 16328]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16278 16794])
+                    ("IWindow_setZOrder" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16823 16849]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16800 17392])
+                    ("IWindow_getZOrder" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17421 17447]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [17398 17906])
+                    ("IWindow_setLocation" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17937 17963]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [17912 18441])
+                    ("IWindow_getLocation" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18472 18498]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18447 18982])
+                    ("IWindow_bringToFront" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19014 19040]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18988 19493])
+                    ("IWindow_sendToBack" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19523 19549]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [19499 19998])
+                    ("IWindow_bringForward" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20030 20056]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [20004 20509])
+                    ("IWindow_sendBackward" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20541 20567]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [20515 21020])
+                    ("IWindowManager_getWindowList" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21060 21086]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21026 21852])
+                    ("IWindowManager_launch" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21885 21911]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21858 22469])
+                    ("IWindowManager_dispatchEvent" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22509 22535]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22475 22630])
+                    ("IWindowManager_setFocus" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22665 22691]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22636 23160])
+                    ("IWindowManager_getFocus" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23195 23221]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [23166 23681])
+                    ("IWindowManager_setWindowLayout" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23723 23749]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [23687 24205])
+                    ("IWindowManager_getWindowLayout" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24247 24273]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [24211 24753])
+                    ("IServiceManager_getServiceList" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24795 24821]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [24759 24916])
+                    ("ISettingsDB_getEntities" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24951 24977]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [24922 25449])
+                    ("ISettingsDB_getAttributes" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25486 25512]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [25455 26003])
+                    ("ISettingsDB_getAllowedValues" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26043 26069]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [26009 26601])
+                    ("ISettingsDB_setAllowedValues" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26641 26667]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [26607 27163])
+                    ("ISettingsDB_getCurrentValue" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27202 27228]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [27169 27934])
+                    ("ISettingsDB_getCurrentValues" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27974 28000]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [27940 28524])
+                    ("ISettingsDB_setCurrentValues" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [28564 28590]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [28530 29086])
+                    ("ISettingsDB_reset" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29115 29141]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [29092 29549])
+                    ("IPackageManager_getPackageInfo" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29591 29617]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [29555 30112])
+                    ("IPackageManager_getPackageInfoList" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30158 30184]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [30118 30753])
+                    ("IPackageManager_getExtendedPackageInfo" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30803 30829]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [30759 31364])
+                    ("IPackageManager_getExtendedPackageInfoList" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31418 31444]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [31370 32053])
+                    ("IPackageManager_getManifestPackageInfo" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32103 32129]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [32059 32664])
+                    ("IPackageManager_getManifestPackageInfoList" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32718 32744]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [32670 33353])
+                    ("IPackageInstaller_packageInstall" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33397 33423]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [33359 34030])
+                    ("IPackageInstaller_packageRemove" function
+                       (:arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [34073 34099]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [34036 34705])
+                    ("ApplicationManagerConsole" function
+                       (:constructor-flag t
+                        :type ("ApplicationManagerConsole" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [34711 34802])
+                    ("ApplicationManagerConsole" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [34808 34919])
+                    ("init" function (:type "void") (reparse-symbol classsubparts) [34925 43356]))                  
+                :type "class")
+                nil [2837 43359])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [43371 43380])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [43381 43394]))                  
+                :type "int")
+                nil [43361 45862]))          
+    :file "ApplicationManagerConsole.cpp"
+    :pointmax 45863
+    :fsize 45862
+    :lastmodtime '(21785 11074 719912 599000)
+    :unmatched-syntax '((punctuation 3121 . 3122) (semantic-list 3094 . 3121) (semantic-list 3058 . 3094) (VOID 3053 . 3057) (TYPEDEF 3045 . 3052))
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!BSP!drivers!src!refsw!AppLibs!broadcom!services!application!applications!ApplicationManagerConsole!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

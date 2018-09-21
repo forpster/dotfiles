@@ -1,0 +1,843 @@
+;; Object srp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "srp/"
+  :tables (list 
+   (semanticdb-table "AuthUser.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cstdio" include (:system-flag t) nil [1 18])
+            ("cstdlib" include (:system-flag t) nil [19 37])
+            ("cstring" include (:system-flag t) nil [38 56])
+            ("cassert" include (:system-flag t) nil [57 75])
+            ("iostream" include (:system-flag t) nil [77 96])
+            ("sstream" include (:system-flag t) nil [98 116])
+            ("iomanip" include (:system-flag t) nil [117 135])
+            ("AuthCommon.h" include nil nil [137 160])
+            ("AuthUser.h" include nil nil [161 182])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [184 204])
+            ("AuthUser" function
+               (:constructor-flag t
+                :parent "AuthUser"
+                :arguments 
+                  ( ("user" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [818 838])
+                    ("pass" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [839 858])
+                    ("isUnsalted" variable (:type "bool") (reparse-symbol arg-sub-list) [859 875]))                  
+                :type ("AuthUser" type (:type "class") nil nil))
+                nil [799 1845])
+            ("AuthUser" function
+               (:destructor-flag t
+                :parent "AuthUser"
+                :type "void")
+                nil [1848 1947])
+            ("authStart" function
+               (:parent "AuthUser"
+                :arguments 
+                  ( ("bStr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1974 1994])
+                    ("aStr" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1995 2009])
+                    ("mStr" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2010 2024]))                  
+                :type "bool")
+                nil [1949 3610])
+            ("authEnd" function
+               (:parent "AuthUser"
+                :arguments 
+                  ( ("bytes_HAMK" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [3635 3661]))                  
+                :type "bool")
+                nil [3612 3908])
+            ("getSessionKey" function
+               (:parent "AuthUser"
+                :type ("string" type (:type "class") nil nil))
+                nil [3910 4165])
+            ("createVerificationKey" function
+               (:parent "AuthUser"
+                :arguments 
+                  ( ("user" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4207 4231])
+                    ("pass" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4232 4256]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [4168 4794])
+            ("AuthHost.h" include nil nil [4796 4817])
+            ("unitTests" function (:type "void") nil [4819 7755]))          
+    :file "AuthUser.cpp"
+    :pointmax 7674
+    :fsize 7755
+    :lastmodtime '(21759 6636 704052 422000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AuthCommon.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__AUTH__" variable (:constant-flag t) nil [26 34])
+            ("openssl/evp.h" include (:system-flag t) nil [36 60])
+            ("openssl/err.h" include (:system-flag t) nil [61 85])
+            ("string" include (:system-flag t) nil [86 103])
+            ("QDebug" include (:system-flag t) nil [105 122])
+            ("bcsrp.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [137 156])
+            ("__doUnitTestEq" function
+               (:template 
+                  ( ("S" type (:type "class") nil nil)
+                    ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("S" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [277 288])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [289 300])
+                    ("equal" variable (:type "bool") (reparse-symbol arg-sub-list) [301 312])
+                    ("file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [313 330])
+                    ("line" variable (:type "int") (reparse-symbol arg-sub-list) [331 340]))                  
+                :typemodifiers ("static" "inline"))
+                nil [210 614])
+            ("__doUnitTestBasic" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("a" variable (:type "bool") (reparse-symbol arg-sub-list) [653 660])
+                    ("file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [661 678])
+                    ("line" variable (:type "int") (reparse-symbol arg-sub-list) [679 688]))                  
+                :type "void")
+                nil [616 871])
+            ("UNIT_TEST_EQ" variable (:constant-flag t) nil [881 893])
+            ("UNIT_TEST_NE" variable (:constant-flag t) nil [963 975])
+            ("UNIT_TEST" variable (:constant-flag t) nil [1045 1054])
+            ("S_alg" variable
+               (:constant-flag t
+                :type ("SRP_HashAlgorithm" type (:type "class") nil nil))
+                nil [1121 1168])
+            ("S_ng_type" variable
+               (:constant-flag t
+                :type ("SRP_NGType" type (:type "class") nil nil))
+                nil [1169 1217])
+            ("hexPrint" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1246 1270])
+                    ("v" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1271 1294])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [1295 1303]))                  
+                :type "void")
+                nil [1232 1304])
+            ("binToHex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1351 1376])
+                    ("srcLen" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1377 1397]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1330 1398])
+            ("binToHex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1420 1444]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1399 1445])
+            ("hexToBin" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1492 1516]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1471 1517])
+            ("locateHexAndStrip" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("text" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1588 1613])
+                    ("match" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1614 1639]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1558 1640])
+            ("findErrorCode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("reply" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1668 1693]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1642 1694])
+            ("BOUNCY_CASTLE" variable (:constant-flag t) nil [1704 1717]))          
+    :file "AuthCommon.h"
+    :pointmax 1688
+    :fsize 1727
+    :lastmodtime '(21759 6954 681551 140000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UNIT_TEST_EQ" (spp-arg-list ("A" "B") 893 . 899) . ((symbol "__doUnitTestEq" 900 . 914) (semantic-list "(   (A), (B), true,  __FILE__, __LINE__)" 914 . 954)))
+          ("__AUTH__")
+          ("UNIT_TEST" (spp-arg-list ("A" "B") 1054 . 1060) . ((symbol "__doUnitTestBasic" 1064 . 1081) (semantic-list "((A),             __FILE__, __LINE__)" 1081 . 1118)))
+          ("BOUNCY_CASTLE" . ((number "1" 1678 . 1679)))
+          ("UNIT_TEST_NE" (spp-arg-list ("A" "B") 975 . 981) . ((symbol "__doUnitTestEq" 982 . 996) (semantic-list "(   (A), (B), false, __FILE__, __LINE__)" 996 . 1036)))
+          )
+
+    )
+   (semanticdb-table "AuthUser.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__AUTH_USER__" variable (:constant-flag t) nil [31 44])
+            ("string" include (:system-flag t) nil [46 64])
+            ("unitTests" function
+               (:prototype-flag t
+                :type "void")
+                nil [176 193])
+            ("SRPUser" type
+               (:prototype t
+                :type "struct")
+                nil [195 210])
+            ("AuthUser" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [229 236])
+                    ("AuthUser" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("user" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [249 274])
+                            ("pass" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [275 299])
+                            ("isUnSalted" variable (:type "bool") (reparse-symbol arg-sub-list) [300 317])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [318 324]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [240 325])
+                    ("AuthUser" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [329 349])
+                    ("authStart" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bStr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [369 394])
+                            ("aStr" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [395 414])
+                            ("mStr" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [415 434]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [354 435])
+                    ("authEnd" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bytes_HAMK" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [452 478]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [439 479])
+                    ("getSalt" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [484 530])
+                    ("getVerification" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [534 596])
+                    ("getSessionKey" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [662 691])
+                    ("createVerificationKey" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("user" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [826 850])
+                            ("pass" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [851 875]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [785 876])
+                    ("private" label nil (reparse-symbol classsubparts) [878 886])
+                    ("AuthUser" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("AuthUser" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [932 948]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [923 949])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("AuthUser" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [973 989]))                          
+                        :type ("AuthUser" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [953 990])
+                    ("m_user" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [995 1014])
+                    ("m_pass" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1018 1037])
+                    ("m_salt" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1042 1061])
+                    ("m_verification" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1065 1092])
+                    ("m_usr" variable
+                       (:pointer 1
+                        :type ("SRPUser" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1097 1117]))                  
+                :type "class")
+                nil [212 1120]))          
+    :file "AuthUser.h"
+    :pointmax 1141
+    :fsize 1128
+    :lastmodtime '(21759 2315 216380 278000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__AUTH_USER__")
+          )
+
+    )
+   (semanticdb-table "AuthHost.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__AUTH_HOST__" variable (:constant-flag t) nil [31 44])
+            ("string" include (:system-flag t) nil [46 64])
+            ("openssl/bn.h" include (:system-flag t) nil [65 88])
+            ("SRPVerifier" type
+               (:prototype t
+                :type "struct")
+                nil [91 110])
+            ("AuthHost" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [129 136])
+                    ("AuthHost" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("user" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [149 174])
+                            ("salt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [175 200])
+                            ("verification" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [201 234]))                          
+                        :type ("AuthHost" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [140 235])
+                    ("AuthHost" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [240 260])
+                    ("authStart" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bStr" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [280 298]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [265 300])
+                    ("authEnd" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aStr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [317 341])
+                            ("mStr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [342 367])
+                            ("bytes_HAMK" variable
+                               (:pointer 2
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [368 395]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [304 396])
+                    ("private" label nil (reparse-symbol classsubparts) [398 406])
+                    ("AuthHost" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("AuthHost" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [452 468]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [443 469])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("AuthHost" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [493 509]))                          
+                        :type ("AuthHost" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [473 510])
+                    ("m_user" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [515 534])
+                    ("m_salt" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [539 558])
+                    ("m_verification" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [562 589])
+                    ("m_bStr" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [594 613])
+                    ("m_ver" variable
+                       (:pointer 1
+                        :type ("SRPVerifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [618 638])
+                    ("m_b" variable
+                       (:pointer 1
+                        :type ("BIGNUM" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [642 654]))                  
+                :type "class")
+                nil [112 658]))          
+    :file "AuthHost.h"
+    :pointmax 639
+    :fsize 667
+    :lastmodtime '(21759 6798 746779 319000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__AUTH_HOST__")
+          )
+
+    )
+   (semanticdb-table "AuthHost.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("openssl/evp.h" include (:system-flag t) nil [87 111])
+            ("openssl/err.h" include (:system-flag t) nil [112 136])
+            ("iostream" include (:system-flag t) nil [138 157])
+            ("sstream" include (:system-flag t) nil [159 177])
+            ("iomanip" include (:system-flag t) nil [178 196])
+            ("AuthCommon.h" include nil nil [200 223])
+            ("AuthHost.h" include nil nil [224 245])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [248 268])
+            ("AuthHost" function
+               (:constructor-flag t
+                :parent "AuthHost"
+                :arguments 
+                  ( ("user" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [362 382])
+                    ("salt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [383 403])
+                    ("verification" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [404 432]))                  
+                :type ("AuthHost" type (:type "class") nil nil))
+                nil [343 524])
+            ("AuthHost" function
+               (:destructor-flag t
+                :parent "AuthHost"
+                :type "void")
+                nil [526 691])
+            ("authStart" function
+               (:parent "AuthHost"
+                :arguments 
+                  ( ("bStr" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [787 800]))                  
+                :type "bool")
+                nil [762 1884])
+            ("authEnd" function
+               (:parent "AuthHost"
+                :arguments 
+                  ( ("aStr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1909 1928])
+                    ("mStr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1929 1949])
+                    ("bytes_HAMK" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1950 1977]))                  
+                :type "bool")
+                nil [1886 3306]))          
+    :file "AuthHost.cpp"
+    :pointmax 3240
+    :fsize 3306
+    :lastmodtime '(21760 1881 463858 45000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AuthCommon.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("AuthCommon.h" include nil nil [1 24])
+            ("sstream" include (:system-flag t) nil [26 44])
+            ("iomanip" include (:system-flag t) nil [45 63])
+            ("iostream" include (:system-flag t) nil [64 83])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [85 105])
+            ("hexPrint" function
+               (:arguments 
+                  ( ("str" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [122 141])
+                    ("v" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [142 165])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [166 174]))                  
+                :type "void")
+                nil [108 285])
+            ("charDigit" function
+               (:arguments 
+                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [301 308]))                  
+                :type "int")
+                nil [287 476])
+            ("binToHex" function
+               (:arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [494 519])
+                    ("srcLen" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [520 540]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [478 700])
+            ("binToHex" function
+               (:arguments 
+                  ( ("str" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [719 738]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [702 805])
+            ("hexToBin" function
+               (:arguments 
+                  ( ("str" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [823 842]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [807 1389])
+            ("locateHexAndStrip" function
+               (:arguments 
+                  ( ("text" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1416 1441])
+                    ("match" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1442 1467]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [1391 2021])
+            ("findErrorCode" function
+               (:arguments 
+                  ( ("reply" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2045 2070]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [2023 2347]))          
+    :file "AuthCommon.cpp"
+    :pointmax 2349
+    :fsize 2348
+    :lastmodtime '(21758 65090 56854 710000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "HttpAuthenticateSrp6.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QApplication" include (:system-flag t) nil [1 24])
+            ("QSslConfiguration" include (:system-flag t) nil [25 53])
+            ("QDebug" include (:system-flag t) nil [54 71])
+            ("QFile" include (:system-flag t) nil [72 88])
+            ("QXmlStreamReader" include (:system-flag t) nil [89 116])
+            ("QStringList" include (:system-flag t) nil [117 139])
+            ("iostream" include (:system-flag t) nil [141 160])
+            ("cassert" include (:system-flag t) nil [161 179])
+            ("sstream" include (:system-flag t) nil [180 198])
+            ("iomanip" include (:system-flag t) nil [199 217])
+            ("cstdio" include (:system-flag t) nil [218 235])
+            ("HttpAuthenticateSrp6.h" include nil nil [237 270])
+            ("AuthUser.h" include nil nil [272 293])
+            ("AuthCommon.h" include nil nil [294 317])
+            ("QDebug" include (:system-flag t) nil [319 336])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [338 358])
+            ("DBG_TRACE" variable (:constant-flag t) nil [368 377])
+            ("DBG_WARN" variable (:constant-flag t) nil [477 485])
+            ("coraca.h" include nil nil [825 844])
+            ("serialization_manager.h" include nil nil [845 879])
+            ("HttpAuthenticateSrp6" function
+               (:constructor-flag t
+                :parent "HttpAuthenticateSrp6"
+                :arguments 
+                  ( ("salted" variable (:type "bool") (reparse-symbol arg-sub-list) [1301 1313])
+                    ("timeout" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1314 1332]))                  
+                :type ("HttpAuthenticateSrp6" type (:type "class") nil nil))
+                nil [1257 2404])
+            ("HttpAuthenticateSrp6" function
+               (:destructor-flag t
+                :parent "HttpAuthenticateSrp6"
+                :type "void")
+                nil [2406 2631])
+            ("secureAuthHttp" function
+               (:parent "HttpAuthenticateSrp6"
+                :arguments 
+                  ( ("href" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2675 2700])
+                    ("postData" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2701 2730]))                  
+                :type "bool")
+                nil [2633 3580])
+            ("getUser" function
+               (:parent "HttpAuthenticateSrp6"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [3869 4835])
+            ("getPass" function
+               (:parent "HttpAuthenticateSrp6"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [4858 5906])
+            ("cancelTimer" function
+               (:parent "HttpAuthenticateSrp6"
+                :type "void")
+                nil [5908 6018])
+            ("doIStage" function
+               (:parent "HttpAuthenticateSrp6"
+                :type "bool")
+                nil [6021 7152])
+            ("doAMStage" function
+               (:parent "HttpAuthenticateSrp6"
+                :arguments 
+                  ( ("reply" variable
+                       (:pointer 1
+                        :type ("QNetworkReply" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7192 7214])
+                    ("replyStr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7215 7243]))                  
+                :type "bool")
+                nil [7154 10218])
+            ("doCompleteStage" function
+               (:parent "HttpAuthenticateSrp6"
+                :arguments 
+                  ( ("reply" variable
+                       (:pointer 1
+                        :type ("QNetworkReply" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10263 10285])
+                    ("replyStr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10286 10315]))                  
+                :type "bool")
+                nil [10220 11110])
+            ("resetTimer" function
+               (:parent "HttpAuthenticateSrp6"
+                :type "void")
+                nil [11115 11426])
+            ("authenticationRequiredSlot" function
+               (:parent "HttpAuthenticateSrp6"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("QNetworkReply" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11539 11556])
+                    ("" variable
+                       (:pointer 1
+                        :type ("QAuthenticator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11557 11575]))                  
+                :type "void")
+                nil [11483 11891])
+            ("finishedSlot" function
+               (:parent "HttpAuthenticateSrp6"
+                :arguments 
+                  ( ("reply" variable
+                       (:pointer 1
+                        :type ("QNetworkReply" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11935 11958]))                  
+                :type "void")
+                nil [11893 14775])
+            ("networkAccessibleChangedSlot" function
+               (:parent "HttpAuthenticateSrp6"
+                :arguments 
+                  ( ("accessible" variable (:type ("QNetworkAccessManager::NetworkAccessibility" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14835 14891]))                  
+                :type "void")
+                nil [14777 15188])
+            ("proxyAuthenticationRequiredSlot" function
+               (:parent "HttpAuthenticateSrp6"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QNetworkProxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15251 15273])
+                    ("" variable
+                       (:pointer 1
+                        :type ("QAuthenticator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15274 15292]))                  
+                :type "void")
+                nil [15190 15486])
+            ("sslErrorsSlot" function
+               (:parent "HttpAuthenticateSrp6"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("QNetworkReply" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15588 15604])
+                    ("errors" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QSslError" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15605 15638]))                  
+                :type "void")
+                nil [15545 15918])
+            ("timeout" function
+               (:parent "HttpAuthenticateSrp6"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15955 15960]))                  
+                :type "void")
+                nil [15920 16164]))          
+    :file "HttpAuthenticateSrp6.cpp"
+    :pointmax 16167
+    :fsize 16164
+    :lastmodtime '(21759 7045 800835 3000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DBG_TRACE" . 
+              ((symbol "qDebug" 383 . 389) (semantic-list "()" 389 . 391) (punctuation "<" 392 . 393) (punctuation "<" 393 . 394) (string "\"HttpAuthenticateSrp6 ::\"" 395 . 420) (punctuation "<" 421 . 422) (punctuation "<" 422 . 423) (symbol "__FUNCTION__" 424 . 436) (punctuation "<" 437 . 438) (punctuation "<" 438 . 439) (string "\"()\"" 440 . 444) (punctuation "<" 445 . 446) (punctuation "<" 446 . 447) (string "\":\"" 448 . 451) (punctuation "<" 452 . 453) (punctuation "<" 453 . 454) (symbol "__LINE__" 455 . 463) (punctuation "<" 464 . 465) (punctuation "<" 465 . 466) (string "\":\"" 467 . 470)))
+          ("DBG_WARN" . 
+              ((symbol "qWarning" 492 . 500) (semantic-list "()" 500 . 502) (punctuation "<" 503 . 504) (punctuation "<" 504 . 505) (string "\"HttpAuthenticateSrp6 ::\"" 506 . 531) (punctuation "<" 532 . 533) (punctuation "<" 533 . 534) (symbol "__FUNCTION__" 535 . 547) (punctuation "<" 548 . 549) (punctuation "<" 549 . 550) (string "\"()\"" 551 . 555) (punctuation "<" 556 . 557) (punctuation "<" 557 . 558) (string "\":\"" 559 . 562) (punctuation "<" 563 . 564) (punctuation "<" 564 . 565) (symbol "__LINE__" 566 . 574) (punctuation "<" 575 . 576) (punctuation "<" 576 . 577) (string "\":\"" 578 . 581)))
+          )
+
+    )
+   (semanticdb-table "HttpAuthenticateSrp6.h"
+    :file "HttpAuthenticateSrp6.h"
+    :fsize 2855
+    :lastmodtime '(21758 65090 55854 718000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!srp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

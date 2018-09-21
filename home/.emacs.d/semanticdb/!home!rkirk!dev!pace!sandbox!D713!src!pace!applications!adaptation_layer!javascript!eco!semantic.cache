@@ -1,0 +1,107 @@
+;; Object eco/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "eco/"
+  :tables (list 
+   (semanticdb-table "stb_eco_latensCoreMail.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("tlogger/tlogger.h" include (:system-flag t) nil [1000 1028])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1029 1053])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [1054 1108])
+            ("stb_eco_latensCoreMail.h" include nil nil [1110 1145])
+            ("QString" include (:system-flag t) nil [1146 1164])
+            ("LatensCoreMail" function
+               (:constructor-flag t
+                :parent "LatensCoreMail"
+                :arguments 
+                  ( ("constructorParameters" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ConstructorParameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1197 1248]))                  
+                :type ("LatensCoreMail" type (:type "class") nil nil))
+                nil [1166 1504])
+            ("LatensCoreMail" function
+               (:destructor-flag t
+                :parent "LatensCoreMail"
+                :type "void")
+                nil [1506 1565])
+            ("getMessages" function
+               (:parent "LatensCoreMail"
+                :type ("QVariantMap" type (:type "class") nil nil))
+                nil [1567 2750])
+            ("getMessage" function
+               (:parent "LatensCoreMail"
+                :arguments 
+                  ( ("messageId" variable (:type "int") (reparse-symbol arg-sub-list) [2791 2805]))                  
+                :type ("QVariantMap" type (:type "class") nil nil))
+                nil [2752 3963])
+            ("setMailState" function
+               (:parent "LatensCoreMail"
+                :arguments 
+                  ( ("messageId" variable (:type "int") (reparse-symbol arg-sub-list) [3999 4013])
+                    ("mailStates" variable (:type "int") (reparse-symbol arg-sub-list) [4013 4028]))                  
+                :type "void")
+                nil [3965 4606])
+            ("deleteMessage" function
+               (:parent "LatensCoreMail"
+                :arguments 
+                  ( ("messageId" variable (:type "int") (reparse-symbol arg-sub-list) [4642 4656]))                  
+                :type "int")
+                nil [4608 4916])
+            ("deleteAllMessages" function
+               (:parent "LatensCoreMail"
+                :type "void")
+                nil [4918 5013])
+            ("getMailReceived" function
+               (:parent "LatensCoreMail"
+                :type "int")
+                nil [5015 5133])
+            ("getMailStateRead" function
+               (:parent "LatensCoreMail"
+                :type "int")
+                nil [5135 5248])
+            ("getMailStateUnread" function
+               (:parent "LatensCoreMail"
+                :type "int")
+                nil [5250 5368])
+            ("getMailStateCount" function
+               (:parent "LatensCoreMail"
+                :type "int")
+                nil [5370 5486])
+            ("getMailStateUnknown" function
+               (:parent "LatensCoreMail"
+                :type "int")
+                nil [5488 5607])
+            ("getMailDetails" function
+               (:parent "LatensCoreMail"
+                :type ("QVariantMap" type (:type "class") nil nil))
+                nil [5609 5710])
+            ("newMailNotification" function
+               (:parent "LatensCoreMail"
+                :arguments 
+                  ( ("messageId" variable (:type "int") (reparse-symbol arg-sub-list) [5753 5767]))                  
+                :type "void")
+                nil [5712 5917]))          
+    :file "stb_eco_latensCoreMail.cpp"
+    :pointmax 5918
+    :fsize 5917
+    :lastmodtime '(21785 22982 52958 855000)
+    :unmatched-syntax '((string 1082 . 1105))
+    )
+   (semanticdb-table "stb_eco_latensCoreMail.h"
+    :file "stb_eco_latensCoreMail.h"
+    :fsize 2664
+    :lastmodtime '(21785 22982 56958 823000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D713!src!pace!applications!adaptation_layer!javascript!eco!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

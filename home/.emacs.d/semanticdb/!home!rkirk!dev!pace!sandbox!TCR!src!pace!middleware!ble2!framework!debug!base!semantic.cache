@@ -1,0 +1,519 @@
+;; Object base/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "base/"
+  :tables (list 
+   (semanticdb-table "ble_debug.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BLE_DEBUG_H" variable (:constant-flag t) nil [804 815])
+            ("stdio.h" include (:system-flag t) nil [984 1002])
+            ("QDebug" include (:system-flag t) nil [1003 1020])
+            ("sys/syscall.h" include (:system-flag t) nil [1021 1045])
+            ("QVector" include (:system-flag t) nil [1047 1065])
+            ("QString" include (:system-flag t) nil [1066 1084])
+            ("QFile" include (:system-flag t) nil [1085 1101])
+            ("QMutex" include (:system-flag t) nil [1102 1119])
+            ("pthread.h" include (:system-flag t) nil [1120 1140])
+            ("DEBUG_ENABLE_REGISTRATION" variable (:constant-flag t) nil [4834 4859])
+            ("DEBUG_REGISTER_APP" variable (:constant-flag t) nil [4893 4911])
+            ("DEBUG_REGISTER_ENGINE" variable (:constant-flag t) nil [4936 4957])
+            ("DEBUG_REGISTER_ENGINE_TASK" variable (:constant-flag t) nil [4986 5012])
+            ("DEBUG_REGISTER_PIPELINE" variable (:constant-flag t) nil [5036 5059])
+            ("DEBUG_REGISTER_PIPELINE_TASK" variable (:constant-flag t) nil [5087 5115])
+            ("DEBUG_CLOSE_ALL" variable (:constant-flag t) nil [5157 5172])
+            ("DEBUG_UCV" variable (:constant-flag t) nil [7838 7847])
+            ("DEBUG_V" variable (:constant-flag t) nil [7879 7886])
+            ("DEBUG_VARGS" variable (:constant-flag t) nil [7911 7922])
+            ("DEBUG_WARN" variable (:constant-flag t) nil [8176 8186])
+            ("DEBUG_ERROR" variable (:constant-flag t) nil [8199 8210])
+            ("DEBUG_CONS" variable (:constant-flag t) nil [8518 8528])
+            ("DEBUG_DEST" variable (:constant-flag t) nil [8541 8551])
+            ("DEBUG_OPER" variable (:constant-flag t) nil [8564 8574])
+            ("DEBUG_ENTER_S" variable (:constant-flag t) nil [13757 13770])
+            ("DEBUG_ENTER_N" variable (:constant-flag t) nil [13783 13796])
+            ("DEBUG_ENTER_NS" variable (:constant-flag t) nil [13807 13821])
+            ("DEBUG_ENTER_NES" variable (:constant-flag t) nil [13834 13849])
+            ("DEBUG_ENTER_NCS" variable (:constant-flag t) nil [13862 13877])
+            ("DEBUG_ENTER_NGS" variable (:constant-flag t) nil [13890 13905])
+            ("DEBUG_ENTER_NPS" variable (:constant-flag t) nil [13918 13933])
+            ("DEBUG_ENTER_NLS" variable (:constant-flag t) nil [13946 13961])
+            ("DEBUG_ENTER_NE" variable (:constant-flag t) nil [13975 13989])
+            ("DEBUG_ENTER_NC" variable (:constant-flag t) nil [13999 14013])
+            ("DEBUG_ENTER_NG" variable (:constant-flag t) nil [14023 14037])
+            ("DEBUG_ENTER_NP" variable (:constant-flag t) nil [14047 14061])
+            ("DEBUG_ENTER_NL" variable (:constant-flag t) nil [14071 14085])
+            ("DEBUG_ENTER_IS" variable (:constant-flag t) nil [14096 14110])
+            ("DEBUG_ENTER_I" variable (:constant-flag t) nil [14123 14136])
+            ("DEBUG_EXIT" variable (:constant-flag t) nil [14147 14157])
+            ("DEBUG_TODO" variable (:constant-flag t) nil [14170 14180])
+            ("DEBUG_TOTEST" variable (:constant-flag t) nil [14190 14202])
+            ("DEBUG_NODO" variable (:constant-flag t) nil [14212 14222])
+            ("DEBUG_MSG0" variable (:constant-flag t) nil [14501 14511])
+            ("DEBUG_MSG1" variable (:constant-flag t) nil [14524 14534])
+            ("DEBUG_MSG2" variable (:constant-flag t) nil [14547 14557])
+            ("DEBUG_TEXT" variable (:constant-flag t) nil [14923 14933])
+            ("DEBUG_ASCII" variable (:constant-flag t) nil [14946 14957])
+            ("DEBUG_CONTENTS" variable (:constant-flag t) nil [15155 15169])
+            ("DEBUG_CLASS_DECLS" variable (:constant-flag t) nil [15498 15515])
+            ("DEBUG_CLASS_DEFNS" variable (:constant-flag t) nil [15525 15542])
+            ("DEBUG_CLASS_NAME" variable (:constant-flag t) nil [15623 15639])
+            ("DEBUG_FUNCTION_NAME" variable (:constant-flag t) nil [15664 15683])
+            ("DEBUG_ENUM2STR" variable (:constant-flag t) nil [16011 16025])
+            ("DEBUG_HEAP" variable (:constant-flag t) nil [16208 16218])
+            ("TYPE_CAST" variable (:constant-flag t) nil [16821 16830])
+            ("BLE_DEBUG_PL_TASK" type
+               (:members 
+                  ( ("BLE_DEBUG_PL_TASK_GENERAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17127 17153])
+                    ("BLE_DEBUG_PL_TASK_SXN_CB" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17157 17182])
+                    ("BLE_DEBUG_PL_TASK_MSG_CB" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17186 17212]))                  
+                :type "enum")
+                nil [17095 17213])
+            ("BLE_DEBUG_LOGGER" type
+               (:members 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("QFile" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [17275 17292])
+                    ("mutex" variable
+                       (:pointer 1
+                        :type ("QMutex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [17320 17338]))                  
+                :type "struct")
+                nil [17244 17372])
+            ("BLE_DEBUG_PIPELINE_ITEM" type
+               (:members 
+                  ( ("p_index" variable (:type "int") (reparse-symbol classsubparts) [17429 17455])
+                    ("pids" variable (:type ("QVector" type
+                         (:template-specifier 
+                            ( ("pid_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [17498 17521])
+                    ("sxn_cb_pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17615 17644])
+                    ("msg_cb_pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17746 17775]))                  
+                :type "struct")
+                nil [17393 17879])
+            ("BLE_DEBUG_ENGINE_ITEM" type
+               (:members 
+                  ( ("e_index" variable (:type "int") (reparse-symbol classsubparts) [17932 17976])
+                    ("filename" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17999 18044])
+                    ("logger" variable (:type ("BLE_DEBUG_LOGGER" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18081 18124])
+                    ("pids" variable (:type ("QVector" type
+                         (:template-specifier 
+                            ( ("pid_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [18143 18184])
+                    ("pipelines" variable (:type ("QVector" type
+                         (:template-specifier 
+                            ( ("BLE_DEBUG_PIPELINE_ITEM" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [18252 18298]))                  
+                :type "struct")
+                nil [17898 18330])
+            ("BLE_DEBUG_APP_ITEM" type
+               (:members 
+                  ( ("filename" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18385 18427])
+                    ("logger" variable (:type ("BLE_DEBUG_LOGGER" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18475 18515])
+                    ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18537 18574])
+                    ("engines" variable (:type ("QVector" type
+                         (:template-specifier 
+                            ( ("BLE_DEBUG_ENGINE_ITEM" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [18599 18640]))                  
+                :type "struct")
+                nil [18354 18675])
+            ("BLE_DEBUG" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [19028 19035])
+                    ("BLE_DEBUG" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("BLE_DEBUG" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19040 19053])
+                    ("BLE_DEBUG" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [19080 19102])
+                    ("ENUM_PAIR" type
+                       (:members 
+                          ( ("value" variable (:type "int") (reparse-symbol classsubparts) [19157 19175])
+                            ("string" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [19182 19201]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [19127 19207])
+                    ("ENUM_GROUP" type
+                       (:members 
+                          ( ("parent" variable
+                               (:pointer 1
+                                :type ("ENUM_GROUP" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [19243 19262])
+                            ("pair" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("ENUM_PAIR" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [19269 19292]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [19212 19298])
+                    ("ENUM_TYPE" type
+                       (:members 
+                          ( ("CONTROL_STATE_enum" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19503 19522])
+                            ("CONTROL_SOURCE_enum" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19529 19549])
+                            ("STORAGE_DATA_TYPE_enum" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19556 19579])
+                            ("FRONTEND_TYPE_enum" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19586 19605])
+                            ("DB_STATE_enum" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19612 19626])
+                            ("TABLE_STATE_enum" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19633 19650])
+                            ("TIME_SET_HANDLING_enum" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19657 19680])
+                            ("TIME_CORRECTION_HANDLING_enum" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19687 19717])
+                            ("TIME_LOST_HANDLING_enum" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19724 19748])
+                            ("TIME_OFFSET_HANDLING_enum" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19755 19781])
+                            ("TIME_SET_STATE_enum" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19788 19808])
+                            ("GST_BUS_MESSAGE_enum" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19815 19836])
+                            ("LISTING_ENGINE_UPDATE_enum" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19843 19870])
+                            ("SIGNAL_DATA_TYPE_enum" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19877 19899])
+                            ("BLE_STATUS_enum" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19929 19945])
+                            ("LAST_BUILT_IN_PLUS_ONE_enum" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19953 19985]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [19444 19986])
+                    ("CONTROL_STATE_group" variable
+                       (:typemodifiers ("static")
+                        :type ("ENUM_GROUP" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20027 20068])
+                    ("CONTROL_SOURCE_group" variable
+                       (:typemodifiers ("static")
+                        :type ("ENUM_GROUP" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20072 20114])
+                    ("STORAGE_DATA_TYPE_group" variable
+                       (:typemodifiers ("static")
+                        :type ("ENUM_GROUP" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20118 20163])
+                    ("FRONTEND_TYPE_group" variable
+                       (:typemodifiers ("static")
+                        :type ("ENUM_GROUP" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20167 20208])
+                    ("DB_STATE_group" variable
+                       (:typemodifiers ("static")
+                        :type ("ENUM_GROUP" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20212 20248])
+                    ("TABLE_STATE_group" variable
+                       (:typemodifiers ("static")
+                        :type ("ENUM_GROUP" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20252 20291])
+                    ("TIME_SET_HANDLING_group" variable
+                       (:typemodifiers ("static")
+                        :type ("ENUM_GROUP" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20295 20340])
+                    ("TIME_CORRECTION_HANDLING_group" variable
+                       (:typemodifiers ("static")
+                        :type ("ENUM_GROUP" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20344 20396])
+                    ("TIME_LOST_HANDLING_group" variable
+                       (:typemodifiers ("static")
+                        :type ("ENUM_GROUP" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20400 20446])
+                    ("TIME_OFFSET_HANDLING_group" variable
+                       (:typemodifiers ("static")
+                        :type ("ENUM_GROUP" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20450 20498])
+                    ("TIME_SET_STATE_group" variable
+                       (:typemodifiers ("static")
+                        :type ("ENUM_GROUP" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20502 20544])
+                    ("GST_BUS_MESSAGE_group" variable
+                       (:typemodifiers ("static")
+                        :type ("ENUM_GROUP" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20548 20591])
+                    ("LISTING_ENGINE_UPDATE_group" variable
+                       (:typemodifiers ("static")
+                        :type ("ENUM_GROUP" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20595 20644])
+                    ("SIGNAL_DATA_TYPE_group" variable
+                       (:typemodifiers ("static")
+                        :type ("ENUM_GROUP" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20648 20692])
+                    ("BLE_STATUS_group" variable
+                       (:typemodifiers ("static")
+                        :type ("ENUM_GROUP" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20696 20734])
+                    ("enum2str" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :constant-flag t
+                        :arguments 
+                          ( ("enum_type" variable (:type "int") (reparse-symbol arg-sub-list) [20770 20784])
+                            ("enum_value" variable (:type "int") (reparse-symbol arg-sub-list) [20785 20800]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [20739 20801])
+                    ("heap_used" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [20827 20852])
+                    ("allocs" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [20856 20878])
+                    ("alloced" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [20882 20905])
+                    ("frees" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [20909 20930])
+                    ("freed" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [20934 20955])
+                    ("peak" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [20959 20979])
+                    ("enable_registration" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("enable_reg" variable (:type "bool") (reparse-symbol arg-sub-list) [21041 21057])
+                            ("enable_buf" variable (:type "bool") (reparse-symbol arg-sub-list) [21058 21074]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21003 21075])
+                    ("register_app" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21110 21120])
+                            ("filename" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21121 21138]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21079 21139])
+                    ("register_engine" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("e_index" variable (:type "int") (reparse-symbol arg-sub-list) [21177 21189])
+                            ("filename" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21190 21207]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21143 21208])
+                    ("register_engine_task" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("e_index" variable (:type "int") (reparse-symbol arg-sub-list) [21251 21263])
+                            ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21264 21274]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21212 21275])
+                    ("register_pipeline" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("e_index" variable (:type "int") (reparse-symbol arg-sub-list) [21315 21327])
+                            ("p_index" variable (:type "int") (reparse-symbol arg-sub-list) [21328 21340]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21279 21341])
+                    ("register_pipeline_task" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("e_index" variable (:type "int") (reparse-symbol arg-sub-list) [21386 21398])
+                            ("p_index" variable (:type "int") (reparse-symbol arg-sub-list) [21399 21411])
+                            ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21412 21422])
+                            ("pl_task" variable (:type ("BLE_DEBUG_PL_TASK" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21423 21449]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21345 21450])
+                    ("close_all" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [21454 21484])
+                    ("pid2logger" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21528 21538]))                          
+                        :type ("BLE_DEBUG_LOGGER" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21488 21539])
+                    ("pid2logger" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("e_index" variable (:type "int") (reparse-symbol arg-sub-list) [21583 21595])
+                            ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21596 21606]))                          
+                        :type ("BLE_DEBUG_LOGGER" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21543 21607])
+                    ("pid2logger" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("e_index" variable (:type "int") (reparse-symbol arg-sub-list) [21651 21663])
+                            ("p_index" variable (:type "int") (reparse-symbol arg-sub-list) [21664 21676])
+                            ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21677 21687]))                          
+                        :type ("BLE_DEBUG_LOGGER" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21611 21688])
+                    ("app" variable
+                       (:typemodifiers ("static")
+                        :type ("BLE_DEBUG_APP_ITEM" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21693 21727])
+                    ("reg_enabled" variable
+                       (:typemodifiers ("static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [21731 21773])
+                    ("buf_enabled" variable
+                       (:typemodifiers ("static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [21777 21819])
+                    ("apptex" variable
+                       (:typemodifiers ("static")
+                        :type ("QMutex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21823 21860])
+                    ("protected" label nil (reparse-symbol classsubparts) [21865 21875])
+                    ("search4str" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("EP" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("ENUM_PAIR" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21906 21927])
+                            ("enum_value" variable (:type "int") (reparse-symbol arg-sub-list) [21928 21943])
+                            ("enum_str" variable
+                               (:pointer 2
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [21944 21966]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [21880 21967])
+                    ("private" label nil (reparse-symbol classsubparts) [21972 21980]))                  
+                :type "class")
+                nil [19007 22006])
+            ("DEBUG_KEY" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [22465 22486]))                  
+                :type "void")
+                nil [22442 22497]))          
+    :file "ble_debug.h"
+    :pointmax 22608
+    :fsize 22607
+    :lastmodtime '(21907 59824 301664 504000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DEBUG_ENABLE_REGISTRATION" (spp-arg-list ("enable_reg" "enable_buf") 4859 . 4883))
+          ("DEBUG_ENTER_NS" (spp-arg-list ("x") 13821 . 13824))
+          ("DEBUG_ERROR" (spp-arg-list ("x") 8210 . 8213))
+          ("DEBUG_CONS" (spp-arg-list ("x") 8528 . 8531))
+          ("DEBUG_ENTER_NG")
+          ("DEBUG_ENUM2STR" (spp-arg-list ("et" "ev") 16025 . 16033) . ((string "\"\"" 16035 . 16037)))
+          ("BLE_DEBUG_H")
+          ("DEBUG_ENTER_NES" (spp-arg-list ("x") 13849 . 13852))
+          ("DEBUG_ENTER_I")
+          ("DEBUG_REGISTER_PIPELINE_TASK" (spp-arg-list ("e_index" "p_index" "pid" "pl_task") 5115 . 5147))
+          ("DEBUG_NODO")
+          ("DEBUG_MSG0" (spp-arg-list ("x") 14511 . 14514))
+          ("DEBUG_HEAP" (spp-arg-list ("x") 16218 . 16221))
+          ("TYPE_CAST" (spp-arg-list ("T" "v") 16830 . 16836) . 
+              ((symbol "static_cast" 16839 . 16850) (punctuation "<" 16850 . 16851) (symbol "T" 16851 . 16852) (punctuation ">" 16852 . 16853) (semantic-list "(v)" 16853 . 16856)))
+          ("DEBUG_EXIT" (spp-arg-list ("x") 14157 . 14160))
+          ("DEBUG_MSG1" (spp-arg-list ("x") 14534 . 14537))
+          ("DEBUG_CLASS_DECLS")
+          ("DEBUG_FUNCTION_NAME" . ((symbol "__FUNCTION__" 15685 . 15697)))
+          ("DEBUG_REGISTER_PIPELINE" (spp-arg-list ("e_index" "p_index") 5059 . 5077))
+          ("DEBUG_V" (spp-arg-list ("DEBUG_args...") 7886 . 7901))
+          ("DEBUG_WARN" (spp-arg-list ("x") 8186 . 8189))
+          ("DEBUG_DEST" (spp-arg-list ("x") 8551 . 8554))
+          ("DEBUG_ENTER_NL")
+          ("DEBUG_MSG2" (spp-arg-list ("x") 14557 . 14560))
+          ("DEBUG_REGISTER_ENGINE" (spp-arg-list ("e_index" "filename") 4957 . 4976))
+          ("DEBUG_UCV" (spp-arg-list ("DEBUG_ucv" "DEBUG_nul") 7847 . 7869))
+          ("DEBUG_OPER" (spp-arg-list ("x") 8574 . 8577))
+          ("DEBUG_ENTER_N")
+          ("DEBUG_CONTENTS" (spp-arg-list ("y") 15169 . 15172))
+          ("DEBUG_ENTER_NGS" (spp-arg-list ("x") 13905 . 13908))
+          ("DEBUG_REGISTER_ENGINE_TASK" (spp-arg-list ("e_index" "pid") 5012 . 5026))
+          ("DEBUG_CLOSE_ALL")
+          ("DEBUG_ENTER_NCS" (spp-arg-list ("x") 13877 . 13880))
+          ("DEBUG_ENTER_NPS" (spp-arg-list ("x") 13933 . 13936))
+          ("DEBUG_ENTER_NLS" (spp-arg-list ("x") 13961 . 13964))
+          ("DEBUG_ENTER_NC")
+          ("DEBUG_ENTER_NP")
+          ("DEBUG_TODO")
+          ("DEBUG_ASCII" (spp-arg-list ("y") 14957 . 14960))
+          ("DEBUG_ENTER_IS" (spp-arg-list ("x") 14110 . 14113))
+          ("DEBUG_TOTEST")
+          ("DEBUG_TEXT" (spp-arg-list ("y") 14933 . 14936))
+          ("DEBUG_CLASS_NAME" . ((symbol "class_name" 15644 . 15654)))
+          ("DEBUG_REGISTER_APP" (spp-arg-list ("pid" "filename") 4911 . 4926))
+          ("DEBUG_VARGS" (spp-arg-list ("args...") 7922 . 7931))
+          ("DEBUG_ENTER_S" (spp-arg-list ("x") 13770 . 13773))
+          ("DEBUG_ENTER_NE")
+          ("DEBUG_CLASS_DEFNS" (spp-arg-list ("CLASSNAME") 15542 . 15553))
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!TCR!src!pace!middleware!ble2!framework!debug!base!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

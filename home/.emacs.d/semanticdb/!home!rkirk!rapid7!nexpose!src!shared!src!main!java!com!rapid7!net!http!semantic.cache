@@ -1,0 +1,852 @@
+;; Object http/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "http/"
+  :tables (list 
+   (semanticdb-table "HTTPMessageParser.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.rapid7.net.http" package nil nil [354 382])
+            ("com.rapid7.content.IMimeContent" include nil nil [384 423])
+            ("com.rapid7.content.IMimeContentTypes" include nil nil [424 468])
+            ("com.rapid7.content.MimeContentAdapter" include nil nil [469 514])
+            ("com.rapid7.i18n.CharSetUtils" include nil nil [515 551])
+            ("com.rapid7.io.LineInputStream" include nil nil [552 589])
+            ("com.rapid7.io.TimeoutInputStream" include nil nil [590 630])
+            ("com.rapid7.log.ILogSink" include nil nil [631 662])
+            ("com.rapid7.util.PropertyUtils" include nil nil [663 700])
+            ("java.io.EOFException" include nil nil [702 730])
+            ("java.io.IOException" include nil nil [731 758])
+            ("java.io.InputStream" include nil nil [759 786])
+            ("java.util.HashMap" include nil nil [787 812])
+            ("java.util.Map" include nil nil [813 834])
+            ("HTTPMessageParser" type
+               (:typemodifiers ("public" "abstract")
+                :members 
+                  ( ("HTTPMessageParser" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("in" variable (:type "InputStream") (reparse-symbol formal_parameters) [1223 1237]))                          )
+                        (reparse-symbol class_member_declaration) [1198 1270])
+                    ("HTTPMessageParser" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("in" variable (:type "InputStream") (reparse-symbol formal_parameters) [1300 1314])
+                            ("logSink" variable (:type "ILogSink") (reparse-symbol formal_parameters) [1316 1332]))                          )
+                        (reparse-symbol class_member_declaration) [1275 2254])
+                    ("isSelfLimited" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2259 2327])
+                    ("parse" function
+                       (:throws ("IOException")
+                        :typemodifiers ("protected" "final")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2512 4873])
+                    ("getBody" function
+                       (:typemodifiers ("protected")
+                        :type "IMimeContent")
+                        (reparse-symbol class_member_declaration) [4878 4941])
+                    ("parseFirstLine" function
+                       (:throws ("IOException")
+                        :typemodifiers ("protected" "abstract")
+                        :arguments 
+                          ( ("line" variable (:type "String") (reparse-symbol formal_parameters) [5217 5228]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5175 5255])
+                    ("canHaveBody" function
+                       (:throws ("IOException")
+                        :typemodifiers ("protected" "abstract")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5366 5432])
+                    ("addHeadersTo" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("msg" variable (:type "HTTPMessage") (reparse-symbol formal_parameters) [5538 5553]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5510 5623])
+                    ("readHeaders" function
+                       (:throws ("IOException")
+                        :typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5740 6710])
+                    ("prepareBodyStream" function
+                       (:throws ("IOException")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("isChunked" variable (:type "boolean") (reparse-symbol formal_parameters) [7676 7693]))                          
+                        :type "InputStream")
+                        (reparse-symbol class_member_declaration) [7636 8264])
+                    ("setVersion" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("major" variable (:type "int") (reparse-symbol formal_parameters) [8370 8379])
+                            ("minor" variable (:type "int") (reparse-symbol formal_parameters) [8381 8390]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8344 8455])
+                    ("getMajorVersion" function
+                       (:typemodifiers ("protected")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8460 8527])
+                    ("getMinorVersion" function
+                       (:typemodifiers ("protected")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8532 8599])
+                    ("getContentLength" function
+                       (:typemodifiers ("protected")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [8604 8677])
+                    ("readLine" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("enc" variable (:type "String") (reparse-symbol formal_parameters) [9191 9201]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9169 9734])
+                    ("addHeader" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [9890 9901])
+                            ("value" variable (:type "String") (reparse-symbol formal_parameters) [9903 9915]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9867 9963])
+                    ("getHeader" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [10099 10110]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [10074 10158])
+                    ("unreadLastLine" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10287 10929])
+                    ("log" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [10953 10963]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10934 11072])
+                    ("MAX_LINE_LEN" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [11310 11355])
+                    ("m_in" variable
+                       (:typemodifiers ("private")
+                        :type "LineInputStream")
+                        (reparse-symbol class_member_declaration) [11423 11452])
+                    ("m_lineBytes" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [11510 11537])
+                    ("m_line" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [11580 11602])
+                    ("m_hdrs" variable
+                       (:typemodifiers ("private")
+                        :type "HTTPHeaders")
+                        (reparse-symbol class_member_declaration) [11652 11679])
+                    ("m_contentLength" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [11858 11887])
+                    ("m_httpMajor" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [11925 11949])
+                    ("m_httpMinor" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [11987 12011])
+                    ("m_selfLimited" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [12077 12107])
+                    ("m_body" variable
+                       (:typemodifiers ("private")
+                        :type "IMimeContent")
+                        (reparse-symbol class_member_declaration) [12174 12202])
+                    ("m_logSink" variable
+                       (:typemodifiers ("private")
+                        :type "ILogSink")
+                        (reparse-symbol class_member_declaration) [12295 12322]))                  
+                :type "class")
+                nil [977 12324]))          
+    :file "HTTPMessageParser.java"
+    :pointmax 12325
+    :fsize 13955
+    :lastmodtime '(22154 17428 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "HTTPClient.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.rapid7.net.http" package nil nil [354 382])
+            ("com.rapid7.auth.ICredentials" include nil nil [384 420])
+            ("com.rapid7.content.IMimeContent" include nil nil [421 460])
+            ("com.rapid7.content.IMimeMessageHeaders" include nil nil [461 507])
+            ("com.rapid7.lang.Pair" include nil nil [508 536])
+            ("com.rapid7.log.ILogSink" include nil nil [537 568])
+            ("com.rapid7.net.IAddress" include nil nil [569 600])
+            ("com.rapid7.net.ISession" include nil nil [601 632])
+            ("com.rapid7.net.ISessionEndpoint" include nil nil [633 672])
+            ("com.rapid7.net.NetException" include nil nil [673 708])
+            ("com.rapid7.net.NetUtils" include nil nil [709 740])
+            ("com.rapid7.net.NetworkNode" include nil nil [741 775])
+            ("com.rapid7.net.ParsedURL" include nil nil [776 808])
+            ("com.rapid7.net.SSLSocketFactory" include nil nil [809 848])
+            ("com.rapid7.net.SessionEndpoint" include nil nil [849 887])
+            ("com.rapid7.util.PropertyUtils" include nil nil [888 925])
+            ("java.io.Closeable" include nil nil [926 951])
+            ("java.io.IOException" include nil nil [952 979])
+            ("java.io.InputStream" include nil nil [980 1007])
+            ("java.io.InterruptedIOException" include nil nil [1008 1046])
+            ("java.net.SocketTimeoutException" include nil nil [1047 1086])
+            ("java.net.URL" include nil nil [1087 1107])
+            ("java.security.cert.X509Certificate" include nil nil [1108 1150])
+            ("java.util.HashMap" include nil nil [1151 1176])
+            ("java.util.Iterator" include nil nil [1177 1203])
+            ("java.util.Map" include nil nil [1204 1225])
+            ("HTTPClient" type
+               (:typemodifiers ("public")
+                :interfaces ("Closeable")
+                :members 
+                  ( ("REDIRECT_NEVER" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [1814 1864])
+                    ("REDIRECT_SAME_HOST_AND_PORT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [1932 1995])
+                    ("REDIRECT_SAME_HOST" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [2064 2118])
+                    ("REDIRECT_ANYWHERE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [2173 2226])
+                    ("REDIRECT_MAP_URL" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [2281 2333])
+                    ("REDIRECT_MAP_PATH" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [2390 2443])
+                    ("REDIRECT_MAP_PATH_AND_QUERY" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [2511 2574])
+                    ("HTTPClient" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [2813 2860])
+                    ("HTTPClient" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ignoreResponseTimeout" variable (:type "boolean") (reparse-symbol formal_parameters) [3089 3118]))                          )
+                        (reparse-symbol class_member_declaration) [3071 3205])
+                    ("HTTPClient" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("logSink" variable (:type "ILogSink") (reparse-symbol formal_parameters) [3320 3336]))                          )
+                        (reparse-symbol class_member_declaration) [3302 4577])
+                    ("getSessionParams" function
+                       (:typemodifiers ("public")
+                        :type "HTTPSessionParams")
+                        (reparse-symbol class_member_declaration) [4666 4746])
+                    ("setSessionParams" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("params" variable (:type "HTTPSessionParams") (reparse-symbol formal_parameters) [4874 4898]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4845 5072])
+                    ("setEnabledProtocols" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("protocols" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [5431 5449]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5399 5517])
+                    ("alwaysSetHeader" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("header" variable (:type "String") (reparse-symbol formal_parameters) [5649 5662])
+                            ("value" variable (:type "String") (reparse-symbol formal_parameters) [5664 5676]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5621 5816])
+                    ("enableCookies" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5857 5924])
+                    ("disableCookies" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5966 6035])
+                    ("setCookiesEnabled" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("enabled" variable (:type "boolean") (reparse-symbol formal_parameters) [6167 6182]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6137 6226])
+                    ("areCookiesEnabled" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6312 6386])
+                    ("setReadTimeout" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("readTimeout" variable (:type "int") (reparse-symbol formal_parameters) [6609 6624]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6582 6700])
+                    ("getReadTimeout" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6893 6958])
+                    ("getConfiguredReadTimeout" function
+                       (:typemodifiers ("public" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7329 7605])
+                    ("setRedirectLimit" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("redirectLimit" variable (:type "int") (reparse-symbol formal_parameters) [7871 7888]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7842 8013])
+                    ("getRedirectLimit" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8191 8260])
+                    ("getConfiguredRedirectLimit" function
+                       (:typemodifiers ("public" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8648 8997])
+                    ("allowCompressedResponses" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9316 9826])
+                    ("useSharedCookies" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("cookies" variable (:type "HTTPCookieDatabase") (reparse-symbol formal_parameters) [9937 9963]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9908 10089])
+                    ("request" function
+                       (:throws ("HTTPException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("u" variable (:type "URL") (reparse-symbol formal_parameters) [10329 10334]))                          
+                        :type "IHTTPResponse")
+                        (reparse-symbol class_member_declaration) [10300 10791])
+                    ("request" function
+                       (:throws ("HTTPException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("u" variable (:type "ParsedURL") (reparse-symbol formal_parameters) [11031 11042]))                          
+                        :type "IHTTPResponse")
+                        (reparse-symbol class_member_declaration) [11002 11124])
+                    ("request" function
+                       (:throws ("HTTPException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("u" variable (:type "ParsedURL") (reparse-symbol formal_parameters) [11402 11413])
+                            ("reqMethod" variable (:type "String") (reparse-symbol formal_parameters) [11415 11431]))                          
+                        :type "IHTTPResponse")
+                        (reparse-symbol class_member_declaration) [11373 11899])
+                    ("request" function
+                       (:throws ("HTTPException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [12299 12318])
+                            ("req" variable (:type "IHTTPRequest") (reparse-symbol formal_parameters) [12320 12336]))                          
+                        :type "IHTTPResponse")
+                        (reparse-symbol class_member_declaration) [12270 12436])
+                    ("request" function
+                       (:throws ("HTTPException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [12836 12855])
+                            ("req" variable (:type "IHTTPRequest") (reparse-symbol formal_parameters) [12857 12873])
+                            ("timeoutMS" variable (:type "int") (reparse-symbol formal_parameters) [12875 12888]))                          
+                        :type "IHTTPResponse")
+                        (reparse-symbol class_member_declaration) [12807 12993])
+                    ("request" function
+                       (:throws ("HTTPException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [13393 13412])
+                            ("req" variable (:type "IHTTPRequest") (reparse-symbol formal_parameters) [13414 13430])
+                            ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [13432 13447]))                          
+                        :type "IHTTPResponse")
+                        (reparse-symbol class_member_declaration) [13364 13551])
+                    ("request" function
+                       (:throws ("HTTPException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [13951 13970])
+                            ("req" variable (:type "IHTTPRequest") (reparse-symbol formal_parameters) [13972 13988])
+                            ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [13990 14005])
+                            ("timeoutMS" variable (:type "int") (reparse-symbol formal_parameters) [14007 14020]))                          
+                        :type "IHTTPResponse")
+                        (reparse-symbol class_member_declaration) [13922 14129])
+                    ("request" function
+                       (:throws ("HTTPException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [14529 14548])
+                            ("req" variable (:type "IHTTPRequest") (reparse-symbol formal_parameters) [14550 14566])
+                            ("reqBody" variable (:type "IMimeContent") (reparse-symbol formal_parameters) [14568 14588]))                          
+                        :type "IHTTPResponse")
+                        (reparse-symbol class_member_declaration) [14500 14691])
+                    ("request" function
+                       (:throws ("HTTPException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [15091 15110])
+                            ("req" variable (:type "IHTTPRequest") (reparse-symbol formal_parameters) [15112 15128])
+                            ("reqBody" variable (:type "IMimeContent") (reparse-symbol formal_parameters) [15130 15150])
+                            ("timeoutMS" variable (:type "int") (reparse-symbol formal_parameters) [15152 15165]))                          
+                        :type "IHTTPResponse")
+                        (reparse-symbol class_member_declaration) [15062 15279])
+                    ("request" function
+                       (:throws ("HTTPException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [15679 15698])
+                            ("req" variable (:type "IHTTPRequest") (reparse-symbol formal_parameters) [15700 15716])
+                            ("reqBody" variable (:type "IMimeContent") (reparse-symbol formal_parameters) [15718 15738])
+                            ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [15740 15755]))                          
+                        :type "IHTTPResponse")
+                        (reparse-symbol class_member_declaration) [15650 15862])
+                    ("request" function
+                       (:throws ("HTTPException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [16262 16281])
+                            ("req" variable (:type "IHTTPRequest") (reparse-symbol formal_parameters) [16283 16299])
+                            ("reqBody" variable (:type "IMimeContent") (reparse-symbol formal_parameters) [16301 16321])
+                            ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [16323 16338])
+                            ("timeoutMS" variable (:type "int") (reparse-symbol formal_parameters) [16340 16353]))                          
+                        :type "IHTTPResponse")
+                        (reparse-symbol class_member_declaration) [16233 16471])
+                    ("request" function
+                       (:throws ("HTTPException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [16843 16862])
+                            ("req" variable (:type "IHTTPRequest") (reparse-symbol formal_parameters) [16864 16880])
+                            ("reqBody" variable (:type "IMimeContent") (reparse-symbol formal_parameters) [16882 16902])
+                            ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [16904 16919])
+                            ("redirMap" variable (:type "Map") (reparse-symbol formal_parameters) [16921 16933]))                          
+                        :type "IHTTPResponse")
+                        (reparse-symbol class_member_declaration) [16814 17048])
+                    ("request" function
+                       (:throws ("HTTPException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [17458 17477])
+                            ("req" variable (:type "IHTTPRequest") (reparse-symbol formal_parameters) [17485 17501])
+                            ("reqBody" variable (:type "IMimeContent") (reparse-symbol formal_parameters) [17509 17529])
+                            ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [17537 17552])
+                            ("redirMap" variable (:type "Map") (reparse-symbol formal_parameters) [17560 17572])
+                            ("timeoutMS" variable (:type "int") (reparse-symbol formal_parameters) [17580 17593]))                          
+                        :type "IHTTPResponse")
+                        (reparse-symbol class_member_declaration) [17429 17728])
+                    ("request" function
+                       (:throws ("HTTPException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [18257 18276])
+                            ("req" variable (:type "IHTTPRequest") (reparse-symbol formal_parameters) [18284 18300])
+                            ("reqBody" variable (:type "IMimeContent") (reparse-symbol formal_parameters) [18308 18328])
+                            ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [18336 18351])
+                            ("redirMap" variable (:type "Map") (reparse-symbol formal_parameters) [18359 18371])
+                            ("timeoutMS" variable (:type "int") (reparse-symbol formal_parameters) [18379 18392])
+                            ("allowAuthentication" variable (:type "boolean") (reparse-symbol formal_parameters) [18400 18427])
+                            ("additionalHeaders" variable (:type "IMimeMessageHeaders") (reparse-symbol formal_parameters) [18435 18472]))                          
+                        :type "IHTTPResponse")
+                        (reparse-symbol class_member_declaration) [18221 18622])
+                    ("request" function
+                       (:throws ("HTTPException" "IOException")
+                        :typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [19204 19223])
+                            ("req" variable (:type "IHTTPRequest") (reparse-symbol formal_parameters) [19231 19247])
+                            ("reqBody" variable (:type "IMimeContent") (reparse-symbol formal_parameters) [19255 19275])
+                            ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [19283 19298])
+                            ("redirMap" variable (:type "Map") (reparse-symbol formal_parameters) [19306 19318])
+                            ("redirCount" variable (:type "int") (reparse-symbol formal_parameters) [19326 19340])
+                            ("timeoutMS" variable (:type "int") (reparse-symbol formal_parameters) [19348 19361])
+                            ("allowAuthentication" variable (:type "boolean") (reparse-symbol formal_parameters) [19369 19396])
+                            ("additionalHeaders" variable (:type "IMimeMessageHeaders") (reparse-symbol formal_parameters) [19404 19441]))                          
+                        :type "IHTTPResponse")
+                        (reparse-symbol class_member_declaration) [19155 29905])
+                    ("requiresAuthentication" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("resp" variable (:type "IHTTPResponse") (reparse-symbol formal_parameters) [30067 30085]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [30022 30242])
+                    ("setMaxRetries" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("maxRetries" variable (:type "int") (reparse-symbol formal_parameters) [30365 30379]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [30339 30431])
+                    ("canDoAuthentication" function
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [30436 30555])
+                    ("sendAuthenticatedRequest" function
+                       (:throws ("IOException" "NetException")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("unauthResp" variable (:type "IHTTPResponse") (reparse-symbol formal_parameters) [31089 31113])
+                            ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [31121 31140])
+                            ("req" variable (:type "IHTTPRequest") (reparse-symbol formal_parameters) [31148 31164])
+                            ("reqBody" variable (:type "IMimeContent") (reparse-symbol formal_parameters) [31172 31192])
+                            ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [31200 31215])
+                            ("redirMap" variable (:type "Map") (reparse-symbol formal_parameters) [31223 31235])
+                            ("redirCount" variable (:type "int") (reparse-symbol formal_parameters) [31243 31257])
+                            ("timeoutMS" variable (:type "int") (reparse-symbol formal_parameters) [31265 31278]))                          
+                        :type "IHTTPResponse")
+                        (reparse-symbol class_member_declaration) [31033 37519])
+                    ("addAuthenticator" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("handler" variable (:type "IAuthenticationHandler") (reparse-symbol formal_parameters) [37633 37663]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [37601 37834])
+                    ("removeAuthenticator" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("handler" variable (:type "IAuthenticationHandler") (reparse-symbol formal_parameters) [37954 37984]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [37919 38095])
+                    ("addCredentials" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("creds" variable (:type "com.rapid7.auth.ICredentials") (reparse-symbol formal_parameters) [38273 38307]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [38243 38465])
+                    ("removeCredentials" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("creds" variable (:type "com.rapid7.auth.ICredentials") (reparse-symbol formal_parameters) [38592 38626]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [38559 38729])
+                    ("setRedirectMode" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("redirectMode" variable (:type "byte") (reparse-symbol formal_parameters) [38860 38877]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [38832 38925])
+                    ("setRedirectMapFormat" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("redirectMapFormat" variable (:type "byte") (reparse-symbol formal_parameters) [39078 39100]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [39045 39158])
+                    ("clearCookies" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [39247 39358])
+                    ("getRemoteCertificate" function
+                       (:typemodifiers ("public")
+                        :type "X509Certificate")
+                        (reparse-symbol class_member_declaration) [39759 39900])
+                    ("getRemoteCertificateChain" function
+                       (:typemodifiers ("public")
+                        :type "X509Certificate[]")
+                        (reparse-symbol class_member_declaration) [40184 40272])
+                    ("getCookieDatabase" function
+                       (:typemodifiers ("public")
+                        :type "HTTPCookieDatabase")
+                        (reparse-symbol class_member_declaration) [40374 40453])
+                    ("getLogSink" function
+                       (:typemodifiers ("public")
+                        :type "ILogSink")
+                        (reparse-symbol class_member_declaration) [40547 40609])
+                    ("setLogSink" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("sink" variable (:type "ILogSink") (reparse-symbol formal_parameters) [40717 40730]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [40694 41436])
+                    ("getIgnoreTimeoutInputStream" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [41441 41536])
+                    ("setIgnoreTimeoutInputStream" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ignoreTimeoutInputStream" variable (:type "boolean") (reparse-symbol formal_parameters) [41581 41613]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [41541 41685])
+                    ("close" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [41717 42511])
+                    ("handleRedirect" function
+                       (:throws ("IOException" "HTTPException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [42739 42758])
+                            ("req" variable (:type "IHTTPRequest") (reparse-symbol formal_parameters) [42760 42776])
+                            ("resp" variable (:type "IHTTPResponse") (reparse-symbol formal_parameters) [42778 42796])
+                            ("reqBody" variable (:type "IMimeContent") (reparse-symbol formal_parameters) [42798 42818])
+                            ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [42820 42835])
+                            ("redirMap" variable (:type "Map") (reparse-symbol formal_parameters) [42837 42849])
+                            ("redirCount" variable (:type "int") (reparse-symbol formal_parameters) [42851 42865])
+                            ("timeoutMS" variable (:type "int") (reparse-symbol formal_parameters) [42867 42880])
+                            ("allowAuthentication" variable (:type "boolean") (reparse-symbol formal_parameters) [42882 42909])
+                            ("additionalHeaders" variable (:type "IMimeMessageHeaders") (reparse-symbol formal_parameters) [42911 42948]))                          
+                        :type "IHTTPResponse")
+                        (reparse-symbol class_member_declaration) [42702 45898])
+                    ("getSession" function
+                       (:throws ("IOException")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [46013 46032])
+                            ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [46034 46049]))                          
+                        :type "HTTPSession")
+                        (reparse-symbol class_member_declaration) [45980 47401])
+                    ("isRedirectLoop" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("" variable (:type "Object") (reparse-symbol formal_parameters) [48760 48766])
+                            ("" variable (:type "redirectMap") (reparse-symbol formal_parameters) [48777 48788])
+                            ("redirCount" variable (:type "int") (reparse-symbol formal_parameters) [48790 48804])
+                            ("requestURL" variable (:type "ParsedURL") (reparse-symbol formal_parameters) [48806 48826])
+                            ("responseURL" variable (:type "ParsedURL") (reparse-symbol formal_parameters) [48828 48849]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [48723 49929])
+                    ("processResponse" function
+                       (:throws ("IOException")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [50018 50037])
+                            ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [50039 50054])
+                            ("resp" variable (:type "IHTTPResponse") (reparse-symbol formal_parameters) [50056 50074])
+                            ("req" variable (:type "IHTTPRequest") (reparse-symbol formal_parameters) [50076 50092]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [49987 50221])
+                    ("processCookies" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [50311 50330])
+                            ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [50332 50347])
+                            ("resp" variable (:type "IHTTPResponse") (reparse-symbol formal_parameters) [50349 50367])
+                            ("req" variable (:type "IHTTPRequest") (reparse-symbol formal_parameters) [50369 50385]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [50283 53019])
+                    ("handleTransportError" function
+                       (:throws ("IOException")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("session" variable (:type "HTTPSession") (reparse-symbol formal_parameters) [53223 53242])
+                            ("e" variable (:type "IOException") (reparse-symbol formal_parameters) [53244 53257])
+                            ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [53259 53274]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [53187 54001])
+                    ("finalize" function
+                       (:throws ("Throwable")
+                        :typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [54093 54650])
+                    ("log" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [54730 54740]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [54711 54825])
+                    ("logDebug" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [54916 54926]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [54892 55061])
+                    ("setRequestCookies" function
+                       (:throws ("HTTPException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [55192 55211])
+                            ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [55213 55228])
+                            ("req" variable (:type "IHTTPRequest") (reparse-symbol formal_parameters) [55230 55246])
+                            ("headers" variable (:type "HTTPHeaders") (reparse-symbol formal_parameters) [55248 55267]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [55161 56187])
+                    ("makeURL" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("context" variable (:type "ParsedURL") (reparse-symbol formal_parameters) [56343 56360])
+                            ("url" variable (:type "String") (reparse-symbol formal_parameters) [56362 56372]))                          
+                        :type "ParsedURL")
+                        (reparse-symbol class_member_declaration) [56315 56425])
+                    ("m_redirectMode" variable
+                       (:typemodifiers ("private")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [56639 56667])
+                    ("m_redirectMapFormat" variable
+                       (:typemodifiers ("private")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [56709 56742])
+                    ("m_sessionFactory" variable
+                       (:typemodifiers ("protected")
+                        :type "HTTPSessionFactory")
+                        (reparse-symbol class_member_declaration) [56777 56823])
+                    ("m_sessionFactoryTLS" variable
+                       (:typemodifiers ("protected")
+                        :type "HTTPSessionFactory")
+                        (reparse-symbol class_member_declaration) [56868 56917])
+                    ("m_sslSocketFactory" variable
+                       (:typemodifiers ("private")
+                        :type "SSLSocketFactory")
+                        (reparse-symbol class_member_declaration) [56988 57032])
+                    ("m_httpParams" variable
+                       (:typemodifiers ("protected")
+                        :type "HTTPSessionParams")
+                        (reparse-symbol class_member_declaration) [57070 57111])
+                    ("m_sessions" variable
+                       (:typemodifiers ("protected")
+                        :type "Map")
+                        (reparse-symbol class_member_declaration) [57180 57205])
+                    ("m_sessionsTLS" variable
+                       (:typemodifiers ("protected")
+                        :type "Map")
+                        (reparse-symbol class_member_declaration) [57280 57308])
+                    ("m_cookies" variable
+                       (:typemodifiers ("protected")
+                        :type "HTTPCookieDatabase")
+                        (reparse-symbol class_member_declaration) [57343 57382])
+                    ("m_enableCookies" variable
+                       (:typemodifiers ("protected")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [57458 57499])
+                    ("m_maxSessions" variable
+                       (:typemodifiers ("protected")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [57576 57609])
+                    ("m_maxReqAttempts" variable
+                       (:typemodifiers ("protected")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [57668 57703])
+                    ("HTTP_REQUEST_TIMEOUT_PROPERTY" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [57821 57929])
+                    ("DEFAULT_HTTP_REQUEST_TIMEOUT" variable
+                       (:typemodifiers ("protected" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [58048 58112])
+                    ("HTTP_REDIRECT_LIMIT_PROPERTY" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [58242 58348])
+                    ("DEFAULT_HTTP_REDIRECT_LIMIT" variable
+                       (:typemodifiers ("protected" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [58424 58483])
+                    ("MAX_HTTP_REDIRECT_LIMIT" variable
+                       (:typemodifiers ("protected" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [58594 58650])
+                    ("m_redirectLimit" variable
+                       (:typemodifiers ("protected")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [58726 58756])
+                    ("m_readTimeout" variable
+                       (:typemodifiers ("protected")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [58840 58868])
+                    ("m_logSink" variable
+                       (:typemodifiers ("protected")
+                        :type "ILogSink")
+                        (reparse-symbol class_member_declaration) [58896 58925])
+                    ("m_authCreds" variable
+                       (:typemodifiers ("private")
+                        :type "java.util.List")
+                        (reparse-symbol class_member_declaration) [58989 59024])
+                    ("m_authHandlers" variable
+                       (:typemodifiers ("private")
+                        :type "java.util.List")
+                        (reparse-symbol class_member_declaration) [59085 59123])
+                    ("m_alwaysHeaders" variable
+                       (:typemodifiers ("private")
+                        :type "HTTPHeaders")
+                        (reparse-symbol class_member_declaration) [59163 59199])
+                    ("m_certChain" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "X509Certificate")
+                        (reparse-symbol class_member_declaration) [59298 59336])
+                    ("m_ignoreTimeoutInputStream" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [59378 59421])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [59704 59717]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [59680 61742]))                  
+                :type "class")
+                nil [1536 61744]))          
+    :file "HTTPClient.java"
+    :pointmax 61746
+    :fsize 61745
+    :lastmodtime '(22154 17428 0 0)
+    :unmatched-syntax '((IDENTIFIER 48768 . 48775) (GT 48775 . 48776) (IDENTIFIER 48756 . 48759) (LT 48759 . 48760) (IDENTIFIER 48768 . 48775) (GT 48775 . 48776) (IDENTIFIER 48756 . 48759) (LT 48759 . 48760))
+    )
+   (semanticdb-table "HTMLFormHostNotFoundException.java"
+    :major-mode 'java-mode
+    :tags nil
+    :file "HTMLFormHostNotFoundException.java"
+    :pointmax 1173
+    :fsize 1172
+    :lastmodtime '(22113 48428 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "HTTPCookie.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.rapid7.net.http" package nil nil [354 382])
+            ("com.rapid7.net.NetUtils" include nil nil [384 415])
+            ("com.rapid7.net.ParsedURL" include nil nil [416 448])
+            ("com.rapid7.net.http.spider.ISpiderRequest" include nil nil [449 498])
+            ("com.rapid7.net.http.spider.ISpiderResponse" include nil nil [499 549])
+            ("com.rapid7.net.http.spider.SpiderRetrievalException" include nil nil [550 609])
+            ("com.rapid7.util.TimeUtils" include nil nil [610 643])
+            ("java.text.DateFormat" include nil nil [644 672])
+            ("java.text.ParsePosition" include nil nil [673 704])
+            ("java.text.SimpleDateFormat" include nil nil [705 739])
+            ("java.util.ArrayList" include nil nil [740 767])
+            ("java.util.Collections" include nil nil [768 797])
+            ("java.util.Date" include nil nil [798 820])
+            ("java.util.Iterator" include nil nil [821 847])
+            ("java.util.List" include nil nil [848 870])
+            ("java.util.StringTokenizer" include nil nil [871 904]))          
+    :file "HTTPCookie.java"
+    :pointmax 44436
+    :fsize 44435
+    :lastmodtime '(22113 48428 0 0)
+    :unmatched-syntax '((BRACE_BLOCK 2031 . 44435) (GT 2029 . 2030) (IDENTIFIER 2019 . 2029) (PUBLIC 1973 . 1979) (LT 2018 . 2019) (IDENTIFIER 941 . 953) (DOT 940 . 941) (IDENTIFIER 935 . 940) (DOT 934 . 935) (IDENTIFIER 930 . 934) (DOT 929 . 930) (IDENTIFIER 923 . 929) (DOT 922 . 923) (IMPORT 905 . 911) (STATIC 912 . 918) (IDENTIFIER 919 . 922))
+    )
+   )
+  :file "!home!rkirk!rapid7!nexpose!src!shared!src!main!java!com!rapid7!net!http!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

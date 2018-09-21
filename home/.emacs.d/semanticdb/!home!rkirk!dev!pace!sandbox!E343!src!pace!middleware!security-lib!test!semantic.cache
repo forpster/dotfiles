@@ -1,0 +1,41 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("CP" variable (:default-value ("cp")) nil [12 18])
+            ("RM" variable (:default-value ("rm")) nil [18 24])
+            ("LIBS" variable (:default-value ("-lpthread" "-lcrypto")) nil [25 49])
+            ("LDFLAGS_TOOL" variable (:default-value ("$(filter-out -lgtest_main, $(filter-out -lgtest, $(LDFLAGS)))" "-Wl,-O1" "-lpthread")) nil [208 303])
+            ("LDFLAGS" variable (:default-value ("$(filter-out -lsecurity, $(filter-out -ltungsten_nexus_init, $(LDFLAGS)))" "-Wl,-O1" "$(LIBS)")) nil [454 554])
+            ("CFLAGS" variable (:default-value ("$(CFLAGS)")) nil [555 574])
+            ("CFLAGS" variable (:default-value ("-Wextra")) nil [574 592])
+            ("CXXFLAGS" variable (:default-value ("$(CXXFLAGS)" "$(CFLAGS)" "-I../lib" "-I../lib/plugins/pace/" "-I../lib/plugins/openssl")) nil [678 768])
+            ("EXECUTABLES" variable (:default-value ("sectool" "sectest-keyprovider" "sectest-paceheader" "sectest-tlvparser" "sectest-keymaterial" "sectest-arraystreambuf")) nil [769 891])
+            ("EXECUTABLES_INSTALL" variable (:default-value ("$(addprefix $(STAGING_PATH)/usr/bin/, $(EXECUTABLES))")) nil [891 966])
+            (".SUFFIXES" function (:arguments (".o" ".c" ".cpp")) nil [967 989])
+            (".cpp.o" function nil nil [989 1033])
+            (".c.o" function nil nil [1034 1073])
+            ("all" function (:arguments ("$(EXECUTABLES)")) nil [1074 1094])
+            ("install" function (:arguments ("$(EXECUTABLES)")) nil [1095 1174])
+            ("sectool" function (:arguments ("sectool.o")) nil [1282 1341])
+            ("sectest-keyprovider" function (:arguments ("keyprovider.o")) nil [1364 1459])
+            ("sectest-paceheader" function (:arguments ("paceheader.o" "paceheadercreator.o")) nil [1460 1592])
+            ("sectest-tlvparser" function (:arguments ("tlvparser.o")) nil [1593 1682])
+            ("sectest-keymaterial" function (:arguments ("keymaterial.o")) nil [1683 1778])
+            ("sectest-arraystreambuf" function (:arguments ("sectest-arraystreambuf.o")) nil [1779 1899])
+            (".PHONY" function (:arguments ("clean")) nil [1900 1914])
+            ("clean" function nil nil [1914 1974]))          
+    :file "Makefile"
+    :pointmax 1982
+    :fsize 1973
+    :lastmodtime '(21947 11385 273261 714000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!E343!src!pace!middleware!security-lib!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

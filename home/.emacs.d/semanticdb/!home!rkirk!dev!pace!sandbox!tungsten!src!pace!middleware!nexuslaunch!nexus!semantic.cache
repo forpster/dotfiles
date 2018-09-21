@@ -1,0 +1,208 @@
+;; Object nexus/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "nexus/"
+  :tables (list 
+   (semanticdb-table "platform_join.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__TUNGSTEN_PLATFORM_JOIN_H__" variable (:constant-flag t) nil [685 713])
+            ("TPlatformJoin" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [858 865])
+                    ("TPlatformJoin" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("TPlatformJoin" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [904 920])
+                    ("TPlatformJoin" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [969 994]))                  
+                :type "class")
+                nil [836 997]))          
+    :file "platform_join.h"
+    :pointmax 1046
+    :fsize 1045
+    :lastmodtime '(21907 45017 575378 5000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__TUNGSTEN_PLATFORM_JOIN_H__")
+          )
+
+    )
+   (semanticdb-table "platform_join.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("platform_join.h" include nil nil [886 912])
+            ("nexus/nexus_platform.h" include (:system-flag t) nil [913 946])
+            ("hyp_defs.h" include nil nil [1006 1027])
+            ("tlogger/tlogger.h" include (:system-flag t) nil [1028 1056])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1057 1081])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [1082 1132])
+            ("TPlatformJoin" function
+               (:constructor-flag t
+                :parent "TPlatformJoin"
+                :type ("TPlatformJoin" type (:type "class") nil nil))
+                nil [2875 3412])
+            ("TPlatformJoin" function
+               (:destructor-flag t
+                :parent "TPlatformJoin"
+                :type "void")
+                nil [3691 3813]))          
+    :file "platform_join.cpp"
+    :pointmax 3815
+    :fsize 3814
+    :lastmodtime '(21907 45017 575378 5000)
+    :unmatched-syntax '((string 1108 . 1130))
+    )
+   (semanticdb-table "nexus_init.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("nexus_init.h" include nil nil [888 911])
+            ("tlogger/tlogger.h" include (:system-flag t) nil [913 941])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [942 966])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [967 1017])
+            ("nexus/nexus_platform.h" include (:system-flag t) nil [1019 1052])
+            ("cstdio" include (:system-flag t) nil [1113 1130])
+            ("nlstatus_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("NL_OK" variable
+                             (:constant-flag t
+                              :default-value (1231 1232)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1223 1232])
+                          ("NL_FAILURE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1237 1248])
+                          ("NL_NO_MEM" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1252 1262])
+                          ("NL_INVALID_PARAM" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1266 1283])
+                          ("NL_NEXUS_ERROR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1287 1303]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [1205 1315])
+            ("brcmPlatform_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("BRCMUNKNOWN" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1435 1447])
+                          ("BRCM7335" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1451 1460])
+                          ("BRCM7420B0" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1464 1475])
+                          ("BRCM7405" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1479 1488])
+                          ("BRCM7231" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1492 1501])
+                          ("BRCM7425" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1505 1514])
+                          ("BRCM7435" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1518 1527])
+                          ("BRCM7241" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1531 1540])
+                          ("BRCM7346" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1544 1553])
+                          ("BRCM7362" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1557 1567]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [1417 1583])
+            ("get_platform" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1613 1618]))                  
+                :type ("brcmPlatform_t" type (:type "class") nil nil))
+                nil [1585 1619])
+            ("MAX_AUDIO_DELAY_MS" variable (:constant-flag t) nil [1738 1756])
+            ("TNexusInit::s_initialised" variable (:type "bool") nil [2097 2136])
+            ("init" function
+               (:parent "TNexusInit"
+                :type "bool")
+                nil [2138 3481])
+            ("initNxClient" function
+               (:parent "TNexusInit"
+                :type "bool")
+                nil [3483 4573])
+            ("initNexus" function
+               (:parent "TNexusInit"
+                :type "bool")
+                nil [4575 9666])
+            ("get_platform" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9805 9810]))                  
+                :type ("brcmPlatform_t" type (:type "class") nil nil))
+                nil [9777 10647])
+            ("frontendDetect" function
+               (:parent "TNexusInit"
+                :type "bool")
+                nil [10892 12057])
+            ("initFrontend" function
+               (:parent "TNexusInit"
+                :type "bool")
+                nil [12059 12239]))          
+    :file "nexus_init.cpp"
+    :pointmax 12241
+    :fsize 12356
+    :lastmodtime '(21907 45017 575378 5000)
+    :unmatched-syntax '((punctuation 1969 . 1970) (number 1965 . 1969) (punctuation 1964 . 1965) (number 1960 . 1964) (punctuation 1959 . 1960) (number 1957 . 1959) (punctuation 1955 . 1956) (symbol 1941 . 1954) (INT 1937 . 1940) (UNSIGNED 1928 . 1936) (CONST 1922 . 1927) (STATIC 1915 . 1921) (string 993 . 1015))
+    :lexical-table 
+        '(("MAX_AUDIO_DELAY_MS" . ((semantic-list "(200)" 1757 . 1762)))
+          )
+
+    )
+   (semanticdb-table "nexus_init.h"
+    :file "nexus_init.h"
+    :fsize 1295
+    :lastmodtime '(21907 45017 576377 999000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!nexuslaunch!nexus!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,333 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("CP" variable (:default-value ("cp")) nil [199 205])
+            ("RM" variable (:default-value ("rm")) nil [205 211])
+            ("MKDIR" variable (:default-value ("mkdir")) nil [211 223])
+            ("CC" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [223 276])
+            ("CXX" variable (:default-value ("mipsel-linux-uclibc-g++" "--sysroot=$(STAGING_PATH)")) nil [276 330])
+            ("LD" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [330 383])
+            ("AR" variable (:default-value ("mipsel-linux-uclibc-ar")) nil [383 409])
+            ("RANLIB" variable (:default-value ("mipsel-linux-uclibc-ranlib")) nil [409 443])
+            ("EXPORT_HEADERS" variable (:default-value ("../interface/security.h")) nil [444 486])
+            ("LIBS" variable (:default-value ("-lcrypto")) nil [577 591])
+            ("INCPATH" variable (:default-value ("-I../interface" "-I$(shell pwd)" "-I$(HDW_DEFS_DIR)")) nil [591 647])
+            ("LDFLAGS" variable (:default-value ("$(LDFLAGS)" "-Wl,-O1" "$(LIBS)")) nil [648 685])
+            ("CFLAGS" variable (:default-value ("$(CFLAGS)" "-Wextra")) nil [685 712])
+            ("PLATFORM" variable (:default-value ("9$(PLATFORM_BCOM_CHIP)")) nil [1114 1146])
+            ("NEXUS_PLATFORM" variable (:default-value ("$(PLATFORM)")) nil [1153 1180])
+            ("$(NEXUS_TOP)/platforms/$(NEXUS_PLATFORM)/build/platform_app.inc" include nil nil [1180 1252])
+            ("CFLAGS" variable (:default-value ("$(filter-out -pedantic,$(filter-out -std=c89,$(filter-out -Wstrict-prototypes,$(NEXUS_CFLAGS))))" "$(addprefix -I,$(NEXUS_APP_INCLUDE_PATHS))" "$(addprefix -D,$(NEXUS_APP_DEFINES))")) nil [1252 1439])
+            ("EXPORT_HEADERS" variable (:default-value ("../interface/daemonnexusinitialisation.h" "../interface/k3procinverifier.h")) nil [1439 1530])
+            ("CXXFLAGS" variable (:default-value ("$(CXXFLAGS)" "$(CFLAGS)")) nil [1839 1873])
+            ("SRCS" variable (:default-value ("security.cpp" "securecontentprocessor.cpp" "iidentifier.cpp" "identifierfactory.cpp" "isecurecontent.cpp" "securecontentfactory.cpp" "ihmac.cpp" "cryptographicfactory.cpp" "ikeyprovider.cpp" "idecrypt.cpp" "initialisationprovider.cpp" "iinitialiser.cpp" "tlvparser.cpp" "namedsemaphore.cpp" "arraystreambuf.cpp" "utilities.cpp" "ihash.cpp" "isecuredinfo.cpp" "securedinfofactory.cpp")) nil [1874 2243])
+            ("OBJS" variable (:default-value ("$(SRCS:.cpp=.o)")) nil [2243 2266])
+            ("ARCHIVE_LIBS" variable nil nil [2325 2341])
+            ("plugins/*/Makefile" include nil nil [2388 2415])
+            ("LIBRARY" variable (:default-value ("libsecurity.so")) nil [2416 2440])
+            ("ARCHIVE" variable (:default-value ("libsecurity.a")) nil [2440 2463])
+            ("LIBRARY_INSTALL_PATH" variable (:default-value ("$(STAGING_PATH)/usr/lib/$(LIBRARY)")) nil [2463 2519])
+            (".SUFFIXES" function (:arguments (".o" ".c" ".cpp")) nil [2520 2542])
+            (".cpp.o" function nil nil [2543 2604])
+            (".c.o" function nil nil [2605 2661])
+            ("install" function (:arguments ("all" "$(LIBRARY_INSTALL_PATH)" "headers_install")) nil [2662 2715])
+            ("install_pmw" function (:arguments ("all" "$(LIBRARY_INSTALL_PATH)" "headers_install")) nil [2716 2773])
+            ("all" function (:arguments ("$(LIBRARY)" "$(ARCHIVE)")) nil [2774 2801])
+            ("$(LIBRARY_INSTALL_PATH)" function (:arguments ("$(LIBRARY)")) nil [2802 2885])
+            ("headers_install" function nil nil [2886 3024])
+            ("$(LIBRARY)" function (:arguments ("$(OBJS)")) nil [3025 3139])
+            ("$(ARCHIVE)" function (:arguments ("$(OBJS)")) nil [3140 3232])
+            (".PHONY" function (:arguments ("clean")) nil [3233 3247])
+            ("clean" function nil nil [3247 3357]))          
+    :file "Makefile"
+    :pointmax 3357
+    :fsize 3356
+    :lastmodtime '(21475 40494 758264 387000)
+    :unmatched-syntax '((shell-command 3255 . 3356) (bol 3254 . 3254) (symbol 1803 . 1831) (punctuation 1801 . 1802) (punctuation 1800 . 1801) (symbol 1793 . 1799) (bol 1791 . 1791) (symbol 1725 . 1744) (punctuation 1723 . 1724) (punctuation 1722 . 1723) (symbol 1715 . 1721) (bol 1713 . 1713) (symbol 1662 . 1679) (punctuation 1660 . 1661) (punctuation 1659 . 1660) (symbol 1652 . 1658) (bol 1650 . 1650) (shell-command 1582 . 1614) (bol 1581 . 1581) (ENDIF 962 . 967) (bol 960 . 960) (semantic-list 941 . 959) (punctuation 940 . 941) (punctuation 938 . 939) (punctuation 937 . 938) (symbol 929 . 936) (bol 925 . 925) (semantic-list 907 . 924) (punctuation 906 . 907) (punctuation 904 . 905) (punctuation 903 . 904) (symbol 896 . 902) (bol 892 . 892) (symbol 861 . 891) (semantic-list 850 . 861) (punctuation 849 . 850) (INCLUDE 841 . 848) (bol 837 . 837) (symbol 818 . 836) (punctuation 816 . 817) (punctuation 815 . 816) (symbol 807 . 813) (bol 803 . 803) (semantic-list 779 . 802) (IFEQ 774 . 778) (bol 772 . 772) (semantic-list 158 . 185) (punctuation 157 . 158) (bol 157 . 157) (semantic-list 58 . 86) (punctuation 57 . 58) (bol 57 . 57))
+    )
+   (semanticdb-table "security.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [1 19])
+            ("stdexcept" include (:system-flag t) nil [20 40])
+            ("cstring" include (:system-flag t) nil [41 59])
+            ("ext/stdio_filebuf.h" include (:system-flag t) nil [60 90])
+            ("ostream" include (:system-flag t) nil [91 109])
+            ("fstream" include (:system-flag t) nil [110 128])
+            ("string" include (:system-flag t) nil [129 146])
+            ("algorithm" include (:system-flag t) nil [147 167])
+            ("unistd.h" include (:system-flag t) nil [168 187])
+            ("sys/types.h" include (:system-flag t) nil [188 210])
+            ("cstdio" include (:system-flag t) nil [211 228])
+            ("sstream" include (:system-flag t) nil [229 247])
+            ("openssl/crypto.h" include (:system-flag t) nil [249 276])
+            ("security.h" include nil nil [278 299])
+            ("securecontentprocessor.h" include nil nil [300 335])
+            ("initialisationprovider.h" include nil nil [336 371])
+            ("arraystreambuf.h" include nil nil [372 399])
+            ("tlogger.h" include nil nil [401 421])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [422 446])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [447 494])
+            ("identify" function
+               (:arguments 
+                  ( ("inData" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [630 657]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [612 1774])
+            ("identifyFile" function
+               (:arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1912 1925]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [1890 2839])
+            ("identifyFileOffset" function
+               (:arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3034 3047])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [3048 3071])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [3072 3093]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [3006 3996])
+            ("unProtectFile" function
+               (:arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4125 4138])
+                    ("outFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4139 4153]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [4102 5395])
+            ("unProtectFileOffset" function
+               (:arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5530 5543])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [5544 5567])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [5568 5589])
+                    ("outFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5590 5604]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [5501 6846])
+            ("unProtectFileToBuffer" function
+               (:arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7007 7020])
+                    ("outData" variable
+                       (:pointer 1
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7021 7043]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [6976 8309])
+            ("unProtectFileOffsetToBuffer" function
+               (:arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8476 8489])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [8490 8513])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [8514 8535])
+                    ("outData" variable
+                       (:pointer 1
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8536 8558]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [8439 9903])
+            ("unProtect" function
+               (:arguments 
+                  ( ("inData" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10053 10080])
+                    ("outData" variable
+                       (:pointer 1
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10081 10103]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [10034 11597])
+            ("verifyFileOffset" function
+               (:arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11710 11723])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [11724 11747])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [11748 11769]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [11684 12743])
+            ("verifyFile" function
+               (:arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12815 12828]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [12795 13808])
+            ("verify" function
+               (:arguments 
+                  ( ("inData" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13878 13905]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [13862 15073])
+            ("unProtectRelease" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15148 15167]))                  
+                :type "void")
+                nil [15126 16040])
+            ("initialise" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16114 16119]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [16094 17060])
+            ("deinitialise" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17135 17140]))                  
+                :type "void")
+                nil [17117 17585])
+            ("getSecuredInfo" function
+               (:arguments 
+                  ( ("inData" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SecureBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17666 17693])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("SLINFOTYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17694 17711])
+                    ("info" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [17712 17724]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [17642 19019])
+            ("getSecuredInfoFile" function
+               (:arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19104 19117])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("SLINFOTYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19118 19135])
+                    ("info" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19136 19148]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [19076 20307])
+            ("getSecuredInfoFileOffset" function
+               (:arguments 
+                  ( ("inFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20398 20411])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [20412 20435])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [20436 20457])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("SLINFOTYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20458 20475])
+                    ("info" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [20476 20488]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [20364 21640])
+            ("securedInfoRelease" function
+               (:arguments 
+                  ( ("type" variable (:type ("SLINFOTYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21711 21727])
+                    ("info" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [21728 21739]))                  
+                :type "void")
+                nil [21687 22472]))          
+    :file "security.cpp"
+    :pointmax 22473
+    :fsize 22472
+    :lastmodtime '(21513 51698 26220 290000)
+    :unmatched-syntax '((string 473 . 492) (string 454 . 473))
+    )
+   (semanticdb-table "securecontentprocessor.h"
+    :file "securecontentprocessor.h"
+    :fsize 1643
+    :lastmodtime '(21474 16039 985233 354000)
+    )
+   (semanticdb-table "initialisationprovider.h"
+    :file "initialisationprovider.h"
+    :fsize 1838
+    :lastmodtime '(21474 14415 429248 167000)
+    )
+   (semanticdb-table "arraystreambuf.h"
+    :file "arraystreambuf.h"
+    :fsize 977
+    :lastmodtime '(21499 19302 333038 618000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D714!src!pace!middleware!security-lib!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,162 @@
+;; Object secondarybrowser/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "secondarybrowser/"
+  :tables (list 
+   (semanticdb-table "secondarybrowser.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("secondarybrowser.h" include nil nil [2 31])
+            ("manager/clientapplicationmanager.h" include nil nil [32 77])
+            ("appfactory.h" include nil nil [78 101])
+            ("useriohandler/user_input_handler.h" include (:system-flag t) nil [226 271])
+            ("useriohandler/user_input_qws.h" include (:system-flag t) nil [272 313])
+            ("QStackedLayout" include (:system-flag t) nil [314 339])
+            ("QDateTime" include (:system-flag t) nil [340 360])
+            ("ecographicsview.h" include nil nil [362 390])
+            ("ecoview.h" include nil nil [391 411])
+            ("iecoview.h" include nil nil [412 433])
+            ("ecowebpage.h" include nil nil [434 457])
+            ("camodel_sec/camodel.h" include nil nil [459 491])
+            ("camodel_sec/custom/camodeldefault.h" include nil nil [566 612])
+            ("staticeventlist/staticeventlistobject.h" include nil nil [621 671])
+            ("currenteventlist/currenteventlistobject.h" include nil nil [672 724])
+            ("directfb.h" include (:system-flag t) nil [808 829])
+            ("dfb_platform.h" include nil nil [830 855])
+            ("direct/util.h" include (:system-flag t) nil [856 880])
+            ("STRINGIFY" variable (:constant-flag t) nil [897 906])
+            ("TOSTRING" variable (:constant-flag t) nil [921 929])
+            ("QT_OGL_PLF_NAME" variable (:constant-flag t) nil [979 994])
+            ("OGL_CLIENT_ADD" variable (:constant-flag t) nil [1111 1125])
+            ("BASE_DEBUG_PORT" variable (:constant-flag t) nil [1204 1219])
+            ("CACHE_DB" variable (:constant-flag t) nil [1233 1241])
+            ("tlogger/tlogger.h" include nil nil [1259 1287])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1288 1312])
+            ("stb_eco_latensCoreMain.h" include nil nil [1314 1349])
+            ("QHostAddress" include (:system-flag t) nil [1351 1374])
+            ("QNetworkInterface" include (:system-flag t) nil [1375 1403])
+            ("com::pace::Tungsten" using (:type ("com::pace::Tungsten" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2428 2464])
+            ("unnamed" type
+               (:members 
+                  ( ("applicationManager" variable
+                       (:pointer 1
+                        :type ("IApplicationManager" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2481 2521])
+                    ("createView" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("args" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QStringList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3431 3455]))                          
+                        :type ("IEcoView" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3410 4750]))                  
+                :type "namespace")
+                nil [2466 4752])
+            ("SetUpWebInspector" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pView" variable
+                       (:pointer 1
+                        :type ("IEcoView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4784 4800])
+                    ("instanceId" variable (:type "int") (reparse-symbol arg-sub-list) [4801 4816]))                  
+                :type "void")
+                nil [4754 6067])
+            ("initialise" function
+               (:parent "SecondaryBrowserApplication"
+                :type "void")
+                nil [6069 12018])
+            ("UnInitialise" function
+               (:parent "SecondaryBrowserApplication"
+                :type "void")
+                nil [12020 13991])
+            ("slotUpdateWhitelist" function
+               (:parent "SecondaryBrowserApplication"
+                :type "void")
+                nil [13994 14395])
+            ("slotUrlChanged" function
+               (:parent "SecondaryBrowserApplication"
+                :arguments 
+                  ( ("ul" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QUrl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14448 14463]))                  
+                :type "void")
+                nil [14397 14521])
+            ("slotAppPath" function
+               (:parent "SecondaryBrowserApplication"
+                :arguments 
+                  ( ("appPath" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14571 14595]))                  
+                :type "void")
+                nil [14523 15075])
+            ("SecondaryBrowserApplication" function
+               (:constructor-flag t
+                :parent "SecondaryBrowserApplication"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [15135 15144])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15145 15158]))                  
+                :type ("SecondaryBrowserApplication" type (:type "class") nil nil))
+                nil [15078 20522])
+            ("setUpDirectfbClientId" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [21476 21485])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21486 21499])
+                    ("clientid" variable (:type "int") (reparse-symbol arg-sub-list) [21500 21513]))                  
+                :type "void")
+                nil [21442 22317])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [22335 22344])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22345 22358]))                  
+                :type "int")
+                nil [22326 26041]))          
+    :file "secondarybrowser.cpp"
+    :pointmax 26042
+    :fsize 26041
+    :lastmodtime '(21769 22870 124029 52000)
+    :unmatched-syntax '((semantic-list 2389 . 2418) (symbol 2364 . 2389) (string 2390 . 2417))
+    :lexical-table 
+        '(("QT_OGL_PLF_NAME" . ((symbol "eglnullws" 995 . 1004)))
+          ("CACHE_DB" . ((string "\"/tmp/cache.db\"" 1242 . 1257)))
+          ("TOSTRING" (spp-arg-list ("x") 929 . 932) . ((symbol "STRINGIFY" 933 . 942) (semantic-list "(x)" 942 . 945)))
+          ("STRINGIFY" (spp-arg-list ("x") 906 . 909) . ((punctuation "#" 910 . 911) (symbol "x" 911 . 912)))
+          ("OGL_CLIENT_ADD" . ((string "\":clientid=%1\"" 1126 . 1140)))
+          ("BASE_DEBUG_PORT" . ((number "9500" 1220 . 1224)))
+          )
+
+    )
+   (semanticdb-table "secondarybrowser.h"
+    :file "secondarybrowser.h"
+    :fsize 4346
+    :lastmodtime '(21769 22870 123029 60000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!TCR_4!src!pace!applications!secondarybrowser!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

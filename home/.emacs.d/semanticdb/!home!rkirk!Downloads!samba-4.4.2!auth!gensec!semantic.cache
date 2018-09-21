@@ -1,0 +1,1639 @@
+;; Object gensec/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gensec/"
+  :tables (list 
+   (semanticdb-table "gensec_start.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("includes.h" include nil nil [824 845])
+            ("system/network.h" include nil nil [846 873])
+            ("tevent.h" include nil nil [874 893])
+            ("../lib/util/tevent_ntstatus.h" include nil nil [894 934])
+            ("librpc/gen_ndr/dcerpc.h" include nil nil [935 969])
+            ("auth/credentials/credentials.h" include nil nil [970 1011])
+            ("auth/gensec/gensec.h" include nil nil [1012 1043])
+            ("auth/gensec/gensec_internal.h" include nil nil [1044 1084])
+            ("lib/param/param.h" include nil nil [1085 1113])
+            ("lib/util/tsort.h" include nil nil [1114 1141])
+            ("lib/util/samba_modules.h" include nil nil [1142 1177])
+            ("generic_security_ops" variable
+               (:pointer 2
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("gensec_security_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1234 1297])
+            ("gensec_num_backends" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [1298 1329])
+            ("gensec_security_all" function
+               (:pointer 2
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1520 1525]))                  
+                :type ("gensec_security_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1458 1559])
+            ("gensec_security_ops_enabled" function
+               (:arguments 
+                  ( ("ops" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("gensec_security_ops" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1594 1632])
+                    ("security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1633 1666]))                  
+                :type "bool")
+                nil [1561 1764])
+            ("gensec_use_kerberos_mechs" function
+               (:pointer 2
+                :constant-flag t
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2457 2477])
+                    ("old_gensec_list" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("gensec_security_ops" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2481 2539])
+                    ("creds" variable
+                       (:pointer 1
+                        :type ("cli_credentials" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2543 2573]))                  
+                :type ("gensec_security_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2396 4120])
+            ("gensec_security_mechs" function
+               (:pointer 2
+                :constant-flag t
+                :arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4193 4233])
+                    ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4238 4258]))                  
+                :type ("gensec_security_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4131 4629])
+            ("gensec_security_by_oid" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4702 4742])
+                    ("oid_string" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4747 4770]))                  
+                :type ("gensec_security_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4640 5479])
+            ("gensec_security_by_sasl_name" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5558 5598])
+                    ("sasl_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5603 5625]))                  
+                :type ("gensec_security_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5490 6241])
+            ("gensec_security_by_auth_type" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6320 6360])
+                    ("auth_type" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6365 6384]))                  
+                :type ("gensec_security_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6252 7028])
+            ("gensec_security_by_name" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7088 7128])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7138 7155]))                  
+                :type ("gensec_security_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [7030 7750])
+            ("gensec_security_by_sasl_list" function
+               (:pointer 2
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8072 8112])
+                    ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8114 8134])
+                    ("sasl_names" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8136 8160]))                  
+                :type ("gensec_security_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [7999 9515])
+            ("gensec_security_by_oid_list" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9923 9963])
+                    ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9969 9989])
+                    ("oid_strings" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9995 10027])
+                    ("skip" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10033 10050]))                  
+                :type ("gensec_security_ops_wrapper" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [9847 11744])
+            ("gensec_security_oids_from_ops" function
+               (:pointer 2
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11858 11898])
+                    ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11900 11920])
+                    ("ops" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("gensec_security_ops" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11922 11968])
+                    ("skip" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11970 11987]))                  
+                :type "char")
+                nil [11806 12655])
+            ("gensec_security_oids_from_ops_wrapped" function
+               (:pointer 2
+                :constant-flag t
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12778 12798])
+                    ("wops" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("gensec_security_ops_wrapper" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12803 12850]))                  
+                :type "char")
+                nil [12727 13345])
+            ("gensec_security_oids" function
+               (:pointer 2
+                :constant-flag t
+                :arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13605 13645])
+                    ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13654 13674])
+                    ("skip" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13683 13700]))                  
+                :type "char")
+                nil [13571 13879])
+            ("gensec_start" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14233 14253])
+                    ("settings" variable
+                       (:pointer 1
+                        :type ("gensec_settings" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14262 14295])
+                    ("auth_context" variable
+                       (:pointer 1
+                        :type ("auth4_context" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14304 14339])
+                    ("gensec_security" variable
+                       (:pointer 2
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14348 14389]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [14204 14916])
+            ("gensec_subcontext_start" function
+               (:arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15276 15296])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15302 15333])
+                    ("gensec_security" variable
+                       (:pointer 2
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15339 15380]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [15243 16135])
+            ("gensec_client_start" function
+               (:arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16418 16438])
+                    ("gensec_security" variable
+                       (:pointer 2
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16447 16488])
+                    ("settings" variable
+                       (:pointer 1
+                        :type ("gensec_settings" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16497 16530]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [16389 16861])
+            ("gensec_server_start" function
+               (:arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17146 17166])
+                    ("settings" variable
+                       (:pointer 1
+                        :type ("gensec_settings" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17177 17210])
+                    ("auth_context" variable
+                       (:pointer 1
+                        :type ("auth4_context" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17221 17256])
+                    ("gensec_security" variable
+                       (:pointer 2
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17267 17308]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [17117 17640])
+            ("gensec_start_mech" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17669 17709]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [17642 19124])
+            ("gensec_start_mech_by_ops" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19257 19297])
+                    ("ops" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("gensec_security_ops" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19304 19342]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [19223 19419])
+            ("gensec_start_mech_by_authtype" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19676 19716])
+                    ("auth_type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19728 19746])
+                    ("auth_level" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19747 19766]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [19637 20983])
+            ("gensec_get_name_by_authtype" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21034 21074])
+                    ("authtype" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21075 21092]))                  
+                :type "char")
+                nil [20994 21249])
+            ("gensec_get_name_by_oid" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21296 21336])
+                    ("oid_string" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21348 21371]))                  
+                :type "char")
+                nil [21261 21530])
+            ("gensec_start_mech_by_oid" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21783 21823])
+                    ("mech_oid" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21830 21851]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [21749 22154])
+            ("gensec_start_mech_by_sasl_name" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22274 22314])
+                    ("sasl_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22320 22342]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [22234 22620])
+            ("gensec_start_mech_by_sasl_list" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22763 22803])
+                    ("sasl_names" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22811 22835]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [22723 23545])
+            ("gensec_start_mech_by_name" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23655 23695])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [23701 23718]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [23620 23976])
+            ("gensec_set_credentials" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24130 24170])
+                    ("credentials" variable
+                       (:pointer 1
+                        :type ("cli_credentials" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24171 24207]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [24098 24476])
+            ("gensec_register" function
+               (:arguments 
+                  ( ("ops" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("gensec_security_ops" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24650 24688]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [24625 25355])
+            ("gensec_interface_version" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [25667 25672]))                  
+                :type ("gensec_critical_sizes" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [25606 25868])
+            ("sort_gensec" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("gs1" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("gensec_security_ops" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25893 25932])
+                    ("gs2" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("gensec_security_ops" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25933 25972]))                  
+                :type "int")
+                nil [25870 26021])
+            ("gensec_setting_int" function
+               (:arguments 
+                  ( ("settings" variable
+                       (:pointer 1
+                        :type ("gensec_settings" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26046 26079])
+                    ("mechanism" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26080 26102])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26103 26120])
+                    ("default_value" variable (:type "int") (reparse-symbol arg-sub-list) [26121 26139]))                  
+                :type "int")
+                nil [26023 26223])
+            ("gensec_setting_bool" function
+               (:arguments 
+                  ( ("settings" variable
+                       (:pointer 1
+                        :type ("gensec_settings" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26250 26283])
+                    ("mechanism" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26284 26306])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26307 26324])
+                    ("default_value" variable (:type "bool") (reparse-symbol arg-sub-list) [26325 26344]))                  
+                :type "bool")
+                nil [26225 26429])
+            ("gensec_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [26501 26506]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [26480 27105]))          
+    :file "gensec_start.c"
+    :pointmax 27106
+    :fsize 27105
+    :lastmodtime '(22267 43108 0 0)
+    :unmatched-syntax '((symbol 26471 . 26479) (symbol 25597 . 25605) (symbol 24616 . 24624) (symbol 24089 . 24097) (symbol 23611 . 23619) (symbol 22714 . 22722) (symbol 22225 . 22233) (symbol 21740 . 21748) (symbol 21252 . 21260) (symbol 20985 . 20993) (symbol 19628 . 19636) (symbol 17108 . 17116) (symbol 16380 . 16388) (symbol 15234 . 15242) (symbol 13562 . 13570) (symbol 12718 . 12726) (symbol 9838 . 9846) (symbol 6243 . 6251) (symbol 5481 . 5489) (symbol 4631 . 4639) (symbol 4122 . 4130) (symbol 2387 . 2395) (symbol 1449 . 1457))
+    )
+   (semanticdb-table "gensec.h"
+    :file "gensec.h"
+    :fsize 10720
+    :lastmodtime '(22267 43108 0 0)
+    )
+   (semanticdb-table "gensec_internal.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__GENSEC_INTERNAL_H__" variable (:constant-flag t) nil [862 883])
+            ("gensec_security" type
+               (:prototype t
+                :type "struct")
+                nil [885 908])
+            ("gensec_security_ops" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [940 957])
+                    ("sasl_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [959 981])
+                    ("auth_type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [983 1001])
+                    ("oid" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [1038 1055])
+                    ("client_start" variable
+                       (:functionpointer-flag t
+                        :type ("NTSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1094 1160])
+                    ("server_start" variable
+                       (:functionpointer-flag t
+                        :type ("NTSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1162 1228])
+                    ("magic" variable
+                       (:functionpointer-flag t
+                        :type ("NTSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1306 1401])
+                    ("update" variable
+                       (:functionpointer-flag t
+                        :type ("NTSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1403 1563])
+                    ("update_send" variable
+                       (:functionpointer-flag t
+                        :type ("tevent_req" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1565 1729])
+                    ("update_recv" variable
+                       (:functionpointer-flag t
+                        :type ("NTSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1731 1828])
+                    ("may_reset_crypto" variable
+                       (:functionpointer-flag t
+                        :type ("NTSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1830 1926])
+                    ("seal_packet" variable
+                       (:functionpointer-flag t
+                        :type ("NTSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1928 2121])
+                    ("sign_packet" variable
+                       (:functionpointer-flag t
+                        :type ("NTSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2123 2322])
+                    ("sig_size" variable
+                       (:functionpointer-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2324 2404])
+                    ("max_input_size" variable
+                       (:functionpointer-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2406 2474])
+                    ("max_wrapped_size" variable
+                       (:functionpointer-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2476 2546])
+                    ("check_packet" variable
+                       (:functionpointer-flag t
+                        :type ("NTSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2548 2732])
+                    ("unseal_packet" variable
+                       (:functionpointer-flag t
+                        :type ("NTSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2734 2916])
+                    ("wrap" variable
+                       (:functionpointer-flag t
+                        :type ("NTSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2918 3052])
+                    ("unwrap" variable
+                       (:functionpointer-flag t
+                        :type ("NTSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3054 3190])
+                    ("session_key" variable
+                       (:functionpointer-flag t
+                        :type ("NTSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3192 3306])
+                    ("session_info" variable
+                       (:functionpointer-flag t
+                        :type ("NTSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3308 3441])
+                    ("want_feature" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3443 3531])
+                    ("have_feature" variable
+                       (:functionpointer-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3533 3621])
+                    ("expire_time" variable
+                       (:functionpointer-flag t
+                        :type ("NTTIME" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3623 3686])
+                    ("enabled" variable (:type "bool") (reparse-symbol classsubparts) [3688 3701])
+                    ("kerberos" variable (:type "bool") (reparse-symbol classsubparts) [3703 3717])
+                    ("priority" variable (:type ("gensec_priority" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [3719 3749]))                  
+                :type "struct")
+                nil [910 3752])
+            ("gensec_security_ops_wrapper" type
+               (:members 
+                  ( ("op" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("gensec_security_ops" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3792 3829])
+                    ("oid" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [3831 3847]))                  
+                :type "struct")
+                nil [3754 3850])
+            ("gensec_security" type
+               (:members 
+                  ( ("ops" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("gensec_security_ops" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3878 3916])
+                    ("private_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [3918 3937])
+                    ("credentials" variable
+                       (:pointer 1
+                        :type ("cli_credentials" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3939 3975])
+                    ("target" variable (:type ("gensec_target" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3977 4005])
+                    ("gensec_role" variable (:type ("gensec_role" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [4007 4036])
+                    ("subcontext" variable (:type "bool") (reparse-symbol classsubparts) [4038 4054])
+                    ("want_features" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4056 4079])
+                    ("max_update_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4081 4106])
+                    ("dcerpc_auth_level" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4108 4134])
+                    ("remote_addr" variable
+                       (:pointer 1
+                        :type ("tsocket_address" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4136 4185])
+                    ("local_addr" variable
+                       (:pointer 1
+                        :type ("tsocket_address" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4136 4185])
+                    ("settings" variable
+                       (:pointer 1
+                        :type ("gensec_settings" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4187 4220])
+                    ("auth_context" variable
+                       (:pointer 1
+                        :type ("auth4_context" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4370 4405])
+                    ("child_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4408 4447]))                  
+                :type "struct")
+                nil [3852 4450])
+            ("gensec_critical_sizes" type
+               (:members 
+                  ( ("interface_version" variable (:type "int") (reparse-symbol classsubparts) [4570 4592])
+                    ("sizeof_gensec_security_ops" variable (:type "int") (reparse-symbol classsubparts) [4594 4625])
+                    ("sizeof_gensec_security" variable (:type "int") (reparse-symbol classsubparts) [4627 4654]))                  
+                :type "struct")
+                nil [4538 4657])
+            ("gensec_may_reset_crypto" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4692 4732])
+                    ("full_reset" variable (:type "bool") (reparse-symbol arg-sub-list) [4738 4754]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [4659 4755]))          
+    :file "gensec_internal.h"
+    :pointmax 4783
+    :fsize 4782
+    :lastmodtime '(22267 43108 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__GENSEC_INTERNAL_H__")
+          )
+
+    )
+   (semanticdb-table "gensec.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("includes.h" include nil nil [824 845])
+            ("system/network.h" include nil nil [846 873])
+            ("TEVENT_DEPRECATED" variable (:constant-flag t) nil [882 899])
+            ("tevent.h" include (:system-flag t) nil [902 921])
+            ("lib/tsocket/tsocket.h" include nil nil [922 954])
+            ("lib/util/tevent_ntstatus.h" include nil nil [955 992])
+            ("auth/gensec/gensec.h" include nil nil [993 1024])
+            ("auth/gensec/gensec_internal.h" include nil nil [1025 1065])
+            ("librpc/gen_ndr/dcerpc.h" include nil nil [1066 1100])
+            ("gensec_may_reset_crypto" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1145 1185])
+                    ("full_reset" variable (:type "bool") (reparse-symbol arg-sub-list) [1194 1210]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [1112 1366])
+            ("gensec_unseal_packet" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1457 1497])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1507 1521])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1522 1536])
+                    ("whole_pdu" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1546 1571])
+                    ("pdu_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1572 1590])
+                    ("sig" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DATA_BLOB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1600 1621]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [1427 2170])
+            ("gensec_check_packet" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2210 2250])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2259 2279])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2280 2294])
+                    ("whole_pdu" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2303 2328])
+                    ("pdu_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2329 2347])
+                    ("sig" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DATA_BLOB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2356 2377]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [2181 2676])
+            ("gensec_seal_packet" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2715 2755])
+                    ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2763 2783])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2791 2805])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2806 2820])
+                    ("whole_pdu" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2828 2853])
+                    ("pdu_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2854 2872])
+                    ("sig" variable
+                       (:pointer 1
+                        :type ("DATA_BLOB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2880 2895]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [2687 3422])
+            ("gensec_sign_packet" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3461 3501])
+                    ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3509 3529])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3537 3557])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3558 3572])
+                    ("whole_pdu" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3580 3605])
+                    ("pdu_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3606 3624])
+                    ("sig" variable
+                       (:pointer 1
+                        :type ("DATA_BLOB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3632 3647]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [3433 3953])
+            ("gensec_sig_size" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3987 4027])
+                    ("data_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4028 4045]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [3964 4414])
+            ("gensec_max_wrapped_size" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4456 4496]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [4425 4637])
+            ("gensec_max_input_size" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4677 4717]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [4648 4898])
+            ("gensec_wrap" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4930 4970])
+                    ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4978 4998])
+                    ("in" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DATA_BLOB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5006 5026])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("DATA_BLOB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5034 5049]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [4909 5199])
+            ("gensec_unwrap" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5233 5273])
+                    ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5283 5303])
+                    ("in" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DATA_BLOB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5313 5333])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("DATA_BLOB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5343 5358]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [5210 5512])
+            ("gensec_session_key" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5551 5591])
+                    ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5601 5621])
+                    ("session_key" variable
+                       (:pointer 1
+                        :type ("DATA_BLOB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5631 5654]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [5523 5941])
+            ("gensec_session_info" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6172 6212])
+                    ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6223 6243])
+                    ("session_info" variable
+                       (:pointer 2
+                        :type ("auth_session_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6254 6294]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [6143 6465])
+            ("gensec_set_max_update_size" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6508 6548])
+                    ("max_update_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6553 6578]))                  
+                :type "void")
+                nil [6476 6635])
+            ("gensec_max_update_size" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6676 6716]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [6646 6833])
+            ("gensec_verify_dcerpc_auth_level" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6883 6923]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [6835 8206])
+            ("gensec_update_ev" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8243 8283])
+                    ("out_mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8291 8315])
+                    ("ev" variable
+                       (:pointer 1
+                        :type ("tevent_context" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8323 8349])
+                    ("in" variable
+                       (:constant-flag t
+                        :type ("DATA_BLOB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8357 8376])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("DATA_BLOB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8377 8392]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [8217 10035])
+            ("gensec_update" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10474 10514])
+                    ("out_mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10519 10543])
+                    ("in" variable
+                       (:constant-flag t
+                        :type ("DATA_BLOB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10548 10567])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("DATA_BLOB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10568 10583]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [10451 10658])
+            ("gensec_update_state" type
+               (:members 
+                  ( ("ops" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("gensec_security_ops" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [10690 10728])
+                    ("subreq" variable
+                       (:pointer 1
+                        :type ("tevent_req" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [10730 10756])
+                    ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [10758 10798])
+                    ("out" variable (:type ("DATA_BLOB" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10800 10814])
+                    ("im" variable
+                       (:pointer 1
+                        :type ("tevent_immediate" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [10909 10937])
+                    ("in" variable (:type ("DATA_BLOB" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10939 10952]))                  
+                :type "struct")
+                nil [10660 10955])
+            ("gensec_update_async_trigger" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("tevent_context" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10997 11024])
+                    ("im" variable
+                       (:pointer 1
+                        :type ("tevent_immediate" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11030 11058])
+                    ("private_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11064 11083]))                  
+                :type "void")
+                nil [10957 11084])
+            ("gensec_update_subreq_done" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("subreq" variable
+                       (:pointer 1
+                        :type ("tevent_req" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11123 11149]))                  
+                :type "void")
+                nil [11085 11150])
+            ("gensec_update_send" function
+               (:pointer 1
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11519 11539])
+                    ("ev" variable
+                       (:pointer 1
+                        :type ("tevent_context" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11552 11578])
+                    ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11591 11631])
+                    ("in" variable
+                       (:constant-flag t
+                        :type ("DATA_BLOB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11644 11663]))                  
+                :type ("tevent_req" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [11481 12481])
+            ("gensec_update_async_trigger" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("tevent_context" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12523 12550])
+                    ("im" variable
+                       (:pointer 1
+                        :type ("tevent_immediate" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12556 12584])
+                    ("private_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12590 12609]))                  
+                :type "void")
+                nil [12483 12980])
+            ("gensec_update_subreq_done" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("subreq" variable
+                       (:pointer 1
+                        :type ("tevent_req" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13020 13046]))                  
+                :type "void")
+                nil [12982 13822])
+            ("gensec_update_recv" function
+               (:arguments 
+                  ( ("req" variable
+                       (:pointer 1
+                        :type ("tevent_req" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14213 14236])
+                    ("out_mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14246 14270])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("DATA_BLOB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14280 14295]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [14185 14714])
+            ("gensec_want_feature" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14825 14865])
+                    ("feature" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14870 14887]))                  
+                :type "void")
+                nil [14800 15081])
+            ("gensec_have_feature" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15194 15234])
+                    ("feature" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15239 15256]))                  
+                :type "bool")
+                nil [15169 15544])
+            ("gensec_expire_time" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15581 15621]))                  
+                :type ("NTTIME" type (:type "class") nil nil))
+                nil [15555 15770])
+            ("gensec_get_credentials" function
+               (:pointer 1
+                :arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15908 15948]))                  
+                :type ("cli_credentials" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [15861 16033])
+            ("gensec_set_target_service" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16191 16231])
+                    ("service" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16232 16252]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [16156 16428])
+            ("gensec_get_target_service" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16477 16517]))                  
+                :type "char")
+                nil [16439 16623])
+            ("gensec_set_target_hostname" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16793 16833])
+                    ("hostname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16834 16855]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [16757 17046])
+            ("gensec_get_target_hostname" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17096 17136]))                  
+                :type "char")
+                nil [17057 17596])
+            ("gensec_set_local_address" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18140 18180])
+                    ("local" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tsocket_address" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18183 18219]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [18106 18493])
+            ("gensec_set_remote_address" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18820 18860])
+                    ("remote" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tsocket_address" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18863 18900]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [18785 19179])
+            ("gensec_get_local_address" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19519 19559]))                  
+                :type ("tsocket_address" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [19464 19650])
+            ("gensec_get_remote_address" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19992 20032]))                  
+                :type ("tsocket_address" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [19936 20124])
+            ("gensec_set_target_principal" function
+               (:arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20293 20333])
+                    ("principal" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20334 20356]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [20256 20538])
+            ("gensec_get_target_principal" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("gensec_security" variable
+                       (:pointer 1
+                        :type ("gensec_security" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20589 20629]))                  
+                :type "char")
+                nil [20549 20737]))          
+    :file "gensec.c"
+    :pointmax 20738
+    :fsize 20737
+    :lastmodtime '(22267 43108 0 0)
+    :unmatched-syntax '((symbol 20540 . 20548) (symbol 20247 . 20255) (symbol 19927 . 19935) (symbol 19455 . 19463) (symbol 18776 . 18784) (symbol 18097 . 18105) (symbol 17048 . 17056) (symbol 16748 . 16756) (symbol 16430 . 16438) (symbol 16147 . 16155) (symbol 15852 . 15860) (symbol 15546 . 15554) (symbol 15160 . 15168) (symbol 14791 . 14799) (symbol 14176 . 14184) (symbol 11472 . 11480) (symbol 10442 . 10450) (symbol 8208 . 8216) (symbol 6637 . 6645) (symbol 6467 . 6475) (symbol 6134 . 6142) (symbol 5514 . 5522) (symbol 5201 . 5209) (symbol 4900 . 4908) (symbol 4639 . 4647) (symbol 4416 . 4424) (symbol 3955 . 3963) (symbol 3424 . 3432) (symbol 2678 . 2686) (symbol 2172 . 2180) (symbol 1418 . 1426) (symbol 1102 . 1111))
+    :lexical-table 
+        '(("TEVENT_DEPRECATED" . ((number "1" 900 . 901)))
+          )
+
+    )
+   )
+  :file "!home!rkirk!Downloads!samba-4.4.2!auth!gensec!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -6,5 +6,5 @@
                       (add-hook 'write-contents-hooks 'rok-cleanup nil t)
 		      )))
 
-(setq jedi:setup-keys t)
-(add-hook 'python-mode-hook 'jedi:setup)
+;(setq jedi:setup-keys t)
+;(add-hook 'python-mode-hook 'jedi:setup)

@@ -1,0 +1,449 @@
+;; Object application/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "application/"
+  :tables (list 
+   (semanticdb-table "stanzaCreatorStrategy.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("STANZA_CREATOR_STRATEGY_H__" variable (:constant-flag t) nil [746 773])
+            ("stanzaFactory.h" include nil nil [775 801])
+            ("StanzaCreatorStrategy" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [996 1003])
+                    ("StanzaCreatorStrategy" function
+                       (:constructor-flag t
+                        :type ("StanzaCreatorStrategy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1007 1033])
+                    ("StanzaCreatorStrategy" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1038 1073])
+                    ("registerProcessors" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("pFactory" variable
+                               (:pointer 1
+                                :type ("StanzaFactory" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1112 1137]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1078 1142]))                  
+                :type "class")
+                nil [965 1145]))          
+    :file "stanzaCreatorStrategy.h"
+    :pointmax 1183
+    :fsize 1182
+    :lastmodtime '(21878 42585 913536 967000)
+    :unmatched-syntax '((punctuation 1073 . 1074) (punctuation 1033 . 1034))
+    :lexical-table 
+        '(("STANZA_CREATOR_STRATEGY_H__")
+          )
+
+    )
+   (semanticdb-table "xmppStanzaManager.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("XMPP_STANZA_MANAGER_H__" variable (:constant-flag t) nil [952 975])
+            ("QMap" include (:system-flag t) nil [977 992])
+            ("QSet" include (:system-flag t) nil [993 1008])
+            ("QString" include (:system-flag t) nil [1009 1027])
+            ("QObject" include (:system-flag t) nil [1028 1046])
+            ("QStringList" include (:system-flag t) nil [1047 1069])
+            ("QVariantMap" include (:system-flag t) nil [1070 1092])
+            ("QMutex" include (:system-flag t) nil [1093 1110])
+            ("stanzaFactory.h" include nil nil [1112 1138])
+            ("xmpp_common.h" include nil nil [1139 1163])
+            ("remotemessagemanager.h" include nil nil [1164 1197])
+            ("xmppremotemessage.h" include nil nil [1198 1228])
+            ("stanzaCreatorStrategy.h" include nil nil [1229 1263])
+            ("StanzaProcessor" type
+               (:prototype t
+                :type "class")
+                nil [1265 1287])
+            ("RemoteCommandExecutor" type
+               (:prototype t
+                :type "class")
+                nil [1288 1316])
+            ("XmppStanzaManager" type
+               (:superclasses 
+                  ( ("QObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1491 1498])
+                    ("XmppStanzaManager" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("pRemoteMsgMgr" variable
+                               (:pointer 1
+                                :type ("RemoteMessageManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1523 1559])
+                            ("pRCmdExcInstance" variable
+                               (:pointer 1
+                                :type ("RemoteCommandExecutor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1583 1624]))                          
+                        :type ("XmppStanzaManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1503 1625])
+                    ("XmppStanzaManager" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1629 1658])
+                    ("sendResponse" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("actionIdValue" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1682 1711])
+                            ("stanza" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("XmppRemoteMessage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1735 1768])
+                            ("status" variable (:type "int") (reparse-symbol arg-sub-list) [1792 1804]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1662 1805])
+                    ("sendResponse" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stanza" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("XmppRemoteMessage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1829 1861])
+                            ("result" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1862 1885]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1809 1886])
+                    ("initialize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pStanzaCreatorInstance" variable
+                               (:pointer 1
+                                :type ("StanzaCreatorStrategy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1908 1954])
+                            ("supportProductStanza" variable (:type "bool") (reparse-symbol arg-sub-list) [1976 2003])
+                            ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2004 2010]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1890 2011])
+                    ("getRemoteCmdExecutorInstance" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("RemoteCommandExecutor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2015 2069])
+                    ("getStanzaCreatorInstance" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("StanzaCreatorStrategy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2073 2123])
+                    ("sendDeviceStanza" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("destJid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2151 2174])
+                            ("fromJid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2175 2198])
+                            ("actionId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2226 2250])
+                            ("body" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2252 2273]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2127 2274])
+                    ("private" label nil (reparse-symbol classsubparts) [2276 2284])
+                    ("createStrategy" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pStanzaCreatorStrategy" variable
+                               (:pointer 1
+                                :type ("StanzaCreatorStrategy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2311 2357])
+                            ("supportProductStanza" variable (:type "bool") (reparse-symbol arg-sub-list) [2383 2410]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2289 2411])
+                    ("XmppStanzaManager" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("XmppStanzaManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2507 2534]))                          
+                        :type ("XmppStanzaManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2487 2535])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("XmppStanzaManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2676 2703]))                          
+                        :type ("XmppStanzaManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2638 2704])
+                    ("m_pRCmdExecInstance" variable
+                       (:pointer 1
+                        :type ("RemoteCommandExecutor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2709 2752])
+                    ("m_pFactory" variable
+                       (:pointer 1
+                        :type ("StanzaFactory" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2756 2782])
+                    ("m_pCreatorStrategy" variable
+                       (:pointer 1
+                        :type ("StanzaCreatorStrategy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2786 2828])
+                    ("m_pProdctCreatorStrategy" variable
+                       (:pointer 1
+                        :type ("StanzaCreatorStrategy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2832 2880])
+                    ("createAndSendResponse" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("actionIdValue" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2913 2942])
+                            ("cmd" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("XmppRemoteMessage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2975 3004])
+                            ("status" variable (:type "int") (reparse-symbol arg-sub-list) [3037 3049]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2884 3050])
+                    ("public" label nil (reparse-symbol classsubparts) [3052 3065])
+                    ("handleStanza" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("RemoteMessage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3089 3115]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3069 3116])
+                    ("handleAckDelayedStanza" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("RemoteMessage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3150 3176]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3120 3177])
+                    ("sendStanza" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cmd" variable
+                               (:reference 1
+                                :type ("XmppRemoteMessage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3209 3233]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3191 3234]))                  
+                :type "class")
+                nil [1436 3237])
+            ("getRemoteCmdExecutorInstance" function
+               (:pointer 1
+                :parent "XmppStanzaManager"
+                :typemodifiers ("inline")
+                :type ("RemoteCommandExecutor" type (:type "class") nil nil))
+                nil [3239 3353])
+            ("getStanzaCreatorInstance" function
+               (:pointer 1
+                :parent "XmppStanzaManager"
+                :typemodifiers ("inline")
+                :type ("StanzaCreatorStrategy" type (:type "class") nil nil))
+                nil [3355 3464]))          
+    :file "xmppStanzaManager.h"
+    :pointmax 3499
+    :fsize 3498
+    :lastmodtime '(21878 42585 913536 967000)
+    :unmatched-syntax '((punctuation 3186 . 3187) (symbol 3179 . 3186) (punctuation 2002 . 2003) (symbol 1481 . 1489))
+    :lexical-table 
+        '(("XMPP_STANZA_MANAGER_H__")
+          )
+
+    )
+   (semanticdb-table "xmppStanzaManager.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stanzaProcessor.h" include nil nil [917 945])
+            ("remoteCommandExecutor.h" include nil nil [946 980])
+            ("xmppremotemessage.h" include nil nil [981 1011])
+            ("remotemessagemodel.h" include nil nil [1012 1043])
+            ("productStanzaCreatorStrategy.h" include nil nil [1044 1085])
+            ("xmppStanzaManager.h" include nil nil [1086 1116])
+            ("XmppStanzaManager" function
+               (:constructor-flag t
+                :parent "XmppStanzaManager"
+                :arguments 
+                  ( ("pRemoteMsgMgr" variable
+                       (:pointer 1
+                        :type ("RemoteMessageManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1651 1687])
+                    ("pRCmdExecInstance" variable
+                       (:pointer 1
+                        :type ("RemoteCommandExecutor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1727 1769]))                  
+                :type ("XmppStanzaManager" type (:type "class") nil nil))
+                nil [1612 3536])
+            ("XmppStanzaManager" function
+               (:destructor-flag t
+                :parent "XmppStanzaManager"
+                :type "void")
+                nil [3810 4195])
+            ("initialize" function
+               (:parent "XmppStanzaManager"
+                :arguments 
+                  ( ("pCreatorStrategy" variable
+                       (:pointer 1
+                        :type ("StanzaCreatorStrategy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4662 4702])
+                    ("supportProductStanza" variable (:type "bool") (reparse-symbol arg-sub-list) [4740 4767]))                  
+                :type "bool")
+                nil [4625 4911])
+            ("handleStanza" function
+               (:parent "XmppStanzaManager"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("RemoteMessage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5372 5398]))                  
+                :type "void")
+                nil [5333 7715])
+            ("handleAckDelayedStanza" function
+               (:parent "XmppStanzaManager"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("RemoteMessage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8236 8262]))                  
+                :type "void")
+                nil [8187 8663])
+            ("sendResponse" function
+               (:parent "XmppStanzaManager"
+                :arguments 
+                  ( ("actionIdValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9360 9389])
+                    ("cmd" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("XmppRemoteMessage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9429 9458])
+                    ("status" variable (:type "int") (reparse-symbol arg-sub-list) [9498 9510]))                  
+                :type "void")
+                nil [9321 9705])
+            ("createAndSendResponse" function
+               (:parent "XmppStanzaManager"
+                :arguments 
+                  ( ("actionIdValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10417 10446])
+                    ("cmd" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("XmppRemoteMessage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10453 10482])
+                    ("status" variable (:type "int") (reparse-symbol arg-sub-list) [10489 10501]))                  
+                :type "void")
+                nil [10369 12184])
+            ("sendResponse" function
+               (:parent "XmppStanzaManager"
+                :arguments 
+                  ( ("cmd" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("XmppRemoteMessage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12713 12742])
+                    ("result" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12782 12805]))                  
+                :type "void")
+                nil [12674 13867])
+            ("sendDeviceStanza" function
+               (:parent "XmppStanzaManager"
+                :arguments 
+                  ( ("destJid" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14400 14423])
+                    ("fromJid" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14430 14453])
+                    ("actionId" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14460 14484])
+                    ("body" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14491 14512]))                  
+                :type "void")
+                nil [14357 14998])
+            ("createStrategy" function
+               (:parent "XmppStanzaManager"
+                :arguments 
+                  ( ("pStanzaCreatorStrategy" variable
+                       (:pointer 1
+                        :type ("StanzaCreatorStrategy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15512 15564])
+                    ("supportProductStanza" variable (:type "bool") (reparse-symbol arg-sub-list) [15571 15598]))                  
+                :type "void")
+                nil [15471 16127]))          
+    :file "xmppStanzaManager.cpp"
+    :pointmax 16128
+    :fsize 16127
+    :lastmodtime '(21878 42585 911536 982000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "productStanzaCreatorStrategy.h"
+    :file "productStanzaCreatorStrategy.h"
+    :fsize 1669
+    :lastmodtime '(21878 42585 913536 967000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!remotecommands!xmpp!application!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

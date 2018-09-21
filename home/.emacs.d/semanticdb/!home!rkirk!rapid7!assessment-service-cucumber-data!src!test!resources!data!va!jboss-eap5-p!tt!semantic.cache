@@ -1,0 +1,16 @@
+;; Object tt/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tt/"
+  :tables
+  (list
+    (semanticdb-table "results.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "results.json"
+      :pointmax 42860
+      :fsize 37560
+      :lastmodtime '(23054 28166 0 0)
+      :unmatched-syntax nil))
+  :file "!home!rkirk!rapid7!assessment-service-cucumber-data!src!test!resources!data!va!jboss-eap5-p!tt!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

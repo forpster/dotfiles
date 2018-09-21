@@ -1,0 +1,906 @@
+;; Object scan/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scan/"
+  :tables
+  (list
+    (semanticdb-table "ScanManager.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.rapid7.nexpose.scan" package nil nil [354 386])
+            ("com.rapid7.assessment.policy.PolicyBenchmark" include nil nil [388 440])
+            ("com.rapid7.assessment.policy.PolicyCheckParseContext" include nil nil [441 501])
+            ("com.rapid7.assessment.policy.PolicyFileSystem" include nil nil [502 555])
+            ("com.rapid7.assessment.policy.PolicyManager" include nil nil [556 606])
+            ("com.rapid7.assessment.policy.plugin.AbstractCheckParseContext" include nil nil [607 676])
+            ("com.rapid7.assessment.policy.plugin.CheckServiceUtils" include nil nil [677 738])
+            ("com.rapid7.assessment.policy.repo.PCKJarRepository" include nil nil [739 797])
+            ("com.rapid7.assessment.policy.service.PolicyCheckService" include nil nil [798 861])
+            ("com.rapid7.auth.HTMLFormAuthenticationMechanism" include nil nil [862 917])
+            ("com.rapid7.auth.HTTPHeaderAuthenticationMechanism" include nil nil [918 975])
+            ("com.rapid7.auth.IAuthResult" include nil nil [976 1011])
+            ("com.rapid7.auth.IAuthenticator" include nil nil [1012 1050])
+            ("com.rapid7.auth.ICredentials" include nil nil [1051 1087])
+            ("com.rapid7.auth.UserCredentials" include nil nil [1088 1127])
+            ("com.rapid7.editions.LicensedOption" include nil nil [1128 1170])
+            ("com.rapid7.extension.ExtensionException" include nil nil [1171 1218])
+            ("com.rapid7.extension.IExtensionManager" include nil nil [1219 1265])
+            ("com.rapid7.framework.cache.DefaultNodeCache" include nil nil [1266 1317])
+            ("com.rapid7.framework.plugin.ICheckParseContext" include nil nil [1318 1372])
+            ("com.rapid7.framework.plugin.IHandlerManager" include nil nil [1373 1424])
+            ("com.rapid7.framework.plugin.vulnck.MetaDataParser" include nil nil [1425 1482])
+            ("com.rapid7.handlers.context.PolicyScanContext" include nil nil [1483 1536])
+            ("com.rapid7.handlers.plugin.HandlerManager" include nil nil [1537 1586])
+            ("com.rapid7.io.IOTools" include nil nil [1587 1616])
+            ("com.rapid7.log.ILogSink" include nil nil [1617 1648])
+            ("com.rapid7.memory.IResourceConsumer" include nil nil [1649 1692])
+            ("com.rapid7.memory.ResourceDecisionManager" include nil nil [1693 1742])
+            ("com.rapid7.model.asset.assessment.vulnerability.VulnerabilityCheckID" include nil nil [1743 1819])
+            ("com.rapid7.net.ISessionEndpoint" include nil nil [1820 1859])
+            ("com.rapid7.net.ParsedURL" include nil nil [1860 1892])
+            ("com.rapid7.net.http.HTMLForm" include nil nil [1893 1929])
+            ("com.rapid7.net.http.HTMLFormAuthenticator" include nil nil [1930 1979])
+            ("com.rapid7.net.http.HTMLFormCredentials" include nil nil [1980 2027])
+            ("com.rapid7.net.http.HTMLFormException" include nil nil [2028 2073])
+            ("com.rapid7.net.http.HTMLFormRetriever" include nil nil [2074 2119])
+            ("com.rapid7.net.http.HTMLFormSoft403ValidationAuthenticator" include nil nil [2120 2186])
+            ("com.rapid7.net.http.HTTPHeaderAuthenticator" include nil nil [2187 2238])
+            ("com.rapid7.net.http.HTTPHeaderCredentials" include nil nil [2239 2288])
+            ("com.rapid7.net.snmp.SNMPv3UserCredentials" include nil nil [2289 2338])
+            ("com.rapid7.net.ssh.SSHPublicKeyCredentials" include nil nil [2339 2389])
+            ("com.rapid7.nex.scan.ScanID" include nil nil [2390 2424])
+            ("com.rapid7.nexpose.alert.IScanAlertFactory" include nil nil [2425 2475])
+            ("com.rapid7.nexpose.content.service.IContentServiceRegistry" include nil nil [2476 2542])
+            ("com.rapid7.nexpose.editions.FeatureSet" include nil nil [2543 2589])
+            ("com.rapid7.nexpose.engine.IEngineInfo" include nil nil [2590 2635])
+            ("com.rapid7.nexpose.engine.ScanEngine" include nil nil [2636 2680])
+            ("com.rapid7.nexpose.license.NexposeLicenseManager" include nil nil [2681 2737])
+            ("com.rapid7.nexpose.license.PolicyLicenseManager" include nil nil [2738 2793])
+            ("com.rapid7.nexpose.nse.AdminAlertFactory" include nil nil [2794 2842])
+            ("com.rapid7.nexpose.nse.ContentConsistencyValidator" include nil nil [2843 2901])
+            ("com.rapid7.nexpose.nse.NSE" include nil nil [2902 2936])
+            ("com.rapid7.nexpose.nse.NSESupport" include nil nil [2937 2978])
+            ("com.rapid7.nexpose.nse.PreventNewScansException" include nil nil [2979 3034])
+            ("com.rapid7.nexpose.nse.ScanLogSink" include nil nil [3035 3077])
+            ("com.rapid7.nexpose.nse.ScanMXBean" include nil nil [3078 3119])
+            ("com.rapid7.nexpose.oem.OEMConfig" include nil nil [3120 3160])
+            ("com.rapid7.nexpose.plugin.ServiceInfoManager" include nil nil [3161 3213])
+            ("com.rapid7.nexpose.policy.service.IPolicyService" include nil nil [3214 3270])
+            ("com.rapid7.nexpose.scan.asset.config.collector.AssetConfigCollector" include nil nil [3271 3346])
+            ("com.rapid7.nexpose.scan.log.IScanLogWriterFactory" include nil nil [3347 3404])
+            ("com.rapid7.nexpose.scan.log.ScanDirectoryService" include nil nil [3405 3461])
+            ("com.rapid7.nexpose.scan.monitor.EngineCPUMemoryLogger" include nil nil [3462 3523])
+            ("com.rapid7.nexpose.scan.monitor.IScanMetricsProvider" include nil nil [3524 3584])
+            ("com.rapid7.nexpose.scan.monitor.IScanMonitor" include nil nil [3585 3637])
+            ("com.rapid7.nexpose.scan.monitor.ScanMetricsListener" include nil nil [3638 3697])
+            ("com.rapid7.os.OSUtils" include nil nil [3698 3727])
+            ("com.rapid7.scan.config.BaseScanTemplate" include nil nil [3728 3775])
+            ("com.rapid7.scan.config.IScanContext" include nil nil [3776 3819])
+            ("com.rapid7.scan.ingestor.MonitorableAssetAssessmentIngestor" include nil nil [3820 3887])
+            ("com.rapid7.scan.log.IScanLogWriter" include nil nil [3888 3930])
+            ("com.rapid7.scan.log.ScanLogReader" include nil nil [3931 3972])
+            ("com.rapid7.scan.log.xlog.source.ITransactionLogInputSource" include nil nil [3973 4039])
+            ("com.rapid7.scan.log.xlog.source.TransactionLogFileInputSource" include nil nil [4040 4109])
+            ("com.rapid7.support.ISupportPackage" include nil nil [4110 4152])
+            ("com.rapid7.thread.ManagedThread" include nil nil [4153 4192])
+            ("com.rapid7.updater.UpdateDescriptor" include nil nil [4193 4236])
+            ("com.rapid7.updater.UpdateException" include nil nil [4237 4279])
+            ("com.rapid7.util.ExceptionUtils" include nil nil [4280 4318])
+            ("com.rapid7.util.PropertyUtils" include nil nil [4319 4356])
+            ("java.io.File" include nil nil [4357 4377])
+            ("java.io.FileInputStream" include nil nil [4378 4409])
+            ("java.io.FileOutputStream" include nil nil [4410 4442])
+            ("java.io.IOException" include nil nil [4443 4470])
+            ("java.io.InputStream" include nil nil [4471 4498])
+            ("java.lang.management.ManagementFactory" include nil nil [4499 4545])
+            ("java.lang.reflect.Field" include nil nil [4546 4577])
+            ("java.nio.file.FileSystems" include nil nil [4578 4611])
+            ("java.nio.file.FileVisitResult" include nil nil [4612 4649])
+            ("java.nio.file.Files" include nil nil [4650 4677])
+            ("java.nio.file.Path" include nil nil [4678 4704])
+            ("java.nio.file.PathMatcher" include nil nil [4705 4738])
+            ("java.nio.file.Paths" include nil nil [4739 4766])
+            ("java.nio.file.SimpleFileVisitor" include nil nil [4767 4806])
+            ("java.util.ArrayList" include nil nil [4807 4834])
+            ("java.util.Collection" include nil nil [4835 4863])
+            ("java.util.Collections" include nil nil [4864 4893])
+            ("java.util.HashMap" include nil nil [4894 4919])
+            ("java.util.HashSet" include nil nil [4920 4945])
+            ("java.util.List" include nil nil [4946 4968])
+            ("java.util.Map" include nil nil [4969 4990])
+            ("java.util.Optional" include nil nil [4991 5017])
+            ("java.util.Set" include nil nil [5018 5039])
+            ("java.util.concurrent.ConcurrentHashMap" include nil nil [5040 5086])
+            ("javax.management.MBeanServer" include nil nil [5087 5123])
+            ("javax.management.ObjectName" include nil nil [5124 5159])
+            ("org.apache.commons.io.FileUtils" include nil nil [5160 5199])
+            ("ScanManager" type
+               (:typemodifiers ("public")
+                :interfaces ("IEngineInfo" "IScanHook" "IResourceConsumer" "IEngineCredentialValidator" "IScanDirector")
+                :members 
+                  ( ("init" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("nseName" variable
+                               (:typemodifiers ("final")
+                                :type "String")
+                                (reparse-symbol formal_parameters) [6954 6974])
+                            ("rootDir" variable
+                               (:typemodifiers ("final")
+                                :type "File")
+                                (reparse-symbol formal_parameters) [6982 7000])
+                            ("scanLogWriterFactory" variable
+                               (:typemodifiers ("final")
+                                :type "IScanLogWriterFactory")
+                                (reparse-symbol formal_parameters) [7008 7056])
+                            ("extMgr" variable
+                               (:typemodifiers ("final")
+                                :type "IExtensionManager")
+                                (reparse-symbol formal_parameters) [7064 7094])
+                            ("licMgr" variable
+                               (:typemodifiers ("final")
+                                :type "NexposeLicenseManager")
+                                (reparse-symbol formal_parameters) [7102 7136])
+                            ("alertFactory" variable
+                               (:typemodifiers ("final")
+                                :type "AdminAlertFactory")
+                                (reparse-symbol formal_parameters) [7144 7180])
+                            ("scanDecryptor" variable
+                               (:typemodifiers ("final")
+                                :type "ScanDecryptor")
+                                (reparse-symbol formal_parameters) [7188 7221])
+                            ("engineCPUMemoryLogger" variable
+                               (:typemodifiers ("final")
+                                :type "EngineCPUMemoryLogger")
+                                (reparse-symbol formal_parameters) [7229 7278])
+                            ("standalone" variable
+                               (:typemodifiers ("final")
+                                :type "boolean")
+                                (reparse-symbol formal_parameters) [7286 7310])
+                            ("contentRegistry" variable (:type "IContentServiceRegistry") (reparse-symbol formal_parameters) [7318 7357]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6923 7660])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [7810 7873])
+                    ("getScanDecryptor" function
+                       (:typemodifiers ("public")
+                        :type "ScanDecryptor")
+                        (reparse-symbol class_member_declaration) [7977 8056])
+                    ("removeScanStatusResult" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [8221 8234]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8186 8464])
+                    ("getScanStatusFromXLog" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [8701 8714]))                          
+                        :type "Byte")
+                        (reparse-symbol class_member_declaration) [8667 9509])
+                    ("getScanStatusResult" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [9848 9861]))                          
+                        :type "Byte")
+                        (reparse-symbol class_member_declaration) [9816 11390])
+                    ("preventNewScans" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("prevent" variable (:type "boolean") (reparse-symbol formal_parameters) [11664 11679]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11636 11907])
+                    ("shutdown" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("waitForCompletion" variable (:type "boolean") (reparse-symbol formal_parameters) [12153 12178]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12132 12489])
+                    ("waitForScansToComplete" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12588 12678])
+                    ("waitForScansToComplete" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("preventScansBefore" variable (:type "boolean") (reparse-symbol formal_parameters) [13051 13077])
+                            ("preventScansAfter" variable (:type "boolean") (reparse-symbol formal_parameters) [13079 13104]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13016 13897])
+                    ("shutdown" function
+                       (:typemodifiers ("public" "synchronized")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14033 14855])
+                    ("getScanDir" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [14975 14988]))                          
+                        :type "File")
+                        (reparse-symbol class_member_declaration) [14952 15084])
+                    ("getExtensionManager" function
+                       (:typemodifiers ("public")
+                        :type "IExtensionManager")
+                        (reparse-symbol class_member_declaration) [15221 15310])
+                    ("getSupport" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("productName" variable (:type "String") (reparse-symbol formal_parameters) [15633 15651]))                          
+                        :type "ISupportPackage")
+                        (reparse-symbol class_member_declaration) [15599 15987])
+                    ("isInitialized" function
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [16144 16281])
+                    ("getInstance" function
+                       (:typemodifiers ("public" "static")
+                        :type "ScanManager")
+                        (reparse-symbol class_member_declaration) [16407 16651])
+                    ("isJESSValidationEnabled" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [16772 16859])
+                    ("enableJESSValidation" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16909 16990])
+                    ("disableJESSValidation" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17041 17124])
+                    ("initializePolicyManager" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("standalone" variable
+                               (:typemodifiers ("final")
+                                :type "boolean")
+                                (reparse-symbol formal_parameters) [17412 17436]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17375 20497])
+                    ("getServiceInfoManager" function
+                       (:typemodifiers ("public")
+                        :type "ServiceInfoManager")
+                        (reparse-symbol class_member_declaration) [20617 20699])
+                    ("launchScan" function
+                       (:throws ("IOException" "ScanCreationException" "ExtensionException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("cfg" variable (:type "ScannableScanConfig") (reparse-symbol formal_parameters) [21395 21418])
+                            ("authoredBy" variable (:type "String") (reparse-symbol formal_parameters) [21420 21437])
+                            ("oemCfg" variable (:type "OEMConfig") (reparse-symbol formal_parameters) [21439 21455])
+                            ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [21457 21470])
+                            ("" variable (:type "licensedOptions") (reparse-symbol formal_parameters) [21493 21508])
+                            ("customContent" variable (:type "Path") (reparse-symbol formal_parameters) [21510 21528]))                          
+                        :type "INexposeScanContext")
+                        (reparse-symbol class_member_declaration) [21357 21723])
+                    ("launchSubScan" function
+                       (:throws ("IOException" "ScanCreationException" "ExtensionException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("customContent" variable
+                               (:typemodifiers ("final")
+                                :type "Path")
+                                (reparse-symbol formal_parameters) [22459 22483])
+                            ("cfg" variable
+                               (:typemodifiers ("final")
+                                :type "ScannableScanConfig")
+                                (reparse-symbol formal_parameters) [22491 22520])
+                            ("authoredBy" variable
+                               (:typemodifiers ("final")
+                                :type "String")
+                                (reparse-symbol formal_parameters) [22528 22551])
+                            ("oemCfg" variable
+                               (:typemodifiers ("final")
+                                :type "OEMConfig")
+                                (reparse-symbol formal_parameters) [22559 22581])
+                            ("scanID" variable
+                               (:typemodifiers ("final")
+                                :type "ScanID")
+                                (reparse-symbol formal_parameters) [22589 22608])
+                            ("" variable (:type "licensedOptions") (reparse-symbol formal_parameters) [22643 22658])
+                            ("logSink" variable
+                               (:typemodifiers ("final")
+                                :type "ILogSink")
+                                (reparse-symbol formal_parameters) [22666 22688])
+                            ("prefix" variable
+                               (:typemodifiers ("final")
+                                :type "String")
+                                (reparse-symbol formal_parameters) [22696 22715]))                          
+                        :type "INexposeScanContext")
+                        (reparse-symbol class_member_declaration) [22411 22915])
+                    ("scaleBackCritical" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [23127 23795])
+                    ("scaleBackWarning" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [23813 24662])
+                    ("isActive" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [24680 24748])
+                    ("addScanHook" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("hook" variable (:type "IScanHook") (reparse-symbol formal_parameters) [24983 24997]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [24959 25177])
+                    ("removeScanHook" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("hook" variable (:type "IScanHook") (reparse-symbol formal_parameters) [25222 25236]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [25195 25279])
+                    ("getPortscansZip" function
+                       (:throws ("IOException" "IllegalArgumentException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [25514 25527]))                          
+                        :type "File")
+                        (reparse-symbol class_member_declaration) [25486 25668])
+                    ("getScanLog" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [25709 25722]))                          
+                        :type "File")
+                        (reparse-symbol class_member_declaration) [25686 26634])
+                    ("getEngineInfo" function
+                       (:typemodifiers ("public")
+                        :type "IEngineInfo")
+                        (reparse-symbol class_member_declaration) [26652 26715])
+                    ("getOS" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [26733 26959])
+                    ("getScanEngineLocalTime" function
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [26977 27156])
+                    ("getScanEngineStatus" function
+                       (:typemodifiers ("public")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [27174 27300])
+                    ("getScanEngineStatus" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("noCache" variable (:type "boolean") (reparse-symbol formal_parameters) [27350 27365]))                          
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [27318 27412])
+                    ("getLastUpdateID" function
+                       (:throws ("UpdateException")
+                        :typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [27430 27616])
+                    ("getLastUpdateDate" function
+                       (:throws ("UpdateException")
+                        :typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [27634 27828])
+                    ("isHostedScanEngine" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [27846 27911])
+                    ("getScanEngineCount" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [27929 27986])
+                    ("getScanEngineName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [28004 28071])
+                    ("getScanManager" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [28124 28135]))                          
+                        :type "IScanManager")
+                        (reparse-symbol class_member_declaration) [28089 28232])
+                    ("getActiveScanIDs" function (:constructor-flag t) (reparse-symbol class_member_declaration) [28269 28343])
+                    ("isScanIntegrating" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [28394 28407]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [28361 29045])
+                    ("getEngineScanStatistics" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [29109 29122]))                          
+                        :type "ScanStatistics")
+                        (reparse-symbol class_member_declaration) [29063 29728])
+                    ("getMissingVulnerabilityChecks" function
+                       (:constructor-flag t
+                        :throws ("IOException")
+                        :arguments 
+                          ( ("" variable (:type "vulnerabilityCheckIdentifiers") (reparse-symbol formal_parameters) [29849 29878]))                          )
+                        (reparse-symbol class_member_declaration) [29786 30101])
+                    ("getScanStatistics" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [30174 30187]))                          
+                        :type "ScanStatistics")
+                        (reparse-symbol class_member_declaration) [30134 30793])
+                    ("startNewScan" function
+                       (:throws ("IOException" "ScanCreationException" "ExtensionException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("cfg" variable (:type "ScannableScanConfig") (reparse-symbol formal_parameters) [30851 30874])
+                            ("startedBy" variable (:type "String") (reparse-symbol formal_parameters) [30876 30892]))                          
+                        :type "INexposeScanContext")
+                        (reparse-symbol class_member_declaration) [30811 31020])
+                    ("startNewScan" function
+                       (:throws ("IOException" "ScanCreationException" "ExtensionException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("cfg" variable (:type "ScannableScanConfig") (reparse-symbol formal_parameters) [31078 31101])
+                            ("startedBy" variable (:type "String") (reparse-symbol formal_parameters) [31103 31119])
+                            ("oemCfg" variable (:type "OEMConfig") (reparse-symbol formal_parameters) [31121 31137]))                          
+                        :type "INexposeScanContext")
+                        (reparse-symbol class_member_declaration) [31038 31277])
+                    ("doesActiveScanExist" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("cfg" variable (:type "ScannableScanConfig") (reparse-symbol formal_parameters) [31523 31546]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [31487 32276])
+                    ("launchScan" function
+                       (:throws ("IOException" "ScanCreationException" "ExtensionException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("cfg" variable (:type "ScannableScanConfig") (reparse-symbol formal_parameters) [32521 32544])
+                            ("authoredBy" variable (:type "String") (reparse-symbol formal_parameters) [32546 32563])
+                            ("oemCfg" variable (:type "OEMConfig") (reparse-symbol formal_parameters) [32565 32581])
+                            ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [32583 32596])
+                            ("" variable (:type "licensedOptions") (reparse-symbol formal_parameters) [32619 32634]))                          
+                        :type "INexposeScanContext")
+                        (reparse-symbol class_member_declaration) [32483 32820])
+                    ("retrieveFormsForURL" function
+                       (:throws ("HTMLFormException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("url" variable
+                               (:typemodifiers ("final")
+                                :type "ParsedURL")
+                                (reparse-symbol formal_parameters) [32870 32889])
+                            ("" variable (:type "forms") (reparse-symbol formal_parameters) [32911 32916]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [32838 33045])
+                    ("validateCredentials" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("serviceType" variable (:type "String") (reparse-symbol formal_parameters) [33098 33116])
+                            ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [33118 33137])
+                            ("icreds" variable (:type "ICredentials") (reparse-symbol formal_parameters) [33139 33158]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [33063 41623])
+                    ("stopScan" function
+                       (:throws ("ScanCreationException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [41662 41675])
+                            ("reason" variable (:type "String") (reparse-symbol formal_parameters) [41677 41690])
+                            ("success" variable (:type "boolean") (reparse-symbol formal_parameters) [41692 41707]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [41641 42329])
+                    ("getSupport" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "ISupportPackage")
+                        (reparse-symbol class_member_declaration) [42347 42448])
+                    ("getScanContentDir" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [42496 42509]))                          
+                        :type "File")
+                        (reparse-symbol class_member_declaration) [42466 42623])
+                    ("pauseScan" function
+                       (:throws ("ScanCreationException")
+                        :typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [42676 42689])
+                            ("reason" variable (:type "String") (reparse-symbol formal_parameters) [42691 42704]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [42641 43281])
+                    ("isDistributedScan" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [43332 43345]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [43299 43376])
+                    ("resumeScan" function
+                       (:throws ("IOException" "ExtensionException")
+                        :typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("cfg" variable (:type "ScannableScanConfig") (reparse-symbol formal_parameters) [43445 43468])
+                            ("resumedBy" variable (:type "String") (reparse-symbol formal_parameters) [43470 43486])
+                            ("oem" variable (:type "OEMConfig") (reparse-symbol formal_parameters) [43488 43501])
+                            ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [43503 43516]))                          
+                        :type "INexposeScanContext")
+                        (reparse-symbol class_member_declaration) [43394 43763])
+                    ("deleteScan" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [43817 43830]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [43781 44463])
+                    ("getScanThreadCount" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [44776 45312])
+                    ("getPeakRunningScans" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [45550 45625])
+                    ("getPeakScanThreadCount" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [45734 45815])
+                    ("getNumberRunningScans" function
+                       (:typemodifiers ("public" "synchronized")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [45942 46075])
+                    ("scanPaused" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ctx" variable (:type "INexposeScanContext") (reparse-symbol formal_parameters) [46302 46325])
+                            ("pausedBy" variable (:type "String") (reparse-symbol formal_parameters) [46327 46342]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [46279 46403])
+                    ("scanCompleted" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ctx" variable (:type "INexposeScanContext") (reparse-symbol formal_parameters) [46447 46470]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [46421 46536])
+                    ("scanFailed" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ctx" variable (:type "INexposeScanContext") (reparse-symbol formal_parameters) [46577 46600])
+                            ("errorMsg" variable (:type "String") (reparse-symbol formal_parameters) [46602 46617]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [46554 46680])
+                    ("scanStopped" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ctx" variable (:type "INexposeScanContext") (reparse-symbol formal_parameters) [46722 46745])
+                            ("stoppedBy" variable (:type "String") (reparse-symbol formal_parameters) [46747 46763]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [46698 46826])
+                    ("scanStarted" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ctx" variable (:type "INexposeScanContext") (reparse-symbol formal_parameters) [46868 46891]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [46844 46929])
+                    ("getArfResultFile" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [47183 47196])
+                            ("fileName" variable (:type "String") (reparse-symbol formal_parameters) [47198 47213]))                          
+                        :type "File")
+                        (reparse-symbol class_member_declaration) [47154 47377])
+                    ("getACESResultFile" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [47648 47661])
+                            ("filepath" variable (:type "String") (reparse-symbol formal_parameters) [47663 47678]))                          
+                        :type "File")
+                        (reparse-symbol class_member_declaration) [47618 48109])
+                    ("ScanManager" function
+                       (:constructor-flag t
+                        :throws ("IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("nseName" variable
+                               (:typemodifiers ("final")
+                                :type "String")
+                                (reparse-symbol formal_parameters) [49218 49238])
+                            ("rootDir" variable
+                               (:typemodifiers ("final")
+                                :type "File")
+                                (reparse-symbol formal_parameters) [49246 49264])
+                            ("scanLogWriterFactory" variable
+                               (:typemodifiers ("final")
+                                :type "IScanLogWriterFactory")
+                                (reparse-symbol formal_parameters) [49272 49320])
+                            ("extensionManager" variable
+                               (:typemodifiers ("final")
+                                :type "IExtensionManager")
+                                (reparse-symbol formal_parameters) [49328 49368])
+                            ("licenseManager" variable
+                               (:typemodifiers ("final")
+                                :type "NexposeLicenseManager")
+                                (reparse-symbol formal_parameters) [49376 49418])
+                            ("alertFactory" variable
+                               (:typemodifiers ("final")
+                                :type "AdminAlertFactory")
+                                (reparse-symbol formal_parameters) [49426 49462])
+                            ("scanDecryptor" variable
+                               (:typemodifiers ("final")
+                                :type "ScanDecryptor")
+                                (reparse-symbol formal_parameters) [49470 49503])
+                            ("engineCPUMemoryLogger" variable
+                               (:typemodifiers ("final")
+                                :type "EngineCPUMemoryLogger")
+                                (reparse-symbol formal_parameters) [49511 49560])
+                            ("standalone" variable
+                               (:typemodifiers ("final")
+                                :type "boolean")
+                                (reparse-symbol formal_parameters) [49568 49592])
+                            ("contentRegistry" variable (:type "IContentServiceRegistry") (reparse-symbol formal_parameters) [49600 49639]))                          )
+                        (reparse-symbol class_member_declaration) [49191 52095])
+                    ("initializeServiceInfoManager" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [52165 52287])
+                    ("finalize" function
+                       (:throws ("Throwable")
+                        :typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [52305 52405])
+                    ("sendFailureAlert" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("saf" variable (:type "IScanAlertFactory") (reparse-symbol formal_parameters) [52609 52630])
+                            ("" variable (:type "cfg") (reparse-symbol formal_parameters) [52654 52657])
+                            ("ctx" variable (:type "INexposeScanContext") (reparse-symbol formal_parameters) [52659 52682])
+                            ("oem" variable (:type "OEMConfig") (reparse-symbol formal_parameters) [52684 52697])
+                            ("t" variable (:type "Throwable") (reparse-symbol formal_parameters) [52699 52710]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [52577 53064])
+                    ("deleteDirectory" function
+                       (:typemodifiers ("private" "synchronized")
+                        :arguments 
+                          ( ("directory" variable (:type "File") (reparse-symbol formal_parameters) [53239 53253]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [53197 53579])
+                    ("recursive_deleteDirectory" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("directory" variable (:type "File") (reparse-symbol formal_parameters) [53785 53799]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [53746 54158])
+                    ("writeScanStatusResult" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("scanDir" variable (:type "File") (reparse-symbol formal_parameters) [54419 54431])
+                            ("status" variable (:type "byte") (reparse-symbol formal_parameters) [54433 54444]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [54377 55428])
+                    ("handleError" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("e" variable (:type "Exception") (reparse-symbol formal_parameters) [56135 56146])
+                            ("sentStartAlert" variable (:type "boolean") (reparse-symbol formal_parameters) [56148 56170])
+                            ("saf" variable (:type "IScanAlertFactory") (reparse-symbol formal_parameters) [56172 56193])
+                            ("" variable (:type "cfg") (reparse-symbol formal_parameters) [56217 56220])
+                            ("oemCfg" variable (:type "OEMConfig") (reparse-symbol formal_parameters) [56222 56238])
+                            ("ctx" variable (:type "INexposeScanContext") (reparse-symbol formal_parameters) [56240 56263])
+                            ("authoredBy" variable (:type "String") (reparse-symbol formal_parameters) [56265 56282]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [56110 57276])
+                    ("processScanHook" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("ctx" variable (:type "INexposeScanContext") (reparse-symbol formal_parameters) [57310 57333])
+                            ("reason" variable (:type "String") (reparse-symbol formal_parameters) [57335 57348])
+                            ("success" variable (:type "boolean") (reparse-symbol formal_parameters) [57350 57365])
+                            ("paused" variable (:type "boolean") (reparse-symbol formal_parameters) [57367 57381]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [57281 57776])
+                    ("processScanHook" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("scan" variable (:type "IScan") (reparse-symbol formal_parameters) [58260 58270])
+                            ("ctx" variable (:type "INexposeScanContext") (reparse-symbol formal_parameters) [58272 58295])
+                            ("" variable (:type "runScanCfg") (reparse-symbol formal_parameters) [58319 58329])
+                            ("reason" variable (:type "String") (reparse-symbol formal_parameters) [58331 58344])
+                            ("success" variable (:type "boolean") (reparse-symbol formal_parameters) [58346 58361])
+                            ("paused" variable (:type "boolean") (reparse-symbol formal_parameters) [58363 58377]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [58231 60221])
+                    ("fireScanFailedHooks" function
+                       (:arguments 
+                          ( ("ctx" variable (:type "INexposeScanContext") (reparse-symbol formal_parameters) [60438 60461])
+                            ("reason" variable (:type "String") (reparse-symbol formal_parameters) [60463 60476]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [60413 61660])
+                    ("fireScanPausedHooks" function
+                       (:arguments 
+                          ( ("ctx" variable (:type "INexposeScanContext") (reparse-symbol formal_parameters) [61909 61932])
+                            ("pausedBy" variable (:type "String") (reparse-symbol formal_parameters) [61934 61949]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [61884 63134])
+                    ("fireScanCompletedHooks" function
+                       (:arguments 
+                          ( ("ctx" variable (:type "INexposeScanContext") (reparse-symbol formal_parameters) [63297 63320]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [63269 64512])
+                    ("fireScanStoppedHooks" function
+                       (:arguments 
+                          ( ("ctx" variable (:type "INexposeScanContext") (reparse-symbol formal_parameters) [64740 64763])
+                            ("reason" variable (:type "String") (reparse-symbol formal_parameters) [64765 64778]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [64714 65968])
+                    ("getScanMetricsProvider" function
+                       (:typemodifiers ("public")
+                        :type "IScanMetricsProvider")
+                        (reparse-symbol class_member_declaration) [66089 66187])
+                    ("getScanMonitor" function
+                       (:typemodifiers ("public")
+                        :type "IScanMonitor")
+                        (reparse-symbol class_member_declaration) [66278 66360])
+                    ("getScan" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [66590 66603]))                          
+                        :type "IScan")
+                        (reparse-symbol class_member_declaration) [66569 66810])
+                    ("manageScan" function
+                       (:arguments 
+                          ( ("scan" variable (:type "IScan") (reparse-symbol formal_parameters) [66963 66973])
+                            ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [66975 66988]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [66947 67807])
+                    ("removeScan" function
+                       (:arguments 
+                          ( ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [67941 67954]))                          
+                        :type "IScan")
+                        (reparse-symbol class_member_declaration) [67924 68219])
+                    ("getScanLogWriter" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("config" variable
+                               (:typemodifiers ("final")
+                                :type "ScannableScanConfig")
+                                (reparse-symbol formal_parameters) [68558 68590])
+                            ("scanID" variable
+                               (:typemodifiers ("final")
+                                :type "ScanID")
+                                (reparse-symbol formal_parameters) [68592 68611]))                          
+                        :type "IScanLogWriter")
+                        (reparse-symbol class_member_declaration) [68519 68997])
+                    ("cleanOrphanedTempFiles" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [69400 71020])
+                    ("getIngestor" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [71092 71105]))                          
+                        :type "MonitorableAssetAssessmentIngestor")
+                        (reparse-symbol class_member_declaration) [71038 71907])
+                    ("internalLaunchScan" function
+                       (:throws ("IOException" "ScanCreationException" "ExtensionException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("customContent" variable (:type "Path") (reparse-symbol formal_parameters) [73146 73164])
+                            ("cfg" variable (:type "ScannableScanConfig") (reparse-symbol formal_parameters) [73172 73195])
+                            ("authoredBy" variable (:type "String") (reparse-symbol formal_parameters) [73203 73220])
+                            ("oemCfg" variable (:type "OEMConfig") (reparse-symbol formal_parameters) [73228 73244])
+                            ("scanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [73252 73265])
+                            ("" variable (:type "licensedOptions") (reparse-symbol formal_parameters) [73294 73309])
+                            ("scanLogSink" variable (:type "ILogSink") (reparse-symbol formal_parameters) [73317 73337])
+                            ("parentScanID" variable (:type "ScanID") (reparse-symbol formal_parameters) [73345 73364])
+                            ("prefix" variable (:type "String") (reparse-symbol formal_parameters) [73372 73385]))                          
+                        :type "INexposeScanContext")
+                        (reparse-symbol class_member_declaration) [73092 79945])
+                    ("DISABLE_POLICY_SCAN_MANAGER" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [80129 80228])
+                    ("DISABLE_POLICY_POLICY_MANAGER" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [80233 80329])
+                    ("m_rootDir" variable
+                       (:typemodifiers ("private" "final")
+                        :type "File")
+                        (reparse-symbol class_member_declaration) [80394 80423])
+                    ("m_scansDirectory" variable
+                       (:typemodifiers ("private" "final")
+                        :type "File")
+                        (reparse-symbol class_member_declaration) [80491 80527])
+                    ("m_extensionManager" variable
+                       (:typemodifiers ("private" "final")
+                        :type "IExtensionManager")
+                        (reparse-symbol class_member_declaration) [80606 80657])
+                    ("m_licenseManager" variable
+                       (:typemodifiers ("private" "final")
+                        :type "NexposeLicenseManager")
+                        (reparse-symbol class_member_declaration) [80761 80814])
+                    ("m_nseName" variable
+                       (:typemodifiers ("private" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [80908 80939])
+                    ("m_scanMetricsListener" variable
+                       (:typemodifiers ("private" "final")
+                        :type "ScanMetricsListener")
+                        (reparse-symbol class_member_declaration) [81845 81929])
+                    ("m_svcMgr" variable
+                       (:typemodifiers ("private")
+                        :type "ServiceInfoManager")
+                        (reparse-symbol class_member_declaration) [82003 82039])
+                    ("m_preventNewScans" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [82098 82128])
+                    ("m_newScanSync" variable
+                       (:typemodifiers ("private" "final")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [82189 82224])
+                    ("m_scanDecryptor" variable
+                       (:typemodifiers ("private" "final")
+                        :type "ScanDecryptor")
+                        (reparse-symbol class_member_declaration) [82315 82359])
+                    ("m_alertFactory" variable
+                       (:typemodifiers ("private" "final")
+                        :type "AdminAlertFactory")
+                        (reparse-symbol class_member_declaration) [82419 82466])
+                    ("m_scanLogWriterFactory" variable
+                       (:typemodifiers ("private" "final")
+                        :type "IScanLogWriterFactory")
+                        (reparse-symbol class_member_declaration) [82525 82584])
+                    ("m_scanGroup" variable
+                       (:typemodifiers ("private" "final")
+                        :type "ThreadGroup")
+                        (reparse-symbol class_member_declaration) [82872 82910])
+                    ("m_enableJessValidation" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [82982 83021])
+                    ("ms_instanceLock" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [83127 83186])
+                    ("ms_instance" variable
+                       (:typemodifiers ("private" "static")
+                        :type "ScanManager")
+                        (reparse-symbol class_member_declaration) [83231 83270])
+                    ("SCAN_STATUS_RESULT" variable
+                       (:typemodifiers ("private" "final" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [83323 83386])
+                    ("m_peakRunningScans" variable
+                       (:typemodifiers ("private" "volatile")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [83457 83501])
+                    ("m_peakScanThreadCount" variable
+                       (:typemodifiers ("private" "volatile")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [83562 83609])
+                    ("m_policyDirectory" variable
+                       (:typemodifiers ("private" "final")
+                        :type "File")
+                        (reparse-symbol class_member_declaration) [83697 83734])
+                    ("SCAN_RESULTS_PATH" variable
+                       (:typemodifiers ("private" "final" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [83789 83847])
+                    ("m_engineCPUMemoryLogger" variable
+                       (:typemodifiers ("private")
+                        :type "EngineCPUMemoryLogger")
+                        (reparse-symbol class_member_declaration) [83977 84031])
+                    ("m_contentServiceRegistry" variable
+                       (:typemodifiers ("private")
+                        :type "IContentServiceRegistry")
+                        (reparse-symbol class_member_declaration) [84115 84172]))                  
+                :type "class")
+                nil [5822 84174]))          
+      :file "ScanManager.java"
+      :pointmax 84175
+      :fsize 84174
+      :lastmodtime '(22765 57890 188745 786000)
+      :unmatched-syntax '((SEMICOLON 82801 . 82802) (GT 82788 . 82789) (LT 82778 . 82779) (SEMICOLON 82713 . 82714) (PAREN_BLOCK 82711 . 82713) (GT 82710 . 82711) (LT 82709 . 82710) (NEW 82698 . 82701) (EQ 82696 . 82697) (GT 82677 . 82678) (COMMA 82661 . 82662) (PRIVATE 82643 . 82650) (LT 82654 . 82655) (SEMICOLON 81713 . 81714) (GT 81693 . 81694) (LT 81686 . 81687) (SEMICOLON 81415 . 81416) (PAREN_BLOCK 81413 . 81415) (GT 81412 . 81413) (LT 81411 . 81412) (NEW 81390 . 81393) (EQ 81388 . 81389) (GT 81378 . 81379) (COMMA 81371 . 81372) (PRIVATE 81339 . 81346) (LT 81364 . 81365) (GT 73292 . 73293) (IDENTIFIER 73273 . 73277) (LT 73277 . 73278) (GT 58317 . 58318) (QUESTION 58316 . 58317) (IDENTIFIER 58297 . 58315) (LT 58315 . 58316) (GT 56215 . 56216) (QUESTION 56214 . 56215) (IDENTIFIER 56195 . 56213) (LT 56213 . 56214) (GT 52652 . 52653) (QUESTION 52651 . 52652) (IDENTIFIER 52632 . 52650) (LT 52650 . 52651) (GT 32909 . 32910) (FINAL 32891 . 32896) (LT 32900 . 32901) (GT 32617 . 32618) (IDENTIFIER 32598 . 32602) (LT 32602 . 32603) (GT 29847 . 29848) (IDENTIFIER 29816 . 29826) (LT 29826 . 29827) (GT 29784 . 29785) (IDENTIFIER 29733 . 29742) (PUBLIC 29746 . 29752) (LT 29763 . 29764) (GT 28267 . 28268) (IDENTIFIER 28237 . 28246) (PUBLIC 28250 . 28256) (LT 28260 . 28261) (GT 22641 . 22642) (FINAL 22616 . 22621) (LT 22626 . 22627) (GT 21491 . 21492) (IDENTIFIER 21472 . 21476) (LT 21476 . 21477) (IDENTIFIER 5641 . 5655) (DOT 5640 . 5641) (IDENTIFIER 5633 . 5640) (DOT 5632 . 5633) (IDENTIFIER 5628 . 5632) (DOT 5627 . 5628) (IMPORT 5609 . 5615) (STATIC 5616 . 5622) (IDENTIFIER 5623 . 5627) (IDENTIFIER 5599 . 5607) (DOT 5598 . 5599) (IDENTIFIER 5583 . 5598) (DOT 5582 . 5583) (IDENTIFIER 5578 . 5582) (DOT 5577 . 5578) (IDENTIFIER 5574 . 5577) (DOT 5573 . 5574) (IMPORT 5555 . 5561) (STATIC 5562 . 5568) (IDENTIFIER 5569 . 5573) (IDENTIFIER 5545 . 5553) (DOT 5544 . 5545) (IDENTIFIER 5536 . 5544) (DOT 5535 . 5536) (IDENTIFIER 5532 . 5535) (DOT 5531 . 5532) (IDENTIFIER 5524 . 5531) (DOT 5523 . 5524) (IDENTIFIER 5517 . 5523) (DOT 5516 . 5517) (IMPORT 5499 . 5505) (STATIC 5506 . 5512) (IDENTIFIER 5513 . 5516) (IDENTIFIER 5491 . 5497) (DOT 5490 . 5491) (IDENTIFIER 5482 . 5490) (DOT 5481 . 5482) (IDENTIFIER 5478 . 5481) (DOT 5477 . 5478) (IDENTIFIER 5470 . 5477) (DOT 5469 . 5470) (IDENTIFIER 5463 . 5469) (DOT 5462 . 5463) (IMPORT 5445 . 5451) (STATIC 5452 . 5458) (IDENTIFIER 5459 . 5462) (IDENTIFIER 5436 . 5443) (DOT 5435 . 5436) (IDENTIFIER 5427 . 5435) (DOT 5426 . 5427) (IDENTIFIER 5423 . 5426) (DOT 5422 . 5423) (IDENTIFIER 5415 . 5422) (DOT 5414 . 5415) (IDENTIFIER 5408 . 5414) (DOT 5407 . 5408) (IMPORT 5390 . 5396) (STATIC 5397 . 5403) (IDENTIFIER 5404 . 5407) (IDENTIFIER 5375 . 5388) (DOT 5374 . 5375) (IDENTIFIER 5359 . 5374) (DOT 5358 . 5359) (IDENTIFIER 5355 . 5358) (DOT 5354 . 5355) (IDENTIFIER 5348 . 5354) (DOT 5347 . 5348) (IMPORT 5330 . 5336) (STATIC 5337 . 5343) (IDENTIFIER 5344 . 5347) (IDENTIFIER 5306 . 5328) (DOT 5305 . 5306) (IDENTIFIER 5290 . 5305) (DOT 5289 . 5290) (IDENTIFIER 5286 . 5289) (DOT 5285 . 5286) (IDENTIFIER 5279 . 5285) (DOT 5278 . 5279) (IMPORT 5261 . 5267) (STATIC 5268 . 5274) (IDENTIFIER 5275 . 5278) (IDENTIFIER 5245 . 5259) (DOT 5244 . 5245) (IDENTIFIER 5229 . 5244) (DOT 5228 . 5229) (IDENTIFIER 5225 . 5228) (DOT 5224 . 5225) (IDENTIFIER 5218 . 5224) (DOT 5217 . 5218) (IMPORT 5200 . 5206) (STATIC 5207 . 5213) (IDENTIFIER 5214 . 5217) (GT 56215 . 56216) (QUESTION 56214 . 56215) (IDENTIFIER 56195 . 56213) (LT 56213 . 56214) (GT 52652 . 52653) (QUESTION 52651 . 52652) (IDENTIFIER 52632 . 52650) (LT 52650 . 52651) (GT 32909 . 32910) (FINAL 32891 . 32896) (LT 32900 . 32901) (GT 32617 . 32618) (IDENTIFIER 32598 . 32602) (LT 32602 . 32603) (GT 29847 . 29848) (IDENTIFIER 29816 . 29826) (LT 29826 . 29827) (GT 29784 . 29785) (IDENTIFIER 29733 . 29742) (PUBLIC 29746 . 29752) (LT 29763 . 29764) (GT 28267 . 28268) (IDENTIFIER 28237 . 28246) (PUBLIC 28250 . 28256) (LT 28260 . 28261) (GT 22641 . 22642) (FINAL 22616 . 22621) (LT 22626 . 22627) (GT 21491 . 21492) (IDENTIFIER 21472 . 21476) (LT 21476 . 21477) (IDENTIFIER 5641 . 5655) (DOT 5640 . 5641) (IDENTIFIER 5633 . 5640) (DOT 5632 . 5633) (IDENTIFIER 5628 . 5632) (DOT 5627 . 5628) (IMPORT 5609 . 5615) (STATIC 5616 . 5622) (IDENTIFIER 5623 . 5627) (IDENTIFIER 5599 . 5607) (DOT 5598 . 5599) (IDENTIFIER 5583 . 5598) (DOT 5582 . 5583) (IDENTIFIER 5578 . 5582) (DOT 5577 . 5578) (IDENTIFIER 5574 . 5577) (DOT 5573 . 5574) (IMPORT 5555 . 5561) (STATIC 5562 . 5568) (IDENTIFIER 5569 . 5573) (IDENTIFIER 5545 . 5553) (DOT 5544 . 5545) (IDENTIFIER 5536 . 5544) (DOT 5535 . 5536) (IDENTIFIER 5532 . 5535) (DOT 5531 . 5532) (IDENTIFIER 5524 . 5531) (DOT 5523 . 5524) (IDENTIFIER 5517 . 5523) (DOT 5516 . 5517) (IMPORT 5499 . 5505) (STATIC 5506 . 5512) (IDENTIFIER 5513 . 5516) (IDENTIFIER 5491 . 5497) (DOT 5490 . 5491) (IDENTIFIER 5482 . 5490) (DOT 5481 . 5482) (IDENTIFIER 5478 . 5481) (DOT 5477 . 5478) (IDENTIFIER 5470 . 5477) (DOT 5469 . 5470) (IDENTIFIER 5463 . 5469) (DOT 5462 . 5463) (IMPORT 5445 . 5451) (STATIC 5452 . 5458) (IDENTIFIER 5459 . 5462) (IDENTIFIER 5436 . 5443) (DOT 5435 . 5436) (IDENTIFIER 5427 . 5435) (DOT 5426 . 5427) (IDENTIFIER 5423 . 5426) (DOT 5422 . 5423) (IDENTIFIER 5415 . 5422) (DOT 5414 . 5415) (IDENTIFIER 5408 . 5414) (DOT 5407 . 5408) (IMPORT 5390 . 5396) (STATIC 5397 . 5403) (IDENTIFIER 5404 . 5407) (IDENTIFIER 5375 . 5388) (DOT 5374 . 5375) (IDENTIFIER 5359 . 5374) (DOT 5358 . 5359) (IDENTIFIER 5355 . 5358) (DOT 5354 . 5355) (IDENTIFIER 5348 . 5354) (DOT 5347 . 5348) (IMPORT 5330 . 5336) (STATIC 5337 . 5343) (IDENTIFIER 5344 . 5347) (IDENTIFIER 5306 . 5328) (DOT 5305 . 5306) (IDENTIFIER 5290 . 5305) (DOT 5289 . 5290) (IDENTIFIER 5286 . 5289) (DOT 5285 . 5286) (IDENTIFIER 5279 . 5285) (DOT 5278 . 5279) (IMPORT 5261 . 5267) (STATIC 5268 . 5274) (IDENTIFIER 5275 . 5278) (IDENTIFIER 5245 . 5259) (DOT 5244 . 5245) (IDENTIFIER 5229 . 5244) (DOT 5228 . 5229) (IDENTIFIER 5225 . 5228) (DOT 5224 . 5225) (IDENTIFIER 5218 . 5224) (DOT 5217 . 5218) (IMPORT 5200 . 5206) (STATIC 5207 . 5213) (IDENTIFIER 5214 . 5217))))
+  :file "!home!rkirk!rapid7!nexpose!src!nexpose!nse!src!main!java!com!rapid7!nexpose!scan!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

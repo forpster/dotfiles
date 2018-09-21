@@ -1,0 +1,88 @@
+;; Object Phase2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Phase2/"
+  :tables (list 
+   (semanticdb-table "token.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("AuthenticationToken" type
+               (:typedef ("std::vector" type
+                     (:template-specifier 
+                        ( ("uint8_t" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "std::vector"
+                :type "typedef")
+                nil [49 98])
+            ("generatePin" function
+               (:prototype-flag t
+                :type ("std::string" type (:type "class") nil nil))
+                nil [213 239])
+            ("generateAuthorisationToken" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("clientUUID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [530 560])
+                    ("token" variable
+                       (:reference 1
+                        :type ("AuthenticationToken" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [561 588]))                  
+                :type "bool")
+                nil [498 589])
+            ("validateAuthorisationToken" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("clientUUID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [893 923])
+                    ("token" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AuthenticationToken" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [924 957]))                  
+                :type "bool")
+                nil [861 958])
+            ("protectAuthorisationToken" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("token" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AuthenticationToken" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1266 1299])
+                    ("protectedToken" variable
+                       (:reference 1
+                        :type ("AuthenticationToken" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1300 1336]))                  
+                :type "bool")
+                nil [1235 1337])
+            ("unProtectAuthorisationToken" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("protectedToken" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AuthenticationToken" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1746 1788])
+                    ("clearToken" variable
+                       (:reference 1
+                        :type ("AuthenticationToken" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1789 1821]))                  
+                :type "bool")
+                nil [1713 1822]))          
+    :file "token.h"
+    :pointmax 1175
+    :fsize 1822
+    :lastmodtime '(21827 19433 262287 904000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!Documents!Tungsten!Altibox!Phase2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

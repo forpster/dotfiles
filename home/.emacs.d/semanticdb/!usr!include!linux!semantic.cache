@@ -1,0 +1,351 @@
+;; Object linux/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "linux/"
+  :tables (list 
+   (semanticdb-table "ioctl.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_LINUX_IOCTL_H" variable (:constant-flag t) nil [32 46])
+            ("asm/ioctl.h" include (:system-flag t) nil [48 70]))          
+    :file "ioctl.h"
+    :pointmax 101
+    :fsize 100
+    :lastmodtime '(21813 23608 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_LINUX_IOCTL_H")
+          )
+
+    )
+   (semanticdb-table "prctl.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_LINUX_PRCTL_H" variable (:constant-flag t) nil [32 46])
+            ("linux/types.h" include (:system-flag t) nil [48 72])
+            ("PR_SET_PDEATHSIG" variable (:constant-flag t) nil [133 149])
+            ("PR_GET_PDEATHSIG" variable (:constant-flag t) nil [191 207])
+            ("PR_GET_DUMPABLE" variable (:constant-flag t) nil [304 319])
+            ("PR_SET_DUMPABLE" variable (:constant-flag t) nil [332 347])
+            ("PR_GET_UNALIGN" variable (:constant-flag t) nil [421 435])
+            ("PR_SET_UNALIGN" variable (:constant-flag t) nil [448 462])
+            ("PR_UNALIGN_NOPRINT" variable (:constant-flag t) nil [476 494])
+            ("PR_UNALIGN_SIGBUS" variable (:constant-flag t) nil [552 569])
+            ("PR_GET_KEEPCAPS" variable (:constant-flag t) nil [739 754])
+            ("PR_SET_KEEPCAPS" variable (:constant-flag t) nil [767 782])
+            ("PR_GET_FPEMU" variable (:constant-flag t) nil [864 876])
+            ("PR_SET_FPEMU" variable (:constant-flag t) nil [888 900])
+            ("PR_FPEMU_NOPRINT" variable (:constant-flag t) nil [913 929])
+            ("PR_FPEMU_SIGFPE" variable (:constant-flag t) nil [987 1002])
+            ("PR_GET_FPEXC" variable (:constant-flag t) nil [1129 1141])
+            ("PR_SET_FPEXC" variable (:constant-flag t) nil [1153 1165])
+            ("PR_FP_EXC_SW_ENABLE" variable (:constant-flag t) nil [1178 1197])
+            ("PR_FP_EXC_DIV" variable (:constant-flag t) nil [1253 1266])
+            ("PR_FP_EXC_OVF" variable (:constant-flag t) nil [1322 1335])
+            ("PR_FP_EXC_UND" variable (:constant-flag t) nil [1385 1398])
+            ("PR_FP_EXC_RES" variable (:constant-flag t) nil [1449 1462])
+            ("PR_FP_EXC_INV" variable (:constant-flag t) nil [1518 1531])
+            ("PR_FP_EXC_DISABLED" variable (:constant-flag t) nil [1590 1608])
+            ("PR_FP_EXC_NONRECOV" variable (:constant-flag t) nil [1649 1667])
+            ("PR_FP_EXC_ASYNC" variable (:constant-flag t) nil [1717 1732])
+            ("PR_FP_EXC_PRECISE" variable (:constant-flag t) nil [1783 1800])
+            ("PR_GET_TIMING" variable (:constant-flag t) nil [1943 1956])
+            ("PR_SET_TIMING" variable (:constant-flag t) nil [1970 1983])
+            ("PR_TIMING_STATISTICAL" variable (:constant-flag t) nil [1998 2019])
+            ("PR_TIMING_TIMESTAMP" variable (:constant-flag t) nil [2143 2162])
+            ("PR_SET_NAME" variable (:constant-flag t) nil [2280 2291])
+            ("PR_GET_NAME" variable (:constant-flag t) nil [2330 2341])
+            ("PR_GET_ENDIAN" variable (:constant-flag t) nil [2410 2423])
+            ("PR_SET_ENDIAN" variable (:constant-flag t) nil [2435 2448])
+            ("PR_ENDIAN_BIG" variable (:constant-flag t) nil [2461 2474])
+            ("PR_ENDIAN_LITTLE" variable (:constant-flag t) nil [2487 2503])
+            ("PR_ENDIAN_PPC_LITTLE" variable (:constant-flag t) nil [2545 2565])
+            ("PR_GET_SECCOMP" variable (:constant-flag t) nil [2649 2663])
+            ("PR_SET_SECCOMP" variable (:constant-flag t) nil [2675 2689])
+            ("PR_CAPBSET_READ" variable (:constant-flag t) nil [2774 2789])
+            ("PR_CAPBSET_DROP" variable (:constant-flag t) nil [2801 2816])
+            ("PR_GET_TSC" variable (:constant-flag t) nil [2905 2915])
+            ("PR_SET_TSC" variable (:constant-flag t) nil [2927 2937])
+            ("PR_TSC_ENABLE" variable (:constant-flag t) nil [2950 2963])
+            ("PR_TSC_SIGSEGV" variable (:constant-flag t) nil [3021 3035])
+            ("PR_GET_SECUREBITS" variable (:constant-flag t) nil [3152 3169])
+            ("PR_SET_SECUREBITS" variable (:constant-flag t) nil [3181 3198])
+            ("PR_SET_TIMERSLACK" variable (:constant-flag t) nil [3313 3330])
+            ("PR_GET_TIMERSLACK" variable (:constant-flag t) nil [3342 3359])
+            ("PR_TASK_PERF_EVENTS_DISABLE" variable (:constant-flag t) nil [3372 3399])
+            ("PR_TASK_PERF_EVENTS_ENABLE" variable (:constant-flag t) nil [3412 3438])
+            ("PR_MCE_KILL" variable (:constant-flag t) nil [3591 3602])
+            ("PR_MCE_KILL_CLEAR" variable (:constant-flag t) nil [3615 3632])
+            ("PR_MCE_KILL_SET" variable (:constant-flag t) nil [3646 3661])
+            ("PR_MCE_KILL_LATE" variable (:constant-flag t) nil [3678 3694])
+            ("PR_MCE_KILL_EARLY" variable (:constant-flag t) nil [3709 3726])
+            ("PR_MCE_KILL_DEFAULT" variable (:constant-flag t) nil [3740 3759])
+            ("PR_MCE_KILL_GET" variable (:constant-flag t) nil [3771 3786])
+            ("PR_SET_MM" variable (:constant-flag t) nil [3847 3856])
+            ("PR_SET_MM_START_CODE" variable (:constant-flag t) nil [3870 3890])
+            ("PR_SET_MM_END_CODE" variable (:constant-flag t) nil [3903 3921])
+            ("PR_SET_MM_START_DATA" variable (:constant-flag t) nil [3934 3954])
+            ("PR_SET_MM_END_DATA" variable (:constant-flag t) nil [3967 3985])
+            ("PR_SET_MM_START_STACK" variable (:constant-flag t) nil [3998 4019])
+            ("PR_SET_MM_START_BRK" variable (:constant-flag t) nil [4032 4051])
+            ("PR_SET_MM_BRK" variable (:constant-flag t) nil [4064 4077])
+            ("PR_SET_MM_ARG_START" variable (:constant-flag t) nil [4091 4110])
+            ("PR_SET_MM_ARG_END" variable (:constant-flag t) nil [4123 4140])
+            ("PR_SET_MM_ENV_START" variable (:constant-flag t) nil [4153 4172])
+            ("PR_SET_MM_ENV_END" variable (:constant-flag t) nil [4186 4203])
+            ("PR_SET_MM_AUXV" variable (:constant-flag t) nil [4217 4231])
+            ("PR_SET_MM_EXE_FILE" variable (:constant-flag t) nil [4246 4264])
+            ("PR_SET_MM_MAP" variable (:constant-flag t) nil [4278 4291])
+            ("PR_SET_MM_MAP_SIZE" variable (:constant-flag t) nil [4306 4324])
+            ("prctl_mm_map" type
+               (:members 
+                  ( ("start_code" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4545 4562])
+                    ("end_code" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4591 4606])
+                    ("start_data" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4608 4625])
+                    ("end_data" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4654 4669])
+                    ("start_brk" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4671 4687])
+                    ("brk" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4719 4729])
+                    ("start_stack" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4731 4749])
+                    ("arg_start" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4774 4790])
+                    ("arg_end" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4829 4843])
+                    ("env_start" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4845 4861])
+                    ("env_end" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4899 4913])
+                    ("auxv" variable
+                       (:pointer 1
+                        :type ("__u64" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4915 4927])
+                    ("auxv_size" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4954 4970])
+                    ("exe_fd" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4991 5004]))                  
+                :type "struct")
+                nil [4522 5040])
+            ("PR_SET_PTRACER" variable (:constant-flag t) nil [5156 5170])
+            ("PR_SET_PTRACER_ANY" variable (:constant-flag t) nil [5191 5209])
+            ("PR_SET_CHILD_SUBREAPER" variable (:constant-flag t) nil [5239 5261])
+            ("PR_GET_CHILD_SUBREAPER" variable (:constant-flag t) nil [5273 5295])
+            ("PR_SET_NO_NEW_PRIVS" variable (:constant-flag t) nil [5910 5929])
+            ("PR_GET_NO_NEW_PRIVS" variable (:constant-flag t) nil [5941 5960])
+            ("PR_GET_TID_ADDRESS" variable (:constant-flag t) nil [5973 5991])
+            ("PR_SET_THP_DISABLE" variable (:constant-flag t) nil [6004 6022])
+            ("PR_GET_THP_DISABLE" variable (:constant-flag t) nil [6034 6052])
+            ("PR_MPX_ENABLE_MANAGEMENT" variable (:constant-flag t) nil [6145 6169])
+            ("PR_MPX_DISABLE_MANAGEMENT" variable (:constant-flag t) nil [6182 6207]))          
+    :file "prctl.h"
+    :pointmax 6240
+    :fsize 6239
+    :lastmodtime '(21813 23609 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PR_SET_PDEATHSIG" . ((number "1" 151 . 152)))
+          ("PR_FP_EXC_DISABLED" . ((number "0" 1609 . 1610)))
+          ("PR_FP_EXC_ASYNC" . ((number "2" 1733 . 1734)))
+          ("PR_SET_MM_END_CODE" . ((number "2" 3923 . 3924)))
+          ("PR_SET_MM_AUXV" . ((number "12" 4234 . 4236)))
+          ("PR_GET_PDEATHSIG" . ((number "2" 209 . 210)))
+          ("PR_SET_KEEPCAPS" . ((number "8" 785 . 786)))
+          ("PR_FPEMU_SIGFPE" . ((number "2" 1003 . 1004)))
+          ("PR_FP_EXC_DIV" . ((number "0x010000" 1268 . 1276)))
+          ("PR_TSC_SIGSEGV" . ((number "2" 3037 . 3038)))
+          ("PR_SET_TIMERSLACK" . ((number "29" 3331 . 3333)))
+          ("PR_UNALIGN_SIGBUS" . ((number "2" 570 . 571)))
+          ("PR_TIMING_TIMESTAMP" . ((number "1" 2166 . 2167)))
+          ("PR_SET_NAME" . ((number "15" 2295 . 2297)))
+          ("PR_SET_TSC" . ((number "26" 2938 . 2940)))
+          ("PR_SET_NO_NEW_PRIVS" . ((number "38" 5930 . 5932)))
+          ("PR_GET_THP_DISABLE" . ((number "42" 6053 . 6055)))
+          ("PR_SET_ENDIAN" . ((number "20" 2449 . 2451)))
+          ("PR_GET_TSC" . ((number "25" 2916 . 2918)))
+          ("PR_SET_SECUREBITS" . ((number "28" 3199 . 3201)))
+          ("PR_SET_MM_ARG_START" . ((number "8" 4112 . 4113)))
+          ("PR_SET_MM_ENV_START" . ((number "10" 4174 . 4176)))
+          ("PR_GET_CHILD_SUBREAPER" . ((number "37" 5296 . 5298)))
+          ("PR_UNALIGN_NOPRINT" . ((number "1" 495 . 496)))
+          ("PR_GET_FPEMU" . ((number "9" 878 . 879)))
+          ("PR_GET_ENDIAN" . ((number "19" 2424 . 2426)))
+          ("PR_GET_TIMERSLACK" . ((number "30" 3360 . 3362)))
+          ("PR_MCE_KILL_LATE" . ((number "0" 3698 . 3699)))
+          ("PR_SET_MM_MAP_SIZE" . ((number "15" 4326 . 4328)))
+          ("PR_SET_UNALIGN" . ((number "6" 465 . 466)))
+          ("PR_GET_NAME" . ((number "16" 2345 . 2347)))
+          ("PR_TASK_PERF_EVENTS_ENABLE" . ((number "32" 3440 . 3442)))
+          ("PR_MCE_KILL_GET" . ((number "34" 3787 . 3789)))
+          ("PR_SET_MM_EXE_FILE" . ((number "13" 4266 . 4268)))
+          ("PR_GET_NO_NEW_PRIVS" . ((number "39" 5961 . 5963)))
+          ("PR_GET_DUMPABLE" . ((number "3" 322 . 323)))
+          ("PR_GET_FPEXC" . ((number "11" 1142 . 1144)))
+          ("PR_FP_EXC_OVF" . ((number "0x020000" 1337 . 1345)))
+          ("PR_ENDIAN_PPC_LITTLE" . ((number "2" 2566 . 2567)))
+          ("PR_SET_SECCOMP" . ((number "22" 2690 . 2692)))
+          ("PR_GET_SECUREBITS" . ((number "27" 3170 . 3172)))
+          ("PR_SET_MM_BRK" . ((number "7" 4080 . 4081)))
+          ("PR_SET_PTRACER_ANY" . ((semantic-list "((unsigned long)-1)" 5210 . 5229)))
+          ("PR_SET_THP_DISABLE" . ((number "41" 6023 . 6025)))
+          ("PR_FP_EXC_PRECISE" . ((number "3" 1801 . 1802)))
+          ("PR_MCE_KILL_DEFAULT" . ((number "2" 3760 . 3761)))
+          ("PR_SET_MM_START_STACK" . ((number "5" 4021 . 4022)))
+          ("PR_SET_MM_MAP" . ((number "14" 4294 . 4296)))
+          ("PR_SET_CHILD_SUBREAPER" . ((number "36" 5262 . 5264)))
+          ("_LINUX_PRCTL_H")
+          ("PR_GET_UNALIGN" . ((number "5" 438 . 439)))
+          ("PR_SET_FPEMU" . ((number "10" 901 . 903)))
+          ("PR_FP_EXC_UND" . ((number "0x040000" 1400 . 1408)))
+          ("PR_FP_EXC_RES" . ((number "0x080000" 1464 . 1472)))
+          ("PR_SET_TIMING" . ((number "14" 1986 . 1988)))
+          ("PR_MCE_KILL_EARLY" . ((number "1" 3729 . 3730)))
+          ("PR_SET_MM_ARG_END" . ((number "9" 4142 . 4143)))
+          ("PR_SET_MM_ENV_END" . ((number "11" 4205 . 4207)))
+          ("PR_FP_EXC_INV" . ((number "0x100000" 1533 . 1541)))
+          ("PR_GET_TIMING" . ((number "13" 1959 . 1961)))
+          ("PR_GET_SECCOMP" . ((number "21" 2664 . 2666)))
+          ("PR_CAPBSET_READ" . ((number "23" 2790 . 2792)))
+          ("PR_MCE_KILL_SET" . ((number "1" 3666 . 3667)))
+          ("PR_SET_MM_START_DATA" . ((number "3" 3956 . 3957)))
+          ("PR_SET_DUMPABLE" . ((number "4" 350 . 351)))
+          ("PR_GET_KEEPCAPS" . ((number "7" 757 . 758)))
+          ("PR_SET_FPEXC" . ((number "12" 1166 . 1168)))
+          ("PR_TIMING_STATISTICAL" . ((number "0" 2021 . 2022)))
+          ("PR_ENDIAN_BIG" . ((number "0" 2476 . 2477)))
+          ("PR_CAPBSET_DROP" . ((number "24" 2817 . 2819)))
+          ("PR_TASK_PERF_EVENTS_DISABLE" . ((number "31" 3401 . 3403)))
+          ("PR_SET_MM_END_DATA" . ((number "4" 3987 . 3988)))
+          ("PR_SET_MM_START_BRK" . ((number "6" 4053 . 4054)))
+          ("PR_MPX_ENABLE_MANAGEMENT" . ((number "43" 6171 . 6173)))
+          ("PR_MPX_DISABLE_MANAGEMENT" . ((number "44" 6208 . 6210)))
+          ("PR_FP_EXC_SW_ENABLE" . ((number "0x80" 1198 . 1202)))
+          ("PR_TSC_ENABLE" . ((number "1" 2965 . 2966)))
+          ("PR_MCE_KILL" . ((number "33" 3603 . 3605)))
+          ("PR_GET_TID_ADDRESS" . ((number "40" 5992 . 5994)))
+          ("PR_FPEMU_NOPRINT" . ((number "1" 930 . 931)))
+          ("PR_FP_EXC_NONRECOV" . ((number "1" 1668 . 1669)))
+          ("PR_ENDIAN_LITTLE" . ((number "1" 2504 . 2505)))
+          ("PR_MCE_KILL_CLEAR" . ((number "0" 3635 . 3636)))
+          ("PR_SET_MM" . ((number "35" 3858 . 3860)))
+          ("PR_SET_MM_START_CODE" . ((number "1" 3892 . 3893)))
+          ("PR_SET_PTRACER" . ((number "0x59616d61" 5171 . 5181)))
+          )
+
+    )
+   (semanticdb-table "types.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_LINUX_TYPES_H" variable (:constant-flag t) nil [32 46])
+            ("asm/types.h" include (:system-flag t) nil [48 70])
+            ("linux/posix_types.h" include (:system-flag t) nil [94 124])
+            ("__bitwise__" variable (:constant-flag t) nil [337 348])
+            ("__bitwise" variable (:constant-flag t) nil [424 433])
+            ("__le16" type
+               (:typedef ("__u16" type (:type "class") nil nil)
+                :superclasses "__u16"
+                :type "typedef")
+                nil [442 473])
+            ("__be16" type
+               (:typedef ("__u16" type (:type "class") nil nil)
+                :superclasses "__u16"
+                :type "typedef")
+                nil [474 505])
+            ("__le32" type
+               (:typedef ("__u32" type (:type "class") nil nil)
+                :superclasses "__u32"
+                :type "typedef")
+                nil [506 537])
+            ("__be32" type
+               (:typedef ("__u32" type (:type "class") nil nil)
+                :superclasses "__u32"
+                :type "typedef")
+                nil [538 569])
+            ("__le64" type
+               (:typedef ("__u64" type (:type "class") nil nil)
+                :superclasses "__u64"
+                :type "typedef")
+                nil [570 601])
+            ("__be64" type
+               (:typedef ("__u64" type (:type "class") nil nil)
+                :superclasses "__u64"
+                :type "typedef")
+                nil [602 633])
+            ("__sum16" type
+               (:typedef ("__u16" type (:type "class") nil nil)
+                :superclasses "__u16"
+                :type "typedef")
+                nil [635 667])
+            ("__wsum" type
+               (:typedef ("__u32" type (:type "class") nil nil)
+                :superclasses "__u32"
+                :type "typedef")
+                nil [668 699])
+            ("__aligned_u64" variable (:constant-flag t) nil [1211 1224])
+            ("__aligned_be64" variable (:constant-flag t) nil [1267 1281])
+            ("__aligned_le64" variable (:constant-flag t) nil [1325 1339]))          
+    :file "types.h"
+    :pointmax 1431
+    :fsize 1430
+    :lastmodtime '(21813 23610 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_LINUX_TYPES_H")
+          ("__aligned_u64" . 
+              ((symbol "__u64" 1225 . 1230) (symbol "__attribute__" 1231 . 1244) (semantic-list "((aligned(8)))" 1244 . 1258)))
+          ("__aligned_le64" . 
+              ((symbol "__le64" 1340 . 1346) (symbol "__attribute__" 1347 . 1360) (semantic-list "((aligned(8)))" 1360 . 1374)))
+          ("__bitwise__")
+          ("__bitwise")
+          ("__aligned_be64" . 
+              ((symbol "__be64" 1282 . 1288) (symbol "__attribute__" 1289 . 1302) (semantic-list "((aligned(8)))" 1302 . 1316)))
+          )
+
+    )
+   (semanticdb-table "posix_types.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_LINUX_POSIX_TYPES_H" variable (:constant-flag t) nil [38 58])
+            ("linux/stddef.h" include (:system-flag t) nil [60 85])
+            ("__FD_SETSIZE" variable (:constant-flag t) nil [690 702])
+            ("__kernel_fd_set" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("fds_bits" variable
+                             (:dereference 1
+                              :type "unsigned long")
+                              (reparse-symbol classsubparts) [727 785]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [709 804])
+            ("__kernel_sighandler_t" variable
+               (:functionpointer-flag t
+                :type "void")
+                nil [847 882])
+            ("__kernel_key_t" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [915 942])
+            ("__kernel_mqd_t" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [943 970])
+            ("asm/posix_types.h" include (:system-flag t) nil [972 1000]))          
+    :file "posix_types.h"
+    :pointmax 1036
+    :fsize 1035
+    :lastmodtime '(21813 23609 0 0)
+    :unmatched-syntax '((TYPEDEF 839 . 846))
+    :lexical-table 
+        '(("_LINUX_POSIX_TYPES_H")
+          ("__FD_SETSIZE" . ((number "1024" 703 . 707)))
+          )
+
+    )
+   (semanticdb-table "stddef.h"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "stddef.h"
+    :pointmax 2
+    :fsize 1
+    :lastmodtime '(21813 23609 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!include!linux!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

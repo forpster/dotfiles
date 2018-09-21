@@ -1,0 +1,858 @@
+;; Object impl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "impl/"
+  :tables (list 
+   (semanticdb-table "Window.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("Broker.h" include nil nil [2544 2563])
+            ("Window.h" include nil nil [2564 2583])
+            ("nxclient.h" include nil nil [2584 2605])
+            ("algorithm" include (:system-flag t) nil [2606 2626])
+            ("string.h" include (:system-flag t) nil [2627 2646])
+            ("Trellis" type
+               (:members 
+                  ( ("TRLS_DBG_MODULE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("Window" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2685 2692]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2669 2693])
+                    ("tagWindowContext" type
+                       (:members 
+                          ( ("allocResults" variable (:type ("NxClient_AllocResults" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2725 2760]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2695 2777])
+                    ("WindowContext" variable (:type ("tagWindowContext" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol namespacesubparts) [2695 2777])
+                    ("Window::DEFAULT_PRIORITY" variable
+                       (:constant-flag t
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2779 2822])
+                    ("Window::FOCUSED_PRIORITY" variable
+                       (:constant-flag t
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2823 2867])
+                    ("NEXUS_SurfaceCompositor_Premult_ColorPDSource" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("NEXUS_BlendEquation" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2869 3110])
+                    ("NEXUS_SurfaceCompositor_ColorPDSource" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("NEXUS_BlendEquation" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3112 3337])
+                    ("NEXUS_SurfaceCompositor_AlphaPDSource" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("NEXUS_BlendEquation" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3339 3564])
+                    ("NEXUS_SurfaceCompositor_Premult_ColorPDSourceOver" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("NEXUS_BlendEquation" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3566 3837])
+                    ("NEXUS_SurfaceCompositor_ColorPDSourceOver" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("NEXUS_BlendEquation" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3839 4094])
+                    ("NEXUS_SurfaceCompositor_AlphaPDSourceOver" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("NEXUS_BlendEquation" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4096 4337])
+                    ("findLaunchParameters" function
+                       (:parent "Window"
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4400 4409])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4410 4423]))                          
+                        :type ("IWindow::WindowLaunchParameters" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4339 6100])
+                    ("Window" function
+                       (:constructor-flag t
+                        :parent "Window"
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6117 6126])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6127 6140]))                          
+                        :type ("Window" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6102 6437])
+                    ("Window" function
+                       (:constructor-flag t
+                        :parent "Window"
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Window" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6454 6472]))                          
+                        :type ("Window" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6439 6791])
+                    ("Window" function
+                       (:destructor-flag t
+                        :parent "Window"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6793 6814])
+                    ("getActor" function
+                       (:pointer 1
+                        :parent "Window"
+                        :type ("Actor" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6816 6881])
+                    ("init" function
+                       (:parent "Window"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6883 8307])
+                    ("getClientId" function
+                       (:parent "Window"
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [8309 8404])
+                    ("getState" function
+                       (:parent "Window"
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8406 8476])
+                    ("setState" function
+                       (:parent "Window"
+                        :arguments 
+                          ( ("requestedState" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8500 8534]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8478 8581])
+                    ("getRating" function
+                       (:parent "Window"
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8583 8652])
+                    ("setRating" function
+                       (:parent "Window"
+                        :arguments 
+                          ( ("requestedRating" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8677 8702]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8654 8751])
+                    ("activate" function
+                       (:parent "Window"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8753 8809])
+                    ("suspend" function
+                       (:parent "Window"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8811 8865])
+                    ("terminate" function
+                       (:parent "Window"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8867 8925])
+                    ("getRuntimeStatistics" function
+                       (:parent "Window"
+                        :type ("IApplication::RuntimeStatistics" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8927 9041])
+                    ("handleFocus" function
+                       (:parent "Window"
+                        :arguments 
+                          ( ("obtained" variable (:type "bool") (reparse-symbol arg-sub-list) [9068 9082]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9043 9771])
+                    ("isFocused" function
+                       (:parent "Window"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [9773 9821])
+                    ("handleEvent" function
+                       (:parent "Window"
+                        :arguments 
+                          ( ("event" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9848 9867]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [9823 10939])
+                    ("setVisibility" function
+                       (:parent "Window"
+                        :arguments 
+                          ( ("requestedVisibility" variable (:type "bool") (reparse-symbol arg-sub-list) [10968 10993]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10941 11539])
+                    ("getVisibility" function
+                       (:parent "Window"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [11541 11821])
+                    ("setOpacity" function
+                       (:parent "Window"
+                        :arguments 
+                          ( ("requestedOpacity" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11847 11873]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11823 13106])
+                    ("getOpacity" function
+                       (:parent "Window"
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13108 13211])
+                    ("setZOrder" function
+                       (:parent "Window"
+                        :arguments 
+                          ( ("requestedZOrder" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13236 13261]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [13213 13789])
+                    ("getZOrder" function
+                       (:parent "Window"
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13791 14066])
+                    ("setLocation" function
+                       (:parent "Window"
+                        :arguments 
+                          ( ("requestedLocation" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IWindow::Rect" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14093 14132]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [14068 14396])
+                    ("getLocation" function
+                       (:parent "Window"
+                        :type ("IWindow::Rect" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14398 14508])
+                    ("getInputDriver" function
+                       (:pointer 1
+                        :parent "Window"
+                        :type ("IInputDriver" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14510 14577])
+                    ("setInputWebSocketID" function
+                       (:parent "Window"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14612 14630])
+                            ("window" variable
+                               (:reference 1
+                                :type ("Window" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14631 14646]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [14579 14650])
+                    ("bringToFront" function
+                       (:parent "Window"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [14652 14683])
+                    ("sendToBack" function
+                       (:parent "Window"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [14685 14714])
+                    ("bringForward" function
+                       (:parent "Window"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [14716 14747])
+                    ("sendBackward" function
+                       (:parent "Window"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [14749 14780])
+                    ("autoStandbyEvent" function
+                       (:parent "Window"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14813 14838]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [14782 14842])
+                    ("setStandbyMode" function
+                       (:parent "Window"
+                        :arguments 
+                          ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [14872 14884]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [14844 14917])
+                    ("onInputEvent" function
+                       (:parent "Window"
+                        :arguments 
+                          ( ("inputEvent" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IWindow::Event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14945 14978]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [14919 15058]))                  
+                :type "namespace")
+                nil [2648 15061]))          
+    :file "Window.cpp"
+    :pointmax 15085
+    :fsize 15084
+    :lastmodtime '(21785 11074 563913 757000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Window.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__IWINDOWIMPL_H__" variable (:constant-flag t) nil [2578 2595])
+            ("Implementation.h" include nil nil [2597 2624])
+            ("IWindow.h" include nil nil [2625 2645])
+            ("Application.h" include nil nil [2646 2670])
+            ("IInputDriver.h" include nil nil [2671 2696])
+            ("IInputDriverAdaptor.h" include nil nil [2697 2729])
+            ("ICursor.h" include nil nil [2730 2750])
+            ("Trellis" type
+               (:members 
+                  ( ("Window" type
+                       (:superclasses 
+                          ( ("Application" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("Implementation" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [2849 2859])
+                            ("findLaunchParameters" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2924 2933])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2934 2947]))                                  
+                                :type ("IWindow::WindowLaunchParameters" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2864 2948])
+                            ("public" label nil (reparse-symbol classsubparts) [2949 2956])
+                            ("EasyPoint" type
+                               (:superclasses 
+                                  ( ("Point" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [3003 3010])
+                                    ("EasyPoint" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("x" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3029 3039])
+                                            ("y" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3040 3050]))                                          
+                                        :type ("EasyPoint" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3019 3076])
+                                    ("samePoint" function
+                                       (:arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Point" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3101 3118]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3086 3207])
+                                    ("+" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Point" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3234 3251]))                                          
+                                        :type ("Point" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3217 3337])
+                                    ("-" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Point" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3364 3381]))                                          
+                                        :type ("Point" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3347 3467])
+                                    ("==" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Point" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3494 3511]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3477 3564])
+                                    ("!=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Point" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3591 3608]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3574 3662]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [2962 3669])
+                            ("EasyDimensions" type
+                               (:superclasses 
+                                  ( ("Dimensions" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [3726 3733])
+                                    ("EasyDimensions" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("w" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3757 3768])
+                                            ("h" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3769 3780]))                                          
+                                        :type ("EasyDimensions" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3742 3811])
+                                    ("isEmpty" function (:type "bool") (reparse-symbol classsubparts) [3821 3906])
+                                    ("sameDimensions" function
+                                       (:arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Dimensions" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3936 3958]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3916 4047])
+                                    ("+" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Dimensions" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4079 4101]))                                          
+                                        :type ("Dimensions" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4057 4192])
+                                    ("-" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Dimensions" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4224 4246]))                                          
+                                        :type ("Dimensions" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4202 4337])
+                                    ("==" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Dimensions" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4364 4386]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4347 4444])
+                                    ("!=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Dimensions" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4471 4493]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4454 4547]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [3675 4554])
+                            ("EasyRect" type
+                               (:superclasses 
+                                  ( ("Rect" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [4599 4606])
+                                    ("EasyRect" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("x" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4624 4634])
+                                            ("y" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4635 4645])
+                                            ("w" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4646 4657])
+                                            ("h" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4658 4669]))                                          
+                                        :type ("EasyRect" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4615 4700])
+                                    ("EasyRect" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("rect" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Rect" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4719 4736]))                                          
+                                        :type ("EasyRect" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4710 4761])
+                                    ("EasyRect" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("point" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Point" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4780 4799])
+                                            ("dimensions" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Dimensions" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4800 4829]))                                          
+                                        :type ("EasyRect" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4771 4914])
+                                    ("getPoint" function (:type ("EasyPoint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4924 5008])
+                                    ("getDimensions" function (:type ("EasyDimensions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5018 5117])
+                                    ("getX2" function (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5127 5196])
+                                    ("getY2" function (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5206 5275])
+                                    ("contains" function
+                                       (:arguments 
+                                          ( ("point" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Point" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5299 5318]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [5285 5532])
+                                    ("contains" function
+                                       (:arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Rect" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5556 5572]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [5542 5795])
+                                    ("intersect" function
+                                       (:arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Rect" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5820 5836]))                                          
+                                        :type ("Rect" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5805 6152])
+                                    ("unite" function
+                                       (:arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Rect" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6173 6189]))                                          
+                                        :type ("Rect" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6162 6681])
+                                    ("==" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Rect" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6708 6724]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [6691 6890])
+                                    ("!=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Rect" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6917 6933]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [6900 6987]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [4560 6994])
+                            ("DEFAULT_PRIORITY" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type ("int32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7000 7038])
+                            ("FOCUSED_PRIORITY" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type ("int32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7044 7082])
+                            ("Window" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7095 7104])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [7105 7118]))                                  
+                                :type ("Window" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7088 7119])
+                            ("Window" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Window" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7131 7149]))                                  
+                                :type ("Window" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7124 7150])
+                            ("Window" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [7155 7173])
+                            ("getActor" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :type ("Actor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7179 7205])
+                            ("init" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [7211 7231])
+                            ("getState" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7260 7291])
+                            ("setState" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("requestedState" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7318 7353]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7296 7354])
+                            ("getRating" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7359 7388])
+                            ("setRating" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("requestedRating" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7416 7441]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7393 7442])
+                            ("activate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [7447 7471])
+                            ("suspend" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [7476 7499])
+                            ("terminate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [7504 7529])
+                            ("getRuntimeStatistics" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("RuntimeStatistics" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7534 7583])
+                            ("getClientId" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [7607 7638])
+                            ("handleFocus" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("obtained" variable (:type "bool") (reparse-symbol arg-sub-list) [7668 7682]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7643 7683])
+                            ("isFocused" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7688 7713])
+                            ("handleEvent" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("event" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("IWindow::Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7743 7771]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7718 7772])
+                            ("setVisibility" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("visibility" variable (:type "bool") (reparse-symbol arg-sub-list) [7804 7820]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7777 7821])
+                            ("getVisibility" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7826 7855])
+                            ("setOpacity" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("opacity" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7884 7901]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7860 7902])
+                            ("getOpacity" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7907 7937])
+                            ("setZOrder" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("zorder" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7965 7981]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7942 7982])
+                            ("getZOrder" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7987 8016])
+                            ("setLocation" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("location" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("IWindow::Rect" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8046 8076]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8021 8077])
+                            ("getLocation" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("IWindow::Rect" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8082 8118])
+                            ("bringToFront" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [8123 8151])
+                            ("sendToBack" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [8156 8182])
+                            ("bringForward" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [8187 8215])
+                            ("sendBackward" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [8220 8248])
+                            ("autoStandbyEvent" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8305 8330]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8274 8331])
+                            ("setStandbyMode" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [8365 8378]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8336 8379])
+                            ("onInputEvent" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("inputEvent" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("IWindow::Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8460 8493]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8434 8494])
+                            ("getInputDriver" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :type ("IInputDriver" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8500 8531])
+                            ("protected" label nil (reparse-symbol classsubparts) [8533 8543])
+                            ("setInputWebSocketID" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("data" variable
+                                       (:reference 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8581 8599])
+                                    ("window" variable
+                                       (:reference 1
+                                        :type ("Window" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8600 8615]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8548 8616])
+                            ("protected" label nil (reparse-symbol classsubparts) [8618 8628])
+                            ("windowLaunchParameters" variable
+                               (:constant-flag t
+                                :type ("IWindow::WindowLaunchParameters" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8633 8694])
+                            ("inputDriver" variable
+                               (:pointer 1
+                                :type ("IInputDriver" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8700 8726])
+                            ("inputDriverAdaptor" variable (:type ("InputDriverIListenerAdaptor" type
+                                 (:template-specifier 
+                                    ( ("Window" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [8731 8786])
+                            ("cursor" variable
+                               (:pointer 1
+                                :type ("ICursor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8791 8808])
+                            ("cursorVisibility" variable (:type "bool") (reparse-symbol classsubparts) [8814 8836])
+                            ("focused" variable (:type "bool") (reparse-symbol classsubparts) [8841 8854])
+                            ("schedulingPriority" variable (:type "int") (reparse-symbol classsubparts) [8859 8882])
+                            ("standbyEntered" variable (:type "bool") (reparse-symbol classsubparts) [8908 8928]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2773 8957]))                  
+                :type "namespace")
+                nil [2752 8960]))          
+    :file "Window.h"
+    :pointmax 9012
+    :fsize 9011
+    :lastmodtime '(21785 11074 564913 750000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__IWINDOWIMPL_H__")
+          )
+
+    )
+   (semanticdb-table "ICursor.h"
+    :file "ICursor.h"
+    :fsize 3846
+    :lastmodtime '(21785 11074 564913 750000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!BSP!drivers!src!refsw!AppLibs!broadcom!services!application!components!window!impl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

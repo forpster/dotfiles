@@ -1,0 +1,22 @@
+;; Object foxtel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "foxtel/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("SRCS" variable (:default-value ("plugins/foxtel/foxtelfsdheader.cpp" "plugins/foxtel/foxtelfsdsecurecontent.cpp" "plugins/foxtel/foxtelinitialiser.cpp" "plugins/foxtel/foxtelhdrheader.cpp" "plugins/foxtel/foxtelhdrsecurecontent.cpp" "plugins/foxtel/foxtelcdeheader.cpp" "plugins/foxtel/foxtelcdesecurecontent.cpp" "plugins/foxtel/foxtelbasesecurecontent.cpp" "plugins/foxtel/foxtelbaseheader.cpp" "plugins/foxtel/foxtelutilities.cpp" "plugins/foxtel/stbdetails.cpp" "plugins/foxtel/foxtelcdesecuredinfo.cpp" "plugins/foxtel/foxtelhdrsecuredinfo.cpp" "plugins/foxtel/foxtelfsdsecuredinfo.cpp")) nil [109 682])
+            ("INCPATH" variable (:default-value ("-Iplugins/foxtel/fsl/include" "-Iplugins/foxtel/fsd/include" "-Iplugins/foxtel/interface")) nil [683 778])
+            ("ARCHIVE_LIBS" variable (:default-value ("plugins/foxtel/fsd/lib/nx/fsd_release.a" "plugins/foxtel/fsl/lib/nx/fsl_release.a")) nil [778 874])
+            ("EXPORT_HEADERS" variable (:default-value ("plugins/foxtel/interface/foxtelsecuredinfo_public.h")) nil [874 944]))          
+    :file "Makefile"
+    :pointmax 950
+    :fsize 949
+    :lastmodtime '(21855 20446 343976 108000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten.bug!src!pace!middleware!security-lib!lib!plugins!foxtel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

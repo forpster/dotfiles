@@ -1,0 +1,315 @@
+;; Object secApp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "secApp/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("CP" variable (:default-value ("cp")) nil [199 205])
+            ("RM" variable (:default-value ("rm")) nil [205 211])
+            ("MKDIR" variable (:default-value ("mkdir")) nil [211 223])
+            ("CC" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [223 276])
+            ("CXX" variable (:default-value ("mipsel-linux-uclibc-g++" "--sysroot=$(STAGING_PATH)")) nil [276 330])
+            ("LD" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [330 383])
+            ("AR" variable (:default-value ("mipsel-linux-uclibc-ar")) nil [383 409])
+            ("RANLIB" variable (:default-value ("mipsel-linux-uclibc-ranlib")) nil [409 443])
+            ("LIBS" variable (:default-value ("-lcrypto")) nil [534 548])
+            ("INCPATH" variable (:default-value ("-I../interface" "-I$(shell pwd)" "-I$(HDW_DEFS_DIR)")) nil [548 604])
+            ("LDFLAGS" variable (:default-value ("$(LDFLAGS)" "-Wl,-O1" "$(LIBS)")) nil [605 642])
+            ("CFLAGS" variable (:default-value ("$(CFLAGS)" "-Wextra")) nil [642 669])
+            ("PLATFORM" variable (:default-value ("9$(PLATFORM_BCOM_CHIP)")) nil [1071 1103])
+            ("NEXUS_PLATFORM" variable (:default-value ("$(PLATFORM)")) nil [1110 1137])
+            ("$(NEXUS_TOP)/platforms/$(NEXUS_PLATFORM)/build/platform_app.inc" include nil nil [1137 1209])
+            ("CFLAGS" variable (:default-value ("$(filter-out -pedantic,$(filter-out -std=c89,$(filter-out -Wstrict-prototypes,$(NEXUS_CFLAGS))))" "$(addprefix -I,$(NEXUS_APP_INCLUDE_PATHS))" "$(addprefix -D,$(NEXUS_APP_DEFINES))")) nil [1209 1396])
+            ("CXXFLAGS" variable (:default-value ("$(CXXFLAGS)" "$(CFLAGS)")) nil [1403 1437])
+            ("SRCS" variable (:default-value ("test.o")) nil [1438 1452])
+            ("OBJS" variable (:default-value ("$(SRCS:.cpp=.o)")) nil [1452 1475])
+            ("EXECUTABLES" variable (:default-value ("rktest")) nil [1476 1497])
+            ("EXECUTABLES_INSTALL" variable (:default-value ("$(addprefix $(STAGING_PATH)/usr/bin/, $(EXECUTABLES))")) nil [1497 1572])
+            (".SUFFIXES" function (:arguments (".o" ".c" ".cpp")) nil [1573 1595])
+            (".cpp.o" function nil nil [1596 1651])
+            (".c.o" function nil nil [1652 1702])
+            ("install" function (:arguments ("$(EXECUTABLES)")) nil [1703 1782])
+            ("install_pmw" function (:arguments ("$(EXECUTABLES)")) nil [1783 1866])
+            ("all" function (:arguments ("$(EXECUTABLES)")) nil [1867 1887])
+            ("rktest" function (:arguments ("test.o")) nil [1888 1935])
+            (".PHONY" function (:arguments ("clean")) nil [1936 1950])
+            ("clean" function nil nil [1950 2015]))          
+    :file "Makefile"
+    :pointmax 2361
+    :fsize 2014
+    :lastmodtime '(21629 60762 857548 839000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [707 725])
+            ("string.h" include (:system-flag t) nil [726 745])
+            ("bstd.h" include nil nil [946 963])
+            ("bkni.h" include nil nil [964 981])
+            ("breg_mem.h" include nil nil [982 1003])
+            ("bchp_sun_top_ctrl.h" include nil nil [1204 1234])
+            ("cas_sec.h" include nil nil [1435 1455])
+            ("nexus_memory.h" include nil nil [1656 1681])
+            ("nexus_security.h" include nil nil [1682 1709])
+            ("nexus_keyladder.h" include nil nil [1710 1738])
+            ("nexus_playpump.h" include nil nil [1739 1766])
+            ("nexus_recpump.h" include nil nil [1767 1793])
+            ("nexus_base_os.h" include nil nil [1794 1820])
+            ("nexus_read_otp_id.h" include nil nil [1821 1851])
+            ("nexus_dma.h" include nil nil [1852 1874])
+            ("nexus_random_number.h" include nil nil [1875 1907])
+            ("nexus_platform.h" include nil nil [1908 1935])
+            ("nexus_otpmsp.h" include nil nil [1936 1961])
+            ("MAX_NUM_OTP_BITS" variable (:constant-flag t) nil [2112 2128])
+            ("DMA_JOBS" variable (:constant-flag t) nil [2204 2212])
+            ("HSM_IS_40NM" variable (:constant-flag t) nil [2232 2243])
+            ("CIPHER_BLOCK_SIZE" variable (:constant-flag t) nil [2260 2277])
+            ("CAS_SEC_CIPHER_OPT" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("CAS_SEC_ENCRYPT" variable
+                             (:constant-flag t
+                              :default-value (2469 2470)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2451 2470])
+                          ("CAS_SEC_DECRYPT" variable
+                             (:constant-flag t
+                              :default-value (2498 2499)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2480 2499]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [2428 2521])
+            ("M2MCryptoOperation" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("keyHandle" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2752 2782])
+                    ("pInputData" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2783 2810])
+                    ("pOutputData" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2811 2839])
+                    ("ulDataSize" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2840 2865]))                  
+                :type "int")
+                nil [2722 2866])
+            ("programMsp" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("msp_field" variable (:type ("NEXUS_OtpCmdMsp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2889 2915])
+                    ("bit_length" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2916 2941])
+                    ("mask" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2942 2961])
+                    ("msp_data" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2962 2985]))                  
+                :type "int")
+                nil [2867 2986])
+            ("cas_sec_cipher" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pDstBuffer" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [3013 3039])
+                    ("pSrcBuffer" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [3056 3082])
+                    ("numberSrcBytes" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3099 3128])
+                    ("dstBufferSize" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3145 3173])
+                    ("numberBytes" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [3190 3217])
+                    ("pCipherData" variable
+                       (:pointer 1
+                        :type ("CAS_SEC_CIPHER_DATA_TYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3234 3273])
+                    ("opt" variable (:type ("CAS_SEC_CIPHER_OPT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3290 3313]))                  
+                :type "int")
+                nil [2987 3314])
+            ("CompleteCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pParam" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3544 3557])
+                    ("iParam" variable (:type "int") (reparse-symbol arg-sub-list) [3558 3569]))                  
+                :type "void")
+                nil [3515 3633])
+            ("cas_sec_GetChipSetId" function
+               (:arguments 
+                  ( ("id" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [5031 5050])
+                    ("len" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5051 5061]))                  
+                :type "int")
+                nil [5005 5572])
+            ("cas_sec_GetChipSetType" function
+               (:arguments 
+                  ( ("id" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [6895 6914])
+                    ("len" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6915 6925]))                  
+                :type "int")
+                nil [6867 7364])
+            ("cas_sec_otp_Read" function
+               (:arguments 
+                  ( ("eOtpSetting" variable (:type ("CAS_SEC_OTP_SETTING" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8394 8426])
+                    ("pUnOtpValue" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [8427 8455])
+                    ("len" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [8456 8475]))                  
+                :type "int")
+                nil [8373 9384])
+            ("cas_sec_otp_Write" function
+               (:arguments 
+                  ( ("eOtpSetting" variable (:type ("CAS_SEC_OTP_SETTING" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10420 10452])
+                    ("pvOtpValue" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [10453 10479])
+                    ("len" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [10480 10499]))                  
+                :type "int")
+                nil [10398 13649])
+            ("cas_sec_GenerateRandomData" function
+               (:arguments 
+                  ( ("size" variable (:type "long") (reparse-symbol arg-sub-list) [14310 14320])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [14321 14340]))                  
+                :type "int")
+                nil [14279 15105])
+            ("cas_sec_Decrypt" function
+               (:arguments 
+                  ( ("pDstBuffer" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [17484 17510])
+                    ("pSrcBuffer" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [17511 17537])
+                    ("numberSrcBytes" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [17538 17568])
+                    ("dstBufferSize" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [17589 17617])
+                    ("numberDecryptedBytes" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [17618 17654])
+                    ("pCipherData" variable
+                       (:pointer 1
+                        :type ("CAS_SEC_CIPHER_DATA_TYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17675 17715]))                  
+                :type "int")
+                nil [17464 17854])
+            ("cas_sec_Encrypt" function
+               (:arguments 
+                  ( ("pDstBuffer" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [20304 20330])
+                    ("pSrcBuffer" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [20331 20357])
+                    ("numberSrcBytes" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [20358 20387])
+                    ("dstBufferSize" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [20408 20436])
+                    ("numberEncryptedBytes" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [20437 20473])
+                    ("pCipherData" variable
+                       (:pointer 1
+                        :type ("CAS_SEC_CIPHER_DATA_TYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20494 20534]))                  
+                :type "int")
+                nil [20284 20673])
+            ("cas_sec_cipher" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pDstBuffer" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [23232 23258])
+                    ("pSrcBuffer" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [23267 23293])
+                    ("numberSrcBytes" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [23302 23331])
+                    ("dstBufferSize" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [23340 23368])
+                    ("numberBytes" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [23377 23404])
+                    ("pCipherData" variable
+                       (:pointer 1
+                        :type ("CAS_SEC_CIPHER_DATA_TYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23413 23452])
+                    ("opt" variable (:type ("CAS_SEC_CIPHER_OPT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23461 23484]))                  
+                :type "int")
+                nil [23206 31975])
+            ("M2MCryptoOperation" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("keyHandle" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32875 32905])
+                    ("pInputData" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [32922 32949])
+                    ("pOutputData" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [32966 32994])
+                    ("ulDataSize" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [33011 33053]))                  
+                :type "int")
+                nil [32828 34934])
+            ("programMsp" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("msp_field" variable (:type ("NEXUS_OtpCmdMsp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35617 35643])
+                    ("bit_length" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [35644 35669])
+                    ("mask" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [35670 35689])
+                    ("msp_data" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [35690 35713]))                  
+                :type "int")
+                nil [35595 36773]))          
+    :file "test.c"
+    :pointmax 36774
+    :fsize 36799
+    :lastmodtime '(21629 60779 912432 180000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("CIPHER_BLOCK_SIZE" . ((number "16" 2278 . 2280)))
+          ("HSM_IS_40NM" . ((number "1" 2250 . 2251)))
+          ("MAX_NUM_OTP_BITS" . ((semantic-list "(NEXUS_MSP_OUTPUT_DATA_LEN * sizeof(unsigned char))" 2130 . 2181)))
+          ("DMA_JOBS" . ((number "1" 2222 . 2223)))
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D683!src!pace!middleware!security-lib!secApp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

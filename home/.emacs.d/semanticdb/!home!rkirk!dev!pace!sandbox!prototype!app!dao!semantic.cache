@@ -1,0 +1,221 @@
+;; Object dao/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dao/"
+  :tables (list 
+   (semanticdb-table "services.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("app.database" include nil nil [1 36])
+            ("sqlalchemy" include nil nil [37 128])
+            ("sqlalchemy.orm" include nil nil [129 168])
+            ("app.database" include nil nil [169 198])
+            ("json" include nil nil [199 210])
+            ("Agg_service" type
+               (:superclasses ("Base")
+                :members 
+                  ( ("__tablename__" variable nil (reparse-symbol indented_block_body) [378 407])
+                    ("key" variable nil (reparse-symbol indented_block_body) [412 451])
+                    ("cblt_channel_id" variable nil (reparse-symbol indented_block_body) [456 489])
+                    ("service_id" variable nil (reparse-symbol indented_block_body) [494 522])
+                    ("channel_number" variable nil (reparse-symbol indented_block_body) [527 559])
+                    ("url_type" variable nil (reparse-symbol indented_block_body) [564 590])
+                    ("url" variable nil (reparse-symbol indented_block_body) [595 615])
+                    ("service_name" variable nil (reparse-symbol indented_block_body) [620 649])
+                    ("default_volume" variable nil (reparse-symbol indented_block_body) [654 686])
+                    ("long_name" variable nil (reparse-symbol indented_block_body) [691 717])
+                    ("brand" variable nil (reparse-symbol indented_block_body) [722 744])
+                    ("provider_name" variable nil (reparse-symbol indented_block_body) [749 779])
+                    ("raw_channel_number" variable nil (reparse-symbol indented_block_body) [784 820])
+                    ("orig_channel_number" variable nil (reparse-symbol indented_block_body) [825 862])
+                    ("alt_channel_number" variable nil (reparse-symbol indented_block_body) [867 903])
+                    ("service_type" variable nil (reparse-symbol indented_block_body) [908 937])
+                    ("service_available" variable nil (reparse-symbol indented_block_body) [942 977])
+                    ("eit_sch_flag" variable nil (reparse-symbol indented_block_body) [982 1012])
+                    ("eit_pf_flag" variable nil (reparse-symbol indented_block_body) [1017 1046])
+                    ("running_status" variable nil (reparse-symbol indented_block_body) [1051 1082])
+                    ("free_CA_mode_flag" variable nil (reparse-symbol indented_block_body) [1087 1122])
+                    ("ca_ids" variable nil (reparse-symbol indented_block_body) [1127 1150])
+                    ("service_repl_linkage_key" variable nil (reparse-symbol indented_block_body) [1155 1196])
+                    ("eit_version_current" variable nil (reparse-symbol indented_block_body) [1201 1237])
+                    ("eit_pf_version_current" variable nil (reparse-symbol indented_block_body) [1242 1282])
+                    ("transport_stream_info_key" variable nil (reparse-symbol indented_block_body) [1287 1375])
+                    ("category_index" variable nil (reparse-symbol indented_block_body) [1380 1443])
+                    ("category_details" variable nil (reparse-symbol indented_block_body) [1448 1495])
+                    ("icon_url" variable nil (reparse-symbol indented_block_body) [1500 1525])
+                    ("home_page" variable nil (reparse-symbol indented_block_body) [1530 1556])
+                    ("populateFromIngestJsonCommon" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1596 1600])
+                            ("ingestJsonObj" variable nil (reparse-symbol function_parameters) [1602 1615])
+                            ("key" variable nil (reparse-symbol function_parameters) [1617 1620])
+                            ("transport_stream_info_key" variable nil (reparse-symbol function_parameters) [1622 1647]))                          )
+                        (reparse-symbol indented_block_body) [1562 1973])
+                    ("populateFromIngestJsonBle" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2009 2013])
+                            ("ingestJsonObj" variable nil (reparse-symbol function_parameters) [2015 2028])
+                            ("key" variable nil (reparse-symbol function_parameters) [2030 2033])
+                            ("transport_stream_info_key" variable nil (reparse-symbol function_parameters) [2035 2060]))                          )
+                        (reparse-symbol indented_block_body) [1978 3424])
+                    ("populateFromIngestJsonCobalt" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3463 3467])
+                            ("ingestJsonObj" variable nil (reparse-symbol function_parameters) [3469 3482])
+                            ("categoryTranslator" variable nil (reparse-symbol function_parameters) [3484 3502])
+                            ("key" variable nil (reparse-symbol function_parameters) [3504 3507])
+                            ("transport_stream_info_key" variable nil (reparse-symbol function_parameters) [3509 3534]))                          )
+                        (reparse-symbol indented_block_body) [3429 4458]))                  
+                :type "class")
+                nil [349 4458])
+            ("Agg_transport_stream_info" type
+               (:superclasses ("Base")
+                :members 
+                  ( ("__tablename__" variable nil (reparse-symbol indented_block_body) [4526 4569])
+                    ("key" variable nil (reparse-symbol indented_block_body) [4574 4613])
+                    ("network_id" variable nil (reparse-symbol indented_block_body) [4618 4647])
+                    ("transport_id" variable nil (reparse-symbol indented_block_body) [4652 4683])
+                    ("cell_id" variable nil (reparse-symbol indented_block_body) [4688 4714])
+                    ("default_authority" variable nil (reparse-symbol indented_block_body) [4719 4755])
+                    ("broadcast_type" variable nil (reparse-symbol indented_block_body) [4760 4792])
+                    ("nit_network_id" variable nil (reparse-symbol indented_block_body) [4797 4828])
+                    ("nit_version_current" variable nil (reparse-symbol indented_block_body) [4833 4869])
+                    ("sdt_version_current" variable nil (reparse-symbol indented_block_body) [4874 4910])
+                    ("tuning_params" variable nil (reparse-symbol indented_block_body) [4915 4945])
+                    ("network_info_network_id" variable nil (reparse-symbol indented_block_body) [4950 4991])
+                    ("populateFromIngestJsonCobalt" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5159 5163])
+                            ("ingestJsonObj" variable nil (reparse-symbol function_parameters) [5165 5178])
+                            ("key" variable nil (reparse-symbol function_parameters) [5180 5183]))                          )
+                        (reparse-symbol indented_block_body) [5125 5430])
+                    ("populateFromIngestJsonBle" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5465 5469])
+                            ("ingestJsonObj" variable nil (reparse-symbol function_parameters) [5471 5484])
+                            ("key" variable nil (reparse-symbol function_parameters) [5486 5489])
+                            ("networkId" variable nil (reparse-symbol function_parameters) [5491 5500]))                          )
+                        (reparse-symbol indented_block_body) [5435 6355]))                  
+                :type "class")
+                nil [4483 6355])
+            ("Agg_network_info" type
+               (:superclasses ("Base")
+                :members 
+                  ( ("__tablename__" variable nil (reparse-symbol indented_block_body) [6410 6444])
+                    ("network_id" variable nil (reparse-symbol indented_block_body) [6449 6495])
+                    ("network_name" variable nil (reparse-symbol indented_block_body) [6500 6529])
+                    ("default_authority" variable nil (reparse-symbol indented_block_body) [6534 6568])
+                    ("local_time_offset_polarity" variable nil (reparse-symbol indented_block_body) [6573 6617])
+                    ("local_time_offset_offset" variable nil (reparse-symbol indented_block_body) [6622 6664])
+                    ("local_time_offset_next_change" variable nil (reparse-symbol indented_block_body) [6669 6716])
+                    ("local_time_offset_next_offset" variable nil (reparse-symbol indented_block_body) [6721 6768])
+                    ("dvb_region_id" variable nil (reparse-symbol indented_block_body) [6773 6804])
+                    ("default_channelnum" variable nil (reparse-symbol indented_block_body) [6809 6845])
+                    ("nit_version" variable nil (reparse-symbol indented_block_body) [6850 6879])
+                    ("num_NIT_TS" variable nil (reparse-symbol indented_block_body) [6884 6912])
+                    ("bat_version" variable nil (reparse-symbol indented_block_body) [6917 6945])
+                    ("populateFromIngestJson" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6978 6982])
+                            ("ingestJsonObj" variable nil (reparse-symbol function_parameters) [6984 6997]))                          )
+                        (reparse-symbol indented_block_body) [6951 8185]))                  
+                :type "class")
+                nil [6376 8185])
+            ("Agg_category" type
+               (:superclasses ("Base")
+                :members 
+                  ( ("__tablename__" variable nil (reparse-symbol indented_block_body) [8232 8262])
+                    ("id" variable nil (reparse-symbol indented_block_body) [8267 8305])
+                    ("name" variable nil (reparse-symbol indented_block_body) [8310 8332])
+                    ("populateFromIngestJson" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8366 8370])
+                            ("ingestJsonObj" variable nil (reparse-symbol function_parameters) [8372 8385]))                          )
+                        (reparse-symbol indented_block_body) [8338 8496]))                  
+                :type "class")
+                nil [8202 8496])
+            ("Agg_bouquet_info_service_info" type
+               (:superclasses ("Base")
+                :members 
+                  ( ("__tablename__" variable nil (reparse-symbol indented_block_body) [8560 8607])
+                    ("id" variable nil (reparse-symbol indented_block_body) [8612 8650])
+                    ("bouquet_id" variable nil (reparse-symbol indented_block_body) [8655 8683])
+                    ("service_info_key" variable nil (reparse-symbol indented_block_body) [8688 8722])
+                    ("populateFromIngestJson" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8756 8760])
+                            ("ingestJsonObj" variable nil (reparse-symbol function_parameters) [8762 8775])
+                            ("bouquet_id" variable nil (reparse-symbol function_parameters) [8777 8787])
+                            ("chan_id" variable nil (reparse-symbol function_parameters) [8789 8796]))                          )
+                        (reparse-symbol indented_block_body) [8728 8872]))                  
+                :type "class")
+                nil [8513 8872])
+            ("Agg_bouquet_country" type
+               (:superclasses ("Base")
+                :members 
+                  ( ("__tablename__" variable nil (reparse-symbol indented_block_body) [8910 8947])
+                    ("id" variable nil (reparse-symbol indented_block_body) [8952 8990])
+                    ("bouquet_id" variable nil (reparse-symbol indented_block_body) [8995 9060])
+                    ("country_code" variable nil (reparse-symbol indented_block_body) [9065 9094])
+                    ("populateFromIngestJson" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9127 9131])
+                            ("ingestJsonObj" variable nil (reparse-symbol function_parameters) [9133 9146])
+                            ("bouquet_id" variable nil (reparse-symbol function_parameters) [9148 9158]))                          )
+                        (reparse-symbol indented_block_body) [9100 9282]))                  
+                :type "class")
+                nil [8873 9282])
+            ("Agg_bouquet" type
+               (:superclasses ("Base")
+                :members 
+                  ( ("__tablename__" variable nil (reparse-symbol indented_block_body) [9312 9341])
+                    ("bouquet_id" variable nil (reparse-symbol indented_block_body) [9346 9392])
+                    ("index" variable nil (reparse-symbol indented_block_body) [9397 9420])
+                    ("name" variable nil (reparse-symbol indented_block_body) [9425 9446])
+                    ("country_availability_flag" variable nil (reparse-symbol indented_block_body) [9451 9494])
+                    ("default_authority" variable nil (reparse-symbol indented_block_body) [9499 9533])
+                    ("ca_ids" variable nil (reparse-symbol indented_block_body) [9538 9561])
+                    ("target_region_name" variable nil (reparse-symbol indented_block_body) [9566 9601])
+                    ("bat_version_current" variable nil (reparse-symbol indented_block_body) [9606 9642])
+                    ("populateFromIngestJson" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9676 9680])
+                            ("ingestJsonObj" variable nil (reparse-symbol function_parameters) [9682 9695]))                          )
+                        (reparse-symbol indented_block_body) [9648 9897])
+                    ("populateFromIngestJsonBle" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9933 9937])
+                            ("ingestJsonObj" variable nil (reparse-symbol function_parameters) [9939 9952]))                          )
+                        (reparse-symbol indented_block_body) [9902 10587]))                  
+                :type "class")
+                nil [9283 10587]))          
+    :file "services.py"
+    :pointmax 10587
+    :fsize 10586
+    :lastmodtime '(21953 61309 115416 402000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "__init__.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "__init__.py"
+    :pointmax 1
+    :fsize 0
+    :lastmodtime '(21951 28604 772177 796000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!prototype!app!dao!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

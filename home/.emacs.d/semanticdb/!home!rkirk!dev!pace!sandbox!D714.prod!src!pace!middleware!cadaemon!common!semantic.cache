@@ -1,0 +1,259 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables (list 
+   (semanticdb-table "cadaemon_signals.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("cadaemon_api.h" include nil nil [21 46])
+            ("cadaemon.h" include nil nil [47 68])
+            ("cadaemon_signals.h" include nil nil [69 98])
+            ("cadaemon_signal_marshaller_header.h" include nil nil [99 145])
+            ("cadaemon_signal_marshaller_body.h" include nil nil [146 190])
+            ("Signals" variable (:type ("" type
+                 (:members 
+                    ( ("SIGNAL_EXTENDED" variable
+                         (:constant-flag t
+                          :type "int")
+                          (reparse-symbol enumsubparts) [204 220])
+                      ("NEW_MESSAGE" variable
+                         (:constant-flag t
+                          :type "int")
+                          (reparse-symbol enumsubparts) [224 236])
+                      ("UPDATE_STATUS" variable
+                         (:constant-flag t
+                          :type "int")
+                          (reparse-symbol enumsubparts) [240 254])
+                      ("CARD_STATUS" variable
+                         (:constant-flag t
+                          :type "int")
+                          (reparse-symbol enumsubparts) [258 270])
+                      ("DEBUG_DATA" variable
+                         (:constant-flag t
+                          :type "int")
+                          (reparse-symbol enumsubparts) [274 285])
+                      ("ACCESS" variable
+                         (:constant-flag t
+                          :type "int")
+                          (reparse-symbol enumsubparts) [289 296])
+                      ("CHANNEL_BLOCKED" variable
+                         (:constant-flag t
+                          :type "int")
+                          (reparse-symbol enumsubparts) [300 316])
+                      ("CA_MESSAGE" variable
+                         (:constant-flag t
+                          :type "int")
+                          (reparse-symbol enumsubparts) [320 331])
+                      ("GET_STATUS_CALLBACK" variable
+                         (:constant-flag t
+                          :type "int")
+                          (reparse-symbol enumsubparts) [335 355])
+                      ("PVR_RECORD_NOTIFY_METADATA" variable
+                         (:constant-flag t
+                          :type "int")
+                          (reparse-symbol enumsubparts) [359 386])
+                      ("PVR_RECORD_NOTIFY_STATUS" variable
+                         (:constant-flag t
+                          :type "int")
+                          (reparse-symbol enumsubparts) [390 415])
+                      ("PVR_PLAYBACK_NOTIFY_STATUS" variable
+                         (:constant-flag t
+                          :type "int")
+                          (reparse-symbol enumsubparts) [419 446])
+                      ("CA_NOTIFY_STATUS" variable
+                         (:constant-flag t
+                          :type "int")
+                          (reparse-symbol enumsubparts) [450 467])
+                      ("ECM_NOTIFY_STATUS" variable
+                         (:constant-flag t
+                          :type "int")
+                          (reparse-symbol enumsubparts) [471 489])
+                      ("SIGNAL_COUNT" variable
+                         (:constant-flag t
+                          :type "int")
+                          (reparse-symbol enumsubparts) [493 508]))                    
+                  :type "enum")
+                  nil nil)) nil [193 517])
+            ("signals" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("guint" type (:type "class") nil nil))
+                nil [519 554])
+            ("cadaemon_signal_init" function
+               (:arguments 
+                  ( ("object_class" variable
+                       (:pointer 1
+                        :type ("GObjectClass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [583 610]))                  
+                :type "void")
+                nil [556 6448])
+            ("cadaemon_emit_signal_extended" function
+               (:arguments 
+                  ( ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6486 6506]))                  
+                :type "void")
+                nil [6450 6589])
+            ("cadaemon_emit_access" function
+               (:arguments 
+                  ( ("status" variable (:type "bool") (reparse-symbol arg-sub-list) [6618 6630]))                  
+                :type "void")
+                nil [6591 6703])
+            ("cadaemon_emit_new_message" function
+               (:arguments 
+                  ( ("sessionId" variable (:type "int") (reparse-symbol arg-sub-list) [6737 6751])
+                    ("persistence" variable (:type "int") (reparse-symbol arg-sub-list) [6752 6768])
+                    ("languages" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6802 6826])
+                    ("messages" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6860 6883]))                  
+                :type "void")
+                nil [6705 7017])
+            ("cadaemon_emit_update_status" function
+               (:arguments 
+                  ( ("status" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7053 7072]))                  
+                :type "void")
+                nil [7019 7152])
+            ("cadaemon_emit_card_status" function
+               (:arguments 
+                  ( ("status" variable (:type "bool") (reparse-symbol arg-sub-list) [7186 7198]))                  
+                :type "void")
+                nil [7154 7276])
+            ("cadaemon_emit_debug_data" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7309 7326]))                  
+                :type "void")
+                nil [7278 7401])
+            ("cadaemon_emit_channel_blocked" function
+               (:arguments 
+                  ( ("blocked" variable (:type "bool") (reparse-symbol arg-sub-list) [7439 7452]))                  
+                :type "void")
+                nil [7403 7535])
+            ("cadaemon_emit_ca_message" function
+               (:arguments 
+                  ( ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7568 7588]))                  
+                :type "void")
+                nil [7537 7666])
+            ("cadaemon_emit_get_status_callback" function
+               (:arguments 
+                  ( ("status" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7708 7727]))                  
+                :type "void")
+                nil [7668 7813])
+            ("cadaemon_emit_pvr_record_notify_metadata" function
+               (:arguments 
+                  ( ("caHandle" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7862 7877])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7878 7895]))                  
+                :type "void")
+                nil [7815 8014])
+            ("cadaemon_emit_pvr_record_notify_status" function
+               (:arguments 
+                  ( ("caHandle" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8061 8076])
+                    ("recordStatus" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8077 8096])
+                    ("status" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8097 8116]))                  
+                :type "void")
+                nil [8016 8249])
+            ("cadaemon_emit_pvr_playback_notify_status" function
+               (:arguments 
+                  ( ("caHandle" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8298 8313])
+                    ("playbackStatus" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8314 8335])
+                    ("status" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8336 8355]))                  
+                :type "void")
+                nil [8251 8492])
+            ("cadaemon_emit_ecm_notify_status" function
+               (:arguments 
+                  ( ("caHandle" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8532 8547])
+                    ("ecmStatus" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8548 8564])
+                    ("status" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8565 8584])
+                    ("tag" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8585 8595]))                  
+                :type "void")
+                nil [8494 8723])
+            ("cadaemon_emit_notify_ca_status" function
+               (:arguments 
+                  ( ("caHandle" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8762 8777])
+                    ("caStatus" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8778 8793])
+                    ("status" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8794 8813]))                  
+                :type "void")
+                nil [8725 8934]))          
+    :file "cadaemon_signals.c"
+    :pointmax 8935
+    :fsize 8934
+    :lastmodtime '(21538 43035 423704 241000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "cadaemon_api.h"
+    :file "cadaemon_api.h"
+    :fsize 4163
+    :lastmodtime '(21538 43035 401704 374000)
+    )
+   (semanticdb-table "cadaemon.h"
+    :file "cadaemon.h"
+    :fsize 1354
+    :lastmodtime '(21538 43035 422704 247000)
+    )
+   (semanticdb-table "cadaemon_signals.h"
+    :file "cadaemon_signals.h"
+    :fsize 169
+    :lastmodtime '(21538 43035 424704 235000)
+    )
+   (semanticdb-table "cadaemon_signal_marshaller_header.h"
+    :file "cadaemon_signal_marshaller_header.h"
+    :fsize 2144
+    :lastmodtime '(21538 45980 933807 897000)
+    )
+   (semanticdb-table "cadaemon_signal_marshaller_body.h"
+    :file "cadaemon_signal_marshaller_body.h"
+    :fsize 7706
+    :lastmodtime '(21538 45980 933807 897000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D714.prod!src!pace!middleware!cadaemon!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,185 @@
+;; Object sslcertificatemodel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sslcertificatemodel/"
+  :tables (list 
+   (semanticdb-table "sslcertificatemodel.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SSLCERTIFICATEMODEL_H__" variable (:constant-flag t) nil [41 64])
+            ("QTimer" include (:system-flag t) nil [66 83])
+            ("QDateTime" include (:system-flag t) nil [84 104])
+            ("SslCertificateModelAdaptor" type
+               (:prototype t
+                :type "class")
+                nil [106 139])
+            ("SslCertificateModel" type
+               (:superclasses 
+                  ( ("QObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [203 210])
+                    ("instance" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :type ("SslCertificateModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [215 254])
+                    ("SslCertificateModel" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [259 282])
+                    ("configure" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("certificateStore" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [307 339])
+                            ("ignoreInvalidCertificates" variable (:type "bool") (reparse-symbol arg-sub-list) [340 372])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [373 379]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [292 380])
+                    ("public" label nil (reparse-symbol classsubparts) [386 399])
+                    ("installCertificates" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [404 431])
+                    ("installCiphers" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [436 458])
+                    ("private" label nil (reparse-symbol classsubparts) [464 478])
+                    ("calledEveryMinute" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [483 508])
+                    ("private" label nil (reparse-symbol classsubparts) [514 522])
+                    ("SslCertificateModel" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("parent" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [547 564]))                          
+                        :type ("SslCertificateModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [527 568])
+                    ("m_certificateStore" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [573 600])
+                    ("m_ignoreInvalidCertificates" variable (:type "bool") (reparse-symbol classsubparts) [605 638])
+                    ("m_nextMinuteTimer" variable (:type ("QTimer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [648 678])
+                    ("m_nextMinute" variable (:type ("QDateTime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [683 708])
+                    ("m_tipcAdaptor" variable
+                       (:pointer 1
+                        :type ("SslCertificateModelAdaptor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [714 756]))                  
+                :type "class")
+                nil [141 759]))          
+    :file "sslcertificatemodel.h"
+    :pointmax 795
+    :fsize 794
+    :lastmodtime '(21549 34040 435455 891000)
+    :unmatched-syntax '((number 565 . 566) (punctuation 563 . 564) (punctuation 371 . 372) (symbol 190 . 198))
+    :lexical-table 
+        '(("SSLCERTIFICATEMODEL_H__")
+          )
+
+    )
+   (semanticdb-table "sslcertificatemodel.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("sslcertificatemodel.h" include nil nil [1 33])
+            ("SslCertificateModelAdaptor" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [163 170])
+                    ("SslCertificateModelAdaptor" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [198 208]))                          
+                        :type ("SslCertificateModelAdaptor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [171 211]))                  
+                :type "class")
+                nil [128 214])
+            ("QSslConfiguration" include (:system-flag t) nil [223 251])
+            ("QSslCipher" include (:system-flag t) nil [252 273])
+            ("QSslCertificate" include (:system-flag t) nil [274 300])
+            ("QSslKey" include (:system-flag t) nil [301 319])
+            ("QFile" include (:system-flag t) nil [321 337])
+            ("QTextStream" include (:system-flag t) nil [338 360])
+            ("QStringList" include (:system-flag t) nil [361 383])
+            ("QDateTime" include (:system-flag t) nil [384 404])
+            ("tlogger.h" include nil nil [406 426])
+            ("ssl_certificate_files.h" include nil nil [427 461])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [462 486])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [487 554])
+            ("MIN_CIPHER_USED_BITS" variable (:constant-flag t) nil [765 785])
+            ("instance" function
+               (:pointer 1
+                :parent "SslCertificateModel"
+                :type ("SslCertificateModel" type (:type "class") nil nil))
+                nil [794 903])
+            ("SslCertificateModel" function
+               (:constructor-flag t
+                :parent "SslCertificateModel"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [946 962]))                  
+                :type ("SslCertificateModel" type (:type "class") nil nil))
+                nil [905 1375])
+            ("SslCertificateModel" function
+               (:destructor-flag t
+                :parent "SslCertificateModel"
+                :type "void")
+                nil [1377 1447])
+            ("installCiphers" function
+               (:parent "SslCertificateModel"
+                :type "void")
+                nil [1450 1846])
+            ("configure" function
+               (:parent "SslCertificateModel"
+                :arguments 
+                  ( ("certificateStore" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1885 1917])
+                    ("ignoreInvalidCertificates" variable (:type "bool") (reparse-symbol arg-sub-list) [1918 1949]))                  
+                :type "void")
+                nil [1849 2106])
+            ("installCertificates" function
+               (:parent "SslCertificateModel"
+                :type "void")
+                nil [2108 5948])
+            ("calledEveryMinute" function
+               (:parent "SslCertificateModel"
+                :type "void")
+                nil [6124 6760]))          
+    :file "sslcertificatemodel.cpp"
+    :pointmax 6761
+    :fsize 6760
+    :lastmodtime '(21549 34040 435455 891000)
+    :unmatched-syntax '((string 515 . 551))
+    :lexical-table 
+        '(("MIN_CIPHER_USED_BITS" . ((number "128" 789 . 792)))
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D714!src!pace!applications!library!models!sslcertificatemodel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

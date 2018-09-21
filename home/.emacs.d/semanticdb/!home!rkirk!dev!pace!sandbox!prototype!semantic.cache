@@ -1,0 +1,245 @@
+;; Object prototype/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "prototype/"
+  :tables (list 
+   (semanticdb-table "run.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("logging" include nil nil [20 34])
+            ("logging.config" include nil nil [35 56])
+            ("os" include nil nil [57 66])
+            ("yaml" include nil nil [67 78])
+            ("flask.ext.restful.representations.json" include nil nil [164 226])
+            ("output_json" code nil nil [227 295])
+            ("debug" variable nil nil [297 310])
+            ("setup_logging" function
+               (:documentation "Setup logging configuration
+
+    "
+                :arguments 
+                  ( ("default_path" variable nil (reparse-symbol function_parameters) [336 348])
+                    ("default_level" variable nil (reparse-symbol function_parameters) [369 382])
+                    ("env_key" variable nil (reparse-symbol function_parameters) [402 409]))                  )
+                nil [313 779])
+            ("setup_logging" code nil nil [782 797])
+            ("log" variable nil nil [798 829])
+            ("app.database" include nil nil [832 863])
+            ("app.database" include nil nil [864 899])
+            ("schedule_runer" include nil nil [900 942])
+            ("app.factory" include nil nil [944 978])
+            ("app" variable nil nil [979 1013])
+            ("shutdown_session" function
+               (:decorators 
+                  ( ("app.teardown_appcontext" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("exception" variable nil (reparse-symbol function_parameters) [1061 1070]))                  )
+                nil [1015 1102])
+            ("log" code nil nil [1104 1127])
+            ("database" code nil nil [1128 1146])
+            ("jobs" include nil nil [1148 1177])
+            ("jobs" variable nil nil [1178 1212])
+            ("if" code nil nil [1214 1436])
+            ("app" variable nil nil [1521 1556])
+            ("app" code nil nil [1557 1592]))          
+    :file "run.py"
+    :pointmax 1593
+    :fsize 1592
+    :lastmodtime '(21943 22751 401083 332000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "schedule_runer.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("contextlib" include nil nil [1 38])
+            ("app.database" include nil nil [39 74])
+            ("apscheduler.schedulers.background" include nil nil [76 141])
+            ("logging" include nil nil [142 156])
+            ("log" variable nil nil [157 190])
+            ("tx_wrapper" function
+               (:documentation "Provide a transactional scope around a series of operations."
+                :decorators 
+                  ( ("contextmanager" function (:type "decorator") nil nil))                  )
+                nil [193 456])
+            ("functools" include nil nil [457 484])
+            ("make_wrapper" function (:arguments 
+              ( ("job" variable nil (reparse-symbol function_parameters) [503 506]))              ) nil [486 620])
+            ("setup_schedules" function
+               (:documentation "
+    :param jobs: list of tuples, job and interval in seconds
+    :return:
+    "
+                :arguments 
+                  ( ("jobs" variable nil (reparse-symbol function_parameters) [642 646]))                  )
+                nil [622 1006]))          
+    :file "schedule_runer.py"
+    :pointmax 1006
+    :fsize 1005
+    :lastmodtime '(21907 50030 798418 36000)
+    :unmatched-syntax '((INDENT_BLOCK 429 . 456) (NEWLINE 428 . 429) (COLON 427 . 428) (FINALLY 420 . 427))
+    )
+   (semanticdb-table "jobs.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("string" include nil nil [1 14])
+            ("random" include nil nil [15 28])
+            ("app.models" include nil nil [29 57])
+            ("logging" include nil nil [59 73])
+            ("log" variable nil nil [74 105])
+            ("id_generator" function (:arguments 
+              ( ("size" variable nil (reparse-symbol function_parameters) [125 129])
+                ("chars" variable nil (reparse-symbol function_parameters) [134 139]))              ) nil [108 268])
+            ("count_users" function (:arguments 
+              ( ("session" variable nil (reparse-symbol function_parameters) [286 293]))              ) nil [270 358]))          
+    :file "jobs.py"
+    :pointmax 359
+    :fsize 358
+    :lastmodtime '(21910 27739 807755 890000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "config.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [1 10])
+            ("basedir" variable nil nil [11 63])
+            ("SQLALCHEMY_DATABASE_URI" code nil nil [65 137])
+            ("SQLALCHEMY_MIGRATE_REPO" variable nil nil [138 202])
+            ("UPDATE_LIMIT" variable nil nil [203 222]))          
+    :file "config.py"
+    :pointmax 223
+    :fsize 222
+    :lastmodtime '(21910 27739 807755 890000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "testconfig.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("TESTING" variable nil nil [1 15])
+            ("os" include nil nil [16 25])
+            ("basedir" variable nil nil [26 78])
+            ("SQLALCHEMY_DATABASE_URI" code nil nil [80 157]))          
+    :file "testconfig.py"
+    :pointmax 159
+    :fsize 158
+    :lastmodtime '(21907 50030 798418 36000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "db_create.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("migrate.versioning" include nil nil [20 54])
+            ("config" include nil nil [55 97])
+            ("config" include nil nil [98 140])
+            ("app.database" include nil nil [141 173])
+            ("os.path" include nil nil [174 188])
+            ("init_db" code nil nil [189 198])
+            ("if" code nil nil [199 501]))          
+    :file "db_create.py"
+    :pointmax 501
+    :fsize 500
+    :lastmodtime '(21907 50030 797418 41000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "db_upgrade.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("migrate.versioning" include nil nil [20 54])
+            ("config" include nil nil [55 97])
+            ("config" include nil nil [98 140])
+            ("api" code nil nil [141 202])
+            ("v" variable nil nil [203 271])
+            ("print" code nil nil [272 316]))          
+    :file "db_upgrade.py"
+    :pointmax 317
+    :fsize 316
+    :lastmodtime '(21907 50030 798418 36000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "dataGen.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("app.models" include nil nil [21 72])
+            ("random" include nil nil [73 86])
+            ("json" include nil nil [87 98])
+            ("functools" include nil nil [99 128])
+            ("pytz" include nil nil [129 140])
+            ("requests" include nil nil [141 156])
+            ("to_dict" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [170 174]))              ) nil [158 260])
+            ("TimePerEvent" code nil nil [261 279])
+            ("Numevents" code nil nil [280 318])
+            ("NumSvc" variable nil nil [319 329])
+            ("print" code nil nil [331 382])
+            ("cobaltKeyOffset" variable nil nil [411 434])
+            ("genreCount" variable nil nil [435 447])
+            ("subGenreCount" variable nil nil [448 463])
+            ("genr" variable nil nil [466 473])
+            ("subgenr" variable nil nil [474 484])
+            ("svc" variable nil nil [485 491])
+            ("event" variable nil nil [492 500])
+            ("genreGen" variable nil nil [501 563])
+            ("subGenreGen" variable nil nil [564 632])
+            ("parentalGen" variable nil nil [633 688])
+            ("for" code nil nil [690 807])
+            ("for" code nil nil [808 939])
+            ("for" code nil nil [940 1280])
+            ("datetime" include nil nil [1282 1302])
+            ("time" include nil nil [1282 1302])
+            ("today_mid" variable nil nil [1303 1369])
+            ("tomorrow_mid" code nil nil [1370 1421])
+            ("endOfTimes" code nil nil [1422 1477])
+            ("createEvent" function (:arguments 
+              ( ("services" variable nil (reparse-symbol function_parameters) [1495 1503])
+                ("startAt" variable nil (reparse-symbol function_parameters) [1505 1512])
+                ("endTime" variable nil (reparse-symbol function_parameters) [1514 1521]))              ) nil [1479 2293])
+            ("chunks" function
+               (:documentation "Yield successive n-sized chunks from l."
+                :arguments 
+                  ( ("l" variable nil (reparse-symbol function_parameters) [2305 2306])
+                    ("n" variable nil (reparse-symbol function_parameters) [2308 2309]))                  )
+                nil [2294 2420])
+            ("smallPost" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [2436 2440])
+                ("whatIs" variable nil (reparse-symbol function_parameters) [2442 2448])
+                ("startTime" variable nil (reparse-symbol function_parameters) [2449 2458])
+                ("endTime" variable nil (reparse-symbol function_parameters) [2459 2466])
+                ("filter" variable nil (reparse-symbol function_parameters) [2468 2474]))              ) nil [2422 3389])
+            ("smallPost" code nil nil [3392 3466])
+            ("smallPost" code nil nil [3467 3544])
+            ("smallPost" code nil nil [3545 3641])
+            ("smallPost" code nil nil [3642 3726]))          
+    :file "dataGen.py"
+    :pointmax 3729
+    :fsize 3728
+    :lastmodtime '(21910 27739 807755 890000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "db_migrate.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("imp" include nil nil [20 30])
+            ("migrate.versioning" include nil nil [31 65])
+            ("app.database" include nil nil [67 96])
+            ("config" include nil nil [98 140])
+            ("config" include nil nil [141 183])
+            ("v" variable nil nil [185 253])
+            ("migration" code nil nil [254 331])
+            ("tmp_module" variable nil nil [332 372])
+            ("old_model" variable nil nil [373 451])
+            ("exec" code nil nil [452 488])
+            ("script" variable nil nil [489 612])
+            ("open" code nil nil [613 648])
+            ("api" code nil nil [649 710])
+            ("v" variable nil nil [711 779])
+            ("print" code nil nil [780 824])
+            ("print" code nil nil [825 869]))          
+    :file "db_migrate.py"
+    :pointmax 870
+    :fsize 869
+    :lastmodtime '(21907 50030 798418 36000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!prototype!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

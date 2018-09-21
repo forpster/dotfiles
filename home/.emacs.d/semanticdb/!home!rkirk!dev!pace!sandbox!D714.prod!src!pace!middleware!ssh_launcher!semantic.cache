@@ -1,0 +1,911 @@
+;; Object ssh_launcher/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ssh_launcher/"
+  :tables (list 
+   (semanticdb-table "ssh_launcher.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [895 913])
+            ("unistd.h" include (:system-flag t) nil [914 933])
+            ("QCoreApplication" include (:system-flag t) nil [934 961])
+            ("QFile" include (:system-flag t) nil [962 978])
+            ("QByteArray" include (:system-flag t) nil [979 1000])
+            ("libxml/parser.h" include (:system-flag t) nil [1001 1027])
+            ("ssh_launcher.h" include nil nil [1028 1053])
+            ("caclient_bindings.h" include nil nil [1054 1084])
+            ("cadaemon_signal_marshaller_header.h" include nil nil [1085 1131])
+            ("cadaemon_signal_marshaller_body.h" include nil nil [1132 1176])
+            ("SSH_KEY_AVAILABLE_STATUS" variable (:constant-flag t) nil [1186 1210])
+            ("SSH_KEY_AVAILABLE_STATUS_LENGTH" variable (:constant-flag t) nil [1225 1256])
+            ("AUTHORIZED_KEYS" variable (:constant-flag t) nil [1267 1282])
+            ("SshClient" function
+               (:constructor-flag t
+                :parent "SshClient"
+                :type ("SshClient" type (:type "class") nil nil))
+                nil [1333 2016])
+            ("SshClient" function
+               (:destructor-flag t
+                :parent "SshClient"
+                :type "void")
+                nil [2018 2089])
+            ("ssh_status" function
+               (:parent "SshClient"
+                :arguments 
+                  ( ("key" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2456 2475]))                  
+                :type "void")
+                nil [2429 2861])
+            ("manageChroot" function
+               (:parent "SshClient"
+                :type "bool")
+                nil [3040 4985])
+            ("isSshInfoSet" function
+               (:parent "SshClient"
+                :arguments 
+                  ( ("xPathCtx" variable (:type ("xmlXPathContextPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5250 5278]))                  
+                :type "bool")
+                nil [5221 6539])
+            ("manageSshKey" function
+               (:parent "SshClient"
+                :arguments 
+                  ( ("xPathCtx" variable (:type ("xmlXPathContextPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6825 6853]))                  
+                :type "bool")
+                nil [6796 8651])
+            ("startChroot" function
+               (:parent "SshClient"
+                :type "void")
+                nil [8693 9108])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [9119 9128])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9129 9141]))                  
+                :type "int")
+                nil [9110 9603]))          
+    :file "ssh_launcher.cpp"
+    :pointmax 9604
+    :fsize 9603
+    :lastmodtime '(21546 57598 173516 680000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("AUTHORIZED_KEYS" . ((string "\"/root/chrooted/home/user1/.ssh/authorized_keys\"" 1283 . 1331)))
+          ("SSH_KEY_AVAILABLE_STATUS_LENGTH" . ((number "3" 1257 . 1258)))
+          ("SSH_KEY_AVAILABLE_STATUS" . ((string "\"Set\"" 1211 . 1216)))
+          )
+
+    )
+   (semanticdb-table "sshlauncherdbusinterface.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("sshlauncherdbusinterface.h" include nil nil [490 527])
+            ("SshLauncherDBusInterface" function
+               (:constructor-flag t
+                :parent "SshLauncherDBusInterface"
+                :arguments 
+                  ( ("service" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [650 673])
+                    ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [674 694])
+                    ("connection" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QDBusConnection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [695 729])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [730 746]))                  
+                :type ("SshLauncherDBusInterface" type (:type "class") nil nil))
+                nil [599 837])
+            ("SshLauncherDBusInterface" function
+               (:destructor-flag t
+                :parent "SshLauncherDBusInterface"
+                :type "void")
+                nil [839 896]))          
+    :file "sshlauncherdbusinterface.cpp"
+    :pointmax 898
+    :fsize 897
+    :lastmodtime '(21546 55172 338440 290000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ssh_launcher.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SSH_LAUNCHER_H__" variable (:constant-flag t) nil [34 50])
+            ("QScopedPointer" include (:system-flag t) nil [52 77])
+            ("QProcess" include (:system-flag t) nil [78 97])
+            ("libxml/xpath.h" include (:system-flag t) nil [98 123])
+            ("sshlauncherdbusinterface.h" include nil nil [124 161])
+            ("SshClient" type
+               (:superclasses 
+                  ( ("QObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("Q_OBJECT" variable (:type "int") (reparse-symbol classsubparts) [201 210])
+                    ("public" label nil (reparse-symbol classsubparts) [212 219])
+                    ("SshClient" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("SshClient" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [223 235])
+                    ("SshClient" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [239 252])
+                    ("manageChroot" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [257 277])
+                    ("public" label nil (reparse-symbol classsubparts) [279 292])
+                    ("ssh_status" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [312 328]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [296 329])
+                    ("private" label nil (reparse-symbol classsubparts) [331 339])
+                    ("SshClient" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SshClient" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [386 403]))                          
+                        :type ("SshClient" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [376 404])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SshClient" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [429 446]))                          
+                        :type ("SshClient" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [408 447])
+                    ("isSshInfoSet" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("xPathCtx" variable (:type ("xmlXPathContextPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [470 498]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [452 505])
+                    ("manageSshKey" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("xPathCtx" variable (:type ("xmlXPathContextPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [527 555]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [509 562])
+                    ("startChroot" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [566 585])
+                    ("m_sshInterface" variable (:type ("QScopedPointer" type
+                         (:template-specifier 
+                            ( ("SshLauncherDBusInterface" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [590 646])
+                    ("m_chrootActive" variable (:type "bool") (reparse-symbol classsubparts) [650 670])
+                    ("m_chroot" variable (:type ("QProcess" type (:type "class") nil nil)) (reparse-symbol classsubparts) [674 692]))                  
+                :type "class")
+                nil [163 695]))          
+    :file "ssh_launcher.h"
+    :pointmax 727
+    :fsize 726
+    :lastmodtime '(21546 51245 346672 148000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SSH_LAUNCHER_H__")
+          )
+
+    )
+   (semanticdb-table "sshlauncherdbusinterface.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SSHLAUNCHERDBUSINTERFACE_H_1411560433" variable (:constant-flag t) nil [501 538])
+            ("QtCore/QObject" include (:system-flag t) nil [540 565])
+            ("QtCore/QByteArray" include (:system-flag t) nil [566 594])
+            ("QtCore/QList" include (:system-flag t) nil [595 618])
+            ("QtCore/QMap" include (:system-flag t) nil [619 641])
+            ("QtCore/QString" include (:system-flag t) nil [642 667])
+            ("QtCore/QStringList" include (:system-flag t) nil [668 697])
+            ("QtCore/QVariant" include (:system-flag t) nil [698 724])
+            ("QtDBus/QtDBus" include (:system-flag t) nil [725 749])
+            ("SshLauncherDBusInterface" type
+               (:superclasses 
+                  ( ("QDBusAbstractInterface" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [891 898])
+                    ("staticInterfaceName" function
+                       (:pointer 1
+                        :typemodifiers ("static" "inline")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [903 995])
+                    ("public" label nil (reparse-symbol classsubparts) [997 1004])
+                    ("SshLauncherDBusInterface" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("service" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1034 1057])
+                            ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1058 1078])
+                            ("connection" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QDBusConnection" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1079 1113])
+                            ("parent" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1114 1131]))                          
+                        :type ("SshLauncherDBusInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1009 1135])
+                    ("SshLauncherDBusInterface" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1141 1169])
+                    ("public" label nil (reparse-symbol classsubparts) [1171 1186])
+                    ("call_extension_method" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1264 1285]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil)
+                                  ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1202 1483])
+                    ("call_extension_method" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1534 1555])
+                            ("response" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1556 1574]))                          
+                        :type ("QDBusReply" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1488 1988])
+                    ("cancel_ppv_request" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2044 2067]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1994 2264])
+                    ("close" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("handle" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2303 2315]))                          
+                        :type ("QDBusPendingReply" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2270 2498])
+                    ("enable_monitoring" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [2549 2561]))                          
+                        :type ("QDBusPendingReply" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2504 2756])
+                    ("get_casn" function
+                       (:typemodifiers ("inline")
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2762 2935])
+                    ("get_diagnostics" function
+                       (:typemodifiers ("inline")
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil)
+                                  ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2941 3138])
+                    ("get_diagnostics" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3183 3197]))                          
+                        :type ("QDBusReply" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3143 3549])
+                    ("get_status" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3606 3627]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil)
+                                  ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3555 3814])
+                    ("get_status" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3854 3875])
+                            ("response" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3876 3894]))                          
+                        :type ("QDBusReply" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3819 4297])
+                    ("inject_fingerprint_temp" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("colour" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4354 4366])
+                            ("regionHeight" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4367 4385])
+                            ("regionWidth" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4386 4403])
+                            ("regionColour" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4404 4422])
+                            ("regionXOffset" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4423 4442])
+                            ("regionYOffset" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4443 4462])
+                            ("duration" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4463 4477])
+                            ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4478 4498]))                          
+                        :type ("QDBusPendingReply" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4303 4947])
+                    ("inject_fingerprint_temp_extension" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("textXOffset" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5014 5031])
+                            ("textYOffset" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5032 5049]))                          
+                        :type ("QDBusPendingReply" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4953 5301])
+                    ("notify_cat" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("handle" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5345 5357])
+                            ("cat" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5358 5377]))                          
+                        :type ("QDBusPendingReply" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5307 5593])
+                    ("notify_ecm" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("handle" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5637 5649])
+                            ("ecm" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5650 5669])
+                            ("tag" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5670 5679]))                          
+                        :type ("QDBusPendingReply" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5599 5923])
+                    ("notify_emm" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("emm" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5967 5986]))                          
+                        :type ("QDBusPendingReply" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5929 6171])
+                    ("notify_metadata" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pvrplayHandle" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6220 6239])
+                            ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6240 6260]))                          
+                        :type ("QDBusPendingReply" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6177 6489])
+                    ("notify_pmt" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("handle" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6533 6545])
+                            ("pmt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6546 6565]))                          
+                        :type ("QDBusPendingReply" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6495 6781])
+                    ("open" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("txid" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6823 6833])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6834 6854])
+                            ("parser" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6855 6867])
+                            ("serviceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6868 6883])
+                            ("transponderId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6884 6903])
+                            ("networkId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6904 6919])
+                            ("sessionType" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6920 6937]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("uint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6787 7319])
+                    ("prepare_ppv_request" function
+                       (:typemodifiers ("inline")
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [7325 7524])
+                    ("pvr_playback_start" function
+                       (:typemodifiers ("inline")
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("uint" type nil nil nil)
+                                  ("uint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [7530 7730])
+                    ("pvr_playback_start" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("keySlotHandle" variable
+                               (:reference 1
+                                :type ("uint" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7778 7798]))                          
+                        :type ("QDBusReply" type
+                             (:template-specifier 
+                                ( ("uint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [7735 8159])
+                    ("pvr_playback_stop" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pvrplayHandle" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8210 8229]))                          
+                        :type ("QDBusPendingReply" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8165 8431])
+                    ("pvr_record_append" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("caHandle" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8486 8500])
+                            ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8501 8521]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("uint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8437 8747])
+                    ("pvr_record_start" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("caHandle" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8801 8815]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("uint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8753 9011])
+                    ("pvr_record_stop" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("caHandle" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9060 9074]))                          
+                        :type ("QDBusPendingReply" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9017 9269])
+                    ("resync_callback" function
+                       (:typemodifiers ("inline")
+                        :type ("QDBusPendingReply" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9275 9459])
+                    ("set_parental" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("threshold" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9505 9520])
+                            ("bitmap" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9521 9533]))                          
+                        :type ("QDBusPendingReply" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9465 9757])
+                    ("set_status" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9814 9835]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil)
+                                  ("QString" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [9763 10022])
+                    ("set_status" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10062 10083])
+                            ("response" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10084 10102]))                          
+                        :type ("QDBusReply" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [10027 10505])
+                    ("access" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("status" variable (:type "bool") (reparse-symbol arg-sub-list) [10545 10557]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10533 10558])
+                    ("ca_message" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10579 10602]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10563 10603])
+                    ("card_status" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("status" variable (:type "bool") (reparse-symbol arg-sub-list) [10625 10637]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10608 10638])
+                    ("channel_blocked" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("blocked" variable (:type "bool") (reparse-symbol arg-sub-list) [10664 10677]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10643 10678])
+                    ("debug_data" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10699 10719]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10683 10720])
+                    ("ecm_notify_status" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cahandle" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10748 10762])
+                            ("ecmStatus" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10763 10778])
+                            ("status" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10779 10801])
+                            ("tag" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10802 10811]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10725 10812])
+                    ("get_status_callback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("status" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10842 10864]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10817 10865])
+                    ("new_message" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sessionId" variable (:type "int") (reparse-symbol arg-sub-list) [10887 10901])
+                            ("persistence" variable (:type "int") (reparse-symbol arg-sub-list) [10902 10918])
+                            ("languages" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QStringList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10919 10948])
+                            ("messages" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QStringList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10949 10977]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10870 10978])
+                    ("notify_ca_status" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cahandle" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11005 11019])
+                            ("caStatus" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11020 11034])
+                            ("status" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11035 11057]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10983 11058])
+                    ("pvr_playback_notify_status" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cahandle" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11095 11109])
+                            ("playbackStatus" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11110 11130])
+                            ("status" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11131 11153]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11063 11154])
+                    ("pvr_record_notify_metadata" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cahandle" variable (:type "int") (reparse-symbol arg-sub-list) [11191 11204])
+                            ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11205 11225]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11159 11226])
+                    ("pvr_record_notify_status" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cahandle" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11261 11275])
+                            ("recordStatus" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11276 11294])
+                            ("status" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11295 11317]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11231 11318])
+                    ("signal_extended" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11344 11367]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11323 11368])
+                    ("update_status" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("status" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11392 11414]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11373 11415]))                  
+                :type "class")
+                nil [814 11418])
+            ("com" type
+               (:members 
+                  ( ("pace" type
+                       (:members 
+                          ( ("tungsten" type
+                               (:members 
+                                  ( ("cadaemon" variable (:type ("SshLauncherDBusInterface" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [11496 11530]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [11459 11536]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [11438 11540]))                  
+                :type "namespace")
+                nil [11420 11542]))          
+    :file "sshlauncherdbusinterface.h"
+    :pointmax 11550
+    :fsize 11549
+    :lastmodtime '(21546 55172 338440 290000)
+    :unmatched-syntax '((punctuation 11495 . 11496) (punctuation 11494 . 11495) (TYPEDEF 11486 . 11493) (punctuation 10516 . 10517) (symbol 10507 . 10516) (number 1132 . 1133) (punctuation 1130 . 1131) (symbol 882 . 890))
+    :lexical-table 
+        '(("SSHLAUNCHERDBUSINTERFACE_H_1411560433")
+          )
+
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("CC" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [784 850])
+            ("CXX" variable (:default-value ("mipsel-linux-uclibc-g++" "--sysroot=$(STAGING_PATH)")) nil [850 916])
+            ("DEFINES" variable (:default-value ("-DFREESAT_NETWORK" "-DD714" "-DQT_OGL_PLF_NAME=eglnullws" "-DBLE_API_2" "-DPULL_VOD_SUPPORT" "-DQT_NO_DEBUG" "-DQT_DBUS_LIB" "-DQT_GUI_LIB" "-DQT_NETWORK_LIB" "-DQT_CORE_LIB")) nil [916 1088])
+            ("CFLAGS" variable (:default-value ("-pipe" "-g" "-Wall" "-mips32" "-DQT_DIRECTFB_TIMING" "-DQT_NO_GETADDRINFO" "--sysroot=$(STAGING_PATH)" "-Wall" "-I/home/rkirk/dev/pace/sandbox/D714.prod/build//target/PRODUCTION_INITRAMFS_SSH//staging/usr/include/tlogger" "-I/home/rkirk/dev/pace/sandbox/D714.prod/build//target/PRODUCTION_INITRAMFS_SSH//staging/usr/include/cadaemonlib" "-DPMW_DBUS_SYSTEM" "-Wall" "-O2" "-Wall" "-W" "-D_REENTRANT" "$(DEFINES)")) nil [1088 1483])
+            ("CXXFLAGS" variable (:default-value ("-pipe" "-fstack-protector" "-g" "-mips32" "-DQT_DIRECTFB_TIMING" "-DQT_NO_GETADDRINFO" "--sysroot=$(STAGING_PATH)" "-Wall" "-I/home/rkirk/dev/pace/sandbox/D714.prod/build//target/PRODUCTION_INITRAMFS_SSH//staging/usr/include/tlogger" "-I/home/rkirk/dev/pace/sandbox/D714.prod/build//target/PRODUCTION_INITRAMFS_SSH//staging/usr/include/cadaemonlib" "-DPMW_DBUS_SYSTEM" "-Wall" "-O2" "-Wall" "-W" "-D_REENTRANT" "$(DEFINES)")) nil [1483 1890])
+            ("INCPATH" variable (:default-value ("-I../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/default" "-I." "-I${STAGING_PATH}/usr/include/QtCore" "-I${STAGING_PATH}/usr/include/QtNetwork" "-I${STAGING_PATH}/usr/include/QtGui" "-I${STAGING_PATH}/usr/include/QtDBus" "-I${STAGING_PATH}/usr/include" "-Iobj" "-I$(STAGING_PATH)/usr/include" "-I$(STAGING_PATH)/usr/include/dbus-1.0" "-I$(STAGING_PATH)/usr/lib/dbus-1.0/include" "-I$(STAGING_PATH)/usr/include/glib-2.0" "-I$(STAGING_PATH)/usr/lib/glib-2.0/include" "-I$(STAGING_PATH)/usr/include/libxml2/" "-I$(STAGING_PATH)/usr/include/freetype2")) nil [1890 2449])
+            ("LINK" variable (:default-value ("mipsel-linux-uclibc-g++" "--sysroot=$(STAGING_PATH)")) nil [2449 2515])
+            ("LFLAGS" variable (:default-value ("--sysroot=$(STAGING_PATH)" "-lcadaemonlib" "-Wl,-O1")) nil [2515 2579])
+            ("LIBS" variable (:default-value ("$(SUBLIBS)" "-L$(STAGING_PATH)/usr/lib" "-L${STAGING_PATH}/usr/lib" "-ldbus-1" "-lssl" "-lcrypto" "-lglib-2.0" "-lffi" "-lz" "-lintl" "-lgthread-2.0" "-lgobject-2.0" "-lgmodule-2.0" "-lxml2" "-lpng" "-lsqlite3" "-lfreetype" "-ldirect" "-lfusion" "-lcadaemonlib" "-lQtDBus" "-lQtGui" "-lQtNetwork" "-lQtCore" "-lpthread")) nil [2579 2868])
+            ("AR" variable (:default-value ("mipsel-linux-uclibc-ar" "cqs")) nil [2868 2911])
+            ("RANLIB" variable nil nil [2911 2928])
+            ("QMAKE" variable (:default-value ("/usr/bin/qmake")) nil [2928 2959])
+            ("TAR" variable (:default-value ("tar" "-cf")) nil [2959 2983])
+            ("COMPRESS" variable (:default-value ("gzip" "-9f")) nil [2983 3008])
+            ("COPY" variable (:default-value ("cp" "-f")) nil [3008 3030])
+            ("SED" variable (:default-value ("sed")) nil [3030 3050])
+            ("COPY_FILE" variable (:default-value ("$(COPY)")) nil [3050 3074])
+            ("COPY_DIR" variable (:default-value ("$(COPY)" "-r")) nil [3074 3101])
+            ("STRIP" variable (:default-value ("echo")) nil [3101 3122])
+            ("INSTALL_FILE" variable (:default-value ("install" "-m" "644" "-p")) nil [3122 3156])
+            ("INSTALL_DIR" variable (:default-value ("$(COPY_DIR)")) nil [3156 3184])
+            ("INSTALL_PROGRAM" variable (:default-value ("install" "-m" "755" "-p")) nil [3184 3220])
+            ("DEL_FILE" variable (:default-value ("rm" "-f")) nil [3220 3242])
+            ("SYMLINK" variable (:default-value ("ln" "-f" "-s")) nil [3242 3267])
+            ("DEL_DIR" variable (:default-value ("rmdir")) nil [3267 3289])
+            ("MOVE" variable (:default-value ("mv" "-f")) nil [3289 3311])
+            ("CHK_DIR_EXISTS" variable (:default-value ("test" "-d")) nil [3311 3335])
+            ("MKDIR" variable (:default-value ("mkdir" "-p")) nil [3335 3360])
+            ("OBJECTS_DIR" variable (:default-value ("obj/")) nil [3387 3408])
+            ("SOURCES" variable (:default-value ("ssh_launcher.cpp" "sshlauncherdbusinterface.cpp" "obj/moc_ssh_launcher.cpp" "obj/moc_sshlauncherdbusinterface.cpp")) nil [3424 3556])
+            ("OBJECTS" variable (:default-value ("obj/ssh_launcher.o" "obj/sshlauncherdbusinterface.o" "obj/moc_ssh_launcher.o" "obj/moc_sshlauncherdbusinterface.o")) nil [3556 3692])
+            ("DIST" variable (:default-value ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/common/unix.conf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/common/linux.conf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/common/gcc-base.conf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/common/gcc-base-unix.conf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/common/g++-base.conf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/common/g++-unix.conf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/common/qws.conf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/qconfig.pri" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/qt_functions.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/qt_config.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/exclusive_builds.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/default_pre.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/release.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/default_post.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/shared.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/warn_on.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/qt.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/moc.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/dbusinterfaces.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/dbusadaptors.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/unix/thread.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/resources.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/uic.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/yacc.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/lex.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/include_source_dir.prf" "ssh_launcher.pro")) nil [3692 6212])
+            ("QMAKE_TARGET" variable (:default-value ("ssh_launcher")) nil [6212 6241])
+            ("DESTDIR" variable nil nil [6241 6258])
+            ("TARGET" variable (:default-value ("ssh_launcher")) nil [6258 6287])
+            ("first" function (:arguments ("all")) nil [6288 6299])
+            (".SUFFIXES" function (:arguments (".o" ".c" ".cpp" ".cc" ".cxx" ".C")) nil [6323 6357])
+            (".cpp.o" function nil nil [6358 6413])
+            (".cc.o" function nil nil [6414 6468])
+            (".cxx.o" function nil nil [6469 6524])
+            (".C.o" function nil nil [6525 6578])
+            (".c.o" function nil nil [6579 6629])
+            ("all" function (:arguments ("Makefile" "$(TARGET)")) nil [6651 6675])
+            ("$(TARGET)" function (:arguments ("$(OBJECTS)")) nil [6676 6763])
+            ("Makefile" function (:arguments ("ssh_launcher.pro" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/default/qmake.conf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/common/unix.conf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/common/linux.conf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/common/gcc-base.conf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/common/gcc-base-unix.conf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/common/g++-base.conf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/common/g++-unix.conf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/common/qws.conf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/qconfig.pri" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/qt_functions.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/qt_config.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/exclusive_builds.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/default_pre.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/release.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/default_post.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/shared.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/warn_on.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/qt.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/moc.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/dbusinterfaces.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/dbusadaptors.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/unix/thread.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/resources.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/uic.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/yacc.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/lex.prf" "../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/include_source_dir.prf")) nil [6764 9785])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/common/unix.conf" function nil nil [9785 9873])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/common/linux.conf" function nil nil [9873 9962])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/common/gcc-base.conf" function nil nil [9962 10054])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/common/gcc-base-unix.conf" function nil nil [10054 10151])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/common/qws.conf" function nil nil [10335 10422])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/qconfig.pri" function nil nil [10422 10505])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/qt_functions.prf" function nil nil [10505 10602])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/qt_config.prf" function nil nil [10602 10696])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/exclusive_builds.prf" function nil nil [10696 10797])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/default_pre.prf" function nil nil [10797 10893])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/release.prf" function nil nil [10893 10985])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/default_post.prf" function nil nil [10985 11082])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/shared.prf" function nil nil [11082 11173])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/warn_on.prf" function nil nil [11173 11265])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/qt.prf" function nil nil [11265 11352])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/moc.prf" function nil nil [11352 11440])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/dbusinterfaces.prf" function nil nil [11440 11539])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/dbusadaptors.prf" function nil nil [11539 11636])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/unix/thread.prf" function nil nil [11636 11732])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/resources.prf" function nil nil [11732 11826])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/uic.prf" function nil nil [11826 11914])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/yacc.prf" function nil nil [11914 12003])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/lex.prf" function nil nil [12003 12091])
+            ("../../../../build/target/PRODUCTION_INITRAMFS_SSH/staging/usr/mkspecs/features/include_source_dir.prf" function nil nil [12091 12194])
+            ("qmake" function (:arguments ("FORCE")) nil [12194 12630])
+            ("dist" function nil nil [12631 13204])
+            ("clean" function (:arguments ("compiler_clean")) nil [13206 13282])
+            ("distclean" function (:arguments ("clean")) nil [13307 13372])
+            ("check" function (:arguments ("first")) nil [13374 13387])
+            ("mocclean" function (:arguments ("compiler_moc_header_clean" "compiler_moc_source_clean")) nil [13388 13450])
+            ("mocables" function (:arguments ("compiler_moc_header_make_all" "compiler_moc_source_make_all")) nil [13451 13519])
+            ("compiler_moc_header_make_all" function (:arguments ("obj/moc_ssh_launcher.cpp" "obj/moc_sshlauncherdbusinterface.cpp")) nil [13520 13612])
+            ("compiler_moc_header_clean" function nil nil [13612 13715])
+            ("obj/moc_ssh_launcher.cpp" function (:arguments ("sshlauncherdbusinterface.h" "ssh_launcher.h")) nil [13715 13881])
+            ("obj/moc_sshlauncherdbusinterface.cpp" function (:arguments ("sshlauncherdbusinterface.h")) nil [13882 14065])
+            ("compiler_dbus_interface_source_make_all" function nil nil [14066 14107])
+            ("compiler_dbus_interface_source_clean" function nil nil [14107 14145])
+            ("compiler_dbus_adaptor_source_make_all" function nil nil [14145 14184])
+            ("compiler_dbus_adaptor_source_clean" function nil nil [14184 14220])
+            ("compiler_rcc_make_all" function nil nil [14220 14243])
+            ("compiler_rcc_clean" function nil nil [14243 14263])
+            ("compiler_image_collection_make_all" function (:arguments ("qmake_image_collection.cpp")) nil [14263 14326])
+            ("compiler_image_collection_clean" function nil nil [14326 14400])
+            ("compiler_moc_source_make_all" function nil nil [14400 14430])
+            ("compiler_moc_source_clean" function nil nil [14430 14457])
+            ("compiler_dbus_interface_header_make_all" function nil nil [14457 14498])
+            ("compiler_dbus_interface_header_clean" function nil nil [14498 14536])
+            ("compiler_dbus_interface_moc_make_all" function nil nil [14536 14574])
+            ("compiler_dbus_interface_moc_clean" function nil nil [14574 14609])
+            ("compiler_dbus_adaptor_header_make_all" function nil nil [14609 14648])
+            ("compiler_dbus_adaptor_header_clean" function nil nil [14648 14684])
+            ("compiler_dbus_adaptor_moc_make_all" function nil nil [14684 14720])
+            ("compiler_dbus_adaptor_moc_clean" function nil nil [14720 14753])
+            ("compiler_uic_make_all" function nil nil [14753 14776])
+            ("compiler_uic_clean" function nil nil [14776 14796])
+            ("compiler_yacc_decl_make_all" function nil nil [14796 14825])
+            ("compiler_yacc_decl_clean" function nil nil [14825 14851])
+            ("compiler_yacc_impl_make_all" function nil nil [14851 14880])
+            ("compiler_yacc_impl_clean" function nil nil [14880 14906])
+            ("compiler_lex_make_all" function nil nil [14906 14929])
+            ("compiler_lex_clean" function nil nil [14929 14949])
+            ("compiler_clean" function (:arguments ("compiler_moc_header_clean")) nil [14949 14992])
+            ("obj/ssh_launcher.o" function (:arguments ("ssh_launcher.cpp" "ssh_launcher.h" "sshlauncherdbusinterface.h")) nil [15010 15166])
+            ("obj/sshlauncherdbusinterface.o" function (:arguments ("sshlauncherdbusinterface.cpp" "sshlauncherdbusinterface.h")) nil [15167 15352])
+            ("obj/moc_ssh_launcher.o" function (:arguments ("obj/moc_ssh_launcher.cpp")) nil [15353 15488])
+            ("obj/moc_sshlauncherdbusinterface.o" function (:arguments ("obj/moc_sshlauncherdbusinterface.cpp")) nil [15489 15672])
+            ("install_target" function (:arguments ("first" "FORCE")) nil [15690 16275])
+            ("uninstall_target" function (:arguments ("FORCE")) nil [16276 16566])
+            ("install" function (:arguments ("install_target" "FORCE")) nil [16568 16600])
+            ("uninstall" function (:arguments ("uninstall_target" "FORCE")) nil [16601 16637])
+            ("FORCE" function nil nil [16638 16645]))          
+    :file "Makefile"
+    :pointmax 16646
+    :fsize 16427
+    :lastmodtime '(21546 55172 412439 832000)
+    :unmatched-syntax '((punctuation 10333 . 10334) (symbol 10323 . 10333) (punctuation 10322 . 10323) (punctuation 10321 . 10322) (symbol 10243 . 10321) (bol 10243 . 10243) (punctuation 10241 . 10242) (symbol 10231 . 10241) (punctuation 10230 . 10231) (punctuation 10229 . 10230) (symbol 10151 . 10229) (bol 10151 . 10151))
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D714.prod!src!pace!middleware!ssh_launcher!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

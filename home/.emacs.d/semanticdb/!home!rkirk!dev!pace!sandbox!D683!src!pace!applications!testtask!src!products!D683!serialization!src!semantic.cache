@@ -1,0 +1,822 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "tt_serialisation.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("tt_dbg.h" include nil nil [934 953])
+            ("tt_dispatch.h" include nil nil [978 1002])
+            ("tt_serialisation.h" include nil nil [1003 1032])
+            ("nexus_base_types.h" include nil nil [1033 1062])
+            ("nexus_random_number.h" include nil nil [1113 1145])
+            ("cdi_nandflash_ioctl.h" include nil nil [1146 1178])
+            ("_GNU_SOURCE" variable (:constant-flag t) nil [1189 1200])
+            ("ctype.h" include (:system-flag t) nil [1201 1219])
+            ("errno.h" include (:system-flag t) nil [1220 1238])
+            ("fcntl.h" include (:system-flag t) nil [1239 1257])
+            ("stdbool.h" include (:system-flag t) nil [1258 1278])
+            ("stdio.h" include (:system-flag t) nil [1279 1297])
+            ("stdlib.h" include (:system-flag t) nil [1298 1317])
+            ("stddef.h" include (:system-flag t) nil [1318 1337])
+            ("stdint.h" include (:system-flag t) nil [1338 1357])
+            ("string.h" include (:system-flag t) nil [1358 1377])
+            ("unistd.h" include (:system-flag t) nil [1378 1397])
+            ("getopt.h" include (:system-flag t) nil [1398 1417])
+            ("time.h" include (:system-flag t) nil [1418 1435])
+            ("sys/ioctl.h" include (:system-flag t) nil [1436 1458])
+            ("sys/types.h" include (:system-flag t) nil [1459 1481])
+            ("sys/stat.h" include (:system-flag t) nil [1482 1503])
+            ("nexus_security.h" include nil nil [1505 1532])
+            ("nexus_read_otp_id.h" include nil nil [1533 1563])
+            ("nexus_otpmsp.h" include nil nil [1564 1589])
+            ("nexus_gpio.h" include nil nil [1590 1613])
+            ("nexus_core.h" include nil nil [1615 1638])
+            ("bchp_nand.h" include nil nil [1639 1661])
+            ("tt_flash.h" include nil nil [1663 1684])
+            ("linux_api.h" include nil nil [1685 1707])
+            ("tt_eeprom.h" include nil nil [1710 1732])
+            ("nvm_mng.h" include nil nil [1734 1754])
+            ("nvm_drv.h" include nil nil [1755 1775])
+            ("crc.h" include nil nil [1776 1792])
+            ("i_ldrsup.h" include nil nil [1793 1814])
+            ("bchp_sun_top_ctrl.h" include nil nil [1815 1845])
+            ("DBUG_MODULE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("tt_serialisation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1858 1875]))                  
+                :type "int")
+                nil [1846 1876])
+            ("MAC_ADDRESS_LENGTH" variable (:constant-flag t) nil [1886 1904])
+            ("LITTLE_ENDIAN" variable (:constant-flag t) nil [1920 1933])
+            ("DTLA_GUID" variable (:constant-flag t) nil [1968 1977])
+            ("DTLA_CERT" variable (:constant-flag t) nil [1993 2002])
+            ("DTLA_CRC" variable (:constant-flag t) nil [2021 2029])
+            ("DTCP_KEY_SIZE" variable (:constant-flag t) nil [2047 2060])
+            ("ENCRYPT" variable (:constant-flag t) nil [2182 2189])
+            ("DECRYPT" variable (:constant-flag t) nil [2210 2217])
+            ("SIZE_OF_HASH_IN_BYTES" variable (:constant-flag t) nil [2281 2302])
+            ("TT_KEY_LADDER" variable (:constant-flag t) nil [2346 2359])
+            ("DTCP_key_ptr" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "unsigned char")
+                nil [2362 2397])
+            ("DTCP_key_size" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [2398 2445])
+            ("DTCP_key_index" variable
+               (:typemodifiers ("static")
+                :type "unsigned int")
+                nil [2446 2485])
+            ("DTCP_last_block" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2486 2521])
+            ("BBCB_CRC_OFFSET" variable (:constant-flag t) nil [2532 2547])
+            ("BBCB_MANUFACTURER_CODE_OFFSET" variable (:constant-flag t) nil [2595 2624])
+            ("BBCB_HARDWARE_CODE_OFFSET" variable (:constant-flag t) nil [2657 2682])
+            ("BBCB_LOADER_MAJOR_OFFSET" variable (:constant-flag t) nil [2719 2743])
+            ("BBCB_LOADER_MINOR_OFFSET" variable (:constant-flag t) nil [2781 2805])
+            ("BBCB_LOADER_TYPE_OFFSET" variable (:constant-flag t) nil [2843 2866])
+            ("BBCB_SERIAL_NUMBER_OFFSET" variable (:constant-flag t) nil [2905 2930])
+            ("BBCB_RANDOM_NUMBER_OFFSET" variable (:constant-flag t) nil [2968 2993])
+            ("BBCB_PADDING_1_OFFSET" variable (:constant-flag t) nil [3031 3052])
+            ("BBCB_MAC_ADRESS_OFFSET_OFFSET" variable (:constant-flag t) nil [3095 3124])
+            ("BBCB_HDCP_KEY_OFFSET" variable (:constant-flag t) nil [3158 3178])
+            ("BBCB_DTCP_KEY_OFFSET" variable (:constant-flag t) nil [3224 3244])
+            ("BBCB_PRODUCTION_TRACKING_OFFSET" variable (:constant-flag t) nil [3275 3306])
+            ("BBCB_PADDING_2_OFFSET" variable (:constant-flag t) nil [3337 3358])
+            ("BBCB_RSA_EXCLUSION_OFFSET" variable (:constant-flag t) nil [3407 3432])
+            ("BBCB_CRC_SIZE" variable (:constant-flag t) nil [3471 3484])
+            ("BBCB_MANUFACTURER_CODE_SIZE" variable (:constant-flag t) nil [3515 3542])
+            ("BBCB_HARDWARE_CODE_SIZE" variable (:constant-flag t) nil [3559 3582])
+            ("BBCB_LOADER_MAJOR_SIZE" variable (:constant-flag t) nil [3603 3625])
+            ("BBCB_LOADER_MINOR_SIZE" variable (:constant-flag t) nil [3647 3669])
+            ("BBCB_LOADER_TYPE_SIZE" variable (:constant-flag t) nil [3691 3712])
+            ("BBCB_SERIAL_NUMBER_SIZE" variable (:constant-flag t) nil [3735 3758])
+            ("BBCB_RANDOM_NUMBER_SIZE" variable (:constant-flag t) nil [3798 3821])
+            ("BBCB_PADDING_1_SIZE" variable (:constant-flag t) nil [3860 3879])
+            ("RSA_EXCLUSION_SIZE" variable (:constant-flag t) nil [3920 3938])
+            ("BBCB_SIZE" variable (:constant-flag t) nil [3965 3974])
+            ("BBCB_PRODUCTION_TRACKING_SIZE" variable (:constant-flag t) nil [4208 4237])
+            ("SERIALISATION_LOGICAL_PARTITION_NUMBER" variable (:constant-flag t) nil [4263 4301])
+            ("SERIALISATION_BACKUP_LOGICAL_PARTITION_NUMBER" variable (:constant-flag t) nil [4313 4358])
+            ("ERROR_ALLOC_BUFFER" variable (:constant-flag t) nil [4371 4389])
+            ("ERROR_READ_FROM_FLASH" variable (:constant-flag t) nil [4415 4436])
+            ("ERROR_ERASE_FLASH" variable (:constant-flag t) nil [4459 4476])
+            ("ERROR_WRITE_TO_FLASH" variable (:constant-flag t) nil [4503 4523])
+            ("ERROR_SN_PRESENT" variable (:constant-flag t) nil [4547 4563])
+            ("ERROR_MAPPING" variable (:constant-flag t) nil [4592 4605])
+            ("ERROR_RSA_NOT_EQUAL" variable (:constant-flag t) nil [4637 4656])
+            ("ERROR_BBCB_CRC_ERROR" variable (:constant-flag t) nil [4682 4702])
+            ("ERROR_MAC_ADDRESS" variable (:constant-flag t) nil [4728 4745])
+            ("ERROR_HDCP_KEY" variable (:constant-flag t) nil [4774 4788])
+            ("GPIO_PIN_SOFT_RESET" variable (:constant-flag t) nil [4821 4840])
+            ("bit_get" variable (:constant-flag t) nil [4875 4882])
+            ("BIT" variable (:constant-flag t) nil [4908 4911])
+            ("LONGBIT" variable (:constant-flag t) nil [4937 4944])
+            ("OTP_DATA_DEFAULT" variable (:constant-flag t) nil [5007 5023])
+            ("OTP_DATA_SET" variable (:constant-flag t) nil [5054 5066])
+            ("OTP_ALREADY_SET" variable (:constant-flag t) nil [5101 5116])
+            ("TT_NAND_BLOCK_SZ" variable (:constant-flag t) nil [5129 5145])
+            ("TT_BOOT_BLOCK_SZ" variable (:constant-flag t) nil [5166 5182])
+            ("TT_SSBL_BLOCK_SIZE" variable (:constant-flag t) nil [5225 5243])
+            ("INITIAL_CRC32" variable (:constant-flag t) nil [5256 5269])
+            ("TT_BPBL_BLOCK_START" variable (:constant-flag t) nil [5299 5318])
+            ("TT_BPBL_BLOCK_END" variable (:constant-flag t) nil [5330 5347])
+            ("SIZE_MAX_TSC_CHIP_RECORD" variable (:constant-flag t) nil [5380 5404])
+            ("CDI_NANDFLASH_PARTITION7_BLOCKS" variable (:constant-flag t) nil [5421 5452])
+            ("CDI_NANDFLASH_PARTITION_RUNTIME" variable (:constant-flag t) nil [5471 5502])
+            ("PCB_SERIAL_NUMBER_SIZE" variable (:constant-flag t) nil [5521 5543])
+            ("PRIVATE_DATA_SIZE" variable (:constant-flag t) nil [5566 5583])
+            ("PCB_SN_START" variable (:constant-flag t) nil [5610 5622])
+            ("FLASH_BB_VERSION_STRUCTURE" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("bManufactureCode" variable (:type ("TT_BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5676 5711])
+                          ("bHW_Version" variable (:type ("TT_BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5735 5765])
+                          ("bLDR_Version_Major" variable (:type ("TT_BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5794 5831])
+                          ("bLDR_Version_Minor" variable (:type ("TT_BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5853 5890])
+                          ("abSerialNumber" variable
+                             (:dereference 1
+                              :type ("TT_BYTE" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [5912 5970])
+                          ("abRandomNumber" variable
+                             (:dereference 1
+                              :type ("TT_BYTE" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [5976 6034])
+                          ("ulCRC" variable (:type ("TT_WORD" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6041 6065]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [5656 6126])
+            ("HDCP_key_ptr" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("TT_UInt8" type (:type "class") nil nil))
+                nil [6152 6183])
+            ("HDCP_key_size" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type ("TT_Int32" type (:type "class") nil nil))
+                nil [6184 6228])
+            ("HDCP_key_index" variable
+               (:typemodifiers ("static")
+                :type ("TT_UInt32" type (:type "class") nil nil))
+                nil [6229 6266])
+            ("HDCP_last_block" variable
+               (:typemodifiers ("static")
+                :type ("TT_Int32" type (:type "class") nil nil))
+                nil [6267 6312])
+            ("gLdrType" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [6315 6344])
+            ("serial_buffer" variable
+               (:dereference 1
+                :type ("TT_UInt8" type (:type "class") nil nil))
+                nil [6345 6378])
+            ("stFlashLoaderData" variable (:type ("FLASH_BB_VERSION_STRUCTURE" type (:type "class") nil nil)) nil [6379 6425])
+            ("STORE32H" variable (:constant-flag t) nil [6556 6564])
+            ("LOAD32H" variable (:constant-flag t) nil [6827 6834])
+            ("ROL" variable (:constant-flag t) nil [7078 7081])
+            ("ROR" variable (:constant-flag t) nil [7230 7233])
+            ("ROLc" variable (:constant-flag t) nil [7382 7386])
+            ("RORc" variable (:constant-flag t) nil [7535 7539])
+            ("MIN" variable (:constant-flag t) nil [7688 7691])
+            ("F0" variable (:constant-flag t) nil [7773 7775])
+            ("F1" variable (:constant-flag t) nil [7812 7814])
+            ("F2" variable (:constant-flag t) nil [7843 7845])
+            ("F3" variable (:constant-flag t) nil [7888 7890])
+            ("crc16_table" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("PCT_UInt16" type (:type "class") nil nil))
+                nil [7912 10101])
+            ("crc32_table" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "unsigned long")
+                nil [10133 13510])
+            ("akui32Crc32Table" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "unsigned long")
+                nil [13542 17373])
+            ("calc_CRC32" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("crc" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17568 17585])
+                    ("data" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [17586 17606])
+                    ("dataLength" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17607 17631]))                  
+                :type "unsigned int")
+                nil [17537 17632])
+            ("Check_OTP_MSP_Status" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("readMspEnum" variable (:type ("TT_UInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17669 17691]))                  
+                :type ("TT_Bool" type (:type "class") nil nil))
+                nil [17633 17692])
+            ("tt_Get_RSA_status" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17728 17733]))                  
+                :type ("TT_UInt32" type (:type "class") nil nil))
+                nil [17693 17734])
+            ("tt_Get_SecureCW_status" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17775 17780]))                  
+                :type ("TT_UInt32" type (:type "class") nil nil))
+                nil [17735 17781])
+            ("tt_Get_JTAG_status" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17818 17823]))                  
+                :type ("TT_UInt32" type (:type "class") nil nil))
+                nil [17782 17824])
+            ("tt_Set_RSA_boot" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17859 17864]))                  
+                :type ("TT_UInt32" type (:type "class") nil nil))
+                nil [17826 17865])
+            ("tt_Set_SecureCW" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17899 17904]))                  
+                :type ("TT_UInt32" type (:type "class") nil nil))
+                nil [17866 17905])
+            ("tt_Set_JTAG" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17935 17940]))                  
+                :type ("TT_UInt32" type (:type "class") nil nil))
+                nil [17906 17941])
+            ("NAND_READ_SERIAL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("offset" variable (:type ("TT_UInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17970 17987])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type ("TT_UInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17988 18005])
+                    ("length" variable (:type ("TT_UInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18006 18025]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [17943 18026])
+            ("NAND_WRITE_SERIAL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("offset" variable (:type ("TT_UInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18055 18072])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type ("TT_UInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18073 18090])
+                    ("length" variable (:type ("TT_UInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18091 18110]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [18027 18111])
+            ("NAND_REAL_ERASE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("offset" variable (:type ("TT_UInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18138 18155])
+                    ("length" variable (:type ("TT_UInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18155 18174]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [18112 18175])
+            ("NAND_REAL_READ" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18201 18206]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [18176 18207])
+            ("DEVICE_CLOSED" variable (:constant-flag t) nil [18217 18230])
+            ("O_RDWR" variable (:constant-flag t) nil [18242 18248])
+            ("nand_dev" variable
+               (:typemodifiers ("static")
+                :type ("NAND_Dev" type (:type "class") nil nil))
+                nil [18253 18402])
+            ("NAND_READ_SERIAL" function
+               (:arguments 
+                  ( ("offset" variable (:type ("TT_UInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18544 18561])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type ("TT_UInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18562 18579])
+                    ("length" variable (:type ("TT_UInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18580 18599]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [18517 18751])
+            ("NAND_WRITE_SERIAL" function
+               (:arguments 
+                  ( ("offset" variable (:type ("TT_UInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18781 18798])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type ("TT_UInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18799 18816])
+                    ("length" variable (:type ("TT_UInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18817 18836]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [18753 18991])
+            ("NAND_REAL_ERASE" function
+               (:arguments 
+                  ( ("offset" variable (:type ("TT_UInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19020 19037])
+                    ("length" variable (:type ("TT_UInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19037 19056]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [18994 20281])
+            ("NAND_REAL_WRITE" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20442 20460]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [20416 21686])
+            ("NAND_REAL_READ" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21714 21719]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [21689 22455])
+            ("tt_Serialisation_Init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [22484 22489]))                  
+                :type "int")
+                nil [22458 22731])
+            ("ttsk_atox" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("TT_UInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22972 22987])
+                    ("count" variable (:type ("TT_Int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22988 23003]))                  
+                :type ("TT_Int32" type (:type "class") nil nil))
+                nil [22952 23587])
+            ("get_crc_16" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("PCT_UInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25780 25796])
+                    ("dataSize" variable (:type ("PCT_UInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25796 25816]))                  
+                :type ("TT_UInt16" type (:type "class") nil nil))
+                nil [25752 26016])
+            ("get_crc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [26047 26067])
+                    ("dataSize" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [26068 26090]))                  
+                :type "unsigned long")
+                nil [26018 26294])
+            ("tt_Erase_SerialisationData" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26600 26618]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [26562 27155])
+            ("tt_GetBBCB" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [27464 27469]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [27442 29536])
+            ("tt_Get_SN_and_RN" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31682 31700]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [31653 32653])
+            ("USE_DYNAMIC_LOOKUP_TABLES" variable (:constant-flag t) nil [33016 33041])
+            ("tt_Set_SN_and_RN" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33071 33089]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [33044 38148])
+            ("Get_CSSN" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38163 38181]))                  
+                :type "int")
+                nil [38150 38618])
+            ("tt_GetBBCBData" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41994 42012]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [41969 43361])
+            ("NVM_DRV_Read" function
+               (:arguments 
+                  ( ("pbBuffer" variable (:type ("PBYTE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43382 43397])
+                    ("wOffset" variable (:type ("WORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43398 43411])
+                    ("wLength" variable (:type ("WORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43412 43426]))                  
+                :type ("SINT" type (:type "class") nil nil))
+                nil [43363 43588])
+            ("NVM_DRV_Write" function
+               (:arguments 
+                  ( ("pbBuffer" variable (:type ("PBYTE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43610 43625])
+                    ("wOffset" variable (:type ("WORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43626 43639])
+                    ("wLength" variable (:type ("WORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43640 43654]))                  
+                :type ("SINT" type (:type "class") nil nil))
+                nil [43590 43817])
+            ("M_LDRSUP_ReadNVRAM" function
+               (:arguments 
+                  ( ("pbBuffer" variable (:type ("PBYTE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46056 46071])
+                    ("wOffset" variable (:type ("WORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46072 46085])
+                    ("wLength" variable (:type ("WORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46086 46100]))                  
+                :type ("SINT" type (:type "class") nil nil))
+                nil [46031 46180])
+            ("M_LDRSUP_WriteNVRAM" function
+               (:arguments 
+                  ( ("pbBuffer" variable (:type ("PBYTE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48499 48514])
+                    ("wOffset" variable (:type ("WORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48515 48528])
+                    ("wLength" variable (:type ("WORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48529 48542])
+                    ("fWaitTillDone" variable (:type ("PBOOL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48543 48564]))                  
+                :type ("SINT" type (:type "class") nil nil))
+                nil [48473 48645])
+            ("tt_GetNVRAMKeyStatus" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49186 49204]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [49155 50705])
+            ("tt_write_production_images" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51192 51210]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [51155 54702])
+            ("update_bootloader_only" function (:type ("ERRORCODE" type (:type "class") nil nil)) nil [54704 57882])
+            ("tt_launch_factory_program" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58453 58471]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [58417 62011])
+            ("tt_validate_HDCP_key" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hdcp_key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [62487 62515]))                  
+                :type "int")
+                nil [62455 65715])
+            ("tt_Erase_FLASH_HDCP_key" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66161 66179]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [66127 68055])
+            ("tt_SetHDCP_key" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68506 68524]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [68481 71065])
+            ("tt_HDCP_CRC" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71498 71516]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [71476 73218])
+            ("tt_HDCP_validate_HDCP_key" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73704 73722]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [73668 74281])
+            ("Enc_Dec_Crypt_Operation" function
+               (:arguments 
+                  ( ("pSrc" variable
+                       (:pointer 1
+                        :type ("TT_UInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75198 75213])
+                    ("pDest" variable
+                       (:pointer 1
+                        :type ("TT_UInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75214 75230])
+                    ("enc_dec_length" variable (:type ("TT_UInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75230 75255])
+                    ("operation" variable (:type ("TT_UInt8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75255 75274])
+                    ("op" variable (:type ("TT_UInt8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75274 75286])
+                    ("TK" variable
+                       (:pointer 1
+                        :type ("TT_UInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75286 75299])
+                    ("ca_vendor_id" variable (:type ("TT_UInt16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75299 75322])
+                    ("module_id" variable (:type ("TT_UInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75322 75342]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [75164 75920])
+            ("Verify_DTCP_SHA" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("TT_UInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [76435 76450])
+                    ("data_length" variable (:type ("TT_UInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76450 76472]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [76409 77485])
+            ("tt_DownloadDTCPCert" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78135 78153]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [78105 80798])
+            ("tt_WriteDTCPCert" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81463 81481]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [81435 84421])
+            ("tt_ValidateDTCP" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84486 84504]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [84459 87171])
+            ("tt_Get_DTCPData" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87631 87649]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [87605 88338])
+            ("calc_CRC32" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("crc" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [88371 88388])
+                    ("data" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [88389 88409])
+                    ("dataLength" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [88410 88434]))                  
+                :type "unsigned int")
+                nil [88340 88698])
+            ("tt_sha1_compress" function
+               (:arguments 
+                  ( ("md" variable
+                       (:pointer 1
+                        :type ("sha1_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89123 89140])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("TT_UInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89141 89155]))                  
+                :type "void")
+                nil [89101 91019])
+            ("tt_sha1_starts" function
+               (:arguments 
+                  ( ("md" variable
+                       (:pointer 1
+                        :type ("sha1_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91402 91420]))                  
+                :type "void")
+                nil [91382 91622])
+            ("tt_sha1_update" function
+               (:arguments 
+                  ( ("md" variable
+                       (:pointer 1
+                        :type ("sha1_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [92191 92209])
+                    ("in" variable
+                       (:pointer 1
+                        :type ("TT_UInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [92210 92223])
+                    ("inlen" variable (:type ("TT_UInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92224 92240]))                  
+                :type "void")
+                nil [92170 92851])
+            ("tt_sha1_finish" function
+               (:arguments 
+                  ( ("md" variable
+                       (:pointer 1
+                        :type ("sha1_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [93350 93368])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("TT_UInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [93369 93383]))                  
+                :type "void")
+                nil [93330 94325])
+            ("tt_Set_MAC_address" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95033 95051]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [95004 96969])
+            ("tt_GetMacAddress" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [97220 97238]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [97193 97654])
+            ("tt_crc_calc" function
+               (:arguments 
+                  ( ("crc" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [101871 101889])
+                    ("block" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [101890 101906]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [101849 104253])
+            ("tt_Flash_Get_SWCRC" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [104286 104304]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [104256 104772])
+            ("tt_bootloader_CRC" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [104803 104821]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [104775 106320])
+            ("tt_Get_Lock_status" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [106675 106693]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [106646 107660])
+            ("Check_OTP_MSP_Status" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("readMspEnum" variable (:type ("TT_UInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [108166 108188]))                  
+                :type ("TT_Bool" type (:type "class") nil nil))
+                nil [108130 109201])
+            ("tt_Get_SecureCW_status" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [109243 109248]))                  
+                :type ("TT_UInt32" type (:type "class") nil nil))
+                nil [109203 109393])
+            ("tt_Get_RSA_status" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [109430 109435]))                  
+                :type ("TT_UInt32" type (:type "class") nil nil))
+                nil [109395 109577])
+            ("tt_Get_JTAG_status" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [109615 109620]))                  
+                :type ("TT_UInt32" type (:type "class") nil nil))
+                nil [109579 109760])
+            ("Set_OTP_MSP_bits" function
+               (:arguments 
+                  ( ("pProgMspIO" variable
+                       (:pointer 1
+                        :type ("NEXUS_ProgramMspIO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [110267 110298])
+                    ("dataBitmask" variable (:type ("TT_UInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [110299 110321])
+                    ("mspData" variable (:type ("TT_UInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [110322 110340]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [110240 111369])
+            ("tt_Set_Lock_Status" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [111401 111419]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [111372 112125])
+            ("tt_Set_SecureCW" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [112154 112159]))                  
+                :type ("TT_UInt32" type (:type "class") nil nil))
+                nil [112128 112946])
+            ("tt_Set_RSA_boot" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [112974 112979]))                  
+                :type ("TT_UInt32" type (:type "class") nil nil))
+                nil [112948 113743])
+            ("tt_Set_JTAG" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [113768 113773]))                  
+                :type ("TT_UInt32" type (:type "class") nil nil))
+                nil [113746 114519])
+            ("tt_owner_id_read" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [114595 114613]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [114568 115792])
+            ("tt_owner_id_write" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [115822 115840]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [115794 118526])
+            ("tt_Load_VirginSerialisationData" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123228 123246]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [123186 126243])
+            ("tt_ProdTrack_GetStage" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [126570 126588]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [126538 127348])
+            ("tt_ProdTrack_SetStage" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [127676 127694]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [127644 129621])
+            ("tt_ProdTrack_ClearStage" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [130134 130152]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [130100 131808])
+            ("tt_Get_TSC_Data" function
+               (:arguments 
+                  ( ("id" variable (:type ("TT_DISPATCH_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [131839 131857]))                  
+                :type ("ERRORCODE" type (:type "class") nil nil))
+                nil [131812 137795]))          
+    :file "tt_serialisation.c"
+    :pointmax 143621
+    :fsize 143620
+    :lastmodtime '(21674 22194 818739 549000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BBCB_PADDING_1_OFFSET" . ((number "15" 3065 . 3067)))
+          ("ERROR_HDCP_KEY" . ((number "512" 4808 . 4811)))
+          ("BIT" (spp-arg-list ("x") 4911 . 4914) . ((semantic-list "(0x01 << (x))" 4915 . 4928)))
+          ("LONGBIT" . ((semantic-list "((unsigned long)0x00000001)" 4945 . 4972)))
+          ("OTP_DATA_SET" . ((number "1" 5091 . 5092)))
+          ("SIZE_MAX_TSC_CHIP_RECORD" . ((semantic-list "(4096)" 5405 . 5411)))
+          ("F2" (spp-arg-list ("x" "y" "z") 7845 . 7852) . ((semantic-list "((x & y) | (z & (x | y)))" 7854 . 7879)))
+          ("_GNU_SOURCE")
+          ("TT_KEY_LADDER")
+          ("BBCB_LOADER_TYPE_OFFSET" . ((number "6" 2877 . 2878)))
+          ("BBCB_SERIAL_NUMBER_OFFSET" . ((number "7" 2939 . 2940)))
+          ("BBCB_MAC_ADRESS_OFFSET_OFFSET" . ((number "32" 3129 . 3131)))
+          ("BBCB_DTCP_KEY_OFFSET" . ((number "1186" 3247 . 3251)))
+          ("ERROR_ERASE_FLASH" . ((number "4" 4493 . 4494)))
+          ("CDI_NANDFLASH_PARTITION7_BLOCKS" . ((semantic-list "(800)" 5457 . 5462)))
+          ("F3" (spp-arg-list ("x" "y" "z") 7890 . 7897) . ((semantic-list "(x ^ y ^ z)" 7899 . 7910)))
+          ("MAC_ADDRESS_LENGTH" . ((semantic-list "(6)" 1907 . 1910)))
+          ("SIZE_OF_HASH_IN_BYTES" . ((number "20" 2306 . 2308)))
+          ("BBCB_HDCP_KEY_OFFSET" . ((number "38" 3192 . 3194)))
+          ("BBCB_PRODUCTION_TRACKING_OFFSET" . ((number "1770" 3309 . 3313)))
+          ("BBCB_CRC_SIZE" . ((number "2" 3505 . 3506)))
+          ("TT_BPBL_BLOCK_END" . ((number "33" 5348 . 5350)))
+          ("LOAD32H" (spp-arg-list ("x" "y") 6834 . 6840) . ((semantic-list "{ x = ((unsigned long)((y)[0] & 255)<<24) | \\
+           ((unsigned long)((y)[1] & 255)<<16) | \\
+           ((unsigned long)((y)[2] & 255)<<8)  | \\
+           ((unsigned long)((y)[3] & 255)); }" 6875 . 7068)))
+          ("ROLc" (spp-arg-list ("x" "y") 7386 . 7392) . ((semantic-list "( (((unsigned long)(x)<<(unsigned long)((y)&31)) | (((unsigned long)(x)&0xFFFFFFFFUL)>>(unsigned long)(32-((y)&31)))) & 0xFFFFFFFFUL)" 7393 . 7526)))
+          ("MIN" (spp-arg-list ("x" "y") 7691 . 7697) . ((semantic-list "( ((x)<(y))?(x):(y) )" 7698 . 7719)))
+          ("USE_DYNAMIC_LOOKUP_TABLES")
+          ("BBCB_MANUFACTURER_CODE_OFFSET" . ((number "2" 2629 . 2630)))
+          ("BBCB_HARDWARE_CODE_OFFSET" . ((number "3" 2691 . 2692)))
+          ("BBCB_PADDING_2_OFFSET" . ((number "1774" 3371 . 3375)))
+          ("DECRYPT" . ((number "1" 2228 . 2229)))
+          ("BBCB_LOADER_MAJOR_SIZE" . ((number "1" 3637 . 3638)))
+          ("BBCB_SERIAL_NUMBER_SIZE" . ((number "4" 3769 . 3770)))
+          ("BBCB_RANDOM_NUMBER_SIZE" . ((number "4" 3832 . 3833)))
+          ("ERROR_MAPPING" . ((number "32" 4626 . 4628)))
+          ("OTP_ALREADY_SET" . ((number "2" 5118 . 5119)))
+          ("TT_BPBL_BLOCK_START" . ((number "17" 5319 . 5321)))
+          ("ROR" (spp-arg-list ("x" "y") 7233 . 7239) . ((semantic-list "( ((((unsigned long)(x)&0xFFFFFFFFUL)>>(unsigned long)((y)&31)) | ((unsigned long)(x)<<(unsigned long)(32-((y)&31)))) & 0xFFFFFFFFUL)" 7240 . 7373)))
+          ("BBCB_RSA_EXCLUSION_OFFSET" . ((number "131068" 3441 . 3447)))
+          ("ERROR_READ_FROM_FLASH" . ((number "2" 4449 . 4450)))
+          ("ERROR_RSA_NOT_EQUAL" . ((number "64" 4671 . 4673)))
+          ("ERROR_BBCB_CRC_ERROR" . ((number "128" 4716 . 4719)))
+          ("ERROR_MAC_ADDRESS" . ((number "256" 4762 . 4765)))
+          ("TT_SSBL_BLOCK_SIZE" . ((number "17" 5244 . 5246)))
+          ("O_RDWR" . ((number "2" 18250 . 18251)))
+          ("BBCB_CRC_OFFSET" . ((number "0" 2566 . 2567)))
+          ("DTLA_CERT" . ((semantic-list "(1024)" 2006 . 2012)))
+          ("DTLA_CRC" . ((semantic-list "(4)" 2034 . 2037)))
+          ("BBCB_RANDOM_NUMBER_OFFSET" . ((number "11" 3002 . 3004)))
+          ("RORc" (spp-arg-list ("x" "y") 7539 . 7545) . ((semantic-list "( ((((unsigned long)(x)&0xFFFFFFFFUL)>>(unsigned long)((y)&31)) | ((unsigned long)(x)<<(unsigned long)(32-((y)&31)))) & 0xFFFFFFFFUL)" 7546 . 7679)))
+          ("LITTLE_ENDIAN")
+          ("DTLA_GUID" . ((semantic-list "(8)" 1981 . 1984)))
+          ("ENCRYPT" . ((number "0" 2200 . 2201)))
+          ("BBCB_PRODUCTION_TRACKING_SIZE" . ((number "4" 4238 . 4239)))
+          ("SERIALISATION_BACKUP_LOGICAL_PARTITION_NUMBER" . ((number "33" 4359 . 4361)))
+          ("TT_NAND_BLOCK_SZ" . ((semantic-list "(128*1024)" 5147 . 5157)))
+          ("PCB_SN_START" . ((number "0xBFCE0500" 5644 . 5654)))
+          ("BBCB_LOADER_MAJOR_OFFSET" . ((number "4" 2753 . 2754)))
+          ("BBCB_MANUFACTURER_CODE_SIZE" . ((number "1" 3549 . 3550)))
+          ("BBCB_PADDING_1_SIZE" . ((number "17" 3894 . 3896)))
+          ("BBCB_SIZE" . ((semantic-list "(BBCB_CRC_SIZE + BBCB_MANUFACTURER_CODE_SIZE + BBCB_HARDWARE_CODE_SIZE + BBCB_LOADER_MAJOR_SIZE + BBCB_LOADER_MINOR_SIZE + BBCB_LOADER_TYPE_SIZE + BBCB_SERIAL_NUMBER_SIZE + BBCB_RANDOM_NUMBER_SIZE + BBCB_PADDING_1_SIZE)" 3979 . 4198)))
+          ("ERROR_WRITE_TO_FLASH" . ((number "8" 4537 . 4538)))
+          ("OTP_DATA_DEFAULT" . ((number "0" 5044 . 5045)))
+          ("DEVICE_CLOSED" . ((punctuation "-" 18231 . 18232) (number "1" 18232 . 18233)))
+          ("BBCB_LOADER_MINOR_SIZE" . ((number "1" 3681 . 3682)))
+          ("BBCB_LOADER_TYPE_SIZE" . ((number "1" 3725 . 3726)))
+          ("SERIALISATION_LOGICAL_PARTITION_NUMBER" . ((number "16" 4302 . 4304)))
+          ("BBCB_LOADER_MINOR_OFFSET" . ((number "5" 2815 . 2816)))
+          ("GPIO_PIN_SOFT_RESET" . ((number "5" 4841 . 4842)))
+          ("bit_get" (spp-arg-list ("p" "m") 4882 . 4887) . ((semantic-list "((p) & (m))" 4888 . 4899)))
+          ("TT_BOOT_BLOCK_SZ" . ((semantic-list "(33)" 5184 . 5188)))
+          ("INITIAL_CRC32" . ((number "0xFFFFFFFF" 5280 . 5290)))
+          ("CDI_NANDFLASH_PARTITION_RUNTIME" . ((semantic-list "(7)" 5508 . 5511)))
+          ("ROL" (spp-arg-list ("x" "y") 7081 . 7087) . ((semantic-list "( (((unsigned long)(x)<<(unsigned long)((y)&31)) | (((unsigned long)(x)&0xFFFFFFFFUL)>>(unsigned long)(32-((y)&31)))) & 0xFFFFFFFFUL)" 7088 . 7221)))
+          ("F0" (spp-arg-list ("x" "y" "z") 7775 . 7782) . ((semantic-list "(z ^ (x & (y ^ z)))" 7784 . 7803)))
+          ("DTCP_KEY_SIZE" . ((number "584" 2069 . 2072)))
+          ("BBCB_HARDWARE_CODE_SIZE" . ((number "1" 3593 . 3594)))
+          ("RSA_EXCLUSION_SIZE" . ((number "4" 3954 . 3955)))
+          ("ERROR_ALLOC_BUFFER" . ((number "1" 4405 . 4406)))
+          ("ERROR_SN_PRESENT" . ((number "16" 4581 . 4583)))
+          ("PCB_SERIAL_NUMBER_SIZE" . ((number "16" 5555 . 5557)))
+          ("PRIVATE_DATA_SIZE" . ((number "16" 5598 . 5600)))
+          ("STORE32H" (spp-arg-list ("x" "y") 6564 . 6570) . ((semantic-list "{ (y)[0] = (unsigned char)(((x)>>24)&255); (y)[1] = (unsigned char)(((x)>>16)&255);   \\
+       (y)[2] = (unsigned char)(((x)>>8)&255); (y)[3] = (unsigned char)((x)&255); }" 6646 . 6817)))
+          ("F1" (spp-arg-list ("x" "y" "z") 7814 . 7821) . ((semantic-list "(x ^ y ^ z)" 7823 . 7834)))
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D683!src!pace!applications!testtask!src!products!D683!serialization!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

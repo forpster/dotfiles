@@ -1,0 +1,88 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("CP" variable (:default-value ("cp")) nil [199 205])
+            ("RM" variable (:default-value ("rm")) nil [205 211])
+            ("MKDIR" variable (:default-value ("mkdir")) nil [211 223])
+            ("CC" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [223 276])
+            ("CXX" variable (:default-value ("mipsel-linux-uclibc-g++" "--sysroot=$(STAGING_PATH)")) nil [276 330])
+            ("LD" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [330 383])
+            ("AR" variable (:default-value ("mipsel-linux-uclibc-ar")) nil [383 409])
+            ("RANLIB" variable (:default-value ("mipsel-linux-uclibc-ranlib")) nil [409 443])
+            ("EXPORT_HEADERS" variable (:default-value ("../interface/security.h")) nil [444 486])
+            ("LIBS" variable (:default-value ("-lcrypto")) nil [577 591])
+            ("INCPATH" variable (:default-value ("-I../interface" "-I$(shell pwd)" "-I$(HDW_DEFS_DIR)")) nil [591 647])
+            ("LDFLAGS" variable (:default-value ("$(LDFLAGS)" "-Wl,-O1" "$(LIBS)")) nil [648 685])
+            ("CFLAGS" variable (:default-value ("$(CFLAGS)" "-Wextra")) nil [685 712])
+            ("CXXFLAGS" variable (:default-value ("$(CXXFLAGS)" "$(CFLAGS)")) nil [2021 2055])
+            ("SRCS" variable (:default-value ("security.cpp" "securecontentprocessor.cpp" "iidentifier.cpp" "identifierfactory.cpp" "isecurecontent.cpp" "securecontentfactory.cpp" "ihmac.cpp" "cryptographicfactory.cpp" "ikeyprovider.cpp" "idecrypt.cpp" "initialisationprovider.cpp" "iinitialiser.cpp" "tlvparser.cpp" "namedsemaphore.cpp" "arraystreambuf.cpp" "utilities.cpp" "ihash.cpp" "isecuredinfo.cpp" "securedinfofactory.cpp")) nil [2056 2425])
+            ("OBJS" variable (:default-value ("$(SRCS:.cpp=.o)")) nil [2425 2448])
+            ("ARCHIVE_LIBS" variable nil nil [2507 2523])
+            ("plugins/*/Makefile" include nil nil [2570 2597])
+            ("LIBRARY" variable (:default-value ("libsecurity.so")) nil [2598 2622])
+            ("ARCHIVE" variable (:default-value ("libsecurity.a")) nil [2622 2645])
+            ("LIBRARY_INSTALL_PATH" variable (:default-value ("$(STAGING_PATH)/usr/lib/$(LIBRARY)")) nil [2645 2701])
+            (".SUFFIXES" function (:arguments (".o" ".c" ".cpp")) nil [2702 2724])
+            (".cpp.o" function nil nil [2725 2786])
+            (".c.o" function nil nil [2787 2843])
+            ("install" function (:arguments ("all" "$(LIBRARY_INSTALL_PATH)" "headers_install")) nil [2844 2897])
+            ("install_pmw" function (:arguments ("all" "$(LIBRARY_INSTALL_PATH)" "headers_install")) nil [2898 2955])
+            ("all" function (:arguments ("$(LIBRARY)" "$(ARCHIVE)")) nil [2956 2983])
+            ("$(LIBRARY_INSTALL_PATH)" function (:arguments ("$(LIBRARY)")) nil [2984 3067])
+            ("headers_install" function nil nil [3068 3206])
+            ("$(LIBRARY)" function (:arguments ("$(OBJS)")) nil [3207 3321])
+            ("$(ARCHIVE)" function (:arguments ("$(OBJS)")) nil [3322 3414])
+            (".PHONY" function (:arguments ("clean")) nil [3415 3429])
+            ("clean" function nil nil [3429 3539]))          
+    :file "Makefile"
+    :pointmax 3539
+    :fsize 3567
+    :lastmodtime '(21907 59921 319136 174000)
+    :unmatched-syntax '((shell-command 3437 . 3538) (bol 3436 . 3436) (symbol 1985 . 2013) (punctuation 1983 . 1984) (punctuation 1982 . 1983) (symbol 1975 . 1981) (bol 1973 . 1973) (symbol 1907 . 1926) (punctuation 1905 . 1906) (punctuation 1904 . 1905) (symbol 1897 . 1903) (bol 1895 . 1895) (symbol 1844 . 1861) (punctuation 1842 . 1843) (punctuation 1841 . 1842) (symbol 1834 . 1840) (bol 1832 . 1832) (shell-command 1764 . 1796) (bol 1763 . 1763) (ENDIF 1706 . 1711) (bol 1704 . 1704) (symbol 1680 . 1703) (punctuation 1678 . 1679) (punctuation 1677 . 1678) (symbol 1670 . 1676) (bol 1666 . 1666) (semantic-list 1637 . 1665) (IFEQ 1632 . 1636) (bol 1630 . 1630) (bol 1590 . 1590) (symbol 1552 . 1588) (symbol 1520 . 1551) (symbol 1479 . 1519) (punctuation 1477 . 1478) (punctuation 1476 . 1477) (symbol 1461 . 1475) (bol 1459 . 1459) (semantic-list 1423 . 1458) (punctuation 1422 . 1423) (semantic-list 1380 . 1421) (punctuation 1379 . 1380) (semantic-list 1283 . 1378) (punctuation 1282 . 1283) (punctuation 1280 . 1281) (punctuation 1279 . 1280) (symbol 1272 . 1278) (bol 1270 . 1270) (symbol 1246 . 1269) (semantic-list 1230 . 1246) (punctuation 1229 . 1230) (symbol 1218 . 1229) (semantic-list 1207 . 1218) (punctuation 1206 . 1207) (INCLUDE 1198 . 1205) (bol 1196 . 1196) (semantic-list 1185 . 1195) (punctuation 1184 . 1185) (punctuation 1183 . 1184) (symbol 1169 . 1183) (bol 1167 . 1167) (ENDIF 1160 . 1165) (bol 1158 . 1158) (semantic-list 1137 . 1157) (punctuation 1136 . 1137) (symbol 1135 . 1136) (punctuation 1134 . 1135) (symbol 1126 . 1134) (bol 1122 . 1122) (semantic-list 1107 . 1121) (IFEQ 1102 . 1106) (bol 1100 . 1100) (bol 1089 . 1089) (bol 1015 . 1015) (bol 969 . 969) (ENDIF 962 . 967) (bol 960 . 960) (semantic-list 941 . 959) (punctuation 940 . 941) (punctuation 938 . 939) (punctuation 937 . 938) (symbol 929 . 936) (bol 925 . 925) (semantic-list 907 . 924) (punctuation 906 . 907) (punctuation 904 . 905) (punctuation 903 . 904) (symbol 896 . 902) (bol 892 . 892) (symbol 861 . 891) (semantic-list 850 . 861) (punctuation 849 . 850) (INCLUDE 841 . 848) (bol 837 . 837) (symbol 818 . 836) (punctuation 816 . 817) (punctuation 815 . 816) (symbol 807 . 813) (bol 803 . 803) (semantic-list 779 . 802) (IFEQ 774 . 778) (bol 772 . 772) (semantic-list 158 . 185) (punctuation 157 . 158) (bol 157 . 157) (semantic-list 58 . 86) (punctuation 57 . 58) (bol 57 . 57))
+    )
+   (semanticdb-table "idecrypt.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("idecrypt.h" include nil nil [1 22])
+            ("IDecrypt" function
+               (:constructor-flag t
+                :parent "IDecrypt"
+                :arguments 
+                  ( ("type" variable (:type ("DECRYPTION_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43 64]))                  
+                :type ("IDecrypt" type (:type "class") nil nil))
+                nil [24 87])
+            ("IDecrypt" function
+               (:destructor-flag t
+                :parent "IDecrypt"
+                :type "void")
+                nil [89 115])
+            ("supportsType" function
+               (:parent "IDecrypt"
+                :arguments 
+                  ( ("type" variable (:type ("DECRYPTION_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [369 390]))                  
+                :type "bool")
+                nil [341 426])
+            ("getType" function
+               (:parent "IDecrypt"
+                :type ("DECRYPTION_TYPE" type (:type "class") nil nil))
+                nil [548 611]))          
+    :file "idecrypt.cpp"
+    :pointmax 612
+    :fsize 611
+    :lastmodtime '(21907 59921 317136 185000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "idecrypt.h"
+    :file "idecrypt.h"
+    :fsize 1408
+    :lastmodtime '(21907 59921 791133 604000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!TCR!src!pace!middleware!security-lib!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

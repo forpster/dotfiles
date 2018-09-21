@@ -1,0 +1,137 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "sectool.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("string" include (:system-flag t) nil [21 38])
+            ("cstring" include (:system-flag t) nil [39 57])
+            ("unistd.h" include (:system-flag t) nil [58 77])
+            ("cstdlib" include (:system-flag t) nil [78 96])
+            ("signal.h" include (:system-flag t) nil [97 116])
+            ("security.h" include nil nil [117 138])
+            ("tlogger.h" include nil nil [140 160])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [161 185])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [186 233])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [235 255])
+            ("g_longlived" variable (:type "bool") nil [257 282])
+            ("sigHandler" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [358 362]))                  
+                :type "void")
+                nil [342 456])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [467 476])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [477 489]))                  
+                :type "int")
+                nil [458 11284]))          
+    :file "sectool.cpp"
+    :pointmax 11285
+    :fsize 11284
+    :lastmodtime '(21500 21592 663931 796000)
+    :unmatched-syntax '((string 212 . 231))
+    )
+   (semanticdb-table "sectest-arraystreambuf.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("istream" include (:system-flag t) nil [1 19])
+            ("string" include (:system-flag t) nil [20 37])
+            ("vector" include (:system-flag t) nil [38 55])
+            ("gtest/gtest.h" include nil nil [56 80])
+            ("arraystreambuf.h" include nil nil [81 108])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [110 130])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [211 226])
+                    ("" variable (:type ("WriteSmall" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [227 238]))                  
+                :type "int")
+                nil [206 470])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [543 558])
+                    ("" variable (:type ("WriteLarge" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [559 570]))                  
+                :type "int")
+                nil [538 846])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [930 945])
+                    ("" variable (:type ("WriteMultiAllocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [946 967]))                  
+                :type "int")
+                nil [925 1277])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1360 1375])
+                    ("" variable (:type ("ReadSmall" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1376 1386]))                  
+                :type "int")
+                nil [1355 2237])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2312 2327])
+                    ("" variable (:type ("ReadLarge" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2328 2338]))                  
+                :type "int")
+                nil [2307 3206])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3292 3307])
+                    ("" variable (:type ("ReadMultiAllocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3308 3328]))                  
+                :type "int")
+                nil [3287 4222])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4254 4269])
+                    ("" variable (:type ("SeekGet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4270 4278]))                  
+                :type "int")
+                nil [4249 6218])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6260 6275])
+                    ("" variable (:type ("SeekGetBad" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6276 6287]))                  
+                :type "int")
+                nil [6255 8225])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8257 8272])
+                    ("" variable (:type ("SeekPut" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8273 8281]))                  
+                :type "int")
+                nil [8252 10220])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10262 10277])
+                    ("" variable (:type ("SeekPutBad" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10278 10289]))                  
+                :type "int")
+                nil [10257 12227])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("ArrayStreamBuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12269 12284])
+                    ("" variable (:type ("ReadOnlyBuffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12285 12300]))                  
+                :type "int")
+                nil [12264 13688]))          
+    :file "sectest-arraystreambuf.cpp"
+    :pointmax 13689
+    :fsize 13688
+    :lastmodtime '(21500 21796 517882 687000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D713!src!pace!middleware!security-lib!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

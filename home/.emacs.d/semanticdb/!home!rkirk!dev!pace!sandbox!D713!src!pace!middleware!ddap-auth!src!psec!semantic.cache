@@ -1,0 +1,523 @@
+;; Object psec/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "psec/"
+  :tables (list 
+      (semanticdb-table "psecclient.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("psecclient.h" include nil nil [1 24])
+            ("DDAPAUTH" using (:type ("DDAPAUTH" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [26 51])
+            ("PsecClient" function
+               (:constructor-flag t
+                :parent "PsecClient"
+                :type ("PsecClient" type (:type "class") nil nil))
+                nil [53 101])
+            ("PsecClient" function
+               (:destructor-flag t
+                :parent "PsecClient"
+                :type "void")
+                nil [103 133])
+            ("setUuid" function
+               (:parent "PsecClient"
+                :arguments 
+                  ( ("Uuid" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [160 184]))                  
+                :type "void")
+                nil [135 206])
+            ("getUuid" function
+               (:parent "PsecClient"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [208 269]))          
+    :file "psecclient.cpp"
+    :pointmax 270
+    :fsize 269
+    :lastmodtime '(21853 38825 477513 653000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "psecclient.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("PSECCLIENT_H" variable (:constant-flag t) nil [30 42])
+            ("string" include (:system-flag t) nil [44 61])
+            ("iddapclient.h" include nil nil [62 86])
+            ("DDAPAUTH" type
+               (:members 
+                  ( ("PsecClient" type
+                       (:superclasses 
+                          ( ("IDdapClient" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [220 227])
+                            ("PsecClient" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("PsecClient" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [231 244])
+                            ("PsecClient" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [248 270])
+                            ("setUuid" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("Uuid" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [296 320]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [275 321])
+                            ("getUuid" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [325 361])
+                            ("private" label nil (reparse-symbol classsubparts) [363 371])
+                            ("PsecClient" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PsecClient" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [419 437]))                                  
+                                :type ("PsecClient" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [408 438])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PsecClient" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [464 482]))                                  
+                                :type ("PsecClient" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [442 483])
+                            ("m_uuid" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [488 507]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [180 510]))                  
+                :type "namespace")
+                nil [88 513]))          
+    :file "psecclient.h"
+    :pointmax 561
+    :fsize 560
+    :lastmodtime '(21852 28122 448753 219000)
+    :unmatched-syntax '((punctuation 513 . 514))
+    :lexical-table 
+        '(("PSECCLIENT_H")
+          )
+
+    )
+   (semanticdb-table "psecauthenticationtoken.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("psecauthenticationtoken.h" include nil nil [1 37])
+            ("DDAPAUTH" using (:type ("DDAPAUTH" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [39 64])
+            ("PsecAuthenticationToken" function
+               (:constructor-flag t
+                :parent "PsecAuthenticationToken"
+                :type ("PsecAuthenticationToken" type (:type "class") nil nil))
+                nil [66 153])
+            ("PsecAuthenticationToken" function
+               (:destructor-flag t
+                :parent "PsecAuthenticationToken"
+                :type "void")
+                nil [155 211])
+            ("getRawToken" function
+               (:parent "PsecAuthenticationToken"
+                :type ("DdapTokenData" type (:type "class") nil nil))
+                nil [289 373])
+            ("setRawToken" function
+               (:parent "PsecAuthenticationToken"
+                :arguments 
+                  ( ("tokenData" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("DdapTokenData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [489 520]))                  
+                :type "void")
+                nil [447 551])
+            ("getValidator" function
+               (:parent "PsecAuthenticationToken"
+                :type ("boost::shared_ptr" type
+                     (:template-specifier 
+                        ( ("IDdapAuthenticationTokenValidator" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [681 894]))          
+    :file "psecauthenticationtoken.cpp"
+    :pointmax 895
+    :fsize 894
+    :lastmodtime '(21853 38776 934785 161000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "psecauthenticationtoken.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("PSECAUTHENTICATIONTOKEN_H" variable (:constant-flag t) nil [43 68])
+            ("iddapauthenticationtoken.h" include nil nil [70 107])
+            ("DDAPAUTH" type
+               (:members 
+                  ( ("PsecAuthenticationToken" type
+                       (:superclasses 
+                          ( ("IDdapAuthenticationToken" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [251 258])
+                            ("PsecAuthenticationToken" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("PsecAuthenticationToken" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [262 288])
+                            ("PsecAuthenticationToken" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [292 327])
+                            ("getRawToken" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("DdapTokenData" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [423 465])
+                            ("setRawToken" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("tokenData" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DdapTokenData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [582 613]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [557 614])
+                            ("getValidator" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("IDdapAuthenticationTokenValidator" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [762 844])
+                            ("private" label nil (reparse-symbol classsubparts) [846 854])
+                            ("PsecAuthenticationToken" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PsecAuthenticationToken" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [915 946]))                                  
+                                :type ("PsecAuthenticationToken" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [891 947])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PsecAuthenticationToken" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [986 1017]))                                  
+                                :type ("PsecAuthenticationToken" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [951 1018])
+                            ("m_rawToken" variable (:type ("DdapTokenData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1023 1048]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [185 1051]))                  
+                :type "namespace")
+                nil [109 1054]))          
+    :file "psecauthenticationtoken.h"
+    :pointmax 1115
+    :fsize 1114
+    :lastmodtime '(21852 31674 320988 156000)
+    :unmatched-syntax '((punctuation 1054 . 1055) (punctuation 1052 . 1053) (symbol 1037 . 1046) (symbol 1023 . 1036) (symbol 1037 . 1046) (symbol 1023 . 1036) (punctuation 1049 . 1050) (symbol 1037 . 1043) (symbol 1023 . 1036))
+    :lexical-table 
+        '(("PSECAUTHENTICATIONTOKEN_H")
+          )
+
+    )
+   (semanticdb-table "psecauthenticator.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("PSECAUTHENTICATOR_H" variable (:constant-flag t) nil [37 56])
+            ("iddapauthenticator.h" include nil nil [58 89])
+            ("DDAPAUTH" type
+               (:members 
+                  ( ("PsecAuthenticator" type
+                       (:superclasses 
+                          ( ("IDdapAuthenticator" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [229 236])
+                            ("PsecAuthenticator" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("PsecAuthenticator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [240 260])
+                            ("PsecAuthenticator" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [264 293])
+                            ("generateToken" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("client" variable
+                                       (:constant-flag t
+                                        :type ("boost::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("IDdapClient" type (:constant-flag t) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [325 375])
+                                    ("token" variable (:type ("boost::shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("IDdapAuthenticationToken" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [376 426]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [298 433])
+                            ("validateToken" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("client" variable
+                                       (:constant-flag t
+                                        :type ("boost::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("IDdapClient" type (:constant-flag t) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [464 514])
+                                    ("token" variable
+                                       (:constant-flag t
+                                        :type ("boost::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("IDdapAuthenticationToken" type (:constant-flag t) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [515 577]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [437 584])
+                            ("protectToken" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("token" variable
+                                       (:constant-flag t
+                                        :type ("boost::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("IDdapAuthenticationToken" type (:constant-flag t) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [614 676])
+                                    ("protectedToken" variable (:type ("boost::shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("IDdapProtectedToken" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [677 731]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [588 738])
+                            ("unProtectToken" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("protectedToken" variable
+                                       (:constant-flag t
+                                        :type ("boost::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("IDdapProtectedToken" type (:constant-flag t) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [770 836])
+                                    ("clearToken" variable (:type ("boost::shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("IDdapAuthenticationToken" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [837 892]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [742 899])
+                            ("private" label nil (reparse-symbol classsubparts) [901 909])
+                            ("PsecAuthenticator" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PsecAuthenticator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [964 989]))                                  
+                                :type ("PsecAuthenticator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [946 990])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PsecAuthenticator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1023 1048]))                                  
+                                :type ("PsecAuthenticator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [994 1049]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [175 1052]))                  
+                :type "namespace")
+                nil [91 1055]))          
+    :file "psecauthenticator.h"
+    :pointmax 1110
+    :fsize 1109
+    :lastmodtime '(21853 61857 68099 360000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PSECAUTHENTICATOR_H")
+          )
+
+    )
+   (semanticdb-table "psecprotectedtoken.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("PSECPROTECTEDTOKEN_H" variable (:constant-flag t) nil [38 58])
+            ("iddapprotectedtoken.h" include nil nil [60 92])
+            ("DDAPAUTH" type
+               (:members 
+                  ( ("PsecProtectedToken" type
+                       (:superclasses 
+                          ( ("IDdapProtectedToken" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [241 248])
+                            ("PsecProtectedToken" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("PsecProtectedToken" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [252 273])
+                            ("PsecProtectedToken" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [277 307])
+                            ("getProtectedToken" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("DdapProtectedTokenData" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [312 369])
+                            ("setProtectedToken" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("tokenData" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DdapProtectedTokenData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [404 444]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [373 445])
+                            ("private" label nil (reparse-symbol classsubparts) [447 455])
+                            ("PsecProtectedToken" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PsecProtectedToken" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [511 537]))                                  
+                                :type ("PsecProtectedToken" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [492 538])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PsecProtectedToken" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [572 598]))                                  
+                                :type ("PsecProtectedToken" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [542 599])
+                            ("m_protectedData" variable (:type ("DdapProtectedTokenData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [604 643]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [185 646]))                  
+                :type "namespace")
+                nil [94 649]))          
+    :file "psecprotectedtoken.h"
+    :pointmax 705
+    :fsize 704
+    :lastmodtime '(21853 39071 914078 923000)
+    :unmatched-syntax '((punctuation 649 . 650) (punctuation 644 . 645) (symbol 627 . 638) (symbol 604 . 626) (symbol 627 . 638) (symbol 604 . 626) (punctuation 635 . 636) (symbol 627 . 629) (symbol 604 . 626) (symbol 627 . 629) (symbol 604 . 626) (punctuation 610 . 611))
+    :lexical-table 
+        '(("PSECPROTECTEDTOKEN_H")
+          )
+
+    )
+   (semanticdb-table "psecprotectedtoken.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("psecprotectedtoken.h" include nil nil [1 32])
+            ("DDAPAUTH" using (:type ("DDAPAUTH" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [34 59])
+            ("PsecProtectedToken" function
+               (:constructor-flag t
+                :parent "PsecProtectedToken"
+                :type ("PsecProtectedToken" type (:type "class") nil nil))
+                nil [61 133])
+            ("PsecProtectedToken" function
+               (:destructor-flag t
+                :parent "PsecProtectedToken"
+                :type "void")
+                nil [135 181])
+            ("getProtectedToken" function
+               (:parent "PsecProtectedToken"
+                :type ("DdapProtectedTokenData" type (:type "class") nil nil))
+                nil [183 282])
+            ("setProtectedToken" function
+               (:parent "PsecProtectedToken"
+                :arguments 
+                  ( ("tokenData" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("DdapProtectedTokenData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [327 367]))                  
+                :type "void")
+                nil [284 403]))          
+    :file "psecprotectedtoken.cpp"
+    :pointmax 404
+    :fsize 403
+    :lastmodtime '(21853 39106 507883 775000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D713!src!pace!middleware!ddap-auth!src!psec!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,24 @@
+;; Object latens/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "latens/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("SRCS" variable (:default-value ("plugins/latens/latensinitialiser.cpp" "plugins/latens/latensidentifier.cpp" "plugins/latens/latenssecuritycontainer.cpp" "plugins/latens/latenssecuredinfo.cpp")) nil [22 193])
+            ("INCPATH" variable (:default-value ("-Iplugins/latens/interface")) nil [194 231])
+            ("EXPORT_HEADERS" variable (:default-value ("plugins/latens/interface/latenssecuredinfo_public.h")) nil [231 301])
+            ("INCPATH" variable (:default-value ("-I${LATENS_CAS_SDK_INC}")) nil [1177 1212])
+            ("ARCHIVE_LIBS" variable (:default-value ("${LATENS_CAS_SDK_LIB}/lib_latens_vad_app.a")) nil [1212 1271])
+            ("EXPORT_HEADERS" variable (:default-value ("${LATENS_CAS_SDK_INC}/latens_vad_public.h")) nil [1271 1331]))          
+    :file "Makefile"
+    :pointmax 1331
+    :fsize 1330
+    :lastmodtime '(21591 53945 287523 439000)
+    :unmatched-syntax '((ENDIF 1164 . 1169) (bol 1162 . 1162) (ENDIF 1156 . 1161) (bol 1152 . 1152) (semantic-list 1114 . 1151) (punctuation 1113 . 1114) (bol 1109 . 1109) (ELSE 1104 . 1108) (bol 1100 . 1100) (symbol 1085 . 1099) (semantic-list 1064 . 1085) (punctuation 1063 . 1064) (punctuation 1061 . 1062) (punctuation 1060 . 1061) (symbol 1041 . 1059) (bol 1037 . 1037) (semantic-list 1005 . 1036) (IFEQ 1000 . 1004) (bol 996 . 996) (ELSE 991 . 995) (bol 989 . 989) (symbol 977 . 988) (semantic-list 956 . 977) (punctuation 955 . 956) (punctuation 953 . 954) (punctuation 952 . 953) (symbol 933 . 951) (bol 931 . 931) (semantic-list 908 . 930) (IFEQ 903 . 907) (bol 901 . 901) (symbol 891 . 899) (semantic-list 870 . 891) (punctuation 869 . 870) (punctuation 867 . 868) (punctuation 866 . 867) (symbol 847 . 865) (bol 845 . 845) (symbol 843 . 844) (semantic-list 828 . 843) (punctuation 827 . 828) (symbol 786 . 827) (semantic-list 773 . 786) (punctuation 772 . 773) (punctuation 770 . 771) (punctuation 769 . 770) (symbol 749 . 768) (bol 747 . 747) (bol 658 . 658) (symbol 641 . 652) (semantic-list 620 . 641) (punctuation 619 . 620) (punctuation 617 . 618) (punctuation 616 . 617) (symbol 597 . 615) (bol 595 . 595) (symbol 586 . 594) (semantic-list 565 . 586) (punctuation 564 . 565) (punctuation 562 . 563) (punctuation 561 . 562) (symbol 542 . 560) (bol 540 . 540) (symbol 538 . 539) (semantic-list 523 . 538) (punctuation 522 . 523) (symbol 481 . 522) (semantic-list 468 . 481) (punctuation 467 . 468) (punctuation 465 . 466) (punctuation 464 . 465) (symbol 444 . 463) (bol 442 . 442) (bol 353 . 353))
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D713.fd!src!pace!middleware!security-lib!lib!plugins!latens!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

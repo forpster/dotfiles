@@ -1,0 +1,16 @@
+;; Object mac-os-assessment_mac-os-10-11-assessment/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mac-os-assessment_mac-os-10-11-assessment/"
+  :tables
+  (list
+    (semanticdb-table "results.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "results.json"
+      :pointmax 359910
+      :fsize 359909
+      :lastmodtime '(23053 36098 167071 864000)
+      :unmatched-syntax nil))
+  :file "!home!rkirk!rapid7!assessment-service-integration!target!cucumber!mac-os-assessment_mac-os-10-11-assessment!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

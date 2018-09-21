@@ -1,0 +1,73 @@
+;; Object Forthnet/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Forthnet/"
+  :tables (list 
+    (semanticdb-table "k3procins_forthnet.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("struct" include nil nil [24 44])
+            ("tag_cuskey" variable nil nil [163 196])
+            ("tag_keyvarL" variable nil nil [197 231])
+            ("tag_keyvarH" variable nil nil [232 266])
+            ("tag_procin1" variable nil nil [267 301])
+            ("tag_procin2" variable nil nil [302 336])
+            ("cuskey" variable nil nil [338 365])
+            ("keyvarL" variable nil nil [366 394])
+            ("keyvarH" variable nil nil [395 423])
+            ("procin1" variable nil nil [424 482])
+            ("procin2" variable nil nil [483 541])
+            ("pack_str" variable nil nil [543 557])
+            ("pack_str" variable nil nil [587 605])
+            ("pack_str" variable nil nil [615 633])
+            ("pack_str" variable nil nil [644 662])
+            ("pack_str" variable nil nil [673 716])
+            ("pack_str" variable nil nil [727 770])
+            ("keyladder_blob_data" variable nil nil [782 1143])
+            ("print" code nil nil [1145 1214])
+            ("tag_keyladder_blob" variable nil nil [1258 1299])
+            ("tag_kpk_rsa1" variable nil nil [1300 1335])
+            ("tag_kpk_rsa2" variable nil nil [1336 1371])
+            ("kpk_rsa1" variable nil nil [1373 1432])
+            ("kpk_rsa2" variable nil nil [1433 1492])
+            ("pack_str" variable nil nil [1494 1508])
+            ("pack_str" variable nil nil [1538 1593])
+            ("pack_str" variable nil nil [1616 1660])
+            ("pack_str" variable nil nil [1687 1731])
+            ("k3procins" variable nil nil [1759 1984])
+            ("print" code nil nil [1986 2040])
+            ("with" code nil nil [2077 2139])
+            ("tag_clear_ok3" variable nil nil [2649 2685])
+            ("tag_clear_ok4" variable nil nil [2686 2722])
+            ("tag_clear_ok5" variable nil nil [2723 2759])
+            ("tag_clear_ok6" variable nil nil [2760 2796])
+            ("tag_clear_ok7" variable nil nil [2797 2833])
+            ("tag_clear_ok8" variable nil nil [2834 2870])
+            ("tag_clear_ok9" variable nil nil [2871 2907])
+            ("tag_clear_ok10" variable nil nil [2908 2945])
+            ("tag_clear_ok11" variable nil nil [2946 2983])
+            ("tag_clear_ok12" variable nil nil [2984 3021])
+            ("pack_str" variable nil nil [3023 3037])
+            ("pack_str" variable nil nil [3067 3112])
+            ("pack_str" variable nil nil [3125 3170])
+            ("pack_str" variable nil nil [3183 3228])
+            ("pack_str" variable nil nil [3241 3286])
+            ("pack_str" variable nil nil [3299 3344])
+            ("pack_str" variable nil nil [3357 3402])
+            ("pack_str" variable nil nil [3415 3460])
+            ("pack_str" variable nil nil [3473 3519])
+            ("pack_str" variable nil nil [3533 3579])
+            ("pack_str" variable nil nil [3593 3639])
+            ("okprocins" variable nil nil [3654 4352])
+            ("print" code nil nil [4354 4408])
+            ("with" code nil nil [4445 4507]))          
+    :file "k3procins_forthnet.py"
+    :pointmax 4507
+    :fsize 4506
+    :lastmodtime '(21721 56672 8828 260000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!Documents!Tungsten!Forthnet!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

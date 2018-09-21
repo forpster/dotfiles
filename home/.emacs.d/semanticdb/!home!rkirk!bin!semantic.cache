@@ -1,0 +1,21 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "tt.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("re" include nil nil [24 33])
+            ("FILE" variable nil nil [35 156])
+            ("print" code nil nil [158 176])
+            ("for" code nil nil [178 421])
+            ("print" code nil nil [422 441]))          
+      :file "tt.py"
+      :pointmax 442
+      :fsize 441
+      :lastmodtime '(22525 3254 868187 144000)
+      :unmatched-syntax nil))
+  :file "!home!rkirk!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,2840 @@
+;; Object access/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "access/"
+  :tables (list 
+   (semanticdb-table "AS400.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.ibm.as400.access" package nil nil [502 531])
+            ("java.beans.PropertyChangeListener" include nil nil [533 574])
+            ("java.beans.PropertyChangeSupport" include nil nil [575 615])
+            ("java.beans.PropertyVetoException" include nil nil [616 656])
+            ("java.beans.VetoableChangeListener" include nil nil [657 698])
+            ("java.beans.VetoableChangeSupport" include nil nil [699 739])
+            ("java.io.IOException" include nil nil [740 767])
+            ("java.io.ObjectInputStream" include nil nil [768 801])
+            ("java.io.Serializable" include nil nil [802 830])
+            ("java.io.UnsupportedEncodingException" include nil nil [831 875])
+            ("java.net.InetAddress" include nil nil [876 904])
+            ("java.net.UnknownHostException" include nil nil [905 942])
+            ("java.net.Socket" include nil nil [943 966])
+            ("java.net.URL" include nil nil [967 987])
+            ("java.util.GregorianCalendar" include nil nil [988 1023])
+            ("java.util.Hashtable" include nil nil [1024 1051])
+            ("java.util.Locale" include nil nil [1052 1076])
+            ("java.util.StringTokenizer" include nil nil [1077 1110])
+            ("java.util.TimeZone" include nil nil [1111 1137])
+            ("java.util.Vector" include nil nil [1138 1162])
+            ("com.ibm.as400.security.auth.ProfileTokenCredential" include nil nil [1164 1222])
+            ("com.ibm.as400.security.auth.ProfileTokenProvider" include nil nil [1223 1279])
+            ("AS400" type
+               (:typemodifiers ("public")
+                :interfaces ("Serializable")
+                :members 
+                  ( ("CLASSNAME" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2441 2510])
+                    ("jdk14" variable
+                       (:typemodifiers ("static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2515 2544])
+                    ("serialVersionUID" variable
+                       (:typemodifiers ("static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [2667 2707])
+                    ("PASSWORD_TRACE" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2712 2764])
+                    ("FILE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2830 2863])
+                    ("PRINT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2929 2963])
+                    ("COMMAND" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3031 3067])
+                    ("DATAQUEUE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3137 3175])
+                    ("DATABASE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3244 3281])
+                    ("RECORDACCESS" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3355 3396])
+                    ("CENTRAL" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3464 3500])
+                    ("SIGNON" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3568 3603])
+                    ("USE_PORT_MAPPER" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3793 3838])
+                    ("AUTHENTICATION_SCHEME_PASSWORD" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3925 3984])
+                    ("AUTHENTICATION_SCHEME_GSS_TOKEN" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4071 4131])
+                    ("AUTHENTICATION_SCHEME_PROFILE_TOKEN" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4222 4286])
+                    ("AUTHENTICATION_SCHEME_IDENTITY_TOKEN" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4378 4443])
+                    ("GSS_OPTION_MANDATORY" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4784 4833])
+                    ("GSS_OPTION_FALLBACK" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5177 5225])
+                    ("GSS_OPTION_NONE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5472 5516])
+                    ("onAS400" variable
+                       (:typemodifiers ("static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5567 5598])
+                    ("nativeVRM" variable
+                       (:typemodifiers ("static")
+                        :type "ServerVersion")
+                        (reparse-symbol class_member_declaration) [5654 5692])
+                    ("defaultSignonHandlerClass_" variable
+                       (:typemodifiers ("static")
+                        :type "Class")
+                        (reparse-symbol class_member_declaration) [5740 5809])
+                    ("defaultSignonHandler_" variable
+                       (:typemodifiers ("static")
+                        :type "SignonHandler")
+                        (reparse-symbol class_member_declaration) [5814 5857])
+                    ("defaultGuiAvailable_" variable
+                       (:typemodifiers ("private" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5912 5963])
+                    ("defaultMustAddLanguageLibrary_" variable
+                       (:typemodifiers ("private" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6028 6090])
+                    ("defaultMustUseSockets_" variable
+                       (:typemodifiers ("private" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6147 6201])
+                    ("defaultMustUseNetSockets_" variable
+                       (:typemodifiers ("private" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6261 6318])
+                    ("defaultMustUseSuppliedProfile_" variable
+                       (:typemodifiers ("private" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6383 6445])
+                    ("defaultThreadUsed_" variable
+                       (:typemodifiers ("private" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6498 6547])
+                    ("currentLib_" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6557 6595])
+                    ("librariesForThread_" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6600 6646])
+                    ("systemList" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Vector")
+                        (reparse-symbol class_member_declaration) [11492 11540])
+                    ("defaultUsers" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Hashtable")
+                        (reparse-symbol class_member_declaration) [11603 11659])
+                    ("expirationWarning" variable
+                       (:typemodifiers ("private" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [11741 11782])
+                    ("useSystemExpirationWarning_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [11884 11936])
+                    ("alreadyCheckedForMultipleVersions_" variable
+                       (:typemodifiers ("private" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [11942 12000])
+                    ("gssManager_" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [12110 12151])
+                    ("systemName_" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [12177 12209])
+                    ("systemNameLocal_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [12276 12317])
+                    ("userId_" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [12338 12366])
+                    ("credVault_" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "CredentialVault")
+                        (reparse-symbol class_member_declaration) [12965 13010])
+                    ("gssCredential_" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [13152 13199])
+                    ("gssName_" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [13242 13271])
+                    ("gssOption_" variable (:type "int") (reparse-symbol class_member_declaration) [13313 13350])
+                    ("proxyServer_" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [13389 13432])
+                    ("proxyClientConnection_" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [13486 13541])
+                    ("guiAvailable_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [13810 13863])
+                    ("usePasswordCache_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [13899 13940])
+                    ("useDefaultUser_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [13974 14013])
+                    ("showCheckboxes_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [14069 14108])
+                    ("signingOn_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [14184 14219])
+                    ("useSSLConnection_" variable (:type "SSLOptions") (reparse-symbol class_member_declaration) [14327 14363])
+                    ("mustAddLanguageLibrary_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [14462 14535])
+                    ("mustUseSockets_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [14628 14685])
+                    ("mustUseNetSockets_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [14777 14840])
+                    ("mustUseSuppliedProfile_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [14912 14985])
+                    ("threadUsed_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [15075 15124])
+                    ("locale_" variable
+                       (:typemodifiers ("private")
+                        :type "Locale")
+                        (reparse-symbol class_member_declaration) [15178 15223])
+                    ("nlv_" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [15278 15349])
+                    ("timezone_" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "TimeZone")
+                        (reparse-symbol class_member_declaration) [15393 15430])
+                    ("socketProperties_" variable
+                       (:typemodifiers ("private")
+                        :type "SocketProperties")
+                        (reparse-symbol class_member_declaration) [15498 15566])
+                    ("ccsid_" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [15598 15631])
+                    ("connectionListeners_" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "Vector")
+                        (reparse-symbol class_member_declaration) [15685 15738])
+                    ("dispatcher_" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "ConnectionListener")
+                        (reparse-symbol class_member_declaration) [15860 15916])
+                    ("propertyChangeListeners_" variable
+                       (:typemodifiers ("transient")
+                        :type "PropertyChangeSupport")
+                        (reparse-symbol class_member_declaration) [15996 16060])
+                    ("vetoableChangeListeners_" variable
+                       (:typemodifiers ("transient")
+                        :type "VetoableChangeSupport")
+                        (reparse-symbol class_member_declaration) [16140 16204])
+                    ("propertiesFrozen_" variable
+                       (:typemodifiers ("transient")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [16288 16332])
+                    ("impl_" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "AS400Impl")
+                        (reparse-symbol class_member_declaration) [16368 16409])
+                    ("signonInfo_" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "SignonInfo")
+                        (reparse-symbol class_member_declaration) [16574 16622])
+                    ("ddmRDB_" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [16684 16714])
+                    ("signonHandler_" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "SignonHandler")
+                        (reparse-symbol class_member_declaration) [16775 16829])
+                    ("handlerCanceled_" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [16834 16885])
+                    ("forcePrompt_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [17372 17409])
+                    ("AS400" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [17830 18182])
+                    ("AS400" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [18675 18692]))                          )
+                        (reparse-symbol class_member_declaration) [18662 19217])
+                    ("AS400" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [19718 19735])
+                            ("userId" variable (:type "String") (reparse-symbol formal_parameters) [19737 19750]))                          )
+                        (reparse-symbol class_member_declaration) [19705 20631])
+                    ("AS400" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [20944 20961])
+                            ("profileToken" variable (:type "ProfileTokenCredential") (reparse-symbol formal_parameters) [20963 20998]))                          )
+                        (reparse-symbol class_member_declaration) [20931 21459])
+                    ("AS400" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [21800 21817])
+                            ("tokenProvider" variable (:type "ProfileTokenProvider") (reparse-symbol formal_parameters) [21819 21853]))                          )
+                        (reparse-symbol class_member_declaration) [21787 21911])
+                    ("AS400" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [22451 22468])
+                            ("tokenProvider" variable (:type "ProfileTokenProvider") (reparse-symbol formal_parameters) [22470 22504])
+                            ("refreshThreshold" variable (:type "int") (reparse-symbol formal_parameters) [22506 22526]))                          )
+                        (reparse-symbol class_member_declaration) [22438 22609])
+                    ("AS400" function
+                       (:constructor-flag t
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [22629 22646])
+                            ("tokenProvider" variable (:type "ProfileTokenProvider") (reparse-symbol formal_parameters) [22648 22682])
+                            ("refreshThreshold" variable (:type "Integer") (reparse-symbol formal_parameters) [22684 22708]))                          )
+                        (reparse-symbol class_member_declaration) [22615 23469])
+                    ("constructWithProfileToken" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [23621 23638])
+                            ("credVault" variable (:type "ProfileTokenVault") (reparse-symbol formal_parameters) [23640 23667]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [23582 24140])
+                    ("AS400" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [24751 24768])
+                            ("userId" variable (:type "String") (reparse-symbol formal_parameters) [24770 24783])
+                            ("password" variable (:type "String") (reparse-symbol formal_parameters) [24785 24800]))                          )
+                        (reparse-symbol class_member_declaration) [24738 26048])
+                    ("USRLIBL_SINGLE_VALUE" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [26054 26208])
+                    ("aspName" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [26213 26238])
+                    ("setIASPGroup" function
+                       (:throws ("AS400SecurityException" "ErrorCompletingRequestException" "IOException" "InterruptedException" "PropertyVetoException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("IASPGroup" variable (:type "String") (reparse-symbol formal_parameters) [26838 26854]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [26813 27555])
+                    ("setIASPGroup" function
+                       (:throws ("AS400SecurityException" "ErrorCompletingRequestException" "IOException" "InterruptedException" "PropertyVetoException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("IASPGroup" variable (:type "String") (reparse-symbol formal_parameters) [28260 28276])
+                            ("currentLib" variable (:type "String") (reparse-symbol formal_parameters) [28278 28295]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [28235 29398])
+                    ("setIASPGroup" function
+                       (:throws ("AS400SecurityException" "ErrorCompletingRequestException" "IOException" "InterruptedException" "PropertyVetoException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("IASPGroup" variable (:type "String") (reparse-symbol formal_parameters) [30165 30181])
+                            ("currentLib" variable (:type "String") (reparse-symbol formal_parameters) [30183 30200])
+                            ("librariesForThread" variable (:type "String") (reparse-symbol formal_parameters) [30202 30227]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [30140 31820])
+                    ("setIASPGroup" function
+                       (:throws ("AS400SecurityException" "ErrorCompletingRequestException" "IOException" "InterruptedException" "PropertyVetoException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("IASPGroup" variable (:type "String") (reparse-symbol formal_parameters) [32599 32615])
+                            ("currentLib" variable (:type "String") (reparse-symbol formal_parameters) [32617 32634])
+                            ("librariesForThread" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [32636 32663]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [32574 35561])
+                    ("AS400" function
+                       (:constructor-flag t
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [35763 35780])
+                            ("userId" variable (:type "String") (reparse-symbol formal_parameters) [35782 35795])
+                            ("pwVault" variable (:type "CredentialVault") (reparse-symbol formal_parameters) [35797 35820]))                          )
+                        (reparse-symbol class_member_declaration) [35749 37583])
+                    ("AS400" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [38354 38371])
+                            ("userId" variable (:type "String") (reparse-symbol formal_parameters) [38373 38386])
+                            ("password" variable (:type "String") (reparse-symbol formal_parameters) [38388 38403])
+                            ("proxyServer" variable (:type "String") (reparse-symbol formal_parameters) [38405 38423]))                          )
+                        (reparse-symbol class_member_declaration) [38341 39818])
+                    ("AS400" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("system" variable (:type "AS400") (reparse-symbol formal_parameters) [40109 40121]))                          )
+                        (reparse-symbol class_member_declaration) [40096 42584])
+                    ("addConnectionListener" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("listener" variable (:type "ConnectionListener") (reparse-symbol formal_parameters) [42753 42780]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [42719 44000])
+                    ("addPasswordCacheEntry" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [44485 44502])
+                            ("userId" variable (:type "String") (reparse-symbol formal_parameters) [44504 44517])
+                            ("password" variable (:type "String") (reparse-symbol formal_parameters) [44519 44534]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [44444 44811])
+                    ("addPasswordCacheEntry" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [45456 45473])
+                            ("userId" variable (:type "String") (reparse-symbol formal_parameters) [45475 45488])
+                            ("password" variable (:type "String") (reparse-symbol formal_parameters) [45490 45505])
+                            ("proxyServer" variable (:type "String") (reparse-symbol formal_parameters) [45507 45525]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [45415 45851])
+                    ("addPasswordCacheEntry" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("system" variable (:type "AS400") (reparse-symbol formal_parameters) [45940 45952]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [45906 46159])
+                    ("addPropertyChangeListener" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("listener" variable (:type "PropertyChangeListener") (reparse-symbol formal_parameters) [46343 46374]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [46305 46891])
+                    ("addVetoableChangeListener" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("listener" variable (:type "VetoableChangeListener") (reparse-symbol formal_parameters) [47130 47161]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [47092 47678])
+                    ("arePropertiesFrozen" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [48079 48275])
+                    ("authenticate" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("userId" variable (:type "String") (reparse-symbol formal_parameters) [49382 49395])
+                            ("password" variable (:type "String") (reparse-symbol formal_parameters) [49397 49412]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [49354 49620])
+                    ("nativeVersion" variable
+                       (:typemodifiers ("private" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [49664 49702])
+                    ("getNativeVersion" function
+                       (:typemodifiers ("private" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [49707 50476])
+                    ("canUseNativeOptimizations" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [51108 52924])
+                    ("credTypeToString" function
+                       (:typemodifiers ("private" "static" "final")
+                        :arguments 
+                          ( ("credType" variable (:type "int") (reparse-symbol formal_parameters) [52975 52987]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [52930 53535])
+                    ("changePassword" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("oldPassword" variable (:type "String") (reparse-symbol formal_parameters) [53991 54009])
+                            ("newPassword" variable (:type "String") (reparse-symbol formal_parameters) [54011 54029]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [53964 57183])
+                    ("chooseImpl" function
+                       (:typemodifiers ("private" "synchronized")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [57487 58477])
+                    ("clearPasswordCache" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [58581 58827])
+                    ("clearPasswordCache" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [59049 59066]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [59011 60552])
+                    ("connectService" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [61597 61608]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [61570 63091])
+                    ("connectToPort" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("port" variable (:type "int") (reparse-symbol formal_parameters) [63524 63532]))                          
+                        :type "Socket")
+                        (reparse-symbol class_member_declaration) [63496 63870])
+                    ("connectToPort" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("port" variable (:type "int") (reparse-symbol formal_parameters) [64516 64524])
+                            ("forceNonLocalhost" variable (:type "boolean") (reparse-symbol formal_parameters) [64525 64550]))                          
+                        :type "Socket")
+                        (reparse-symbol class_member_declaration) [64488 64898])
+                    ("construct" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [64963 65297])
+                    ("disconnectAllServices" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [65528 66161])
+                    ("disconnectService" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [66885 66896]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [66855 67308])
+                    ("fireConnectEvent" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("event" variable (:type "ConnectionEvent") (reparse-symbol formal_parameters) [67404 67425])
+                            ("connect" variable (:type "boolean") (reparse-symbol formal_parameters) [67427 67442]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [67374 67951])
+                    ("generateProfileToken" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("userIdentity" variable (:type "String") (reparse-symbol formal_parameters) [69458 69477])
+                            ("tokenType" variable (:type "int") (reparse-symbol formal_parameters) [69479 69492])
+                            ("timeoutInterval" variable (:type "int") (reparse-symbol formal_parameters) [69494 69513]))                          
+                        :type "ProfileTokenCredential")
+                        (reparse-symbol class_member_declaration) [69407 70383])
+                    ("generateVRM" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("version" variable (:type "int") (reparse-symbol formal_parameters) [70726 70737])
+                            ("release" variable (:type "int") (reparse-symbol formal_parameters) [70739 70750])
+                            ("modification" variable (:type "int") (reparse-symbol formal_parameters) [70752 70768]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [70696 71496])
+                    ("getAuthenticationScheme" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [72268 72474])
+                    ("getCcsid" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [72695 73437])
+                    ("getDaysToExpiration" function
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [73504 74325])
+                    ("getDefaultSignonHandler" function
+                       (:typemodifiers ("public" "static")
+                        :type "SignonHandler")
+                        (reparse-symbol class_member_declaration) [74582 75074])
+                    ("getDDMRDB" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [75479 75540])
+                    ("getDefaultUser" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [75896 75913]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [75860 76350])
+                    ("getGSSName" function
+                       (:typemodifiers ("public" "synchronized")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [76561 76725])
+                    ("getGSSOption" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [77094 77250])
+                    ("getImpl" function (:type "AS400Impl") (reparse-symbol class_member_declaration) [77296 77371])
+                    ("getJobCcsid" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [77407 77761])
+                    ("getJobCCSIDEncoding" function
+                       (:throws ("AS400SecurityException" "IOException" "InterruptedException")
+                        :typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [78111 78572])
+                    ("getJobs" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [79467 79478]))                          
+                        :type "Job[]")
+                        (reparse-symbol class_member_declaration) [79446 80653])
+                    ("getLocale" function
+                       (:typemodifiers ("public")
+                        :type "Locale")
+                        (reparse-symbol class_member_declaration) [81062 81210])
+                    ("getModification" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [81728 82141])
+                    ("getNLV" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [82332 82466])
+                    ("getPasswordExpirationDate" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :type "GregorianCalendar")
+                        (reparse-symbol class_member_declaration) [83076 83560])
+                    ("setUseSystemPasswordExpirationWarningDays" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("useSystem" variable (:type "boolean") (reparse-symbol formal_parameters) [84055 84072]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [84001 84468])
+                    ("getSystemPasswordExpirationWarningDays" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [85261 85804])
+                    ("isInPasswordExpirationWarningDays" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [86347 86858])
+                    ("getPasswordExpirationDays" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [87360 87772])
+                    ("getPasswordExpirationWarningDays" function
+                       (:typemodifiers ("public" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [87954 88189])
+                    ("getPreviousSignonDate" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :type "GregorianCalendar")
+                        (reparse-symbol class_member_declaration) [88639 89103])
+                    ("getProfileToken" function
+                       (:throws ("AS400SecurityException" "IOException" "InterruptedException")
+                        :typemodifiers ("public")
+                        :type "ProfileTokenCredential")
+                        (reparse-symbol class_member_declaration) [89942 91899])
+                    ("getProfileToken" function
+                       (:throws ("AS400SecurityException" "IOException" "InterruptedException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("tokenType" variable (:type "int") (reparse-symbol formal_parameters) [93097 93110])
+                            ("timeoutInterval" variable (:type "int") (reparse-symbol formal_parameters) [93112 93131]))                          
+                        :type "ProfileTokenCredential")
+                        (reparse-symbol class_member_declaration) [93051 95046])
+                    ("getProfileToken" function
+                       (:throws ("AS400SecurityException" "IOException" "InterruptedException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("userId" variable (:type "String") (reparse-symbol formal_parameters) [96265 96278])
+                            ("password" variable (:type "String") (reparse-symbol formal_parameters) [96280 96295]))                          
+                        :type "ProfileTokenCredential")
+                        (reparse-symbol class_member_declaration) [96219 96469])
+                    ("getProfileToken" function
+                       (:throws ("AS400SecurityException" "IOException" "InterruptedException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("userId" variable (:type "String") (reparse-symbol formal_parameters) [98226 98239])
+                            ("password" variable (:type "String") (reparse-symbol formal_parameters) [98241 98256])
+                            ("tokenType" variable (:type "int") (reparse-symbol formal_parameters) [98258 98271])
+                            ("timeoutInterval" variable (:type "int") (reparse-symbol formal_parameters) [98273 98292]))                          
+                        :type "ProfileTokenCredential")
+                        (reparse-symbol class_member_declaration) [98180 99988])
+                    ("getProxyServer" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [100216 100383])
+                    ("getRelease" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [100916 101288])
+                    ("getServerName" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [101383 101394]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [101348 102169])
+                    ("getServicePort" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [103066 103077]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [103040 103961])
+                    ("getSignonDate" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :type "GregorianCalendar")
+                        (reparse-symbol class_member_declaration) [104418 104871])
+                    ("getSignonHandler" function
+                       (:typemodifiers ("public")
+                        :type "SignonHandler")
+                        (reparse-symbol class_member_declaration) [105077 105230])
+                    ("getSocketProperties" function
+                       (:typemodifiers ("public")
+                        :type "SocketProperties")
+                        (reparse-symbol class_member_declaration) [105344 105645])
+                    ("getSystemName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [105900 106134])
+                    ("getSystemTimeZone" function
+                       (:throws ("AS400SecurityException" "ErrorCompletingRequestException" "InterruptedException" "IOException" "ObjectDoesNotExistException")
+                        :typemodifiers ("public")
+                        :type "TimeZone")
+                        (reparse-symbol class_member_declaration) [106931 107193])
+                    ("getTimeZone" function
+                       (:throws ("AS400SecurityException" "ErrorCompletingRequestException" "InterruptedException" "IOException" "ObjectDoesNotExistException")
+                        :typemodifiers ("public")
+                        :type "TimeZone")
+                        (reparse-symbol class_member_declaration) [107923 108471])
+                    ("getDefaultTimeZone" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("system" variable (:type "AS400") (reparse-symbol formal_parameters) [108801 108813]))                          
+                        :type "TimeZone")
+                        (reparse-symbol class_member_declaration) [108759 109275])
+                    ("getUserId" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [109512 109748])
+                    ("getUserId" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("forceRefresh" variable (:type "boolean") (reparse-symbol formal_parameters) [110457 110477]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [110433 111202])
+                    ("getVersion" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [111726 112098])
+                    ("getVRM" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [112728 113226])
+                    ("initializeConverter" function
+                       (:throws ("UnsupportedEncodingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ccsid" variable (:type "int") (reparse-symbol formal_parameters) [113576 113585]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [113544 114031])
+                    ("isConnected" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [114545 115300])
+                    ("isConnected" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [116391 116402]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [116364 116968])
+                    ("isConnectionAlive" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [117832 118185])
+                    ("isConnectionAlive" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [119650 119661]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [119617 119988])
+                    ("isGuiAvailable" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [120398 120576])
+                    ("isLocal" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [120762 120928])
+                    ("isMustUseSockets" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [121460 121644])
+                    ("isShowCheckboxes" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [121802 121990])
+                    ("isSystemNameLocal" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [122104 122121]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [122063 123188])
+                    ("isThreadUsed" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [123348 123518])
+                    ("isUseDefaultUser" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [123806 123994])
+                    ("isUsePasswordCache" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [124260 124456])
+                    ("loadImpl" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("impl" variable (:type "String") (reparse-symbol formal_parameters) [124610 124621]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [124587 127370])
+                    ("loadImpl" function
+                       (:arguments 
+                          ( ("impl1" variable (:type "String") (reparse-symbol formal_parameters) [127601 127613])
+                            ("impl2" variable (:type "String") (reparse-symbol formal_parameters) [127615 127627]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [127585 128232])
+                    ("loadImpl2" function
+                       (:arguments 
+                          ( ("impl1" variable (:type "String") (reparse-symbol formal_parameters) [128518 128530])
+                            ("impl2" variable (:type "String") (reparse-symbol formal_parameters) [128532 128544]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [128501 129398])
+                    ("loadImpl3" function
+                       (:arguments 
+                          ( ("impl1" variable (:type "String") (reparse-symbol formal_parameters) [129769 129781])
+                            ("impl2" variable (:type "String") (reparse-symbol formal_parameters) [129783 129795])
+                            ("impl3" variable (:type "String") (reparse-symbol formal_parameters) [129797 129809]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [129752 130971])
+                    ("FINISHED" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [131045 131083])
+                    ("VALIDATE" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [131088 131126])
+                    ("PROMPT" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [131131 131167])
+                    ("MAX_ITERATIONS" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [131262 131307])
+                    ("promptSignon" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [131410 139445])
+                    ("readObject" function
+                       (:throws ("ClassNotFoundException" "IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("in" variable (:type "ObjectInputStream") (reparse-symbol formal_parameters) [139512 139532]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [139488 140381])
+                    ("removeConnectionListener" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("listener" variable (:type "ConnectionListener") (reparse-symbol formal_parameters) [140541 140568]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [140504 141290])
+                    ("removeDefaultUser" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [141462 141479]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [141425 141776])
+                    ("removePasswordCacheEntry" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [142074 142091])
+                            ("userId" variable (:type "String") (reparse-symbol formal_parameters) [142093 142106]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [142030 144195])
+                    ("removePropertyChangeListener" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("listener" variable (:type "PropertyChangeListener") (reparse-symbol formal_parameters) [144368 144399]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [144327 144789])
+                    ("removeVetoableChangeListener" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("listener" variable (:type "VetoableChangeListener") (reparse-symbol formal_parameters) [144941 144972]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [144900 145362])
+                    ("resetAllServices" function
+                       (:typemodifiers ("public" "synchronized")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [145626 145881])
+                    ("resolveProxyServer" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("proxyServer" variable (:type "String") (reparse-symbol formal_parameters) [146068 146086]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [146027 146327])
+                    ("resolveSystem" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [146428 146445]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [146400 147089])
+                    ("resolveSystemNameLocal" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [147203 147220]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [147165 147390])
+                    ("resolveUserId" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("userId" variable (:type "String") (reparse-symbol formal_parameters) [147485 147498]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [147457 147623])
+                    ("currentUserAvailable" variable
+                       (:typemodifiers ("private" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [147629 147680])
+                    ("currentUserTried" variable
+                       (:typemodifiers ("private" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [147685 147733])
+                    ("currentUserAvailable" function
+                       (:typemodifiers ("static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [147738 148236])
+                    ("resolveUserId" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("userId" variable (:type "String") (reparse-symbol formal_parameters) [148331 148344])
+                            ("byteType" variable (:type "int") (reparse-symbol formal_parameters) [148346 148358])
+                            ("mustUseSuppliedProfile" variable (:type "boolean") (reparse-symbol formal_parameters) [148360 148390]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [148303 150587])
+                    ("sendSignonRequest" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [150640 152233])
+                    ("setIdentityToken" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("identityToken" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [152620 152640]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [152591 153031])
+                    ("setCacheEntry" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [153115 153132])
+                            ("userId" variable (:type "String") (reparse-symbol formal_parameters) [153134 153147])
+                            ("pwVault" variable (:type "CredentialVault") (reparse-symbol formal_parameters) [153149 153172]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [153081 154124])
+                    ("setCcsid" function
+                       (:throws ("PropertyVetoException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ccsid" variable (:type "int") (reparse-symbol formal_parameters) [154464 154473]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [154443 155482])
+                    ("setDDMRDB" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ddmRDB" variable (:type "String") (reparse-symbol formal_parameters) [156119 156132]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [156097 156827])
+                    ("setDefaultSignonHandler" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("handler" variable (:type "SignonHandler") (reparse-symbol formal_parameters) [158003 158024]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [157960 158425])
+                    ("setDefaultUser" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [159007 159024])
+                            ("userId" variable (:type "String") (reparse-symbol formal_parameters) [159026 159039]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [158970 160124])
+                    ("setGSSManager" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("gssMgr" variable (:type "Object") (reparse-symbol formal_parameters) [160421 160434]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [160388 160575])
+                    ("getGSSManager" function
+                       (:typemodifiers ("static")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [160580 160649])
+                    ("setGSSCredential" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("gssCredential" variable (:type "Object") (reparse-symbol formal_parameters) [161262 161282]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [161233 161823])
+                    ("setGSSOption" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("gssOption" variable (:type "int") (reparse-symbol formal_parameters) [162604 162617]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [162579 162966])
+                    ("setGSSName" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("gssName" variable (:type "String") (reparse-symbol formal_parameters) [163426 163440]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [163403 163880])
+                    ("setGuiAvailable" function
+                       (:throws ("PropertyVetoException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("guiAvailable" variable (:type "boolean") (reparse-symbol formal_parameters) [164790 164810]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [164762 165637])
+                    ("setLocale" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("locale" variable (:type "Locale") (reparse-symbol formal_parameters) [165953 165966]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [165931 166861])
+                    ("setLocale" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("locale" variable (:type "Locale") (reparse-symbol formal_parameters) [167127 167140])
+                            ("nlv" variable (:type "String") (reparse-symbol formal_parameters) [167142 167152]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [167105 167769])
+                    ("setMustAddLanguageLibrary" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("mustAddLanguageLibrary" variable (:type "boolean") (reparse-symbol formal_parameters) [168571 168601]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [168533 169082])
+                    ("isMustAddLanguageLibrary" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [169360 169577])
+                    ("setMustUseSockets" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("mustUseSockets" variable (:type "boolean") (reparse-symbol formal_parameters) [170414 170436]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [170384 170870])
+                    ("isMustUseNetSockets" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [171032 171229])
+                    ("setMustUseNetSockets" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("mustUseNetSockets" variable (:type "boolean") (reparse-symbol formal_parameters) [171899 171924]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [171866 172378])
+                    ("isMustUseSuppliedProfile" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [172530 172747])
+                    ("setMustUseSuppliedProfile" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("mustUseSuppliedProfile" variable (:type "boolean") (reparse-symbol formal_parameters) [173466 173496]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [173428 173980])
+                    ("setPassword" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("password" variable (:type "String") (reparse-symbol formal_parameters) [174317 174332]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [174293 174908])
+                    ("setPasswordExpirationWarningDays" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("days" variable (:type "int") (reparse-symbol formal_parameters) [175167 175175]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [175115 175340])
+                    ("setProfileToken" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("profileToken" variable (:type "ProfileTokenCredential") (reparse-symbol formal_parameters) [175569 175604]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [175541 175990])
+                    ("setProxyServer" function
+                       (:throws ("PropertyVetoException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("proxyServer" variable (:type "String") (reparse-symbol formal_parameters) [176943 176961]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [176916 178050])
+                    ("setServicePort" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [178981 178992])
+                            ("port" variable (:type "int") (reparse-symbol formal_parameters) [178994 179002]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [178954 179984])
+                    ("setServicePortsToDefault" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [180365 180943])
+                    ("setShowCheckboxes" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("showCheckboxes" variable (:type "boolean") (reparse-symbol formal_parameters) [181135 181157]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [181105 181313])
+                    ("setSignonHandler" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("handler" variable (:type "SignonHandler") (reparse-symbol formal_parameters) [181882 181903]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [181853 182255])
+                    ("setSocketProperties" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("socketProperties" variable (:type "SocketProperties") (reparse-symbol formal_parameters) [182615 182648]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [182583 183222])
+                    ("setSystemName" function
+                       (:throws ("PropertyVetoException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [183612 183629]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [183586 185019])
+                    ("setThreadUsed" function
+                       (:throws ("PropertyVetoException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("useThreads" variable (:type "boolean") (reparse-symbol formal_parameters) [185815 185833]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [185789 186905])
+                    ("setUseDefaultUser" function
+                       (:throws ("PropertyVetoException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("useDefaultUser" variable (:type "boolean") (reparse-symbol formal_parameters) [187486 187508]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [187456 188356])
+                    ("setUsePasswordCache" function
+                       (:throws ("PropertyVetoException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("usePasswordCache" variable (:type "boolean") (reparse-symbol formal_parameters) [189108 189132]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [189076 190000])
+                    ("setUserId" function
+                       (:throws ("PropertyVetoException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("userId" variable (:type "String") (reparse-symbol formal_parameters) [190495 190508]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [190473 191879])
+                    ("signon" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("synchronized")
+                        :arguments 
+                          ( ("keepConnection" variable (:type "boolean") (reparse-symbol formal_parameters) [192164 192186]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [192139 196437])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [196576 196720])
+                    ("userIdMatchesLocal" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("userId" variable (:type "String") (reparse-symbol formal_parameters) [196821 196834])
+                            ("mustUseSuppliedProfile" variable (:type "boolean") (reparse-symbol formal_parameters) [196836 196866]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [196779 198302])
+                    ("validateSignon" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [198886 199681])
+                    ("validateSignon" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("password" variable (:type "String") (reparse-symbol formal_parameters) [200344 200359]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [200314 201520])
+                    ("validateSignon" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("userId" variable (:type "String") (reparse-symbol formal_parameters) [202230 202243])
+                            ("password" variable (:type "String") (reparse-symbol formal_parameters) [202245 202260]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [202200 203442])
+                    ("validateSignon" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("userId" variable (:type "String") (reparse-symbol formal_parameters) [203639 203652])
+                            ("pwVault" variable (:type "CredentialVault") (reparse-symbol formal_parameters) [203654 203677]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [203608 205139])
+                    ("forcePrompt" function (:type "void") (reparse-symbol class_member_declaration) [205638 205697])
+                    ("bidiStringType" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [205726 205778])
+                    ("setBidiStringType" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("bidiStringType" variable (:type "int") (reparse-symbol formal_parameters) [205977 205995]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [205947 206049])
+                    ("getBidiStringType" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [206221 206289])
+                    ("bidiAS400Text" variable
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [206396 206433]))                  
+                :type "class")
+                nil [2392 206456]))          
+    :file "AS400.java"
+    :pointmax 206457
+    :fsize 210894
+    :lastmodtime '(22222 1552 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AS400Impl.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.ibm.as400.access" package nil nil [505 534])
+            ("java.io.IOException" include nil nil [536 563])
+            ("java.io.UnsupportedEncodingException" include nil nil [564 608])
+            ("java.net.Socket" include nil nil [609 632])
+            ("com.ibm.as400.security.auth.ProfileTokenCredential" include nil nil [634 692])
+            ("AS400Impl" type
+               (:members 
+                  ( ("addConnectionListener" function
+                       (:arguments 
+                          ( ("listener" variable (:type "ConnectionListener") (reparse-symbol formal_parameters) [895 922]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [868 924])
+                    ("ccsidToEncoding" function
+                       (:arguments 
+                          ( ("ccsid" variable (:type "int") (reparse-symbol formal_parameters) [994 1003]))                          
+                        :type "String")
+                        (reparse-symbol interface_member_declaration) [971 1005])
+                    ("changePassword" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [1060 1077])
+                            ("systemNameLocal" variable (:type "boolean") (reparse-symbol formal_parameters) [1079 1102])
+                            ("userId" variable (:type "String") (reparse-symbol formal_parameters) [1104 1117])
+                            ("oldBytes" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [1119 1134])
+                            ("newBytes" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [1136 1151]))                          
+                        :type "SignonInfo")
+                        (reparse-symbol interface_member_declaration) [1034 1196])
+                    ("connect" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [1241 1252]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1228 1297])
+                    ("connectToPort" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :arguments 
+                          ( ("port" variable (:type "int") (reparse-symbol formal_parameters) [1381 1389]))                          
+                        :type "Socket")
+                        (reparse-symbol interface_member_declaration) [1360 1434])
+                    ("connectToPort" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :arguments 
+                          ( ("port" variable (:type "int") (reparse-symbol formal_parameters) [1608 1616])
+                            ("forceNonLocalhost" variable (:type "boolean") (reparse-symbol formal_parameters) [1617 1642]))                          
+                        :type "Socket")
+                        (reparse-symbol interface_member_declaration) [1587 1687])
+                    ("disconnect" function
+                       (:arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [1740 1751]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1724 1753])
+                    ("exchangeSeed" function
+                       (:arguments 
+                          ( ("proxySeed" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [1828 1844]))                          
+                        :type "byte[]")
+                        (reparse-symbol interface_member_declaration) [1808 1846])
+                    ("getJobs" function
+                       (:arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [1918 1929]))                          
+                        :type "String[]")
+                        (reparse-symbol interface_member_declaration) [1901 1931])
+                    ("generateProfileToken" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :arguments 
+                          ( ("profileToken" variable (:type "ProfileTokenCredential") (reparse-symbol formal_parameters) [2020 2055])
+                            ("userIdentity" variable (:type "String") (reparse-symbol formal_parameters) [2057 2076]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1994 2121])
+                    ("generateProfileToken" function
+                       (:throws ("AS400SecurityException" "IOException" "InterruptedException")
+                        :arguments 
+                          ( ("profileToken" variable (:type "ProfileTokenCredential") (reparse-symbol formal_parameters) [2210 2245])
+                            ("userId" variable (:type "String") (reparse-symbol formal_parameters) [2247 2260])
+                            ("vault" variable (:type "CredentialVault") (reparse-symbol formal_parameters) [2262 2283])
+                            ("gssName" variable (:type "String") (reparse-symbol formal_parameters) [2285 2299]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [2184 2366])
+                    ("getServicePort" function
+                       (:arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [2425 2442])
+                            ("service" variable (:type "int") (reparse-symbol formal_parameters) [2444 2455]))                          
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [2406 2457])
+                    ("isConnected" function
+                       (:arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [2515 2526]))                          
+                        :type "boolean")
+                        (reparse-symbol interface_member_declaration) [2495 2528])
+                    ("isConnectionAlive" function (:type "boolean") (reparse-symbol interface_member_declaration) [2575 2603])
+                    ("isConnectionAlive" function
+                       (:arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [2676 2687]))                          
+                        :type "boolean")
+                        (reparse-symbol interface_member_declaration) [2650 2689])
+                    ("newConverter" function
+                       (:throws ("UnsupportedEncodingException")
+                        :arguments 
+                          ( ("ccsid" variable (:type "int") (reparse-symbol formal_parameters) [2755 2764]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [2737 2802])
+                    ("removeConnectionListener" function
+                       (:arguments 
+                          ( ("listener" variable (:type "ConnectionListener") (reparse-symbol formal_parameters) [2884 2911]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [2854 2913])
+                    ("setGSSCredential" function
+                       (:arguments 
+                          ( ("gssCredential" variable (:type "Object") (reparse-symbol formal_parameters) [2971 2991]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [2949 2993])
+                    ("setServicePort" function
+                       (:arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [3053 3070])
+                            ("service" variable (:type "int") (reparse-symbol formal_parameters) [3072 3083])
+                            ("port" variable (:type "int") (reparse-symbol formal_parameters) [3085 3093]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [3033 3095])
+                    ("setServicePortsToDefault" function
+                       (:arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [3184 3201]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [3154 3203])
+                    ("setState" function
+                       (:arguments 
+                          ( ("useSSLConnection" variable (:type "SSLOptions") (reparse-symbol formal_parameters) [3292 3319])
+                            ("canUseNativeOptimization" variable (:type "boolean") (reparse-symbol formal_parameters) [3321 3353])
+                            ("threadUsed" variable (:type "boolean") (reparse-symbol formal_parameters) [3355 3373])
+                            ("ccsid" variable (:type "int") (reparse-symbol formal_parameters) [3375 3384])
+                            ("nlv" variable (:type "String") (reparse-symbol formal_parameters) [3386 3396])
+                            ("socketProperties" variable (:type "SocketProperties") (reparse-symbol formal_parameters) [3398 3431])
+                            ("ddmRDB" variable (:type "String") (reparse-symbol formal_parameters) [3433 3446])
+                            ("mustUseNetSockets" variable (:type "boolean") (reparse-symbol formal_parameters) [3448 3473])
+                            ("mustUseSuppliedProfile" variable (:type "boolean") (reparse-symbol formal_parameters) [3475 3505])
+                            ("mustAddLanguageLibrary" variable (:type "boolean") (reparse-symbol formal_parameters) [3507 3537]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [3278 3539])
+                    ("signon" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [3588 3605])
+                            ("systemNameLocal" variable (:type "boolean") (reparse-symbol formal_parameters) [3607 3630])
+                            ("userId" variable (:type "String") (reparse-symbol formal_parameters) [3632 3645])
+                            ("vault" variable (:type "CredentialVault") (reparse-symbol formal_parameters) [3647 3668])
+                            ("gssName" variable (:type "String") (reparse-symbol formal_parameters) [3670 3684]))                          
+                        :type "SignonInfo")
+                        (reparse-symbol interface_member_declaration) [3570 3729])
+                    ("setBidiStringType" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("bidiStringType" variable (:type "int") (reparse-symbol formal_parameters) [3964 3982]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [3934 3984])
+                    ("getBidiStringType" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [4161 4192]))                  
+                :type "interface")
+                nil [766 4224]))          
+    :file "AS400Impl.java"
+    :pointmax 4225
+    :fsize 4224
+    :lastmodtime '(21722 35080 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AS400ImplProxy.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.ibm.as400.access" package nil nil [510 539])
+            ("java.io.IOException" include nil nil [541 568])
+            ("java.io.UnsupportedEncodingException" include nil nil [569 613])
+            ("java.lang.reflect.InvocationTargetException" include nil nil [614 665])
+            ("java.net.Socket" include nil nil [666 689])
+            ("com.ibm.as400.security.auth.ProfileTokenCredential" include nil nil [690 748])
+            ("java.beans.PropertyVetoException" include nil nil [749 789])
+            ("AS400ImplProxy" type
+               (:interfaces ("AS400Impl")
+                :superclasses "AbstractProxyImpl"
+                :members 
+                  ( ("CLASSNAME" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [950 1028])
+                    ("AS400ImplProxy" function (:constructor-flag t) (reparse-symbol class_member_declaration) [1159 1211])
+                    ("addConnectionListener" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("listener" variable (:type "ConnectionListener") (reparse-symbol formal_parameters) [1309 1336]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1275 1413])
+                    ("ccsidToEncoding" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ccsid" variable (:type "int") (reparse-symbol formal_parameters) [1491 1500]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1461 1822])
+                    ("changePassword" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [1885 1902])
+                            ("systemNameLocal" variable (:type "boolean") (reparse-symbol formal_parameters) [1904 1927])
+                            ("userId" variable (:type "String") (reparse-symbol formal_parameters) [1929 1942])
+                            ("oldBytes" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [1944 1959])
+                            ("newBytes" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [1961 1976]))                          
+                        :type "SignonInfo")
+                        (reparse-symbol class_member_declaration) [1852 2451])
+                    ("connect" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [2504 2515]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2484 2843])
+                    ("connectToPort" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("port" variable (:type "int") (reparse-symbol formal_parameters) [2901 2909]))                          
+                        :type "Socket")
+                        (reparse-symbol class_member_declaration) [2873 3272])
+                    ("connectToPort" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("port" variable (:type "int") (reparse-symbol formal_parameters) [3316 3324])
+                            ("forceNonLocalhost" variable (:type "boolean") (reparse-symbol formal_parameters) [3325 3350]))                          
+                        :type "Socket")
+                        (reparse-symbol class_member_declaration) [3288 3713])
+                    ("disconnect" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [3774 3785]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3751 4072])
+                    ("exchangeSeed" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("proxySeed" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [4146 4162]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [4119 4472])
+                    ("generateProfileToken" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("profileToken" variable (:type "ProfileTokenCredential") (reparse-symbol formal_parameters) [4569 4604])
+                            ("userIdentity" variable (:type "String") (reparse-symbol formal_parameters) [4606 4625]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4536 5506])
+                    ("generateProfileToken" function
+                       (:throws ("AS400SecurityException" "IOException" "InterruptedException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("profileToken" variable (:type "ProfileTokenCredential") (reparse-symbol formal_parameters) [5603 5638])
+                            ("userId" variable (:type "String") (reparse-symbol formal_parameters) [5640 5653])
+                            ("vault" variable (:type "CredentialVault") (reparse-symbol formal_parameters) [5655 5676])
+                            ("gssName" variable (:type "String") (reparse-symbol formal_parameters) [5678 5692]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5570 6656])
+                    ("getJobs" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [6735 6746]))                          
+                        :type "String[]")
+                        (reparse-symbol class_member_declaration) [6711 7064])
+                    ("getServicePort" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [7138 7155])
+                            ("service" variable (:type "int") (reparse-symbol formal_parameters) [7157 7168]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7112 7512])
+                    ("isConnected" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [7578 7589]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [7551 7908])
+                    ("isConnectionAlive" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [7956 8204])
+                    ("isConnectionAlive" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [8285 8296]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [8252 8621])
+                    ("newConverter" function
+                       (:throws ("UnsupportedEncodingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ccsid" variable (:type "int") (reparse-symbol formal_parameters) [8695 8704]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8670 9235])
+                    ("removeConnectionListener" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("listener" variable (:type "ConnectionListener") (reparse-symbol formal_parameters) [9324 9351]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9287 9431])
+                    ("setGSSCredential" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("gssCredential" variable (:type "Object") (reparse-symbol formal_parameters) [9497 9517]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9468 9803])
+                    ("setServicePort" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [9871 9888])
+                            ("service" variable (:type "int") (reparse-symbol formal_parameters) [9890 9901])
+                            ("port" variable (:type "int") (reparse-symbol formal_parameters) [9903 9911]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9844 10261])
+                    ("setServicePortsToDefault" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [10337 10354]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10300 10645])
+                    ("setState" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("useSSLConnection" variable (:type "SSLOptions") (reparse-symbol formal_parameters) [10750 10777])
+                            ("canUseNativeOptimization" variable (:type "boolean") (reparse-symbol formal_parameters) [10779 10811])
+                            ("threadUsed" variable (:type "boolean") (reparse-symbol formal_parameters) [10813 10831])
+                            ("ccsid" variable (:type "int") (reparse-symbol formal_parameters) [10833 10842])
+                            ("nlv" variable (:type "String") (reparse-symbol formal_parameters) [10844 10854])
+                            ("socketProperties" variable (:type "SocketProperties") (reparse-symbol formal_parameters) [10856 10889])
+                            ("ddmRDB" variable (:type "String") (reparse-symbol formal_parameters) [10891 10904])
+                            ("mustUseNetSockets" variable (:type "boolean") (reparse-symbol formal_parameters) [10906 10931])
+                            ("mustUseSuppliedProfile" variable (:type "boolean") (reparse-symbol formal_parameters) [10933 10963])
+                            ("mustAddLanguageLibrary" variable (:type "boolean") (reparse-symbol formal_parameters) [10965 10995]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10729 11638])
+                    ("signon" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [11685 11702])
+                            ("systemNameLocal" variable (:type "boolean") (reparse-symbol formal_parameters) [11704 11727])
+                            ("userId" variable (:type "String") (reparse-symbol formal_parameters) [11729 11742])
+                            ("vault" variable (:type "CredentialVault") (reparse-symbol formal_parameters) [11744 11765])
+                            ("gssName" variable (:type "String") (reparse-symbol formal_parameters) [11767 11781]))                          
+                        :type "SignonInfo")
+                        (reparse-symbol class_member_declaration) [11660 12253])
+                    ("bidiStringType" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [12286 12338])
+                    ("setBidiStringType" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("bidiStringType" variable (:type "int") (reparse-symbol formal_parameters) [12542 12560]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12512 12611])
+                    ("getBidiStringType" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [12788 12853]))                  
+                :type "class")
+                nil [876 12881]))          
+    :file "AS400ImplProxy.java"
+    :pointmax 12882
+    :fsize 12881
+    :lastmodtime '(21722 35134 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "NLSImplNative.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.ibm.as400.access" package nil nil [911 940])
+            ("java.io.IOException" include nil nil [942 969])
+            ("java.net.UnknownHostException" include nil nil [970 1007])
+            ("NLSImplNative" type
+               (:superclasses "NLSImpl"
+                :members 
+                  ( ("CLASSNAME" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1101 1178])
+                    ("connect" function
+                       (:throws ("ServerStartupException" "UnknownHostException" "AS400SecurityException" "ConnectionDroppedException" "InterruptedException" "IOException")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1381 1546])
+                    ("disconnect" function (:type "void") (reparse-symbol class_member_declaration) [1596 1626])
+                    ("getCcsid" function
+                       (:throws ("IOException")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1658 1960])
+                    ("ccsidNative" function
+                       (:throws ("NativeException")
+                        :typemodifiers ("native")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2629 2677]))                  
+                :type "class")
+                nil [1061 2779]))          
+    :file "NLSImplNative.java"
+    :pointmax 2780
+    :fsize 2779
+    :lastmodtime '(19496 45666 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AS400ImplNative.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.ibm.as400.access" package nil nil [916 945])
+            ("AS400ImplNative" type
+               (:members 
+                  ( ("CLASSNAME" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [976 1055])
+                    ("signonNative" function
+                       (:throws ("NativeException")
+                        :typemodifiers ("static" "native")
+                        :arguments 
+                          ( ("userId" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [1249 1262]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [1215 1287])
+                    ("swapToNative" function
+                       (:throws ("NativeException")
+                        :typemodifiers ("static" "native")
+                        :arguments 
+                          ( ("userId" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [1324 1337])
+                            ("bytes" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [1339 1351])
+                            ("swapToPH" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [1353 1368])
+                            ("swapFromPH" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [1370 1387]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1292 1412])
+                    ("swapBackNative" function
+                       (:throws ("NativeException")
+                        :typemodifiers ("static" "native")
+                        :arguments 
+                          ( ("swapToPH" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [1451 1466])
+                            ("swapFromPH" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [1468 1485]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1417 1510]))                  
+                :type "class")
+                nil [948 1512]))          
+    :file "AS400ImplNative.java"
+    :pointmax 1513
+    :fsize 1512
+    :lastmodtime '(20037 5412 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "UnixSocketImpl.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.ibm.as400.access" package nil nil [915 944])
+            ("java.io.FileDescriptor" include nil nil [946 976])
+            ("java.io.IOException" include nil nil [977 1004])
+            ("java.io.InputStream" include nil nil [1005 1032])
+            ("java.io.OutputStream" include nil nil [1033 1061])
+            ("UnixSocketImpl" type
+               (:members 
+                  ( ("copyright" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1090 1212])
+                    ("fd" variable (:type "FileDescriptor") (reparse-symbol class_member_declaration) [1291 1309])
+                    ("timeout_" variable (:type "int") (reparse-symbol class_member_declaration) [1314 1331])
+                    ("UnixSocketImpl" function (:constructor-flag t) (reparse-symbol class_member_declaration) [1342 1370])
+                    ("create" function
+                       (:throws ("IOException")
+                        :typemodifiers ("synchronized")
+                        :arguments 
+                          ( ("serverNumber" variable (:type "int") (reparse-symbol formal_parameters) [1401 1417]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1376 1658])
+                    ("getFileDescriptor" function (:type "FileDescriptor") (reparse-symbol class_member_declaration) [1664 1729])
+                    ("getInputStream" function
+                       (:throws ("IOException")
+                        :typemodifiers ("synchronized")
+                        :type "InputStream")
+                        (reparse-symbol class_member_declaration) [1735 1855])
+                    ("getOutputStream" function
+                       (:throws ("IOException")
+                        :typemodifiers ("synchronized")
+                        :type "OutputStream")
+                        (reparse-symbol class_member_declaration) [1861 1984])
+                    ("available" function
+                       (:throws ("IOException")
+                        :typemodifiers ("synchronized")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1990 2088])
+                    ("close" function
+                       (:throws ("IOException")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2094 2236])
+                    ("finalize" function
+                       (:throws ("IOException")
+                        :typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2242 2320])
+                    ("socketAvailable" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private" "native")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2326 2382])
+                    ("socketCreate" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private" "native")
+                        :arguments 
+                          ( ("serverNumber" variable (:type "int") (reparse-symbol formal_parameters) [2420 2436]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2387 2457])
+                    ("socketClose" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private" "native")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2462 2515])
+                    ("getSoTimeout" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2521 2578])
+                    ("setSoTimeout" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("timeout" variable (:type "int") (reparse-symbol formal_parameters) [2613 2624]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2588 2725]))                  
+                :type "class")
+                nil [1063 2727]))          
+    :file "UnixSocketImpl.java"
+    :pointmax 2728
+    :fsize 2727
+    :lastmodtime '(20101 47772 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AS400ImplRemote.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.ibm.as400.access" package nil nil [512 541])
+            ("java.beans.PropertyVetoException" include nil nil [543 583])
+            ("java.io.BufferedReader" include nil nil [584 614])
+            ("java.io.IOException" include nil nil [615 642])
+            ("java.io.InputStream" include nil nil [643 670])
+            ("java.io.InputStreamReader" include nil nil [671 704])
+            ("java.io.OutputStream" include nil nil [705 733])
+            ("java.io.OutputStreamWriter" include nil nil [734 768])
+            ("java.io.PrintWriter" include nil nil [769 796])
+            ("java.io.UnsupportedEncodingException" include nil nil [797 841])
+            ("java.net.Socket" include nil nil [842 865])
+            ("java.security.MessageDigest" include nil nil [866 901])
+            ("java.security.NoSuchAlgorithmException" include nil nil [902 948])
+            ("java.util.GregorianCalendar" include nil nil [949 984])
+            ("java.util.Vector" include nil nil [985 1009])
+            ("com.ibm.as400.security.auth.ProfileTokenCredential" include nil nil [1011 1069])
+            ("AS400ImplRemote" type
+               (:interfaces ("AS400Impl")
+                :members 
+                  ( ("PASSWORD_TRACE" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1189 1241])
+                    ("DEBUG" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1246 1289])
+                    ("serverPool_" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "Vector")
+                        (reparse-symbol class_member_declaration) [1433 1565])
+                    ("systemName_" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1591 1623])
+                    ("userId_" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1644 1672])
+                    ("systemNameLocal_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1739 1780])
+                    ("credVault_" variable
+                       (:typemodifiers ("private")
+                        :type "CredentialVault")
+                        (reparse-symbol class_member_declaration) [1824 1881])
+                    ("gssCredential_" variable
+                       (:typemodifiers ("private")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [1993 2030])
+                    ("gssName_" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2073 2102])
+                    ("useSSLConnection_" variable
+                       (:typemodifiers ("private")
+                        :type "SSLOptions")
+                        (reparse-symbol class_member_declaration) [2253 2297])
+                    ("canUseNativeOptimization_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2374 2423])
+                    ("threadUsed_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2513 2548])
+                    ("ccsid_" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2608 2631])
+                    ("userOverrideCcsid_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2721 2764])
+                    ("clientNlv_" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2792 2818])
+                    ("socketProperties_" variable
+                       (:typemodifiers ("private")
+                        :type "SocketProperties")
+                        (reparse-symbol class_member_declaration) [2904 2954])
+                    ("languageLibrary_" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3053 3092])
+                    ("skipFurtherSettingOfLanguageLibrary_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3265 3326])
+                    ("detectedMissingPTF_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3459 3503])
+                    ("ddmRDB_" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3554 3577])
+                    ("version_" variable
+                       (:typemodifiers ("private")
+                        :type "ServerVersion")
+                        (reparse-symbol class_member_declaration) [3711 3742])
+                    ("serverLevel_" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3870 3895])
+                    ("passwordType_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3936 3974])
+                    ("isPasswordTypeSet_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4080 4123])
+                    ("signonInfo_" variable
+                       (:typemodifiers ("private")
+                        :type "SignonInfo")
+                        (reparse-symbol class_member_declaration) [4197 4228])
+                    ("signonJobBytes_" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [4315 4346])
+                    ("signonJobString_" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [4398 4430])
+                    ("dispatcher_" variable
+                       (:typemodifiers ("private")
+                        :type "ConnectionListener")
+                        (reparse-symbol class_member_declaration) [4518 4557])
+                    ("proxySeed_" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [4708 4741])
+                    ("remoteSeed_" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [4885 4919])
+                    ("signonServer_" variable (:type "AS400NoThreadServer") (reparse-symbol class_member_declaration) [4966 5000])
+                    ("serverSeed_" variable
+                       (:dereference 1
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [5095 5114])
+                    ("clientSeed_" variable
+                       (:dereference 1
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [5209 5228])
+                    ("CLASSNAME" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5234 5313])
+                    ("addConnectionListener" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("listener" variable (:type "ConnectionListener") (reparse-symbol formal_parameters) [6222 6249]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6188 6397])
+                    ("canUseNativeOptimizations" function (:type "boolean") (reparse-symbol class_member_declaration) [6528 6615])
+                    ("ccsidToEncoding" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ccsid" variable (:type "int") (reparse-symbol formal_parameters) [6693 6702]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6663 6879])
+                    ("trimUnicodeSpace" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("inputArray" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol formal_parameters) [7000 7017]))                          
+                        :type "char[]")
+                        (reparse-symbol class_member_declaration) [6961 7552])
+                    ("generateShaToken" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("userIdBytes" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [7660 7678])
+                            ("bytes" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [7680 7692]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [7621 8305])
+                    ("generateShaSubstitute" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("token" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [8423 8435])
+                            ("serverSeed" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [8437 8454])
+                            ("clientSeed" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [8456 8473])
+                            ("userIdBytes" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [8475 8493])
+                            ("sequence" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [8495 8510]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [8379 9270])
+                    ("generateShaProtected" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("bytes" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [9387 9399])
+                            ("token" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [9401 9413])
+                            ("serverSeed" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [9415 9432])
+                            ("clientSeed" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [9434 9451])
+                            ("userIdBytes" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [9453 9471])
+                            ("sequence" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [9473 9488]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [9344 10324])
+                    ("changePassword" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [10387 10404])
+                            ("systemNameLocal" variable (:type "boolean") (reparse-symbol formal_parameters) [10406 10429])
+                            ("userId" variable (:type "String") (reparse-symbol formal_parameters) [10431 10444])
+                            ("oldBytes" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [10446 10461])
+                            ("newBytes" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [10463 10478]))                          
+                        :type "SignonInfo")
+                        (reparse-symbol class_member_declaration) [10354 18025])
+                    ("connect" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [18086 18097]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [18066 18315])
+                    ("connectToPort" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("port" variable (:type "int") (reparse-symbol formal_parameters) [18349 18357]))                          
+                        :type "Socket")
+                        (reparse-symbol class_member_declaration) [18321 18450])
+                    ("connectToPort" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("port" variable (:type "int") (reparse-symbol formal_parameters) [18636 18644])
+                            ("forceNonLocalhost" variable (:type "boolean") (reparse-symbol formal_parameters) [18645 18670]))                          
+                        :type "Socket")
+                        (reparse-symbol class_member_declaration) [18608 18781])
+                    ("disconnect" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [18848 18859]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [18825 19399])
+                    ("disconnectAllServices" function (:type "void") (reparse-symbol class_member_declaration) [19437 19968])
+                    ("disconnectServer" function
+                       (:arguments 
+                          ( ("server" variable (:type "AS400Server") (reparse-symbol formal_parameters) [20127 20145]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [20105 20798])
+                    ("exchangeSeed" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("proxySeed" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [21194 21210]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [21167 21471])
+                    ("finalize" function
+                       (:throws ("Throwable")
+                        :typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21511 21790])
+                    ("fireConnectEvent" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("connect" variable (:type "boolean") (reparse-symbol formal_parameters) [21854 21869])
+                            ("service" variable (:type "int") (reparse-symbol formal_parameters) [21871 21882]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21824 22234])
+                    ("generateProfileToken" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("profileToken" variable (:type "ProfileTokenCredential") (reparse-symbol formal_parameters) [22324 22359])
+                            ("userIdentity" variable (:type "String") (reparse-symbol formal_parameters) [22361 22380]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [22291 25414])
+                    ("generateProfileToken" function
+                       (:throws ("AS400SecurityException" "IOException" "InterruptedException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("profileToken" variable (:type "ProfileTokenCredential") (reparse-symbol formal_parameters) [25504 25539])
+                            ("userId" variable (:type "String") (reparse-symbol formal_parameters) [25541 25554])
+                            ("vault" variable (:type "CredentialVault") (reparse-symbol formal_parameters) [25556 25577])
+                            ("gssName" variable (:type "String") (reparse-symbol formal_parameters) [25579 25593]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [25471 32086])
+                    ("getCcsid" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [32172 33978])
+                    ("getUserOverrideCcsid" function (:type "int") (reparse-symbol class_member_declaration) [34041 34144])
+                    ("getCcsidFromServer" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [34213 34742])
+                    ("getConnection" function
+                       (:throws ("IOException")
+                        :typemodifiers ("synchronized")
+                        :arguments 
+                          ( ("port" variable (:type "int") (reparse-symbol formal_parameters) [34813 34821]))                          
+                        :type "Socket")
+                        (reparse-symbol class_member_declaration) [34779 35985])
+                    ("readFTPLine" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("reader" variable (:type "BufferedReader") (reparse-symbol formal_parameters) [36018 36039]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [35991 36562])
+                    ("getConnection" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("synchronized")
+                        :arguments 
+                          ( ("dhcp" variable (:type "int") (reparse-symbol formal_parameters) [36770 36778])
+                            ("port" variable (:type "int") (reparse-symbol formal_parameters) [36780 36788]))                          
+                        :type "Socket")
+                        (reparse-symbol class_member_declaration) [36736 40784])
+                    ("getConnection" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("synchronized")
+                        :arguments 
+                          ( ("dhcp" variable (:type "int") (reparse-symbol formal_parameters) [41093 41101])
+                            ("port" variable (:type "int") (reparse-symbol formal_parameters) [41103 41111])
+                            ("forceNonLocalhost" variable (:type "boolean") (reparse-symbol formal_parameters) [41112 41137]))                          
+                        :type "Socket")
+                        (reparse-symbol class_member_declaration) [41059 45154])
+                    ("getJobs" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [45234 45245]))                          
+                        :type "String[]")
+                        (reparse-symbol class_member_declaration) [45210 45961])
+                    ("getConnection" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("synchronized")
+                        :arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [46140 46151])
+                            ("forceNewConnection" variable (:type "boolean") (reparse-symbol formal_parameters) [46153 46179]))                          
+                        :type "AS400Server")
+                        (reparse-symbol class_member_declaration) [46101 54062])
+                    ("forceDisconnect" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("e" variable (:type "Exception") (reparse-symbol formal_parameters) [54104 54115])
+                            ("server" variable (:type "AS400Server") (reparse-symbol formal_parameters) [54117 54135])
+                            ("sc" variable (:type "SocketContainer") (reparse-symbol formal_parameters) [54137 54155]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [54068 54594])
+                    ("getNLV" function (:type "String") (reparse-symbol class_member_declaration) [54638 54792])
+                    ("getPassword" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("clientSeed" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [54885 54902])
+                            ("serverSeed" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [54904 54921]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [54858 60650])
+                    ("getServicePort" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [60718 60735])
+                            ("service" variable (:type "int") (reparse-symbol formal_parameters) [60737 60748]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [60692 60843])
+                    ("getLanguageLibrary" function (:type "String") (reparse-symbol class_member_declaration) [60893 60965])
+                    ("getSystemName" function (:type "String") (reparse-symbol class_member_declaration) [60995 61236])
+                    ("getUserId" function (:type "String") (reparse-symbol class_member_declaration) [61262 61417])
+                    ("getVRM" function (:type "int") (reparse-symbol class_member_declaration) [61439 61871])
+                    ("isConnected" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [61942 61953]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [61915 62557])
+                    ("signonPingRequest_" variable
+                       (:typemodifiers ("private")
+                        :type "SignonPingReq")
+                        (reparse-symbol class_member_declaration) [62564 62605])
+                    ("ifsPingRequest_" variable
+                       (:typemodifiers ("private")
+                        :type "IFSPingReq")
+                        (reparse-symbol class_member_declaration) [62610 62645])
+                    ("NO_PRIOR_SERVICE" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [62650 62697])
+                    ("priorService_" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [62702 62747])
+                    ("isConnectionAlive" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [62795 68236])
+                    ("isConnectionAlive" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("service" variable (:type "int") (reparse-symbol formal_parameters) [68342 68353]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [68309 71866])
+                    ("getConnectedServer" function
+                       (:typemodifiers ("private" "final")
+                        :arguments 
+                          ( ("services" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [71917 71931]))                          
+                        :type "AS400Server")
+                        (reparse-symbol class_member_declaration) [71872 72604])
+                    ("isMissingPTF" function (:type "boolean") (reparse-symbol class_member_declaration) [72920 72990])
+                    ("isMustAddLanguageLibrary" function (:type "boolean") (reparse-symbol class_member_declaration) [73076 73162])
+                    ("isSkipFurtherSettingOfLanguageLibrary" function (:type "boolean") (reparse-symbol class_member_declaration) [73305 73417])
+                    ("isThreadUsed" function (:type "boolean") (reparse-symbol class_member_declaration) [73459 73637])
+                    ("loadImpl" function
+                       (:arguments 
+                          ( ("impl1" variable (:type "String") (reparse-symbol formal_parameters) [73868 73880])
+                            ("impl2" variable (:type "String") (reparse-symbol formal_parameters) [73882 73894]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [73852 74509])
+                    ("newConverter" function
+                       (:throws ("UnsupportedEncodingException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ccsid" variable (:type "int") (reparse-symbol formal_parameters) [74593 74602]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [74568 74706])
+                    ("removeConnectionListener" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("listener" variable (:type "ConnectionListener") (reparse-symbol formal_parameters) [74796 74823]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [74759 74969])
+                    ("returnSecurityExceptionX" function
+                       (:throws ("ServerStartupException")
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("rc" variable (:type "int") (reparse-symbol formal_parameters) [75198 75204]))                          
+                        :type "AS400SecurityException")
+                        (reparse-symbol class_member_declaration) [75143 75303])
+                    ("returnSecurityException" function
+                       (:throws ("ServerStartupException")
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("rc" variable (:type "int") (reparse-symbol formal_parameters) [75362 75368])
+                            ("messageList" variable
+                               (:dereference 1
+                                :type "AS400Message")
+                                (reparse-symbol formal_parameters) [75370 75396])
+                            ("info" variable (:type "String") (reparse-symbol formal_parameters) [75398 75409]))                          
+                        :type "AS400SecurityException")
+                        (reparse-symbol class_member_declaration) [75308 97891])
+                    ("parseMessages" function
+                       (:throws ("IOException")
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("data" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [97933 97944])
+                            ("offset" variable (:type "int") (reparse-symbol formal_parameters) [97946 97956])
+                            ("converter" variable (:type "ConverterImplRemote") (reparse-symbol formal_parameters) [97958 97987]))                          
+                        :type "AS400Message[]")
+                        (reparse-symbol class_member_declaration) [97897 99223])
+                    ("parseMessage" function
+                       (:throws ("IOException")
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("data" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [99262 99273])
+                            ("offset" variable (:type "int") (reparse-symbol formal_parameters) [99275 99285])
+                            ("converter" variable (:type "ConverterImplRemote") (reparse-symbol formal_parameters) [99287 99316]))                          
+                        :type "AS400Message")
+                        (reparse-symbol class_member_declaration) [99229 101559])
+                    ("setGSSCredential" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("gssCredential" variable (:type "Object") (reparse-symbol formal_parameters) [101594 101614]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [101565 101785])
+                    ("setMissingPTF" function (:type "void") (reparse-symbol class_member_declaration) [101931 101999])
+                    ("setLanguageLibrary" function
+                       (:arguments 
+                          ( ("libName" variable (:type "String") (reparse-symbol formal_parameters) [102073 102087]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [102049 102136])
+                    ("setSkipFurtherSettingOfLanguageLibrary" function (:type "void") (reparse-symbol class_member_declaration) [102276 102386])
+                    ("setServicePort" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [102448 102465])
+                            ("service" variable (:type "int") (reparse-symbol formal_parameters) [102467 102478])
+                            ("port" variable (:type "int") (reparse-symbol formal_parameters) [102480 102488]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [102421 102582])
+                    ("setServicePortsToDefault" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [102685 102702]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [102648 102772])
+                    ("mustAddLanguageLibrary_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [102852 102900])
+                    ("mustUseNetSockets_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [102992 103035])
+                    ("mustUseSuppliedProfile_" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [103107 103155])
+                    ("setState" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("useSSLConnection" variable (:type "SSLOptions") (reparse-symbol formal_parameters) [103244 103271])
+                            ("canUseNativeOptimization" variable (:type "boolean") (reparse-symbol formal_parameters) [103273 103305])
+                            ("threadUsed" variable (:type "boolean") (reparse-symbol formal_parameters) [103307 103325])
+                            ("ccsid" variable (:type "int") (reparse-symbol formal_parameters) [103327 103336])
+                            ("nlv" variable (:type "String") (reparse-symbol formal_parameters) [103338 103348])
+                            ("socketProperties" variable (:type "SocketProperties") (reparse-symbol formal_parameters) [103350 103383])
+                            ("ddmRDB" variable (:type "String") (reparse-symbol formal_parameters) [103385 103398])
+                            ("mustUseNetSockets" variable (:type "boolean") (reparse-symbol formal_parameters) [103400 103425])
+                            ("mustUseSuppliedProfile" variable (:type "boolean") (reparse-symbol formal_parameters) [103427 103457])
+                            ("mustAddLanguageLibrary" variable (:type "boolean") (reparse-symbol formal_parameters) [103459 103489]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [103223 104988])
+                    ("signon2" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [105022 105039])
+                            ("systemNameLocal" variable (:type "boolean") (reparse-symbol formal_parameters) [105041 105064])
+                            ("userId" variable (:type "String") (reparse-symbol formal_parameters) [105066 105079])
+                            ("bytes" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [105081 105093])
+                            ("byteType" variable (:type "int") (reparse-symbol formal_parameters) [105095 105107]))                          
+                        :type "SignonInfo")
+                        (reparse-symbol class_member_declaration) [104995 106996])
+                    ("signon" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("systemName" variable (:type "String") (reparse-symbol formal_parameters) [107079 107096])
+                            ("systemNameLocal" variable (:type "boolean") (reparse-symbol formal_parameters) [107098 107121])
+                            ("userId" variable (:type "String") (reparse-symbol formal_parameters) [107123 107136])
+                            ("vault" variable (:type "CredentialVault") (reparse-symbol formal_parameters) [107138 107159])
+                            ("gssName" variable (:type "String") (reparse-symbol formal_parameters) [107161 107175]))                          
+                        :type "SignonInfo")
+                        (reparse-symbol class_member_declaration) [107054 114698])
+                    ("signonConnect" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :typemodifiers ("private" "synchronized")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [114738 118489])
+                    ("signonDisconnect" function
+                       (:typemodifiers ("private" "synchronized")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [118534 119219])
+                    ("swapTo" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :arguments 
+                          ( ("swapToPH" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [119240 119255])
+                            ("swapFromPH" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [119257 119274]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [119225 120413])
+                    ("swapBack" function
+                       (:throws ("AS400SecurityException" "IOException")
+                        :arguments 
+                          ( ("swapToPH" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [120433 120448])
+                            ("swapFromPH" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [120450 120467]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [120419 120787])
+                    ("mapNativeSecurityException" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("e" variable (:type "NativeException") (reparse-symbol formal_parameters) [120937 120954]))                          
+                        :type "AS400SecurityException")
+                        (reparse-symbol class_member_declaration) [120879 121828])
+                    ("encryptNewPassword" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("userID" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [122600 122613])
+                            ("oldPwd" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [122615 122628])
+                            ("newPwd" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [122630 122643])
+                            ("protectedOldPwd" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [122645 122667])
+                            ("protectedNewPwd" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [122669 122691])
+                            ("clientSeed" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [122693 122710])
+                            ("serverSeed" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [122712 122729]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [122559 126251])
+                    ("encryptPassword" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("userID" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [126295 126308])
+                            ("pwd" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [126310 126320])
+                            ("clientSeed" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [126322 126339])
+                            ("serverSeed" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [126341 126358]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [126257 126967])
+                    ("generatePasswordSubstitute" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("userID" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [128935 128948])
+                            ("token" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [128950 128962])
+                            ("password_verifier" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [128964 128988])
+                            ("sequenceNumber" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [128990 129011])
+                            ("clientSeed" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [129013 129030])
+                            ("serverSeed" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [129032 129049]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [128886 131014])
+                    ("generateToken" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("userID" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [131164 131177])
+                            ("password" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [131179 131194]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [131128 134127])
+                    ("addArray" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("array1" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [134190 134203])
+                            ("array2" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [134205 134218])
+                            ("result" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [134220 134233])
+                            ("length" variable (:type "int") (reparse-symbol formal_parameters) [134235 134245]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [134161 134496])
+                    ("ebcdicStrLen" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("string" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [134534 134547])
+                            ("maxLength" variable (:type "int") (reparse-symbol formal_parameters) [134549 134562]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [134502 134692])
+                    ("incrementString" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("string" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [134777 134790]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [134741 134895])
+                    ("xORArray" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("string1" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [134930 134944])
+                            ("string2" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [134946 134960])
+                            ("string3" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [134962 134976]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [134901 135103])
+                    ("xorWith0x55andLshift" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("bytes" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [135150 135162]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [135109 135884])
+                    ("EPERM" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [135940 136242])
+                    ("INITPERM" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [136296 136657])
+                    ("OUTPERM" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [136735 137095])
+                    ("PPERM" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [137147 137385])
+                    ("PC1" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [137391 137830])
+                    ("PC2" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [137836 138199])
+                    ("S1" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [138205 138536])
+                    ("S2" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [138542 138873])
+                    ("S3" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [138879 139210])
+                    ("S4" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [139216 139547])
+                    ("S5" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [139553 139884])
+                    ("S6" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [139890 140221])
+                    ("S7" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [140227 140558])
+                    ("S8" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [140564 140895])
+                    ("enc_des" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("key" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [141910 141920])
+                            ("data" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [141922 141933]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [141880 150023])
+                    ("cipher" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("key" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [150056 150066])
+                            ("Ln" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [150068 150077])
+                            ("Rn" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [150079 150088]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [150029 154612])
+                    ("dectobin" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("value" variable (:type "int") (reparse-symbol formal_parameters) [154866 154875])
+                            ("string" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [154877 154890])
+                            ("offset" variable (:type "int") (reparse-symbol formal_parameters) [154892 154902]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [154837 155211])
+                    ("lshift1" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("Cn" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [155245 155254]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [155217 155667])
+                    ("lshift2" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("Cn" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [155701 155710]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [155673 156221])
+                    ("bidiStringType" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [156253 156305])
+                    ("setBidiStringType" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("bidiStringType" variable (:type "int") (reparse-symbol formal_parameters) [156509 156527]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [156479 156578])
+                    ("getBidiStringType" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [156755 156820]))                  
+                :type "class")
+                nil [1140 156853]))          
+    :file "AS400ImplRemote.java"
+    :pointmax 156854
+    :fsize 156853
+    :lastmodtime '(21722 35212 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!Downloads!jtopen!src!com!ibm!as400!access!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,142 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "EdcRequestTypes.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("EDC_MESSAGE_TYPES" variable (:constant-flag t) nil [138 155])
+            ("EDC_MESSAGE_TYPE" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("EDC_MESSAGE_TYPE_SI" variable
+                             (:constant-flag t
+                              :default-value (195 196)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [173 196])
+                          ("EDC_MESSAGE_TYPE_EPG0" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [200 222])
+                          ("EDC_MESSAGE_TYPE_EPG" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [225 246])
+                          ("EDC_MESSAGE_TYPE_TARBALL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [249 274])
+                          ("EDC_MESSAGE_TYPE_PROCINS" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [277 302])
+                          ("EDC_MESSAGE_TYPE_PROCINS_K3" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [305 333])
+                          ("EDC_MESSAGE_TYPE_SETTINGS" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [336 362])
+                          ("EDC_MESSAGE_TYPE_UI" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [365 385])
+                          ("EDC_MESSAGE_TYPE_OWM1" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [388 410])
+                          ("EDC_MESSAGE_TYPE_OWM2" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [413 435])
+                          ("EDC_MESSAGE_TYPE_METL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [438 460])
+                          ("EDC_MESSAGE_TYPE_METD" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [463 485])
+                          ("EDC_MESSAGE_TYPE_UNKNOWN" variable
+                             (:constant-flag t
+                              :default-value (515 517)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [488 517]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [156 537])
+            ("CDC_DOWNLOAD_TYPE" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("CDC_DOWNLOAD_TYPE_DSMCC" variable
+                             (:constant-flag t
+                              :default-value (582 583)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [556 583])
+                          ("CDC_DOWNLOAD_TYPE_DVB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [587 609])
+                          ("CDC_DOWNLOAD_TYPE_UDP" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [612 634])
+                          ("CDC_DOWNLOAD_TYPE_HTTP" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [637 660])
+                          ("CDC_DOWNLOAD_TYPE_UNKNOWN" variable
+                             (:constant-flag t
+                              :default-value (691 693)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [663 693]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [539 714])
+            ("LOC_TYPE" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("LOC_OWM_IPADDRESS_1" variable
+                             (:constant-flag t
+                              :default-value (755 756)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [733 756])
+                          ("LOC_OWM_IPADDRESS_2" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [760 780])
+                          ("LOC_OWM_IPADDRESS_1_PORT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [783 808])
+                          ("LOC_OWM_IPADDRESS_2_PORT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [811 836])
+                          ("LOC_TYPE_UNKNOWN" variable
+                             (:constant-flag t
+                              :default-value (858 860)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [839 860]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [716 872]))          
+    :file "EdcRequestTypes.h"
+    :pointmax 880
+    :fsize 879
+    :lastmodtime '(21704 60325 235316 36000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("EDC_MESSAGE_TYPES")
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D683!src!pace!middleware!cobaltClient!ecoDataClient!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

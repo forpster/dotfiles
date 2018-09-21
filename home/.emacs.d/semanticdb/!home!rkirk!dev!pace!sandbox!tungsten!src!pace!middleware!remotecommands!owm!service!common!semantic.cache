@@ -1,0 +1,250 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables (list 
+   (semanticdb-table "owmAcquire.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("gst/gst.h" include (:system-flag t) nil [789 809])
+            ("owmAcquire.h" include nil nil [811 834])
+            ("owmCommon.h" include nil nil [835 857])
+            ("owmGstPipeline.h" include nil nil [858 885])
+            ("serialization_manager.h" include nil nil [886 920])
+            ("owmSectionFilter.h" include nil nil [921 950])
+            ("OWM" using (:type ("OWM" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [952 972])
+            ("tlogger.h" include nil nil [974 994])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [995 1019])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [1148 1208])
+            ("owmcrc32.h" include nil nil [1209 1230])
+            ("OwmAcquire::pSelf" variable
+               (:pointer 1
+                :type ("OwmAcquire" type (:type "class") nil nil))
+                nil [1232 1269])
+            ("OwmAcquire" function
+               (:constructor-flag t
+                :parent "OwmAcquire"
+                :type ("OwmAcquire" type (:type "class") nil nil))
+                nil [1504 1678])
+            ("initOwmAcquire" function
+               (:parent "OwmAcquire"
+                :type "void")
+                nil [1913 3838])
+            ("OWM" type
+               (:members 
+                  ( ("OwmFilterData" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3889 3896])
+                            ("OwmFilterData" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("type" variable (:type ("eOWM_FILTER_TYPE_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3919 3943])
+                                    ("pData" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [3944 3962])
+                                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [3963 3972])
+                                    ("sectionType" variable (:type ("eOWM_SECTION_TYPE_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3973 4006]))                                  
+                                :type ("OwmFilterData" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3903 4232])
+                            ("OwmFilterData" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4239 4271])
+                            ("m_Type" variable (:type ("eOWM_FILTER_TYPE_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4278 4304])
+                            ("m_OwmDataType" variable (:type ("eOWM_SECTION_TYPE_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4311 4345])
+                            ("m_Data" variable (:type ("QByteArray" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4422 4440])
+                            ("m_bFilterSet" variable (:type "bool") (reparse-symbol classsubparts) [4447 4465]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3861 4471]))                  
+                :type "namespace")
+                nil [3841 4473])
+            ("setFilter" function
+               (:parent "OwmAcquire"
+                :arguments 
+                  ( ("type" variable (:type "int") (reparse-symbol arg-sub-list) [4847 4856])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4857 4874])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [4875 4884])
+                    ("sectionType" variable (:type ("eOWM_SECTION_TYPE_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4885 4917])
+                    ("pid" variable (:type "int") (reparse-symbol arg-sub-list) [4918 4926])
+                    ("tableId" variable (:type "int") (reparse-symbol arg-sub-list) [4956 4969]))                  
+                :type "bool")
+                nil [4818 5948])
+            ("setupSectionFilter" function
+               (:parent "OwmAcquire"
+                :type "void")
+                nil [6191 8875])
+            ("OwmAcquire" function
+               (:destructor-flag t
+                :parent "OwmAcquire"
+                :type "void")
+                nil [9102 9277])
+            ("resetAllResource" function
+               (:parent "OwmAcquire"
+                :type "void")
+                nil [9565 10260])
+            ("initGstPipeLine" function
+               (:parent "OwmAcquire"
+                :arguments 
+                  ( ("owmPid" variable (:type ("quint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10595 10610])
+                    ("owmtableId" variable (:type ("quint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10611 10629])
+                    ("bpPid" variable (:type ("quint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10630 10644])
+                    ("bptableId" variable (:type ("quint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10645 10663]))                  
+                :type "int")
+                nil [10561 11963])
+            ("startMonitoringPid" function
+               (:parent "OwmAcquire"
+                :arguments 
+                  ( ("parserBand" variable (:type "int") (reparse-symbol arg-sub-list) [12735 12750])
+                    ("pid" variable (:type "int") (reparse-symbol arg-sub-list) [12751 12760]))                  
+                :type "int")
+                nil [12698 13837])
+            ("enableAllfilters" function
+               (:parent "OwmAcquire"
+                :type "int")
+                nil [13840 14304])
+            ("stopMonitoringPid" function
+               (:parent "OwmAcquire"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14767 14773]))                  
+                :type "int")
+                nil [14731 15094])
+            ("disableAllfilters" function
+               (:parent "OwmAcquire"
+                :type "int")
+                nil [15098 15566])
+            ("setBoxId" function
+               (:parent "OwmAcquire"
+                :arguments 
+                  ( ("boxId" variable
+                       (:reference 1
+                        :type ("QByteArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15944 15962])
+                    ("customType" variable (:type "int") (reparse-symbol arg-sub-list) [15963 15979]))                  
+                :type "int")
+                nil [15917 17892])
+            ("setRegionId" function
+               (:parent "OwmAcquire"
+                :arguments 
+                  ( ("regionId" variable
+                       (:reference 1
+                        :type ("QByteArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18292 18314]))                  
+                :type "int")
+                nil [18262 19351])
+            ("setPartnerId" function
+               (:parent "OwmAcquire"
+                :arguments 
+                  ( ("partnerId" variable
+                       (:reference 1
+                        :type ("QByteArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19756 19779]))                  
+                :type "int")
+                nil [19725 20836])
+            ("BLOCK_HEADER_FIXED_SIZE" variable (:constant-flag t) nil [20853 20876])
+            ("OWM_FILTER_MAX_LENGTH" variable (:constant-flag t) nil [20887 20908])
+            ("parserBlockHeader" function
+               (:parent "OwmAcquire"
+                :arguments 
+                  ( ("pSectionPayload" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21440 21468])
+                    ("sectionLength" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21505 21533]))                  
+                :type "int")
+                nil [21404 30110])
+            ("processOWMSection" function
+               (:parent "OwmAcquire"
+                :arguments 
+                  ( ("databuf" variable (:type ("QByteArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30585 30605]))                  
+                :type "void")
+                nil [30548 30916])
+            ("extractFiterBytes" function
+               (:parent "OwmAcquire"
+                :arguments 
+                  ( ("ext_filter_data_byte" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [31287 31323])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [31324 31336]))                  
+                :type "int")
+                nil [31251 33742]))          
+    :file "owmAcquire.cpp"
+    :pointmax 52601
+    :fsize 52600
+    :lastmodtime '(21954 9583 171309 264000)
+    :unmatched-syntax '((punctuation 4473 . 4474) (string 1176 . 1205))
+    :lexical-table 
+        '(("BLOCK_HEADER_FIXED_SIZE" . ((number "8" 20877 . 20878)))
+          ("OWM_FILTER_MAX_LENGTH" . ((number "64" 20909 . 20911)))
+          )
+
+    )
+   (semanticdb-table "owmAcquire.h"
+    :file "owmAcquire.h"
+    :fsize 8310
+    :lastmodtime '(21954 9583 171309 264000)
+    )
+   (semanticdb-table "owmGstPipeline.h"
+    :file "owmGstPipeline.h"
+    :fsize 3688
+    :lastmodtime '(21954 9583 170309 277000)
+    )
+   (semanticdb-table "owmcrc32.h"
+    :file "owmcrc32.h"
+    :fsize 404
+    :lastmodtime '(21954 9583 170309 277000)
+    )
+   (semanticdb-table "owmcrc32.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("crc32.h" include nil nil [1 19])
+            ("crc_table" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "unsigned int")
+                nil [70 3311])
+            ("owm_se_tp_crc32" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [3494 3514])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [3515 3524]))                  
+                :type "unsigned long")
+                nil [3462 3715]))          
+    :file "owmcrc32.cpp"
+    :pointmax 3716
+    :fsize 3715
+    :lastmodtime '(21954 9583 169309 289000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "owmCommon.h"
+    :file "owmCommon.h"
+    :fsize 8123
+    :lastmodtime '(21954 9583 171309 264000)
+    )
+   (semanticdb-table "owmSectionFilter.h"
+    :file "owmSectionFilter.h"
+    :fsize 4057
+    :lastmodtime '(21954 9583 169309 289000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!remotecommands!owm!service!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

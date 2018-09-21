@@ -1,0 +1,374 @@
+;; Object boost/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "boost/"
+  :tables (list 
+   (semanticdb-table "shared_ptr.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_SHARED_PTR_HPP_INCLUDED" variable (:constant-flag t) nil [47 76])
+            ("boost/smart_ptr/shared_ptr.hpp" include (:system-flag t) nil [448 489]))          
+    :file "shared_ptr.hpp"
+    :pointmax 540
+    :fsize 539
+    :lastmodtime '(21685 46946 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_SHARED_PTR_HPP_INCLUDED")
+          )
+
+    )
+   (semanticdb-table "config.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_CONFIG_HPP" variable (:constant-flag t) nil [632 648])
+            ("BOOST_USER_CONFIG" variable (:constant-flag t) nil [792 809])
+            ("boost/config/select_compiler_config.hpp" include (:system-flag t) nil [1088 1140])
+            ("boost/config/select_stdlib_config.hpp" include (:system-flag t) nil [1454 1504])
+            ("boost/config/select_platform_config.hpp" include (:system-flag t) nil [1794 1846])
+            ("boost/config/suffix.hpp" include (:system-flag t) nil [2000 2034]))          
+    :file "config.hpp"
+    :pointmax 2075
+    :fsize 2074
+    :lastmodtime '(21685 46946 0 0)
+    :unmatched-syntax '((punctuation ">" 898 . 915) (symbol "hpp" 898 . 915) (punctuation "." 898 . 915) (symbol "user" 898 . 915) (punctuation "/" 898 . 915) (symbol "config" 898 . 915) (punctuation "/" 898 . 915) (symbol "boost" 898 . 915) (punctuation "<" 898 . 915) (symbol 890 . 897) (punctuation 887 . 888))
+    :lexical-table 
+        '(("BOOST_CONFIG_HPP")
+          ("BOOST_USER_CONFIG" . 
+              ((punctuation "<" 810 . 811) (symbol "boost" 811 . 816) (punctuation "/" 816 . 817) (symbol "config" 817 . 823) (punctuation "/" 823 . 824) (symbol "user" 824 . 828) (punctuation "." 828 . 829) (symbol "hpp" 829 . 832) (punctuation ">" 832 . 833)))
+          )
+
+    )
+   (semanticdb-table "assert.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("assert.h" include (:system-flag t) nil [1440 1460])
+            ("BOOST_ASSERT" variable (:constant-flag t) nil [1536 1548])
+            ("BOOST_ASSERT_HPP" variable (:constant-flag t) nil [2483 2499])
+            ("cstdlib" include (:system-flag t) nil [2500 2522])
+            ("iostream" include (:system-flag t) nil [2523 2546])
+            ("boost/current_function.hpp" include (:system-flag t) nil [2547 2588])
+            ("BOOST_ASSERT_MSG_OSTREAM" variable (:constant-flag t) nil [2788 2812])
+            ("boost" type
+               (:members 
+                  ( ("assertion" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("assertion_failed_msg" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("expr" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [2976 2994])
+                                            ("msg" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [2995 3012])
+                                            ("function" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [3013 3035])
+                                            ("file" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [3048 3066])
+                                            ("line" variable (:type "long") (reparse-symbol arg-sub-list) [3067 3077]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2943 3484]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2906 3494]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2868 3512]))                  
+                :type "namespace")
+                nil [2839 3531])
+            ("BOOST_ASSERT_MSG" variable (:constant-flag t) nil [3562 3578])
+            ("BOOST_VERIFY" variable (:constant-flag t) nil [4205 4217]))          
+    :file "assert.hpp"
+    :pointmax 4251
+    :fsize 4250
+    :lastmodtime '(21685 46946 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_ASSERT_MSG" (spp-arg-list ("expr" "msg") 3578 . 3589) . ((semantic-list "((expr) \\
+    ? ((void)0) \\
+    : ::boost::assertion::detail::assertion_failed_msg(#expr, msg, \\
+          BOOST_CURRENT_FUNCTION, __FILE__, __LINE__))" 3590 . 3741)))
+          ("BOOST_ASSERT_MSG_OSTREAM" . 
+              ((symbol "std" 2813 . 2816) (punctuation ":" 2816 . 2817) (punctuation ":" 2817 . 2818) (symbol "cerr" 2818 . 2822)))
+          ("BOOST_VERIFY" (spp-arg-list ("expr") 4217 . 4223) . ((symbol "BOOST_ASSERT" 4224 . 4236) (semantic-list "(expr)" 4236 . 4242)))
+          ("BOOST_ASSERT_HPP")
+          ("BOOST_ASSERT" (spp-arg-list ("expr") 1548 . 1554) . ((symbol "assert" 1555 . 1561) (semantic-list "(expr)" 1561 . 1567)))
+          )
+
+    )
+   (semanticdb-table "checked_delete.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_CHECKED_DELETE_HPP_INCLUDED" variable (:constant-flag t) nil [51 84])
+            ("boost" type
+               (:members 
+                  ( ("checked_delete" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("x" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [720 726]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [675 911])
+                    ("checked_array_delete" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("x" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [964 970]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [913 1093])
+                    ("checked_deleter" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("result_type" type
+                               (:typedef ("void")
+                                :superclasses "void"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1142 1167])
+                            ("argument_type" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :pointer 1
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1172 1198])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1220 1226]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1204 1310]))                          )
+                        (reparse-symbol namespacesubparts) [1095 1313])
+                    ("checked_array_deleter" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("result_type" type
+                               (:typedef ("void")
+                                :superclasses "void"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1368 1393])
+                            ("argument_type" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :pointer 1
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1398 1424])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1446 1452]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1430 1510]))                          )
+                        (reparse-symbol namespacesubparts) [1315 1513]))                  
+                :type "namespace")
+                nil [600 1516]))          
+    :file "checked_delete.hpp"
+    :pointmax 1590
+    :fsize 1589
+    :lastmodtime '(21685 46946 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_CHECKED_DELETE_HPP_INCLUDED")
+          )
+
+    )
+   (semanticdb-table "throw_exception.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("UUID_AA15E74A856F11E08B8D93F24824019B" variable (:constant-flag t) nil [55 92])
+            ("boost/exception/detail/attribute_noreturn.hpp" include (:system-flag t) nil [797 853])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [854 892])
+            ("boost/config.hpp" include (:system-flag t) nil [893 920])
+            ("exception" include (:system-flag t) nil [921 941])
+            ("boost/exception/exception.hpp" include (:system-flag t) nil [1299 1340])
+            ("boost/current_function.hpp" include (:system-flag t) nil [1341 1379])
+            ("BOOST_THROW_EXCEPTION" variable (:constant-flag t) nil [1389 1410])
+            ("boost" type
+               (:members 
+                  ( ("throw_exception_assert_compatibility" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::exception" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1748 1772]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1698 1776])
+                    ("throw_exception" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("E" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1850 1863]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1821 2156])
+                    ("exception_detail" type
+                       (:members 
+                          ( ("throw_exception_" function
+                               (:arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("E" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2346 2358])
+                                    ("current_function" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2359 2389])
+                                    ("file" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2390 2408])
+                                    ("line" variable (:type "int") (reparse-symbol arg-sub-list) [2409 2419]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2315 2761]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2210 2767]))                  
+                :type "namespace")
+                nil [1578 2776]))          
+    :file "throw_exception.hpp"
+    :pointmax 2899
+    :fsize 2898
+    :lastmodtime '(21685 46946 0 0)
+    :unmatched-syntax '((symbol 2282 . 2306) (punctuation 2272 . 2273) (symbol 2271 . 2272) (CLASS 2265 . 2270) (punctuation 2264 . 2265) (TEMPLATE 2255 . 2263) (symbol 1796 . 1820) (punctuation 1794 . 1795) (symbol 1793 . 1794) (CLASS 1787 . 1792) (punctuation 1786 . 1787) (TEMPLATE 1778 . 1786) (symbol 172 . 185) (symbol 168 . 171) (symbol 161 . 167) (punctuation 160 . 161))
+    :lexical-table 
+        '(("UUID_AA15E74A856F11E08B8D93F24824019B")
+          ("BOOST_THROW_EXCEPTION" (spp-arg-list ("x") 1410 . 1413) . 
+              ((punctuation ":" 1414 . 1415) (punctuation ":" 1415 . 1416) (symbol "boost" 1416 . 1421) (punctuation ":" 1421 . 1422) (punctuation ":" 1422 . 1423) (symbol "exception_detail" 1423 . 1439) (punctuation ":" 1439 . 1440) (punctuation ":" 1440 . 1441) (symbol "throw_exception_" 1441 . 1457) (semantic-list "(x,BOOST_CURRENT_FUNCTION,__FILE__,__LINE__)" 1457 . 1501)))
+          )
+
+    )
+   (semanticdb-table "memory_order.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_MEMORY_ORDER_HPP_INCLUDED" variable (:constant-flag t) nil [49 80])
+            ("boost" type
+               (:members 
+                  ( ("memory_order" type
+                       (:members 
+                          ( ("memory_order_relaxed" variable
+                               (:constant-flag t
+                                :default-value (1010 1011)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [987 1011])
+                            ("memory_order_acquire" variable
+                               (:constant-flag t
+                                :default-value (1040 1041)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1017 1041])
+                            ("memory_order_release" variable
+                               (:constant-flag t
+                                :default-value (1070 1071)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1047 1071])
+                            ("memory_order_acq_rel" variable
+                               (:constant-flag t
+                                :default-value (1100 1101)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1077 1101])
+                            ("memory_order_seq_cst" variable
+                               (:constant-flag t
+                                :default-value (1151 1152)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1128 1152])
+                            ("memory_order_consume" variable
+                               (:constant-flag t
+                                :default-value (1196 1197)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1173 1197]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [963 1200]))                  
+                :type "namespace")
+                nil [499 1203]))          
+    :file "memory_order.hpp"
+    :pointmax 1274
+    :fsize 1273
+    :lastmodtime '(21685 46946 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_MEMORY_ORDER_HPP_INCLUDED")
+          )
+
+    )
+   (semanticdb-table "current_function.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_CURRENT_FUNCTION_HPP_INCLUDED" variable (:constant-flag t) nil [53 88])
+            ("boost" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("current_function_helper" function
+                               (:typemodifiers ("inline")
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [588 1410]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [568 1413]))                  
+                :type "namespace")
+                nil [549 1436]))          
+    :file "current_function.hpp"
+    :pointmax 1512
+    :fsize 1511
+    :lastmodtime '(21685 46946 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_CURRENT_FUNCTION_HPP_INCLUDED")
+          )
+
+    )
+   (semanticdb-table "exception"
+    :file "exception"
+    :fsize 4096
+    :lastmodtime '(21814 12160 56700 152000)
+    )
+   (semanticdb-table "scoped_ptr.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_SCOPED_PTR_HPP_INCLUDED" variable (:constant-flag t) nil [47 76])
+            ("boost/smart_ptr/scoped_ptr.hpp" include (:system-flag t) nil [401 442]))          
+    :file "scoped_ptr.hpp"
+    :pointmax 492
+    :fsize 491
+    :lastmodtime '(21685 46946 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_SCOPED_PTR_HPP_INCLUDED")
+          )
+
+    )
+   )
+  :file "!usr!include!boost!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

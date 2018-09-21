@@ -1,0 +1,373 @@
+;; Object logClient/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "logClient/"
+  :tables (list 
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QtCore/QCoreApplication" include (:system-flag t) nil [1 35])
+            ("altiboxLogStrategy.h" include nil nil [36 67])
+            ("tlogger.h" include nil nil [68 88])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [90 114])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [115 172])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [185 194])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [195 209]))                  
+                :type "int")
+                nil [174 495]))          
+    :file "main.cpp"
+    :pointmax 496
+    :fsize 495
+    :lastmodtime '(21785 22998 578826 402000)
+    :unmatched-syntax '((string 143 . 169))
+    )
+   (semanticdb-table "logClient.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("LOG_CLIENT_H__" variable (:constant-flag t) nil [774 788])
+            ("logdatatypes.h" include nil nil [790 815])
+            ("UNIFIED_LOGGING" type
+               (:members 
+                  ( ("LogClient" type
+                       (:superclasses 
+                          ( ("QObject" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1079 1086])
+                            ("LogClient" function
+                               (:constructor-flag t
+                                :type ("LogClient" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1094 1109])
+                            ("LogClient" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1116 1139])
+                            ("getData" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("dataName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogDataType_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1169 1200]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1146 1239])
+                            ("processData" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("dataName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1285 1310]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1258 1315])
+                            ("private" label nil (reparse-symbol classsubparts) [1320 1328])
+                            ("LogClient" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogClient" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1438 1457]))                                  
+                                :type ("LogClient" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1426 1458])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :constant-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogClient" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1613 1632]))                                  
+                                :type ("LogClient" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1583 1633]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1023 1640]))                  
+                :type "namespace")
+                nil [817 1643]))          
+    :file "logClient.h"
+    :pointmax 1671
+    :fsize 1670
+    :lastmodtime '(21785 22998 578826 402000)
+    :unmatched-syntax '((punctuation 1643 . 1644) (symbol 1246 . 1257) (symbol 1066 . 1074))
+    :lexical-table 
+        '(("LOG_CLIENT_H__")
+          )
+
+    )
+   (semanticdb-table "agamaLogClient.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("LOG_AGAMA_CLIENT_H__" variable (:constant-flag t) nil [795 815])
+            ("logdatatypes.h" include nil nil [817 842])
+            ("logClient.h" include nil nil [843 865])
+            ("logDataServer.h" include nil nil [866 892])
+            ("UNIFIED_LOGGING" using (:type ("UNIFIED_LOGGING" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [893 925])
+            ("AgamaLogClient" type
+               (:superclasses 
+                  ( ("LogClient" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1178 1185])
+                    ("AgamaLogClient" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("pLogDataServerInstance" variable
+                               (:pointer 1
+                                :type ("LogDataServer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1207 1246]))                          
+                        :type ("AgamaLogClient" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1190 1247])
+                    ("AgamaLogClient" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1251 1277])
+                    ("getData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dataName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LogDataType_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1296 1326])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1327 1344]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1281 1345])
+                    ("readConfigurationParameter" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("parameter" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1383 1405])
+                            ("value" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1406 1422]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1349 1423])
+                    ("readConfigurationParameter" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("parameter" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1461 1484]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1427 1485])
+                    ("processData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LogData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1508 1529]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1489 1530])
+                    ("private" label nil (reparse-symbol classsubparts) [1532 1540])
+                    ("m_preconfiguredMap" variable (:type ("QMap" type
+                         (:template-specifier 
+                            ( ("LogDataType_t" type nil nil nil)
+                              ("QString" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1545 1593])
+                    ("populateEmpClientBuildDate" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1597 1632])
+                    ("populateEmpClientBuildVersion" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1636 1673])
+                    ("AgamaLogClient" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("AgamaLogClient" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1776 1800]))                          
+                        :type ("AgamaLogClient" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1759 1801])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("AgamaLogClient" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1952 1976]))                          
+                        :type ("AgamaLogClient" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1917 1977])
+                    ("m_pLogDataServerInstance" variable
+                       (:pointer 1
+                        :type ("LogDataServer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1981 2021])
+                    ("notifyData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UNIFIED_LOGGING::LogDataType_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2053 2097])
+                            ("value" variable (:type ("QVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2098 2114]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2035 2115]))                  
+                :type "class")
+                nil [1124 2119]))          
+    :file "agamaLogClient.h"
+    :pointmax 2147
+    :fsize 2146
+    :lastmodtime '(21785 22998 579826 394000)
+    :unmatched-syntax '((punctuation 2030 . 2031) (symbol 2023 . 2030) (symbol 1168 . 1176))
+    :lexical-table 
+        '(("LOG_AGAMA_CLIENT_H__")
+          )
+
+    )
+   (semanticdb-table "agamaLogClient.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("agamaLogClient.h" include nil nil [616 643])
+            ("settings/settingsClient.h" include nil nil [644 680])
+            ("tlogger.h" include nil nil [681 701])
+            ("QFileInfo" include (:system-flag t) nil [702 722])
+            ("QDateTime" include (:system-flag t) nil [723 743])
+            ("QTimer" include (:system-flag t) nil [751 768])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [777 801])
+            ("Settings" using (:type ("Settings" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [802 827])
+            ("UNIFIED_LOGGING" using (:type ("UNIFIED_LOGGING" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [828 860])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [861 918])
+            ("AgamaLogClient" function
+               (:constructor-flag t
+                :parent "AgamaLogClient"
+                :arguments 
+                  ( ("pLogDataServerInstance" variable
+                       (:pointer 1
+                        :type ("LogDataServer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1213 1252]))                  
+                :type ("AgamaLogClient" type (:type "class") nil nil))
+                nil [1180 1568])
+            ("AgamaLogClient" function
+               (:destructor-flag t
+                :parent "AgamaLogClient"
+                :type "void")
+                nil [1836 1895])
+            ("processData" function
+               (:parent "AgamaLogClient"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("LogData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2226 2247]))                  
+                :type "void")
+                nil [2191 4660])
+            ("getData" function
+               (:parent "AgamaLogClient"
+                :arguments 
+                  ( ("dataName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("LogDataType_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5095 5125])
+                    ("value" variable
+                       (:reference 1
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5126 5143]))                  
+                :type "bool")
+                nil [5064 10113])
+            ("readConfigurationParameter" function
+               (:parent "AgamaLogClient"
+                :arguments 
+                  ( ("parameter" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10487 10509])
+                    ("value" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10510 10526]))                  
+                :type "bool")
+                nil [10437 11221])
+            ("readConfigurationParameter" function
+               (:parent "AgamaLogClient"
+                :arguments 
+                  ( ("parameter" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11578 11601]))                  
+                :type "bool")
+                nil [11528 12336])
+            ("populateEmpClientBuildDate" function
+               (:parent "AgamaLogClient"
+                :type "void")
+                nil [12607 12925])
+            ("populateEmpClientBuildVersion" function
+               (:parent "AgamaLogClient"
+                :type "void")
+                nil [13199 13790]))          
+    :file "agamaLogClient.cpp"
+    :pointmax 13793
+    :fsize 13792
+    :lastmodtime '(21785 22998 578826 402000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D713!src!pace!middleware!unifiedDataLogging!logClient!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

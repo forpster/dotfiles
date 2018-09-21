@@ -1,0 +1,297 @@
+;; Object snmp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "snmp/"
+  :tables (list 
+   (semanticdb-table "SNMPv1v2cHelper.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.rapid7.net.snmp" package nil nil [349 377])
+            ("com.rapid7.auth.ICredentials" include nil nil [379 415])
+            ("com.rapid7.auth.UserCredentials" include nil nil [416 455])
+            ("com.rapid7.log.ILogSink" include nil nil [456 487])
+            ("com.rapid7.net.IPPacket" include nil nil [488 519])
+            ("com.rapid7.net.ISessionEndpoint" include nil nil [520 559])
+            ("java.io.IOException" include nil nil [560 587])
+            ("java.util.ArrayList" include nil nil [588 615])
+            ("java.util.Map" include nil nil [616 637])
+            ("java.util.Set" include nil nil [638 659])
+            ("org.snmp4j.CommunityTarget" include nil nil [660 694])
+            ("org.snmp4j.PDU" include nil nil [695 717])
+            ("org.snmp4j.PDUv1" include nil nil [718 742])
+            ("org.snmp4j.Snmp" include nil nil [743 766])
+            ("org.snmp4j.Target" include nil nil [767 792])
+            ("org.snmp4j.TransportMapping" include nil nil [793 828])
+            ("org.snmp4j.event.ResponseEvent" include nil nil [829 867])
+            ("org.snmp4j.event.ResponseListener" include nil nil [868 909])
+            ("org.snmp4j.mp.SnmpConstants" include nil nil [910 945])
+            ("org.snmp4j.smi.Address" include nil nil [946 976])
+            ("org.snmp4j.smi.GenericAddress" include nil nil [977 1014])
+            ("org.snmp4j.smi.Integer32" include nil nil [1015 1047])
+            ("org.snmp4j.smi.IpAddress" include nil nil [1048 1080])
+            ("org.snmp4j.smi.OID" include nil nil [1081 1107])
+            ("org.snmp4j.smi.OctetString" include nil nil [1108 1142])
+            ("org.snmp4j.smi.VariableBinding" include nil nil [1143 1181])
+            ("org.snmp4j.transport.DefaultUdpTransportMapping" include nil nil [1182 1237])
+            ("SNMPv1v2cHelper" type
+               (:typemodifiers ("public")
+                :superclasses "SNMPHelper"
+                :members 
+                  ( ("fingerprint" function
+                       (:throws ("IOException" "InterruptedException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [2611 2630])
+                            ("" variable (:type "creds") (reparse-symbol formal_parameters) [2656 2661])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [2679 2685])
+                            ("" variable (:type "responseMap") (reparse-symbol formal_parameters) [2695 2706])
+                            ("sink" variable
+                               (:typemodifiers ("final")
+                                :type "ILogSink")
+                                (reparse-symbol formal_parameters) [2714 2733]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2577 5390])
+                    ("authenticateSNMPConnection" function
+                       (:throws ("IOException" "InterruptedException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [5902 5921])
+                            ("credentials" variable (:type "ICredentials") (reparse-symbol formal_parameters) [5923 5947])
+                            ("oid" variable (:type "String") (reparse-symbol formal_parameters) [5949 5959]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5860 6712])
+                    ("sendTrapPdu" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [7381 7400])
+                            ("agentAddress" variable (:type "String") (reparse-symbol formal_parameters) [7408 7427])
+                            ("specificTrapCode" variable (:type "int") (reparse-symbol formal_parameters) [7435 7455])
+                            ("timeStamp" variable (:type "long") (reparse-symbol formal_parameters) [7463 7477])
+                            ("uniqueId" variable (:type "String") (reparse-symbol formal_parameters) [7485 7500])
+                            ("summary" variable (:type "String") (reparse-symbol formal_parameters) [7508 7522])
+                            ("severity" variable (:type "int") (reparse-symbol formal_parameters) [7530 7542])
+                            ("sessionId" variable (:type "String") (reparse-symbol formal_parameters) [7550 7566])
+                            ("address" variable (:type "String") (reparse-symbol formal_parameters) [7574 7588])
+                            ("deliveryStatus" variable (:type "String") (reparse-symbol formal_parameters) [7596 7617])
+                            ("time" variable (:type "String") (reparse-symbol formal_parameters) [7625 7636])
+                            ("communityString" variable (:type "String") (reparse-symbol formal_parameters) [7644 7666]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7350 9852])
+                    ("createTarget" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [10080 10099])
+                            ("creds" variable (:type "ICredentials") (reparse-symbol formal_parameters) [10101 10119]))                          
+                        :type "Target")
+                        (reparse-symbol class_member_declaration) [10050 10334])
+                    ("createPdu" function
+                       (:typemodifiers ("protected")
+                        :type "PDU")
+                        (reparse-symbol class_member_declaration) [10352 10411])
+                    ("setUpSnmp" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("snmp" variable (:type "Snmp") (reparse-symbol formal_parameters) [10454 10463])
+                            ("creds" variable (:type "ICredentials") (reparse-symbol formal_parameters) [10465 10483]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10429 10575])
+                    ("sendCorrectSNMPVersion" function
+                       (:throws ("IOException")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("snmp" variable (:type "Snmp") (reparse-symbol formal_parameters) [10640 10649])
+                            ("pdu" variable (:type "PDU") (reparse-symbol formal_parameters) [10651 10658])
+                            ("tgt" variable (:type "Target") (reparse-symbol formal_parameters) [10660 10670]))                          
+                        :type "ResponseEvent")
+                        (reparse-symbol class_member_declaration) [10593 11026])
+                    ("sendCorrectSNMPVersion" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("snmp" variable
+                               (:typemodifiers ("final")
+                                :type "Snmp")
+                                (reparse-symbol formal_parameters) [11067 11082])
+                            ("listener" variable (:type "ResponseListener") (reparse-symbol formal_parameters) [11084 11109])
+                            ("pdu" variable (:type "PDU") (reparse-symbol formal_parameters) [11111 11118])
+                            ("tgt" variable (:type "CommunityTarget") (reparse-symbol formal_parameters) [11120 11139]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11031 11382])
+                    ("getTargets" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("addr" variable (:type "Address") (reparse-symbol formal_parameters) [11439 11451])
+                            ("" variable (:type "creds") (reparse-symbol formal_parameters) [11471 11476]))                          )
+                        (reparse-symbol class_member_declaration) [11428 12206])
+                    ("checkSNMPVersionAndSetForTarget" function
+                       (:throws ("IOException")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("snmp" variable (:type "Snmp") (reparse-symbol formal_parameters) [12274 12283])
+                            ("pdu" variable (:type "PDU") (reparse-symbol formal_parameters) [12285 12292])
+                            ("target" variable (:type "Target") (reparse-symbol formal_parameters) [12294 12307]))                          
+                        :type "Integer")
+                        (reparse-symbol class_member_declaration) [12224 12658])
+                    ("DEFAULT_COMMS" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [12897 13474]))                  
+                :type "class")
+                nil [1358 13477]))          
+    :file "SNMPv1v2cHelper.java"
+    :pointmax 13478
+    :fsize 13477
+    :lastmodtime '(22029 24846 0 0)
+    :unmatched-syntax '((GT 11469 . 11470) (IDENTIFIER 11453 . 11456) (LT 11456 . 11457) (GT 11426 . 11427) (PRIVATE 11387 . 11394) (LT 11410 . 11411) (IDENTIFIER 2687 . 2693) (GT 2693 . 2694) (FINAL 2669 . 2674) (LT 2678 . 2679) (GT 2654 . 2655) (IDENTIFIER 2638 . 2641) (LT 2641 . 2642))
+    )
+   (semanticdb-table "SNMPv3Helper.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.rapid7.net.snmp" package nil nil [349 377])
+            ("com.rapid7.auth.ICredentials" include nil nil [379 415])
+            ("com.rapid7.log.ILogSink" include nil nil [416 447])
+            ("com.rapid7.net.ISessionEndpoint" include nil nil [448 487])
+            ("java.io.IOException" include nil nil [488 515])
+            ("java.util.Map" include nil nil [516 537])
+            ("java.util.Set" include nil nil [538 559])
+            ("org.snmp4j.PDU" include nil nil [560 582])
+            ("org.snmp4j.ScopedPDU" include nil nil [583 611])
+            ("org.snmp4j.Snmp" include nil nil [612 635])
+            ("org.snmp4j.Target" include nil nil [636 661])
+            ("org.snmp4j.TransportMapping" include nil nil [662 697])
+            ("org.snmp4j.UserTarget" include nil nil [698 727])
+            ("org.snmp4j.event.ResponseEvent" include nil nil [728 766])
+            ("org.snmp4j.mp.MPv3" include nil nil [767 793])
+            ("org.snmp4j.mp.SnmpConstants" include nil nil [794 829])
+            ("org.snmp4j.security.SecurityLevel" include nil nil [830 871])
+            ("org.snmp4j.security.SecurityModels" include nil nil [872 914])
+            ("org.snmp4j.security.SecurityProtocols" include nil nil [915 960])
+            ("org.snmp4j.security.USM" include nil nil [961 992])
+            ("org.snmp4j.security.UsmUser" include nil nil [993 1028])
+            ("org.snmp4j.smi.OID" include nil nil [1029 1055])
+            ("org.snmp4j.smi.OctetString" include nil nil [1056 1090])
+            ("org.snmp4j.smi.VariableBinding" include nil nil [1091 1129])
+            ("SNMPv3Helper" type
+               (:typemodifiers ("public")
+                :superclasses "SNMPHelper"
+                :members 
+                  ( ("SNMPv3Helper" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [1575 1770])
+                    ("fingerprint" function
+                       (:throws ("IOException" "InterruptedException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [1822 1841])
+                            ("" variable (:type "creds") (reparse-symbol formal_parameters) [1867 1872])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [1890 1896])
+                            ("" variable (:type "responseMap") (reparse-symbol formal_parameters) [1906 1917])
+                            ("sink" variable
+                               (:typemodifiers ("final")
+                                :type "ILogSink")
+                                (reparse-symbol formal_parameters) [1925 1944]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1788 4018])
+                    ("authenticateSNMPConnection" function
+                       (:throws ("IOException" "InterruptedException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [4078 4097])
+                            ("credentials" variable (:type "ICredentials") (reparse-symbol formal_parameters) [4099 4123])
+                            ("oid" variable (:type "String") (reparse-symbol formal_parameters) [4125 4135]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4036 5650])
+                    ("sendTrapPdu" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [5699 5718])
+                            ("agentAddress" variable (:type "String") (reparse-symbol formal_parameters) [5726 5745])
+                            ("specificTrapCode" variable (:type "int") (reparse-symbol formal_parameters) [5753 5773])
+                            ("timeStamp" variable (:type "long") (reparse-symbol formal_parameters) [5781 5795])
+                            ("uniqueId" variable (:type "String") (reparse-symbol formal_parameters) [5803 5818])
+                            ("summary" variable (:type "String") (reparse-symbol formal_parameters) [5826 5840])
+                            ("severity" variable (:type "int") (reparse-symbol formal_parameters) [5848 5860])
+                            ("sessionId" variable (:type "String") (reparse-symbol formal_parameters) [5868 5884])
+                            ("address" variable (:type "String") (reparse-symbol formal_parameters) [5892 5906])
+                            ("deliveryStatus" variable (:type "String") (reparse-symbol formal_parameters) [5914 5935])
+                            ("time" variable (:type "String") (reparse-symbol formal_parameters) [5943 5954])
+                            ("communityString" variable (:type "String") (reparse-symbol formal_parameters) [5962 5984]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5668 6098])
+                    ("changeSecurityModel" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("securityModel" variable (:type "USM") (reparse-symbol formal_parameters) [6323 6340])
+                            ("userName" variable (:type "String") (reparse-symbol formal_parameters) [6348 6363])
+                            ("authenticationPassPhrase" variable (:type "String") (reparse-symbol formal_parameters) [6371 6402])
+                            ("privacyPassPhrase" variable (:type "String") (reparse-symbol formal_parameters) [6410 6434])
+                            ("authenticationProtocol" variable (:type "OID") (reparse-symbol formal_parameters) [6442 6468])
+                            ("privacyProtocol" variable (:type "OID") (reparse-symbol formal_parameters) [6476 6495]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6283 6883])
+                    ("createUserTarget" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [6924 6943])
+                            ("securityLevel" variable (:type "int") (reparse-symbol formal_parameters) [6945 6962])
+                            ("username" variable (:type "String") (reparse-symbol formal_parameters) [6964 6979]))                          
+                        :type "UserTarget")
+                        (reparse-symbol class_member_declaration) [6888 7321])
+                    ("getSecurityLevel" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("authenticationProtocol" variable (:type "OID") (reparse-symbol formal_parameters) [7355 7381])
+                            ("privacyProtocol" variable (:type "OID") (reparse-symbol formal_parameters) [7383 7402]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7326 7577])
+                    ("createTarget" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [7625 7644])
+                            ("creds" variable (:type "ICredentials") (reparse-symbol formal_parameters) [7646 7664]))                          
+                        :type "Target")
+                        (reparse-symbol class_member_declaration) [7595 8179])
+                    ("createPdu" function
+                       (:typemodifiers ("protected")
+                        :type "PDU")
+                        (reparse-symbol class_member_declaration) [8197 8262])
+                    ("sendCorrectSNMPVersion" function
+                       (:throws ("IOException")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("snmp" variable (:type "Snmp") (reparse-symbol formal_parameters) [8327 8336])
+                            ("pdu" variable (:type "PDU") (reparse-symbol formal_parameters) [8338 8345])
+                            ("tgt" variable (:type "Target") (reparse-symbol formal_parameters) [8347 8357]))                          
+                        :type "ResponseEvent")
+                        (reparse-symbol class_member_declaration) [8280 8427])
+                    ("checkSNMPVersionAndSetForTarget" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("snmp" variable (:type "Snmp") (reparse-symbol formal_parameters) [8495 8504])
+                            ("pdu" variable (:type "PDU") (reparse-symbol formal_parameters) [8506 8513])
+                            ("target" variable (:type "Target") (reparse-symbol formal_parameters) [8515 8528]))                          
+                        :type "Integer")
+                        (reparse-symbol class_member_declaration) [8445 8652])
+                    ("setUpSnmp" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("snmp" variable (:type "Snmp") (reparse-symbol formal_parameters) [8695 8704])
+                            ("creds" variable (:type "ICredentials") (reparse-symbol formal_parameters) [8706 8724]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8670 9473]))                  
+                :type "class")
+                nil [1242 9476]))          
+    :file "SNMPv3Helper.java"
+    :pointmax 9477
+    :fsize 9476
+    :lastmodtime '(22029 24846 0 0)
+    :unmatched-syntax '((IDENTIFIER 1898 . 1904) (GT 1904 . 1905) (FINAL 1880 . 1885) (LT 1889 . 1890) (GT 1865 . 1866) (IDENTIFIER 1849 . 1852) (LT 1852 . 1853))
+    )
+   )
+  :file "!home!rkirk!rapid7!nexpose!src!shared!src!main!java!com!rapid7!net!snmp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

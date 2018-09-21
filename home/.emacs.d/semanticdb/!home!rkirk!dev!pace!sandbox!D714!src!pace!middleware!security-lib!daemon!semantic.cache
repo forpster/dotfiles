@@ -1,0 +1,146 @@
+;; Object daemon/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "daemon/"
+  :tables (list 
+   (semanticdb-table "blob-extractor.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [1 19])
+            ("exception" include (:system-flag t) nil [20 40])
+            ("vector" include (:system-flag t) nil [41 58])
+            ("fstream" include (:system-flag t) nil [59 77])
+            ("sys/types.h" include (:system-flag t) nil [78 100])
+            ("sys/stat.h" include (:system-flag t) nil [101 122])
+            ("fcntl.h" include (:system-flag t) nil [123 141])
+            ("errno.h" include (:system-flag t) nil [142 160])
+            ("stdint.h" include (:system-flag t) nil [161 180])
+            ("unistd.h" include (:system-flag t) nil [181 200])
+            ("glib.h" include (:system-flag t) nil [202 219])
+            ("glib-object.h" include (:system-flag t) nil [220 244])
+            ("dbus/dbus-glib.h" include (:system-flag t) nil [245 272])
+            ("dbus/dbus-glib-bindings.h" include (:system-flag t) nil [273 309])
+            ("s_man_client-bindings.h" include nil nil [311 345])
+            ("tlogger.h" include nil nil [347 367])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [368 392])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [393 440])
+            ("DBUS_RETRY_TIME" variable (:constant-flag t) nil [450 465])
+            ("DBUS_RETRY_LIMIT" variable (:constant-flag t) nil [481 497])
+            ("writeRsaBlobFile" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("guchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [531 544])
+                    ("length" variable (:type ("gsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [545 558]))                  
+                :type "bool")
+                nil [502 559])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [570 574])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [575 583]))                  
+                :type "int")
+                nil [561 4041])
+            ("writeRsaBlobFile" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("guchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4286 4299])
+                    ("length" variable (:type ("gsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4300 4313]))                  
+                :type "bool")
+                nil [4264 5301]))          
+    :file "blob-extractor.cpp"
+    :pointmax 5302
+    :fsize 5301
+    :lastmodtime '(21530 63885 536541 154000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DBUS_RETRY_TIME" . ((number "300000" 466 . 472)))
+          ("DBUS_RETRY_LIMIT")
+          )
+
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("CP" variable (:default-value ("cp")) nil [12 18])
+            ("RM" variable (:default-value ("rm")) nil [18 24])
+            ("CC" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [24 77])
+            ("CXX" variable (:default-value ("mipsel-linux-uclibc-g++" "--sysroot=$(STAGING_PATH)")) nil [77 131])
+            ("LD" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [131 184])
+            ("LIBS" variable (:default-value ("-lpthread" "-lcurl")) nil [185 208])
+            ("LDFLAGS" variable (:default-value ("$(LDFLAGS)" "-Wl,-O1" "$(LIBS)")) nil [209 246])
+            ("CFLAGS" variable (:default-value ("$(CFLAGS)" "$(CPPFLAGS)")) nil [246 277])
+            ("CFLAGS" variable (:default-value ("-Wall" "-Wextra" "-mips32" "-I$(HDW_DEFS_DIR)")) nil [277 327])
+            ("CXXFLAGS" variable (:default-value ("$(CXXFLAGS)" "$(CFLAGS)" "\"-DSL_NEXUS_RSA_BLOB_FILE=\\\"$(SECURITY_LIBRARY_NEXUS_RSA_BLOB_FILE)\\\"\"")) nil [589 693])
+            ("OBJS" variable (:default-value ("daemon.o" "blob-extractor.o")) nil [694 728])
+            ("EXECUTABLES" variable (:default-value ("securityd" "blob-extractor")) nil [729 767])
+            ("EXECUTABLES_INSTALL" variable (:default-value ("$(addprefix $(STAGING_PATH)/usr/sbin/, $(EXECUTABLES))")) nil [767 843])
+            (".SUFFIXES" function (:arguments (".o" ".c" ".cpp")) nil [844 866])
+            (".cpp.o" function nil nil [867 911])
+            (".c.o" function nil nil [912 951])
+            ("install" function (:arguments ("all")) nil [952 1021])
+            ("all" function (:arguments ("$(EXECUTABLES)")) nil [1022 1042])
+            ("securityd" function (:arguments ("daemon.o")) nil [1043 1097])
+            ("blob-extractor" function (:arguments ("blob-extractor.o")) nil [1098 1173])
+            (".PHONY" function (:arguments ("clean")) nil [1174 1188])
+            ("clean" function nil nil [1188 1234]))          
+    :file "Makefile"
+    :pointmax 1095
+    :fsize 1366
+    :lastmodtime '(21530 63885 536541 154000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "daemon.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("exception" include (:system-flag t) nil [1 21])
+            ("unistd.h" include (:system-flag t) nil [22 41])
+            ("cerrno" include (:system-flag t) nil [42 59])
+            ("cstring" include (:system-flag t) nil [60 78])
+            ("tlogger.h" include nil nil [79 99])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [101 125])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [126 173])
+            ("platformKeySetup" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "bool")
+                nil [1126 1157])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1829 1833])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1834 1842]))                  
+                :type "int")
+                nil [1820 3807])
+            ("platformKeySetup" function (:type "bool") nil [3970 4941]))          
+    :file "daemon.cpp"
+    :pointmax 19126
+    :fsize 19125
+    :lastmodtime '(21530 63885 536541 154000)
+    :unmatched-syntax '((string 152 . 171))
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D714!src!pace!middleware!security-lib!daemon!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

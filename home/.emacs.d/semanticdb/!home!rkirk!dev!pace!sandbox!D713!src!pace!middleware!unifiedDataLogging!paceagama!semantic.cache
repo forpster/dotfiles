@@ -1,0 +1,603 @@
+;; Object paceagama/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "paceagama/"
+  :tables (list 
+   (semanticdb-table "paceagama.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QStringBuilder" include (:system-flag t) nil [618 643])
+            ("QStringList" include (:system-flag t) nil [644 666])
+            ("QUrl" include (:system-flag t) nil [667 682])
+            ("sys/types.h" include (:system-flag t) nil [683 705])
+            ("signal.h" include (:system-flag t) nil [706 725])
+            ("unistd.h" include (:system-flag t) nil [726 745])
+            ("logdatatypes.h" include nil nil [746 771])
+            ("paceagama.h" include nil nil [772 794])
+            ("UNIFIED_LOGGING" using (:type ("UNIFIED_LOGGING" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [796 828])
+            ("tlogger.h" include nil nil [830 850])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [851 875])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [876 933])
+            ("USLEEP_SECOND" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [935 995])
+            ("TIMEOUT_POLL_PERIOD" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [1015 1074])
+            ("ERR_MS_RES_MINIMUM" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [1096 1154])
+            ("CONFIG_POLL_PERIOD" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [1172 1231])
+            ("EMP_STATUS_POLL_PERIOD" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [1248 1305])
+            ("EMP_ERR_POLL_PERIOD" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [1322 1380])
+            ("EMP_SI_FIRST_POLL_PERIOD" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [1397 1455])
+            ("EMP_SI_SECOND_POLL_PERIOD" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [1472 1531])
+            ("EMP_INIT_DELAY" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [1548 1607])
+            ("EMP_INIT_OFFSET" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [1608 1666])
+            ("AVG_CHANNEL_CHANGE_TIME" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [1667 1724])
+            ("EMP_CLIENT_OUTPUT_FILE" variable (:constant-flag t) nil [1915 1937])
+            ("EMP_CLIENT_OPTION" variable (:constant-flag t) nil [1985 2002])
+            ("PaceAgama" function
+               (:constructor-flag t
+                :parent "PaceAgama"
+                :arguments 
+                  ( ("pAgamaClient" variable
+                       (:pointer 1
+                        :type ("AgamaLogClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2320 2349])
+                    ("param" variable (:type "int") (reparse-symbol arg-sub-list) [2350 2382]))                  
+                :type ("PaceAgama" type (:type "class") nil nil))
+                nil [2297 4564])
+            ("init" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4912 4918]))                  
+                :type "void")
+                nil [4889 5343])
+            ("PaceAgama" function
+               (:destructor-flag t
+                :parent "PaceAgama"
+                :type "void")
+                nil [5601 5958])
+            ("restart" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6276 6282]))                  
+                :type "void")
+                nil [6250 6314])
+            ("configPoll" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6674 6680]))                  
+                :type "void")
+                nil [6645 8509])
+            ("errMsResPoll" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8792 8798]))                  
+                :type "void")
+                nil [8761 9268])
+            ("secondUpdatePoll" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9546 9552]))                  
+                :type "void")
+                nil [9511 10046])
+            ("minuteUpdatePoll" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10324 10330]))                  
+                :type "void")
+                nil [10289 10823])
+            ("newSessionPoll" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11097 11103]))                  
+                :type "void")
+                nil [11064 11494])
+            ("empStatusPoll" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11765 11771]))                  
+                :type "void")
+                nil [11733 12091])
+            ("getEnable" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12355 12361]))                  
+                :type "bool")
+                nil [12327 12741])
+            ("clientInit" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13006 13012]))                  
+                :type "void")
+                nil [12977 13633])
+            ("startEmpClient" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13906 13912]))                  
+                :type "void")
+                nil [13873 14449])
+            ("killRunningEmpClients" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14736 14742]))                  
+                :type "void")
+                nil [14696 16416])
+            ("createRunningEmpClientListFile" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("tmpFile" variable
+                       (:reference 1
+                        :type ("QFile" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16731 16747]))                  
+                :type "void")
+                nil [16682 17597])
+            ("setConfiguration" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17874 17880]))                  
+                :type "bool")
+                nil [17839 19228])
+            ("updatePollPeriod" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("pLastPoll" variable
+                       (:pointer 1
+                        :type ("timespec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19544 19571])
+                    ("pollPeriod" variable (:type "int") (reparse-symbol arg-sub-list) [19572 19588]))                  
+                :type "int")
+                nil [19510 20193])
+            ("getTime" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("pTime" variable
+                       (:pointer 1
+                        :type ("timespec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20482 20506]))                  
+                :type "int")
+                nil [20457 20839])
+            ("timeAdd" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("pTime" variable
+                       (:pointer 1
+                        :type ("timespec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21147 21170])
+                    ("milliseconds" variable (:type "int") (reparse-symbol arg-sub-list) [21171 21189]))                  
+                :type "void")
+                nil [21121 21430])
+            ("timeDiff" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("pEarlierTime" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("timespec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21757 21793])
+                    ("pLaterTime" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("timespec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21820 21855]))                  
+                :type "int")
+                nil [21731 22470])
+            ("give_parameter" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("property" variable (:type ("LogDataType_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22876 22900]))                  
+                :type "void")
+                nil [22843 23371])
+            ("give_parameter_value" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("property" variable (:type ("LogDataType_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23813 23836])
+                    ("value" variable
+                       (:reference 1
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23837 23854]))                  
+                :type "void")
+                nil [23774 25219])
+            ("give_probe_metadata_parameter" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("probe_metadata_id" variable (:type ("probe_metadata_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25933 25974])
+                    ("value" variable
+                       (:reference 1
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25975 25991])
+                    ("valueType" variable (:type ("AGAMA_VALUE_T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25998 26023]))                  
+                :type "void")
+                nil [25885 28232])
+            ("give_measurement_parameter" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("measurement_id" variable (:type ("measurement_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28941 28970])
+                    ("value" variable
+                       (:reference 1
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28977 28993])
+                    ("valueType" variable (:type ("AGAMA_VALUE_T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28994 29019]))                  
+                :type "void")
+                nil [28896 30644])
+            ("give_state_metadata_parameter" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("state_metadata_id" variable (:type ("state_metadata_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31242 31283])
+                    ("value" variable
+                       (:reference 1
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31284 31300])
+                    ("valueType" variable (:type ("AGAMA_VALUE_T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31307 31332]))                  
+                :type "void")
+                nil [31194 32775])
+            ("give_session" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("value" variable
+                       (:reference 1
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33230 33247]))                  
+                :type "void")
+                nil [33199 33815])
+            ("processEventData" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("signal" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("UNIFIED_LOGGING::LogDataType_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34302 34347])
+                    ("value" variable (:type ("QVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34348 34364]))                  
+                :type "void")
+                nil [34267 35371])
+            ("handleShutdown" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("signal" variable (:type ("AGAMA_SIGNAL_T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35825 35847])
+                    ("value" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35848 35864]))                  
+                :type "void")
+                nil [35792 36090])
+            ("sessionSignalHandler" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("session_id" variable (:type ("AGAMA_SIGNAL_T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36577 36603])
+                    ("value" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36643 36659]))                  
+                :type "void")
+                nil [36538 38293])
+            ("signalMulticastSession" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("delivery_type" variable (:type ("dtv_delivery_system_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38801 38837])
+                    ("value" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38844 38860]))                  
+                :type "void")
+                nil [38760 39316])
+            ("signalRfSession" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("delivery_type" variable (:type ("dtv_delivery_system_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39810 39846])
+                    ("value" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39881 39897]))                  
+                :type "void")
+                nil [39776 40723])
+            ("signalIptvTimeShiftSession" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("delivery_type" variable (:type ("dtv_delivery_system_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41248 41290])
+                    ("value" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41291 41307]))                  
+                :type "void")
+                nil [41203 43093])
+            ("signalRfTimeshiftSession" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("delivery_type" variable (:type ("dtv_delivery_system_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43612 43648])
+                    ("value" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43655 43671]))                  
+                :type "void")
+                nil [43569 44959])
+            ("signalVODSession" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("value" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45350 45366]))                  
+                :type "void")
+                nil [45315 46294])
+            ("signalPVRSession" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("value" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46670 46686]))                  
+                :type "void")
+                nil [46635 47483])
+            ("signalViewState" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("value" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48125 48141]))                  
+                :type "void")
+                nil [48091 48687])
+            ("signalIPPacketsRx" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("value" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49666 49682]))                  
+                :type "void")
+                nil [49630 50009])
+            ("decodeUrl" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("url" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50362 50375])
+                    ("pUrlCmpt" variable
+                       (:pointer 1
+                        :type ("UrlCmptT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50376 50396]))                  
+                :type "bool")
+                nil [50334 51578])
+            ("getProtocol" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("url" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51944 51958]))                  
+                :type ("protocol_id_t" type (:type "class") nil nil))
+                nil [51905 52397])
+            ("getProtocolPort" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("scheme" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52737 52753]))                  
+                :type "int")
+                nil [52704 53200])
+            ("emp_get_status" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [53904 53910]))                  
+                :type "void")
+                nil [53871 54871])
+            ("emp_set_external_config" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("configuration" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55411 55435]))                  
+                :type "void")
+                nil [55369 56049])
+            ("emp_set_probe_metadata" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("p_probe_metadata" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("probe_metadata_value_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56655 56709]))                  
+                :type "void")
+                nil [56614 56927])
+            ("emp_set_measurement" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("p_value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("measurement_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57307 57343]))                  
+                :type "void")
+                nil [57269 57603])
+            ("emp_set_state_metadata" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("p_state_metadata" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("state_metadata_value_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58192 58246]))                  
+                :type "void")
+                nil [58151 58464])
+            ("emp_set_available" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("available" variable (:type "bool") (reparse-symbol arg-sub-list) [59444 59460]))                  
+                :type "void")
+                nil [59408 59668])
+            ("emp_view_state_changed" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("state" variable (:type ("view_state_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60330 60353]))                  
+                :type "void")
+                nil [60289 60561])
+            ("emp_dtv_session" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("p_service_info" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dtv_identification_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60942 60986]))                  
+                :type "void")
+                nil [60908 61195])
+            ("emp_dtv_timeshift_session" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("p_service_info" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dtv_identification_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61825 61874])
+                    ("initial_view_state" variable (:type ("view_state_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61881 61916])
+                    ("initial_timeshift_delay" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61923 61957]))                  
+                :type "void")
+                nil [61781 62264])
+            ("emp_idle_session" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [62680 62686]))                  
+                :type "void")
+                nil [62645 62881])
+            ("emp_vod_session" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("p_url" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [63297 63315])
+                    ("protocol" variable (:type ("protocol_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63316 63339])
+                    ("p_source_server" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [63374 63402])
+                    ("initial_view_state" variable (:type ("view_state_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63437 63473]))                  
+                :type "void")
+                nil [63263 63921])
+            ("emp_pvr_session" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("p_url" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [64333 64351])
+                    ("initial_view_state" variable (:type ("view_state_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64386 64422]))                  
+                :type "void")
+                nil [64299 64766])
+            ("emp_get_version_information" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [65132 65138]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [65083 65544])
+            ("emp_set_shutdown_state" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("type" variable (:type ("shutdown_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65861 65883]))                  
+                :type "void")
+                nil [65820 66117])
+            ("checkReturnedCode" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("returnedCode" variable (:type "int") (reparse-symbol arg-sub-list) [66488 66506]))                  
+                :type "void")
+                nil [66452 66673])
+            ("parseConfigurationInt" function
+               (:parent "PaceAgama"
+                :arguments 
+                  ( ("pConfigKey" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [67070 67093])
+                    ("defaultValue" variable (:type "int") (reparse-symbol arg-sub-list) [67133 67151]))                  
+                :type "int")
+                nil [67031 67818]))          
+    :file "paceagama.cpp"
+    :pointmax 67822
+    :fsize 67821
+    :lastmodtime '(21785 22997 566834 513000)
+    :unmatched-syntax '((string 904 . 930))
+    :lexical-table 
+        '(("EMP_CLIENT_OUTPUT_FILE" . ((string "\"/dev/null\"" 1965 . 1976)))
+          ("EMP_CLIENT_OPTION" . ((string "\"\"" 2035 . 2037)))
+          )
+
+    )
+   (semanticdb-table "paceagama.h"
+    :file "paceagama.h"
+    :fsize 6599
+    :lastmodtime '(21785 22997 567834 505000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D713!src!pace!middleware!unifiedDataLogging!paceagama!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

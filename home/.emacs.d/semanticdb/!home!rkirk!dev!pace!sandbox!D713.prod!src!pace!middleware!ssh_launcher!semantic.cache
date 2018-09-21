@@ -1,0 +1,111 @@
+;; Object ssh_launcher/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ssh_launcher/"
+  :tables (list 
+   (semanticdb-table "ssh_launcher.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QCoreApplication" include (:system-flag t) nil [903 930])
+            ("ssh_launcher.h" include nil nil [931 956])
+            ("caclient_bindings.h" include nil nil [957 987])
+            ("cadaemon_signal_marshaller_header.h" include nil nil [988 1034])
+            ("cadaemon_signal_marshaller_body.h" include nil nil [1035 1079])
+            ("tlogger.h" include nil nil [1081 1101])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1103 1127])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [1128 1179])
+            ("SshClient" function
+               (:constructor-flag t
+                :parent "SshClient"
+                :type ("SshClient" type (:type "class") nil nil))
+                nil [1181 1900])
+            ("SshClient" function
+               (:destructor-flag t
+                :parent "SshClient"
+                :type "void")
+                nil [1902 1993])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2004 2013])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2014 2026]))                  
+                :type "int")
+                nil [1995 2881])
+            ("ssh_status" function
+               (:parent "SshClient"
+                :arguments 
+                  ( ("key" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2911 2930]))                  
+                :type "void")
+                nil [2884 3000]))          
+    :file "ssh_launcher.cpp"
+    :pointmax 3003
+    :fsize 3002
+    :lastmodtime '(21541 25836 874272 875000)
+    :unmatched-syntax '((string 1154 . 1177))
+    )
+   (semanticdb-table "sshlauncherdbusinterface.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("sshlauncherdbusinterface.h" include nil nil [490 527])
+            ("SshLauncherDBusInterface" function
+               (:constructor-flag t
+                :parent "SshLauncherDBusInterface"
+                :arguments 
+                  ( ("service" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [650 673])
+                    ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [674 694])
+                    ("connection" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QDBusConnection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [695 729])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [730 746]))                  
+                :type ("SshLauncherDBusInterface" type (:type "class") nil nil))
+                nil [599 837])
+            ("SshLauncherDBusInterface" function
+               (:destructor-flag t
+                :parent "SshLauncherDBusInterface"
+                :type "void")
+                nil [839 896]))          
+    :file "sshlauncherdbusinterface.cpp"
+    :pointmax 898
+    :fsize 897
+    :lastmodtime '(21541 30390 686660 23000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ssh_launcher.h"
+    :file "ssh_launcher.h"
+    :fsize 323
+    :lastmodtime '(21541 25836 875272 869000)
+    )
+   (semanticdb-table "sshlauncherdbusinterface.h"
+    :file "sshlauncherdbusinterface.h"
+    :fsize 11549
+    :lastmodtime '(21541 30390 686660 23000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D713.prod!src!pace!middleware!ssh_launcher!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

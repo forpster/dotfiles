@@ -1,0 +1,143 @@
+;; Object plugin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "plugin/"
+  :tables (list 
+   (semanticdb-table "PluginParamSpec.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.rapid7.nexpose.plugin" package nil nil [349 383])
+            ("com.rapid7.util.ObjectUtils" include nil nil [385 420])
+            ("PluginParamSpec" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("TYPE_STRING" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [457 503])
+                    ("TYPE_BOOLEAN" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [507 553])
+                    ("TYPE_INT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [557 603])
+                    ("TYPE_LONG" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [607 653])
+                    ("TYPE_FLOAT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [657 703])
+                    ("TYPE_ADDR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [707 753])
+                    ("TYPE_ADDR_RANGE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [757 803])
+                    ("TYPE_PORT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [807 853])
+                    ("TYPE_PORT_RANGE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [857 903])
+                    ("m_paramName" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [909 936])
+                    ("m_paramType" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [940 964])
+                    ("m_required" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [968 995])
+                    ("m_summary" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [999 1024])
+                    ("m_description" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1028 1057])
+                    ("m_defaultValue" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1061 1091])
+                    ("m_valueSpec" variable
+                       (:typemodifiers ("private")
+                        :type "IPluginParamValueSpec")
+                        (reparse-symbol class_member_declaration) [1095 1137])
+                    ("PluginParamSpec" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("paramName" variable (:type "String") (reparse-symbol formal_parameters) [1173 1189])
+                            ("paramType" variable (:type "int") (reparse-symbol formal_parameters) [1197 1210])
+                            ("required" variable (:type "boolean") (reparse-symbol formal_parameters) [1218 1234])
+                            ("summary" variable (:type "String") (reparse-symbol formal_parameters) [1242 1256])
+                            ("description" variable (:type "String") (reparse-symbol formal_parameters) [1264 1282])
+                            ("defaultValue" variable (:type "String") (reparse-symbol formal_parameters) [1290 1309])
+                            ("valueSpec" variable (:type "IPluginParamValueSpec") (reparse-symbol formal_parameters) [1317 1348]))                          )
+                        (reparse-symbol class_member_declaration) [1143 1710])
+                    ("getName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1715 1774])
+                    ("getType" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1779 1835])
+                    ("isRequired" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1840 1902])
+                    ("getSummary" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1907 1967])
+                    ("getDescription" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1972 2040])
+                    ("getDefaultValue" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2045 2115])
+                    ("getValueSpec" function
+                       (:typemodifiers ("public")
+                        :type "IPluginParamValueSpec")
+                        (reparse-symbol class_member_declaration) [2120 2199])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2204 2336])
+                    ("hashCode" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2341 2409])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("o" variable (:type "Object") (reparse-symbol formal_parameters) [2436 2444]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2414 2778]))                  
+                :type "class")
+                nil [423 2780]))          
+    :file "PluginParamSpec.java"
+    :pointmax 2781
+    :fsize 2780
+    :lastmodtime '(22029 24845 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!rapid7!nexpose!src!nexpose!shared!src!main!java!com!rapid7!nexpose!plugin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,214 @@
+;; Object nexus/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "nexus/"
+  :tables (list 
+   (semanticdb-table "nexus_decryption.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [1 19])
+            ("cstring" include (:system-flag t) nil [20 38])
+            ("cerrno" include (:system-flag t) nil [39 56])
+            ("openssl/crypto.h" include (:system-flag t) nil [58 85])
+            ("nexus_platform.h" include nil nil [86 113])
+            ("nexus_keyladder.h" include nil nil [114 142])
+            ("nexus_decryption.h" include nil nil [144 173])
+            ("nexussemaphore.h" include nil nil [174 201])
+            ("hyp_defs.h" include nil nil [202 223])
+            ("tlogger.h" include nil nil [225 245])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [246 270])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [271 318])
+            ("NexusDecryption" function
+               (:constructor-flag t
+                :parent "NexusDecryption"
+                :arguments 
+                  ( ("type" variable (:type ("DECRYPTION_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [353 374]))                  
+                :type ("NexusDecryption" type (:type "class") nil nil))
+                nil [320 659])
+            ("NexusDecryption" function
+               (:destructor-flag t
+                :parent "NexusDecryption"
+                :type "void")
+                nil [661 939])
+            ("initaliseNexus" function
+               (:parent "NexusDecryption"
+                :arguments 
+                  ( ("keyProvider" variable (:type ("std::auto_ptr" type
+                         (:template-specifier 
+                            ( ("IKeyProvider" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1221 1261])
+                    ("algType" variable (:type ("NEXUS_SecurityAlgorithmVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1262 1301]))                  
+                :type "bool")
+                nil [1184 4657])
+            ("setIv" function
+               (:parent "NexusDecryption"
+                :arguments 
+                  ( ("iv" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4760 4791]))                  
+                :type "void")
+                nil [4732 4833])
+            ("decryptBlocks" function
+               (:parent "NexusDecryption"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5438 5471])
+                    ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5472 5490])
+                    ("final" variable (:type "bool") (reparse-symbol arg-sub-list) [5491 5502]))                  
+                :type "int")
+                nil [5403 6408])
+            ("verifyPadding" function
+               (:parent "NexusDecryption"
+                :arguments 
+                  ( ("paddingSize" variable
+                       (:reference 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6718 6738]))                  
+                :type "bool")
+                nil [6682 7961])
+            ("fillSourceBuffer" function
+               (:parent "NexusDecryption"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8244 8277])
+                    ("sizeProcessed" variable
+                       (:reference 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8278 8300]))                  
+                :type "void")
+                nil [8205 8895])
+            ("isBufferFull" function
+               (:parent "NexusDecryption"
+                :type "bool")
+                nil [9021 9154])
+            ("isBufferEmpty" function
+               (:parent "NexusDecryption"
+                :type "bool")
+                nil [9274 9398])
+            ("isDataConsumed" function
+               (:parent "NexusDecryption"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9708 9741])
+                    ("sizeProcessed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9742 9763]))                  
+                :type "bool")
+                nil [9671 9856])
+            ("shouldDecrypt" function
+               (:parent "NexusDecryption"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10834 10867])
+                    ("sizeProcessed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10868 10889])
+                    ("final" variable (:type "bool") (reparse-symbol arg-sub-list) [10890 10901]))                  
+                :type "bool")
+                nil [10798 11588])
+            ("isBufferBlockAligned" function
+               (:parent "NexusDecryption"
+                :type "bool")
+                nil [11803 11951])
+            ("retainIvBlock" function
+               (:parent "NexusDecryption"
+                :type "void")
+                nil [12078 12342])
+            ("processJob" function
+               (:parent "NexusDecryption"
+                :type "void")
+                nil [12408 14271])
+            ("exportPlaintext" function
+               (:parent "NexusDecryption"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14775 14808])
+                    ("sizeProcessed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14809 14830])
+                    ("final" variable (:type "bool") (reparse-symbol arg-sub-list) [14831 14842])
+                    ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14843 14861]))                  
+                :type "int")
+                nil [14738 16017])
+            ("loadIv" function
+               (:parent "NexusDecryption"
+                :type "bool")
+                nil [16164 16835])
+            ("setPadding" function
+               (:parent "NexusDecryption"
+                :arguments 
+                  ( ("enabled" variable (:type "bool") (reparse-symbol arg-sub-list) [17097 17110]))                  
+                :type "void")
+                nil [17064 17145])
+            ("setKey" function
+               (:parent "NexusDecryption"
+                :type "bool")
+                nil [17364 19755]))          
+    :file "nexus_decryption.cpp"
+    :pointmax 19756
+    :fsize 19755
+    :lastmodtime '(21615 26761 291970 763000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "nexus_decryption.h"
+    :file "nexus_decryption.h"
+    :fsize 3155
+    :lastmodtime '(21615 26761 292970 756000)
+    )
+   (semanticdb-table "nexussemaphore.h"
+    :file "nexussemaphore.h"
+    :fsize 293
+    :lastmodtime '(21615 26761 293970 749000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D713.prod_ssh!src!pace!middleware!security-lib!lib!plugins!nexus!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

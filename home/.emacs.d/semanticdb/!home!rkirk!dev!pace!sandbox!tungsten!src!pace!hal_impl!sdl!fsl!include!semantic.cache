@@ -1,0 +1,358 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "fsl.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__FSL_H__" variable (:constant-flag t) nil [676 685])
+            ("FSL_MAX_DATA_SIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [735 752])
+            ("FSL_BOOL" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "fsl_bool"
+                :typedef ("fsl_bool" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [1066 1227])
+            ("fsl_bool" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("FSL_FALSE" variable
+                       (:constant-flag t
+                        :default-value (1103 1104)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1091 1104])
+                    ("FSL_TRUE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1157 1217]))                  )
+                (reparse-symbol extern-c-contents) [1066 1227])
+            ("FSL_U8" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "unsigned char"
+                :typedef ("unsigned char"))
+                (reparse-symbol extern-c-contents) [1230 1259])
+            ("FSL_U16" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "unsigned short"
+                :typedef ("unsigned short"))
+                (reparse-symbol extern-c-contents) [1301 1332])
+            ("FSL_U32" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "unsigned int"
+                :typedef ("unsigned int"))
+                (reparse-symbol extern-c-contents) [1373 1402])
+            ("FSL_S8" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "signed char"
+                :typedef ("signed char"))
+                (reparse-symbol extern-c-contents) [1444 1472])
+            ("FSL_S16" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "signed short"
+                :typedef ("signed short"))
+                (reparse-symbol extern-c-contents) [1512 1541])
+            ("FSL_S32" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "signed int"
+                :typedef ("signed int"))
+                (reparse-symbol extern-c-contents) [1581 1609])
+            ("FSL_HANDLE" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "unsigned long"
+                :typedef ("unsigned long"))
+                (reparse-symbol extern-c-contents) [1984 2017])
+            ("FSL_RETURN" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "fsl_return"
+                :typedef ("fsl_return" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [2457 3703])
+            ("fsl_return" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("FSL_INTERNAL_ERROR" variable
+                       (:constant-flag t
+                        :default-value (2505 2507)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2484 2507])
+                    ("FSL_OK" variable
+                       (:constant-flag t
+                        :default-value (2562 2563)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2553 2563])
+                    ("FSL_INVALID_PARAMETER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2655 2677])
+                    ("FSL_OPERATION_FAILED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2765 2786])
+                    ("FSL_INVALID_HANDLE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2831 2850])
+                    ("FSL_OUT_OF_HANDLES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2897 2916])
+                    ("FSL_BUFFER_TOO_SMALL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2968 2989])
+                    ("FSL_INVALID_MARKER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3086 3105])
+                    ("FSL_COMPLETE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3151 3164])
+                    ("FSL_INVALID_DATA" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3309 3326])
+                    ("FSL_INVALID_SIGNATURE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3421 3443])
+                    ("FSL_SIGNATURE_EXPIRED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3527 3549])
+                    ("FSL_INTERNAL_END" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3634 3691]))                  )
+                (reparse-symbol extern-c-contents) [2457 3703])
+            ("FSL_DATETIME" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "fsl_datetime"
+                :typedef ("fsl_datetime" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [4307 4456])
+            ("fsl_datetime" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mjd_" variable (:type ("FSL_U16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4338 4352])
+                    ("bcd_" variable
+                       (:dereference 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4387 4403]))                  )
+                (reparse-symbol extern-c-contents) [4307 4456])
+            ("FSL_Init" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("FSL_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_rsablob" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4951 4968])
+                    ("_keyladder" variable (:type ("FSL_U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4969 4988]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4931 4989])
+            ("FSL_CodeBase" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("FSL_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_source" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5629 5645])
+                    ("_offset" variable
+                       (:pointer 2
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5646 5663]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5605 5664])
+            ("FSL_ConvertDateTime" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("FSL_S32" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_datetime" variable
+                       (:pointer 1
+                        :type ("FSL_DATETIME" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6110 6134]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6082 6135])
+            ("FSL_Decompress" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("FSL_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_source" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7159 7175])
+                    ("_sourcelength" variable (:type ("FSL_U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7184 7206])
+                    ("_destination" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7215 7236])
+                    ("_buffersize" variable (:type ("FSL_U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7245 7265]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7133 7266])
+            ("FSL_DecompressInit" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("FSL_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_source" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8295 8311])
+                    ("_sourcelength" variable (:type ("FSL_U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8323 8345])
+                    ("_destination" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8355 8376])
+                    ("_buffersize" variable (:type ("FSL_U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8386 8406])
+                    ("_handle" variable
+                       (:pointer 1
+                        :type ("FSL_HANDLE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8416 8436]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8265 8437])
+            ("FSL_DecompressBlock" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("FSL_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_handle" variable (:type ("FSL_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9236 9255])
+                    ("_percentage" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9256 9276]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9205 9277])
+            ("FSL_DecompressInfo" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("FSL_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_handle" variable (:type ("FSL_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9805 9824])
+                    ("_uncompressed" variable
+                       (:pointer 1
+                        :type ("FSL_U32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9825 9848]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9775 9849])
+            ("FSL_Validate" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("FSL_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_source" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10830 10846])
+                    ("_sourcelength" variable (:type ("FSL_U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10853 10875])
+                    ("_signature" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10882 10901])
+                    ("_datetime" variable (:type ("FSL_U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10908 10926]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10806 10927])
+            ("FSL_ValidateInit" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("FSL_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_source" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11935 11951])
+                    ("_sourcelength" variable (:type ("FSL_U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11959 11981])
+                    ("_signature" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11989 12008])
+                    ("_handle" variable
+                       (:pointer 1
+                        :type ("FSL_HANDLE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12016 12036])
+                    ("_datetime" variable (:type ("FSL_U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12044 12062]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11907 12063])
+            ("FSL_ValidateBlock" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("FSL_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_handle" variable (:type ("FSL_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12952 12971])
+                    ("_percentage" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12972 12992]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12923 12993])
+            ("FSL_Decrypt" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("FSL_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_source" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13931 13947])
+                    ("_sourcelength" variable (:type ("FSL_U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13956 13978])
+                    ("_destination" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13987 14008])
+                    ("_destinationlength" variable (:type ("FSL_U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14017 14044]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13908 14045])
+            ("FSL_DecryptInit" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("FSL_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_source" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15063 15079])
+                    ("_sourcelength" variable (:type ("FSL_U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15089 15111])
+                    ("_destination" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15121 15142])
+                    ("_destinationlength" variable (:type ("FSL_U32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15152 15179])
+                    ("_handle" variable
+                       (:pointer 1
+                        :type ("FSL_HANDLE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15189 15209]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15036 15210])
+            ("FSL_DecryptBlock" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("FSL_RETURN" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_handle" variable (:type ("FSL_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16093 16112])
+                    ("_percentage" variable
+                       (:pointer 1
+                        :type ("FSL_U8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16113 16133]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16065 16134]))          
+    :file "fsl.h"
+    :pointmax 16172
+    :fsize 16171
+    :lastmodtime '(21338 11786 439654 831000)
+    :unmatched-syntax '((semantic-list 4470 . 4475) (symbol 4466 . 4470) (symbol 4459 . 4465) (punctuation 4458 . 4459) (semantic-list 4296 . 4305) (symbol 4292 . 4296) (number 4303 . 4304) (symbol 4285 . 4291) (number 4303 . 4304) (punctuation 4284 . 4285))
+    :lexical-table 
+        '(("__FSL_H__")
+          ("FSL_MAX_DATA_SIZE" . ((semantic-list "(240 * 1024 * 1024)" 753 . 772)))
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!hal_impl!sdl!fsl!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

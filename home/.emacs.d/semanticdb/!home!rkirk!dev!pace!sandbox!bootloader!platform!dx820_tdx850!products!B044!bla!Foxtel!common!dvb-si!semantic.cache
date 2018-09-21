@@ -1,0 +1,156 @@
+;; Object dvb-si/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dvb-si/"
+  :tables (list 
+   (semanticdb-table "bla_dvb-si_util.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("bla_types.h" include nil nil [610 632])
+            ("bla_debug.h" include nil nil [633 655])
+            ("bla_dvb-si.h" include nil nil [656 679])
+            ("u32Masks" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("L_UINT32" type (:type "class") nil nil))
+                nil [681 1143])
+            ("u32rMask" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("L_UINT32" type (:type "class") nil nil))
+                nil [1145 1607])
+            ("Get8Bits" function
+               (:arguments 
+                  ( ("pData" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1854 1869]))                  
+                :type ("L_UINT8" type (:type "class") nil nil))
+                nil [1837 1957])
+            ("Get16Bits" function
+               (:arguments 
+                  ( ("pData" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2182 2197]))                  
+                :type ("L_UINT16" type (:type "class") nil nil))
+                nil [2163 2331])
+            ("Get32Bits" function
+               (:arguments 
+                  ( ("pData" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2582 2597]))                  
+                :type ("L_UINT32" type (:type "class") nil nil))
+                nil [2563 2852])
+            ("Get24Bits" function
+               (:arguments 
+                  ( ("pData" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3078 3093]))                  
+                :type ("L_UINT32" type (:type "class") nil nil))
+                nil [3059 3287])
+            ("UpdateDataPtr" function
+               (:arguments 
+                  ( ("pData" variable
+                       (:pointer 2
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3819 3835])
+                    ("Length" variable
+                       (:pointer 1
+                        :type ("L_UINT32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3836 3853])
+                    ("bPtrUseInc" variable (:type ("L_BOOL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3854 3872])
+                    ("bLengthUseInc" variable (:type ("L_BOOL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3873 3894])
+                    ("change" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3895 3911]))                  
+                :type ("L_INT16" type (:type "class") nil nil))
+                nil [3797 4761])
+            ("Setup_BitBuffer" function
+               (:arguments 
+                  ( ("pstBitData" variable
+                       (:pointer 1
+                        :type ("BITBUF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5253 5272])
+                    ("pu8Buffer" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5273 5292])
+                    ("u32Size" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5293 5310]))                  
+                :type ("L_INT16" type (:type "class") nil nil))
+                nil [5229 5741])
+            ("bit_FillBuffer" function
+               (:arguments 
+                  ( ("pstBitData" variable
+                       (:pointer 1
+                        :type ("BITBUF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6065 6084]))                  
+                :type "void")
+                nil [6045 6626])
+            ("Update_ReadBits" function
+               (:arguments 
+                  ( ("pstBitData" variable
+                       (:pointer 1
+                        :type ("BITBUF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7148 7167])
+                    ("u32BitCount" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7168 7189]))                  
+                :type ("L_UINT32" type (:type "class") nil nil))
+                nil [7123 9878])
+            ("UpdateBytes" function
+               (:arguments 
+                  ( ("pstBitData" variable
+                       (:pointer 1
+                        :type ("BITBUF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10250 10269])
+                    ("u32ByteCount" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10270 10292]))                  
+                :type "void")
+                nil [10233 10369])
+            ("__PCT_TYPES_DEFINED__" variable (:constant-flag t) nil [10379 10400])
+            ("bli_demux.h" include nil nil [10401 10423])
+            ("bli_frontend.h" include nil nil [10424 10449])
+            ("MAX_SF_FILTER_BYTES" variable (:constant-flag t) nil [10459 10478])
+            ("filter_bytes" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("BLI_UINT8" type (:type "class") nil nil))
+                nil [10486 10537])
+            ("filter_mask" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("BLI_UINT8" type (:type "class") nil nil))
+                nil [10538 10589])
+            ("BLI_DMX_GetSection" function
+               (:arguments 
+                  ( ("HandleDmx" variable (:type ("BLI_DMX_Handle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10624 10649])
+                    ("ui16Pid" variable (:type ("BLI_UINT16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10650 10669])
+                    ("ui16Tid" variable (:type ("BLI_UINT16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10670 10689])
+                    ("pui8Buffer" variable
+                       (:pointer 1
+                        :type ("BLI_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10690 10712])
+                    ("timeout" variable (:type ("BLI_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10713 10732])
+                    ("modeMask" variable (:type ("BLI_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10733 10753]))                  
+                :type ("BLI_ERRORCODE" type (:type "class") nil nil))
+                nil [10591 11325]))          
+    :file "bla_dvb-si_util.c"
+    :pointmax 11326
+    :fsize 11325
+    :lastmodtime '(21235 1279 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAX_SF_FILTER_BYTES" . ((semantic-list "(8)" 10481 . 10484)))
+          ("__PCT_TYPES_DEFINED__")
+          )
+
+    )
+   (semanticdb-table "bla_dvb-si.h"
+    :file "bla_dvb-si.h"
+    :fsize 20493
+    :lastmodtime '(21235 1279 0 0)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!bootloader!platform!dx820_tdx850!products!B044!bla!Foxtel!common!dvb-si!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

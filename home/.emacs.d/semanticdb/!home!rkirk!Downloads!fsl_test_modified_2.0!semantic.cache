@@ -1,0 +1,166 @@
+;; Object fsl_test_modified_2.0/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "fsl_test_modified_2.0/"
+  :tables (list 
+   (semanticdb-table "test.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [233 251])
+            ("stdlib.h" include (:system-flag t) nil [252 271])
+            ("sys/types.h" include (:system-flag t) nil [273 295])
+            ("sys/stat.h" include (:system-flag t) nil [296 317])
+            ("unistd.h" include (:system-flag t) nil [318 337])
+            ("std.h" include nil nil [339 355])
+            ("debug.h" include nil nil [356 374])
+            ("dl_code.h" include nil nil [375 395])
+            ("fsl.h" include nil nil [397 413])
+            ("test.h" include nil nil [415 432])
+            ("nexus_dma.h" include nil nil [434 456])
+            ("nexus_message.h" include nil nil [457 483])
+            ("nexus_memory.h" include nil nil [484 509])
+            ("nexus_platform.h" include nil nil [510 537])
+            ("nexus_keyladder.h" include nil nil [538 566])
+            ("nexus_otpmsp.h" include nil nil [568 593])
+            ("nexus_base_mmap.h" include nil nil [595 623])
+            ("nexus_base_types.h" include nil nil [624 653])
+            ("nexus_security.h" include nil nil [655 682])
+            ("nexus_security_rsa.h" include nil nil [683 714])
+            ("nexus_security_types.h" include nil nil [715 748])
+            ("nexus_security_regver.h" include nil nil [749 783])
+            ("nexus_security_datatypes.h" include nil nil [784 821])
+            ("nexus_security_rawcommand.h" include nil nil [822 860])
+            ("nexus_hmac_sha_cmd.h" include nil nil [862 893])
+            ("nxclient.h" include nil nil [894 915])
+            ("DEBUG_HEADER_F" variable (:type "int") nil [1130 1145])
+            ("BUFFER_SIZE_ALIGNMENT" variable (:constant-flag t) nil [1159 1180])
+            ("allocationSettings" variable (:type ("NEXUS_MemoryAllocationSettings" type (:type "class") nil nil)) nil [1447 1497])
+            ("platformConfig" variable (:type ("NEXUS_PlatformConfiguration" type (:type "class") nil nil)) nil [1498 1541])
+            ("getByteAlignedSize" function
+               (:arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1570 1582]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [1544 1785])
+            ("test_Dump" function
+               (:arguments 
+                  ( ("_buffer" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2086 2109])
+                    ("_offset" variable (:type "int") (reparse-symbol arg-sub-list) [2110 2122])
+                    ("_size" variable (:type "int") (reparse-symbol arg-sub-list) [2123 2133]))                  
+                :type "void")
+                nil [2071 2785])
+            ("test_EndianSwap" function
+               (:arguments 
+                  ( ("_buffer" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [3088 3111])
+                    ("_size" variable (:type "int") (reparse-symbol arg-sub-list) [3112 3122]))                  
+                :type "int")
+                nil [3068 3374])
+            ("test_InitMemory" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3677 3682]))                  
+                :type "int")
+                nil [3657 3999])
+            ("test_Malloc" function
+               (:arguments 
+                  ( ("_pointer" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4298 4314])
+                    ("_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4315 4328]))                  
+                :type "int")
+                nil [4282 4750])
+            ("test_Free" function
+               (:arguments 
+                  ( ("_buffer" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [5047 5070]))                  
+                :type "int")
+                nil [5033 5165])
+            ("test_LoadFile" function
+               (:arguments 
+                  ( ("_buffer" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [5466 5489])
+                    ("_filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5490 5512])
+                    ("_offset" variable (:type "int") (reparse-symbol arg-sub-list) [5513 5525])
+                    ("_size" variable (:type "int") (reparse-symbol arg-sub-list) [5526 5536]))                  
+                :type "int")
+                nil [5448 6244])
+            ("TEST_FSL_Error" function
+               (:pointer 1
+                :arguments 
+                  ( ("_error" variable (:type ("FSL_RETURN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6548 6566]))                  
+                :type "char")
+                nil [6527 7450])
+            ("test_LoadImage" function
+               (:arguments 
+                  ( ("_buffer" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7752 7767])
+                    ("_filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7768 7790])
+                    ("_size" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7791 7805]))                  
+                :type "int")
+                nil [7733 8157])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8449 8454]))                  
+                :type "int")
+                nil [8440 9135]))          
+    :file "test.c"
+    :pointmax 9136
+    :fsize 9135
+    :lastmodtime '(21418 59264 0 0)
+    :unmatched-syntax '((punctuation 1128 . 1129) (symbol 1115 . 1127) (punctuation 1113 . 1114) (symbol 1099 . 1112) (punctuation 1097 . 1098) (symbol 1086 . 1096) (symbol 1081 . 1084))
+    :lexical-table 
+        '(("BUFFER_SIZE_ALIGNMENT" . ((number "1024" 1184 . 1188)))
+          )
+
+    )
+   (semanticdb-table "std.h"
+    :file "std.h"
+    :fsize 722
+    :lastmodtime '(21290 23196 0 0)
+    )
+   (semanticdb-table "debug.h"
+    :file "debug.h"
+    :fsize 2676
+    :lastmodtime '(21290 30902 0 0)
+    )
+   (semanticdb-table "dl_code.h"
+    :file "dl_code.h"
+    :fsize 332
+    :lastmodtime '(21290 36384 0 0)
+    )
+   (semanticdb-table "fsl.h"
+    :file "fsl.h"
+    :fsize 16171
+    :lastmodtime '(21417 22645 0 0)
+    )
+   (semanticdb-table "test.h"
+    :file "test.h"
+    :fsize 902
+    :lastmodtime '(21371 2758 0 0)
+    )
+   )
+  :file "!home!rkirk!Downloads!fsl_test_modified_2.0!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

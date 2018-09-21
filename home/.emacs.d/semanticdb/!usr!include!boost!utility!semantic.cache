@@ -1,0 +1,101 @@
+;; Object utility/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "utility/"
+  :tables (list 
+   (semanticdb-table "addressof.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_UTILITY_ADDRESSOF_HPP" variable (:constant-flag t) nil [413 440])
+            ("boost/config.hpp" include (:system-flag t) nil [442 470])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [471 510])
+            ("boost" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("addr_impl_ref" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("v_" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [596 603])
+                                    ("addr_impl_ref" function
+                                       (:constructor-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("v" variable
+                                               (:reference 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [631 638]))                                          
+                                        :type ("addr_impl_ref" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [609 650])
+                                    ("private" label nil (reparse-symbol classsubparts) [699 707])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("addr_impl_ref" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [738 760]))                                          
+                                        :type ("addr_impl_ref" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [712 761]))                                  )
+                                (reparse-symbol namespacesubparts) [551 764])
+                            ("addressof_impl" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("f" function
+                                       (:pointer 1
+                                        :typemodifiers ("static" "inline")
+                                        :arguments 
+                                          ( ("v" variable
+                                               (:reference 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [833 839])
+                                            ("" variable (:type "long") (reparse-symbol arg-sub-list) [840 846]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [812 972])
+                                    ("f" function
+                                       (:pointer 1
+                                        :typemodifiers ("static" "inline")
+                                        :arguments 
+                                          ( ("v" variable
+                                               (:pointer 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [999 1005])
+                                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [1006 1011]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [978 1041]))                                  )
+                                (reparse-symbol namespacesubparts) [766 1044]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [531 1047])
+                    ("addressof" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1102 1109]))                          
+                        :pointer 1)
+                        (reparse-symbol namespacesubparts) [1069 1396]))                  
+                :type "namespace")
+                nil [512 2181]))          
+    :file "addressof.hpp"
+    :pointmax 2240
+    :fsize 2239
+    :lastmodtime '(21685 46946 0 0)
+    :unmatched-syntax '((semantic-list 683 . 697) (CONST 677 . 682) (semantic-list 674 . 676) (punctuation 672 . 673) (symbol 671 . 672) (OPERATOR 662 . 670) (INLINE 655 . 661))
+    :lexical-table 
+        '(("BOOST_UTILITY_ADDRESSOF_HPP")
+          )
+
+    )
+   )
+  :file "!usr!include!boost!utility!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

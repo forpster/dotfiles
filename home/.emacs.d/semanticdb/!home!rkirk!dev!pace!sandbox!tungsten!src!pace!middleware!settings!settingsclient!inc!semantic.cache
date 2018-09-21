@@ -1,0 +1,124 @@
+;; Object inc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "inc/"
+  :tables (list 
+   (semanticdb-table "settingsClientCInterface.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__SETTINGS_CLIENT_C_INTERFACE_H__" variable (:constant-flag t) nil [794 827])
+            ("reloadSettings" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [895 900]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [868 901])
+            ("getSetting_int" function
+               (:type "int"
+                :arguments 
+                  ( ("keyName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [930 950])
+                    ("value" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [951 963]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [902 964])
+            ("getSetting_string" function
+               (:type "int"
+                :arguments 
+                  ( ("keyName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [996 1016])
+                    ("value" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1017 1031]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [965 1032])
+            ("getSetting_string_free" function
+               (:type "void"
+                :arguments 
+                  ( ("value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1069 1081]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1033 1082])
+            ("getSetting_uint" function
+               (:type "int"
+                :arguments 
+                  ( ("keyName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1112 1132])
+                    ("value" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [1133 1154]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1083 1155])
+            ("setSetting_int" function
+               (:type "int"
+                :arguments 
+                  ( ("keyName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1184 1204])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [1205 1216]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1156 1217])
+            ("setSetting_string" function
+               (:type "int"
+                :arguments 
+                  ( ("keyName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1249 1269])
+                    ("value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1270 1283]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1218 1284])
+            ("setSetting_uint" function
+               (:type "int"
+                :arguments 
+                  ( ("keyName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1314 1334])
+                    ("value" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1335 1355]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1285 1356]))          
+    :file "settingsClientCInterface.h"
+    :pointmax 1394
+    :fsize 1393
+    :lastmodtime '(21674 23299 826614 384000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__SETTINGS_CLIENT_C_INTERFACE_H__")
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!settings!settingsclient!inc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,552 @@
+;; Object app/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "app/"
+  :tables (list 
+   (semanticdb-table "database.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("contextlib" include nil nil [1 38])
+            ("functools" include nil nil [39 66])
+            ("logging" include nil nil [67 81])
+            ("sqlalchemy" include nil nil [82 118])
+            ("sqlalchemy.ext.declarative" include nil nil [119 174])
+            ("sqlalchemy.orm" include nil nil [175 230])
+            ("config" include nil nil [231 273])
+            ("sqlalchemy" include nil nil [274 302])
+            ("sqlalchemy.engine" include nil nil [303 339])
+            ("flask_restful" include nil nil [340 360])
+            ("log" variable nil nil [362 395])
+            ("" code nil nil [416 435])
+            ("set_sqlite_pragma" function (:arguments 
+              ( ("dbapi_connection" variable nil (reparse-symbol function_parameters) [458 474])
+                ("connection_record" variable nil (reparse-symbol function_parameters) [476 493]))              ) nil [436 599])
+            ("engine" variable nil nil [600 669])
+            ("db_session" variable nil nil [670 758])
+            ("Base" variable nil nil [760 785])
+            ("Base" variable nil nil [786 813])
+            ("Base" variable nil nil [814 854])
+            ("transaction" function (:arguments 
+              ( ("func" variable nil (reparse-symbol function_parameters) [874 878]))              ) nil [858 1491])
+            ("TransactionalResource" type
+               (:superclasses ("flask_restful.Resource")
+                :members 
+                  ( ("method_decorators" variable nil (reparse-symbol indented_block_body) [1549 1582]))                  
+                :type "class")
+                nil [1492 1583])
+            ("init_db" function (:decorators 
+              ( ("transaction" function (:type "decorator") nil nil))              ) nil [1584 1872]))          
+    :file "database.py"
+    :pointmax 1875
+    :fsize 1874
+    :lastmodtime '(21934 18676 396932 266000)
+    :unmatched-syntax '((INDENT_BLOCK 1444 . 1472) (NEWLINE 1443 . 1444) (COLON 1442 . 1443) (FINALLY 1435 . 1442) (INDENT_BLOCK 1305 . 1427) (NEWLINE 1304 . 1305) (COLON 1303 . 1304) (TRY 1111 . 1114) (AS 1299 . 1301))
+    )
+   (semanticdb-table "factory.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("flask" include nil nil [1 24])
+            ("flask_restful" include nil nil [25 54])
+            ("app.views" include nil nil [55 78])
+            ("create_app" function (:arguments 
+              ( ("name_handler" variable nil (reparse-symbol function_parameters) [95 107])
+                ("config_object" variable nil (reparse-symbol function_parameters) [109 122]))              ) nil [80 232])
+            ("setup_api" function (:arguments 
+              ( ("app" variable nil (reparse-symbol function_parameters) [247 250]))              ) nil [233 964]))          
+    :file "factory.py"
+    :pointmax 964
+    :fsize 963
+    :lastmodtime '(21951 28604 789177 591000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "__init__.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "__init__.py"
+    :pointmax 459
+    :fsize 458
+    :lastmodtime '(21907 50030 797418 41000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "models.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("app.database" include nil nil [1 36])
+            ("sqlalchemy" include nil nil [37 128])
+            ("sqlalchemy.ext.declarative" include nil nil [129 184])
+            ("sqlalchemy.orm" include nil nil [185 233])
+            ("app.database" include nil nil [234 263])
+            ("json" include nil nil [264 275])
+            ("Recording" type
+               (:superclasses ("Base")
+                :members 
+                  ( ("__tablename__" variable nil (reparse-symbol indented_block_body) [304 331])
+                    ("id" variable nil (reparse-symbol indented_block_body) [336 374])
+                    ("name" variable nil (reparse-symbol indented_block_body) [379 417])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [436 440]))                          )
+                        (reparse-symbol indented_block_body) [423 487])
+                    ("to_json" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [504 508]))                          )
+                        (reparse-symbol indented_block_body) [492 595])
+                    ("from_json" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [614 618])
+                            ("src" variable nil (reparse-symbol function_parameters) [620 623]))                          )
+                        (reparse-symbol indented_block_body) [600 675]))                  
+                :type "class")
+                nil [277 675])
+            ("Schedule" type
+               (:superclasses ("Base")
+                :members 
+                  ( ("__tablename__" variable nil (reparse-symbol indented_block_body) [704 730])
+                    ("id" variable nil (reparse-symbol indented_block_body) [735 773])
+                    ("name" variable nil (reparse-symbol indented_block_body) [778 816])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [835 839]))                          )
+                        (reparse-symbol indented_block_body) [822 885])
+                    ("to_json" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [902 906]))                          )
+                        (reparse-symbol indented_block_body) [890 993])
+                    ("from_json" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1012 1016])
+                            ("src" variable nil (reparse-symbol function_parameters) [1018 1021]))                          )
+                        (reparse-symbol indented_block_body) [998 1073]))                  
+                :type "class")
+                nil [678 1073])
+            ("\"\"\"
+The Service class represents the DAO for a service object. it creates the object for the ORM, linking it with
+the database columns. In here also needs to go the reltionships between the other tables as they are coded
+\"\"\"" code nil nil [1114 1338])
+            ("Genre" type
+               (:superclasses ("Base")
+                :members 
+                  ( ("__tablename__" variable nil (reparse-symbol indented_block_body) [1363 1386])
+                    ("id" variable nil (reparse-symbol indented_block_body) [1391 1429])
+                    ("name" variable nil (reparse-symbol indented_block_body) [1434 1472]))                  
+                :type "class")
+                nil [1340 1473])
+            ("SubGenre" type
+               (:superclasses ("Base")
+                :members 
+                  ( ("__tablename__" variable nil (reparse-symbol indented_block_body) [1502 1528])
+                    ("id" variable nil (reparse-symbol indented_block_body) [1533 1571])
+                    ("name" variable nil (reparse-symbol indented_block_body) [1576 1614]))                  
+                :type "class")
+                nil [1476 1615])
+            ("Service" type
+               (:superclasses ("Base")
+                :members 
+                  ( ("__tablename__" variable nil (reparse-symbol indented_block_body) [1642 1668])
+                    ("\"\"\" Create the fields for the ORM \"\"\"" code nil (reparse-symbol indented_block_body) [1674 1711])
+                    ("id" variable nil (reparse-symbol indented_block_body) [1716 1754])
+                    ("cobalt_svc_key" variable nil (reparse-symbol indented_block_body) [1761 1805])
+                    ("contentSource" variable nil (reparse-symbol indented_block_body) [1811 1842])
+                    ("networkId_key" variable nil (reparse-symbol indented_block_body) [1848 1879])
+                    ("transportId_key" variable nil (reparse-symbol indented_block_body) [1884 1917])
+                    ("serviceId_key" variable nil (reparse-symbol indented_block_body) [1922 1953])
+                    ("chanNum" variable nil (reparse-symbol indented_block_body) [1959 1984])
+                    ("altChanNumber" variable nil (reparse-symbol indented_block_body) [1989 2020])
+                    ("serviceType" variable nil (reparse-symbol indented_block_body) [2025 2054])
+                    ("sourceType" variable nil (reparse-symbol indented_block_body) [2059 2087])
+                    ("name" variable nil (reparse-symbol indented_block_body) [2093 2126])
+                    ("serviceFlags" variable nil (reparse-symbol indented_block_body) [2131 2161])
+                    ("genreId" variable nil (reparse-symbol indented_block_body) [2167 2216])
+                    ("subGenreId" variable nil (reparse-symbol indented_block_body) [2221 2276])
+                    ("genre" variable nil (reparse-symbol indented_block_body) [2281 2310])
+                    ("subGenre" variable nil (reparse-symbol indented_block_body) [2315 2350])
+                    ("parentalRating" variable nil (reparse-symbol indented_block_body) [2356 2388])
+                    ("Url" variable nil (reparse-symbol indented_block_body) [2393 2413])
+                    ("Icon" variable nil (reparse-symbol indented_block_body) [2418 2439])
+                    ("serviceVersion" variable nil (reparse-symbol indented_block_body) [2445 2477])
+                    ("provider" variable nil (reparse-symbol indented_block_body) [2482 2507])
+                    ("Bouquet" variable nil (reparse-symbol indented_block_body) [2512 2536])
+                    ("BouqName" variable nil (reparse-symbol indented_block_body) [2541 2566])
+                    ("PvrUrl" variable nil (reparse-symbol indented_block_body) [2571 2594])
+                    ("longName" variable nil (reparse-symbol indented_block_body) [2599 2624])
+                    ("affiliations" variable nil (reparse-symbol indented_block_body) [2629 2658])
+                    ("populateFromIngestJson" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2691 2695])
+                            ("ingestJsonObj" variable nil (reparse-symbol function_parameters) [2697 2710])
+                            ("genreTranslator" variable nil (reparse-symbol function_parameters) [2712 2727]))                          )
+                        (reparse-symbol indented_block_body) [2664 3312]))                  
+                :type "class")
+                nil [1617 3312])
+            ("\"\"\"
+Create the many to many mapping table.
+\"\"\"" code nil nil [3313 3359])
+            ("favouriteAssociationTable" variable nil nil [3360 3659])
+            ("\"\"\"
+Favourite lists
+
+The favourite lists are list of services associated with a name, it uses a
+many-to-many relationship with the services table
+\"\"\"" code nil nil [3661 3810])
+            ("FavouriteList" type
+               (:superclasses ("Base")
+                :members 
+                  ( ("__tablename__" variable nil (reparse-symbol indented_block_body) [3842 3869])
+                    ("id" variable nil (reparse-symbol indented_block_body) [3875 3913])
+                    ("name" variable nil (reparse-symbol indented_block_body) [3918 3939])
+                    ("operator" variable nil (reparse-symbol indented_block_body) [3944 3970])
+                    ("services" variable nil (reparse-symbol indented_block_body) [3975 4104]))                  
+                :type "class")
+                nil [3811 4105])
+            ("Event" type
+               (:superclasses ("Base")
+                :members 
+                  ( ("__tablename__" variable nil (reparse-symbol indented_block_body) [4132 4155])
+                    ("id" variable nil (reparse-symbol indented_block_body) [4161 4199])
+                    ("serviceId" variable nil (reparse-symbol indented_block_body) [4204 4270])
+                    ("service" variable nil (reparse-symbol indented_block_body) [4275 4308])
+                    ("cobalt_event_key" variable nil (reparse-symbol indented_block_body) [4313 4372])
+                    ("contentType" variable nil (reparse-symbol indented_block_body) [4377 4406])
+                    ("contentSource" variable nil (reparse-symbol indented_block_body) [4411 4442])
+                    ("start" variable nil (reparse-symbol indented_block_body) [4448 4482])
+                    ("end" variable nil (reparse-symbol indented_block_body) [4487 4519])
+                    ("duration" variable nil (reparse-symbol indented_block_body) [4524 4550])
+                    ("dvb_key" variable nil (reparse-symbol indented_block_body) [4556 4593])
+                    ("ca" variable nil (reparse-symbol indented_block_body) [4599 4619])
+                    ("parentalRating" variable nil (reparse-symbol indented_block_body) [4624 4656])
+                    ("name" variable nil (reparse-symbol indented_block_body) [4661 4694])
+                    ("eventText" variable nil (reparse-symbol indented_block_body) [4699 4725])
+                    ("genreId" variable nil (reparse-symbol indented_block_body) [4730 4779])
+                    ("genre" variable nil (reparse-symbol indented_block_body) [4784 4813])
+                    ("seriesId" variable nil (reparse-symbol indented_block_body) [4819 4870])
+                    ("series" variable nil (reparse-symbol indented_block_body) [4875 4906])
+                    ("populateFromIngestJson" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4939 4943])
+                            ("service" variable nil (reparse-symbol function_parameters) [4945 4952])
+                            ("ingestJsonObj" variable nil (reparse-symbol function_parameters) [4954 4967])
+                            ("genreTranslator" variable nil (reparse-symbol function_parameters) [4969 4984]))                          )
+                        (reparse-symbol indented_block_body) [4912 5369]))                  
+                :type "class")
+                nil [4109 5369])
+            ("Index" code nil nil [5370 5418])
+            ("Index" code nil nil [5419 5480])
+            ("Series" type
+               (:superclasses ("Base")
+                :members 
+                  ( ("__tablename__" variable nil (reparse-symbol indented_block_body) [5506 5530])
+                    ("id" variable nil (reparse-symbol indented_block_body) [5536 5573])
+                    ("seriesDescription" variable nil (reparse-symbol indented_block_body) [5578 5612])
+                    ("seriesOrginalNetwork" variable nil (reparse-symbol indented_block_body) [5617 5654])
+                    ("seriesAiringNew" variable nil (reparse-symbol indented_block_body) [5659 5691])
+                    ("seriesHomePage" variable nil (reparse-symbol indented_block_body) [5696 5727])
+                    ("seriesStudio" variable nil (reparse-symbol indented_block_body) [5732 5761]))                  
+                :type "class")
+                nil [5482 5762])
+            ("People" type
+               (:superclasses ("Base")
+                :members 
+                  ( ("__tablename__" variable nil (reparse-symbol indented_block_body) [5787 5811])
+                    ("id" variable nil (reparse-symbol indented_block_body) [5817 5855])
+                    ("name" variable nil (reparse-symbol indented_block_body) [5860 5881])
+                    ("role" variable nil (reparse-symbol indented_block_body) [5886 5907])
+                    ("ranking" variable nil (reparse-symbol indented_block_body) [5912 5937])
+                    ("Channels" variable nil (reparse-symbol indented_block_body) [5942 5967])
+                    ("brand" variable nil (reparse-symbol indented_block_body) [5972 5994])
+                    ("homePage" variable nil (reparse-symbol indented_block_body) [5999 6024])
+                    ("videoDefinition" variable nil (reparse-symbol indented_block_body) [6029 6061])
+                    ("audioLanguages" variable nil (reparse-symbol indented_block_body) [6066 6097])
+                    ("transmissionType" variable nil (reparse-symbol indented_block_body) [6102 6135])
+                    ("countryCode" variable nil (reparse-symbol indented_block_body) [6140 6168])
+                    ("OwnerShip" variable nil (reparse-symbol indented_block_body) [6173 6199])
+                    ("isBlocked" variable nil (reparse-symbol indented_block_body) [6204 6231]))                  
+                :type "class")
+                nil [5763 6232])
+            ("peopleEventAssociationTable" variable nil nil [6233 6488]))          
+    :file "models.py"
+    :pointmax 6491
+    :fsize 6490
+    :lastmodtime '(21951 28604 789177 591000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "views.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("logging" include nil nil [1 15])
+            ("app.database" include nil nil [16 52])
+            ("app.ingester" include nil nil [53 84])
+            ("app.models" include nil nil [85 109])
+            ("flask_restful" include nil nil [110 130])
+            ("flask_restful" include nil nil [131 177])
+            ("flask_restful.reqparse" include nil nil [178 226])
+            ("TransactionalResource" type
+               (:superclasses ("flask_restful.Resource")
+                :members 
+                  ( ("method_decorators" variable nil (reparse-symbol indented_block_body) [285 318]))                  
+                :type "class")
+                nil [228 319])
+            ("app.tungsten_views.services" include nil nil [320 361])
+            ("app.tungsten_views.favourites" include nil nil [362 405])
+            ("app.tungsten_views.events" include nil nil [406 445])
+            ("app.dml.cobalt_ingest" include nil nil [447 482])
+            ("app.dml.ble_ingest" include nil nil [483 515])
+            ("log" variable nil nil [518 549])
+            ("to_dict" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [563 567]))              ) nil [551 653])
+            ("rec_resource_fields" variable nil nil [657 735])
+            ("RecordingsResource" type
+               (:superclasses ("TransactionalResource")
+                :members 
+                  ( ("" code nil (reparse-symbol indented_block_body) [802 844])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [857 861]))                          )
+                        (reparse-symbol indented_block_body) [849 1434])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1449 1453]))                          )
+                        (reparse-symbol indented_block_body) [1440 1691]))                  
+                :type "class")
+                nil [736 1691])
+            ("series_fields" variable nil nil [1693 1906])
+            ("RecordingResource" type
+               (:superclasses ("TransactionalResource")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1969 1973])
+                            ("rec_id" variable nil (reparse-symbol function_parameters) [1975 1981]))                          )
+                        (reparse-symbol indented_block_body) [1961 2066])
+                    ("put" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2079 2083])
+                            ("rec_id" variable nil (reparse-symbol function_parameters) [2084 2090]))                          )
+                        (reparse-symbol indented_block_body) [2071 2374])
+                    ("delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2390 2394])
+                            ("rec_id" variable nil (reparse-symbol function_parameters) [2396 2402]))                          )
+                        (reparse-symbol indented_block_body) [2379 2513]))                  
+                :type "class")
+                nil [1909 2513])
+            ("CobaltFeedIngest" type
+               (:superclasses ("TransactionalResource")
+                :members 
+                  ( ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2577 2581]))                          )
+                        (reparse-symbol indented_block_body) [2568 3572]))                  
+                :type "class")
+                nil [2517 3572])
+            ("CobaltFeedIngestTwo" type
+               (:superclasses ("TransactionalResource")
+                :members 
+                  ( ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3636 3640]))                          )
+                        (reparse-symbol indented_block_body) [3627 4344]))                  
+                :type "class")
+                nil [3573 4344])
+            ("SchedulesResource" type
+               (:superclasses ("TransactionalResource")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4405 4409]))                          )
+                        (reparse-symbol indented_block_body) [4397 4500]))                  
+                :type "class")
+                nil [4345 4500])
+            ("BleNitFeedIngest" type
+               (:superclasses ("TransactionalResource")
+                :members 
+                  ( ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4561 4565]))                          )
+                        (reparse-symbol indented_block_body) [4552 4932]))                  
+                :type "class")
+                nil [4501 4932])
+            ("BleSdtFeedIngest" type
+               (:superclasses ("TransactionalResource")
+                :members 
+                  ( ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4993 4997]))                          )
+                        (reparse-symbol indented_block_body) [4984 5492]))                  
+                :type "class")
+                nil [4933 5492])
+            ("BleBatFeedIngest" type
+               (:superclasses ("TransactionalResource")
+                :members 
+                  ( ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5553 5557]))                          )
+                        (reparse-symbol indented_block_body) [5544 5785]))                  
+                :type "class")
+                nil [5493 5785]))          
+    :file "views.py"
+    :pointmax 5786
+    :fsize 5785
+    :lastmodtime '(21953 61309 171415 701000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ingester.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("collections" include nil nil [1 36])
+            ("logging" include nil nil [37 51])
+            ("app.database" include nil nil [52 100])
+            ("app.models" include nil nil [101 155])
+            ("app.dao.services" include nil nil [157 315])
+            ("time" include nil nil [317 328])
+            ("config" include nil nil [329 360])
+            ("sqlalchemy" include nil nil [361 388])
+            ("app.unique_channel_id" include nil nil [389 436])
+            ("log" variable nil nil [438 471])
+            ("Ingest" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [601 660])
+                            ("self" variable nil (reparse-symbol indented_block_body) [669 699])
+                            ("self" variable nil (reparse-symbol indented_block_body) [708 734])
+                            ("self" variable nil (reparse-symbol indented_block_body) [743 773])
+                            ("self" variable nil (reparse-symbol indented_block_body) [782 808])
+                            ("self" variable nil (reparse-symbol indented_block_body) [817 839]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [505 509])
+                            ("genreJson" variable nil (reparse-symbol function_parameters) [511 520])
+                            ("subGenreJson" variable nil (reparse-symbol function_parameters) [522 534])
+                            ("serviceJson" variable nil (reparse-symbol function_parameters) [536 547])
+                            ("eventJson" variable nil (reparse-symbol function_parameters) [549 558])
+                            ("serviceList" variable nil (reparse-symbol function_parameters) [560 571])
+                            ("startTime" variable nil (reparse-symbol function_parameters) [572 581])
+                            ("endTime" variable nil (reparse-symbol function_parameters) [583 590]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [492 840])
+                    ("fullIngest" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [860 864]))                          )
+                        (reparse-symbol indented_block_body) [845 2632])
+                    ("deleteOldEvents" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2657 2661])
+                            ("existingEvents" variable nil (reparse-symbol function_parameters) [2663 2677]))                          )
+                        (reparse-symbol indented_block_body) [2637 3203])
+                    ("deleteOldServices" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3230 3234])
+                            ("existing" variable nil (reparse-symbol function_parameters) [3236 3244]))                          )
+                        (reparse-symbol indented_block_body) [3208 3672])
+                    ("updateEvents" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3694 3698])
+                            ("existingSvcByKey" variable nil (reparse-symbol function_parameters) [3700 3716])
+                            ("existingEventByKey" variable nil (reparse-symbol function_parameters) [3718 3736]))                          )
+                        (reparse-symbol indented_block_body) [3677 4442])
+                    ("isEventInTimeWindow" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4471 4475])
+                            ("json" variable nil (reparse-symbol function_parameters) [4477 4481]))                          )
+                        (reparse-symbol indented_block_body) [4447 4590])
+                    ("updateServices" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4614 4618]))                          )
+                        (reparse-symbol indented_block_body) [4595 4962])
+                    ("chunks" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4978 4982])
+                            ("l" variable nil (reparse-symbol function_parameters) [4984 4985])
+                            ("n" variable nil (reparse-symbol function_parameters) [4987 4988]))                          
+                        :documentation "Yield successive n-sized chunks from l.")
+                        (reparse-symbol indented_block_body) [4967 5111]))                  
+                :type "class")
+                nil [474 5111])
+            ("GenreTranslator" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [5192 5244])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5253 5314]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5152 5156])
+                            ("genreJson" variable nil (reparse-symbol function_parameters) [5158 5167])
+                            ("subGenreJson" variable nil (reparse-symbol function_parameters) [5169 5181]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [5139 5315])
+                    ("getGenre" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5333 5337])
+                            ("key" variable nil (reparse-symbol function_parameters) [5339 5342])
+                            ("default" variable nil (reparse-symbol function_parameters) [5344 5351]))                          )
+                        (reparse-symbol indented_block_body) [5320 5398])
+                    ("getSubGenre" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5419 5423])
+                            ("key" variable nil (reparse-symbol function_parameters) [5425 5428])
+                            ("default" variable nil (reparse-symbol function_parameters) [5430 5437]))                          )
+                        (reparse-symbol indented_block_body) [5403 5487])
+                    ("createGenreTable" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5513 5517])
+                            ("genre_" variable nil (reparse-symbol function_parameters) [5519 5525])
+                            ("clazz" variable nil (reparse-symbol function_parameters) [5527 5532]))                          )
+                        (reparse-symbol indented_block_body) [5492 5914]))                  
+                :type "class")
+                nil [5112 5914]))          
+    :file "ingester.py"
+    :pointmax 5914
+    :fsize 5913
+    :lastmodtime '(21951 28604 789177 591000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "unique_channel_id.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [1 11])
+            ("ctypes" include nil nil [12 25])
+            ("makeUniqueKey" function (:arguments 
+              ( ("serviceId" variable nil (reparse-symbol function_parameters) [46 55])
+                ("networkId" variable nil (reparse-symbol function_parameters) [57 66])
+                ("transportId" variable nil (reparse-symbol function_parameters) [68 79])
+                ("val" variable nil (reparse-symbol function_parameters) [81 84]))              ) nil [27 276]))          
+    :file "unique_channel_id.py"
+    :pointmax 470
+    :fsize 275
+    :lastmodtime '(21952 36134 867161 999000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!prototype!app!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

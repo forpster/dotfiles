@@ -1,0 +1,1737 @@
+;; Object nexus/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "nexus/"
+  :tables (list 
+   (semanticdb-table "nexus_decryption.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NEXUS_DECRYPTION_H__" variable (:constant-flag t) nil [38 58])
+            ("vector" include (:system-flag t) nil [60 77])
+            ("ostream" include (:system-flag t) nil [78 96])
+            ("memory" include (:system-flag t) nil [97 114])
+            ("stdint.h" include (:system-flag t) nil [115 134])
+            ("nexus_dma.h" include nil nil [136 158])
+            ("nexus_security.h" include nil nil [159 186])
+            ("idecrypt.h" include nil nil [188 209])
+            ("namedsemaphore.h" include nil nil [210 237])
+            ("AES_BLOCK_SIZE" variable (:constant-flag t) nil [247 261])
+            ("BUFFER_SIZE" variable (:constant-flag t) nil [273 284])
+            ("DECRYPTION_ERROR" variable (:constant-flag t) nil [329 345])
+            ("NexusDecryption" type
+               (:superclasses 
+                  ( ("IDecrypt" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [392 399])
+                    ("NexusDecryption" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [403 430])
+                    ("init" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("keyProvider" variable (:type ("std::auto_ptr" type
+                                 (:template-specifier 
+                                    ( ("IKeyProvider" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [453 493])
+                            ("iv" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [494 525]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [435 530])
+                    ("init" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("keyProvider" variable (:type ("std::auto_ptr" type
+                                 (:template-specifier 
+                                    ( ("IKeyProvider" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [552 592]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [534 597])
+                    ("update" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [620 653])
+                            ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [654 672]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [601 677])
+                    ("final" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [699 717]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [681 722])
+                    ("protected" label nil (reparse-symbol classsubparts) [724 734])
+                    ("NexusDecryption" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("type" variable (:type ("DECRYPTION_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [754 775]))                          
+                        :type ("NexusDecryption" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [738 776])
+                    ("decryptBlocks" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [798 831])
+                            ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [832 850])
+                            ("final" variable (:type "bool") (reparse-symbol arg-sub-list) [851 862]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [780 863])
+                    ("isBufferEmpty" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [867 894])
+                    ("setIv" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("iv" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [909 940]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [898 941])
+                    ("initaliseNexus" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("keyProvider" variable (:type ("std::auto_ptr" type
+                                 (:template-specifier 
+                                    ( ("IKeyProvider" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [965 1005])
+                            ("algType" variable (:type ("NEXUS_SecurityAlgorithmVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1006 1045]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [945 1046])
+                    ("setPadding" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("enabled" variable (:type "bool") (reparse-symbol arg-sub-list) [1066 1079]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1050 1080])
+                    ("private" label nil (reparse-symbol classsubparts) [1082 1090])
+                    ("NexusDecryption" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("NexusDecryption" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1141 1159])
+                    ("NexusDecryption" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("NexusDecryption" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1179 1202]))                          
+                        :type ("NexusDecryption" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1163 1203])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("NexusDecryption" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1234 1257]))                          
+                        :type ("NexusDecryption" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1207 1258])
+                    ("fillSourceBuffer" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1285 1318])
+                            ("sizeProcessed" variable
+                               (:reference 1
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1319 1341]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1263 1342])
+                    ("shouldDecrypt" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1365 1398])
+                            ("sizeProcessed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1399 1420])
+                            ("final" variable (:type "bool") (reparse-symbol arg-sub-list) [1421 1432]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1346 1439])
+                    ("loadIv" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1443 1457])
+                    ("retainIvBlock" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1461 1482])
+                    ("processJob" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1486 1504])
+                    ("exportPlaintext" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1528 1561])
+                            ("sizeProcessed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1562 1583])
+                            ("final" variable (:type "bool") (reparse-symbol arg-sub-list) [1584 1595])
+                            ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1596 1614]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1508 1615])
+                    ("isBufferFull" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1619 1645])
+                    ("isDataConsumed" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1669 1702])
+                            ("sizeProcessed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1703 1724]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1649 1731])
+                    ("isBufferBlockAligned" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1735 1769])
+                    ("verifyPadding" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("paddingSize" variable
+                               (:reference 1
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1792 1812]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1773 1819])
+                    ("setKey" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1823 1837])
+                    ("m_ivRequired" variable (:type "bool") (reparse-symbol classsubparts) [1842 1860])
+                    ("m_iv" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("uint8_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1953 1979])
+                    ("m_dma" variable (:type ("NEXUS_DmaHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2042 2064])
+                    ("m_keySettings" variable (:type ("NEXUS_SecurityKeySlotSettings" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2165 2209])
+                    ("m_keyHandle" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2295 2327])
+                    ("m_nexusConfig" variable (:type ("NEXUS_SecurityAlgorithmSettings" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2426 2472])
+                    ("m_key" variable (:type ("NEXUS_SecurityClearKey" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2558 2587])
+                    ("m_buffer" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2672 2690])
+                    ("m_bufferAllocated" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2788 2813])
+                    ("m_paddingEnabled" variable (:type "bool") (reparse-symbol classsubparts) [2891 2913])
+                    ("m_semaphore" variable (:type ("NamedSemaphore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3000 3027]))                  
+                :type "class")
+                nil [350 3123]))          
+    :file "nexus_decryption.h"
+    :pointmax 3156
+    :fsize 3155
+    :lastmodtime '(21722 3759 22077 116000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BUFFER_SIZE" . ((semantic-list "(64 * 1024)" 285 . 296)))
+          ("NEXUS_DECRYPTION_H__")
+          ("AES_BLOCK_SIZE" . ((number "16" 262 . 264)))
+          ("DECRYPTION_ERROR" . ((punctuation "-" 346 . 347) (number "1" 347 . 348)))
+          )
+
+    )
+   (semanticdb-table "nexus_sha.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NEXUS_SHA_H__" variable (:constant-flag t) nil [31 44])
+            ("vector" include (:system-flag t) nil [46 63])
+            ("stdint.h" include (:system-flag t) nil [64 83])
+            ("nexus_hmac_sha_cmd.h" include nil nil [85 116])
+            ("namedsemaphore.h" include nil nil [118 145])
+            ("BUFFER_SIZE" variable (:constant-flag t) nil [155 166])
+            ("NexusSha" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [314 321])
+                    ("NexusSha" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [325 345])
+                    ("protected" label nil (reparse-symbol classsubparts) [347 357])
+                    ("NexusSha" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("NexusSha" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [361 372])
+                    ("initialise" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("shaType" variable (:type ("NEXUS_HMACSHA_SHAType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [393 423]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [377 424])
+                    ("shaBlocks" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [443 476])
+                            ("final" variable (:type "bool") (reparse-symbol arg-sub-list) [477 488]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [428 489])
+                    ("getHashValue" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("hash" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [511 538]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [493 545])
+                    ("private" label nil (reparse-symbol classsubparts) [547 555])
+                    ("NexusSha" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("NexusSha" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [601 617]))                          
+                        :type ("NexusSha" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [592 618])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("NexusSha" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [642 658]))                          
+                        :type ("NexusSha" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [622 659])
+                    ("fillSourceBuffer" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [686 719])
+                            ("sizeProcessed" variable
+                               (:reference 1
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [720 742]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [664 743])
+                    ("isDataConsumed" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [767 800])
+                            ("sizeProcessed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [801 822]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [747 829])
+                    ("shouldPerformSha" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [855 888])
+                            ("sizeProcessed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [889 910])
+                            ("final" variable (:type "bool") (reparse-symbol arg-sub-list) [911 922]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [833 929])
+                    ("processJob" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [949 982])
+                            ("sizeProcessed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [983 1004])
+                            ("final" variable (:type "bool") (reparse-symbol arg-sub-list) [1005 1016]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [933 1017])
+                    ("isBufferFull" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1021 1047])
+                    ("m_settings" variable (:type ("NEXUS_HMACSHA_OpSettings" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1052 1088])
+                    ("m_output" variable (:type ("NEXUS_HMACSHA_DigestOutput" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1119 1155])
+                    ("m_buffer" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1184 1202])
+                    ("m_bufferAllocated" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1290 1315])
+                    ("m_semaphore" variable (:type ("NamedSemaphore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1383 1410]))                  
+                :type "class")
+                nil [297 1496]))          
+    :file "nexus_sha.h"
+    :pointmax 1522
+    :fsize 1521
+    :lastmodtime '(21722 3759 21077 124000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BUFFER_SIZE" . ((semantic-list "(64 * 1024)" 167 . 178)))
+          ("NEXUS_SHA_H__")
+          )
+
+    )
+   (semanticdb-table "nexus_aes_ecb.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [1 19])
+            ("openssl/crypto.h" include (:system-flag t) nil [21 48])
+            ("nexus_security_datatypes.h" include nil nil [49 86])
+            ("nexus_aes_ecb.h" include nil nil [88 114])
+            ("tlogger.h" include nil nil [116 136])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [137 161])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [162 209])
+            ("NexusAesEcb" function
+               (:constructor-flag t
+                :parent "NexusAesEcb"
+                :type ("NexusAesEcb" type (:type "class") nil nil))
+                nil [211 313])
+            ("NexusAesEcb" function
+               (:destructor-flag t
+                :parent "NexusAesEcb"
+                :type "void")
+                nil [315 347])
+            ("clone" function
+               (:parent "NexusAesEcb"
+                :type ("std::auto_ptr" type
+                     (:template-specifier 
+                        ( ("IDecrypt" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [455 575])
+            ("init" function
+               (:parent "NexusAesEcb"
+                :arguments 
+                  ( ("keyProvider" variable (:type ("std::auto_ptr" type
+                         (:template-specifier 
+                            ( ("IKeyProvider" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [840 880])
+                    ("iv" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [881 912]))                  
+                :type "bool")
+                nil [817 958])
+            ("init" function
+               (:parent "NexusAesEcb"
+                :arguments 
+                  ( ("keyProvider" variable (:type ("std::auto_ptr" type
+                         (:template-specifier 
+                            ( ("IKeyProvider" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1175 1215]))                  
+                :type "bool")
+                nil [1152 1351])
+            ("update" function
+               (:parent "NexusAesEcb"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1610 1643])
+                    ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1644 1662]))                  
+                :type "int")
+                nil [1586 1871])
+            ("final" function
+               (:parent "NexusAesEcb"
+                :arguments 
+                  ( ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2052 2070]))                  
+                :type "int")
+                nil [2029 2549]))          
+    :file "nexus_aes_ecb.cpp"
+    :pointmax 2550
+    :fsize 2549
+    :lastmodtime '(21722 3759 22077 116000)
+    :unmatched-syntax '((string 188 . 207))
+    )
+   (semanticdb-table "nexus_aes_ecb.h"
+    :file "nexus_aes_ecb.h"
+    :fsize 843
+    :lastmodtime '(21722 3759 22077 116000)
+    )
+   (semanticdb-table "nexus_decryption.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [1 19])
+            ("cstring" include (:system-flag t) nil [20 38])
+            ("cerrno" include (:system-flag t) nil [39 56])
+            ("openssl/crypto.h" include (:system-flag t) nil [58 85])
+            ("nexus_platform.h" include nil nil [86 113])
+            ("nexus_keyladder.h" include nil nil [114 142])
+            ("nexus_decryption.h" include nil nil [144 173])
+            ("nexussemaphore.h" include nil nil [174 201])
+            ("hyp_defs.h" include nil nil [202 223])
+            ("tlogger.h" include nil nil [225 245])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [246 270])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [271 318])
+            ("NexusDecryption" function
+               (:constructor-flag t
+                :parent "NexusDecryption"
+                :arguments 
+                  ( ("type" variable (:type ("DECRYPTION_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [353 374]))                  
+                :type ("NexusDecryption" type (:type "class") nil nil))
+                nil [320 659])
+            ("NexusDecryption" function
+               (:destructor-flag t
+                :parent "NexusDecryption"
+                :type "void")
+                nil [661 939])
+            ("initaliseNexus" function
+               (:parent "NexusDecryption"
+                :arguments 
+                  ( ("keyProvider" variable (:type ("std::auto_ptr" type
+                         (:template-specifier 
+                            ( ("IKeyProvider" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1221 1261])
+                    ("algType" variable (:type ("NEXUS_SecurityAlgorithmVariant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1262 1301]))                  
+                :type "bool")
+                nil [1184 4657])
+            ("setIv" function
+               (:parent "NexusDecryption"
+                :arguments 
+                  ( ("iv" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4760 4791]))                  
+                :type "void")
+                nil [4732 4833])
+            ("decryptBlocks" function
+               (:parent "NexusDecryption"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5438 5471])
+                    ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5472 5490])
+                    ("final" variable (:type "bool") (reparse-symbol arg-sub-list) [5491 5502]))                  
+                :type "int")
+                nil [5403 6408])
+            ("verifyPadding" function
+               (:parent "NexusDecryption"
+                :arguments 
+                  ( ("paddingSize" variable
+                       (:reference 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6718 6738]))                  
+                :type "bool")
+                nil [6682 7961])
+            ("fillSourceBuffer" function
+               (:parent "NexusDecryption"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8244 8277])
+                    ("sizeProcessed" variable
+                       (:reference 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8278 8300]))                  
+                :type "void")
+                nil [8205 8895])
+            ("isBufferFull" function
+               (:parent "NexusDecryption"
+                :type "bool")
+                nil [9021 9154])
+            ("isBufferEmpty" function
+               (:parent "NexusDecryption"
+                :type "bool")
+                nil [9274 9398])
+            ("isDataConsumed" function
+               (:parent "NexusDecryption"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9708 9741])
+                    ("sizeProcessed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9742 9763]))                  
+                :type "bool")
+                nil [9671 9856])
+            ("shouldDecrypt" function
+               (:parent "NexusDecryption"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10834 10867])
+                    ("sizeProcessed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10868 10889])
+                    ("final" variable (:type "bool") (reparse-symbol arg-sub-list) [10890 10901]))                  
+                :type "bool")
+                nil [10798 11588])
+            ("isBufferBlockAligned" function
+               (:parent "NexusDecryption"
+                :type "bool")
+                nil [11803 11951])
+            ("retainIvBlock" function
+               (:parent "NexusDecryption"
+                :type "void")
+                nil [12078 12342])
+            ("processJob" function
+               (:parent "NexusDecryption"
+                :type "void")
+                nil [12408 14271])
+            ("exportPlaintext" function
+               (:parent "NexusDecryption"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14775 14808])
+                    ("sizeProcessed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14809 14830])
+                    ("final" variable (:type "bool") (reparse-symbol arg-sub-list) [14831 14842])
+                    ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14843 14861]))                  
+                :type "int")
+                nil [14738 16017])
+            ("loadIv" function
+               (:parent "NexusDecryption"
+                :type "bool")
+                nil [16164 16835])
+            ("setPadding" function
+               (:parent "NexusDecryption"
+                :arguments 
+                  ( ("enabled" variable (:type "bool") (reparse-symbol arg-sub-list) [17097 17110]))                  
+                :type "void")
+                nil [17064 17145])
+            ("setKey" function
+               (:parent "NexusDecryption"
+                :type "bool")
+                nil [17364 20251]))          
+    :file "nexus_decryption.cpp"
+    :pointmax 20252
+    :fsize 20251
+    :lastmodtime '(21726 4486 979296 184000)
+    :unmatched-syntax '((string 297 . 316))
+    )
+   (semanticdb-table "nexussemaphore.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NEXUS_SEMAPHORE_H__" variable (:constant-flag t) nil [37 56])
+            ("SL_SEMAPHORE_HMAC" variable (:constant-flag t) nil [66 83])
+            ("SL_SEMAPHORE_M2M" variable (:constant-flag t) nil [146 162])
+            ("SL_SEMAPHORE_TIMEOUT" variable (:constant-flag t) nil [238 258]))          
+    :file "nexussemaphore.h"
+    :pointmax 294
+    :fsize 293
+    :lastmodtime '(21722 3759 22077 116000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SL_SEMAPHORE_HMAC" . ((string "\"/sl_hmac\"" 84 . 94)))
+          ("SL_SEMAPHORE_TIMEOUT" . ((number "120" 259 . 262)))
+          ("NEXUS_SEMAPHORE_H__")
+          ("SL_SEMAPHORE_M2M" . ((string "\"/sl_decrypt\"" 163 . 176)))
+          )
+
+    )
+   (semanticdb-table "k3procinverifier.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [1 19])
+            ("k3procinverifier.h" include nil nil [21 50])
+            ("k3procinverifierimpl.h" include nil nil [51 84])
+            ("Security" using (:type ("Security" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [86 111])
+            ("K3ProcinVerifier" function
+               (:constructor-flag t
+                :parent "K3ProcinVerifier"
+                :type ("K3ProcinVerifier" type (:type "class") nil nil))
+                nil [113 191])
+            ("K3ProcinVerifier" function
+               (:destructor-flag t
+                :parent "K3ProcinVerifier"
+                :type "void")
+                nil [193 301])
+            ("verifyFile" function
+               (:parent "K3ProcinVerifier"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [623 634]))                  
+                :type "bool")
+                nil [589 727]))          
+    :file "k3procinverifier.cpp"
+    :pointmax 728
+    :fsize 727
+    :lastmodtime '(21726 4487 13295 913000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "daemonnexusinitialisation.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("fstream" include (:system-flag t) nil [1 19])
+            ("cassert" include (:system-flag t) nil [20 38])
+            ("sys/types.h" include (:system-flag t) nil [39 61])
+            ("sys/stat.h" include (:system-flag t) nil [62 83])
+            ("unistd.h" include (:system-flag t) nil [84 103])
+            ("daemonnexusinitialisation.h" include nil nil [105 143])
+            ("tlvparser.h" include nil nil [144 166])
+            ("namedsemaphore.h" include nil nil [167 194])
+            ("utilities.h" include nil nil [195 217])
+            ("nexussemaphore.h" include nil nil [218 245])
+            ("nexus_memory.h" include nil nil [341 366])
+            ("nexus_platform.h" include nil nil [367 394])
+            ("nexus_security.h" include nil nil [396 423])
+            ("nexus_keyladder.h" include nil nil [424 452])
+            ("hyp_defs.h" include nil nil [453 474])
+            ("tlogger.h" include nil nil [574 594])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [595 619])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [620 667])
+            ("PROCIN_SIZE" variable (:constant-flag t) nil [1010 1021])
+            ("RSA_INIT_TAG" variable (:constant-flag t) nil [1034 1046])
+            ("CUSKEY_INIT_TAG" variable (:constant-flag t) nil [1065 1080])
+            ("Security" using (:type ("Security" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1950 1975])
+            ("DaemonNexusInitialisation" function
+               (:constructor-flag t
+                :parent "DaemonNexusInitialisation"
+                :type ("DaemonNexusInitialisation" type (:type "class") nil nil))
+                nil [1977 2186])
+            ("DaemonNexusInitialisation" function
+               (:destructor-flag t
+                :parent "DaemonNexusInitialisation"
+                :type "void")
+                nil [2188 2491])
+            ("getInstance" function
+               (:parent "DaemonNexusInitialisation"
+                :type ("DaemonNexusInitialisation" type (:type "class") nil nil))
+                nil [2593 2730])
+            ("join" function
+               (:parent "DaemonNexusInitialisation"
+                :type "bool")
+                nil [3053 3793])
+            ("release" function
+               (:parent "DaemonNexusInitialisation"
+                :type "void")
+                nil [3893 4082])
+            ("loadKeyladders" function
+               (:parent "DaemonNexusInitialisation"
+                :type "bool")
+                nil [4209 5090])
+            ("loadKeyladders" function
+               (:parent "DaemonNexusInitialisation"
+                :arguments 
+                  ( ("fileHandle" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5321 5338]))                  
+                :type "bool")
+                nil [5274 6181])
+            ("loadKeyBundle" function
+               (:parent "DaemonNexusInitialisation"
+                :type "bool")
+                nil [6326 8316])
+            ("loadKeyBundle" function
+               (:parent "DaemonNexusInitialisation"
+                :arguments 
+                  ( ("fileHandle" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8559 8576]))                  
+                :type "bool")
+                nil [8513 9512])
+            ("secureRsaInit" function
+               (:parent "DaemonNexusInitialisation"
+                :arguments 
+                  ( ("keyInitData" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9819 9853]))                  
+                :type "bool")
+                nil [9773 11493])
+            ("cuskeyInit" function
+               (:parent "DaemonNexusInitialisation"
+                :arguments 
+                  ( ("keyInitData" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11813 11847]))                  
+                :type "bool")
+                nil [11770 11962]))          
+    :file "daemonnexusinitialisation.cpp"
+    :pointmax 27256
+    :fsize 1563
+    :lastmodtime '(21726 4487 24295 825000)
+    :unmatched-syntax '((symbol 815 . 824) (symbol 812 . 814) (symbol 807 . 811) (symbol 789 . 806) (symbol 783 . 788) (punctuation 782 . 783) (symbol 738 . 747) (symbol 735 . 737) (symbol 730 . 734) (symbol 707 . 729) (symbol 701 . 706) (punctuation 700 . 701) (string 646 . 665))
+    :lexical-table 
+        '(("RSA_INIT_TAG" . ((number "0x1000" 1050 . 1056)))
+          ("PROCIN_SIZE" . ((number "16" 1022 . 1024)))
+          ("CUSKEY_INIT_TAG" . ((number "0x1001" 1081 . 1087)))
+          )
+
+    )
+   (semanticdb-table "k3procinverifierimpl.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("K3PROCIN_VERIFIER_IMPL_H__" variable (:constant-flag t) nil [44 70])
+            ("cstdio" include (:system-flag t) nil [72 89])
+            ("vector" include (:system-flag t) nil [90 107])
+            ("stdint.h" include (:system-flag t) nil [108 127])
+            ("TlvParser" type
+               (:prototype t
+                :type "class")
+                nil [154 170])
+            ("Security" type
+               (:members 
+                  ( ("K3ProcinVerifierImpl" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [267 274])
+                            ("K3ProcinVerifierImpl" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("K3ProcinVerifierImpl" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [278 301])
+                            ("K3ProcinVerifierImpl" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [305 329])
+                            ("verifyFile" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("file" variable
+                                       (:pointer 1
+                                        :type ("FILE" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [350 361]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [334 362])
+                            ("private" label nil (reparse-symbol classsubparts) [364 372])
+                            ("K3ProcinVerifierImpl" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("K3ProcinVerifierImpl" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [430 458]))                                  
+                                :type ("K3ProcinVerifierImpl" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [409 459])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("K3ProcinVerifierImpl" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [495 523]))                                  
+                                :type ("K3ProcinVerifierImpl" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [463 524])
+                            ("verifySecureRsaInit" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("fileParser" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TlvParser" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [554 582]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [529 583])
+                            ("verifyCuskeyInit" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("fileParser" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TlvParser" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [609 637]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [587 638])
+                            ("readFile" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("file" variable
+                                       (:pointer 1
+                                        :type ("FILE" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [656 667])
+                                    ("data" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("uint8_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [668 695]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [642 702]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [238 1232]))                  
+                :type "namespace")
+                nil [172 1235]))          
+    :file "k3procinverifierimpl.h"
+    :pointmax 1274
+    :fsize 1273
+    :lastmodtime '(21726 4486 997296 40000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("K3PROCIN_VERIFIER_IMPL_H__")
+          )
+
+    )
+   (semanticdb-table "daemonnexusinitialisationimpl.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("fstream" include (:system-flag t) nil [1 19])
+            ("cassert" include (:system-flag t) nil [20 38])
+            ("sys/types.h" include (:system-flag t) nil [39 61])
+            ("sys/stat.h" include (:system-flag t) nil [62 83])
+            ("unistd.h" include (:system-flag t) nil [84 103])
+            ("daemonnexusinitialisationimpl.h" include nil nil [105 147])
+            ("tlvparser.h" include nil nil [148 170])
+            ("namedsemaphore.h" include nil nil [171 198])
+            ("utilities.h" include nil nil [199 221])
+            ("nexussemaphore.h" include nil nil [222 249])
+            ("tlvtags.h" include nil nil [250 270])
+            ("nexus_memory.h" include nil nil [366 391])
+            ("nexus_platform.h" include nil nil [392 419])
+            ("nexus_security.h" include nil nil [421 448])
+            ("nexus_keyladder.h" include nil nil [449 477])
+            ("hyp_defs.h" include nil nil [478 499])
+            ("tlogger.h" include nil nil [599 619])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [620 644])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [645 692])
+            ("Security" using (:type ("Security" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1027 1052])
+            ("DaemonNexusInitialisationImpl" function
+               (:constructor-flag t
+                :parent "DaemonNexusInitialisationImpl"
+                :type ("DaemonNexusInitialisationImpl" type (:type "class") nil nil))
+                nil [1054 1271])
+            ("DaemonNexusInitialisationImpl" function
+               (:destructor-flag t
+                :parent "DaemonNexusInitialisationImpl"
+                :type "void")
+                nil [1273 1584])
+            ("join" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :type "bool")
+                nil [1907 2924])
+            ("release" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :type "void")
+                nil [3024 3217])
+            ("loadKeyladders" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :type "bool")
+                nil [3344 4229])
+            ("loadKeyladders" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :arguments 
+                  ( ("fileHandle" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4464 4481]))                  
+                :type "bool")
+                nil [4413 5324])
+            ("loadKeyBundle" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :type "bool")
+                nil [5469 7463])
+            ("loadKeyBundle" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :arguments 
+                  ( ("fileHandle" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7710 7727]))                  
+                :type "bool")
+                nil [7660 8663])
+            ("secureRsaInit" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :arguments 
+                  ( ("keyInitData" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8974 9008]))                  
+                :type "bool")
+                nil [8924 10752])
+            ("cuskeyInit" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :arguments 
+                  ( ("keyInitData" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11076 11110]))                  
+                :type "bool")
+                nil [11029 12752])
+            ("setupDecryptionKeyLadder" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :type "bool")
+                nil [22480 25305])
+            ("setupHmacKeyLadder" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :type "bool")
+                nil [25438 28181])
+            ("generateCusKeyLadder" function
+               (:parent "DaemonNexusInitialisationImpl"
+                :arguments 
+                  ( ("cusKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28677 28692])
+                    ("keyVarLow" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28693 28711])
+                    ("keyVarHigh" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28712 28731])
+                    ("key3Procin" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28732 28771]))                  
+                :type "bool")
+                nil [28620 32763]))          
+    :file "daemonnexusinitialisationimpl.cpp"
+    :pointmax 32764
+    :fsize 32763
+    :lastmodtime '(21726 4486 983296 152000)
+    :unmatched-syntax '((symbol 840 . 849) (symbol 837 . 839) (symbol 832 . 836) (symbol 814 . 831) (symbol 808 . 813) (punctuation 807 . 808) (symbol 763 . 772) (symbol 760 . 762) (symbol 755 . 759) (symbol 732 . 754) (symbol 726 . 731) (punctuation 725 . 726) (string 671 . 690))
+    )
+   (semanticdb-table "daemonnexusinitialisationimpl.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("DAEMON_NEXUS_INITIALISATION_IMPL_H__" variable (:constant-flag t) nil [54 90])
+            ("string" include (:system-flag t) nil [92 109])
+            ("stdint.h" include (:system-flag t) nil [110 129])
+            ("cstdio" include (:system-flag t) nil [130 147])
+            ("vector" include (:system-flag t) nil [148 165])
+            ("Security" type
+               (:members 
+                  ( ("DaemonNexusInitialisationImpl" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [296 303])
+                            ("DaemonNexusInitialisationImpl" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("DaemonNexusInitialisationImpl" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [307 339])
+                            ("DaemonNexusInitialisationImpl" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [343 376])
+                            ("join" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [381 393])
+                            ("release" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [397 412])
+                            ("loadKeyladders" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [416 438])
+                            ("loadKeyladders" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("fileHandle" variable
+                                       (:pointer 1
+                                        :type ("FILE" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [462 479]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [442 480])
+                            ("private" label nil (reparse-symbol classsubparts) [482 490])
+                            ("DaemonNexusInitialisationImpl" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DaemonNexusInitialisationImpl" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [557 594]))                                  
+                                :type ("DaemonNexusInitialisationImpl" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [527 595])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DaemonNexusInitialisationImpl" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [640 677]))                                  
+                                :type ("DaemonNexusInitialisationImpl" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [599 678])
+                            ("loadKeyBundle" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [683 704])
+                            ("loadKeyBundle" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("fileHandle" variable
+                                       (:pointer 1
+                                        :type ("FILE" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [727 744]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [708 745])
+                            ("secureRsaInit" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("keyInitData" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("uint8_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [768 802]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [749 803])
+                            ("cuskeyInit" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("keyInitData" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("uint8_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [823 857]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [807 864])
+                            ("setupDecryptionKeyLadder" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1168 1206])
+                            ("setupHmacKeyLadder" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1210 1242])
+                            ("generateCusKeyLadder" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("cusKey" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1272 1287])
+                                    ("keyVarLow" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1288 1306])
+                                    ("keyVarHigh" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1307 1326])
+                                    ("key3Procin" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("uint8_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1327 1366]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1246 1373])
+                            ("m_joined" variable (:type "bool") (reparse-symbol classsubparts) [1378 1392]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [258 1759]))                  
+                :type "namespace")
+                nil [167 1762]))          
+    :file "daemonnexusinitialisationimpl.h"
+    :pointmax 1811
+    :fsize 1810
+    :lastmodtime '(21726 4487 5295 977000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DAEMON_NEXUS_INITIALISATION_IMPL_H__")
+          )
+
+    )
+   (semanticdb-table "k3procinverifierimpl.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [1 19])
+            ("vector" include (:system-flag t) nil [20 37])
+            ("cerrno" include (:system-flag t) nil [38 55])
+            ("fstream" include (:system-flag t) nil [56 74])
+            ("k3procinverifierimpl.h" include nil nil [76 109])
+            ("utilities.h" include nil nil [110 132])
+            ("tlvparser.h" include nil nil [133 155])
+            ("tlvtags.h" include nil nil [156 176])
+            ("nexus_memory.h" include nil nil [178 203])
+            ("nexus_platform.h" include nil nil [204 231])
+            ("tlogger.h" include nil nil [405 425])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [426 450])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [451 498])
+            ("Security" using (:type ("Security" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [587 612])
+            ("K3ProcinVerifierImpl" function
+               (:constructor-flag t
+                :parent "K3ProcinVerifierImpl"
+                :type ("K3ProcinVerifierImpl" type (:type "class") nil nil))
+                nil [614 792])
+            ("K3ProcinVerifierImpl" function
+               (:destructor-flag t
+                :parent "K3ProcinVerifierImpl"
+                :type "void")
+                nil [794 1042])
+            ("verifyFile" function
+               (:parent "K3ProcinVerifierImpl"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1587 1598]))                  
+                :type "bool")
+                nil [1549 2154])
+            ("verifySecureRsaInit" function
+               (:parent "K3ProcinVerifierImpl"
+                :arguments 
+                  ( ("fileParser" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TlvParser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2455 2483]))                  
+                :type "bool")
+                nil [2408 3798])
+            ("verifyCuskeyInit" function
+               (:parent "K3ProcinVerifierImpl"
+                :arguments 
+                  ( ("fileParser" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TlvParser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4089 4117]))                  
+                :type "bool")
+                nil [4045 6608])
+            ("readFile" function
+               (:parent "K3ProcinVerifierImpl"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6864 6875])
+                    ("data" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6876 6903]))                  
+                :type "bool")
+                nil [6828 7451]))          
+    :file "k3procinverifierimpl.cpp"
+    :pointmax 12680
+    :fsize 12679
+    :lastmodtime '(21726 4486 981296 168000)
+    :unmatched-syntax '((symbol 569 . 578) (symbol 566 . 568) (symbol 561 . 565) (symbol 538 . 560) (symbol 532 . 537) (punctuation 531 . 532) (string 477 . 496))
+    )
+   (semanticdb-table "tlvtags.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("TLVTAGS_H__" variable (:constant-flag t) nil [29 40])
+            ("PROCIN_SIZE" variable (:constant-flag t) nil [158 169])
+            ("CUSKEY_SIZE" variable (:constant-flag t) nil [225 236])
+            ("CUSKEY_PROTECTED_KEY_SIZE" variable (:constant-flag t) nil [293 318])
+            ("RSA_INIT_TAG" variable (:constant-flag t) nil [491 503])
+            ("CUSKEY_INIT_TAG" variable (:constant-flag t) nil [566 581])
+            ("PROCIN1_TAG" variable (:constant-flag t) nil [637 648])
+            ("PROCIN2_TAG" variable (:constant-flag t) nil [703 714])
+            ("OK1_KEY4_TAG" variable (:constant-flag t) nil [769 781])
+            ("OK2_KEY4_TAG" variable (:constant-flag t) nil [839 851])
+            ("CUSKEY_KEYBUNDLE_CUSKEY" variable (:constant-flag t) nil [2141 2164])
+            ("CUSKEY_KEYBUNDLE_KEYVAR_LOW" variable (:constant-flag t) nil [2204 2231])
+            ("CUSKEY_KEYBUNDLE_KEYVAR_HIGH" variable (:constant-flag t) nil [2272 2300])
+            ("CUSKEY_KEYBUNDLE_KEY3_PROCIN" variable (:constant-flag t) nil [2341 2369])
+            ("CUSKEY_KEYBUNDLE_KEY4_PROCIN" variable (:constant-flag t) nil [2411 2439]))          
+    :file "tlvtags.h"
+    :pointmax 2496
+    :fsize 2495
+    :lastmodtime '(21726 4487 26295 809000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PROCIN2_TAG" . ((number "0x0002" 719 . 725)))
+          ("CUSKEY_KEYBUNDLE_CUSKEY" . ((number "0x0001" 2170 . 2176)))
+          ("CUSKEY_KEYBUNDLE_KEYVAR_LOW" . ((number "0x0002" 2233 . 2239)))
+          ("CUSKEY_PROTECTED_KEY_SIZE" . ((number "16" 319 . 321)))
+          ("RSA_INIT_TAG" . ((number "0x1000" 507 . 513)))
+          ("PROCIN_SIZE" . ((number "16" 170 . 172)))
+          ("CUSKEY_INIT_TAG" . ((number "0x1001" 582 . 588)))
+          ("CUSKEY_KEYBUNDLE_KEYVAR_HIGH" . ((number "0x0003" 2301 . 2307)))
+          ("CUSKEY_SIZE" . ((number "1" 237 . 238)))
+          ("OK1_KEY4_TAG" . ((number "0x0003" 785 . 791)))
+          ("CUSKEY_KEYBUNDLE_KEY3_PROCIN" . ((number "0x0004" 2370 . 2376)))
+          ("PROCIN1_TAG" . ((number "0x0001" 653 . 659)))
+          ("OK2_KEY4_TAG" . ((number "0x0004" 855 . 861)))
+          ("TLVTAGS_H__")
+          ("CUSKEY_KEYBUNDLE_KEY4_PROCIN" . ((number "0x0005" 2440 . 2446)))
+          )
+
+    )
+   (semanticdb-table "nexus_hmac.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [1 19])
+            ("cstring" include (:system-flag t) nil [20 38])
+            ("cerrno" include (:system-flag t) nil [39 56])
+            ("nexus_platform.h" include nil nil [58 85])
+            ("nexus_memory.h" include nil nil [86 111])
+            ("nexus_keyladder.h" include nil nil [112 140])
+            ("nexus_hmac.h" include nil nil [142 165])
+            ("nexussemaphore.h" include nil nil [166 193])
+            ("hyp_defs.h" include nil nil [194 215])
+            ("tlogger.h" include nil nil [217 237])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [238 262])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [263 310])
+            ("NexusHmac" function
+               (:constructor-flag t
+                :parent "NexusHmac"
+                :type ("NexusHmac" type (:type "class") nil nil))
+                nil [312 435])
+            ("NexusHmac" function
+               (:destructor-flag t
+                :parent "NexusHmac"
+                :type "void")
+                nil [437 526])
+            ("initialise" function
+               (:parent "NexusHmac"
+                :arguments 
+                  ( ("keyProvider" variable
+                       (:pointer 1
+                        :type ("IKeyProvider" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [849 875])
+                    ("shaType" variable (:type ("NEXUS_HMACSHA_SHAType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [876 906]))                  
+                :type "bool")
+                nil [822 2537])
+            ("hmacBlocks" function
+               (:parent "NexusHmac"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3215 3248])
+                    ("final" variable (:type "bool") (reparse-symbol arg-sub-list) [3249 3260]))                  
+                :type "bool")
+                nil [3188 3648])
+            ("fillSourceBuffer" function
+               (:parent "NexusHmac"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3889 3922])
+                    ("sizeProcessed" variable
+                       (:reference 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3923 3945]))                  
+                :type "void")
+                nil [3856 4537])
+            ("isDataConsumed" function
+               (:parent "NexusHmac"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4801 4834])
+                    ("sizeProcessed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4835 4856]))                  
+                :type "bool")
+                nil [4770 4949])
+            ("shouldPerformHmac" function
+               (:parent "NexusHmac"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5329 5362])
+                    ("sizeProcessed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5363 5384])
+                    ("final" variable (:type "bool") (reparse-symbol arg-sub-list) [5385 5396]))                  
+                :type "bool")
+                nil [5295 5678])
+            ("processJob" function
+               (:parent "NexusHmac"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6070 6103])
+                    ("sizeProcessed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6104 6125])
+                    ("final" variable (:type "bool") (reparse-symbol arg-sub-list) [6126 6137]))                  
+                :type "bool")
+                nil [6043 7164])
+            ("isBufferFull" function
+               (:parent "NexusHmac"
+                :type "bool")
+                nil [7290 7417])
+            ("getHmacValue" function
+               (:parent "NexusHmac"
+                :arguments 
+                  ( ("hmac" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7591 7618]))                  
+                :type "void")
+                nil [7562 7815])
+            ("setKey" function
+               (:parent "NexusHmac"
+                :arguments 
+                  ( ("keyProvider" variable
+                       (:pointer 1
+                        :type ("IKeyProvider" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8117 8143]))                  
+                :type "bool")
+                nil [8094 12332]))          
+    :file "nexus_hmac.cpp"
+    :pointmax 12333
+    :fsize 12332
+    :lastmodtime '(21726 4487 36295 729000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "nexus_hmac.h"
+    :file "nexus_hmac.h"
+    :fsize 1632
+    :lastmodtime '(21722 3759 21077 124000)
+    )
+   (semanticdb-table "nexus_initialiser.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("nexus_platform_client.h" include nil nil [1 35])
+            ("nexus_initialiser.h" include nil nil [37 67])
+            ("nexus_aes_cbc.h" include nil nil [68 94])
+            ("nexus_aes_ecb.h" include nil nil [95 121])
+            ("nexus_hmactruncatedsha256.h" include nil nil [122 160])
+            ("nexus_hmacsha256.h" include nil nil [161 190])
+            ("nexus_sha256.h" include nil nil [191 216])
+            ("cryptographicfactory.h" include nil nil [217 250])
+            ("initialisationprovider.h" include nil nil [251 286])
+            ("tlogger.h" include nil nil [288 308])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [309 333])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [334 381])
+            ("PRIORITY" variable (:constant-flag t) nil [510 518])
+            ("NexusInitialiser::m_registerInstance" variable (:type ("NexusInitialiser" type (:type "class") nil nil)) nil [592 646])
+            ("NexusInitialiser" function
+               (:constructor-flag t
+                :parent "NexusInitialiser"
+                :type ("NexusInitialiser" type (:type "class") nil nil))
+                nil [648 734])
+            ("NexusInitialiser" function
+               (:destructor-flag t
+                :parent "NexusInitialiser"
+                :type "void")
+                nil [736 901])
+            ("initialise" function
+               (:parent "NexusInitialiser"
+                :type "bool")
+                nil [1077 2615])
+            ("deinitialise" function
+               (:parent "NexusInitialiser"
+                :type "void")
+                nil [2656 3623])
+            ("nexusUninit" function
+               (:parent "NexusInitialiser"
+                :type "void")
+                nil [3663 3829])
+            ("initCiphers" function
+               (:parent "NexusInitialiser"
+                :type "bool")
+                nil [3927 4553])
+            ("initHmac" function
+               (:parent "NexusInitialiser"
+                :type "bool")
+                nil [4656 5326])
+            ("initHash" function
+               (:parent "NexusInitialiser"
+                :type "bool")
+                nil [5431 5779]))          
+    :file "nexus_initialiser.cpp"
+    :pointmax 5780
+    :fsize 5779
+    :lastmodtime '(21726 4486 969296 264000)
+    :unmatched-syntax '((string 360 . 379))
+    :lexical-table 
+        '(("PRIORITY" . ((number "1000" 519 . 523)))
+          )
+
+    )
+   (semanticdb-table "nexus_initialiser.h"
+    :file "nexus_initialiser.h"
+    :fsize 550
+    :lastmodtime '(21722 3759 21077 124000)
+    )
+   (semanticdb-table "nexus_aes_cbc.h"
+    :file "nexus_aes_cbc.h"
+    :fsize 843
+    :lastmodtime '(21722 3759 22077 116000)
+    )
+   (semanticdb-table "nexus_hmactruncatedsha256.h"
+    :file "nexus_hmactruncatedsha256.h"
+    :fsize 909
+    :lastmodtime '(21722 3759 21077 124000)
+    )
+   (semanticdb-table "nexus_hmacsha256.h"
+    :file "nexus_hmacsha256.h"
+    :fsize 806
+    :lastmodtime '(21722 3759 23077 109000)
+    )
+   (semanticdb-table "nexus_sha256.h"
+    :file "nexus_sha256.h"
+    :fsize 717
+    :lastmodtime '(21722 3759 20077 132000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D683!src!pace!middleware!security-lib!lib!plugins!nexus!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

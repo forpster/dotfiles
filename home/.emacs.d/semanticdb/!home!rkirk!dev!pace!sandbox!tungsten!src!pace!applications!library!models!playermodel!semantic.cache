@@ -1,0 +1,67 @@
+;; Object playermodel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "playermodel/"
+  :tables (list 
+   (semanticdb-table "playermodellogging.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("PLAYERMODELLOGGING_H_" variable (:constant-flag t) nil [704 725])
+            ("QObject" include (:system-flag t) nil [727 745])
+            ("QVariant" include (:system-flag t) nil [746 765])
+            ("LogDataType_t" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [3279 3305])
+            ("PlayerModel" type
+               (:prototype t
+                :type "class")
+                nil [3306 3324])
+            ("ServiceListModel" type
+               (:prototype t
+                :type "class")
+                nil [3325 3348])
+            ("PlayerModelLoggingIf" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3479 3486])
+                    ("PlayerModelLoggingIf" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("pParent" variable
+                               (:pointer 1
+                                :type ("PlayerModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3513 3534])
+                            ("pServiceModel" variable
+                               (:pointer 1
+                                :type ("ServiceListModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3535 3568]))                          
+                        :type ("PlayerModelLoggingIf" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3490 3569])
+                    ("getData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dataName" variable (:type ("LogDataType_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3588 3611])
+                            ("pTimeDelay" variable
+                               (:pointer 1
+                                :type ("QVariant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3612 3634]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3573 3635]))                  
+                :type "class")
+                nil [3450 3640]))          
+    :file "playermodellogging.h"
+    :pointmax 3686
+    :fsize 3685
+    :lastmodtime '(21785 11134 701468 468000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PLAYERMODELLOGGING_H_")
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!applications!library!models!playermodel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

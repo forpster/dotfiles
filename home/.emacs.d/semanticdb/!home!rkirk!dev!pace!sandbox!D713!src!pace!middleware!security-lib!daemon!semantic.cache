@@ -1,0 +1,149 @@
+;; Object daemon/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "daemon/"
+  :tables (list 
+   (semanticdb-table "daemon.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("exception" include (:system-flag t) nil [1 21])
+            ("unistd.h" include (:system-flag t) nil [22 41])
+            ("cerrno" include (:system-flag t) nil [42 59])
+            ("cstring" include (:system-flag t) nil [60 78])
+            ("tlogger.h" include nil nil [79 99])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [101 125])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [126 173])
+            ("platformKeySetup" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "bool")
+                nil [1453 1484])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [2156 2160])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2161 2169]))                  
+                :type "int")
+                nil [2147 4134])
+            ("platformKeySetup" function (:type "bool") nil [4297 5268]))          
+    :file "daemon.cpp"
+    :pointmax 19459
+    :fsize 25699
+    :lastmodtime '(21845 53629 395348 282000)
+    :unmatched-syntax '((string 152 . 171) (string 152 . 171) (string 152 . 171))
+    )
+   (semanticdb-table "blob-extractor.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [1 19])
+            ("exception" include (:system-flag t) nil [20 40])
+            ("vector" include (:system-flag t) nil [41 58])
+            ("fstream" include (:system-flag t) nil [59 77])
+            ("sys/types.h" include (:system-flag t) nil [78 100])
+            ("sys/stat.h" include (:system-flag t) nil [101 122])
+            ("fcntl.h" include (:system-flag t) nil [123 141])
+            ("errno.h" include (:system-flag t) nil [142 160])
+            ("stdint.h" include (:system-flag t) nil [161 180])
+            ("unistd.h" include (:system-flag t) nil [181 200])
+            ("glib.h" include (:system-flag t) nil [202 219])
+            ("glib-object.h" include (:system-flag t) nil [220 244])
+            ("dbus/dbus-glib.h" include (:system-flag t) nil [245 272])
+            ("dbus/dbus-glib-bindings.h" include (:system-flag t) nil [273 309])
+            ("s_man_client-bindings.h" include nil nil [311 345])
+            ("tlogger.h" include nil nil [347 367])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [368 392])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [393 440])
+            ("DBUS_RETRY_TIME" variable (:constant-flag t) nil [450 465])
+            ("DBUS_RETRY_LIMIT" variable (:constant-flag t) nil [481 497])
+            ("writeRsaBlobFile" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("guchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [531 544])
+                    ("length" variable (:type ("gsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [545 558]))                  
+                :type "bool")
+                nil [502 559])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [570 574])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [575 583]))                  
+                :type "int")
+                nil [561 4041])
+            ("writeRsaBlobFile" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("guchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4286 4299])
+                    ("length" variable (:type ("gsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4300 4313]))                  
+                :type "bool")
+                nil [4264 5301]))          
+    :file "blob-extractor.cpp"
+    :pointmax 5302
+    :fsize 8969
+    :lastmodtime '(21845 53629 396348 276000)
+    :unmatched-syntax '((string 419 . 438))
+    :lexical-table 
+        '(("DBUS_RETRY_TIME" . ((number "300000" 466 . 472)))
+          ("DBUS_RETRY_LIMIT" . ((number "15" 498 . 500)))
+          )
+
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("PWD" variable (:default-value ("$(shell pwd)")) nil [12 29])
+            ("CP" variable (:default-value ("cp")) nil [29 35])
+            ("RM" variable (:default-value ("rm")) nil [35 41])
+            ("MKDIR" variable (:default-value ("mkdir")) nil [41 53])
+            ("CC" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [53 106])
+            ("CXX" variable (:default-value ("mipsel-linux-uclibc-g++" "--sysroot=$(STAGING_PATH)")) nil [106 160])
+            ("LD" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [160 213])
+            ("LIBS" variable (:default-value ("-lpthread")) nil [214 230])
+            ("HEADER_PATH" variable (:default-value ("$(PWD)/../interface")) nil [231 266])
+            ("LDFLAGS" variable (:default-value ("$(LDFLAGS)" "-Wl,-O1" "$(LIBS)")) nil [266 303])
+            ("CFLAGS" variable (:default-value ("$(CFLAGS)" "$(CPPFLAGS)")) nil [303 334])
+            ("CFLAGS" variable (:default-value ("-Wall" "-Wextra" "-mips32" "-I$(HDW_DEFS_DIR)" "-I$(HEADER_PATH)")) nil [334 401])
+            ("CXXFLAGS" variable (:default-value ("$(CXXFLAGS)" "$(CFLAGS)" "\"-DSL_NEXUS_RSA_BLOB_FILE=\\\"$(SECURITY_LIBRARY_NEXUS_RSA_BLOB_FILE)\\\"\"")) nil [663 767])
+            ("OBJS" variable (:default-value ("daemon.o")) nil [768 785])
+            ("EXECUTABLES" variable (:default-value ("securityd")) nil [785 808])
+            ("EXECUTABLES_INSTALL" variable (:default-value ("$(addprefix $(STAGING_PATH)/usr/sbin/, $(EXECUTABLES))")) nil [980 1056])
+            (".SUFFIXES" function (:arguments (".o" ".c" ".cpp")) nil [1057 1079])
+            (".cpp.o" function nil nil [1080 1124])
+            (".c.o" function nil nil [1125 1164])
+            ("install" function (:arguments ("all")) nil [1165 1285])
+            ("all" function (:arguments ("$(EXECUTABLES)")) nil [1286 1306])
+            ("securityd" function (:arguments ("daemon.o")) nil [1307 1361])
+            ("blob-extractor" function (:arguments ("blob-extractor.o")) nil [1362 1437])
+            (".PHONY" function (:arguments ("clean")) nil [1438 1452])
+            ("clean" function nil nil [1452 1498]))          
+    :file "Makefile"
+    :pointmax 1498
+    :fsize 1497
+    :lastmodtime '(21845 53629 396348 276000)
+    :unmatched-syntax '((shell-command 1460 . 1497) (bol 1459 . 1459) (symbol 958 . 972) (punctuation 956 . 957) (punctuation 955 . 956) (symbol 943 . 954) (bol 941 . 941) (symbol 924 . 940) (punctuation 922 . 923) (punctuation 921 . 922) (symbol 916 . 920) (bol 914 . 914) (shell-command 623 . 655) (bol 622 . 622) (symbol 564 . 581) (punctuation 562 . 563) (punctuation 561 . 562) (symbol 554 . 560) (bol 552 . 552) (shell-command 480 . 516) (bol 479 . 479) (shell-command 425 . 446) (bol 424 . 424))
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D713!src!pace!middleware!security-lib!daemon!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

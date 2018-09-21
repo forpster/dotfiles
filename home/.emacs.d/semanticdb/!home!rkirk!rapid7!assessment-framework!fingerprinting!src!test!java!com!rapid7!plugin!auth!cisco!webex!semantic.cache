@@ -1,0 +1,211 @@
+;; Object webex/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "webex/"
+  :tables
+  (list
+    (semanticdb-table "Test_WindowsChromeWebExFingerprinter.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.rapid7.plugin.auth.cisco.webex" package nil nil [350 393])
+            ("com.rapid7.collector.framework.IDataCollector" include nil nil [395 448])
+            ("com.rapid7.fingerprint.IVendorConstants" include nil nil [449 496])
+            ("com.rapid7.fingerprint.Version" include nil nil [497 535])
+            ("com.rapid7.fingerprint.software.IClassConstants" include nil nil [536 591])
+            ("com.rapid7.fingerprint.software.IFamilyConstants" include nil nil [592 648])
+            ("com.rapid7.fingerprint.software.IProductConstants" include nil nil [649 706])
+            ("com.rapid7.fingerprint.software.SoftwareFingerprint" include nil nil [707 766])
+            ("com.rapid7.io.IFile" include nil nil [767 794])
+            ("com.rapid7.io.IFileFilter" include nil nil [795 828])
+            ("com.rapid7.io.IReadableFileSystem" include nil nil [829 870])
+            ("com.rapid7.io.ISearchableFileSystem" include nil nil [871 914])
+            ("com.rapid7.log.ILogSink" include nil nil [915 946])
+            ("com.rapid7.net.INetworkNode" include nil nil [947 982])
+            ("com.rapid7.plugin.auth.Test_Utils" include nil nil [983 1024])
+            ("java.io.IOException" include nil nil [1025 1052])
+            ("java.io.OutputStream" include nil nil [1053 1081])
+            ("java.util.Arrays" include nil nil [1082 1106])
+            ("java.util.Iterator" include nil nil [1107 1133])
+            ("org.junit.Rule" include nil nil [1134 1156])
+            ("org.junit.Test" include nil nil [1157 1179])
+            ("org.junit.rules.ExpectedException" include nil nil [1180 1221])
+            ("org.mockito.invocation.InvocationOnMock" include nil nil [1222 1269])
+            ("Test_WindowsChromeWebExFingerprinter" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("m_expectedNetworkNodeException" variable
+                       (:typemodifiers ("public")
+                        :type "ExpectedException")
+                        (reparse-symbol class_member_declaration) [2242 2325])
+                    ("shouldThrowWhenNetworkNodeIsNull" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2339 2729])
+                    ("m_expectedReadableFSException" variable
+                       (:typemodifiers ("public")
+                        :type "ExpectedException")
+                        (reparse-symbol class_member_declaration) [2743 2825])
+                    ("shouldThrowWhenReadableFileSystemIsNull" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2839 3236])
+                    ("m_expectedSearchableFSException" variable
+                       (:typemodifiers ("public")
+                        :type "ExpectedException")
+                        (reparse-symbol class_member_declaration) [3250 3334])
+                    ("shouldThrowWhenSearchableFileSystemIsNull" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3348 3751])
+                    ("m_expectedSourceException" variable
+                       (:typemodifiers ("public")
+                        :type "ExpectedException")
+                        (reparse-symbol class_member_declaration) [3765 3843])
+                    ("shouldThrowWhenSourceIsNull" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3857 4332])
+                    ("m_expectedDataCollectorException" variable
+                       (:typemodifiers ("public")
+                        :type "ExpectedException")
+                        (reparse-symbol class_member_declaration) [4346 4431])
+                    ("shouldThrowWhenDataCollectorIsNull" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4445 4841])
+                    ("m_expectedLogSinkException" variable
+                       (:typemodifiers ("public")
+                        :type "ExpectedException")
+                        (reparse-symbol class_member_declaration) [4855 4934])
+                    ("shouldThrowWhenLogSinkIsNull" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4948 5417])
+                    ("shouldSuccessfullyFingerprintPluginInDefaultProfile" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5431 7264])
+                    ("shouldSuccessfullyFingerprintPluginInNonDefaultProfile" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7278 9172])
+                    ("shouldSuccessfullyFingerprintPluginsInMultipleProfiles" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9186 13758])
+                    ("shouldNotFingerprintWhenNoPluginInstalledMultipleProfiles" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13772 15119])
+                    ("shouldSuccessfullyFingerprintPluginInDefaultProfileInOldLocation" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [15133 16975])
+                    ("shouldSuccessfullyFingerprintPluginInNonDefaultProfileInOldLocation" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16989 18892])
+                    ("shouldSuccessfullyFingerprintPluginsInMultipleProfilesInOldLocation" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [18906 23478])
+                    ("shouldNotFingerprintWhenNoPluginInstalledMultipleProfilesInOldLocation" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [23492 24848])
+                    ("shouldHandleErrorsAccessingUserProfileDirectory" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [24862 25907])
+                    ("shouldHandleErrorsAccessingManifestFile" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [25921 27498])
+                    ("shouldHandleErrorsReadingManifestFile" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [27512 29555])
+                    ("setSuccessfulProfileSearch" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("userDataPath" variable
+                               (:typemodifiers ("final")
+                                :type "String")
+                                (reparse-symbol formal_parameters) [29792 29817])
+                            ("readFS" variable
+                               (:typemodifiers ("final")
+                                :type "IReadableFileSystem")
+                                (reparse-symbol formal_parameters) [29831 29863])
+                            ("searchFS" variable
+                               (:typemodifiers ("final")
+                                :type "ISearchableFileSystem")
+                                (reparse-symbol formal_parameters) [29877 29913])
+                            ("userDataDir" variable
+                               (:typemodifiers ("final")
+                                :type "IFile")
+                                (reparse-symbol formal_parameters) [29927 29950])
+                            ("defaultProfileDir" variable
+                               (:typemodifiers ("final")
+                                :type "IFile")
+                                (reparse-symbol formal_parameters) [29964 29993])
+                            ("extensionDir" variable
+                               (:typemodifiers ("final")
+                                :type "IFile")
+                                (reparse-symbol formal_parameters) [30007 30031])
+                            ("versionDir" variable
+                               (:typemodifiers ("final")
+                                :type "IFile")
+                                (reparse-symbol formal_parameters) [30045 30067])
+                            ("manifestFile" variable
+                               (:typemodifiers ("final")
+                                :type "IFile")
+                                (reparse-symbol formal_parameters) [30081 30105])
+                            ("" variable (:type "profileIter") (reparse-symbol formal_parameters) [30141 30152])
+                            ("" variable (:type "extensionIter") (reparse-symbol formal_parameters) [30188 30201])
+                            ("resourceFile" variable
+                               (:typemodifiers ("final")
+                                :type "String")
+                                (reparse-symbol formal_parameters) [30215 30240]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [29740 31039])
+                    ("ms_sid" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [31223 31272])
+                    ("ms_source" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [31276 31325])
+                    ("ms_adminHomeDir" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [31329 31401])
+                    ("ms_appDataUserData" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [31405 31500])
+                    ("ms_oldUserData" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [31504 31613]))                  
+                :type "class")
+                nil [2002 31615]))          
+      :file "Test_WindowsChromeWebExFingerprinter.java"
+      :pointmax 31616
+      :fsize 31615
+      :lastmodtime '(22676 44857 0 0)
+      :unmatched-syntax '((GT 30186 . 30187) (FINAL 30166 . 30171) (LT 30180 . 30181) (GT 30139 . 30140) (FINAL 30119 . 30124) (LT 30133 . 30134) (IDENTIFIER 1935 . 1939) (DOT 1934 . 1935) (IDENTIFIER 1927 . 1934) (DOT 1926 . 1927) (IDENTIFIER 1919 . 1926) (DOT 1918 . 1919) (IMPORT 1901 . 1907) (STATIC 1908 . 1914) (IDENTIFIER 1915 . 1918) (IDENTIFIER 1875 . 1899) (DOT 1874 . 1875) (IDENTIFIER 1867 . 1874) (DOT 1866 . 1867) (IDENTIFIER 1859 . 1866) (DOT 1858 . 1859) (IMPORT 1841 . 1847) (STATIC 1848 . 1854) (IDENTIFIER 1855 . 1858) (IDENTIFIER 1833 . 1839) (DOT 1832 . 1833) (IDENTIFIER 1825 . 1832) (DOT 1824 . 1825) (IDENTIFIER 1817 . 1824) (DOT 1816 . 1817) (IMPORT 1799 . 1805) (STATIC 1806 . 1812) (IDENTIFIER 1813 . 1816) (IDENTIFIER 1792 . 1797) (DOT 1791 . 1792) (IDENTIFIER 1784 . 1791) (DOT 1783 . 1784) (IDENTIFIER 1776 . 1783) (DOT 1775 . 1776) (IMPORT 1758 . 1764) (STATIC 1765 . 1771) (IDENTIFIER 1772 . 1775) (IDENTIFIER 1752 . 1756) (DOT 1751 . 1752) (IDENTIFIER 1744 . 1751) (DOT 1743 . 1744) (IDENTIFIER 1736 . 1743) (DOT 1735 . 1736) (IMPORT 1718 . 1724) (STATIC 1725 . 1731) (IDENTIFIER 1732 . 1735) (IDENTIFIER 1709 . 1716) (DOT 1708 . 1709) (IDENTIFIER 1701 . 1708) (DOT 1700 . 1701) (IDENTIFIER 1693 . 1700) (DOT 1692 . 1693) (IMPORT 1675 . 1681) (STATIC 1682 . 1688) (IDENTIFIER 1689 . 1692) (IDENTIFIER 1665 . 1673) (DOT 1664 . 1665) (IDENTIFIER 1657 . 1664) (DOT 1656 . 1657) (IDENTIFIER 1649 . 1656) (DOT 1648 . 1649) (IMPORT 1631 . 1637) (STATIC 1638 . 1644) (IDENTIFIER 1645 . 1648) (IDENTIFIER 1621 . 1629) (DOT 1620 . 1621) (IDENTIFIER 1613 . 1620) (DOT 1612 . 1613) (IDENTIFIER 1605 . 1612) (DOT 1604 . 1605) (IMPORT 1587 . 1593) (STATIC 1594 . 1600) (IDENTIFIER 1601 . 1604) (IDENTIFIER 1583 . 1585) (DOT 1582 . 1583) (IDENTIFIER 1574 . 1582) (DOT 1573 . 1574) (IDENTIFIER 1566 . 1573) (DOT 1565 . 1566) (IMPORT 1548 . 1554) (STATIC 1555 . 1561) (IDENTIFIER 1562 . 1565) (IDENTIFIER 1537 . 1546) (DOT 1536 . 1537) (IDENTIFIER 1528 . 1536) (DOT 1527 . 1528) (IDENTIFIER 1520 . 1527) (DOT 1519 . 1520) (IMPORT 1502 . 1508) (STATIC 1509 . 1515) (IDENTIFIER 1516 . 1519) (IDENTIFIER 1497 . 1500) (DOT 1496 . 1497) (IDENTIFIER 1488 . 1496) (DOT 1487 . 1488) (IDENTIFIER 1480 . 1487) (DOT 1479 . 1480) (IMPORT 1462 . 1468) (STATIC 1469 . 1475) (IDENTIFIER 1476 . 1479) (IDENTIFIER 1447 . 1460) (DOT 1446 . 1447) (IDENTIFIER 1415 . 1446) (DOT 1414 . 1415) (IDENTIFIER 1409 . 1414) (DOT 1408 . 1409) (IDENTIFIER 1403 . 1408) (DOT 1402 . 1403) (IDENTIFIER 1398 . 1402) (DOT 1397 . 1398) (IDENTIFIER 1391 . 1397) (DOT 1390 . 1391) (IDENTIFIER 1384 . 1390) (DOT 1383 . 1384) (IMPORT 1366 . 1372) (STATIC 1373 . 1379) (IDENTIFIER 1380 . 1383) (IDENTIFIER 1351 . 1364) (DOT 1350 . 1351) (IDENTIFIER 1319 . 1350) (DOT 1318 . 1319) (IDENTIFIER 1313 . 1318) (DOT 1312 . 1313) (IDENTIFIER 1307 . 1312) (DOT 1306 . 1307) (IDENTIFIER 1302 . 1306) (DOT 1301 . 1302) (IDENTIFIER 1295 . 1301) (DOT 1294 . 1295) (IDENTIFIER 1288 . 1294) (DOT 1287 . 1288) (IMPORT 1270 . 1276) (STATIC 1277 . 1283) (IDENTIFIER 1284 . 1287))))
+  :file "!home!rkirk!rapid7!assessment-framework!fingerprinting!src!test!java!com!rapid7!plugin!auth!cisco!webex!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

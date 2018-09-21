@@ -1,0 +1,435 @@
+;; Object fingerprinter/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "fingerprinter/"
+  :tables (list 
+   (semanticdb-table "PortFingerprinter.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.rapid7.protocol.fingerprinter" package nil nil [354 396])
+            ("com.rapid7.cert.X509TrustAllManager" include nil nil [398 441])
+            ("com.rapid7.config.Configuration" include nil nil [442 481])
+            ("com.rapid7.config.IConfiguration" include nil nil [482 522])
+            ("com.rapid7.io.BufferLineReader" include nil nil [523 561])
+            ("com.rapid7.log.ILogSink" include nil nil [562 593])
+            ("com.rapid7.net.IPPacket" include nil nil [594 625])
+            ("com.rapid7.net.ISessionEndpoint" include nil nil [626 665])
+            ("com.rapid7.net.NetUtils" include nil nil [666 697])
+            ("com.rapid7.net.SSLChannel" include nil nil [698 731])
+            ("com.rapid7.net.SSLUtils" include nil nil [732 763])
+            ("com.rapid7.net.TCPSocket" include nil nil [764 796])
+            ("com.rapid7.net.starttls.ISTARTTLSHelper" include nil nil [797 844])
+            ("com.rapid7.net.starttls.STARTTLSHelperFactory" include nil nil [845 898])
+            ("com.rapid7.net.tls.CipherSuiteEnumerator" include nil nil [899 947])
+            ("com.rapid7.net.tls.SSLv2CipherSuiteEnumerator" include nil nil [948 1001])
+            ("com.rapid7.net.tls.TLSConnectionDetails" include nil nil [1002 1049])
+            ("com.rapid7.net.tls.TLSNotSupportedException" include nil nil [1050 1101])
+            ("com.rapid7.net.tls.TLSProtocolVersion" include nil nil [1102 1147])
+            ("com.rapid7.protocol.fingerprinter.helper.BaseTLSProtocolHelper" include nil nil [1148 1218])
+            ("com.rapid7.protocol.fingerprinter.helper.IProtocolHelper" include nil nil [1219 1283])
+            ("com.rapid7.remote.lang.sync.io.IIOStream" include nil nil [1284 1332])
+            ("com.rapid7.remote.lang.sync.io.impl.NetworkIOStreamFactory" include nil nil [1333 1399])
+            ("com.rapid7.util.ExceptionUtils" include nil nil [1400 1438])
+            ("com.google.common.base.Joiner" include nil nil [1439 1476])
+            ("java.io.IOException" include nil nil [1477 1504])
+            ("java.net.ConnectException" include nil nil [1505 1538])
+            ("java.net.InetSocketAddress" include nil nil [1539 1573])
+            ("java.net.NoRouteToHostException" include nil nil [1574 1613])
+            ("java.net.PortUnreachableException" include nil nil [1614 1655])
+            ("java.net.SocketException" include nil nil [1656 1688])
+            ("java.nio.ByteBuffer" include nil nil [1689 1716])
+            ("java.nio.channels.ByteChannel" include nil nil [1717 1754])
+            ("java.nio.channels.DatagramChannel" include nil nil [1755 1796])
+            ("java.nio.channels.SelectableChannel" include nil nil [1797 1840])
+            ("java.nio.channels.SelectionKey" include nil nil [1841 1879])
+            ("java.nio.channels.Selector" include nil nil [1880 1914])
+            ("java.nio.channels.SocketChannel" include nil nil [1915 1954])
+            ("java.security.GeneralSecurityException" include nil nil [1955 2001])
+            ("java.security.cert.Certificate" include nil nil [2002 2040])
+            ("java.security.cert.CertificateException" include nil nil [2041 2088])
+            ("java.security.cert.X509Certificate" include nil nil [2089 2131])
+            ("java.util.ArrayList" include nil nil [2132 2159])
+            ("java.util.Arrays" include nil nil [2160 2184])
+            ("java.util.Collection" include nil nil [2185 2213])
+            ("java.util.Collections" include nil nil [2214 2243])
+            ("java.util.HashMap" include nil nil [2244 2269])
+            ("java.util.Iterator" include nil nil [2270 2296])
+            ("java.util.List" include nil nil [2297 2319])
+            ("java.util.Map" include nil nil [2320 2341])
+            ("java.util.Objects" include nil nil [2342 2367])
+            ("java.util.Properties" include nil nil [2368 2396])
+            ("java.util.Set" include nil nil [2397 2418])
+            ("java.util.concurrent.TimeoutException" include nil nil [2419 2464])
+            ("java.util.stream.Collectors" include nil nil [2465 2500])
+            ("javax.net.SocketFactory" include nil nil [2501 2532])
+            ("javax.net.ssl.SSLContext" include nil nil [2533 2565])
+            ("javax.net.ssl.SSLEngine" include nil nil [2566 2597])
+            ("javax.net.ssl.SSLException" include nil nil [2598 2632])
+            ("javax.net.ssl.SSLHandshakeException" include nil nil [2633 2676])
+            ("javax.net.ssl.SSLSession" include nil nil [2677 2709])
+            ("javax.net.ssl.SSLSocket" include nil nil [2710 2741])
+            ("javax.net.ssl.X509TrustManager" include nil nil [2742 2780])
+            ("javax.security.cert.CertificateEncodingException" include nil nil [2781 2837])
+            ("PortFingerprinter" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("PortFingerprinter" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [3643 3662])
+                            ("logSink" variable (:type "ILogSink") (reparse-symbol formal_parameters) [3664 3680]))                          )
+                        (reparse-symbol class_member_declaration) [3618 4103])
+                    ("addHelper" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("pref" variable (:type "float") (reparse-symbol formal_parameters) [4338 4348])
+                            ("ph" variable (:type "IProtocolHelper") (reparse-symbol formal_parameters) [4350 4368]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4316 4663])
+                    ("removeHelper" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("helper" variable (:type "IProtocolHelper") (reparse-symbol formal_parameters) [4789 4811]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4764 5072])
+                    ("getNextHighestPreference" function
+                       (:typemodifiers ("public")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [5305 5423])
+                    ("getEndpoint" function
+                       (:typemodifiers ("public")
+                        :type "ISessionEndpoint")
+                        (reparse-symbol class_member_declaration) [5487 5559])
+                    ("canIdentifyPorts" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5815 5974])
+                    ("isVerbose" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6262 6407])
+                    ("getMatch" function
+                       (:typemodifiers ("public")
+                        :type "MatchResult")
+                        (reparse-symbol class_member_declaration) [6463 6524])
+                    ("setMatch" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("match" variable (:type "MatchResult") (reparse-symbol formal_parameters) [6601 6618]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6580 6652])
+                    ("removeMatch" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6704 6761])
+                    ("getChannel" function
+                       (:typemodifiers ("public")
+                        :type "ByteChannel")
+                        (reparse-symbol class_member_declaration) [6942 7004])
+                    ("getRequestBuffer" function
+                       (:typemodifiers ("public")
+                        :type "ByteBuffer")
+                        (reparse-symbol class_member_declaration) [7062 7209])
+                    ("getResponseBuffer" function
+                       (:typemodifiers ("public")
+                        :type "ByteBuffer")
+                        (reparse-symbol class_member_declaration) [7268 7419])
+                    ("getResponseReader" function
+                       (:typemodifiers ("public")
+                        :type "BufferLineReader")
+                        (reparse-symbol class_member_declaration) [7496 7605])
+                    ("log" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [7704 7714]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7688 7828])
+                    ("log" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("message" variable (:type "String") (reparse-symbol formal_parameters) [7981 7995])
+                            ("cause" variable (:type "Throwable") (reparse-symbol formal_parameters) [7997 8012]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7965 8209])
+                    ("logDebug" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [8341 8351]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8320 8508])
+                    ("logDebug" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [8640 8650])
+                            ("cause" variable (:type "Throwable") (reparse-symbol formal_parameters) [8652 8667]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8619 8903])
+                    ("getLogSink" function
+                       (:typemodifiers ("public")
+                        :type "ILogSink")
+                        (reparse-symbol class_member_declaration) [8995 9057])
+                    ("openTLSChannel" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9062 13718])
+                    ("openSocketChannel" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13723 13913])
+                    ("openDatagramChannel" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13918 14122])
+                    ("getCertificateChain" function
+                       (:typemodifiers ("public")
+                        :type "X509Certificate[]")
+                        (reparse-symbol class_member_declaration) [14315 16600])
+                    ("sendRequest" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16890 17119])
+                    ("sendRequestLine" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("line" variable (:type "String") (reparse-symbol formal_parameters) [17236 17247])
+                            ("charset" variable (:type "String") (reparse-symbol formal_parameters) [17249 17263]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17208 17423])
+                    ("readNextResponse" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("wait" variable (:type "int") (reparse-symbol formal_parameters) [17584 17592]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [17556 17668])
+                    ("readNextResponse" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("wait" variable (:type "int") (reparse-symbol formal_parameters) [17863 17871])
+                            ("isLineBased" variable (:type "boolean") (reparse-symbol formal_parameters) [17873 17892]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [17835 17981])
+                    ("readNextResponse" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("wait" variable (:type "int") (reparse-symbol formal_parameters) [18177 18185])
+                            ("minBytes" variable (:type "int") (reparse-symbol formal_parameters) [18187 18199]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [18149 18289])
+                    ("readNextResponse" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("wait" variable (:type "int") (reparse-symbol formal_parameters) [19051 19059])
+                            ("minBytes" variable (:type "int") (reparse-symbol formal_parameters) [19061 19073])
+                            ("isLineBased" variable (:type "boolean") (reparse-symbol formal_parameters) [19075 19094]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [19023 21276])
+                    ("discardResponses" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("wait" variable (:type "int") (reparse-symbol formal_parameters) [21310 21318]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21281 21434])
+                    ("discardResponses" function
+                       (:throws ("IOException" "TimeoutException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("wait" variable (:type "int") (reparse-symbol formal_parameters) [21868 21876])
+                            ("timeout" variable (:type "long") (reparse-symbol formal_parameters) [21878 21890]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21839 22231])
+                    ("closeConnection" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [22299 22557])
+                    ("fingerprint" function
+                       (:throws ("java.net.SocketException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ctx" variable (:type "ProtocolFingerprintContext") (reparse-symbol formal_parameters) [22692 22722]))                          
+                        :type "MatchResult")
+                        (reparse-symbol class_member_declaration) [22661 31156])
+                    ("getSTARTTLSCertificateChain" function
+                       (:throws ("IOException" "CertificateEncodingException" "CertificateException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("starttlsProtocol" variable (:type "String") (reparse-symbol formal_parameters) [31401 31424]))                          
+                        :type "X509Certificate[]")
+                        (reparse-symbol class_member_declaration) [31347 33150])
+                    ("hasNextHelper" function
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [33287 33369])
+                    ("nextHelper" function
+                       (:typemodifiers ("private")
+                        :type "IProtocolHelper")
+                        (reparse-symbol class_member_declaration) [33611 33706])
+                    ("helpers" function
+                       (:typemodifiers ("private")
+                        :type "Iterator")
+                        (reparse-symbol class_member_declaration) [33820 33917])
+                    ("performMatch" function
+                       (:throws ("IOException")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("ctx" variable (:type "ProtocolFingerprintContext") (reparse-symbol formal_parameters) [33953 33983])
+                            ("ph" variable (:type "IProtocolHelper") (reparse-symbol formal_parameters) [33985 34003]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [33922 34355])
+                    ("matchVerboseProtocol" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("ctx" variable (:type "ProtocolFingerprintContext") (reparse-symbol formal_parameters) [34397 34427])
+                            ("ph" variable (:type "IProtocolHelper") (reparse-symbol formal_parameters) [34429 34447]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [34360 38684])
+                    ("fingerprintTLSEndpoint" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("cipherProbe" variable (:type "CipherSuiteEnumerator") (reparse-symbol formal_parameters) [39122 39155])
+                            ("svcConfig" variable (:type "IConfiguration") (reparse-symbol formal_parameters) [39157 39181]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [39081 42397])
+                    ("createCipherSuiteEnumerator" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("starttls" variable (:type "String") (reparse-symbol formal_parameters) [42795 42810]))                          
+                        :type "CipherSuiteEnumerator")
+                        (reparse-symbol class_member_declaration) [42735 43206])
+                    ("purgeTLSHelpers" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("ph" variable (:type "IProtocolHelper") (reparse-symbol formal_parameters) [43240 43258]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [43211 43598])
+                    ("initSelector" function
+                       (:throws ("IOException")
+                        :typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [43603 43736])
+                    ("initSelector" function
+                       (:throws ("IOException")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("schan" variable (:type "SelectableChannel") (reparse-symbol formal_parameters) [43769 43792])
+                            ("ops" variable (:type "int") (reparse-symbol formal_parameters) [43794 43801]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [43741 43950])
+                    ("hasEOL" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("bBuff" variable (:type "ByteBuffer") (reparse-symbol formal_parameters) [44506 44522]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [44483 44761])
+                    ("Helper" type
+                       (:typemodifiers ("private" "static")
+                        :members 
+                          ( ("m_helper" variable
+                               (:typemodifiers ("private" "final")
+                                :type "IProtocolHelper")
+                                (reparse-symbol class_member_declaration) [45042 45081])
+                            ("m_pref" variable
+                               (:typemodifiers ("private" "final")
+                                :type "float")
+                                (reparse-symbol class_member_declaration) [45155 45182])
+                            ("Helper" function
+                               (:constructor-flag t
+                                :typemodifiers ("private")
+                                :arguments 
+                                  ( ("helper" variable (:type "IProtocolHelper") (reparse-symbol formal_parameters) [45205 45227])
+                                    ("pref" variable (:type "float") (reparse-symbol formal_parameters) [45229 45239]))                                  )
+                                (reparse-symbol class_member_declaration) [45190 45308]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [44946 45313])
+                    ("HelperIterator" type
+                       (:typemodifiers ("private" "static")
+                        :interfaces ("java.util.Iterator")
+                        :members 
+                          ( ("m_iterator" variable
+                               (:typemodifiers ("private" "final")
+                                :type "Iterator")
+                                (reparse-symbol class_member_declaration) [45583 45617])
+                            ("HelperIterator" function
+                               (:constructor-flag t
+                                :typemodifiers ("private")
+                                :arguments 
+                                  ( ("i" variable (:type "Iterator") (reparse-symbol formal_parameters) [45648 45658]))                                  )
+                                (reparse-symbol class_member_declaration) [45625 45700])
+                            ("hasNext" function
+                               (:typemodifiers ("public")
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [45724 45802])
+                            ("next" function
+                               (:typemodifiers ("public")
+                                :type "Object")
+                                (reparse-symbol class_member_declaration) [45826 45916])
+                            ("remove" function
+                               (:typemodifiers ("public")
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [45940 46006]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [45506 46011])
+                    ("m_endpoint" variable
+                       (:typemodifiers ("private" "final")
+                        :type "ISessionEndpoint")
+                        (reparse-symbol class_member_declaration) [47557 47599])
+                    ("m_match" variable
+                       (:typemodifiers ("private")
+                        :type "MatchResult")
+                        (reparse-symbol class_member_declaration) [47863 47891])
+                    ("m_request" variable
+                       (:typemodifiers ("private")
+                        :type "ByteBuffer")
+                        (reparse-symbol class_member_declaration) [47933 47962])
+                    ("m_response" variable
+                       (:typemodifiers ("private")
+                        :type "ByteBuffer")
+                        (reparse-symbol class_member_declaration) [48005 48035])
+                    ("m_chan" variable
+                       (:typemodifiers ("private")
+                        :type "ByteChannel")
+                        (reparse-symbol class_member_declaration) [48103 48130])
+                    ("m_selector" variable
+                       (:typemodifiers ("private")
+                        :type "Selector")
+                        (reparse-symbol class_member_declaration) [48196 48224])
+                    ("m_logSink" variable
+                       (:typemodifiers ("private" "final")
+                        :type "ILogSink")
+                        (reparse-symbol class_member_declaration) [48296 48329])
+                    ("HELPER_COMPARATOR" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "HelperComparator")
+                        (reparse-symbol class_member_declaration) [48334 48415])
+                    ("m_isExceptionThrownWhenConnectionResetByPeer" variable
+                       (:typemodifiers ("private" "final")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [48636 48703])
+                    ("EXCEPTION_THROWN_WHEN_CONNECTION_RESET_BY_PEER" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [48875 49033]))                  
+                :type "class")
+                nil [3128 49035]))          
+    :file "PortFingerprinter.java"
+    :pointmax 49036
+    :fsize 49035
+    :lastmodtime '(22064 59509 0 0)
+    :unmatched-syntax '((SEMICOLON 47822 . 47823) (GT 47811 . 47812) (COMMA 47803 . 47804) (LT 47787 . 47788) (SEMICOLON 47697 . 47698) (GT 47680 . 47681) (PRIVATE 47661 . 47668) (LT 47673 . 47674) (GT 46282 . 46283) (PRIVATE 46206 . 46213) (LT 46275 . 46276))
+    )
+   )
+  :file "!home!rkirk!rapid7!protocol-fingerprinter!src!main!java!com!rapid7!protocol!fingerprinter!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

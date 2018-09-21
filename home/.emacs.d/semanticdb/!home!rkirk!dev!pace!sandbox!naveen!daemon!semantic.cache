@@ -1,0 +1,45 @@
+;; Object daemon/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "daemon/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("PWD" variable (:default-value ("$(shell pwd)")) nil [12 29])
+            ("CP" variable (:default-value ("cp")) nil [29 35])
+            ("RM" variable (:default-value ("rm")) nil [35 41])
+            ("MKDIR" variable (:default-value ("mkdir")) nil [41 53])
+            ("CC" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [53 106])
+            ("CXX" variable (:default-value ("mipsel-linux-uclibc-g++" "--sysroot=$(STAGING_PATH)")) nil [106 160])
+            ("LD" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [160 213])
+            ("LIBS" variable (:default-value ("-lpthread" "-lcurl")) nil [214 237])
+            ("HEADER_FILENAME" variable (:default-value ("ssl_certificate_files.h")) nil [238 281])
+            ("HEADER_PATH" variable (:default-value ("$(PWD)/../interface")) nil [281 316])
+            ("EXPORT_HEADER" variable (:default-value ("$(HEADER_PATH)/$(HEADER_FILENAME)")) nil [316 367])
+            ("LDFLAGS" variable (:default-value ("$(LDFLAGS)" "-Wl,-O1" "$(LIBS)")) nil [368 405])
+            ("CFLAGS" variable (:default-value ("$(CFLAGS)" "$(CPPFLAGS)")) nil [405 436])
+            ("CFLAGS" variable (:default-value ("-Wall" "-Wextra" "-mips32" "-I$(HDW_DEFS_DIR)" "-I$(HEADER_PATH)")) nil [436 503])
+            ("CXXFLAGS" variable (:default-value ("$(CXXFLAGS)" "$(CFLAGS)" "\"-DSL_NEXUS_RSA_BLOB_FILE=\\\"$(SECURITY_LIBRARY_NEXUS_RSA_BLOB_FILE)\\\"\"")) nil [700 804])
+            ("OBJS" variable (:default-value ("daemon.o" "blob-extractor.o")) nil [805 839])
+            ("EXECUTABLES" variable (:default-value ("securityd" "blob-extractor")) nil [840 878])
+            ("EXECUTABLES_INSTALL" variable (:default-value ("$(addprefix $(STAGING_PATH)/usr/sbin/, $(EXECUTABLES))")) nil [878 954])
+            (".SUFFIXES" function (:arguments (".o" ".c" ".cpp")) nil [955 977])
+            (".cpp.o" function nil nil [978 1022])
+            (".c.o" function nil nil [1023 1062])
+            ("install" function (:arguments ("all")) nil [1063 1252])
+            ("all" function (:arguments ("$(EXECUTABLES)")) nil [1253 1273])
+            ("securityd" function (:arguments ("daemon.o")) nil [1274 1328])
+            ("blob-extractor" function (:arguments ("blob-extractor.o")) nil [1329 1404])
+            (".PHONY" function (:arguments ("clean")) nil [1405 1419])
+            ("clean" function nil nil [1419 1521]))          
+    :file "Makefile"
+    :pointmax 1521
+    :fsize 1520
+    :lastmodtime '(21511 3170 479286 807000)
+    :unmatched-syntax '((shell-command 1427 . 1520) (bol 1426 . 1426) (shell-command 660 . 692) (bol 659 . 659) (shell-command 582 . 618) (bol 581 . 581) (shell-command 527 . 548) (bol 526 . 526))
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!naveen!daemon!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

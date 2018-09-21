@@ -1,0 +1,1081 @@
+;; Object includes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "includes/"
+  :tables (list 
+   (semanticdb-table "bla_types.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__BLA_TYPES_H__" variable (:constant-flag t) nil [606 621])
+            ("bla_prod_os.h" include nil nil [623 647])
+            ("error_codes.h" include nil nil [648 672])
+            ("bla_prod_defines.h" include nil nil [731 760])
+            ("NULL" variable (:constant-flag t) nil [789 793])
+            ("false" variable (:constant-flag t) nil [851 856])
+            ("true" variable (:constant-flag t) nil [928 932])
+            ("FALSE" variable (:constant-flag t) nil [1007 1012])
+            ("TRUE" variable (:constant-flag t) nil [1084 1088])
+            ("L_UINT8" type
+               (:typedef ("unsigned char")
+                :superclasses "unsigned char"
+                :type "typedef")
+                nil [1153 1184])
+            ("L_UINT16" type
+               (:typedef ("unsigned short")
+                :superclasses "unsigned short"
+                :type "typedef")
+                nil [1185 1217])
+            ("L_UINT32" type
+               (:typedef ("unsigned long")
+                :superclasses "unsigned long"
+                :type "typedef")
+                nil [1218 1250])
+            ("L_INT8" type
+               (:typedef ("signed char")
+                :superclasses "signed char"
+                :type "typedef")
+                nil [1251 1281])
+            ("L_INT16" type
+               (:typedef ("signed short")
+                :superclasses "signed short"
+                :type "typedef")
+                nil [1282 1313])
+            ("L_INT32" type
+               (:typedef ("signed long")
+                :superclasses "signed long"
+                :type "typedef")
+                nil [1314 1345])
+            ("L_FLOAT" type
+               (:typedef ("float")
+                :superclasses "float"
+                :type "typedef")
+                nil [1346 1377])
+            ("L_BOOL" type
+               (:typedef ("unsigned char")
+                :superclasses "unsigned char"
+                :type "typedef")
+                nil [1378 1408])
+            ("L_PID" type
+               (:typedef ("unsigned short")
+                :superclasses "unsigned short"
+                :type "typedef")
+                nil [1409 1438])
+            ("L_VOID" type
+               (:typedef ("void")
+                :superclasses "void"
+                :type "typedef")
+                nil [1440 1470])
+            ("L_CHAR" type
+               (:typedef ("char")
+                :superclasses "char"
+                :type "typedef")
+                nil [1472 1502])
+            ("min" variable (:constant-flag t) nil [1534 1537])
+            ("max" variable (:constant-flag t) nil [1575 1578])
+            ("L_ERRORCODE" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("L_RETURN_OK" variable
+                             (:constant-flag t
+                              :default-value (1661 1662)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1628 1662])
+                          ("L_ERROR_NOT_INIT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1693 1710])
+                          ("L_ERROR_PARAM" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1715 1729])
+                          ("L_ERROR_MEMORY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1734 1749])
+                          ("L_ERROR_HEINOUS" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1754 1770])
+                          ("L_ERROR_STANDBY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1775 1791])
+                          ("L_ERROR_UNEXPECTED_RETURN" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1796 1822])
+                          ("L_ERROR_NOT_SUPPORTED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1827 1849])
+                          ("L_ERROR_TASK_ID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1854 1870])
+                          ("L_ERROR_NOT_SUSPENDED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1922 1944])
+                          ("L_ERROR_LOCKED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1949 1964])
+                          ("L_ERROR_DISABLED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1969 1986])
+                          ("L_ERROR_CONTROL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1991 2007])
+                          ("L_ERROR_HEAP_ID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2013 2029])
+                          ("L_ERROR_QUEUE_ID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2034 2051])
+                          ("L_ERROR_QUEUE_NAME" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2056 2075])
+                          ("L_ERROR_QUEUE_FULL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2080 2099])
+                          ("L_ERROR_NO_MESSAGE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2104 2123])
+                          ("L_ERROR_TIMER_ID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2128 2145])
+                          ("L_ERROR_TIMER_NAME" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2150 2169])
+                          ("L_ERROR_TIMEOUT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2174 2190])
+                          ("L_ERROR_TIMER" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2195 2209])
+                          ("L_ERROR_MUTEX_ID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2214 2231])
+                          ("L_ERROR_MUTEX_NAME" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2236 2255])
+                          ("L_ERROR_SEM_ID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2260 2275])
+                          ("L_ERROR_SEM_NAME" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2280 2297])
+                          ("L_ERROR_ISR_NOT_INSTALLED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2302 2328])
+                          ("L_ERROR_ISR_ALREADY_INSTALLED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2333 2363])
+                          ("L_ERROR_OPEN" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2368 2381])
+                          ("L_ERROR_NOT_OPEN" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2440 2457])
+                          ("L_ERROR_CLOSE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2462 2476])
+                          ("L_ERROR_BUSY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2481 2494])
+                          ("L_ERROR_ABORT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2499 2513])
+                          ("L_ERROR_BUFFER_OVERFLOW" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2518 2542])
+                          ("L_ERROR_BUFFER_FULL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2590 2610])
+                          ("L_ERROR_NO_DATA" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2615 2631])
+                          ("L_ERROR_FULL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2636 2649])
+                          ("L_ERROR_DATA" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2654 2667])
+                          ("L_ERROR_BUF" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2672 2684])
+                          ("L_ERROR_BUFF_TOO_SMALL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2689 2712])
+                          ("L_ERROR_BUFFER_LOCKED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2717 2739])
+                          ("L_ERROR_TOO_MUCH_DATA" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2744 2766])
+                          ("L_ERROR_UTIL_BUFFER_EMPTY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2771 2797])
+                          ("L_ERROR_UTIL_BUF_NOT_FULL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2802 2828])
+                          ("L_ERROR_UTIL_BUF_NOT_EMPTY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2833 2860])
+                          ("L_ERROR_LIST_EMPTY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2865 2884])
+                          ("L_ERROR_LIST_FULL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2935 2953])
+                          ("L_ERROR_NOT_FOUND" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2958 2976])
+                          ("L_ERROR_PROPERTY_NOT_FOUND" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2981 3008])
+                          ("L_ERROR_PROPERTY_NOT_WRITEABLE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3055 3086])
+                          ("L_ERROR_PROPERTY_NOT_READABLE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3091 3121])
+                          ("L_ERROR_BAD_HANDLE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3126 3145])
+                          ("L_ERROR_BAD_POSITION" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3193 3214])
+                          ("L_ERROR_BAD_SIZE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3219 3236])
+                          ("L_ERROR_BAD_PROPERTIES" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3241 3264])
+                          ("L_ERROR_BAD_SRC_HANDLE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3269 3292])
+                          ("L_ERROR_BAD_DEST_HANDLE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3297 3321])
+                          ("L_ERROR_REGION_SIZE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3326 3346])
+                          ("L_ERROR_REGION_OVERLAP" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3351 3374])
+                          ("L_ERROR_REGION_NOT_VISIBLE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3379 3406])
+                          ("L_ERROR_BAD_OFFSCREEN_HANDLE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3411 3440])
+                          ("L_ERROR_BAD_ONSCREEN_HANDLE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3445 3473])
+                          ("L_ERROR_NO_CURSOR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3478 3496])
+                          ("L_ERROR_BAD_PLANES" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3501 3520])
+                          ("L_ERROR_NOT_ACTIVE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3525 3544])
+                          ("L_ERROR_NO_AUDIO_PLAYING" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3549 3574])
+                          ("L_ERROR_NO_AUDIO" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3579 3596])
+                          ("L_ERROR_NO_STREAM" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3601 3619])
+                          ("L_ERROR_VIDEO_NOT_PLAYING" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3624 3650])
+                          ("L_ERROR_VIDEO_NOT_PAUSED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3655 3680])
+                          ("L_ERROR_NO_VIDEO" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3685 3702])
+                          ("L_ERROR_NO_PCR_PLAY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3707 3727])
+                          ("L_ERROR_INVALID_COORDINATES" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3732 3760])
+                          ("L_ERROR_NO_FRAME_BUFFERED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3765 3791])
+                          ("L_ERROR_INVALID_SCALING" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3796 3820])
+                          ("L_ERROR_BAD_PTS" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3825 3841])
+                          ("L_ERROR_EXPIRED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3846 3862])
+                          ("L_ERROR_HARDWARE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3867 3884])
+                          ("L_ERROR_UNSUPPORTED_FORMAT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3889 3916])
+                          ("L_ERROR_ROWOP" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3921 3935])
+                          ("L_ERROR_BATCH" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [3987 4001])
+                          ("L_ERROR_PLAY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4006 4019])
+                          ("L_ERROR_NO_CLIP_PLAYING" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4072 4096])
+                          ("L_ERROR_NO_CLIP_PAUSED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4133 4156])
+                          ("L_ERROR_INVALID_CLIP" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4161 4182])
+                          ("L_ERROR_CARD_REMOVED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4187 4208])
+                          ("L_ERROR_CARD_ERR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4256 4273])
+                          ("L_ERROR_CARD_COMMS" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4278 4297])
+                          ("L_ERROR_BAD_PID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4302 4318])
+                          ("L_ERROR_BAD_PES_TYPE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4363 4384])
+                          ("L_ERROR_INVALID_PES_TYPE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4389 4414])
+                          ("L_ERROR_NO_DEMUX" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4419 4436])
+                          ("L_ERROR_NO_DESCRAMBLER" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4441 4464])
+                          ("L_ERROR_BAD_PESID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4469 4487])
+                          ("L_ERROR_NO_FILTER" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4492 4510])
+                          ("L_ERROR_BAD_FILTER" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4515 4534])
+                          ("L_ERROR_BAD_FILTER_SIZE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4539 4563])
+                          ("L_ERROR_BAD_OFFSET" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4568 4587])
+                          ("L_ERROR_TOO_MANY_EVENTS" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4592 4616])
+                          ("L_ERROR_BAD_EVENT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4621 4639])
+                          ("L_ERROR_NO_RESOURCE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4644 4664])
+                          ("L_ERROR_BAD_DESID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4669 4687])
+                          ("L_ERROR_BAD_PCR_ID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4692 4711])
+                          ("L_ERROR_DEREGISTER" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4716 4735])
+                          ("L_ERROR_FLASH_BAD_ADDR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4783 4806])
+                          ("L_ERROR_FLASH_SECTORS" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4846 4868])
+                          ("L_ERROR_FLASH_BAD_SECTORS" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4873 4899])
+                          ("L_ERROR_FLASH_UNPROTECT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4904 4928])
+                          ("L_ERROR_FLASH_PROTECT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4933 4955])
+                          ("L_ERROR_FLASH_ERASE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4960 4980])
+                          ("L_ERROR_FLASH_PROG" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [4985 5004])
+                          ("L_ERROR_RECORD" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5009 5024])
+                          ("L_ERROR_SUBRECORD" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5070 5088])
+                          ("L_ERROR_SAME" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5093 5106])
+                          ("L_ERROR_CORRUPT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5111 5127])
+                          ("L_ERROR_SCAN" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5132 5145])
+                          ("L_ERROR_NO_CHANNEL_PLAN" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5192 5216])
+                          ("L_ERROR_ROUTE_UNSUPPORTED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5221 5247])
+                          ("L_ERROR_NO_SERVICE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5287 5306])
+                          ("L_ERROR_NOT_STARTED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5357 5377])
+                          ("L_ERROR_NOT_STOPPED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5382 5402])
+                          ("L_ERROR_INVALID_PID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5407 5427])
+                          ("L_ERROR_INVALID_ID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5432 5451])
+                          ("L_ERROR_MULTIPLE_PTS" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5456 5477])
+                          ("L_ERROR_DISCONTINUITY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5482 5504])
+                          ("L_ERROR_PTS_LATE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5509 5526])
+                          ("L_ERROR_MAX_OPENS_EXCEEDED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5531 5558])
+                          ("L_ERROR_MAX_SPEED_EXCEEDED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5600 5627])
+                          ("L_ERROR_MIN_SPEED_EXCEEDED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5632 5659])
+                          ("L_ERROR_OFFSET_EXCEEDED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5664 5688])
+                          ("L_ERROR_ALREADY_STARTED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5693 5717])
+                          ("L_ERROR_ALREADY_STOPPED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5722 5746])
+                          ("L_ERROR_ALREADY_INIT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5751 5772])
+                          ("L_ERROR_NVRAM_DEFAULT_RESET" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5826 5854])
+                          ("L_ERROR_NVRAM_READ_FAILED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5859 5885])
+                          ("L_ERROR_NVRAM_UNKNOWN_VERSION" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5890 5920])
+                          ("L_ERROR_NVRAM_FE_MISMATCH" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5925 5951])
+                          ("L_ERROR_NVRAM_CRC" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5956 5974])
+                          ("L_ERROR_NVRAM_WRITE_FAILED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5979 6006])
+                          ("L_ERROR_NVRAM_FE_UNKNOWN" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6011 6036])
+                          ("L_ERROR_FILENAME_EMPTY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6042 6065])
+                          ("L_LAST_ERROR_CODE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6071 6202]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [1609 6215])
+            ("DEMODFLAGS_SATELLITE" variable (:constant-flag t) nil [6312 6332])
+            ("DEMODFLAGS_CABLE" variable (:constant-flag t) nil [6355 6371])
+            ("DEMODFLAGS_TERRESTRIAL" variable (:constant-flag t) nil [6398 6420])
+            ("DEMODFLAGS_LNBPOWERON" variable (:constant-flag t) nil [6441 6462])
+            ("DEMODFLAGS_LNBPOWEROFF" variable (:constant-flag t) nil [6484 6506])
+            ("BLA_NVRAM_BLECA_TONE_USE_SWITCH" variable (:constant-flag t) nil [6528 6559])
+            ("BLA_NVRAM_BLECA_TONE_ON" variable (:constant-flag t) nil [6578 6601])
+            ("BLA_NVRAM_BLECA_TONE_OFF" variable (:constant-flag t) nil [6628 6652])
+            ("OTVLDR_LNB_TONE_OFF" variable (:constant-flag t) nil [6679 6698])
+            ("OTVLDR_LNB_TONE_ON" variable (:constant-flag t) nil [6714 6732])
+            ("OTVLDR_LNB_POWEROFF" variable (:constant-flag t) nil [6750 6769])
+            ("OTVLDR_LNB_POWERON" variable (:constant-flag t) nil [6784 6802])
+            ("OTVLDR_FEC_AUTO" variable (:constant-flag t) nil [6887 6902])
+            ("OTVLDR_FEC_1_2" variable (:constant-flag t) nil [6921 6935])
+            ("OTVLDR_FEC_2_3" variable (:constant-flag t) nil [6955 6969])
+            ("OTVLDR_FEC_3_4" variable (:constant-flag t) nil [6989 7003])
+            ("OTVLDR_FEC_3_5" variable (:constant-flag t) nil [7023 7037])
+            ("OTVLDR_FEC_4_5" variable (:constant-flag t) nil [7057 7071])
+            ("OTVLDR_FEC_5_6" variable (:constant-flag t) nil [7091 7105])
+            ("OTVLDR_FEC_6_7" variable (:constant-flag t) nil [7125 7139])
+            ("OTVLDR_FEC_7_8" variable (:constant-flag t) nil [7159 7173])
+            ("OTVLDR_FEC_8_9" variable (:constant-flag t) nil [7193 7207])
+            ("OTVLDR_FEC_9_10" variable (:constant-flag t) nil [7227 7242])
+            ("OTVLDR_FEC_NONE" variable (:constant-flag t) nil [7263 7278])
+            ("OTVLDR_FEC_OUTER_NONE" variable (:constant-flag t) nil [7299 7320])
+            ("OTVLDR_FEC_OUTER_RS" variable (:constant-flag t) nil [7333 7352])
+            ("OTVLDR_ORBIT_WEST" variable (:constant-flag t) nil [7368 7385])
+            ("OTVLDR_ORBIT_EAST" variable (:constant-flag t) nil [7402 7419])
+            ("OTVLDR_POL_HORIZONTAL" variable (:constant-flag t) nil [7437 7458])
+            ("OTVLDR_POL_VERTICAL" variable (:constant-flag t) nil [7471 7490])
+            ("OTVLDR_POL_LEFT" variable (:constant-flag t) nil [7505 7520])
+            ("OTVLDR_POL_RIGHT" variable (:constant-flag t) nil [7539 7555])
+            ("OTVLDR_MOD_QPSK" variable (:constant-flag t) nil [7574 7589])
+            ("OTVLDR_MOD_S2_QPSK" variable (:constant-flag t) nil [7608 7626])
+            ("OTVLDR_MOD_S2_8PSK" variable (:constant-flag t) nil [7642 7660])
+            ("OTVLDR_MOD_QAMAUTO" variable (:constant-flag t) nil [7677 7695])
+            ("OTVLDR_MOD_QAM16" variable (:constant-flag t) nil [7711 7727])
+            ("OTVLDR_MOD_QAM32" variable (:constant-flag t) nil [7745 7761])
+            ("OTVLDR_MOD_QAM64" variable (:constant-flag t) nil [7779 7795])
+            ("OTVLDR_MOD_QAM128" variable (:constant-flag t) nil [7813 7830])
+            ("OTVLDR_MOD_QAM256" variable (:constant-flag t) nil [7847 7864])
+            ("OTVLDR_MOD_QAM1024" variable (:constant-flag t) nil [7881 7899])
+            ("OTVLDR_MOD_QAM2048" variable (:constant-flag t) nil [7915 7933])
+            ("OTVLDR_SR_MODE_MANUAL" variable (:constant-flag t) nil [7950 7971])
+            ("OTVLDR_SR_MODE_AUTO" variable (:constant-flag t) nil [7984 8003])
+            ("W_E_POL_MOD_FEC" variable (:constant-flag t) nil [8112 8127])
+            ("SR_BITS" variable (:constant-flag t) nil [8228 8235])
+            ("WE_BITS" variable (:constant-flag t) nil [8251 8258])
+            ("POL_BITS" variable (:constant-flag t) nil [8274 8282])
+            ("MOD_BITS" variable (:constant-flag t) nil [8297 8305])
+            ("FEC_BITS" variable (:constant-flag t) nil [8320 8328])
+            ("SR_SHIFT" variable (:constant-flag t) nil [8344 8352])
+            ("WE_SHIFT" variable (:constant-flag t) nil [8365 8373])
+            ("POL_SHIFT" variable (:constant-flag t) nil [8386 8395])
+            ("MOD_SHIFT" variable (:constant-flag t) nil [8407 8416])
+            ("FEC_SHIFT" variable (:constant-flag t) nil [8428 8437])
+            ("FEC" variable (:constant-flag t) nil [8532 8535])
+            ("bla_demodulator_lnb" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("low_freq" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8685 8703])
+                          ("high_freq" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8708 8727])
+                          ("switch_freq" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8732 8753]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [8664 8776])
+            ("bla_dvb_cable_desc" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("frequency" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8834 8853])
+                          ("symbol_rate" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8858 8879])
+                          ("modulation" variable (:type ("L_UINT16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8884 8904])
+                          ("fec" variable (:type ("L_UINT16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8909 8922])
+                          ("reservered" variable
+                             (:dereference 1
+                              :type ("L_UINT8" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [8927 8949]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [8813 9018])
+            ("bla_dvb_satellite_desc" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("frequency" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9080 9099])
+                          ("symbol_rate" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9104 9125])
+                          ("orbital_position" variable (:type ("L_UINT16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9130 9156])
+                          ("w_e_pol_mod_fec" variable (:type ("L_UINT16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9349 9374])
+                          ("tone" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9379 9392])
+                          ("reserved" variable
+                             (:dereference 1
+                              :type ("L_UINT8" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [9451 9471]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [9059 9541])
+            ("bla_dvb_terrestrial_desc" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("frequency" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9620 9643])
+                          ("bandwidth" variable (:type ("L_UINT16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9648 9670])
+                          ("fcodes" variable (:type ("L_UINT16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9974 9993]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [9599 10022])
+            ("BLA_GENERIC_DESCRIPTOR" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("Satellite" variable (:type ("bla_dvb_satellite_desc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10149 10182])
+                          ("Cable" variable (:type ("bla_dvb_cable_desc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10187 10212])
+                          ("B" variable
+                             (:dereference 1
+                              :type ("L_UINT8" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [10217 10231]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [10129 10257])
+            ("BLA_FE_SAT_MINFREQ" variable (:constant-flag t) nil [10268 10286])
+            ("BLA_FE_SAT_MAXFREQ" variable (:constant-flag t) nil [10306 10324])
+            ("bla_dvb_satellite_scan_desc" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("symbol_rate" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10358 10379])
+                          ("orbital_position" variable (:type ("L_UINT16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10384 10410])
+                          ("w_e_pol_mod_fec" variable (:type ("L_UINT16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10616 10641]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [10337 10673])
+            ("bla_dvb_cable_scan_desc" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("min_frequency" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10696 10719])
+                          ("max_frequency" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10724 10747])
+                          ("symbol_rate" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10752 10773])
+                          ("modulation" variable (:type ("L_UINT16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10778 10798])
+                          ("fec" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10803 10815]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [10675 10843])
+            ("bla_delivery_scan_descriptor" type
+               (:typedef ("L_UINT8" type (:type "class") nil nil)
+                :superclasses "L_UINT8"
+                :type "typedef")
+                nil [10845 10894])
+            ("SUCCESS" variable (:constant-flag t) nil [11244 11251])
+            ("FAILURE" variable (:constant-flag t) nil [11262 11269])
+            ("TUNE_TIMEOUT" variable (:constant-flag t) nil [11352 11364])
+            ("ERRORDISPLAY_TIMEOUT" variable (:constant-flag t) nil [11469 11489])
+            ("BLA_UTC_TIME_SIZE" variable (:constant-flag t) nil [11511 11528])
+            ("CABLESCAN_SYMBOLRATE_MOD" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("SymbolRate" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11656 11676])
+                          ("Modulation" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11681 11700]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [11635 11728])
+            ("CABLESCAN_FREQUENCYSCAN" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("FrequencyStep" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11849 11920])
+                          ("CurrentFrequency" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11849 11920])
+                          ("EndFrequency" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11849 11920])
+                          ("StartFrequency" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11849 11920]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [11828 11947])
+            ("BLA_TUNER_FUNCTIONS" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("getDescriptor" variable
+                             (:functionpointer-flag t
+                              :type ("L_ERRORCODE" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [11989 12082])
+                          ("FixedDescriptorList" variable
+                             (:pointer 1
+                              :constant-flag t
+                              :type ("BLA_GENERIC_DESCRIPTOR" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [12235 12285])
+                          ("FixedDescriptorListEntries" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12290 12326])
+                          ("FixedLNBList" variable
+                             (:pointer 1
+                              :constant-flag t
+                              :type ("bla_demodulator_lnb" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [12363 12403])
+                          ("FixedLNBListEntries" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12408 12437])
+                          ("FixedSatScanList" variable
+                             (:pointer 1
+                              :type ("bla_dvb_satellite_scan_desc" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [12468 12514])
+                          ("FixedSatScanListEntries" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12519 12552])
+                          ("currentDescriptor" variable (:type ("BLA_GENERIC_DESCRIPTOR" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12557 12598])
+                          ("currentLNB" variable (:type ("bla_demodulator_lnb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12603 12634])
+                          ("currentLNBPower" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12639 12663]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [11968 12686])
+            ("BLA_FP_KEY_SEQUENCE_ENUM" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("BLA_FP_KEY_SEQUENCE_DL_RUNTIME" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [12734 12765])
+                          ("BLA_FP_KEY_SEQUENCE_DL_BLDR2" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [12791 12820])
+                          ("BLA_FP_KEY_SEQUENCE_ERASE_BLDR2" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [12849 12881])
+                          ("BLA_FP_KEY_SEQUENCE_SOFT_REBOOT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [12904 12936])
+                          ("BLA_FP_KEY_SEQUENCE_UNKNOWN" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [12968 12996])
+                          ("BLA_FP_KEY_SEQUENCE_NONE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [13001 13026]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [12715 13054])
+            ("BLA_FP_KEY_SEQUENCE_STRUCT" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("length" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13109 13124])
+                          ("keySeq" variable
+                             (:dereference 1
+                              :type ("L_UINT32" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [13170 13218]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [13088 13284])
+            ("BLA_SERIALISATION_INFO" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ManuID" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13342 13357])
+                          ("ModelID" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13406 13422])
+                          ("reserved" variable
+                             (:dereference 1
+                              :type ("L_UINT8" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [13470 13490])
+                          ("irdeto" variable
+                             (:dereference 1
+                              :type ("L_UINT8" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [13515 13534])
+                          ("ether_mac" variable
+                             (:dereference 1
+                              :type ("L_UINT8" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [13559 13580])
+                          ("wl_mac" variable
+                             (:dereference 1
+                              :type ("L_UINT8" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [13611 13629])
+                          ("wl_mac2" variable
+                             (:dereference 1
+                              :type ("L_UINT8" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [13634 13653])
+                          ("bt_mac" variable
+                             (:dereference 1
+                              :type ("L_UINT8" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [13658 13676])
+                          ("OUI" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13681 13694]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [13321 13773])
+            ("blaSerialData" variable
+               (:typemodifiers ("extern")
+                :type ("BLA_SERIALISATION_INFO" type (:type "class") nil nil))
+                nil [13775 13819])
+            ("BLI_BUTTON_MASK_NONE" variable (:constant-flag t) nil [13829 13849])
+            ("MAX_FILENAME_SIZE" variable (:constant-flag t) nil [13864 13881])
+            ("bla_ui_types" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("BLA_UI_TYPES_INTEGER" variable
+                             (:constant-flag t
+                              :default-value (13934 13935)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [13911 13935])
+                          ("BLA_UI_TYPES_UNSIGNED_INTEGER" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [13941 13971])
+                          ("BLA_UI_TYPES_STRING" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [13976 13996])
+                          ("BLA_UI_TYPES_IPADDRESS" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [14001 14024])
+                          ("BLA_UI_TYPES_BINARY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [14029 14049])
+                          ("BLA_UI_TYPES_DESCRIPTOR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [14054 14078])
+                          ("BLA_UI_TYPES_LNB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [14083 14100])
+                          ("BLA_UI_TYPES_HISTORY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [14105 14126])
+                          ("BLA_UI_TYPES_LAST" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [14131 14149]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [13892 14165])
+            ("uiLUTString" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("stringVal" variable
+                             (:dereference 1
+                              :type ("L_CHAR" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [14188 14209]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [14167 14224]))          
+    :file "bla_types.h"
+    :pointmax 14254
+    :fsize 14253
+    :lastmodtime '(21273 30447 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("OTVLDR_LNB_TONE_ON" . ((number "1" 6739 . 6740)))
+          ("OTVLDR_FEC_6_7" . ((number "7" 7149 . 7150)))
+          ("OTVLDR_MOD_QAM2048" . ((number "7" 7939 . 7940)))
+          ("SR_SHIFT" . ((number "12" 8354 . 8356)))
+          ("false" . ((semantic-list "((unsigned char)0)" 859 . 877)))
+          ("max" (spp-arg-list ("a" "b") 1578 . 1583) . ((semantic-list "((a) > (b) ? (a) : (b))" 1584 . 1607)))
+          ("OTVLDR_POL_HORIZONTAL" . ((number "0" 7461 . 7462)))
+          ("OTVLDR_MOD_S2_QPSK" . ((number "2" 7632 . 7633)))
+          ("TRUE" . ((semantic-list "((unsigned char)1)" 1092 . 1110)))
+          ("min" (spp-arg-list ("a" "b") 1537 . 1542) . ((semantic-list "((a) < (b) ? (a) : (b))" 1543 . 1566)))
+          ("OTVLDR_FEC_1_2" . ((number "1" 6945 . 6946)))
+          ("OTVLDR_FEC_OUTER_RS" . ((number "2" 7357 . 7358)))
+          ("OTVLDR_MOD_S2_8PSK" . ((number "3" 7666 . 7667)))
+          ("OTVLDR_MOD_QAM16" . ((number "1" 7735 . 7736)))
+          ("OTVLDR_MOD_QAM64" . ((number "3" 7803 . 7804)))
+          ("OTVLDR_MOD_QAM256" . ((number "5" 7871 . 7872)))
+          ("OTVLDR_MOD_QAM1024" . ((number "6" 7905 . 7906)))
+          ("MOD_BITS" . ((number "0x1F" 8307 . 8311)))
+          ("SUCCESS" . ((number "0" 11252 . 11253)))
+          ("FAILURE" . ((punctuation "-" 11270 . 11271) (number "1" 11271 . 11272)))
+          ("BLA_UTC_TIME_SIZE" . ((number "5" 11538 . 11539)))
+          ("NULL" . ((number "0" 797 . 798)))
+          ("FALSE" . ((semantic-list "((unsigned char)0)" 1015 . 1033)))
+          ("OTVLDR_FEC_5_6" . ((number "6" 7115 . 7116)))
+          ("OTVLDR_LNB_TONE_OFF" . ((number "0" 6704 . 6705)))
+          ("OTVLDR_POL_RIGHT" . ((number "3" 7563 . 7564)))
+          ("OTVLDR_MOD_QAM32" . ((number "2" 7769 . 7770)))
+          ("BLA_FE_SAT_MAXFREQ" . ((number "0x00215500" 10325 . 10335)))
+          ("BLA_NVRAM_BLECA_TONE_ON" . ((number "0x02" 6615 . 6619)))
+          ("POL_BITS" . ((number "0x03" 8284 . 8288)))
+          ("BLI_BUTTON_MASK_NONE" . ((number "0" 13853 . 13854)))
+          ("BLA_NVRAM_BLECA_TONE_OFF" . ((number "0x03" 6665 . 6669)))
+          ("OTVLDR_FEC_4_5" . ((number "5" 7081 . 7082)))
+          ("OTVLDR_POL_LEFT" . ((number "2" 7529 . 7530)))
+          ("OTVLDR_SR_MODE_AUTO" . ((number "0" 8008 . 8009)))
+          ("SR_BITS" . ((number "0x0F" 8238 . 8242)))
+          ("MAX_FILENAME_SIZE" . ((number "40" 13888 . 13890)))
+          ("OTVLDR_FEC_8_9" . ((number "9" 7217 . 7218)))
+          ("OTVLDR_FEC_NONE" . ((number "15" 7287 . 7289)))
+          ("OTVLDR_MOD_QPSK" . ((number "1" 7598 . 7599)))
+          ("W_E_POL_MOD_FEC" (spp-arg-list ("SR" "WE" "POL" "MOD" "FEC") 8127 . 8150) . ((semantic-list "(((SR) << 12) | ((WE) << 11) | ((POL) << 9) | ((MOD) << 4) | (FEC))" 8151 . 8218)))
+          ("FEC" (spp-arg-list ("FEC_OUTER" "FEC_INNER") 8535 . 8557) . ((semantic-list "(((FEC_INNER) << 4) | (FEC_OUTER))" 8571 . 8605)))
+          ("BLA_FE_SAT_MINFREQ" . ((number "0x00094500" 10287 . 10297)))
+          ("ERRORDISPLAY_TIMEOUT" . ((number "30000" 11496 . 11501)))
+          ("true" . ((semantic-list "((unsigned char)1)" 936 . 954)))
+          ("DEMODFLAGS_LNBPOWEROFF" . ((number "0x0000" 6512 . 6518)))
+          ("BLA_NVRAM_BLECA_TONE_USE_SWITCH" . ((number "0x01" 6565 . 6569)))
+          ("OTVLDR_LNB_POWEROFF" . ((number "0" 6774 . 6775)))
+          ("FEC_SHIFT" . ((number "0" 8439 . 8440)))
+          ("DEMODFLAGS_SATELLITE" . ((number "0x0100" 6340 . 6346)))
+          ("OTVLDR_FEC_3_4" . ((number "3" 7013 . 7014)))
+          ("OTVLDR_FEC_9_10" . ((number "10" 7251 . 7253)))
+          ("OTVLDR_ORBIT_EAST" . ((number "1" 7426 . 7427)))
+          ("FEC_BITS" . ((number "0x0F" 8330 . 8334)))
+          ("TUNE_TIMEOUT" . ((number "6000" 11379 . 11383)))
+          ("DEMODFLAGS_CABLE" . ((number "0x0200" 6383 . 6389)))
+          ("DEMODFLAGS_LNBPOWERON" . ((number "0x0010" 6469 . 6475)))
+          ("OTVLDR_LNB_POWERON" . ((number "1" 6808 . 6809)))
+          ("OTVLDR_FEC_3_5" . ((number "4" 7047 . 7048)))
+          ("OTVLDR_FEC_7_8" . ((number "8" 7183 . 7184)))
+          ("OTVLDR_SR_MODE_MANUAL" . ((number "1" 7974 . 7975)))
+          ("WE_BITS" . ((number "0x01" 8261 . 8265)))
+          ("POL_SHIFT" . ((number "9" 8397 . 8398)))
+          ("__BLA_TYPES_H__")
+          ("DEMODFLAGS_TERRESTRIAL" . ((number "0x0300" 6426 . 6432)))
+          ("OTVLDR_FEC_AUTO" . ((number "0" 6911 . 6912)))
+          ("OTVLDR_ORBIT_WEST" . ((number "0" 7392 . 7393)))
+          ("OTVLDR_POL_VERTICAL" . ((number "1" 7495 . 7496)))
+          ("OTVLDR_FEC_2_3" . ((number "2" 6979 . 6980)))
+          ("OTVLDR_FEC_OUTER_NONE" . ((number "1" 7323 . 7324)))
+          ("OTVLDR_MOD_QAMAUTO" . ((number "0" 7701 . 7702)))
+          ("OTVLDR_MOD_QAM128" . ((number "4" 7837 . 7838)))
+          ("WE_SHIFT" . ((number "11" 8375 . 8377)))
+          ("MOD_SHIFT" . ((number "4" 8418 . 8419)))
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!bootloader!platform!dx820_tdx850!products!B044!bla!Foxtel!common!includes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

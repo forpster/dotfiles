@@ -1,0 +1,206 @@
+;; Object base/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "base/"
+  :tables (list 
+   (semanticdb-table "database_base.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("DATABASE_BASE_H" variable (:constant-flag t) nil [833 848])
+            ("db_base.h" include nil nil [1021 1041])
+            ("DATABASE" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1914 1921])
+                    ("DATABASE" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("servicelist_path" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1935 1964])
+                            ("eventlist_path" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1965 1992])
+                            ("connection_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1993 2021])
+                            ("parent" variable
+                               (:pointer 1
+                                :type ("DATABASE" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2022 2040]))                          
+                        :type ("DATABASE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1926 2044])
+                    ("DATABASE" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2071 2091])
+                    ("open" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2136 2156])
+                    ("check_version_number" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("out_version_db" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2194 2214])
+                            ("out_version_code" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2215 2237]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2160 2238])
+                    ("get_pathnames" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("db_pathname" variable
+                               (:pointer 2
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2269 2294])
+                            ("eb_pathname" variable
+                               (:pointer 2
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2295 2320]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2242 2321])
+                    ("protected" label nil (reparse-symbol classsubparts) [2329 2339])
+                    ("db" variable
+                       (:pointer 1
+                        :type ("DB" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2344 2351])
+                    ("private" label nil (reparse-symbol classsubparts) [2404 2412])
+                    ("DATABASE" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("obj" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DATABASE" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2425 2445]))                          
+                        :type ("DATABASE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2416 2446])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DATABASE" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2491 2508]))                          
+                        :type ("DATABASE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2471 2509]))                  
+                :type "class")
+                nil [1892 2556]))          
+    :file "database_base.h"
+    :pointmax 2593
+    :fsize 2592
+    :lastmodtime '(21907 59823 709667 728000)
+    :unmatched-syntax '((symbol 2536 . 2553) (number 2041 . 2042) (punctuation 2039 . 2040))
+    :lexical-table 
+        '(("DATABASE_BASE_H")
+          )
+
+    )
+   (semanticdb-table "db_base.h"
+    :file "db_base.h"
+    :fsize 14012
+    :lastmodtime '(21907 59823 709667 728000)
+    )
+   (semanticdb-table "database_base.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("DEBUG_LOCAL_ENABLE" variable (:constant-flag t) nil [987 1005])
+            ("ble_debug.h" include nil nil [1006 1028])
+            ("database_base.h" include nil nil [1030 1056])
+            ("DATABASE" function
+               (:constructor-flag t
+                :parent "DATABASE"
+                :arguments 
+                  ( ("servicelist_path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1877 1906])
+                    ("eventlist_path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1907 1934])
+                    ("connection_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1935 1963])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("DATABASE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1964 1981]))                  
+                :type ("DATABASE" type (:type "class") nil nil))
+                nil [1858 2209])
+            ("DATABASE" function
+               (:destructor-flag t
+                :parent "DATABASE"
+                :type "void")
+                nil [2211 2369])
+            ("open" function
+               (:parent "DATABASE"
+                :type "bool")
+                nil [2681 2899])
+            ("check_version_number" function
+               (:parent "DATABASE"
+                :arguments 
+                  ( ("out_version_db" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3616 3636])
+                    ("out_version_code" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3637 3659]))                  
+                :type "int")
+                nil [3579 3950])
+            ("get_pathnames" function
+               (:parent "DATABASE"
+                :arguments 
+                  ( ("db_pathname" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4457 4482])
+                    ("eb_pathname" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4483 4508]))                  
+                :type "bool")
+                nil [4427 4744]))          
+    :file "database_base.cpp"
+    :pointmax 4747
+    :fsize 4746
+    :lastmodtime '(21907 59823 708667 734000)
+    :unmatched-syntax '((semantic-list 1568 . 1578) (symbol 1551 . 1568))
+    :lexical-table 
+        '(("DEBUG_LOCAL_ENABLE")
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!TCR!src!pace!middleware!ble2!framework!database!base!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

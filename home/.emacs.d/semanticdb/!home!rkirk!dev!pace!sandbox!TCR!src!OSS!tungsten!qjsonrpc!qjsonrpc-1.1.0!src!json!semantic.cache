@@ -1,0 +1,2369 @@
+;; Object json/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "json/"
+  :tables (list 
+   (semanticdb-table "qjson_export.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QJSON_EXPORT_H" variable (:constant-flag t) nil [701 715])
+            ("QJSON_EXPORT" variable (:constant-flag t) nil [885 897]))          
+    :file "qjson_export.h"
+    :pointmax 913
+    :fsize 912
+    :lastmodtime '(21730 8708 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("QJSON_EXPORT_H")
+          ("QJSON_EXPORT")
+          )
+
+    )
+   (semanticdb-table "qjson_p.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QJSON_P_H" variable (:constant-flag t) nil [1623 1632])
+            ("qjsonobject.h" include nil nil [1880 1904])
+            ("qjsonvalue.h" include nil nil [1905 1928])
+            ("qjsondocument.h" include nil nil [1929 1955])
+            ("qjsonarray.h" include nil nil [1956 1979])
+            ("qatomic.h" include (:system-flag t) nil [1981 2001])
+            ("qstring.h" include (:system-flag t) nil [2002 2022])
+            ("qendian.h" include (:system-flag t) nil [2023 2043])
+            ("qnumeric.h" include (:system-flag t) nil [2044 2065])
+            ("limits.h" include (:system-flag t) nil [2067 2086])
+            ("limits" include (:system-flag t) nil [2087 2104])
+            ("QJsonPrivate" type
+               (:members 
+                  ( ("Array" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [5022 5034])
+                    ("Object" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [5035 5048])
+                    ("Value" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [5049 5061])
+                    ("Entry" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [5062 5074])
+                    ("q_littleendian" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [5120 5127])
+                            ("val" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5132 5138])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("i" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5171 5175]))                                  
+                                :type ("q_littleendian" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5144 5219])
+                            ("T" function (:type "int") (reparse-symbol classsubparts) [5233 5277])
+                            ("==" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("i" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5300 5304]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5283 5344])
+                            ("!=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("i" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5366 5370]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5349 5410])
+                            ("==" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("i" variable (:type ("q_littleendian" type
+                                         (:template-specifier 
+                                            ( ("T" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [5432 5452]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5415 5477])
+                            ("!=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("i" variable (:type ("q_littleendian" type
+                                         (:template-specifier 
+                                            ( ("T" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [5499 5519]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5482 5544])
+                            ("<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("i" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5565 5569]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5549 5608])
+                            (">" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("i" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5629 5633]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5613 5672])
+                            ("<=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("i" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5694 5698]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5677 5738])
+                            (">=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("i" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5760 5764]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5743 5804])
+                            ("+=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("i" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5837 5841]))                                  
+                                :type ("q_littleendian" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5809 5930]))                          )
+                        (reparse-symbol namespacesubparts) [5076 5933])
+                    ("qle_short" type
+                       (:typedef ("q_littleendian" type
+                             (:template-specifier 
+                                ( ("short" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "q_littleendian"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [5935 5975])
+                    ("qle_ushort" type
+                       (:typedef ("q_littleendian" type
+                             (:template-specifier 
+                                ( ("unsigned short" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "q_littleendian"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [5976 6026])
+                    ("qle_int" type
+                       (:typedef ("q_littleendian" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "q_littleendian"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [6027 6063])
+                    ("qle_uint" type
+                       (:typedef ("q_littleendian" type
+                             (:template-specifier 
+                                ( ("unsigned int" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "q_littleendian"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [6064 6110])
+                    ("qle_bitfield" type
+                       (:template 
+                          ( ("int" type nil nil nil)
+                            ("int" type nil nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [6162 6169])
+                            ("val" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6174 6183])
+                            ("" type
+                               (:members 
+                                  ( ("mask" variable
+                                       (:constant-flag t
+                                        :default-value (6211 6230)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6204 6230])
+                                    ("pos" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6234 6243]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [6189 6244])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("t" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6266 6273]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6250 6399])
+                            ("uint" function (:type "int") (reparse-symbol classsubparts) [6413 6530])
+                            ("!" function
+                               (:operator-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6535 6599])
+                            ("==" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("t" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6622 6629]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6605 6658])
+                            ("!=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("t" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6680 6687]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6663 6716])
+                            ("<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("t" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6737 6744]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6721 6772])
+                            (">" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("t" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6793 6800]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6777 6828])
+                            ("<=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("t" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6850 6857]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6833 6886])
+                            (">=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("t" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6908 6915]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6891 6944])
+                            ("+=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("i" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6975 6982]))                                  
+                                :type ("qle_bitfield" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6949 7047])
+                            ("-=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("i" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7078 7085]))                                  
+                                :type ("qle_bitfield" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7052 7150]))                          )
+                        (reparse-symbol namespacesubparts) [6112 7153])
+                    ("qle_signedbitfield" type
+                       (:template 
+                          ( ("int" type nil nil nil)
+                            ("int" type nil nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [7211 7218])
+                            ("val" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7223 7232])
+                            ("" type
+                               (:members 
+                                  ( ("mask" variable
+                                       (:constant-flag t
+                                        :default-value (7260 7279)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7253 7279])
+                                    ("pos" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7283 7292]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [7238 7293])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("t" variable (:type "int") (reparse-symbol arg-sub-list) [7315 7321]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7299 7447])
+                            ("!" function
+                               (:operator-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7620 7683])
+                            ("==" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("t" variable (:type "int") (reparse-symbol arg-sub-list) [7706 7712]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7689 7740])
+                            ("!=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("t" variable (:type "int") (reparse-symbol arg-sub-list) [7762 7768]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7745 7796])
+                            ("<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("t" variable (:type "int") (reparse-symbol arg-sub-list) [7817 7823]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7801 7850])
+                            (">" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("t" variable (:type "int") (reparse-symbol arg-sub-list) [7871 7877]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7855 7904])
+                            ("<=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("t" variable (:type "int") (reparse-symbol arg-sub-list) [7926 7932]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7909 7960])
+                            (">=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("t" variable (:type "int") (reparse-symbol arg-sub-list) [7982 7988]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7965 8016])
+                            ("+=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [8053 8059]))                                  
+                                :type ("qle_signedbitfield" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8021 8123])
+                            ("-=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [8160 8166]))                                  
+                                :type ("qle_signedbitfield" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8128 8230]))                          )
+                        (reparse-symbol namespacesubparts) [7155 8233])
+                    ("offset" type
+                       (:typedef ("qle_uint" type (:type "class") nil nil)
+                        :superclasses "qle_uint"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [8235 8259])
+                    ("alignedSize" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("size" variable (:type "int") (reparse-symbol arg-sub-list) [8333 8342]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [8310 8370])
+                    ("useCompressed" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8405 8422]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [8372 8679])
+                    ("qStringSize" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("string" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8711 8733])
+                            ("compress" variable (:type "bool") (reparse-symbol arg-sub-list) [8734 8748]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [8681 8847])
+                    ("compressedNumber" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("d" variable (:type "double") (reparse-symbol arg-sub-list) [8940 8949]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [8905 9591])
+                    ("Latin1String" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [9593 9612])
+                    ("String" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [9629 9636])
+                            ("String" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("data" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [9648 9665]))                                  
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9641 9687])
+                            ("Data" type
+                               (:members 
+                                  ( ("length" variable (:type ("qle_int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9715 9730])
+                                    ("utf16" variable
+                                       (:dereference 1
+                                        :type ("qle_ushort" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9739 9759]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [9693 9766])
+                            ("d" variable
+                               (:pointer 1
+                                :type ("Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9772 9780])
+                            ("=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9811 9830]))                                  
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9786 10230])
+                            ("==" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10260 10279]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10236 10609])
+                            ("!=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10638 10657]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10614 10705])
+                            (">=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10734 10753]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10710 10816])
+                            ("<" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Latin1String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10844 10868]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10822 10875])
+                            (">=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Latin1String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10903 10927]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10880 10962])
+                            ("==" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Latin1String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10991 11015]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10967 11022])
+                            ("==" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11052 11070]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11028 11224])
+                            ("<" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11251 11271]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11229 11278])
+                            (">=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11307 11327]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11283 11362])
+                            ("toString" function
+                               (:typemodifiers ("inline")
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11368 11708]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [9614 11712])
+                    ("Latin1String" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [11735 11742])
+                            ("Latin1String" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("data" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [11760 11777]))                                  
+                                :type ("Latin1String" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11747 11799])
+                            ("Data" type
+                               (:members 
+                                  ( ("length" variable (:type ("qle_short" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11827 11844])
+                                    ("latin1" variable
+                                       (:dereference 1
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [11853 11868]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [11805 11875])
+                            ("d" variable
+                               (:pointer 1
+                                :type ("Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11880 11888])
+                            ("=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11925 11944]))                                  
+                                :type ("Latin1String" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11894 12238])
+                            ("==" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12268 12287]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12244 12425])
+                            ("!=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12454 12473]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12430 12521])
+                            (">=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12550 12569]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12526 12709])
+                            ("==" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Latin1String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12739 12763]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12715 12857])
+                            (">=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Latin1String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12886 12910]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12862 13116])
+                            ("<" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13143 13161]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [13121 13606])
+                            ("==" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13635 13653]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [13611 13698])
+                            (">=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13727 13745]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [13703 13790])
+                            ("toString" function
+                               (:typemodifiers ("inline")
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13796 13893]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [11714 13896])
+                    ("==" function
+                       (:operator-flag t
+                        :parent "String"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Latin1String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13930 13954]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [13898 14277])
+                    ("<" function
+                       (:operator-flag t
+                        :parent "String"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14310 14330]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [14279 14621])
+                    ("<" function
+                       (:operator-flag t
+                        :parent "String"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Latin1String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14653 14677]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [14623 15066])
+                    ("copyString" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("dest" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [15098 15109])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15110 15129])
+                            ("compress" variable (:type "bool") (reparse-symbol arg-sub-list) [15130 15144]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [15068 15295])
+                    ("Base" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [15906 15913])
+                            ("size" variable (:type ("qle_uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15918 15932])
+                            ("" type
+                               (:members 
+                                  ( ("_dummy" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15953 15965])
+                                    ("is_object" variable (:type ("qle_bitfield" type
+                                         (:template-specifier (("0") ("1"))
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [15974 16003])
+                                    ("length" variable (:type ("qle_bitfield" type
+                                         (:template-specifier (("1") ("31"))
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [16012 16039]))                                  
+                                :type "union")
+                                (reparse-symbol classsubparts) [15937 16046])
+                            ("tableOffset" variable (:type ("offset" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16051 16070])
+                            ("isObject" function
+                               (:typemodifiers ("inline")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [16104 16154])
+                            ("isArray" function
+                               (:typemodifiers ("inline")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [16159 16210])
+                            ("table" function
+                               (:pointer 1
+                                :typemodifiers ("inline")
+                                :type ("offset" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16216 16299])
+                            ("reserveSpace" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("dataSize" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16322 16336])
+                                    ("posInTable" variable (:type "int") (reparse-symbol arg-sub-list) [16337 16352])
+                                    ("numItems" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16353 16367])
+                                    ("replace" variable (:type "bool") (reparse-symbol arg-sub-list) [16368 16381]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [16305 16382])
+                            ("removeItems" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [16404 16412])
+                                    ("numItems" variable (:type "int") (reparse-symbol arg-sub-list) [16413 16426]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [16387 16427]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [15893 16430])
+                    ("Object" type
+                       (:superclasses 
+                          ( ("Base" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [16461 16468])
+                            ("entryAt" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [16488 16494]))                                  
+                                :type ("Entry" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16473 16579])
+                            ("indexOf" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16596 16615])
+                                    ("exists" variable
+                                       (:pointer 1
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [16616 16629]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [16584 16630])
+                            ("isValid" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [16636 16657]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [16432 16660])
+                    ("Array" type
+                       (:superclasses 
+                          ( ("Base" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [16691 16698])
+                            ("at" function
+                               (:prototype-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [16719 16725]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16703 16732])
+                            ("[]" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [16763 16769]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16737 16770])
+                            ("isValid" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [16776 16797]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [16663 16800])
+                    ("Value" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [16817 16824])
+                            ("" type
+                               (:members 
+                                  ( ("MaxSize" variable
+                                       (:constant-flag t
+                                        :default-value (16854 16865)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [16844 16865]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [16829 16872])
+                            ("" type
+                               (:members 
+                                  ( ("_dummy" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16893 16905])
+                                    ("type" variable (:type ("qle_bitfield" type
+                                         (:template-specifier (("0") ("3"))
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [16914 16938])
+                                    ("latinOrIntValue" variable (:type ("qle_bitfield" type
+                                         (:template-specifier (("3") ("1"))
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [16947 16982])
+                                    ("latinKey" variable (:type ("qle_bitfield" type
+                                         (:template-specifier (("4") ("1"))
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [16991 17019])
+                                    ("value" variable (:type ("qle_bitfield" type
+                                         (:template-specifier (("5") ("27"))
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [17028 17054])
+                                    ("int_value" variable (:type ("qle_signedbitfield" type
+                                         (:template-specifier (("5") ("27"))
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [17063 17099]))                                  
+                                :type "union")
+                                (reparse-symbol classsubparts) [16877 17106])
+                            ("data" function
+                               (:pointer 1
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("b" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Base" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17130 17144]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [17112 17182])
+                            ("usedStorage" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("b" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Base" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17203 17217]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [17187 17224])
+                            ("toBoolean" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [17230 17253])
+                            ("toDouble" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("b" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Base" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17274 17288]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [17258 17295])
+                            ("toString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("b" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Base" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17317 17331]))                                  
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17300 17338])
+                            ("asString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("b" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Base" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17359 17373]))                                  
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17343 17380])
+                            ("asLatin1String" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("b" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Base" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17413 17427]))                                  
+                                :type ("Latin1String" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17385 17434])
+                            ("base" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("b" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Base" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17450 17464]))                                  
+                                :type ("Base" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17439 17471])
+                            ("isValid" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("b" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Base" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17490 17504]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [17477 17511])
+                            ("requiredStorage" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :type ("QJsonValue" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17544 17558])
+                                    ("compressed" variable
+                                       (:pointer 1
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [17559 17576]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [17517 17577])
+                            ("valueToStore" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QJsonValue" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17607 17627])
+                                    ("offset" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17628 17640]))                                  
+                                :type ("uint" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17582 17641])
+                            ("copyData" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QJsonValue" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17667 17687])
+                                    ("dest" variable
+                                       (:pointer 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [17688 17699])
+                                    ("compressed" variable (:type "bool") (reparse-symbol arg-sub-list) [17700 17716]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [17646 17717]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [16803 17720])
+                    ("at" function
+                       (:parent "Array"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [17745 17751]))                          
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [17722 17798])
+                    ("[]" function
+                       (:operator-flag t
+                        :parent "Array"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [17833 17839]))                          
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [17800 17880])
+                    ("Entry" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [17898 17905])
+                            ("value" variable (:type ("Value" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17910 17922])
+                            ("size" function (:type "int") (reparse-symbol classsubparts) [17969 18297])
+                            ("usedStorage" function
+                               (:arguments 
+                                  ( ("b" variable
+                                       (:pointer 1
+                                        :type ("Base" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18319 18327]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [18303 18387])
+                            ("shallowKey" function (:type ("String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18393 18524])
+                            ("shallowLatin1Key" function (:type ("Latin1String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18529 18677])
+                            ("key" function (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18682 18843])
+                            ("==" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18866 18885]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [18849 18892])
+                            ("!=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18921 18940]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [18897 18976])
+                            (">=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19005 19024]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [18981 19031])
+                            ("==" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Entry" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19054 19073]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [19037 19080])
+                            (">=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Entry" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19102 19121]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [19085 19128]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [17884 19131])
+                    (">=" function
+                       (:operator-flag t
+                        :parent "Entry"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19164 19183]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [19133 19308])
+                    ("<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19333 19352])
+                            ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Entry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19353 19368]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [19310 19389])
+                    ("Header" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [19407 19414])
+                            ("tag" variable (:type ("qle_uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19419 19432])
+                            ("version" variable (:type ("qle_uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19447 19464])
+                            ("root" function
+                               (:pointer 1
+                                :type ("Base" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [19474 19517]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [19392 19520])
+                    ("toBoolean" function
+                       (:parent "Value"
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [19523 19626])
+                    ("toDouble" function
+                       (:parent "Value"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("b" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19658 19672]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [19628 19910])
+                    ("asString" function
+                       (:parent "Value"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("b" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19942 19956]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [19912 20056])
+                    ("asLatin1String" function
+                       (:parent "Value"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("b" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20100 20114]))                          
+                        :type ("Latin1String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [20058 20219])
+                    ("toString" function
+                       (:parent "Value"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("b" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20252 20266]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [20221 20394])
+                    ("base" function
+                       (:pointer 1
+                        :parent "Value"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("b" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20421 20435]))                          
+                        :type ("Base" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [20396 20562])
+                    ("Data" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [20577 20584])
+                            ("Validation" type
+                               (:members 
+                                  ( ("Unchecked" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [20615 20625])
+                                    ("Validated" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [20634 20644])
+                                    ("Invalid" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [20653 20666]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [20589 20667])
+                            ("ref" variable (:type ("QAtomicInt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20673 20688])
+                            ("alloc" variable (:type "int") (reparse-symbol classsubparts) [20693 20703])
+                            ("" type
+                               (:members 
+                                  ( ("rawData" variable
+                                       (:pointer 1
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [20724 20738])
+                                    ("header" variable
+                                       (:pointer 1
+                                        :type ("Header" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [20747 20762]))                                  
+                                :type "union")
+                                (reparse-symbol classsubparts) [20708 20769])
+                            ("compactionCounter" variable
+                               (:suffix ":31"
+                                :type ("uint" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20774 20802])
+                            ("ownsData" variable
+                               (:suffix ":1"
+                                :type ("uint" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20807 20825])
+                            ("Data" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("raw" variable
+                                       (:pointer 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [20843 20853])
+                                    ("a" variable (:type "int") (reparse-symbol arg-sub-list) [20854 20860]))                                  
+                                :type ("Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20831 20943])
+                            ("Data" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("reserved" variable (:type "int") (reparse-symbol arg-sub-list) [20960 20973])
+                                    ("valueType" variable (:type ("QJsonValue::Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20974 21001]))                                  
+                                :type ("Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20948 21573])
+                            ("Data" function
+                               (:destructor-flag t
+                                :typemodifiers ("inline")
+                                :type "void")
+                                (reparse-symbol classsubparts) [21578 21629])
+                            ("offsetOf" function
+                               (:arguments 
+                                  ( ("ptr" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [21649 21665]))                                  
+                                :type ("uint" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [21635 21715])
+                            ("toObject" function
+                               (:arguments 
+                                  ( ("o" variable
+                                       (:pointer 1
+                                        :type ("Object" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21742 21752]))                                  
+                                :type ("QJsonObject" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [21721 21827])
+                            ("toArray" function
+                               (:arguments 
+                                  ( ("a" variable
+                                       (:pointer 1
+                                        :type ("Array" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21852 21861]))                                  
+                                :type ("QJsonArray" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [21833 21935])
+                            ("clone" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("b" variable
+                                       (:pointer 1
+                                        :type ("Base" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21953 21961])
+                                    ("reserve" variable (:type "int") (reparse-symbol arg-sub-list) [21962 21975]))                                  
+                                :type ("Data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [21941 22644])
+                            ("compact" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [22650 22665])
+                            ("valid" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [22670 22689])
+                            ("private" label nil (reparse-symbol classsubparts) [22691 22699]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [20564 22727]))                  
+                :type "namespace")
+                nil [4996 22730]))          
+    :file "qjson_p.h"
+    :pointmax 22770
+    :fsize 22769
+    :lastmodtime '(21730 8708 0 0)
+    :unmatched-syntax '((symbol 22732 . 22748) (semantic-list 22718 . 22724) (symbol 22704 . 22718) (number 21976 . 21977) (punctuation 21974 . 21975) (semantic-list 7473 . 7615) (CONST 7467 . 7472) (semantic-list 7464 . 7466) (INT 7461 . 7464) (OPERATOR 7452 . 7460) (punctuation 7281 . 7282) (punctuation 7280 . 7281) (punctuation 7281 . 7282) (punctuation 7280 . 7281) (OPERATOR 6404 . 6412) (punctuation 6232 . 6233) (punctuation 6231 . 6232) (punctuation 6232 . 6233) (punctuation 6231 . 6232) (OPERATOR 5224 . 5232) (symbol 2106 . 2124))
+    :lexical-table 
+        '(("QJSON_P_H")
+          )
+
+    )
+   (semanticdb-table "qjsonobject.h"
+    :file "qjsonobject.h"
+    :fsize 8686
+    :lastmodtime '(21730 8708 0 0)
+    )
+   (semanticdb-table "qjsonvalue.h"
+    :file "qjsonvalue.h"
+    :fsize 7446
+    :lastmodtime '(21730 8708 0 0)
+    )
+   (semanticdb-table "qjsondocument.h"
+    :file "qjsondocument.h"
+    :fsize 4479
+    :lastmodtime '(21730 8708 0 0)
+    )
+   (semanticdb-table "qjsonarray.h"
+    :file "qjsonarray.h"
+    :fsize 10153
+    :lastmodtime '(21730 8708 0 0)
+    )
+   (semanticdb-table "qjson.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("qjson_p.h" include nil nil [1597 1617])
+            ("qalgorithms.h" include (:system-flag t) nil [1618 1642])
+            ("QJsonPrivate" type
+               (:members 
+                  ( ("Q_TO_LITTLE_ENDIAN" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1734 1752])
+                    ("emptyArray" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("Base" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1900 1986])
+                    ("emptyObject" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("Base" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1987 2074])
+                    ("compact" function
+                       (:parent "Data"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2077 4260])
+                    ("valid" function
+                       (:parent "Data"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [4262 4603])
+                    ("reserveSpace" function
+                       (:parent "Base"
+                        :arguments 
+                          ( ("dataSize" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4629 4643])
+                            ("posInTable" variable (:type "int") (reparse-symbol arg-sub-list) [4644 4659])
+                            ("numItems" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4660 4674])
+                            ("replace" variable (:type "bool") (reparse-symbol arg-sub-list) [4675 4688]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [4606 5585])
+                    ("removeItems" function
+                       (:parent "Base"
+                        :arguments 
+                          ( ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [5610 5618])
+                            ("numItems" variable (:type "int") (reparse-symbol arg-sub-list) [5619 5632]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5587 5844])
+                    ("indexOf" function
+                       (:parent "Object"
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5866 5885])
+                            ("exists" variable
+                               (:pointer 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [5886 5899]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [5846 6311])
+                    ("isValid" function
+                       (:parent "Object"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [6313 6795])
+                    ("isValid" function
+                       (:parent "Array"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [6799 7028])
+                    ("==" function
+                       (:operator-flag t
+                        :parent "Entry"
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7055 7074]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [7031 7199])
+                    ("==" function
+                       (:operator-flag t
+                        :parent "Entry"
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Entry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7225 7244]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [7201 7587])
+                    (">=" function
+                       (:operator-flag t
+                        :parent "Entry"
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Entry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7613 7632]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [7589 7975])
+                    ("usedStorage" function
+                       (:parent "Value"
+                        :arguments 
+                          ( ("b" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8001 8015]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [7978 8658])
+                    ("isValid" function
+                       (:parent "Value"
+                        :arguments 
+                          ( ("b" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8680 8694]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [8660 9505])
+                    ("requiredStorage" function
+                       (:parent "Value"
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :type ("QJsonValue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9556 9570])
+                            ("compressed" variable
+                               (:pointer 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [9571 9588]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [9529 10436])
+                    ("valueToStore" function
+                       (:parent "Value"
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QJsonValue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10485 10505])
+                            ("offset" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10506 10518]))                          
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10460 10955])
+                    ("copyData" function
+                       (:parent "Value"
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QJsonValue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11000 11020])
+                            ("dest" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [11021 11032])
+                            ("compressed" variable (:type "bool") (reparse-symbol arg-sub-list) [11033 11049]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10979 11631]))                  
+                :type "namespace")
+                nil [1664 11634]))          
+    :file "qjson.cpp"
+    :pointmax 11679
+    :fsize 11678
+    :lastmodtime '(21730 8708 0 0)
+    :unmatched-syntax '((symbol 11662 . 11678) (symbol 1644 . 1662))
+    :lexical-table 
+        '(("Q_TO_LITTLE_ENDIAN" (spp-arg-list ("x") 1752 . 1755) . ((semantic-list "(x)" 1756 . 1759)))
+          )
+
+    )
+   (semanticdb-table "qjsonarray.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("qjsonobject.h" include (:system-flag t) nil [1597 1621])
+            ("qjsonvalue.h" include (:system-flag t) nil [1622 1645])
+            ("qjsonarray.h" include (:system-flag t) nil [1646 1669])
+            ("qstringlist.h" include (:system-flag t) nil [1670 1694])
+            ("qvariant.h" include (:system-flag t) nil [1695 1716])
+            ("qdebug.h" include (:system-flag t) nil [1717 1736])
+            ("qjsonwriter_p.h" include nil nil [1738 1764])
+            ("qjson_p.h" include nil nil [1765 1785])
+            ("QJsonArray" function
+               (:constructor-flag t
+                :parent "QJsonArray"
+                :type ("QT_BEGIN_NAMESPACE" type (:type "class") nil nil))
+                nil [1787 3632])
+            ("QJsonArray" function
+               (:constructor-flag t
+                :parent "QJsonArray"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("QJsonPrivate::Data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3997 4022])
+                    ("array" variable
+                       (:pointer 1
+                        :type ("QJsonPrivate::Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4023 4050]))                  
+                :type ("QJsonArray" type (:type "class") nil nil))
+                nil [3974 4137])
+            ("initialize" function
+               (:parent "QJsonArray"
+                :type "void")
+                nil [4416 4471])
+            ("QJsonArray" function
+               (:destructor-flag t
+                :parent "QJsonArray"
+                :type "void")
+                nil [4504 4581])
+            ("QJsonArray" function
+               (:constructor-flag t
+                :parent "QJsonArray"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QJsonArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4758 4782]))                  
+                :type ("QJsonArray" type (:type "class") nil nil))
+                nil [4735 4853])
+            ("=" function
+               (:operator-flag t
+                :parent "QJsonArray"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QJsonArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4934 4958]))                  
+                :type ("QJsonArray" type (:type "class") nil nil))
+                nil [4899 5146])
+            ("fromStringList" function
+               (:parent "QJsonArray"
+                :arguments 
+                  ( ("list" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QStringList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5977 6001]))                  
+                :type ("QJsonArray" type (:type "class") nil nil))
+                nil [5939 6174])
+            ("fromVariantList" function
+               (:parent "QJsonArray"
+                :arguments 
+                  ( ("list" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QVariantList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6400 6425]))                  
+                :type ("QJsonArray" type (:type "class") nil nil))
+                nil [6361 6612])
+            ("toVariantList" function
+               (:parent "QJsonArray"
+                :type ("QVariantList" type (:type "class") nil nil))
+                nil [6696 6920])
+            ("size" function
+               (:parent "QJsonArray"
+                :type "int")
+                nil [6985 7075])
+            ("isEmpty" function
+               (:parent "QJsonArray"
+                :type "bool")
+                nil [7257 7350])
+            ("at" function
+               (:parent "QJsonArray"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [7523 7529]))                  
+                :type ("QJsonValue" type (:type "class") nil nil))
+                nil [7497 7673])
+            ("first" function
+               (:parent "QJsonArray"
+                :type ("QJsonValue" type (:type "class") nil nil))
+                nil [7769 7827])
+            ("last" function
+               (:parent "QJsonArray"
+                :type ("QJsonValue" type (:type "class") nil nil))
+                nil [7932 8011])
+            ("prepend" function
+               (:parent "QJsonArray"
+                :arguments 
+                  ( ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QJsonValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8212 8236]))                  
+                :type "void")
+                nil [8187 8262])
+            ("append" function
+               (:parent "QJsonArray"
+                :arguments 
+                  ( ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QJsonValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8371 8395]))                  
+                :type "void")
+                nil [8347 8442])
+            ("removeAt" function
+               (:parent "QJsonArray"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [8635 8641]))                  
+                :type "void")
+                nil [8609 8881])
+            ("takeAt" function
+               (:parent "QJsonArray"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [9753 9759]))                  
+                :type ("QJsonValue" type (:type "class") nil nil))
+                nil [9723 9935])
+            ("insert" function
+               (:parent "QJsonArray"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [10196 10202])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QJsonValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10203 10227]))                  
+                :type "void")
+                nil [10172 10984])
+            ("replace" function
+               (:parent "QJsonArray"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [11638 11644])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QJsonValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11645 11669]))                  
+                :type "void")
+                nil [11613 12527])
+            ("contains" function
+               (:parent "QJsonArray"
+                :arguments 
+                  ( ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QJsonValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12669 12693]))                  
+                :type "bool")
+                nil [12643 12819])
+            ("[]" function
+               (:operator-flag t
+                :parent "QJsonArray"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [13385 13391]))                  
+                :type ("QJsonValueRef" type (:type "class") nil nil))
+                nil [13347 13479])
+            ("[]" function
+               (:operator-flag t
+                :parent "QJsonArray"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [13556 13562]))                  
+                :type ("QJsonValue" type (:type "class") nil nil))
+                nil [13522 13590])
+            ("==" function
+               (:operator-flag t
+                :parent "QJsonArray"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QJsonArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13684 13708]))                  
+                :type "bool")
+                nil [13656 14097])
+            ("!=" function
+               (:operator-flag t
+                :parent "QJsonArray"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QJsonArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14195 14219]))                  
+                :type "bool")
+                nil [14167 14259])
+            ("detach" function
+               (:parent "QJsonArray"
+                :arguments 
+                  ( ("reserve" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30481 30494]))                  
+                :type "void")
+                nil [30457 31005])
+            ("compact" function
+               (:parent "QJsonArray"
+                :type "void")
+                nil [31029 31208])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("dbg" variable (:type ("QDebug" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31292 31303])
+                    ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QJsonArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31304 31324]))                  
+                :type ("QDebug" type (:type "class") nil nil))
+                nil [31274 31659]))          
+    :file "qjsonarray.cpp"
+    :pointmax 31686
+    :fsize 31685
+    :lastmodtime '(21730 8708 0 0)
+    :unmatched-syntax '((symbol 31668 . 31684))
+    )
+   (semanticdb-table "qjsonwriter_p.h"
+    :file "qjsonwriter_p.h"
+    :fsize 2240
+    :lastmodtime '(21730 8708 0 0)
+    )
+   (semanticdb-table "qjsonparser.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("qcoreapplication.h" include (:system-flag t) nil [1661 1690])
+            ("qdebug.h" include (:system-flag t) nil [1698 1717])
+            ("qjsonparser_p.h" include nil nil [1718 1744])
+            ("qjson_p.h" include nil nil [1745 1765])
+            ("BEGIN" variable (:constant-flag t) nil [2019 2024])
+            ("END" variable (:constant-flag t) nil [2056 2059])
+            ("DEBUG" variable (:constant-flag t) nil [2084 2089])
+            ("nestingLimit" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [2121 2158])
+            ("JSONERR_OK" variable (:constant-flag t) nil [2225 2235])
+            ("JSONERR_UNTERM_OBJ" variable (:constant-flag t) nil [2311 2329])
+            ("JSONERR_MISS_NSEP" variable (:constant-flag t) nil [2399 2416])
+            ("JSONERR_UNTERM_AR" variable (:constant-flag t) nil [2490 2507])
+            ("JSONERR_MISS_VSEP" variable (:constant-flag t) nil [2577 2594])
+            ("JSONERR_ILLEGAL_VAL" variable (:constant-flag t) nil [2669 2688])
+            ("JSONERR_END_OF_NUM" variable (:constant-flag t) nil [2751 2769])
+            ("JSONERR_ILLEGAL_NUM" variable (:constant-flag t) nil [2849 2868])
+            ("JSONERR_STR_ESC_SEQ" variable (:constant-flag t) nil [2932 2951])
+            ("JSONERR_STR_UTF8" variable (:constant-flag t) nil [3024 3040])
+            ("JSONERR_UTERM_STR" variable (:constant-flag t) nil [3112 3129])
+            ("JSONERR_MISS_OBJ" variable (:constant-flag t) nil [3200 3216])
+            ("JSONERR_DEEP_NEST" variable (:constant-flag t) nil [3300 3317])
+            ("JSONERR_DOC_LARGE" variable (:constant-flag t) nil [3395 3412])
+            ("JSONERR_GARBAGEEND" variable (:constant-flag t) nil [3482 3500])
+            ("errorString" function
+               (:parent "QJsonParseError"
+                :type ("QString" type (:type "class") nil nil))
+                nil [5701 7036])
+            ("QJsonPrivate" using (:type ("QJsonPrivate" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [7038 7067])
+            ("Parser" function
+               (:constructor-flag t
+                :parent "Parser"
+                :arguments 
+                  ( ("json" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7084 7101])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [7102 7113]))                  
+                :type ("Parser" type (:type "class") nil nil))
+                nil [7069 7261])
+            ("" type
+               (:members 
+                  ( ("Space" variable
+                       (:constant-flag t
+                        :default-value (7889 7893)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7881 7893])
+                    ("Tab" variable
+                       (:constant-flag t
+                        :default-value (7905 7909)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7899 7909])
+                    ("LineFeed" variable
+                       (:constant-flag t
+                        :default-value (7926 7930)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7915 7930])
+                    ("Return" variable
+                       (:constant-flag t
+                        :default-value (7945 7949)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7936 7949])
+                    ("BeginArray" variable
+                       (:constant-flag t
+                        :default-value (7968 7972)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7955 7972])
+                    ("BeginObject" variable
+                       (:constant-flag t
+                        :default-value (7992 7996)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7978 7996])
+                    ("EndArray" variable
+                       (:constant-flag t
+                        :default-value (8013 8017)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8002 8017])
+                    ("EndObject" variable
+                       (:constant-flag t
+                        :default-value (8035 8039)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8023 8039])
+                    ("NameSeparator" variable
+                       (:constant-flag t
+                        :default-value (8061 8065)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8045 8065])
+                    ("ValueSeparator" variable
+                       (:constant-flag t
+                        :default-value (8088 8092)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8071 8092])
+                    ("Quote" variable
+                       (:constant-flag t
+                        :default-value (8106 8110)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8098 8110]))                  
+                :type "enum")
+                nil [7870 8113])
+            ("eatBOM" function
+               (:parent "Parser"
+                :type "void")
+                nil [8115 8381])
+            ("eatSpace" function
+               (:parent "Parser"
+                :type "bool")
+                nil [8383 8667])
+            ("nextToken" function
+               (:parent "Parser"
+                :type "char")
+                nil [8669 9036])
+            ("parse" function
+               (:parent "Parser"
+                :arguments 
+                  ( ("error" variable
+                       (:pointer 1
+                        :type ("QJsonParseError" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9103 9126]))                  
+                :type ("QJsonDocument" type (:type "class") nil nil))
+                nil [9075 10439])
+            ("insert" function
+               (:parent "Parser::ParsedObject"
+                :arguments 
+                  ( ("offset" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10476 10488]))                  
+                :type "void")
+                nil [10442 11052])
+            ("parseObject" function
+               (:parent "Parser"
+                :type "bool")
+                nil [11141 12936])
+            ("parseMember" function
+               (:parent "Parser"
+                :arguments 
+                  ( ("baseOffset" variable (:type "int") (reparse-symbol arg-sub-list) [13010 13025]))                  
+                :type "bool")
+                nil [12985 13634])
+            ("parseArray" function
+               (:parent "Parser"
+                :type "bool")
+                nil [13713 15337])
+            ("parseValue" function
+               (:parent "Parser"
+                :arguments 
+                  ( ("val" variable
+                       (:pointer 1
+                        :type ("QJsonPrivate::Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15434 15459])
+                    ("baseOffset" variable (:type "int") (reparse-symbol arg-sub-list) [15460 15475]))                  
+                :type "bool")
+                nil [15410 18393])
+            ("parseNumber" function
+               (:parent "Parser"
+                :arguments 
+                  ( ("val" variable
+                       (:pointer 1
+                        :type ("QJsonPrivate::Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18837 18862])
+                    ("baseOffset" variable (:type "int") (reparse-symbol arg-sub-list) [18863 18878]))                  
+                :type "bool")
+                nil [18812 20732])
+            ("addHexDigit" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("digit" variable (:type "char") (reparse-symbol arg-sub-list) [21596 21607])
+                    ("result" variable
+                       (:pointer 1
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21608 21621]))                  
+                :type "bool")
+                nil [21565 21928])
+            ("scanEscapeSequence" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21968 21981])
+                    ("" variable (:type ("json" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21981 21986])
+                    ("end" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21987 22003])
+                    ("ch" variable
+                       (:pointer 1
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22004 22013]))                  
+                :type "bool")
+                nil [21930 22938])
+            ("isUnicodeNonCharacter" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("ucs4" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22981 22991]))                  
+                :type "bool")
+                nil [22940 23388])
+            ("scanUtf8Char" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [23422 23435])
+                    ("" variable (:type ("json" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23435 23440])
+                    ("end" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [23441 23457])
+                    ("result" variable
+                       (:pointer 1
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23458 23471]))                  
+                :type "bool")
+                nil [23390 24341])
+            ("parseString" function
+               (:parent "Parser"
+                :arguments 
+                  ( ("latin1" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [24368 24381]))                  
+                :type "bool")
+                nil [24343 27247]))          
+    :file "qjsonparser.cpp"
+    :pointmax 27266
+    :fsize 27265
+    :lastmodtime '(21730 8708 0 0)
+    :unmatched-syntax '((symbol 27249 . 27265) (punctuation 23434 . 23435) (punctuation 21980 . 21981) (symbol 2160 . 2178))
+    :lexical-table 
+        '(("END" . 
+              ((DO "do" 2060 . 2062) (semantic-list "{}" 2063 . 2065) (WHILE "while" 2066 . 2071) (semantic-list "(0)" 2072 . 2075)))
+          ("JSONERR_STR_UTF8" . ((symbol "QT_TRANSLATE_NOOP" 3044 . 3061) (semantic-list "(\"QJsonParseError\", \"invalid UTF8 string\")" 3061 . 3103)))
+          ("JSONERR_OK" . ((symbol "QT_TRANSLATE_NOOP" 2245 . 2262) (semantic-list "(\"QJsonParseError\", \"no error occurred\")" 2262 . 2302)))
+          ("JSONERR_UNTERM_AR" . ((symbol "QT_TRANSLATE_NOOP" 2510 . 2527) (semantic-list "(\"QJsonParseError\", \"unterminated array\")" 2527 . 2568)))
+          ("JSONERR_DEEP_NEST" . ((symbol "QT_TRANSLATE_NOOP" 3320 . 3337) (semantic-list "(\"QJsonParseError\", \"too deeply nested document\")" 3337 . 3386)))
+          ("JSONERR_UNTERM_OBJ" . ((symbol "QT_TRANSLATE_NOOP" 2331 . 2348) (semantic-list "(\"QJsonParseError\", \"unterminated object\")" 2348 . 2390)))
+          ("JSONERR_MISS_VSEP" . ((symbol "QT_TRANSLATE_NOOP" 2597 . 2614) (semantic-list "(\"QJsonParseError\", \"missing value separator\")" 2614 . 2660)))
+          ("JSONERR_ILLEGAL_VAL" . ((symbol "QT_TRANSLATE_NOOP" 2689 . 2706) (semantic-list "(\"QJsonParseError\", \"illegal value\")" 2706 . 2742)))
+          ("JSONERR_MISS_OBJ" . ((symbol "QT_TRANSLATE_NOOP" 3220 . 3237) (semantic-list "(\"QJsonParseError\", \"object is missing after a comma\")" 3237 . 3291)))
+          ("BEGIN" . 
+              ((IF "if" 2025 . 2027) (semantic-list "(1)" 2028 . 2031) (punctuation ";" 2032 . 2033) (ELSE "else" 2034 . 2038) (symbol "qDebug" 2039 . 2045) (semantic-list "()" 2045 . 2047)))
+          ("JSONERR_ILLEGAL_NUM" . ((symbol "QT_TRANSLATE_NOOP" 2869 . 2886) (semantic-list "(\"QJsonParseError\", \"illegal number\")" 2886 . 2923)))
+          ("JSONERR_DOC_LARGE" . ((symbol "QT_TRANSLATE_NOOP" 3415 . 3432) (semantic-list "(\"QJsonParseError\", \"too large document\")" 3432 . 3473)))
+          ("JSONERR_END_OF_NUM" . ((symbol "QT_TRANSLATE_NOOP" 2771 . 2788) (semantic-list "(\"QJsonParseError\", \"invalid termination by number\")" 2788 . 2840)))
+          ("DEBUG" . 
+              ((IF "if" 2090 . 2092) (semantic-list "(1)" 2093 . 2096) (punctuation ";" 2097 . 2098) (ELSE "else" 2099 . 2103) (symbol "qDebug" 2104 . 2110) (semantic-list "()" 2110 . 2112)))
+          ("JSONERR_MISS_NSEP" . ((symbol "QT_TRANSLATE_NOOP" 2419 . 2436) (semantic-list "(\"QJsonParseError\", \"missing name separator\")" 2436 . 2481)))
+          ("JSONERR_UTERM_STR" . ((symbol "QT_TRANSLATE_NOOP" 3132 . 3149) (semantic-list "(\"QJsonParseError\", \"unterminated string\")" 3149 . 3191)))
+          ("JSONERR_GARBAGEEND" . ((symbol "QT_TRANSLATE_NOOP" 3502 . 3519) (semantic-list "(\"QJsonParseError\", \"garbage at the end of the document\")" 3519 . 3576)))
+          ("JSONERR_STR_ESC_SEQ" . ((symbol "QT_TRANSLATE_NOOP" 2952 . 2969) (semantic-list "(\"QJsonParseError\", \"invalid escape sequence\")" 2969 . 3015)))
+          )
+
+    )
+   (semanticdb-table "qjsonparser_p.h"
+    :file "qjsonparser_p.h"
+    :fsize 3521
+    :lastmodtime '(21730 8708 0 0)
+    )
+   (semanticdb-table "qjsonwriter.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("qjsonwriter_p.h" include nil nil [1637 1663])
+            ("qjson_p.h" include nil nil [1664 1684])
+            ("QJsonPrivate" using (:type ("QJsonPrivate" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1706 1735])
+            ("objectContentToJson" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("o" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("QJsonPrivate::Object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1769 1799])
+                    ("json" variable
+                       (:reference 1
+                        :type ("QByteArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1800 1817])
+                    ("indent" variable (:type "int") (reparse-symbol arg-sub-list) [1818 1829])
+                    ("compact" variable (:type "bool") (reparse-symbol arg-sub-list) [1830 1843]))                  
+                :type "void")
+                nil [1737 1844])
+            ("arrayContentToJson" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("QJsonPrivate::Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1876 1905])
+                    ("json" variable
+                       (:reference 1
+                        :type ("QByteArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1906 1923])
+                    ("indent" variable (:type "int") (reparse-symbol arg-sub-list) [1924 1935])
+                    ("compact" variable (:type "bool") (reparse-symbol arg-sub-list) [1936 1949]))                  
+                :type "void")
+                nil [1845 1950])
+            ("isUnicodeNonCharacter" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("ucs4" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2100 2110]))                  
+                :type "bool")
+                nil [2059 2507])
+            ("hexdig" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("u" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2536 2543]))                  
+                :type ("uchar" type (:type "class") nil nil))
+                nil [2509 2595])
+            ("escapedString" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2629 2646]))                  
+                :type ("QByteArray" type (:type "class") nil nil))
+                nil [2597 5922])
+            ("valueToJson" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("QJsonPrivate::Base" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5948 5976])
+                    ("v" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QJsonPrivate::Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5977 6006])
+                    ("json" variable
+                       (:reference 1
+                        :type ("QByteArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6007 6024])
+                    ("indent" variable (:type "int") (reparse-symbol arg-sub-list) [6025 6036])
+                    ("compact" variable (:type "bool") (reparse-symbol arg-sub-list) [6037 6050]))                  
+                :type "void")
+                nil [5924 7326])
+            ("arrayContentToJson" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("QJsonPrivate::Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7359 7388])
+                    ("json" variable
+                       (:reference 1
+                        :type ("QByteArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7389 7406])
+                    ("indent" variable (:type "int") (reparse-symbol arg-sub-list) [7407 7418])
+                    ("compact" variable (:type "bool") (reparse-symbol arg-sub-list) [7419 7432]))                  
+                :type "void")
+                nil [7328 7807])
+            ("objectContentToJson" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("o" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("QJsonPrivate::Object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7842 7872])
+                    ("json" variable
+                       (:reference 1
+                        :type ("QByteArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7873 7890])
+                    ("indent" variable (:type "int") (reparse-symbol arg-sub-list) [7891 7902])
+                    ("compact" variable (:type "bool") (reparse-symbol arg-sub-list) [7903 7916]))                  
+                :type "void")
+                nil [7810 8443])
+            ("objectToJson" function
+               (:parent "Writer"
+                :arguments 
+                  ( ("o" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("QJsonPrivate::Object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8471 8501])
+                    ("json" variable
+                       (:reference 1
+                        :type ("QByteArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8502 8519])
+                    ("indent" variable (:type "int") (reparse-symbol arg-sub-list) [8520 8531])
+                    ("compact" variable (:type "bool") (reparse-symbol arg-sub-list) [8532 8545]))                  
+                :type "void")
+                nil [8445 8786])
+            ("arrayToJson" function
+               (:parent "Writer"
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("QJsonPrivate::Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8813 8842])
+                    ("json" variable
+                       (:reference 1
+                        :type ("QByteArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8843 8860])
+                    ("indent" variable (:type "int") (reparse-symbol arg-sub-list) [8861 8872])
+                    ("compact" variable (:type "bool") (reparse-symbol arg-sub-list) [8873 8886]))                  
+                :type "void")
+                nil [8788 9126]))          
+    :file "qjsonwriter.cpp"
+    :pointmax 9145
+    :fsize 9144
+    :lastmodtime '(21730 8708 0 0)
+    :unmatched-syntax '((symbol 9128 . 9144) (symbol 1686 . 1704))
+    )
+   (semanticdb-table "qjsondocument.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("qjsondocument.h" include nil nil [1597 1623])
+            ("qjsonobject.h" include nil nil [1624 1648])
+            ("qjsonvalue.h" include nil nil [1649 1672])
+            ("qjsonarray.h" include nil nil [1673 1696])
+            ("qstringlist.h" include (:system-flag t) nil [1697 1721])
+            ("qvariant.h" include (:system-flag t) nil [1722 1743])
+            ("qdebug.h" include (:system-flag t) nil [1744 1763])
+            ("qjsonwriter_p.h" include nil nil [1764 1790])
+            ("qjsonparser_p.h" include nil nil [1791 1817])
+            ("qjson_p.h" include nil nil [1818 1838])
+            ("QJsonDocument" function
+               (:constructor-flag t
+                :parent "QJsonDocument"
+                :type ("QT_BEGIN_NAMESPACE" type (:type "class") nil nil))
+                nil [1840 3086])
+            ("QJsonDocument" function
+               (:constructor-flag t
+                :parent "QJsonDocument"
+                :arguments 
+                  ( ("object" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QJsonObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3168 3194]))                  
+                :type ("QJsonDocument" type (:type "class") nil nil))
+                nil [3139 3232])
+            ("QJsonDocument" function
+               (:constructor-flag t
+                :parent "QJsonDocument"
+                :arguments 
+                  ( ("array" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QJsonArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3316 3340]))                  
+                :type ("QJsonDocument" type (:type "class") nil nil))
+                nil [3287 3376])
+            ("QJsonDocument" function
+               (:constructor-flag t
+                :parent "QJsonDocument"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("QJsonPrivate::Data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3429 3454]))                  
+                :type ("QJsonDocument" type (:type "class") nil nil))
+                nil [3400 3507])
+            ("QJsonDocument" function
+               (:destructor-flag t
+                :parent "QJsonDocument"
+                :type "void")
+                nil [3589 3672])
+            ("QJsonDocument" function
+               (:constructor-flag t
+                :parent "QJsonDocument"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QJsonDocument" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3755 3782]))                  
+                :type ("QJsonDocument" type (:type "class") nil nil))
+                nil [3726 3836])
+            ("=" function
+               (:operator-flag t
+                :parent "QJsonDocument"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QJsonDocument" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3982 4009]))                  
+                :type ("QJsonDocument" type (:type "class") nil nil))
+                nil [3941 4180])
+            ("fromRawData" function
+               (:parent "QJsonDocument"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5391 5408])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [5409 5418])
+                    ("validation" variable (:type ("DataValidation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5419 5445]))                  
+                :type ("QJsonDocument" type (:type "class") nil nil))
+                nil [5350 5845])
+            ("rawData" function
+               (:pointer 1
+                :parent "QJsonDocument"
+                :constant-flag t
+                :arguments 
+                  ( ("size" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6087 6097]))                  
+                :type "char")
+                nil [6052 6209])
+            ("fromBinaryData" function
+               (:parent "QJsonDocument"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QByteArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6549 6572])
+                    ("validation" variable (:type ("DataValidation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6573 6599]))                  
+                :type ("QJsonDocument" type (:type "class") nil nil))
+                nil [6505 7594])
+            ("fromVariant" function
+               (:parent "QJsonDocument"
+                :arguments 
+                  ( ("variant" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7856 7880]))                  
+                :type ("QJsonDocument" type (:type "class") nil nil))
+                nil [7815 8292])
+            ("toVariant" function
+               (:parent "QJsonDocument"
+                :type ("QVariant" type (:type "class") nil nil))
+                nil [8530 8865])
+            ("toJson" function
+               (:parent "QJsonDocument"
+                :type ("QByteArray" type (:type "class") nil nil))
+                nil [8979 9052])
+            ("toJson" function
+               (:parent "QJsonDocument"
+                :arguments 
+                  ( ("format" variable (:type ("JsonFormat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9843 9861]))                  
+                :type ("QByteArray" type (:type "class") nil nil))
+                nil [9810 10258])
+            ("fromJson" function
+               (:parent "QJsonDocument"
+                :arguments 
+                  ( ("json" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QByteArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10643 10666])
+                    ("error" variable
+                       (:pointer 1
+                        :type ("QJsonParseError" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10667 10690]))                  
+                :type ("QJsonDocument" type (:type "class") nil nil))
+                nil [10605 10792])
+            ("isEmpty" function
+               (:parent "QJsonDocument"
+                :type "bool")
+                nil [10864 10955])
+            ("toBinaryData" function
+               (:parent "QJsonDocument"
+                :type ("QByteArray" type (:type "class") nil nil))
+                nil [11340 11538])
+            ("isArray" function
+               (:parent "QJsonDocument"
+                :type "bool")
+                nil [11632 11805])
+            ("isObject" function
+               (:parent "QJsonDocument"
+                :type "bool")
+                nil [11900 12075])
+            ("object" function
+               (:parent "QJsonDocument"
+                :type ("QJsonObject" type (:type "class") nil nil))
+                nil [12250 12493])
+            ("array" function
+               (:parent "QJsonDocument"
+                :type ("QJsonArray" type (:type "class") nil nil))
+                nil [12666 12903])
+            ("setObject" function
+               (:parent "QJsonDocument"
+                :arguments 
+                  ( ("object" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QJsonObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13029 13055]))                  
+                :type "void")
+                nil [12999 13478])
+            ("setArray" function
+               (:parent "QJsonDocument"
+                :arguments 
+                  ( ("array" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QJsonArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13602 13626]))                  
+                :type "void")
+                nil [13573 14044])
+            ("==" function
+               (:operator-flag t
+                :parent "QJsonDocument"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QJsonDocument" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14157 14184]))                  
+                :type "bool")
+                nil [14126 14806])
+            ("isNull" function
+               (:parent "QJsonDocument"
+                :type "bool")
+                nil [15247 15306])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("dbg" variable (:type ("QDebug" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15389 15400])
+                    ("o" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QJsonDocument" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15401 15424]))                  
+                :type ("QDebug" type (:type "class") nil nil))
+                nil [15371 15987]))          
+    :file "qjsondocument.cpp"
+    :pointmax 16013
+    :fsize 16012
+    :lastmodtime '(21730 8708 0 0)
+    :unmatched-syntax '((symbol 15996 . 16012))
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!TCR!src!OSS!tungsten!qjsonrpc!qjsonrpc-1.1.0!src!json!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,376 @@
+;; Object public/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "public/"
+  :tables (list 
+   (semanticdb-table "nexus_base_types.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NEXUS_BASE_TYPES_H" variable (:constant-flag t) nil [5250 5268])
+            ("bstd_defs.h" include nil nil [5270 5292])
+            ("NEXUS_Error" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "unsigned int"
+                :typedef ("unsigned int"))
+                (reparse-symbol extern-c-contents) [5782 5811])
+            ("NEXUS_SUCCESS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5866 5879])
+            ("NEXUS_NOT_INITIALIZED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5932 5953])
+            ("NEXUS_INVALID_PARAMETER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6002 6025])
+            ("NEXUS_OUT_OF_SYSTEM_MEMORY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6067 6093])
+            ("NEXUS_OUT_OF_DEVICE_MEMORY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6152 6178])
+            ("NEXUS_TIMEOUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6239 6252])
+            ("NEXUS_OS_ERROR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6305 6319])
+            ("NEXUS_LEAKED_RESOURCE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6366 6387])
+            ("NEXUS_NOT_SUPPORTED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6478 6497])
+            ("NEXUS_UNKNOWN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6557 6570])
+            ("NEXUS_NOT_AVAILABLE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6609 6628])
+            ("NEXUS_P_ERR_ID_MASK" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6743 6762])
+            ("NEXUS_P_ERR_ID_SHIFT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6812 6832])
+            ("NEXUS_P_ERR_NUM_MASK" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6880 6900])
+            ("NEXUS_MAKE_ERR_CODE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7248 7267])
+            ("NEXUS_GET_ERR_NUM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7419 7436])
+            ("NEXUS_GET_ERR_ID" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7505 7521])
+            ("NEXUS_ModuleHandle" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_Module"
+                :pointer 1
+                :typedef ("NEXUS_Module" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [7782 7830])
+            ("NEXUS_Callback" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [7904 7953])
+            ("NEXUS_CallbackDesc" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_CallbackDesc"
+                :typedef ("NEXUS_CallbackDesc" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [8014 8270])
+            ("NEXUS_CallbackDesc" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("callback" variable (:type ("NEXUS_Callback" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8054 8078])
+                    ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [8106 8120])
+                    ("param" variable (:type "int") (reparse-symbol classsubparts) [8179 8189]))                  )
+                (reparse-symbol extern-c-contents) [8014 8270])
+            ("NEXUS_CALLBACKDESC_INITIALIZER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8280 8310])
+            ("NEXUS_CALLBACKDESC_INIT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8337 8360])
+            ("NEXUS_ModulePriority" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_ModulePriority"
+                :typedef ("NEXUS_ModulePriority" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [9020 10216])
+            ("NEXUS_ModulePriority" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_ModulePriority_eIdle" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9060 9087])
+                    ("NEXUS_ModulePriority_eLow" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9230 9256])
+                    ("NEXUS_ModulePriority_eDefault" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9332 9362])
+                    ("NEXUS_ModulePriority_eHigh" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9420 9447])
+                    ("NEXUS_ModulePriority_eIdleActiveStandby" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9572 9612])
+                    ("NEXUS_ModulePriority_eLowActiveStandby" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9801 9840])
+                    ("NEXUS_ModulePriority_eHighActiveStandby" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9962 10002])
+                    ("NEXUS_ModulePriority_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10167 10194]))                  )
+                (reparse-symbol extern-c-contents) [9020 10216])
+            ("NEXUS_ModuleSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_ModuleSettings"
+                :typedef ("NEXUS_ModuleSettings" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [10351 11002])
+            ("NEXUS_ModuleSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("priority" variable (:type ("NEXUS_ModulePriority" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10393 10423])
+                    ("dbgPrint" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [10476 10499])
+                    ("dbgModules" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [10631 10654])
+                    ("dbgPrintSize" variable (:type "int") (reparse-symbol classsubparts) [10740 10757])
+                    ("passthroughCallbacks" variable (:type "bool") (reparse-symbol classsubparts) [10850 10876]))                  )
+                (reparse-symbol extern-c-contents) [10351 11002])
+            ("NEXUS_ANY_ID" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11270 11282])
+            ("NEXUS_TristateEnable" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_TristateEnable"
+                :typedef ("NEXUS_TristateEnable" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [11356 11658])
+            ("NEXUS_TristateEnable" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_TristateEnable_eDisable" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11396 11426])
+                    ("NEXUS_TristateEnable_eEnable" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11472 11501])
+                    ("NEXUS_TristateEnable_eNotSet" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11547 11576])
+                    ("NEXUS_TristateEnable_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11609 11636]))                  )
+                (reparse-symbol extern-c-contents) [11356 11658])
+            ("NEXUS_HeapHandle" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_Heap"
+                :pointer 1
+                :typedef ("NEXUS_Heap" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [11993 12037])
+            ("NEXUS_MAX_IDS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12694 12707])
+            ("NEXUS_ClientResourceIdList" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_ClientResourceIdList"
+                :typedef ("NEXUS_ClientResourceIdList" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [12711 12908])
+            ("NEXUS_ClientResourceIdList" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("id" variable
+                       (:dereference 1
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [12759 12786])
+                    ("total" variable (:type "unsigned int") (reparse-symbol classsubparts) [12831 12846]))                  )
+                (reparse-symbol extern-c-contents) [12711 12908])
+            ("NEXUS_ClientResourceCount" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_ClientResourceCount"
+                :typedef ("NEXUS_ClientResourceCount" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [12909 13025])
+            ("NEXUS_ClientResourceCount" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("total" variable (:type "unsigned int") (reparse-symbol classsubparts) [12956 12971]))                  )
+                (reparse-symbol extern-c-contents) [12909 13025])
+            ("NEXUS_ClientResources" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_ClientResources"
+                :typedef ("NEXUS_ClientResources" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [13027 13620])
+            ("NEXUS_ClientResources" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("simpleAudioDecoder" variable (:type ("NEXUS_ClientResourceIdList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13070 13116])
+                    ("simpleVideoDecoder" variable (:type ("NEXUS_ClientResourceIdList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13121 13167])
+                    ("surfaceClient" variable (:type ("NEXUS_ClientResourceIdList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13172 13213])
+                    ("dma" variable (:type ("NEXUS_ClientResourceCount" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13223 13253])
+                    ("graphics2d" variable (:type ("NEXUS_ClientResourceCount" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13258 13295])
+                    ("graphicsv3d" variable (:type ("NEXUS_ClientResourceCount" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13300 13338])
+                    ("pictureDecoder" variable (:type ("NEXUS_ClientResourceCount" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13343 13384])
+                    ("playpump" variable (:type ("NEXUS_ClientResourceCount" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13389 13424])
+                    ("recpump" variable (:type ("NEXUS_ClientResourceCount" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13429 13463])
+                    ("simpleAudioPlayback" variable (:type ("NEXUS_ClientResourceCount" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13468 13514])
+                    ("stcChannel" variable (:type ("NEXUS_ClientResourceCount" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13519 13556])
+                    ("surface" variable (:type ("NEXUS_ClientResourceCount" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13561 13595]))                  )
+                (reparse-symbol extern-c-contents) [13027 13620])
+            ("NEXUS_ClientMode" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_ClientMode"
+                :typedef ("NEXUS_ClientMode" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [13770 14407])
+            ("NEXUS_ClientMode" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_ClientMode_eUnprotected" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13806 13836])
+                    ("NEXUS_ClientMode_eVerified" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13925 13952])
+                    ("NEXUS_ClientMode_eProtected" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14055 14083])
+                    ("NEXUS_ClientMode_eUntrusted" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14182 14210])
+                    ("NEXUS_ClientMode_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14366 14389]))                  )
+                (reparse-symbol extern-c-contents) [13770 14407])
+            ("NEXUS_MAX_HEAPS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14637 14652])
+            ("NEXUS_ClientConfiguration" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_ClientConfiguration"
+                :typedef ("NEXUS_ClientConfiguration" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [14724 15079])
+            ("NEXUS_ClientConfiguration" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mode" variable (:type ("NEXUS_ClientMode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14771 14793])
+                    ("heap" variable
+                       (:dereference 1
+                        :type ("NEXUS_HeapHandle" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14827 14866])
+                    ("resources" variable (:type ("NEXUS_ClientResources" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14958 14990]))                  )
+                (reparse-symbol extern-c-contents) [14724 15079]))          
+    :file "nexus_base_types.h"
+    :pointmax 15143
+    :fsize 15142
+    :lastmodtime '(21355 47330 108742 882000)
+    :unmatched-syntax '((TYPEDEF 7896 . 7903))
+    :lexical-table 
+        '(("NEXUS_MAKE_ERR_CODE" (spp-arg-list ("id" "num") 7267 . 7276) . ((semantic-list "(((((NEXUS_Error)(id)) << NEXUS_P_ERR_ID_SHIFT) & NEXUS_P_ERR_ID_MASK) | \\
+     (((NEXUS_Error)(num)) & NEXUS_P_ERR_NUM_MASK))" 7283 . 7409)))
+          ("NEXUS_UNKNOWN" . ((number "9" 6584 . 6585)))
+          ("NEXUS_GET_ERR_ID" (spp-arg-list ("code") 7521 . 7527) . ((semantic-list "((((NEXUS_Error)(code)) & NEXUS_P_ERR_ID_MASK) >> NEXUS_P_ERR_ID_SHIFT)" 7534 . 7605)))
+          ("NEXUS_P_ERR_NUM_MASK" . ((symbol "UINT32_C" 6902 . 6910) (semantic-list "(0x0000FFFF)" 6910 . 6922)))
+          ("NEXUS_GET_ERR_NUM" (spp-arg-list ("code") 7436 . 7442) . ((semantic-list "(((NEXUS_Error)(code)) & NEXUS_P_ERR_NUM_MASK)" 7449 . 7495)))
+          ("NEXUS_NOT_SUPPORTED" . ((number "8" 6505 . 6506)))
+          ("NEXUS_P_ERR_ID_SHIFT" . ((number "16" 6834 . 6836)))
+          ("NEXUS_TIMEOUT" . ((number "5" 6266 . 6267)))
+          ("NEXUS_NOT_AVAILABLE" . ((number "10" 6636 . 6638)))
+          ("NEXUS_BASE_TYPES_H")
+          ("NEXUS_CALLBACKDESC_INITIALIZER" (spp-arg-list nil 8310 . 8312) . ((semantic-list "{NULL, NULL, 0}" 8313 . 8328)))
+          ("NEXUS_NOT_INITIALIZED" . ((number "1" 5959 . 5960)))
+          ("NEXUS_OUT_OF_SYSTEM_MEMORY" . ((number "3" 6094 . 6095)))
+          ("NEXUS_LEAKED_RESOURCE" . ((number "7" 6393 . 6394)))
+          ("NEXUS_SUCCESS" . ((number "0" 5893 . 5894)))
+          ("NEXUS_MAX_IDS" . ((number "16" 12708 . 12710)))
+          ("NEXUS_OUT_OF_DEVICE_MEMORY" . ((number "4" 6179 . 6180)))
+          ("NEXUS_ANY_ID" . ((number "0xFEFEFEFE" 11283 . 11293)))
+          ("NEXUS_INVALID_PARAMETER" . ((number "2" 6029 . 6030)))
+          ("NEXUS_CALLBACKDESC_INIT" (spp-arg-list ("cb") 8360 . 8364) . 
+              ((DO "do" 8365 . 8367) (semantic-list "{(cb)->callback = NULL;(cb)->context=NULL;(cb)->param=0;}" 8368 . 8425) (WHILE "while" 8425 . 8430) (semantic-list "(0)" 8430 . 8433)))
+          ("NEXUS_MAX_HEAPS" . ((number "16" 14653 . 14655)))
+          ("NEXUS_OS_ERROR" . ((number "6" 6332 . 6333)))
+          ("NEXUS_P_ERR_ID_MASK" . ((symbol "UINT32_C" 6765 . 6773) (semantic-list "(0xFFFF0000)" 6773 . 6785)))
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!BSP!drivers!src!refsw!nexus!base!include!public!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

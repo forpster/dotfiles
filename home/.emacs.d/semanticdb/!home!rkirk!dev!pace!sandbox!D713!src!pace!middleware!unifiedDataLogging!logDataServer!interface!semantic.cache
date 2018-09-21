@@ -1,0 +1,512 @@
+;; Object interface/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "interface/"
+  :tables (list 
+   (semanticdb-table "logdataserverclient.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("logdataserverclient.h" include nil nil [724 756])
+            ("tipc/tipcconnection.h" include nil nil [757 789])
+            ("tlogger.h" include nil nil [790 810])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [811 835])
+            ("UNIFIED_LOGGING" using (:type ("UNIFIED_LOGGING" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [837 869])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [871 928])
+            ("LogDataServerClient::proxyInterface" variable
+               (:pointer 1
+                :type ("LogDataServerProxyInterface" type (:type "class") nil nil))
+                nil [930 1002])
+            ("LogDataServerProxyInterface::dataServerTipcInterface" variable
+               (:pointer 1
+                :type ("OrgPaceLogDataServerInterface" type (:type "class") nil nil))
+                nil [1003 1094])
+            ("LogDataServerProxyInterface::registerMutex" variable (:type ("QMutex" type (:type "class") nil nil)) nil [1095 1145])
+            ("LogDataServerClient::proxyinterfaceLock" variable (:type ("QMutex" type (:type "class") nil nil)) nil [1146 1193])
+            ("LogDataServerClient" function
+               (:constructor-flag t
+                :parent "LogDataServerClient"
+                :arguments 
+                  ( ("clientObj" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1543 1563]))                  
+                :type ("LogDataServerClient" type (:type "class") nil nil))
+                nil [1500 1716])
+            ("LogDataServerClient" function
+               (:destructor-flag t
+                :parent "LogDataServerClient"
+                :type "void")
+                nil [1993 2063])
+            ("createDataServerProxyInterface" function
+               (:pointer 1
+                :parent "LogDataServerClient"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2621 2627]))                  
+                :type ("LogDataServerProxyInterface" type (:type "class") nil nil))
+                nil [2538 2831])
+            ("sendLogData" function
+               (:parent "LogDataServerClient"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("LogData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3335 3356])
+                    ("save" variable (:type "bool") (reparse-symbol arg-sub-list) [3357 3367]))                  
+                :type "bool")
+                nil [3295 3756])
+            ("getSavedData" function
+               (:parent "LogDataServerClient"
+                :arguments 
+                  ( ("dataName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("LogDataType_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4227 4259]))                  
+                :type ("LogData" type (:type "class") nil nil))
+                nil [4182 4623])
+            ("registerDataSource" function
+               (:parent "LogDataServerClient"
+                :arguments 
+                  ( ("tipcInterface" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5284 5313])
+                    ("properties" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("LogDataType_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5314 5354]))                  
+                :type "bool")
+                nil [5237 6094])
+            ("LogDataServerProxyInterface" function
+               (:constructor-flag t
+                :parent "LogDataServerProxyInterface"
+                :type ("LogDataServerProxyInterface" type (:type "class") nil nil))
+                nil [6424 6574])
+            ("createDataServerTipcInterface" function
+               (:pointer 1
+                :parent "LogDataServerProxyInterface"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6977 6983]))                  
+                :type ("OrgPaceLogDataServerInterface" type (:type "class") nil nil))
+                nil [6885 7926])
+            ("LogDataServerProxyInterface" function
+               (:destructor-flag t
+                :parent "LogDataServerProxyInterface"
+                :type "void")
+                nil [8219 8373]))          
+    :file "logdataserverclient.cpp"
+    :pointmax 8374
+    :fsize 8373
+    :lastmodtime '(21785 22998 602826 209000)
+    :unmatched-syntax '((string 899 . 925))
+    )
+   (semanticdb-table "logdataserverclient.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("LOG_DATASERVER_CLIENT_H__" variable (:constant-flag t) nil [649 674])
+            ("QMutex" include (:system-flag t) nil [675 692])
+            ("QObject" include (:system-flag t) nil [693 711])
+            ("logdataserverinterface.h" include nil nil [712 747])
+            ("OrgPaceLogDataServerInterface" type
+               (:prototype t
+                :type "class")
+                nil [749 785])
+            ("UNIFIED_LOGGING" type
+               (:members 
+                  ( ("LogDataServerProxyInterface" type
+                       (:superclasses 
+                          ( ("QObject" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1015 1022])
+                            ("LogDataServerProxyInterface" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("LogDataServerProxyInterface" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1029 1059])
+                            ("LogDataServerProxyInterface" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1066 1097])
+                            ("getDataServerTipcInterface" function
+                               (:pointer 1
+                                :type ("OrgPaceLogDataServerInterface" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1104 1222])
+                            ("dataServerTipcInterface" variable
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :type ("OrgPaceLogDataServerInterface" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1230 1292])
+                            ("registerMutex" variable
+                               (:typemodifiers ("static")
+                                :type ("QMutex" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1299 1327])
+                            ("public" label nil (reparse-symbol classsubparts) [1332 1345])
+                            ("private" label nil (reparse-symbol classsubparts) [1350 1358])
+                            ("m_pDataServerTipcInteface" variable
+                               (:pointer 1
+                                :type ("OrgPaceLogDataServerInterface" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1365 1422])
+                            ("createDataServerTipcInterface" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1492 1498]))                                  
+                                :type ("OrgPaceLogDataServerInterface" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1429 1499])
+                            ("LogDataServerProxyInterface" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogDataServerProxyInterface" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1629 1666]))                                  
+                                :type ("LogDataServerProxyInterface" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1599 1667])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :constant-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogDataServerProxyInterface" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1846 1895]))                                  
+                                :type ("LogDataServerProxyInterface" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1798 1896]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [940 1903])
+                    ("LogDataServerClient" type
+                       (:superclasses 
+                          ( ("QObject" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2041 2048])
+                            ("LogDataServerClient" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("obj" variable
+                                       (:pointer 1
+                                        :type ("QObject" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2077 2091])
+                                    ("" variable (:type ("NULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2092 2098]))                                  
+                                :type ("LogDataServerClient" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2055 2099])
+                            ("LogDataServerClient" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2106 2130])
+                            ("proxyInterface" variable
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :type ("LogDataServerProxyInterface" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2174 2225])
+                            ("proxyinterfaceLock" variable
+                               (:typemodifiers ("static")
+                                :type ("QMutex" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2232 2265])
+                            ("sendLogData" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2291 2311])
+                                    ("save" variable (:type "bool") (reparse-symbol arg-sub-list) [2312 2323]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2272 2324])
+                            ("getSavedData" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("dataName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogDataType_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2354 2385]))                                  
+                                :type ("LogData" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2331 2386])
+                            ("registerDataSource" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("tipcInterface" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2419 2448])
+                                    ("properties" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QList" type
+                                             (:template-specifier 
+                                                ( ("LogDataType_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2481 2522]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2393 2523])
+                            ("echo" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("tipcInterface" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [2542 2568]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2530 2569])
+                            ("isValid" function (:type "bool") (reparse-symbol classsubparts) [2576 2628])
+                            ("private" label nil (reparse-symbol classsubparts) [2634 2642])
+                            ("m_pDataServerProxyInterface" variable
+                               (:pointer 1
+                                :type ("LogDataServerProxyInterface" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2649 2706])
+                            ("createDataServerProxyInterface" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2775 2781]))                                  
+                                :type ("LogDataServerProxyInterface" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2713 2782])
+                            ("LogDataServerClient" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogDataServerClient" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2904 2933]))                                  
+                                :type ("LogDataServerClient" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2882 2934])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :constant-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LogDataServerClient" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3105 3134]))                                  
+                                :type ("LogDataServerClient" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3065 3135]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1908 3142]))                  
+                :type "namespace")
+                nil [787 3145]))          
+    :file "logdataserverclient.h"
+    :pointmax 3181
+    :fsize 3180
+    :lastmodtime '(21785 22998 603826 201000)
+    :unmatched-syntax '((punctuation 2090 . 2091) (semantic-list 1989 . 2036) (symbol 1977 . 1988) (string 2010 . 2034) (string 1991 . 2008) (symbol 1962 . 1970) (string 2010 . 2034) (string 1991 . 2008) (symbol 1002 . 1010))
+    :lexical-table 
+        '(("LOG_DATASERVER_CLIENT_H__")
+          )
+
+    )
+   (semanticdb-table "logdataserverinterface.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("LOGDATASERVERINTERFACE_ORIG_H_1427724758" variable (:constant-flag t) nil [528 568])
+            ("QtCore/QObject" include (:system-flag t) nil [570 595])
+            ("QtCore/QByteArray" include (:system-flag t) nil [596 624])
+            ("QtCore/QList" include (:system-flag t) nil [625 648])
+            ("QtCore/QMap" include (:system-flag t) nil [649 671])
+            ("QtCore/QString" include (:system-flag t) nil [672 697])
+            ("QtCore/QStringList" include (:system-flag t) nil [698 727])
+            ("QtCore/QVariant" include (:system-flag t) nil [728 754])
+            ("tipc/tipcinterface.h" include (:system-flag t) nil [755 786])
+            ("tipc/tipcreply.h" include (:system-flag t) nil [787 814])
+            ("tipc/tipcpendingreply.h" include (:system-flag t) nil [815 849])
+            ("../logdatasource/logdatatypes.h" include nil nil [850 892])
+            ("OrgPaceLogDataServerInterface" type
+               (:superclasses 
+                  ( ("TipcInterface" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1235 1242])
+                    ("staticInterfaceName" function
+                       (:pointer 1
+                        :typemodifiers ("static" "inline")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [1247 1335])
+                    ("public" label nil (reparse-symbol classsubparts) [1337 1344])
+                    ("OrgPaceLogDataServerInterface" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("service" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1379 1402])
+                            ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1403 1423])
+                            ("connection" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TipcConnection" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1424 1457])
+                            ("parent" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1458 1475]))                          
+                        :type ("OrgPaceLogDataServerInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1349 1479])
+                    ("OrgPaceLogDataServerInterface" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1485 1518])
+                    ("tipcProperty" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1546 1563]))                          
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1524 1570])
+                    ("public" label nil (reparse-symbol classsubparts) [1572 1587])
+                    ("echo" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("test" variable (:type "int") (reparse-symbol arg-sub-list) [1620 1629]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1603 1802])
+                    ("getSavedData" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("dataType" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UNIFIED_LOGGING::LogDataType_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1853 1900]))                          
+                        :type ("UNIFIED_LOGGING::LogData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1808 2136])
+                    ("registerDataSource" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("tipcInterface" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2173 2203])
+                            ("properties" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("UNIFIED_LOGGING::LogDataType_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2204 2261]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2142 2523])
+                    ("sendLogData" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("in0" variable (:type ("UNIFIED_LOGGING::LogData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2553 2582])
+                            ("save" variable (:type "bool") (reparse-symbol arg-sub-list) [2583 2593]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2529 2832]))                  
+                :type "class")
+                nil [1162 2858]))          
+    :file "logdataserverinterface.h"
+    :pointmax 2867
+    :fsize 2866
+    :lastmodtime '(21785 23886 362046 30000)
+    :unmatched-syntax '((punctuation 2843 . 2844) (symbol 2834 . 2843) (number 1476 . 1477) (punctuation 1474 . 1475) (symbol 1226 . 1234))
+    :lexical-table 
+        '(("LOGDATASERVERINTERFACE_ORIG_H_1427724758")
+          )
+
+    )
+   (semanticdb-table "logdataserverinterface.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("../logDataServer/interface/logdataserverinterface.h" include nil nil [514 576])
+            ("OrgPaceLogDataServerInterface" function
+               (:constructor-flag t
+                :parent "OrgPaceLogDataServerInterface"
+                :arguments 
+                  ( ("service" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [714 737])
+                    ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [738 758])
+                    ("connection" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TipcConnection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [759 792])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [793 809]))                  
+                :type ("OrgPaceLogDataServerInterface" type (:type "class") nil nil))
+                nil [653 891])
+            ("OrgPaceLogDataServerInterface" function
+               (:destructor-flag t
+                :parent "OrgPaceLogDataServerInterface"
+                :type "void")
+                nil [893 960])
+            ("tipcProperty" function
+               (:parent "OrgPaceLogDataServerInterface"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1078 1095]))                  
+                :type ("QVariant" type (:type "class") nil nil))
+                nil [1025 1146]))          
+    :file "logdataserverinterface.cpp"
+    :pointmax 1148
+    :fsize 1147
+    :lastmodtime '(21785 23886 362046 30000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D713!src!pace!middleware!unifiedDataLogging!logDataServer!interface!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

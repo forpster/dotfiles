@@ -1,0 +1,1409 @@
+;; Object rfc5077/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "rfc5077/"
+  :tables
+  (list
+    (semanticdb-table "nss-client.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("common.h" include nil nil [839 858])
+            ("unistd.h" include (:system-flag t) nil [860 879])
+            ("prinit.h" include (:system-flag t) nil [880 899])
+            ("nspr.h" include (:system-flag t) nil [900 917])
+            ("nss.h" include (:system-flag t) nil [918 934])
+            ("ssl.h" include (:system-flag t) nil [935 951])
+            ("secerr.h" include (:system-flag t) nil [952 971])
+            ("sslerr.h" include (:system-flag t) nil [972 991])
+            ("private/pprio.h" include (:system-flag t) nil [1024 1050])
+            ("SECU_ErrorString" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("err" variable (:type ("int16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1249 1259]))                  
+                :type "char")
+                nil [1218 4049])
+            ("nss_auth_cert_hook" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4087 4097])
+                    ("fd" variable
+                       (:pointer 1
+                        :type ("PRFileDesc" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4098 4113])
+                    ("checksig" variable (:type ("PRBool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4114 4130])
+                    ("isServer" variable (:type ("PRBool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4136 4152]))                  
+                :type ("SECStatus" type (:type "class") nil nil))
+                nil [4051 4192])
+            ("connect_ssl" function
+               (:arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4210 4221])
+                    ("port" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4222 4233])
+                    ("reconnect" variable (:type "int") (reparse-symbol arg-sub-list) [4239 4253])
+                    ("use_sessionid" variable (:type "int") (reparse-symbol arg-sub-list) [4259 4277])
+                    ("use_ticket" variable (:type "int") (reparse-symbol arg-sub-list) [4278 4293])
+                    ("delay" variable (:type "int") (reparse-symbol arg-sub-list) [4300 4310])
+                    ("client_cert" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4317 4341])
+                    ("client_key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4342 4365]))                  
+                :type "int")
+                nil [4194 7831])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7842 7851])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7852 7872]))                  
+                :type "int")
+                nil [7833 7918]))          
+      :file "nss-client.c"
+      :pointmax 7919
+      :fsize 7918
+      :lastmodtime '(22693 30276 209662 176000)
+      :unmatched-syntax nil)
+    (semanticdb-table "common.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("netdb.h" include (:system-flag t) nil [1 19])
+            ("client" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [57 61])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [62 77])
+                    ("" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [94 101])
+                            ("" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [102 109])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [110 114])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [115 119])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [120 124])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [125 129])
+                            ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [130 143])
+                            ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [144 157]))                          
+                        :type "int")
+                        nil nil))                  
+                :type "int")
+                nil [39 159])
+            ("connect_socket" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("addrinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [186 204])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [205 212])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [213 220]))                  
+                :type "int")
+                nil [160 221])
+            ("solve" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [252 259])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [260 266]))                  
+                :type ("addrinfo" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [222 267])
+            ("start" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [311 324])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [325 329]))                  
+                :type "void")
+                nil [293 370])
+            ("end" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [388 401])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [402 406]))                  
+                :type "void")
+                nil [372 447])
+            ("fail" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [466 479])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [480 484]))                  
+                :type "void")
+                nil [449 525])
+            ("warn" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [544 557])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [558 562]))                  
+                :type "void")
+                nil [527 603]))          
+      :file "common.h"
+      :pointmax 604
+      :fsize 603
+      :lastmodtime '(22693 30276 209662 176000)
+      :unmatched-syntax '((semantic-list 75 . 77)))
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CFLAGS" variable (:default-value ("-g" "-Werror" "-Wall" "-ansi" "-std=c99" "-D_DEFAULT_SOURCE" "-D_GNU_SOURCE" "-I/usr/local/include")) nil [1 93])
+            ("LDFLAGS" variable (:default-value ("-L/usr/local/lib")) nil [93 118])
+            ("EVCFLAGS" variable (:default-value ("$(shell pkg-config --silence-errors --cflags libev)")) nil [118 179])
+            ("OPENSSL_LIBS" variable (:default-value ("$(shell pkg-config --libs openssl)")) nil [179 227])
+            ("EXEC" variable (:default-value ("rfc5077-client" "rfc5077-server" "rfc5077-pcap" "openssl-client" "gnutls-client" "nss-client")) nil [227 316])
+            ("all" function (:arguments ("$(EXEC)")) nil [317 330])
+            ("openssl-client.o" function (:arguments ("openssl-client.c")) nil [331 432])
+            ("openssl-client" function (:arguments ("openssl-client.o" "common-client.o" "common.o")) nil [433 534])
+            ("gnutls-client" function (:arguments ("gnutls-client.o" "common-client.o" "common.o")) nil [535 627])
+            ("nss-client" function (:arguments ("nss-client.o" "common-client.o" "common.o")) nil [628 760])
+            ("nss-client.o" function (:arguments ("nss-client.c")) nil [760 875])
+            ("rfc5077-server.o" function (:arguments ("rfc5077-server.c")) nil [876 952])
+            ("rfc5077-client" function (:arguments ("rfc5077-client.o" "common.o")) nil [953 1038])
+            ("rfc5077-server" function (:arguments ("rfc5077-server.o" "common.o" "http-parser/libhttp_parser.a")) nil [1038 1157])
+            ("http-parser/libhttp_parser.a" function (:arguments ("http-parser/http_parser.c")) nil [1157 1245])
+            ("rfc5077-pcap" function (:arguments ("rfc5077-pcap.o" "common.o")) nil [1246 1339])
+            ("certificate" function (:arguments ("key.pem" "cert.pem" "dh.pem")) nil [1340 1377])
+            ("key.pem" function nil nil [1377 1440])
+            ("cert.pem" function (:arguments ("key.pem")) nil [1440 1522])
+            ("dh.pem" function nil nil [1522 1586])
+            ("clean" function nil nil [1738 1800]))          
+      :file "Makefile"
+      :pointmax 1832
+      :fsize 1831
+      :lastmodtime '(22694 57451 844001 642000)
+      :unmatched-syntax nil)
+    (semanticdb-table "rfc5077-server.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [824 842])
+            ("unistd.h" include (:system-flag t) nil [843 862])
+            ("string.h" include (:system-flag t) nil [863 882])
+            ("errno.h" include (:system-flag t) nil [883 901])
+            ("sys/ioctl.h" include (:system-flag t) nil [902 924])
+            ("sys/socket.h" include (:system-flag t) nil [925 948])
+            ("sys/types.h" include (:system-flag t) nil [949 971])
+            ("sys/stat.h" include (:system-flag t) nil [972 993])
+            ("fcntl.h" include (:system-flag t) nil [994 1012])
+            ("netinet/in.h" include (:system-flag t) nil [1013 1036])
+            ("netinet/tcp.h" include (:system-flag t) nil [1037 1061])
+            ("openssl/ssl.h" include (:system-flag t) nil [1062 1086])
+            ("openssl/bio.h" include (:system-flag t) nil [1087 1111])
+            ("openssl/err.h" include (:system-flag t) nil [1112 1136])
+            ("ev.h" include (:system-flag t) nil [1137 1152])
+            ("common.h" include nil nil [1154 1173])
+            ("http-parser/http_parser.h" include nil nil [1174 1210])
+            ("PEM_CERTIFICATE" variable (:constant-flag t) nil [1220 1235])
+            ("PEM_KEY" variable (:constant-flag t) nil [1255 1262])
+            ("PEM_DH" variable (:constant-flag t) nil [1289 1295])
+            ("NONBLOCKING" variable (:constant-flag t) nil [1323 1334])
+            ("server" type
+               (:members 
+                  ( ("session_cache" variable (:type "int") (reparse-symbol classsubparts) [1537 1555])
+                    ("accept_tickets" variable (:type "int") (reparse-symbol classsubparts) [1594 1613])
+                    ("servers" variable
+                       (:pointer 1
+                        :type ("server" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1659 1682])
+                    ("port" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1722 1736])
+                    ("socket" variable (:type "int") (reparse-symbol classsubparts) [1777 1793])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("SSL_CTX" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1843 1856])
+                    ("listener" variable (:type ("ev_io" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1885 1903]))                  
+                :type "struct")
+                nil [1497 1906])
+            ("BUFSIZE" variable (:constant-flag t) nil [2239 2246])
+            ("connection" type
+               (:members 
+                  ( ("start" variable (:type ("ev_tstamp" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2325 2346])
+                    ("client" variable (:type "int") (reparse-symbol classsubparts) [2395 2417])
+                    ("server" variable
+                       (:pointer 1
+                        :type ("server" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2440 2462])
+                    ("ev_read" variable (:type ("ev_io" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2465 2488])
+                    ("ev_write" variable (:type ("ev_io" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2525 2549])
+                    ("ev_read_handshake" variable (:type ("ev_io" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2584 2617])
+                    ("ev_write_handshake" variable (:type ("ev_io" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2663 2697])
+                    ("ev_read_shutdown" variable (:type ("ev_io" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2743 2775])
+                    ("ev_write_shutdown" variable (:type ("ev_io" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2821 2854])
+                    ("ev_timeout" variable (:type ("ev_timer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2900 2926])
+                    ("buffer" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2953 2984])
+                    ("buffer_size" variable (:type "int") (reparse-symbol classsubparts) [3013 3040])
+                    ("response" variable (:type "int") (reparse-symbol classsubparts) [3056 3080])
+                    ("uastate" variable (:type "int") (reparse-symbol classsubparts) [3128 3151])
+                    ("parser" variable (:type ("http_parser" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3196 3218])
+                    ("method" variable (:type "int") (reparse-symbol classsubparts) [3241 3263])
+                    ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3291 3311])
+                    ("callback" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3338 3362])
+                    ("ua" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3415 3433])
+                    ("protocol" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3456 3480])
+                    ("code" variable (:type "int") (reparse-symbol classsubparts) [3498 3518])
+                    ("size" variable (:type "int") (reparse-symbol classsubparts) [3548 3568])
+                    ("ssl" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3609 3619])
+                    ("ip" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3654 3681])
+                    ("loop" variable
+                       (:pointer 1
+                        :type ("ev_loop" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3728 3749]))                  
+                :type "struct")
+                nil [2303 3752])
+            ("setup_socket" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("server" variable
+                       (:pointer 1
+                        :type ("server" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3810 3832]))                  
+                :type "void")
+                nil [3785 5037])
+            ("SSL_OP_NO_COMPRESSION" variable (:constant-flag t) nil [5077 5098])
+            ("setup_ssl" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("server" variable
+                       (:pointer 1
+                        :type ("server" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5171 5193]))                  
+                :type "void")
+                nil [5149 6615])
+            ("shutdown_connection" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("ev_loop" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6689 6710])
+                    ("conn" variable
+                       (:pointer 1
+                        :type ("connection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6711 6735]))                  
+                :type "void")
+                nil [6657 7234])
+            ("start_shutdown" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("ev_loop" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7291 7312])
+                    ("conn" variable
+                       (:pointer 1
+                        :type ("connection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7313 7337]))                  
+                :type "void")
+                nil [7264 7522])
+            ("shutdown_connection_with_err" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("ev_loop" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7611 7632])
+                    ("conn" variable
+                       (:pointer 1
+                        :type ("connection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7633 7657])
+                    ("err" variable (:type "int") (reparse-symbol arg-sub-list) [7666 7674]))                  
+                :type "void")
+                nil [7570 8217])
+            ("http_answer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("ev_loop" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8282 8303])
+                    ("conn" variable
+                       (:pointer 1
+                        :type ("connection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8304 8328])
+                    ("code" variable (:type "int") (reparse-symbol arg-sub-list) [8334 8343])
+                    ("reason" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8344 8363])
+                    ("content_type" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8364 8389])
+                    ("body" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8395 8412]))                  
+                :type "void")
+                nil [8258 9379])
+            ("handler" type
+               (:members 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [9400 9411])
+                    ("handle" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("ev_loop" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9451 9468])
+                            ("" variable
+                               (:pointer 1
+                                :type ("connection" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9469 9489])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [9490 9497]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9437 9498])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [9501 9512]))                  
+                :type "struct")
+                nil [9381 9515])
+            ("http_handle_file" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("ev_loop" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9571 9592])
+                    ("conn" variable
+                       (:pointer 1
+                        :type ("connection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9593 9617])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9618 9629]))                  
+                :type "int")
+                nil [9543 10271])
+            ("http_handle_session" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("ev_loop" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10342 10363])
+                    ("conn" variable
+                       (:pointer 1
+                        :type ("connection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10364 10388])
+                    ("_" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10389 10397]))                  
+                :type "int")
+                nil [10311 12173])
+            ("http_handle_params" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("ev_loop" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12244 12265])
+                    ("conn" variable
+                       (:pointer 1
+                        :type ("connection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12266 12290])
+                    ("_" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12291 12299]))                  
+                :type "int")
+                nil [12214 12607])
+            ("http_handle_servers" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("ev_loop" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12679 12700])
+                    ("conn" variable
+                       (:pointer 1
+                        :type ("connection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12701 12725])
+                    ("_" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12726 12734]))                  
+                :type "int")
+                nil [12648 13220])
+            ("http_handlers" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  { \"/\",                  http_handle_file, \"rfc5077-server.html\" },
+  { \"/rfc5077-server.js\", http_handle_file, \"js/rfc5077-server.js\" },
+  { \"/jquery.jsonp.js\",   http_handle_file, \"js/jquery.jsonp-2.1.4.min.js\" },
+  { \"/session\",           http_handle_session },
+  { \"/params\" ,           http_handle_params },
+  { \"/servers\",           http_handle_servers },
+  { NULL }
+}"
+                :type ("handler" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13222 13640])
+            ("http_cb_message_complete" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("http_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13718 13733]))                  
+                :type "int")
+                nil [13682 14420])
+            ("http_cb_headers_complete" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("http_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14515 14530]))                  
+                :type "int")
+                nil [14479 15109])
+            ("http_cb_url" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("http_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15171 15186])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15187 15203])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15204 15215]))                  
+                :type "int")
+                nil [15148 15565])
+            ("http_cb_header_field" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("http_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15644 15659])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15660 15676])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15677 15688]))                  
+                :type "int")
+                nil [15612 16623])
+            ("http_cb_header_value" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("http_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16702 16717])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16718 16734])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16735 16746]))                  
+                :type "int")
+                nil [16670 17670])
+            ("parser_settings" variable
+               (:typemodifiers ("static")
+                :default-value "{
+  .on_header_field = http_cb_header_field,
+  .on_header_value = http_cb_header_value,
+  .on_headers_complete = http_cb_headers_complete,
+  .on_url = http_cb_url,
+  .on_message_complete = http_cb_message_complete
+}"
+                :type ("http_parser_settings" type (:type "class") nil nil))
+                nil [17699 17961])
+            ("start_handshake" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("ev_loop" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18023 18044])
+                    ("conn" variable
+                       (:pointer 1
+                        :type ("connection" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18045 18069])
+                    ("err" variable (:type "int") (reparse-symbol arg-sub-list) [18070 18078]))                  
+                :type "void")
+                nil [17995 18385])
+            ("handle_client_handshake" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("ev_loop" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18450 18471])
+                    ("w" variable
+                       (:pointer 1
+                        :type ("ev_io" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18472 18481])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [18482 18494]))                  
+                :type "void")
+                nil [18414 19991])
+            ("handle_client_shutdown" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("ev_loop" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20176 20197])
+                    ("w" variable
+                       (:pointer 1
+                        :type ("ev_io" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20198 20207])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [20208 20220]))                  
+                :type "void")
+                nil [20141 21009])
+            ("handle_client_read" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("ev_loop" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21086 21107])
+                    ("w" variable
+                       (:pointer 1
+                        :type ("ev_io" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21108 21117])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [21118 21130]))                  
+                :type "void")
+                nil [21055 22136])
+            ("handle_client_write" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("ev_loop" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22212 22233])
+                    ("w" variable
+                       (:pointer 1
+                        :type ("ev_io" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22234 22243])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [22244 22256]))                  
+                :type "void")
+                nil [22180 23501])
+            ("handle_client_timeout" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("ev_loop" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23564 23585])
+                    ("w" variable
+                       (:pointer 1
+                        :type ("ev_timer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23586 23598])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [23599 23611]))                  
+                :type "void")
+                nil [23530 23775])
+            ("handle_accept" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("ev_loop" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23823 23844])
+                    ("w" variable
+                       (:pointer 1
+                        :type ("ev_io" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23845 23854])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [23855 23867]))                  
+                :type "void")
+                nil [23797 26236])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [26247 26256])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26257 26277]))                  
+                :type "int")
+                nil [26238 27929]))          
+      :file "rfc5077-server.c"
+      :pointmax 27930
+      :fsize 27957
+      :lastmodtime '(22694 57383 624760 836000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NONBLOCKING" (spp-arg-list ("s") 1334 . 1337) . 
+              ((DO "do" 1338 . 1340) (semantic-list "{				\\
+  int val = 1;						\\
+  if (ioctl(s, FIONBIO, &val) == -1)			\\
+    fail(\"unable to set non blocking socket:\\n%m\");	\\
+  }" 1341 . 1468) (WHILE "while" 1469 . 1474) (semantic-list "(0)" 1474 . 1477) (punctuation ";" 1477 . 1478)))
+          ("BUFSIZE" . 
+              ((number "1024" 2247 . 2251) (punctuation "*" 2251 . 2252) (number "8" 2252 . 2253)))
+          ("PEM_DH" . ((string "\"dh.pem\"" 1305 . 1313)))
+          ("PEM_CERTIFICATE" . ((string "\"cert.pem\"" 1236 . 1246)))
+          ("PEM_KEY" . ((string "\"key.pem\"" 1271 . 1280)))
+          ("SSL_OP_NO_COMPRESSION" . ((number "0" 5099 . 5100)))
+          )
+)
+    (semanticdb-table "rfc5077-pcap.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [899 918])
+            ("unistd.h" include (:system-flag t) nil [919 938])
+            ("stdio.h" include (:system-flag t) nil [939 957])
+            ("string.h" include (:system-flag t) nil [958 977])
+            ("pcap.h" include (:system-flag t) nil [978 995])
+            ("time.h" include (:system-flag t) nil [996 1013])
+            ("arpa/inet.h" include (:system-flag t) nil [1014 1036])
+            ("common.h" include nil nil [1037 1056])
+            ("ip4hdr" type
+               (:members 
+                  ( ("ihlv" variable (:type ("u_int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1076 1091])
+                    ("tos" variable (:type ("u_int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1094 1108])
+                    ("tot_len" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1111 1129])
+                    ("id" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1132 1145])
+                    ("frag_off" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1148 1167])
+                    ("ttl" variable (:type ("u_int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1170 1184])
+                    ("protocol" variable (:type ("u_int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1187 1206])
+                    ("check" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1209 1225])
+                    ("saddr" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1228 1244])
+                    ("daddr" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1247 1263]))                  
+                :type "struct")
+                nil [1058 1311])
+            ("tcphdr" type
+               (:members 
+                  ( ("source" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1331 1349])
+                    ("dest" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1352 1368])
+                    ("seq" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1371 1386])
+                    ("ack_seq" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1389 1408])
+                    ("flags" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1411 1428])
+                    ("window" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1431 1449])
+                    ("checksum" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1452 1472])
+                    ("urg" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1475 1490]))                  
+                :type "struct")
+                nil [1313 1538])
+            ("value_string" type
+               (:members 
+                  ( ("value" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1564 1582])
+                    ("string" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [1585 1604]))                  
+                :type "struct")
+                nil [1540 1607])
+            ("ssl_compression_method" variable
+               (:dereference 1
+                :constant-flag t
+                :default-value "{
+    { 0, \"NULL\" },
+    { 1, \"DEFLATE\" },
+    { 64, \"LZS\" },
+    { 0x00, NULL }
+}"
+                :type ("value_string" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1637 1773])
+            ("ssl_cipher_suites" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    { 0x000000, \"TLS_NULL_WITH_NULL_NULL\" },
+    { 0x000001, \"TLS_RSA_WITH_NULL_MD5\" },
+    { 0x000002, \"TLS_RSA_WITH_NULL_SHA\" },
+    { 0x000003, \"TLS_RSA_EXPORT_WITH_RC4_40_MD5\" },
+    { 0x000004, \"TLS_RSA_WITH_RC4_128_MD5\" },
+    { 0x000005, \"TLS_RSA_WITH_RC4_128_SHA\" },
+    { 0x000006, \"TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5\" },
+    { 0x000007, \"TLS_RSA_WITH_IDEA_CBC_SHA\" },
+    { 0x000008, \"TLS_RSA_EXPORT_WITH_DES40_CBC_SHA\" },
+    { 0x000009, \"TLS_RSA_WITH_DES_CBC_SHA\" },
+    { 0x00000a, \"TLS_RSA_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x00000b, \"TLS_DH_DSS_EXPORT_WITH_DES40_CBC_SHA\" },
+    { 0x00000c, \"TLS_DH_DSS_WITH_DES_CBC_SHA\" },
+    { 0x00000d, \"TLS_DH_DSS_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x00000e, \"TLS_DH_RSA_EXPORT_WITH_DES40_CBC_SHA\" },
+    { 0x00000f, \"TLS_DH_RSA_WITH_DES_CBC_SHA\" },
+    { 0x000010, \"TLS_DH_RSA_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x000011, \"TLS_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA\" },
+    { 0x000012, \"TLS_DHE_DSS_WITH_DES_CBC_SHA\" },
+    { 0x000013, \"TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x000014, \"TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA\" },
+    { 0x000015, \"TLS_DHE_RSA_WITH_DES_CBC_SHA\" },
+    { 0x000016, \"TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x000017, \"TLS_DH_anon_EXPORT_WITH_RC4_40_MD5\" },
+    { 0x000018, \"TLS_DH_anon_WITH_RC4_128_MD5\" },
+    { 0x000019, \"TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA\" },
+    { 0x00001a, \"TLS_DH_anon_WITH_DES_CBC_SHA\" },
+    { 0x00001b, \"TLS_DH_anon_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x00001c, \"SSL_FORTEZZA_KEA_WITH_NULL_SHA\" },
+    { 0x00001d, \"SSL_FORTEZZA_KEA_WITH_FORTEZZA_CBC_SHA\" },
+#if 0
+    { 0x00001e, \"SSL_FORTEZZA_KEA_WITH_RC4_128_SHA\" },
+#endif
+    /* RFC 2712 */
+    { 0x00001E, \"TLS_KRB5_WITH_DES_CBC_SHA\" },
+    { 0x00001F, \"TLS_KRB5_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x000020, \"TLS_KRB5_WITH_RC4_128_SHA\" },
+    { 0x000021, \"TLS_KRB5_WITH_IDEA_CBC_SHA\" },
+    { 0x000022, \"TLS_KRB5_WITH_DES_CBC_MD5\" },
+    { 0x000023, \"TLS_KRB5_WITH_3DES_EDE_CBC_MD5\" },
+    { 0x000024, \"TLS_KRB5_WITH_RC4_128_MD5\" },
+    { 0x000025, \"TLS_KRB5_WITH_IDEA_CBC_MD5\" },
+    { 0x000026, \"TLS_KRB5_EXPORT_WITH_DES_CBC_40_SHA\" },
+    { 0x000027, \"TLS_KRB5_EXPORT_WITH_RC2_CBC_40_SHA\" },
+    { 0x000028, \"TLS_KRB5_EXPORT_WITH_RC4_40_SHA\" },
+    { 0x000029, \"TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5\" },
+    { 0x00002A, \"TLS_KRB5_EXPORT_WITH_RC2_CBC_40_MD5\" },
+    { 0x00002B, \"TLS_KRB5_EXPORT_WITH_RC4_40_MD5\" },
+    /* RFC 4785 */
+    { 0x00002C, \"TLS_PSK_WITH_NULL_SHA\" },
+    { 0x00002D, \"TLS_DHE_PSK_WITH_NULL_SHA\" },
+    { 0x00002E, \"TLS_RSA_PSK_WITH_NULL_SHA\" },
+    /* RFC 5246 */
+    { 0x00002f, \"TLS_RSA_WITH_AES_128_CBC_SHA\" },
+    { 0x000030, \"TLS_DH_DSS_WITH_AES_128_CBC_SHA\" },
+    { 0x000031, \"TLS_DH_RSA_WITH_AES_128_CBC_SHA\" },
+    { 0x000032, \"TLS_DHE_DSS_WITH_AES_128_CBC_SHA\" },
+    { 0x000033, \"TLS_DHE_RSA_WITH_AES_128_CBC_SHA\" },
+    { 0x000034, \"TLS_DH_anon_WITH_AES_128_CBC_SHA\" },
+    { 0x000035, \"TLS_RSA_WITH_AES_256_CBC_SHA\" },
+    { 0x000036, \"TLS_DH_DSS_WITH_AES_256_CBC_SHA\" },
+    { 0x000037, \"TLS_DH_RSA_WITH_AES_256_CBC_SHA\" },
+    { 0x000038, \"TLS_DHE_DSS_WITH_AES_256_CBC_SHA\" },
+    { 0x000039, \"TLS_DHE_RSA_WITH_AES_256_CBC_SHA\" },
+    { 0x00003A, \"TLS_DH_anon_WITH_AES_256_CBC_SHA\" },
+    { 0x00003B, \"TLS_RSA_WITH_NULL_SHA256\" },
+    { 0x00003C, \"TLS_RSA_WITH_AES_128_CBC_SHA256\" },
+    { 0x00003D, \"TLS_RSA_WITH_AES_256_CBC_SHA256\" },
+    { 0x00003E, \"TLS_DH_DSS_WITH_AES_128_CBC_SHA256\" },
+    { 0x00003F, \"TLS_DH_RSA_WITH_AES_128_CBC_SHA256\" },
+    { 0x000040, \"TLS_DHE_DSS_WITH_AES_128_CBC_SHA256\" },
+    { 0x000041, \"TLS_RSA_WITH_CAMELLIA_128_CBC_SHA\" },
+    { 0x000042, \"TLS_DH_DSS_WITH_CAMELLIA_128_CBC_SHA\" },
+    { 0x000043, \"TLS_DH_RSA_WITH_CAMELLIA_128_CBC_SHA\" },
+    { 0x000044, \"TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA\" },
+    { 0x000045, \"TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA\" },
+    { 0x000046, \"TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA\" },
+    { 0x000047, \"TLS_ECDH_ECDSA_WITH_NULL_SHA\" },
+    { 0x000048, \"TLS_ECDH_ECDSA_WITH_RC4_128_SHA\" },
+    { 0x000049, \"TLS_ECDH_ECDSA_WITH_DES_CBC_SHA\" },
+    { 0x00004A, \"TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x00004B, \"TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA\" },
+    { 0x00004C, \"TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA\" },
+    { 0x000060, \"TLS_RSA_EXPORT1024_WITH_RC4_56_MD5\" },
+    { 0x000061, \"TLS_RSA_EXPORT1024_WITH_RC2_CBC_56_MD5\" },
+    { 0x000062, \"TLS_RSA_EXPORT1024_WITH_DES_CBC_SHA\" },
+    { 0x000063, \"TLS_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA\" },
+    { 0x000064, \"TLS_RSA_EXPORT1024_WITH_RC4_56_SHA\" },
+    { 0x000065, \"TLS_DHE_DSS_EXPORT1024_WITH_RC4_56_SHA\" },
+    { 0x000066, \"TLS_DHE_DSS_WITH_RC4_128_SHA\" },
+    { 0x000067, \"TLS_DHE_RSA_WITH_AES_128_CBC_SHA256\" },
+    { 0x000068, \"TLS_DH_DSS_WITH_AES_256_CBC_SHA256\" },
+    { 0x000069, \"TLS_DH_RSA_WITH_AES_256_CBC_SHA256\" },
+    { 0x00006A, \"TLS_DHE_DSS_WITH_AES_256_CBC_SHA256\" },
+    { 0x00006B, \"TLS_DHE_RSA_WITH_AES_256_CBC_SHA256\" },
+    { 0x00006C, \"TLS_DH_anon_WITH_AES_128_CBC_SHA256\" },
+    { 0x00006D, \"TLS_DH_anon_WITH_AES_256_CBC_SHA256\" },
+    /* 0x00,0x6E-83 Unassigned  */
+    { 0x000084, \"TLS_RSA_WITH_CAMELLIA_256_CBC_SHA\" },
+    { 0x000085, \"TLS_DH_DSS_WITH_CAMELLIA_256_CBC_SHA\" },
+    { 0x000086, \"TLS_DH_RSA_WITH_CAMELLIA_256_CBC_SHA\" },
+    { 0x000087, \"TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA\" },
+    { 0x000088, \"TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA\" },
+    { 0x000089, \"TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA\" },
+    /* RFC 4279 */
+    { 0x00008A, \"TLS_PSK_WITH_RC4_128_SHA\" },
+    { 0x00008B, \"TLS_PSK_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x00008C, \"TLS_PSK_WITH_AES_128_CBC_SHA\" },
+    { 0x00008D, \"TLS_PSK_WITH_AES_256_CBC_SHA\" },
+    { 0x00008E, \"TLS_DHE_PSK_WITH_RC4_128_SHA\" },
+    { 0x00008F, \"TLS_DHE_PSK_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x000090, \"TLS_DHE_PSK_WITH_AES_128_CBC_SHA\" },
+    { 0x000091, \"TLS_DHE_PSK_WITH_AES_256_CBC_SHA\" },
+    { 0x000092, \"TLS_RSA_PSK_WITH_RC4_128_SHA\" },
+    { 0x000093, \"TLS_RSA_PSK_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x000094, \"TLS_RSA_PSK_WITH_AES_128_CBC_SHA\" },
+    { 0x000095, \"TLS_RSA_PSK_WITH_AES_256_CBC_SHA\" },
+    /* RFC 4162 */
+    { 0x000096, \"TLS_RSA_WITH_SEED_CBC_SHA\" },
+    { 0x000097, \"TLS_DH_DSS_WITH_SEED_CBC_SHA\" },
+    { 0x000098, \"TLS_DH_RSA_WITH_SEED_CBC_SHA\" },
+    { 0x000099, \"TLS_DHE_DSS_WITH_SEED_CBC_SHA\" },
+    { 0x00009A, \"TLS_DHE_RSA_WITH_SEED_CBC_SHA\" },
+    { 0x00009B, \"TLS_DH_anon_WITH_SEED_CBC_SHA\" },
+    /* RFC 5288 */
+    { 0x00009C, \"TLS_RSA_WITH_AES_128_GCM_SHA256\" },
+    { 0x00009D, \"TLS_RSA_WITH_AES_256_GCM_SHA384\" },
+    { 0x00009E, \"TLS_DHE_RSA_WITH_AES_128_GCM_SHA256\" },
+    { 0x00009F, \"TLS_DHE_RSA_WITH_AES_256_GCM_SHA384\" },
+    { 0x0000A0, \"TLS_DH_RSA_WITH_AES_128_GCM_SHA256\" },
+    { 0x0000A1, \"TLS_DH_RSA_WITH_AES_256_GCM_SHA384\" },
+    { 0x0000A2, \"TLS_DHE_DSS_WITH_AES_128_GCM_SHA256\" },
+    { 0x0000A3, \"TLS_DHE_DSS_WITH_AES_256_GCM_SHA384\" },
+    { 0x0000A4, \"TLS_DH_DSS_WITH_AES_128_GCM_SHA256\" },
+    { 0x0000A5, \"TLS_DH_DSS_WITH_AES_256_GCM_SHA384\" },
+    { 0x0000A6, \"TLS_DH_anon_WITH_AES_128_GCM_SHA256\" },
+    { 0x0000A7, \"TLS_DH_anon_WITH_AES_256_GCM_SHA384\" },
+    /* RFC 5487 */
+    { 0x0000A8, \"TLS_PSK_WITH_AES_128_GCM_SHA256\" },
+    { 0x0000A9, \"TLS_PSK_WITH_AES_256_GCM_SHA384\" },
+    { 0x0000AA, \"TLS_DHE_PSK_WITH_AES_128_GCM_SHA256\" },
+    { 0x0000AB, \"TLS_DHE_PSK_WITH_AES_256_GCM_SHA384\" },
+    { 0x0000AC, \"TLS_RSA_PSK_WITH_AES_128_GCM_SHA256\" },
+    { 0x0000AD, \"TLS_RSA_PSK_WITH_AES_256_GCM_SHA384\" },
+    { 0x0000AE, \"TLS_PSK_WITH_AES_128_CBC_SHA256\" },
+    { 0x0000AF, \"TLS_PSK_WITH_AES_256_CBC_SHA384\" },
+    { 0x0000B0, \"TLS_PSK_WITH_NULL_SHA256\" },
+    { 0x0000B1, \"TLS_PSK_WITH_NULL_SHA384\" },
+    { 0x0000B2, \"TLS_DHE_PSK_WITH_AES_128_CBC_SHA256\" },
+    { 0x0000B3, \"TLS_DHE_PSK_WITH_AES_256_CBC_SHA384\" },
+    { 0x0000B4, \"TLS_DHE_PSK_WITH_NULL_SHA256\" },
+    { 0x0000B5, \"TLS_DHE_PSK_WITH_NULL_SHA384\" },
+    { 0x0000B6, \"TLS_RSA_PSK_WITH_AES_128_CBC_SHA256\" },
+    { 0x0000B7, \"TLS_RSA_PSK_WITH_AES_256_CBC_SHA384\" },
+    { 0x0000B8, \"TLS_RSA_PSK_WITH_NULL_SHA256\" },
+    { 0x0000B9, \"TLS_RSA_PSK_WITH_NULL_SHA384\" },
+    /* From RFC 5932 */
+    { 0x0000BA, \"TLS_RSA_WITH_CAMELLIA_128_CBC_SHA256\" },
+    { 0x0000BB, \"TLS_DH_DSS_WITH_CAMELLIA_128_CBC_SHA256\" },
+    { 0x0000BC, \"TLS_DH_RSA_WITH_CAMELLIA_128_CBC_SHA256\" },
+    { 0x0000BD, \"TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA256\" },
+    { 0x0000BE, \"TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA256\" },
+    { 0x0000BF, \"TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA256\" },
+    { 0x0000C0, \"TLS_RSA_WITH_CAMELLIA_256_CBC_SHA256\" },
+    { 0x0000C1, \"TLS_DH_DSS_WITH_CAMELLIA_256_CBC_SHA256\" },
+    { 0x0000C2, \"TLS_DH_RSA_WITH_CAMELLIA_256_CBC_SHA256\" },
+    { 0x0000C3, \"TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA256\" },
+    { 0x0000C4, \"TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA256\" },
+    { 0x0000C5, \"TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA256\" },
+    /* 0x00,0xC6-FE Unassigned  */
+    { 0x0000FF, \"TLS_EMPTY_RENEGOTIATION_INFO_SCSV\" },
+    /* 0x01-BF,* Unassigned  */
+    /* From RFC 4492 */
+    { 0x00c001, \"TLS_ECDH_ECDSA_WITH_NULL_SHA\" },
+    { 0x00c002, \"TLS_ECDH_ECDSA_WITH_RC4_128_SHA\" },
+    { 0x00c003, \"TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x00c004, \"TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA\" },
+    { 0x00c005, \"TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA\" },
+    { 0x00c006, \"TLS_ECDHE_ECDSA_WITH_NULL_SHA\" },
+    { 0x00c007, \"TLS_ECDHE_ECDSA_WITH_RC4_128_SHA\" },
+    { 0x00c008, \"TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x00c009, \"TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA\" },
+    { 0x00c00a, \"TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA\" },
+    { 0x00c00b, \"TLS_ECDH_RSA_WITH_NULL_SHA\" },
+    { 0x00c00c, \"TLS_ECDH_RSA_WITH_RC4_128_SHA\" },
+    { 0x00c00d, \"TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x00c00e, \"TLS_ECDH_RSA_WITH_AES_128_CBC_SHA\" },
+    { 0x00c00f, \"TLS_ECDH_RSA_WITH_AES_256_CBC_SHA\" },
+    { 0x00c010, \"TLS_ECDHE_RSA_WITH_NULL_SHA\" },
+    { 0x00c011, \"TLS_ECDHE_RSA_WITH_RC4_128_SHA\" },
+    { 0x00c012, \"TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x00c013, \"TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA\" },
+    { 0x00c014, \"TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA\" },
+    { 0x00c015, \"TLS_ECDH_anon_WITH_NULL_SHA\" },
+    { 0x00c016, \"TLS_ECDH_anon_WITH_RC4_128_SHA\" },
+    { 0x00c017, \"TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x00c018, \"TLS_ECDH_anon_WITH_AES_128_CBC_SHA\" },
+    { 0x00c019, \"TLS_ECDH_anon_WITH_AES_256_CBC_SHA\" },
+    /* RFC 5054 */
+    { 0x00C01A, \"TLS_SRP_SHA_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x00C01B, \"TLS_SRP_SHA_RSA_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x00C01C, \"TLS_SRP_SHA_DSS_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x00C01D, \"TLS_SRP_SHA_WITH_AES_128_CBC_SHA\" },
+    { 0x00C01E, \"TLS_SRP_SHA_RSA_WITH_AES_128_CBC_SHA\" },
+    { 0x00C01F, \"TLS_SRP_SHA_DSS_WITH_AES_128_CBC_SHA\" },
+    { 0x00C020, \"TLS_SRP_SHA_WITH_AES_256_CBC_SHA\" },
+    { 0x00C021, \"TLS_SRP_SHA_RSA_WITH_AES_256_CBC_SHA\" },
+    { 0x00C022, \"TLS_SRP_SHA_DSS_WITH_AES_256_CBC_SHA\" },
+    /* RFC 5589 */
+    { 0x00C023, \"TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256\" },
+    { 0x00C024, \"TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384\" },
+    { 0x00C025, \"TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256\" },
+    { 0x00C026, \"TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384\" },
+    { 0x00C027, \"TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256\" },
+    { 0x00C028, \"TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384\" },
+    { 0x00C029, \"TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256\" },
+    { 0x00C02A, \"TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384\" },
+    { 0x00C02B, \"TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256\" },
+    { 0x00C02C, \"TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384\" },
+    { 0x00C02D, \"TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256\" },
+    { 0x00C02E, \"TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384\" },
+    { 0x00C02F, \"TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256\" },
+    { 0x00C030, \"TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384\" },
+    { 0x00C031, \"TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256\" },
+    { 0x00C032, \"TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384\" },
+    /* RFC 5489 */
+    { 0x00C033, \"TLS_ECDHE_PSK_WITH_RC4_128_SHA\" },
+    { 0x00C034, \"TLS_ECDHE_PSK_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x00C035, \"TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA\" },
+    { 0x00C036, \"TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA\" },
+    { 0x00C037, \"TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA256\" },
+    { 0x00C038, \"TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA384\" },
+    { 0x00C039, \"TLS_ECDHE_PSK_WITH_NULL_SHA\" },
+    { 0x00C03A, \"TLS_ECDHE_PSK_WITH_NULL_SHA256\" },
+    { 0x00C03B, \"TLS_ECDHE_PSK_WITH_NULL_SHA384\" },
+    /* 0xC0,0x3C-FF Unassigned
+            0xC1-FD,* Unassigned
+            0xFE,0x00-FD Unassigned
+            0xFE,0xFE-FF Reserved to avoid conflicts with widely deployed implementations [Pasi_Eronen]
+            0xFF,0x00-FF Reserved for Private Use [RFC5246]
+            */
+
+    /* these from http://www.mozilla.org/projects/
+         security/pki/nss/ssl/fips-ssl-ciphersuites.html */
+    { 0x00fefe, \"SSL_RSA_FIPS_WITH_DES_CBC_SHA\"},
+    { 0x00feff, \"SSL_RSA_FIPS_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x00ffe0, \"SSL_RSA_FIPS_WITH_3DES_EDE_CBC_SHA\" },
+    { 0x00ffe1, \"SSL_RSA_FIPS_WITH_DES_CBC_SHA\"},
+    /* note that ciphersuites of {0x00????} are TLS cipher suites in
+     * a sslv2 client hello message; the ???? above is the two-byte
+     * tls cipher suite id
+     */
+
+    { 0x010080, \"SSL2_RC4_128_WITH_MD5\" },
+    { 0x020080, \"SSL2_RC4_128_EXPORT40_WITH_MD5\" },
+    { 0x030080, \"SSL2_RC2_CBC_128_CBC_WITH_MD5\" },
+    { 0x040080, \"SSL2_RC2_CBC_128_CBC_WITH_MD5\" },
+    { 0x050080, \"SSL2_IDEA_128_CBC_WITH_MD5\" },
+    { 0x060040, \"SSL2_DES_64_CBC_WITH_MD5\" },
+    { 0x0700c0, \"SSL2_DES_192_EDE3_CBC_WITH_MD5\" },
+    { 0x080080, \"SSL2_RC4_64_WITH_MD5\" },
+
+    /* Microsoft's old PCT protocol. These are from Eric Rescorla's
+       book \"SSL and TLS\" */
+    { 0x800001, \"PCT_SSL_CERT_TYPE | PCT1_CERT_X509\" },
+    { 0x800003, \"PCT_SSL_CERT_TYPE | PCT1_CERT_X509_CHAIN\" },
+    { 0x810001, \"PCT_SSL_HASH_TYPE | PCT1_HASH_MD5\" },
+    { 0x810003, \"PCT_SSL_HASH_TYPE | PCT1_HASH_SHA\" },
+    { 0x820001, \"PCT_SSL_EXCH_TYPE | PCT1_EXCH_RSA_PKCS1\" },
+    { 0x830004, \"PCT_SSL_CIPHER_TYPE_1ST_HALF | PCT1_CIPHER_RC4\" },
+    { 0x842840, \"PCT_SSL_CIPHER_TYPE_2ND_HALF | PCT1_ENC_BITS_40 | PCT1_MAC_BITS_128\" },
+    { 0x848040, \"PCT_SSL_CIPHER_TYPE_2ND_HALF | PCT1_ENC_BITS_128 | PCT1_MAC_BITS_128\" },
+    { 0x8f8001, \"PCT_SSL_COMPAT | PCT_VERSION_1\" },
+    { 0x00, NULL }
+}"
+                :type ("value_string" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1807 15998])
+            ("hello" type
+               (:members 
+                  ( ("client" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [16017 16056])
+                    ("server" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [16059 16098])
+                    ("ssl2" variable (:type "char") (reparse-symbol classsubparts) [16101 16120])
+                    ("vmajor" variable (:type "unsigned char") (reparse-symbol classsubparts) [16151 16172])
+                    ("vminor" variable (:type "unsigned char") (reparse-symbol classsubparts) [16200 16221])
+                    ("sessionidlen" variable (:type "int") (reparse-symbol classsubparts) [16249 16276])
+                    ("sessionid" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [16279 16307])
+                    ("ciphers" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [16327 16349])
+                    ("compression" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [16380 16406])
+                    ("servername" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [16443 16468])
+                    ("ticket" variable (:type "char") (reparse-symbol classsubparts) [16504 16525])
+                    ("ticketlen" variable (:type "int") (reparse-symbol classsubparts) [16560 16584]))                  
+                :type "struct")
+                nil [16000 16607])
+            ("append" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("to" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16628 16638])
+                    ("what" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16639 16656]))                  
+                :type "void")
+                nil [16609 16888])
+            ("parse" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16917 16936])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [16937 16945]))                  
+                :type ("hello" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [16890 23366])
+            ("count" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [23385 23402]))                  
+                :type "int")
+                nil [23368 23518])
+            ("display" function
+               (:arguments 
+                  ( ("ts" variable
+                       (:pointer 1
+                        :type ("timeval" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23533 23552])
+                    ("hello" variable
+                       (:pointer 1
+                        :type ("hello" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23553 23573]))                  
+                :type "void")
+                nil [23520 24343])
+            ("dump" function
+               (:arguments 
+                  ( ("output" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24355 24368])
+                    ("ts" variable
+                       (:pointer 1
+                        :type ("timeval" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24369 24388])
+                    ("hello" variable
+                       (:pointer 1
+                        :type ("hello" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24389 24409]))                  
+                :type "void")
+                nil [24345 25018])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [25029 25038])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25039 25059]))                  
+                :type "int")
+                nil [25020 26390]))          
+      :file "rfc5077-pcap.c"
+      :pointmax 26391
+      :fsize 26400
+      :lastmodtime '(22693 30276 209662 176000)
+      :unmatched-syntax nil)
+    (semanticdb-table "common.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("common.h" include nil nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [22 40])
+            ("stdlib.h" include (:system-flag t) nil [41 60])
+            ("unistd.h" include (:system-flag t) nil [61 80])
+            ("stdarg.h" include (:system-flag t) nil [81 100])
+            ("current" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [102 128])
+            ("running" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [129 152])
+            ("BEGIN" variable (:constant-flag t) nil [162 167])
+            ("CHECK" variable (:constant-flag t) nil [188 193])
+            ("BALLOT" variable (:constant-flag t) nil [223 229])
+            ("WARN" variable (:constant-flag t) nil [259 263])
+            ("display" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sign" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [306 323])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [324 343])
+                    ("ap" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [344 355]))                  
+                :type "void")
+                nil [286 1066])
+            ("start" function
+               (:arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1079 1098])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1099 1103]))                  
+                :type "void")
+                nil [1068 1442])
+            ("end" function
+               (:arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1453 1472])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1473 1477]))                  
+                :type "void")
+                nil [1444 1563])
+            ("fail" function
+               (:arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1575 1594])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1595 1599]))                  
+                :type "void")
+                nil [1565 1708])
+            ("warn" function
+               (:arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1720 1739])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1740 1744]))                  
+                :type "void")
+                nil [1710 1829]))          
+      :file "common.c"
+      :pointmax 1830
+      :fsize 1839
+      :lastmodtime '(22693 30276 209662 176000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CHECK" . ((string "\"\\033[1;32m✔\\033[0m\"" 194 . 214)))
+          ("BEGIN" . ((string "\"\\r\\033[2K\"" 168 . 179)))
+          ("WARN" . ((string "\"\\033[1;33m‼\\033[0m\"" 264 . 284)))
+          ("BALLOT" . ((string "\"\\033[1;31m✘\\033[0m\"" 230 . 250)))
+          )
+))
+  :file "!home!rkirk!src!tt!rfc5077!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

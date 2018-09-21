@@ -1,0 +1,919 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "sdmifadaptor.h"
+    :file "sdmifadaptor.h"
+    :fsize 8974
+    :lastmodtime '(21492 54151 950591 346000)
+    )
+   (semanticdb-table "StorageDeviceManager.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("STORAGEDEVICEMANAGER_H" variable (:constant-flag t) nil [966 988])
+            ("iostream" include (:system-flag t) nil [990 1009])
+            ("string" include (:system-flag t) nil [1010 1027])
+            ("vector" include (:system-flag t) nil [1028 1045])
+            ("QThread" include (:system-flag t) nil [1046 1064])
+            ("QObject" include (:system-flag t) nil [1065 1083])
+            ("QString" include (:system-flag t) nil [1084 1102])
+            ("QtCore" include (:system-flag t) nil [1103 1120])
+            ("QtCore/QObject" include (:system-flag t) nil [1121 1146])
+            ("QtDBus/QtDBus" include (:system-flag t) nil [1147 1171])
+            ("QList" include (:system-flag t) nil [1172 1188])
+            ("QStringList" include (:system-flag t) nil [1189 1211])
+            ("QMap" include (:system-flag t) nil [1212 1227])
+            ("sdm.h" include nil nil [1229 1245])
+            ("shstormanif.h" include nil nil [1246 1270])
+            ("shmountif.h" include nil nil [1271 1293])
+            ("shdmif.h" include nil nil [1294 1313])
+            ("partedif.h" include nil nil [1314 1335])
+            ("mke2fsif.h" include nil nil [1336 1357])
+            ("flasheraseif.h" include nil nil [1358 1383])
+            ("ledserverif.h" include nil nil [1384 1408])
+            ("FORMAT_DBUS_TIMEOUT_MS" variable (:constant-flag t) nil [1418 1440])
+            ("UNMOUNT_INITIAL_WAIT_TIME_SECS" variable (:constant-flag t) nil [1463 1493])
+            ("UMOUNT_POLLING_TIME_MSECS" variable (:constant-flag t) nil [1508 1533])
+            ("UMOUNT_RETRY_ATTEMPTS" variable (:constant-flag t) nil [1550 1571])
+            ("sdmlog" variable (:constant-flag t) nil [1822 1828])
+            ("sdmwarn" variable (:constant-flag t) nil [1850 1857])
+            ("sdmerr" variable (:constant-flag t) nil [1878 1884])
+            ("SdmDebug" type (:type "class") nil [1899 1917])
+            ("<<" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("SdmDebug" type (:type "class") nil nil)
+                :arguments 
+                  ( ("stream" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SdmDebug" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1976 1999])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2000 2010]))                  
+                :constant-flag t
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [1919 2033])
+            ("DEVICE_TYPE" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("INTERNAL_DISK" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2060 2074])
+                          ("INTERNAL_MTD_FLASH" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2078 2097])
+                          ("USB_DISK" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2101 2110])
+                          ("EMMC_FLASH" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2114 2125])
+                          ("E_SATA" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2129 2136])
+                          ("DEVICE_MAX" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2140 2152]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [2042 2165])
+            ("DEVICE_COMPLIANCE_STATE" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("DEVICE_COMPLIANT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2186 2203])
+                          ("DEVICE_MADE_COMPLIANT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2207 2229])
+                          ("DEVICE_MAKE_COMPLIANT_FAILED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2233 2262])
+                          ("DEVICE_NOT_COMPLIANT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2266 2287])
+                          ("DEVICE_NOT_COMPLIANT_INSUFFICIENT_SPACE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2291 2332]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [2168 2357])
+            ("Partition" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2381 2388])
+                    ("m_partitionId" variable (:type "int") (reparse-symbol classsubparts) [2395 2413])
+                    ("m_partitionExistsOnDevice" variable (:type "bool") (reparse-symbol classsubparts) [2420 2451])
+                    ("m_volumeName" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2501 2522])
+                    ("m_fileSystem" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2529 2550])
+                    ("m_formatOptions" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2557 2581])
+                    ("m_autoMount" variable (:type "bool") (reparse-symbol classsubparts) [2588 2605])
+                    ("m_mountPoint" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2612 2633])
+                    ("m_mountOptions" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2640 2663])
+                    ("m_pvrCapable" variable (:type "bool") (reparse-symbol classsubparts) [2670 2688])
+                    ("m_encrypted" variable (:type "bool") (reparse-symbol classsubparts) [2695 2712])
+                    ("m_minPartitionSize" variable (:type ("quint64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2719 2746])
+                    ("m_status" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2753 2770])
+                    ("m_size" variable (:type ("quint64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2777 2793])
+                    ("m_partitionStart" variable (:type ("quint64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2800 2827])
+                    ("m_partitionEnd" variable (:type ("quint64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2849 2874])
+                    ("m_partitionType" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2897 2921]))                  
+                :type "class")
+                nil [2360 2958])
+            ("StorageDevice" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3004 3011])
+                    ("m_deviceType" variable (:type ("DEVICE_TYPE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3018 3043])
+                    ("m_deviceMake" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3050 3071])
+                    ("m_deviceName" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3078 3099])
+                    ("m_makeDeviceCompliant" variable (:type "bool") (reparse-symbol classsubparts) [3106 3133])
+                    ("m_devicePresent" variable (:type "bool") (reparse-symbol classsubparts) [3140 3161])
+                    ("m_spinning" variable (:type "bool") (reparse-symbol classsubparts) [3168 3184])
+                    ("m_autoFormat" variable (:type "bool") (reparse-symbol classsubparts) [3191 3209])
+                    ("m_driveType" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3216 3236])
+                    ("m_minDeviceSize" variable (:type ("quint64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3243 3267])
+                    ("m_deviceSize" variable (:type ("quint64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3274 3296])
+                    ("m_partitions" variable (:type ("QList" type
+                         (:template-specifier 
+                            ( ("Partition" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3303 3333]))                  
+                :type "class")
+                nil [2979 3336])
+            ("StorageDeviceManager" type
+               (:superclasses 
+                  ( ("QThread" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [3830 3838])
+                    ("stormanIf" variable
+                       (:pointer 1
+                        :type ("ShStormanIf" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3847 3870])
+                    ("mountIf" variable
+                       (:pointer 1
+                        :type ("ShMountIf" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3879 3898])
+                    ("dmIf" variable
+                       (:pointer 1
+                        :type ("ShDmIf" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3907 3920])
+                    ("partedIf" variable
+                       (:pointer 1
+                        :type ("PartedIf" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3929 3948])
+                    ("mke2fsIf" variable
+                       (:pointer 1
+                        :type ("Mke2fsIf" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3957 3976])
+                    ("flasheraseIf" variable
+                       (:pointer 1
+                        :type ("FlasheraseIf" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3985 4012])
+                    ("ledserverif" variable
+                       (:pointer 1
+                        :type ("LedServerIf" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4021 4046])
+                    ("m_storageDevices" variable (:type ("QList" type
+                         (:template-specifier 
+                            ( ("StorageDevice" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4056 4094])
+                    ("readStDevXmlConfigFile" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4105 4135])
+                    ("dbgPrintDeviceInfo" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4144 4170])
+                    ("verifyDiskCompliance" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("device" variable
+                               (:reference 1
+                                :type ("StorageDevice" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4226 4248])
+                            ("partitionCnt" variable (:type "int") (reparse-symbol arg-sub-list) [4249 4267]))                          
+                        :type ("DEVICE_COMPLIANCE_STATE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4179 4268])
+                    ("fillDeviceInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("device" variable
+                               (:reference 1
+                                :type ("StorageDevice" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4298 4321]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4277 4322])
+                    ("formatDevicesIfRequested" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4361 4366]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4331 4367])
+                    ("createPermanentFfsPartition" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4408 4413]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4376 4414])
+                    ("probeDevicePartitions" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("deviceToProbe" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4449 4471]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4423 4472])
+                    ("sdm_get_media_capable_device_partitions" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("storageDevices" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("StorageDevice" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4533 4570])
+                            ("deviceList" variable
+                               (:reference 1
+                                :type ("QStringList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4591 4615]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4481 4616])
+                    ("protected" label nil (reparse-symbol classsubparts) [4630 4640])
+                    ("run" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4649 4669])
+                    ("public" label nil (reparse-symbol classsubparts) [4675 4682])
+                    ("StorageDeviceManager" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("StorageDeviceManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4691 4715])
+                    ("StorageDeviceManager" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4724 4749])
+                    ("public" label nil (reparse-symbol classsubparts) [4755 4770])
+                    ("dmcryptCreate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("device" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4797 4819])
+                            ("dmName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4820 4842])
+                            ("options" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4843 4866]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4779 4867])
+                    ("dmcryptRemove" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dmName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4894 4916])
+                            ("options" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4917 4940]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4876 4941])
+                    ("flashErase" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("mtdDevice" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4965 4990])
+                            ("startOffset" variable (:type "int") (reparse-symbol arg-sub-list) [4991 5007])
+                            ("blockCount" variable (:type "int") (reparse-symbol arg-sub-list) [5008 5023])
+                            ("options" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5024 5047]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4950 5048])
+                    ("format" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("device" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5068 5090])
+                            ("fs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5091 5109])
+                            ("options" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5110 5133]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5057 5134])
+                    ("formatwithProgress" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("device" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5166 5188])
+                            ("mountPoint" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5189 5215])
+                            ("fs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5216 5234])
+                            ("options" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5235 5258]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5143 5259])
+                    ("getDeviceInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("device" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5302 5324])
+                            ("status" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5325 5337]))                          
+                        :type ("QStringList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5276 5338])
+                    ("getDevices" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("status" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5370 5382]))                          
+                        :type ("QStringList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5347 5383])
+                    ("getMediaMountPoints" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("status" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5425 5438]))                          
+                        :type ("QStringList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5392 5439])
+                    ("mkpart" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("device" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5459 5481])
+                            ("partType" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5482 5506])
+                            ("fsType" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5507 5529])
+                            ("start" variable (:type "int") (reparse-symbol arg-sub-list) [5530 5540])
+                            ("end" variable (:type "int") (reparse-symbol arg-sub-list) [5541 5549]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5448 5550])
+                    ("mktable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("device" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5571 5593])
+                            ("labelType" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5594 5619]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5559 5620])
+                    ("mount" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("device" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5639 5661])
+                            ("node" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5662 5682])
+                            ("fs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5683 5701])
+                            ("options" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5702 5725]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5629 5726])
+                    ("mountList" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("status" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5757 5769]))                          
+                        :type ("QStringList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5735 5770])
+                    ("namepart" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("device" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5792 5814])
+                            ("partNumber" variable (:type "int") (reparse-symbol arg-sub-list) [5815 5830])
+                            ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5831 5851]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5779 5852])
+                    ("rmpart" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("device" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5872 5894])
+                            ("partNumber" variable (:type "int") (reparse-symbol arg-sub-list) [5895 5910]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5861 5911])
+                    ("spinDown" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("device" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5933 5955])
+                            ("waitPeriod" variable (:type "int") (reparse-symbol arg-sub-list) [5956 5971]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5920 5972])
+                    ("spinUp" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("device" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5992 6014])
+                            ("waitPeriod" variable (:type "int") (reparse-symbol arg-sub-list) [6015 6030]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5981 6031])
+                    ("powerDown" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("device" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6054 6076]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6040 6077])
+                    ("bookkeep" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("activity" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6099 6123])
+                            ("device" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6124 6146]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6086 6147])
+                    ("umount" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fsOrDir" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6167 6190])
+                            ("options" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6191 6214]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6156 6215])
+                    ("alignCheck" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("device" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6239 6261])
+                            ("partNumber" variable (:type "int") (reparse-symbol arg-sub-list) [6262 6277])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6278 6298]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6224 6299])
+                    ("stormanSlot" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6325 6340]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6308 6341])
+                    ("devicePlug" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("device" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6393 6415]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6377 6416])
+                    ("deviceUnplug" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("device" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6443 6465]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6425 6466])
+                    ("ChangePVRState" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6495 6518]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6475 6519])
+                    ("progressUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6548 6571]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6528 6572]))                  
+                :type "class")
+                nil [3762 6576])
+            ("THERMAL_SHUTDOWN_MARKER" variable (:constant-flag t) nil [6586 6609]))          
+    :file "StorageDeviceManager.h"
+    :pointmax 6642
+    :fsize 6641
+    :lastmodtime '(21492 52163 15852 438000)
+    :unmatched-syntax '((punctuation 6356 . 6357) (symbol 6347 . 6356) (symbol 3812 . 3820))
+    :lexical-table 
+        '(("sdmerr" (spp-arg-list nil 1884 . 1886) . ((symbol "SdmDebug" 1887 . 1895) (semantic-list "()" 1895 . 1897)))
+          ("STORAGEDEVICEMANAGER_H")
+          ("THERMAL_SHUTDOWN_MARKER" . ((string "\"/mnt/ffs/.disablehdd\"" 6610 . 6632)))
+          ("sdmwarn" (spp-arg-list nil 1857 . 1859) . ((symbol "SdmDebug" 1859 . 1867) (semantic-list "()" 1867 . 1869)))
+          ("FORMAT_DBUS_TIMEOUT_MS" . ((number "120000" 1444 . 1450)))
+          ("UNMOUNT_INITIAL_WAIT_TIME_SECS" . ((number "1" 1498 . 1499)))
+          ("sdmlog" (spp-arg-list nil 1828 . 1830) . ((symbol "SdmDebug" 1831 . 1839) (semantic-list "()" 1839 . 1841)))
+          ("UMOUNT_POLLING_TIME_MSECS" . ((number "250" 1538 . 1541)))
+          ("UMOUNT_RETRY_ATTEMPTS" . ((number "5" 1580 . 1581)))
+          )
+
+    )
+   (semanticdb-table "sdm.h"
+    :file "sdm.h"
+    :fsize 1267
+    :lastmodtime '(21492 52163 15852 438000)
+    )
+   (semanticdb-table "shstormanif.h"
+    :file "shstormanif.h"
+    :fsize 3886
+    :lastmodtime '(21492 54151 723592 499000)
+    )
+   (semanticdb-table "shmountif.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SHMOUNTIF_H_1408553863" variable (:constant-flag t) nil [590 612])
+            ("QtCore/QObject" include (:system-flag t) nil [614 639])
+            ("QtCore/QByteArray" include (:system-flag t) nil [640 668])
+            ("QtCore/QList" include (:system-flag t) nil [669 692])
+            ("QtCore/QMap" include (:system-flag t) nil [693 715])
+            ("QtCore/QString" include (:system-flag t) nil [716 741])
+            ("QtCore/QStringList" include (:system-flag t) nil [742 771])
+            ("QtCore/QVariant" include (:system-flag t) nil [772 798])
+            ("QtDBus/QtDBus" include (:system-flag t) nil [799 823])
+            ("ShMountIf" type
+               (:superclasses 
+                  ( ("QDBusAbstractInterface" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [945 952])
+                    ("staticInterfaceName" function
+                       (:pointer 1
+                        :typemodifiers ("static" "inline")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [957 1044])
+                    ("public" label nil (reparse-symbol classsubparts) [1046 1053])
+                    ("ShMountIf" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("service" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1068 1091])
+                            ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1092 1112])
+                            ("connection" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QDBusConnection" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1113 1147])
+                            ("parent" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1148 1165]))                          
+                        :type ("ShMountIf" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1058 1169])
+                    ("ShMountIf" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1175 1188])
+                    ("public" label nil (reparse-symbol classsubparts) [1190 1205])
+                    ("exec" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1269 1289])
+                            ("args" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QStringList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1290 1314]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("QStringList" type nil nil nil)
+                                  ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1221 1523])
+                    ("exec" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1564 1584])
+                            ("args" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QStringList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1585 1609])
+                            ("status" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1610 1622]))                          
+                        :type ("QDBusReply" type
+                             (:template-specifier 
+                                ( ("QStringList" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1528 2041])
+                    ("get" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2094 2114])
+                            ("args" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QStringList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2115 2139]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("QStringList" type nil nil nil)
+                                  ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2047 2347])
+                    ("get" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2387 2407])
+                            ("args" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QStringList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2408 2432])
+                            ("status" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2433 2445]))                          
+                        :type ("QDBusReply" type
+                             (:template-specifier 
+                                ( ("QStringList" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2352 2863])
+                    ("set" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2916 2936])
+                            ("args" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QStringList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2937 2961]))                          
+                        :type ("QDBusPendingReply" type
+                             (:template-specifier 
+                                ( ("QStringList" type nil nil nil)
+                                  ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2869 3169])
+                    ("set" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3209 3229])
+                            ("args" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QStringList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3230 3254])
+                            ("status" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3255 3267]))                          
+                        :type ("QDBusReply" type
+                             (:template-specifier 
+                                ( ("QStringList" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3174 3685])
+                    ("signal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3725 3745]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3713 3746]))                  
+                :type "class")
+                nil [883 3749])
+            ("org" type
+               (:members 
+                  ( ("pace" type
+                       (:members 
+                          ( ("psf" type
+                               (:members 
+                                  ( ("sh_mount" variable (:type ("ShMountIf" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [3822 3841]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [3790 3847]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3769 3851]))                  
+                :type "namespace")
+                nil [3751 3853]))          
+    :file "shmountif.h"
+    :pointmax 3861
+    :fsize 3860
+    :lastmodtime '(21492 54151 791592 156000)
+    :unmatched-syntax '((punctuation 3821 . 3822) (punctuation 3820 . 3821) (TYPEDEF 3812 . 3819) (punctuation 3696 . 3697) (symbol 3687 . 3696) (number 1166 . 1167) (punctuation 1164 . 1165) (symbol 936 . 944))
+    :lexical-table 
+        '(("SHMOUNTIF_H_1408553863")
+          )
+
+    )
+   (semanticdb-table "shdmif.h"
+    :file "shdmif.h"
+    :fsize 3821
+    :lastmodtime '(21492 54151 815592 34000)
+    )
+   (semanticdb-table "partedif.h"
+    :file "partedif.h"
+    :fsize 3843
+    :lastmodtime '(21492 54151 827591 974000)
+    )
+   (semanticdb-table "mke2fsif.h"
+    :file "mke2fsif.h"
+    :fsize 3843
+    :lastmodtime '(21492 54151 847591 873000)
+    )
+   (semanticdb-table "flasheraseif.h"
+    :file "flasheraseif.h"
+    :fsize 3895
+    :lastmodtime '(21492 54151 911591 543000)
+    )
+   (semanticdb-table "ledserverif.h"
+    :file "ledserverif.h"
+    :fsize 4833
+    :lastmodtime '(21492 54151 919591 503000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D713!src!pace!middleware!storman!sdm!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

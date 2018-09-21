@@ -1,0 +1,39 @@
+;; Object security/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "security/"
+  :tables (list 
+   (semanticdb-table "m2m_aescbc.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [10797 10815])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10825 10830]))                  
+                :type "int")
+                nil [10816 10878]))          
+    :file "m2m_aescbc.c"
+    :pointmax 10886
+    :fsize 10885
+    :lastmodtime '(21868 34360 403641 987000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "m2m_aesecb.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [9270 9288])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9298 9303]))                  
+                :type "int")
+                nil [9289 9351]))          
+    :file "m2m_aesecb.c"
+    :pointmax 9359
+    :fsize 9358
+    :lastmodtime '(21868 34360 406641 972000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!BSP!drivers!src!refsw!nexus!examples!security!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

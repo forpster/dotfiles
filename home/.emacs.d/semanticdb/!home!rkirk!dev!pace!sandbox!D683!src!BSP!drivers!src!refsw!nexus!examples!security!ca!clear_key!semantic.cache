@@ -1,0 +1,73 @@
+;; Object clear_key/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "clear_key/"
+  :tables (list 
+   (semanticdb-table "decode_multi2.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("nexus_platform.h" include nil nil [2953 2980])
+            ("nexus_pid_channel.h" include nil nil [2981 3011])
+            ("nexus_parser_band.h" include nil nil [3012 3042])
+            ("nexus_video_decoder.h" include nil nil [3043 3075])
+            ("nexus_stc_channel.h" include nil nil [3076 3106])
+            ("nexus_display.h" include nil nil [3107 3133])
+            ("nexus_video_window.h" include nil nil [3134 3165])
+            ("nexus_video_input.h" include nil nil [3166 3196])
+            ("nexus_audio_dac.h" include nil nil [3197 3225])
+            ("nexus_audio_decoder.h" include nil nil [3226 3258])
+            ("nexus_audio_output.h" include nil nil [3259 3290])
+            ("nexus_audio_input.h" include nil nil [3291 3321])
+            ("nexus_spdif_output.h" include nil nil [3322 3353])
+            ("nexus_composite_output.h" include nil nil [3354 3389])
+            ("nexus_component_output.h" include nil nil [3390 3425])
+            ("bstd.h" include nil nil [3426 3443])
+            ("bkni.h" include nil nil [3444 3461])
+            ("stdio.h" include (:system-flag t) nil [3462 3480])
+            ("stdlib.h" include (:system-flag t) nil [3481 3500])
+            ("string.h" include (:system-flag t) nil [3501 3520])
+            ("nexus_security.h" include nil nil [3588 3615])
+            ("Prompt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3662 3667]))                  
+                :type "int")
+                nil [3651 3668])
+            ("Descrmbler_Multi2Ecb_SwKey" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3701 3706]))                  
+                :type "void")
+                nil [3669 3707])
+            ("Descrmbler_Multi2Cbc_SwKey" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3740 3745]))                  
+                :type "void")
+                nil [3708 3746])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3757 3762]))                  
+                :type "int")
+                nil [3748 11960])
+            ("Prompt" function (:type "int") nil [11963 12459])
+            ("Descrmbler_Multi2Ecb_SwKey" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13472 13477]))                  
+                :type "void")
+                nil [13440 17450])
+            ("Descrmbler_Multi2Cbc_SwKey" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18205 18210]))                  
+                :type "void")
+                nil [18173 23059]))          
+    :file "decode_multi2.c"
+    :pointmax 23061
+    :fsize 23060
+    :lastmodtime '(21629 55264 527652 646000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D683!src!BSP!drivers!src!refsw!nexus!examples!security!ca!clear_key!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

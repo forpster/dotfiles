@@ -1,0 +1,230 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "latens_vad_app_public.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__LATENS_VAD_APP_PUBLIC_H" variable (:constant-flag t) nil [687 712])
+            ("latens_vad_public.h" include nil nil [714 744])
+            ("LATENS_VAD_VALIDATE" variable (:constant-flag t) nil [754 773])
+            ("latens_vad_vvvvvvvvvvvv" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("pImage" variable
+                       (:pointer 1
+                        :type ("LATENS_VAD_ARRAYDESCRIPTOR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2879 2914])
+                    ("pPatWatchDog" variable (:type ("LATENS_WATCHDOG_PAT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2948 2981])
+                    ("pPayloadInfo" variable
+                       (:pointer 1
+                        :type ("LATENS_VAD_PAYLOADINFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3014 3052]))                  
+                :type ("LATENS_VAD_RESULT" type (:type "class") nil nil))
+                nil [2800 3054]))          
+    :file "latens_vad_app_public.h"
+    :pointmax 3096
+    :fsize 3095
+    :lastmodtime '(21480 5934 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("LATENS_VAD_VALIDATE" . ((symbol "latens_vad_vvvvvvvvvvvv" 774 . 797)))
+          ("__LATENS_VAD_APP_PUBLIC_H")
+          )
+
+    )
+   (semanticdb-table "latens_vad_public.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__LATENS_VAD_PUBLIC_H" variable (:constant-flag t) nil [677 698])
+            ("LATENS_VAD_RESULT" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("LATENS_VAD_RESULT_SUCCESS" variable
+                             (:constant-flag t
+                              :default-value (859 860)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [831 860])
+                          ("LATENS_VAD_RESULT_FAILED_TO_UNWRAP" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [864 899])
+                          ("LATENS_VAD_RESULT_VALIDATION_FAILED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [902 938])
+                          ("LATENS_VAD_RESULT_DECRYPTION_FAILED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [941 978]))                        
+                      :type "enum")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [814 998])
+            ("LATENS_VAD_PAYLOAD" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("LATENS_VAD_APPLICATION" variable
+                             (:constant-flag t
+                              :default-value (1086 1096)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1061 1096])
+                          ("LATENS_VAD_SSM" variable
+                             (:constant-flag t
+                              :default-value (1130 1140)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1100 1140])
+                          ("LATENS_VAD_UNKNOWN_PAYLOAD" variable
+                             (:constant-flag t
+                              :default-value (1174 1184)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1144 1184])
+                          ("LATENS_VAD_SSM2" variable
+                             (:constant-flag t
+                              :default-value (1218 1228)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1188 1228])
+                          ("LATENS_VAD_APPLICATION2" variable
+                             (:constant-flag t
+                              :default-value (1262 1272)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1232 1272]))                        
+                      :type "enum")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [1044 1295])
+            ("LATENS_VAD_ARRAYDESCRIPTOR" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("pArray" variable
+                             (:pointer 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [1422 1445])
+                          ("offsetInBytes" variable (:type "unsigned long") (reparse-symbol classsubparts) [1508 1537])
+                          ("currentLengthInBytes" variable (:type "unsigned long") (reparse-symbol classsubparts) [1606 1642])
+                          ("maxLengthInBytes" variable (:type "unsigned long") (reparse-symbol classsubparts) [1710 1742]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [1356 1774])
+            ("LATENS_VAD_MAX_SPECIFIC_INFO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1833 1861])
+            ("LATENS_VAD_SPECIFICINFO" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("numberOfBytesOfInfo" variable (:type "unsigned long") (reparse-symbol classsubparts) [1889 1924])
+                          ("info" variable
+                             (:dereference 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [1927 1977]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [1870 2005])
+            ("LATENS_VAD_PAYLOADINFO" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("lengthInBytes" variable (:type "unsigned long") (reparse-symbol classsubparts) [2140 2169])
+                          ("decompressedSizeInBytes" variable (:type "unsigned long") (reparse-symbol classsubparts) [2286 2325])
+                          ("type" variable (:type ("LATENS_VAD_PAYLOAD" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2381 2406])
+                          ("specificInfo" variable (:type ("LATENS_VAD_SPECIFICINFO" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2450 2488]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [2050 2516])
+            ("LATENS_VAD_QUERYIMAGEINFO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2558 2583])
+            ("LATENS_VAD_VALIDATEANDDECRYPT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2611 2640])
+            ("LATENS_VAD_VALIDATE_APPLICATION_IMAGE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2670 2707])
+            ("LATENS_READ_32BIT_WORD" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [4508 4700])
+            ("LATENS_WATCHDOG_PAT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [5164 5201])
+            ("latens_vad_zzqiizz" function
+               (:type ("LATENS_VAD_RESULT" type (:type "class") nil nil)
+                :arguments 
+                  ( ("pRead" variable (:type ("LATENS_READ_32BIT_WORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7884 7913])
+                    ("pInstance" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7935 7951])
+                    ("pPatWatchDog" variable (:type ("LATENS_WATCHDOG_PAT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7974 8007])
+                    ("pImageSize" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [8029 8055])
+                    ("pPayloadInfo" variable
+                       (:pointer 1
+                        :type ("LATENS_VAD_PAYLOADINFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8078 8116]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7810 8118])
+            ("latens_vad_zzzzzzz" function
+               (:type ("LATENS_VAD_RESULT" type (:type "class") nil nil)
+                :arguments 
+                  ( ("pImage" variable
+                       (:pointer 1
+                        :type ("LATENS_VAD_ARRAYDESCRIPTOR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10585 10620])
+                    ("pPatWatchDog" variable (:type ("LATENS_WATCHDOG_PAT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10654 10687])
+                    ("pDecryptedImage" variable
+                       (:pointer 1
+                        :type ("LATENS_VAD_ARRAYDESCRIPTOR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10720 10764])
+                    ("pPayloadInfo" variable
+                       (:pointer 1
+                        :type ("LATENS_VAD_PAYLOADINFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10798 10836]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10496 10838])
+            ("latens_vad_GetVersionString" function
+               (:type "unsigned char"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11411 11417]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11360 11419]))          
+    :file "latens_vad_public.h"
+    :pointmax 11503
+    :fsize 11502
+    :lastmodtime '(21480 5934 0 0)
+    :unmatched-syntax '((TYPEDEF 5156 . 5163) (TYPEDEF 4500 . 4507))
+    :lexical-table 
+        '(("LATENS_VAD_QUERYIMAGEINFO" . ((symbol "latens_vad_zzqiizz" 2584 . 2602)))
+          ("__LATENS_VAD_PUBLIC_H")
+          ("LATENS_VAD_MAX_SPECIFIC_INFO" . ((semantic-list "(256)" 1863 . 1868)))
+          ("LATENS_VAD_VALIDATE_APPLICATION_IMAGE" . ((symbol "latens_vad_vvxzvzxvxzvb" 2709 . 2732)))
+          ("LATENS_VAD_VALIDATEANDDECRYPT" . ((symbol "latens_vad_zzzzzzz" 2641 . 2659)))
+          )
+
+    )
+   )
+  :file "!home!rkirk!Documents!Tungsten!Altibox!FromShane!sdk!LatensBootSdk_PaceDMI7000L_fieldDebug_ALT.CAS_392_A_252_140811!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

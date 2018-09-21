@@ -1,0 +1,1408 @@
+;; Object ssl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ssl/"
+  :tables
+  (list
+    (semanticdb-table "t1_lib.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [335 353])
+            ("stdlib.h" include (:system-flag t) nil [354 373])
+            ("openssl/objects.h" include (:system-flag t) nil [374 402])
+            ("openssl/evp.h" include (:system-flag t) nil [403 427])
+            ("openssl/hmac.h" include (:system-flag t) nil [428 453])
+            ("openssl/ocsp.h" include (:system-flag t) nil [454 479])
+            ("openssl/conf.h" include (:system-flag t) nil [480 505])
+            ("openssl/x509v3.h" include (:system-flag t) nil [506 533])
+            ("openssl/dh.h" include (:system-flag t) nil [534 557])
+            ("openssl/bn.h" include (:system-flag t) nil [558 581])
+            ("ssl_locl.h" include nil nil [582 603])
+            ("openssl/ct.h" include (:system-flag t) nil [604 627])
+            ("CHECKLEN" variable (:constant-flag t) nil [638 646])
+            ("tls_decrypt_ticket" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [770 777])
+                    ("tick" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [778 804])
+                    ("ticklen" variable (:type "int") (reparse-symbol arg-sub-list) [805 817])
+                    ("sess_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [848 877])
+                    ("sesslen" variable (:type "int") (reparse-symbol arg-sub-list) [878 890])
+                    ("psess" variable
+                       (:pointer 2
+                        :type ("SSL_SESSION" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [921 941]))                  
+                :type "int")
+                nil [740 942])
+            ("ssl_check_clienthello_tlsext_early" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [989 996]))                  
+                :type "int")
+                nil [943 997])
+            ("ssl_check_serverhello_tlsext" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1038 1045]))                  
+                :type "int")
+                nil [998 1046])
+            ("TLSv1_enc_data" variable
+               (:default-value "{
+    tls1_enc,
+    tls1_mac,
+    tls1_setup_key_block,
+    tls1_generate_master_secret,
+    tls1_change_cipher_state,
+    tls1_final_finish_mac,
+    TLS1_FINISH_MAC_LENGTH,
+    TLS_MD_CLIENT_FINISH_CONST, TLS_MD_CLIENT_FINISH_CONST_SIZE,
+    TLS_MD_SERVER_FINISH_CONST, TLS_MD_SERVER_FINISH_CONST_SIZE,
+    tls1_alert_code,
+    tls1_export_keying_material,
+    0,
+    SSL3_HM_HEADER_LENGTH,
+    ssl3_set_handshake_header,
+    ssl3_handshake_write
+}"
+                :type ("SSL3_ENC_METHOD" type (:type "class") nil nil))
+                nil [1048 1537])
+            ("TLSv1_1_enc_data" variable
+               (:default-value "{
+    tls1_enc,
+    tls1_mac,
+    tls1_setup_key_block,
+    tls1_generate_master_secret,
+    tls1_change_cipher_state,
+    tls1_final_finish_mac,
+    TLS1_FINISH_MAC_LENGTH,
+    TLS_MD_CLIENT_FINISH_CONST, TLS_MD_CLIENT_FINISH_CONST_SIZE,
+    TLS_MD_SERVER_FINISH_CONST, TLS_MD_SERVER_FINISH_CONST_SIZE,
+    tls1_alert_code,
+    tls1_export_keying_material,
+    SSL_ENC_FLAG_EXPLICIT_IV,
+    SSL3_HM_HEADER_LENGTH,
+    ssl3_set_handshake_header,
+    ssl3_handshake_write
+}"
+                :type ("SSL3_ENC_METHOD" type (:type "class") nil nil))
+                nil [1539 2053])
+            ("TLSv1_2_enc_data" variable
+               (:default-value "{
+    tls1_enc,
+    tls1_mac,
+    tls1_setup_key_block,
+    tls1_generate_master_secret,
+    tls1_change_cipher_state,
+    tls1_final_finish_mac,
+    TLS1_FINISH_MAC_LENGTH,
+    TLS_MD_CLIENT_FINISH_CONST, TLS_MD_CLIENT_FINISH_CONST_SIZE,
+    TLS_MD_SERVER_FINISH_CONST, TLS_MD_SERVER_FINISH_CONST_SIZE,
+    tls1_alert_code,
+    tls1_export_keying_material,
+    SSL_ENC_FLAG_EXPLICIT_IV | SSL_ENC_FLAG_SIGALGS | SSL_ENC_FLAG_SHA256_PRF
+        | SSL_ENC_FLAG_TLS1_2_CIPHERS,
+    SSL3_HM_HEADER_LENGTH,
+    ssl3_set_handshake_header,
+    ssl3_handshake_write
+}"
+                :type ("SSL3_ENC_METHOD" type (:type "class") nil nil))
+                nil [2055 2656])
+            ("tls1_default_timeout" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2684 2689]))                  
+                :type "long")
+                nil [2658 2850])
+            ("tls1_new" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2865 2872]))                  
+                :type "int")
+                nil [2852 2963])
+            ("tls1_free" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2980 2987]))                  
+                :type "void")
+                nil [2965 3053])
+            ("tls1_clear" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3071 3078]))                  
+                :type "void")
+                nil [3055 3236])
+            ("tls_curve_info" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("nid" variable (:type "int") (reparse-symbol classsubparts) [3282 3290])
+                          ("secbits" variable (:type "int") (reparse-symbol classsubparts) [3330 3342])
+                          ("flags" variable (:type "unsigned int") (reparse-symbol classsubparts) [3401 3420]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3261 3485])
+            ("nid_list" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    {NID_sect163k1, 80, TLS_CURVE_CHAR2}, /* sect163k1 (1) */
+    {NID_sect163r1, 80, TLS_CURVE_CHAR2}, /* sect163r1 (2) */
+    {NID_sect163r2, 80, TLS_CURVE_CHAR2}, /* sect163r2 (3) */
+    {NID_sect193r1, 80, TLS_CURVE_CHAR2}, /* sect193r1 (4) */
+    {NID_sect193r2, 80, TLS_CURVE_CHAR2}, /* sect193r2 (5) */
+    {NID_sect233k1, 112, TLS_CURVE_CHAR2}, /* sect233k1 (6) */
+    {NID_sect233r1, 112, TLS_CURVE_CHAR2}, /* sect233r1 (7) */
+    {NID_sect239k1, 112, TLS_CURVE_CHAR2}, /* sect239k1 (8) */
+    {NID_sect283k1, 128, TLS_CURVE_CHAR2}, /* sect283k1 (9) */
+    {NID_sect283r1, 128, TLS_CURVE_CHAR2}, /* sect283r1 (10) */
+    {NID_sect409k1, 192, TLS_CURVE_CHAR2}, /* sect409k1 (11) */
+    {NID_sect409r1, 192, TLS_CURVE_CHAR2}, /* sect409r1 (12) */
+    {NID_sect571k1, 256, TLS_CURVE_CHAR2}, /* sect571k1 (13) */
+    {NID_sect571r1, 256, TLS_CURVE_CHAR2}, /* sect571r1 (14) */
+    {NID_secp160k1, 80, TLS_CURVE_PRIME}, /* secp160k1 (15) */
+    {NID_secp160r1, 80, TLS_CURVE_PRIME}, /* secp160r1 (16) */
+    {NID_secp160r2, 80, TLS_CURVE_PRIME}, /* secp160r2 (17) */
+    {NID_secp192k1, 80, TLS_CURVE_PRIME}, /* secp192k1 (18) */
+    {NID_X9_62_prime192v1, 80, TLS_CURVE_PRIME}, /* secp192r1 (19) */
+    {NID_secp224k1, 112, TLS_CURVE_PRIME}, /* secp224k1 (20) */
+    {NID_secp224r1, 112, TLS_CURVE_PRIME}, /* secp224r1 (21) */
+    {NID_secp256k1, 128, TLS_CURVE_PRIME}, /* secp256k1 (22) */
+    {NID_X9_62_prime256v1, 128, TLS_CURVE_PRIME}, /* secp256r1 (23) */
+    {NID_secp384r1, 192, TLS_CURVE_PRIME}, /* secp384r1 (24) */
+    {NID_secp521r1, 256, TLS_CURVE_PRIME}, /* secp521r1 (25) */
+    {NID_brainpoolP256r1, 128, TLS_CURVE_PRIME}, /* brainpoolP256r1 (26) */
+    {NID_brainpoolP384r1, 192, TLS_CURVE_PRIME}, /* brainpoolP384r1 (27) */
+    {NID_brainpoolP512r1, 256, TLS_CURVE_PRIME}, /* brainpool512r1 (28) */
+    {NID_X25519, 128, TLS_CURVE_CUSTOM}, /* X25519 (29) */
+}"
+                :type ("tls_curve_info" type (:type "class") nil nil))
+                nil [3665 5591])
+            ("ecformats_default" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    TLSEXT_ECPOINTFORMAT_uncompressed,
+    TLSEXT_ECPOINTFORMAT_ansiX962_compressed_prime,
+    TLSEXT_ECPOINTFORMAT_ansiX962_compressed_char2
+}"
+                :type "unsigned char")
+                nil [5593 5788])
+            ("eccurves_default" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    0, 29,                      /* X25519 (29) */
+    0, 23,                      /* secp256r1 (23) */
+    0, 25,                      /* secp521r1 (25) */
+    0, 24,                      /* secp384r1 (24) */
+}"
+                :type "unsigned char")
+                nil [5815 6076])
+            ("suiteb_curves" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    0, TLSEXT_curve_P_256,
+    0, TLSEXT_curve_P_384
+}"
+                :type "unsigned char")
+                nil [6078 6180])
+            ("tls1_ec_curve_id2nid" function
+               (:arguments 
+                  ( ("curve_id" variable (:type "int") (reparse-symbol arg-sub-list) [6207 6220])
+                    ("pflags" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [6221 6242]))                  
+                :type "int")
+                nil [6182 6528])
+            ("tls1_ec_nid2curve_id" function
+               (:arguments 
+                  ( ("nid" variable (:type "int") (reparse-symbol arg-sub-list) [6555 6563]))                  
+                :type "int")
+                nil [6530 6712])
+            ("tls1_get_curvelist" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7318 7325])
+                    ("sess" variable (:type "int") (reparse-symbol arg-sub-list) [7326 7335])
+                    ("pcurves" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [7366 7396])
+                    ("num_curves" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7397 7416]))                  
+                :type "int")
+                nil [7288 8632])
+            ("tls_curve_allowed" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8714 8721])
+                    ("curve" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [8722 8749])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [8750 8757]))                  
+                :type "int")
+                nil [8685 9119])
+            ("tls1_check_curve" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9188 9195])
+                    ("p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9196 9219])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9220 9231]))                  
+                :type "int")
+                nil [9167 10210])
+            ("tls1_shared_curve" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10505 10512])
+                    ("nmatch" variable (:type "int") (reparse-symbol arg-sub-list) [10513 10524]))                  
+                :type "int")
+                nil [10483 12548])
+            ("tls1_set_curves" function
+               (:arguments 
+                  ( ("pext" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [12570 12591])
+                    ("pextlen" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12592 12608])
+                    ("curves" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12629 12641])
+                    ("ncurves" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12642 12657]))                  
+                :type "int")
+                nil [12550 13341])
+            ("MAX_CURVELIST" variable (:constant-flag t) nil [13352 13365])
+            ("nid_cb_st" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("nidcnt" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13393 13407])
+                          ("nid_arr" variable
+                             (:dereference 1
+                              :type "int")
+                              (reparse-symbol classsubparts) [13412 13439]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [13372 13452])
+            ("nid_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("elem" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13472 13489])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [13490 13498])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13499 13509]))                  
+                :type "int")
+                nil [13454 14136])
+            ("tls1_set_curves_list" function
+               (:arguments 
+                  ( ("pext" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [14211 14232])
+                    ("pextlen" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14233 14249])
+                    ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14250 14266]))                  
+                :type "int")
+                nil [14186 14488])
+            ("tls1_set_ec_id" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("curve_id" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [14592 14616])
+                    ("comp_id" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [14617 14640])
+                    ("ec" variable
+                       (:pointer 1
+                        :type ("EC_KEY" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14667 14678]))                  
+                :type "int")
+                nil [14566 15642])
+            ("tls1_check_ec_key" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15725 15732])
+                    ("curve_id" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [15762 15786])
+                    ("comp_id" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [15787 15810]))                  
+                :type "int")
+                nil [15696 17421])
+            ("tls1_get_formatlist" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17455 17462])
+                    ("pformats" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [17463 17494])
+                    ("num_formats" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17527 17547]))                  
+                :type "void")
+                nil [17423 18054])
+            ("tls1_check_cert_param" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18230 18237])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("X509" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18238 18246])
+                    ("set_ee_md" variable (:type "int") (reparse-symbol arg-sub-list) [18247 18261]))                  
+                :type "int")
+                nil [18197 19877])
+            ("tls1_check_ec_tmp_key" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20239 20246])
+                    ("cid" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [20247 20265]))                  
+                :type "int")
+                nil [20213 21024])
+            ("tlsext_sigalg_rsa" variable (:constant-flag t) nil [21446 21463])
+            ("tlsext_sigalg_dsa" variable (:constant-flag t) nil [21577 21594])
+            ("tlsext_sigalg_ecdsa" variable (:constant-flag t) nil [21707 21726])
+            ("tlsext_sigalg" variable (:constant-flag t) nil [21775 21788])
+            ("tls12_sigalgs" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    tlsext_sigalg(TLSEXT_hash_sha512)
+        tlsext_sigalg(TLSEXT_hash_sha384)
+        tlsext_sigalg(TLSEXT_hash_sha256)
+        tlsext_sigalg(TLSEXT_hash_sha224)
+        tlsext_sigalg(TLSEXT_hash_sha1)
+#ifndef OPENSSL_NO_GOST
+        TLSEXT_hash_gostr3411, TLSEXT_signature_gostr34102001,
+    TLSEXT_hash_gostr34112012_256, TLSEXT_signature_gostr34102012_256,
+    TLSEXT_hash_gostr34112012_512, TLSEXT_signature_gostr34102012_512
+#endif
+}"
+                :type "unsigned char")
+                nil [21916 22404])
+            ("suiteb_sigalgs" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    tlsext_sigalg_ecdsa(TLSEXT_hash_sha256)
+        tlsext_sigalg_ecdsa(TLSEXT_hash_sha384)
+}"
+                :type "unsigned char")
+                nil [22428 22570])
+            ("tls12_get_psigalgs" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22604 22611])
+                    ("sent" variable (:type "int") (reparse-symbol arg-sub-list) [22612 22621])
+                    ("psigs" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [22622 22650]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [22578 23539])
+            ("tls12_check_peer_sigalg" function
+               (:arguments 
+                  ( ("pmd" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("EVP_MD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23697 23716])
+                    ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23717 23724])
+                    ("sig" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [23753 23778])
+                    ("pkey" variable
+                       (:pointer 1
+                        :type ("EVP_PKEY" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23779 23794]))                  
+                :type "int")
+                nil [23669 26522])
+            ("ssl_set_client_disabled" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26944 26951]))                  
+                :type "void")
+                nil [26915 27564])
+            ("ssl_cipher_disabled" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27836 27843])
+                    ("c" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SSL_CIPHER" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27844 27864])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [27865 27872]))                  
+                :type "int")
+                nil [27812 28429])
+            ("tls_use_ticket" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28457 28464]))                  
+                :type "int")
+                nil [28431 28583])
+            ("compare_uint" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [28609 28624])
+                    ("p2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [28625 28640]))                  
+                :type "int")
+                nil [28585 28849])
+            ("tls1_check_duplicate_extensions" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("packet" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("PACKET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29300 29321]))                  
+                :type "int")
+                nil [29257 30997])
+            ("ssl_add_clienthello_tlsext" function
+               (:pointer 1
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31041 31048])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [31049 31068])
+                    ("limit" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [31111 31132])
+                    ("al" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [31133 31141]))                  
+                :type "unsigned char")
+                nil [30999 46045])
+            ("ssl_add_serverhello_tlsext" function
+               (:pointer 1
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46089 46096])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [46097 46116])
+                    ("limit" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [46159 46180])
+                    ("al" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [46181 46189]))                  
+                :type "unsigned char")
+                nil [46047 55062])
+            ("tls1_alpn_handle_client_hello" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55342 55349])
+                    ("pkt" variable
+                       (:pointer 1
+                        :type ("PACKET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55350 55362])
+                    ("al" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [55363 55371]))                  
+                :type "int")
+                nil [55301 56095])
+            ("tls1_alpn_handle_client_hello_late" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56306 56313])
+                    ("al" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [56314 56322]))                  
+                :type "int")
+                nil [56260 57342])
+            ("ssl_check_for_safari" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57925 57932])
+                    ("pkt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("PACKET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57933 57951]))                  
+                :type "void")
+                nil [57892 59687])
+            ("ssl_scan_clienthello_tlsext" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60236 60243])
+                    ("pkt" variable
+                       (:pointer 1
+                        :type ("PACKET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60244 60256])
+                    ("al" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [60257 60265]))                  
+                :type "int")
+                nil [60197 76518])
+            ("ssl_parse_clienthello_tlsext" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [76553 76560])
+                    ("pkt" variable
+                       (:pointer 1
+                        :type ("PACKET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [76561 76573]))                  
+                :type "int")
+                nil [76520 76932])
+            ("ssl_next_proto_validate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pkt" variable
+                       (:pointer 1
+                        :type ("PACKET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77193 77205]))                  
+                :type "char")
+                nil [77157 77429])
+            ("ssl_scan_serverhello_tlsext" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77477 77484])
+                    ("pkt" variable
+                       (:pointer 1
+                        :type ("PACKET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77485 77497])
+                    ("al" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [77498 77506]))                  
+                :type "int")
+                nil [77438 88551])
+            ("ssl_prepare_clienthello_tlsext" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88588 88595]))                  
+                :type "int")
+                nil [88553 88639])
+            ("ssl_prepare_serverhello_tlsext" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88676 88683]))                  
+                :type "int")
+                nil [88641 88701])
+            ("ssl_check_clienthello_tlsext_early" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88749 88756]))                  
+                :type "int")
+                nil [88703 90011])
+            ("ssl_set_default_md" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90080 90087]))                  
+                :type "void")
+                nil [90056 90741])
+            ("tls1_set_server_sigalgs" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90771 90778]))                  
+                :type "int")
+                nil [90743 91819])
+            ("ssl_check_clienthello_tlsext_late" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91967 91974])
+                    ("al" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [91975 91983]))                  
+                :type "int")
+                nil [91929 93562])
+            ("ssl_check_serverhello_tlsext" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [93597 93604]))                  
+                :type "int")
+                nil [93564 96104])
+            ("ssl_parse_serverhello_tlsext" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [96139 96146])
+                    ("pkt" variable
+                       (:pointer 1
+                        :type ("PACKET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [96147 96159]))                  
+                :type "int")
+                nil [96106 96526])
+            ("tls_check_serverhello_tlsext_early" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [98321 98328])
+                    ("ext" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("PACKET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [98329 98347])
+                    ("session_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("PACKET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [98387 98412])
+                    ("ret" variable
+                       (:pointer 2
+                        :type ("SSL_SESSION" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [98452 98470]))                  
+                :type "int")
+                nil [98282 101606])
+            ("tls_decrypt_ticket" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [102322 102329])
+                    ("etick" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [102330 102357])
+                    ("eticklen" variable (:type "int") (reparse-symbol arg-sub-list) [102388 102401])
+                    ("sess_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [102402 102431])
+                    ("sesslen" variable (:type "int") (reparse-symbol arg-sub-list) [102462 102474])
+                    ("psess" variable
+                       (:pointer 2
+                        :type ("SSL_SESSION" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [102475 102495]))                  
+                :type "int")
+                nil [102292 106440])
+            ("tls12_lookup" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("nid" variable (:type "int") (reparse-symbol classsubparts) [106516 106524])
+                          ("id" variable (:type "int") (reparse-symbol classsubparts) [106529 106536]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [106495 106552])
+            ("tls12_md" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    {NID_md5, TLSEXT_hash_md5},
+    {NID_sha1, TLSEXT_hash_sha1},
+    {NID_sha224, TLSEXT_hash_sha224},
+    {NID_sha256, TLSEXT_hash_sha256},
+    {NID_sha384, TLSEXT_hash_sha384},
+    {NID_sha512, TLSEXT_hash_sha512},
+    {NID_id_GostR3411_94, TLSEXT_hash_gostr3411},
+    {NID_id_GostR3411_2012_256, TLSEXT_hash_gostr34112012_256},
+    {NID_id_GostR3411_2012_512, TLSEXT_hash_gostr34112012_512},
+}"
+                :type ("tls12_lookup" type (:type "class") nil nil))
+                nil [106554 106993])
+            ("tls12_sig" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    {EVP_PKEY_RSA, TLSEXT_signature_rsa},
+    {EVP_PKEY_DSA, TLSEXT_signature_dsa},
+    {EVP_PKEY_EC, TLSEXT_signature_ecdsa},
+    {NID_id_GostR3410_2001, TLSEXT_signature_gostr34102001},
+    {NID_id_GostR3410_2012_256, TLSEXT_signature_gostr34102012_256},
+    {NID_id_GostR3410_2012_512, TLSEXT_signature_gostr34102012_512}
+}"
+                :type ("tls12_lookup" type (:type "class") nil nil))
+                nil [106995 107364])
+            ("tls12_find_id" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("nid" variable (:type "int") (reparse-symbol arg-sub-list) [107391 107399])
+                    ("table" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tls12_lookup" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107400 107426])
+                    ("tlen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [107427 107439]))                  
+                :type "int")
+                nil [107366 107576])
+            ("tls12_find_nid" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [107604 107611])
+                    ("table" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tls12_lookup" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107612 107638])
+                    ("tlen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [107639 107651]))                  
+                :type "int")
+                nil [107578 107796])
+            ("tls12_get_sigandhash" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [107823 107840])
+                    ("pk" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("EVP_PKEY" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107841 107860])
+                    ("md" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("EVP_MD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107861 107878]))                  
+                :type "int")
+                nil [107798 108206])
+            ("tls12_get_sigid" function
+               (:arguments 
+                  ( ("pk" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("EVP_PKEY" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108228 108247]))                  
+                :type "int")
+                nil [108208 108328])
+            ("tls12_hash_info" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("nid" variable (:type "int") (reparse-symbol classsubparts) [108351 108359])
+                          ("secbits" variable (:type "int") (reparse-symbol classsubparts) [108364 108376])
+                          ("md_idx" variable (:type "int") (reparse-symbol classsubparts) [108381 108392])
+                          ("tlsext_hash" variable (:type "unsigned char") (reparse-symbol classsubparts) [108397 108423]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [108330 108442])
+            ("tls12_md_info" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    {NID_md5, 64, SSL_MD_MD5_IDX, TLSEXT_hash_md5},
+    {NID_sha1, 80, SSL_MD_SHA1_IDX, TLSEXT_hash_sha1},
+    {NID_sha224, 112, SSL_MD_SHA224_IDX, TLSEXT_hash_sha224},
+    {NID_sha256, 128, SSL_MD_SHA256_IDX, TLSEXT_hash_sha256},
+    {NID_sha384, 192, SSL_MD_SHA384_IDX, TLSEXT_hash_sha384},
+    {NID_sha512, 256, SSL_MD_SHA512_IDX, TLSEXT_hash_sha512},
+    {NID_id_GostR3411_94, 128, SSL_MD_GOST94_IDX, TLSEXT_hash_gostr3411},
+    {NID_id_GostR3411_2012_256, 128, SSL_MD_GOST12_256_IDX,
+     TLSEXT_hash_gostr34112012_256},
+    {NID_id_GostR3411_2012_512, 256, SSL_MD_GOST12_512_IDX,
+     TLSEXT_hash_gostr34112012_512},
+}"
+                :type ("tls12_hash_info" type (:type "class") nil nil))
+                nil [108444 109118])
+            ("tls12_get_hash_info" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("hash_alg" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [109170 109193]))                  
+                :type ("tls12_hash_info" type (:type "class") nil nil))
+                nil [109120 109432])
+            ("tls12_get_hash" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("hash_alg" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [109463 109486]))                  
+                :type ("EVP_MD" type (:type "class") nil nil))
+                nil [109434 109703])
+            ("tls12_get_pkey_idx" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sig_alg" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [109735 109757]))                  
+                :type "int")
+                nil [109705 110354])
+            ("tls1_lookup_sigalg" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("phash_nid" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [110456 110471])
+                    ("psign_nid" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [110472 110487])
+                    ("psignhash_nid" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [110519 110538])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [110539 110565]))                  
+                :type "void")
+                nil [110425 111256])
+            ("tls12_sigalg_allowed" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111345 111352])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [111353 111360])
+                    ("ptmp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [111361 111387]))                  
+                :type "int")
+                nil [111313 111829])
+            ("ssl_set_sig_mask" function
+               (:arguments 
+                  ( ("pmask_a" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112029 112047])
+                    ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112048 112055])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [112056 112063]))                  
+                :type "void")
+                nil [112007 113264])
+            ("tls12_copy_sigalgs" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [113292 113299])
+                    ("out" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [113300 113319])
+                    ("psig" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [113346 113372])
+                    ("psiglen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [113373 113388]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [113266 113669])
+            ("tls12_shared_sigalgs" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [113765 113772])
+                    ("shsig" variable
+                       (:pointer 1
+                        :type ("TLS_SIGALGS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [113773 113792])
+                    ("pref" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [113825 113851])
+                    ("preflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [113852 113867])
+                    ("allow" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [113900 113927])
+                    ("allowlen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [113928 113944]))                  
+                :type "int")
+                nil [113733 114804])
+            ("tls1_set_shared_sigalgs" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114898 114905]))                  
+                :type "int")
+                nil [114863 116352])
+            ("tls1_save_sigalgs" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [116422 116429])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [116430 116456])
+                    ("dsize" variable (:type "int") (reparse-symbol arg-sub-list) [116457 116467]))                  
+                :type "int")
+                nil [116400 116916])
+            ("tls1_process_sigalgs" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [116943 116950]))                  
+                :type "int")
+                nil [116918 118910])
+            ("SSL_get_sigalgs" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118932 118939])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [118940 118948])
+                    ("psign" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [118969 118980])
+                    ("phash" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [118981 118992])
+                    ("psignhash" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [118993 119008])
+                    ("rsig" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [119029 119049])
+                    ("rhash" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [119050 119071]))                  
+                :type "int")
+                nil [118912 119510])
+            ("SSL_get_shared_sigalgs" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [119539 119546])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [119547 119555])
+                    ("psign" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [119583 119594])
+                    ("phash" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [119595 119606])
+                    ("psignhash" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [119607 119622])
+                    ("rsig" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [119650 119670])
+                    ("rhash" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [119671 119692]))                  
+                :type "int")
+                nil [119512 120163])
+            ("MAX_SIGALGLEN" variable (:constant-flag t) nil [120173 120186])
+            ("sig_cb_st" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("sigalgcnt" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [120256 120273])
+                          ("sigalgs" variable
+                             (:dereference 1
+                              :type "int")
+                              (reparse-symbol classsubparts) [120278 120305]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [120235 120318])
+            ("get_sigorhash" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("psig" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [120346 120356])
+                    ("phash" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [120357 120368])
+                    ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [120369 120385]))                  
+                :type "void")
+                nil [120320 120723])
+            ("sig_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("elem" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [120743 120760])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [120761 120769])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [120770 120780]))                  
+                :type "int")
+                nil [120725 121641])
+            ("tls1_set_sigalgs_list" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("CERT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [121797 121805])
+                    ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [121806 121822])
+                    ("client" variable (:type "int") (reparse-symbol arg-sub-list) [121823 121834]))                  
+                :type "int")
+                nil [121771 122056])
+            ("tls1_set_sigalgs" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("CERT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [122079 122087])
+                    ("psig_nids" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [122088 122109])
+                    ("salglen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [122110 122125])
+                    ("client" variable (:type "int") (reparse-symbol arg-sub-list) [122126 122137]))                  
+                :type "int")
+                nil [122058 122994])
+            ("tls1_check_sig_alg" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("CERT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [123026 123034])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("X509" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [123035 123043])
+                    ("default_nid" variable (:type "int") (reparse-symbol arg-sub-list) [123044 123060]))                  
+                :type "int")
+                nil [122996 123393])
+            ("ssl_check_ca_name" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("STACK_OF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123497 123516])
+                    ("" variable (:type ("names" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123518 123524])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("X509" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [123525 123533]))                  
+                :type "int")
+                nil [123468 123757])
+            ("CERT_PKEY_VALID_FLAGS" variable (:constant-flag t) nil [124111 124132])
+            ("CERT_PKEY_STRICT_FLAGS" variable (:constant-flag t) nil [124219 124241])
+            ("tls1_check_chain" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [124396 124403])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("X509" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [124404 124412])
+                    ("pk" variable
+                       (:pointer 1
+                        :type ("EVP_PKEY" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [124413 124426])
+                    ("" variable (:type ("STACK_OF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [124427 124441])
+                    ("" variable (:type ("chain" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [124443 124449])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [124471 124479]))                  
+                :type "int")
+                nil [124375 132263])
+            ("tls1_set_cert_validity" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [132348 132355]))                  
+                :type "void")
+                nil [132320 132789])
+            ("SSL_check_chain" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [132873 132880])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("X509" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [132881 132889])
+                    ("pk" variable
+                       (:pointer 1
+                        :type ("EVP_PKEY" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [132890 132903])
+                    ("" variable (:type ("STACK_OF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [132904 132918])
+                    ("" variable (:type ("chain" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [132920 132926]))                  
+                :type "int")
+                nil [132853 132980])
+            ("ssl_get_auto_dh" function
+               (:pointer 1
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [133024 133031]))                  
+                :type ("DH" type (:type "class") nil nil))
+                nil [133004 134113])
+            ("ssl_security_cert_key" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134155 134162])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("SSL_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134163 134176])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("X509" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134177 134185])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [134186 134193]))                  
+                :type "int")
+                nil [134122 134769])
+            ("ssl_security_cert_sig" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134804 134811])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("SSL_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134812 134825])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("X509" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134826 134834])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [134835 134842]))                  
+                :type "int")
+                nil [134771 135440])
+            ("ssl_security_cert" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135464 135471])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("SSL_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135472 135485])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("X509" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135486 135494])
+                    ("vfy" variable (:type "int") (reparse-symbol arg-sub-list) [135495 135503])
+                    ("is_ee" variable (:type "int") (reparse-symbol arg-sub-list) [135504 135514]))                  
+                :type "int")
+                nil [135442 135942])
+            ("ssl_security_cert_chain" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136205 136212])
+                    ("" variable (:type ("STACK_OF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [136213 136227])
+                    ("" variable (:type ("sk" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [136229 136232])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("X509" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136233 136241])
+                    ("vfy" variable (:type "int") (reparse-symbol arg-sub-list) [136242 136250]))                  
+                :type "int")
+                nil [136177 136680]))          
+      :file "t1_lib.c"
+      :pointmax 136681
+      :fsize 136680
+      :lastmodtime '(22694 58216 263941 249000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("tlsext_sigalg_rsa" (spp-arg-list ("md") 21463 . 21467) . 
+              ((symbol "md" 21468 . 21470) (punctuation "," 21470 . 21471) (symbol "TLSEXT_signature_rsa" 21472 . 21492) (punctuation "," 21492 . 21493)))
+          ("CERT_PKEY_VALID_FLAGS" . ((semantic-list "(CERT_PKEY_EE_SIGNATURE|CERT_PKEY_EE_PARAM)" 123925 . 123968)))
+          ("MAX_CURVELIST" . ((number "28" 13368 . 13370)))
+          ("tlsext_sigalg_dsa" (spp-arg-list ("md") 21594 . 21598) . 
+              ((symbol "md" 21599 . 21601) (punctuation "," 21601 . 21602) (symbol "TLSEXT_signature_dsa" 21603 . 21623) (punctuation "," 21623 . 21624)))
+          ("CHECKLEN" (spp-arg-list ("curr" "val" "limit") 646 . 664) . ((semantic-list "(((curr) >= (limit)) || (size_t)((limit) - (curr)) < (size_t)(val))" 671 . 738)))
+          ("tlsext_sigalg_ecdsa" (spp-arg-list ("md") 21726 . 21730) . 
+              ((symbol "md" 21731 . 21733) (punctuation "," 21733 . 21734) (symbol "TLSEXT_signature_ecdsa" 21735 . 21757) (punctuation "," 21757 . 21758)))
+          ("CERT_PKEY_STRICT_FLAGS" . ((semantic-list "(CERT_PKEY_VALID_FLAGS|CERT_PKEY_CA_SIGNATURE|CERT_PKEY_CA_PARAM \\
+         | CERT_PKEY_ISSUER_NAME|CERT_PKEY_CERT_TYPE)" 124035 . 124155)))
+          ("MAX_SIGALGLEN" . ((semantic-list "(TLSEXT_hash_num * TLSEXT_signature_num * 2)" 119971 . 120015)))
+          ("tlsext_sigalg" (spp-arg-list ("md") 21788 . 21792) . 
+              ((symbol "tlsext_sigalg_rsa" 21811 . 21828) (semantic-list "(md)" 21828 . 21832) (symbol "tlsext_sigalg_dsa" 21851 . 21868) (semantic-list "(md)" 21868 . 21872) (symbol "tlsext_sigalg_ecdsa" 21891 . 21910) (semantic-list "(md)" 21910 . 21914)))
+          )
+)
+    (semanticdb-table "ssl_locl.h"
+      :file "ssl_locl.h"
+      :fsize 83280
+      :lastmodtime '(22693 37855 0 0)))
+  :file "!home!rkirk!src!tt!openssl-1.1.0e!ssl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

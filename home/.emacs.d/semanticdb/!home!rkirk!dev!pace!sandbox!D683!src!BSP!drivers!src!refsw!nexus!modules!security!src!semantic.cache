@@ -1,0 +1,626 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "nexus_security.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("nexus_security_module.h" include nil nil [2690 2724])
+            ("nexus_security_datatypes.h" include nil nil [2725 2762])
+            ("nexus_security.h" include nil nil [2763 2790])
+            ("priv/nexus_security_priv.h" include nil nil [2791 2828])
+            ("priv/nexus_core.h" include nil nil [2829 2857])
+            ("priv/nexus_security_standby_priv.h" include nil nil [2858 2903])
+            ("nexus_power_management.h" include nil nil [2905 2940])
+            ("bhsm.h" include nil nil [2942 2959])
+            ("bsp_s_commands.h" include nil nil [2960 2987])
+            ("bsp_s_misc.h" include nil nil [2988 3011])
+            ("bsp_s_hw.h" include nil nil [3012 3033])
+            ("bsp_s_keycommon.h" include nil nil [3034 3062])
+            ("bhsm_keyladder.h" include nil nil [3063 3090])
+            ("nexus_base.h" include nil nil [3092 3115])
+            ("nexus_pid_channel.h" include nil nil [3116 3146])
+            ("priv/nexus_pid_channel_priv.h" include nil nil [3147 3187])
+            ("BDBG_MODULE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("nexus_security" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3201 3216]))                  
+                :type "int")
+                nil [3189 3217])
+            ("HAS_TWO_HSM_CMD_CHANNELS" variable (:constant-flag t) nil [3504 3528])
+            ("SUPPORT_NON_DTV_CRYPTO" variable (:constant-flag t) nil [3824 3846])
+            ("SET_MISC_BITS" variable (:constant-flag t) nil [4547 4560])
+            ("HAS_TYPE5_KEYSLOTS" variable (:constant-flag t) nil [4793 4811])
+            ("bhsm_misc.h" include nil nil [4814 4836])
+            ("MAKE_HSM_ERR" variable (:constant-flag t) nil [4920 4932])
+            ("blst_slist.h" include nil nil [4968 4991])
+            ("NEXUS_Security_P_PidChannelListNode" type
+               (:typedef ("NEXUS_Security_P_PidChannelListNode" type (:type "struct") nil nil)
+                :superclasses "NEXUS_Security_P_PidChannelListNode"
+                :type "typedef")
+                nil [4992 5256])
+            ("NEXUS_Security_P_PidChannelListNode" type
+               (:members 
+                  ( ("next" variable (:type "int") (reparse-symbol classsubparts) [5099 5104])
+                    ("pidChannel" variable (:type ("NEXUS_PidChannelHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5109 5143])
+                    ("pidChannelIndex" variable (:type "unsigned long") (reparse-symbol classsubparts) [5148 5178]))                  
+                :type "struct")
+                nil [4992 5256])
+            ("NEXUS_Security_P_KeySlotListNode" type
+               (:typedef ("NEXUS_Security_P_KeySlotListNode" type (:type "struct") nil nil)
+                :superclasses "NEXUS_Security_P_KeySlotListNode"
+                :type "typedef")
+                nil [5258 5524])
+            ("NEXUS_Security_P_KeySlotListNode" type
+               (:members 
+                  ( ("pidchannels" variable (:type "int") (reparse-symbol classsubparts) [5396 5408])
+                    ("algorithm" variable (:type ("NEXUS_SecurityAlgorithm" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5413 5447])
+                    ("keySlotClient" variable (:type ("NEXUS_SecurityClientType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5449 5488]))                  
+                :type "struct")
+                nil [5258 5524])
+            ("NEXUS_SECURITY_DUMP_KEYSLOTS" variable (:constant-flag t) nil [6157 6185])
+            ("NEXUS_P_SecurityModule" variable (:type ("NEXUS_ModuleHandle" type (:type "class") nil nil)) nil [6194 6243])
+            ("g_security" variable
+               (:typemodifiers ("static")
+                :type ("" type
+                     (:members 
+                        ( ("settings" variable (:type ("NEXUS_SecurityModuleSettings" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6264 6302])
+                          ("hsm" variable (:type ("BHSM_Handle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6307 6323])
+                          ("hsmChannel" variable
+                             (:dereference 1
+                              :type ("BHSM_ChannelHandle" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [6328 6378])
+                          ("keyslots" variable (:type "int") (reparse-symbol classsubparts) [6442 6451]))                        
+                      :type "struct")
+                      nil nil))
+                nil [6244 6507])
+            ("NEXUS_Security_P_InitHsm" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pSettings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityModuleSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6551 6598]))                  
+                :type ("BERR_Code" type (:type "class") nil nil))
+                nil [6509 6599])
+            ("NEXUS_Security_P_UninitHsm" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6639 6644]))                  
+                :type "void")
+                nil [6600 6645])
+            ("NEXUS_Security_P_RemovePidchannel" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("keyslot" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6721 6749])
+                    ("q" variable
+                       (:pointer 1
+                        :type ("NEXUS_Security_P_PidChannelListNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6750 6789]))                  
+                :type "void")
+                nil [6675 6956])
+            ("NEXUS_SecurityModule_GetDefaultSettings" function
+               (:arguments 
+                  ( ("pSettings" variable
+                       (:pointer 1
+                        :type ("NEXUS_SecurityModuleSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7111 7151]))                  
+                :type "void")
+                nil [7066 8305])
+            ("NEXUS_SecurityModule_Init" function
+               (:arguments 
+                  ( ("pSettings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityModuleSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8352 8398]))                  
+                :type ("NEXUS_ModuleHandle" type (:type "class") nil nil))
+                nil [8307 9711])
+            ("NEXUS_SecurityModule_GetCurrentSettings" function
+               (:arguments 
+                  ( ("module" variable (:type ("NEXUS_ModuleHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9758 9784])
+                    ("pSettings" variable
+                       (:pointer 1
+                        :type ("NEXUS_SecurityModuleSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9785 9825]))                  
+                :type "void")
+                nil [9713 9892])
+            ("NEXUS_SecurityModule_Uninit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9927 9932]))                  
+                :type "void")
+                nil [9894 10240])
+            ("NEXUS_Security_P_InitHsm" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pSettings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityModuleSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10284 10331]))                  
+                :type ("BERR_Code" type (:type "class") nil nil))
+                nil [10242 14679])
+            ("NEXUS_Security_P_UninitHsm" function (:type "void") nil [14681 14952])
+            ("NEXUS_Security_GetHsm_priv" function
+               (:arguments 
+                  ( ("pHsm" variable
+                       (:pointer 1
+                        :type ("BHSM_Handle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14986 15004]))                  
+                :type "void")
+                nil [14954 15063])
+            ("NEXUS_Security_GetDefaultKeySlotSettings" function
+               (:arguments 
+                  ( ("pSettings" variable
+                       (:pointer 1
+                        :type ("NEXUS_SecurityKeySlotSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15111 15152]))                  
+                :type "void")
+                nil [15065 15599])
+            ("NEXUS_Security_GetKeySlotInfo" function
+               (:arguments 
+                  ( ("keyHandle" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15636 15666])
+                    ("pKeyslotInfo" variable
+                       (:pointer 1
+                        :type ("NEXUS_SecurityKeySlotInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15667 15707]))                  
+                :type "void")
+                nil [15601 15769])
+            ("NEXUS_Security_P_GetInvalidateKeyFlag" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("nexusKeyFlag" variable
+                       (:constant-flag t
+                        :type ("NEXUS_SecurityInvalidateKeyFlag" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15828 15879])
+                    ("hsmKeyFlag" variable
+                       (:pointer 1
+                        :type ("BCMD_InvalidateKey_Flag_e" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15880 15918]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [15771 16424])
+            ("NEXUS_Security_MapNexusKeyDestToHsm" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("keyHandle" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16493 16523])
+                    ("keydest" variable (:type ("NEXUS_SecurityKeyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16524 16554]))                  
+                :type ("BCMD_KeyDestEntryType_e" type (:type "class") nil nil))
+                nil [16426 17292])
+            ("NEXUS_SECURITY_CACP_INVALID_PIDCHANNEL" variable (:constant-flag t) nil [17302 17340])
+            ("NEXUS_Security_AllocateKeySlotForType" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pKeyHandle" variable
+                       (:pointer 1
+                        :type ("NEXUS_KeySlotHandle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17412 17504])
+                    ("pSettings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityKeySlotSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17505 17612])
+                    ("type" variable (:type ("BCMD_XptSecKeySlot_e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17613 17696]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [17353 19123])
+            ("find_pid" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("keyslot" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19178 19206])
+                    ("pidChannel" variable (:type ("NEXUS_PidChannelHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19207 19241])
+                    ("pidChannelIndex" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [19242 19267]))                  
+                :type ("NEXUS_Security_P_PidChannelListNode" type (:type "class") nil nil))
+                nil [19125 19693])
+            ("NEXUS_Security_LocateCaKeySlotAssigned" function
+               (:arguments 
+                  ( ("pidchannel" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [19754 19779]))                  
+                :type ("NEXUS_KeySlotHandle" type (:type "class") nil nil))
+                nil [19695 20897])
+            ("NEXUS_Security_AllocateCaKeySlot" function
+               (:arguments 
+                  ( ("pKeyHandle" variable
+                       (:pointer 1
+                        :type ("NEXUS_KeySlotHandle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20944 20976]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [20899 21626])
+            ("NEXUS_Security_AllocateCaCpKeySlot" function
+               (:arguments 
+                  ( ("pKeyHandle" variable
+                       (:pointer 1
+                        :type ("NEXUS_KeySlotHandle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21675 21707]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [21628 22988])
+            ("add_pid_channel" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("keyHandle" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23025 23055])
+                    ("p" variable
+                       (:pointer 1
+                        :type ("NEXUS_Security_P_KeySlotListNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23056 23092])
+                    ("pidChannel" variable (:type ("NEXUS_PidChannelHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23093 23127])
+                    ("pidChannelIndex" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [23128 23153]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [22990 24804])
+            ("verify_pid_channel" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("keyslot" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24844 24872])
+                    ("pidChannel" variable (:type ("NEXUS_PidChannelHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24873 24907])
+                    ("pidChannelIndex" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [24908 24933]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [24806 25644])
+            ("NEXUS_Security_AddPidChannelToKeySlot" function
+               (:arguments 
+                  ( ("keyslot" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25696 25724])
+                    ("pidChannelIndex" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [25725 25750]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [25646 26364])
+            ("NEXUS_KeySlot_AddPidChannel" function
+               (:arguments 
+                  ( ("keyslot" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26407 26435])
+                    ("pidChannel" variable (:type ("NEXUS_PidChannelHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26436 26471]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [26366 27115])
+            ("remove_pid_channel" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("keyHandle" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27148 27178])
+                    ("q" variable
+                       (:pointer 1
+                        :type ("NEXUS_Security_P_PidChannelListNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27179 27218]))                  
+                :type "void")
+                nil [27117 28675])
+            ("NEXUS_Security_RemovePidChannelFromKeySlot" function
+               (:arguments 
+                  ( ("keyslot" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28732 28760])
+                    ("pidChannelIndex" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [28761 28786]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [28677 29294])
+            ("NEXUS_KeySlot_RemovePidChannel" function
+               (:arguments 
+                  ( ("keyslot" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29335 29363])
+                    ("pidChannel" variable (:type ("NEXUS_PidChannelHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29364 29399]))                  
+                :type "void")
+                nil [29298 29894])
+            ("NEXUS_Security_MapNexusKeySlotTypeToHsm" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("slotType" variable (:type ("NEXUS_SecurityKeySlotType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29955 29990])
+                    ("engine" variable (:type ("NEXUS_SecurityEngine" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29991 30019])
+                    ("pType" variable
+                       (:pointer 1
+                        :type ("BCMD_XptSecKeySlot_e" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30020 30048]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [29896 32378])
+            ("NEXUS_Security_AllocateM2mKeySlot" function
+               (:arguments 
+                  ( ("pKeyHandle" variable
+                       (:pointer 1
+                        :type ("NEXUS_KeySlotHandle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32426 32459])
+                    ("pSettings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityKeySlotSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32459 32506])
+                    ("type" variable (:type ("BCMD_XptSecKeySlot_e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32507 32533]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [32380 33822])
+            ("NEXUS_Security_AllocateGenericKeySlot" function
+               (:arguments 
+                  ( ("pKeyHandle" variable
+                       (:pointer 1
+                        :type ("NEXUS_KeySlotHandle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33909 33942]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [33859 34194])
+            ("NEXUS_Security_GetDefaultAlgorithmSettings" function
+               (:arguments 
+                  ( ("pSettings" variable
+                       (:pointer 1
+                        :type ("NEXUS_SecurityAlgorithmSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41374 41418]))                  
+                :type "void")
+                nil [41326 42561])
+            ("NEXUS_Security_GetHsmCaCpRmxAlgorithmKeySetting" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pSettings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityAlgorithmSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42623 42673])
+                    ("pCryptAlg" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [42674 42699])
+                    ("pResidualMode" variable
+                       (:pointer 1
+                        :type ("BHSM_ResidueMode_e" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42700 42735]))                  
+                :type "bool")
+                nil [42563 44700])
+            ("NEXUS_Security_GetHsmM2MAlgorithmKeySetting" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pSettings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityAlgorithmSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44758 44807])
+                    ("pCryptAlg" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [44808 44833])
+                    ("pResidualMode" variable
+                       (:pointer 1
+                        :type ("BHSM_ResidueMode_e" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44834 44869]))                  
+                :type "bool")
+                nil [44702 48075])
+            ("NEXUS_Security_GetHsmAlgorithmKeySetting" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("keyHandle" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48131 48161])
+                    ("pSettings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityAlgorithmSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48194 48243])
+                    ("pCryptAlg" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [48276 48301])
+                    ("pResidualMode" variable
+                       (:pointer 1
+                        :type ("BHSM_ResidueMode_e" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48334 48370]))                  
+                :type "void")
+                nil [48077 49601])
+            ("NEXUS_Security_GetHsmDestBlkType" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("keyslot" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49662 49690])
+                    ("dest" variable (:type ("NEXUS_SecurityAlgorithmConfigDestination" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49691 49737])
+                    ("pType" variable
+                       (:pointer 1
+                        :type ("BCMD_KeyDestBlockType_e" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49738 49769]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [49610 51541])
+            ("NEXUS_Security_GetHsmDestEntrykType" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("keytype" variable (:type ("NEXUS_SecurityKeyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51598 51628])
+                    ("pType" variable
+                       (:pointer 1
+                        :type ("BCMD_KeyDestEntryType_e" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51629 51660]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [51543 52311])
+            ("NEXUS_Security_P_SetScValues" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pConfigAlgorithmIO" variable
+                       (:pointer 1
+                        :type ("BHSM_ConfigAlgorithmIO_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66301 66346])
+                    ("pSettings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityAlgorithmSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66347 66396])
+                    ("keyType" variable (:type ("NEXUS_SecurityKeyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66397 66427]))                  
+                :type "void")
+                nil [66260 67285])
+            ("NEXUS_Security_ConfigAlgorithm" function
+               (:arguments 
+                  ( ("keyHandle" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67366 67396])
+                    ("pSettings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityAlgorithmSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [67397 67446]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [67323 87608])
+            ("NEXUS_Security_GetDefaultClearKey" function
+               (:arguments 
+                  ( ("pClearKey" variable
+                       (:pointer 1
+                        :type ("NEXUS_SecurityClearKey" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87693 87727]))                  
+                :type "void")
+                nil [87654 87782])
+            ("NEXUS_Security_LoadClearKey" function
+               (:arguments 
+                  ( ("keyHandle" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87824 87854])
+                    ("pClearKey" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityClearKey" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87855 87896]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [87784 91035])
+            ("NEXUS_Security_AllocateKeySlot" function
+               (:arguments 
+                  ( ("pSettings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityKeySlotSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91088 91135]))                  
+                :type ("NEXUS_KeySlotHandle" type (:type "class") nil nil))
+                nil [91037 94455])
+            ("NEXUS_Security_P_FreeKeySlot" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("keyHandle" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [94498 94528]))                  
+                :type "void")
+                nil [94457 99169])
+            ("NEXUS_Security_FreeKeySlot" function
+               (:arguments 
+                  ( ("keyslot" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [99203 99231]))                  
+                :type "void")
+                nil [99171 99568])
+            ("NEXUS_SecurityModule_Sweep_priv" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [99607 99612]))                  
+                :type "void")
+                nil [99570 99932])
+            ("NEXUS_Security_GetDefaultMulti2Settings" function
+               (:arguments 
+                  ( ("pSettings" variable
+                       (:pointer 1
+                        :type ("NEXUS_SecurityMulti2Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [99979 100032]))                  
+                :type "void")
+                nil [99934 100091])
+            ("NEXUS_Security_ConfigMulti2" function
+               (:arguments 
+                  ( ("keyHandle" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [100133 100163])
+                    ("pSettings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityMulti2Settings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [100164 100210]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [100093 101098])
+            ("NEXUS_Security_GetDefaultInvalidateKeySettings" function
+               (:arguments 
+                  ( ("pSettings" variable
+                       (:pointer 1
+                        :type ("NEXUS_SecurityInvalidateKeySettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [101152 101212]))                  
+                :type "void")
+                nil [101100 101271])
+            ("NEXUS_Security_P_InvalidateKey" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("keyHandle" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101323 101353])
+                    ("pSettings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityInvalidateKeySettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [101354 101407]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [101273 103016])
+            ("NEXUS_Security_InvalidateKey" function
+               (:arguments 
+                  ( ("keyHandle" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [103059 103089])
+                    ("pSettings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityInvalidateKeySettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [103090 103143]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [103018 105174])
+            ("NEXUS_SecurityModule_Standby_priv" function
+               (:arguments 
+                  ( ("enabled" variable (:type "bool") (reparse-symbol arg-sub-list) [105222 105235])
+                    ("pSettings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_StandbySettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [105236 105275]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [105176 106960])
+            ("NEXUS_KeySlot_GetDefaultTableSettings" function
+               (:arguments 
+                  ( ("pSettings" variable
+                       (:pointer 1
+                        :type ("NEXUS_KeySlotTableSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107011 107063]))                  
+                :type "void")
+                nil [106963 107476])
+            ("NEXUS_KeySlot_InitializeTable" function
+               (:arguments 
+                  ( ("pSettings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_KeySlotTableSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107527 107579]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [107480 109747])
+            ("NEXUS_KeySlot_GetDefaultGlobalControlWordSettings" function
+               (:arguments 
+                  ( ("pSettings" variable
+                       (:pointer 1
+                        :type ("NEXUS_KeySlotGlobalControlWordSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [109807 109863]))                  
+                :type "void")
+                nil [109750 110392])
+            ("NEXUS_KeySlot_SetGlobalControlWordSettings" function
+               (:arguments 
+                  ( ("keyHandle" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [110457 110514])
+                    ("pSettings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_KeySlotGlobalControlWordSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [110516 110578]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [110397 111850])
+            ("b_get_hsm" function
+               (:arguments 
+                  ( ("hsm" variable
+                       (:pointer 1
+                        :type ("BHSM_Handle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112009 112026]))                  
+                :type "void")
+                nil [111994 112057])
+            ("b_get_reg" function
+               (:arguments 
+                  ( ("reg" variable
+                       (:pointer 1
+                        :type ("BREG_Handle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112073 112090]))                  
+                :type "void")
+                nil [112058 112126])
+            ("b_get_int" function
+               (:arguments 
+                  ( ("bint" variable
+                       (:pointer 1
+                        :type ("BINT_Handle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112142 112160]))                  
+                :type "void")
+                nil [112127 112198])
+            ("b_get_chp" function
+               (:arguments 
+                  ( ("chp" variable
+                       (:pointer 1
+                        :type ("BCHP_Handle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112214 112231]))                  
+                :type "void")
+                nil [112199 112267]))          
+    :file "nexus_security.c"
+    :pointmax 112268
+    :fsize 112267
+    :lastmodtime '(21629 55262 717665 38000)
+    :unmatched-syntax '((semantic-list 6394 . 6441) (symbol 6383 . 6394) (semantic-list 5323 . 5395) (symbol 5312 . 5323) (semantic-list 5061 . 5098) (symbol 5049 . 5061) (semantic-list 4521 . 4538) (punctuation 4519 . 4520) (punctuation 4518 . 4519) (semantic-list 4498 . 4517) (punctuation 4496 . 4497) (punctuation 4495 . 4496) (semantic-list 4475 . 4494) (punctuation 4473 . 4474) (punctuation 4472 . 4473) (semantic-list 4452 . 4471) (punctuation 4443 . 4444) (punctuation 4442 . 4443) (semantic-list 4422 . 4441) (punctuation 4420 . 4421) (punctuation 4419 . 4420) (semantic-list 4401 . 4418) (punctuation 4399 . 4400) (punctuation 4398 . 4399) (semantic-list 4380 . 4397) (punctuation 4378 . 4379) (punctuation 4377 . 4378) (semantic-list 4359 . 4376) (punctuation 4350 . 4351) (punctuation 4349 . 4350) (semantic-list 4331 . 4348) (punctuation 4329 . 4330) (punctuation 4328 . 4329) (semantic-list 4310 . 4327) (punctuation 4308 . 4309) (punctuation 4307 . 4308) (semantic-list 4289 . 4306) (punctuation 4287 . 4288) (punctuation 4286 . 4287) (semantic-list 4268 . 4285) (punctuation 4259 . 4260) (punctuation 4258 . 4259) (semantic-list 4240 . 4257) (punctuation 4238 . 4239) (punctuation 4237 . 4238) (semantic-list 4219 . 4236) (punctuation 4217 . 4218) (punctuation 4216 . 4217) (semantic-list 4198 . 4215) (punctuation 4196 . 4197) (punctuation 4195 . 4196) (semantic-list 4177 . 4194))
+    :lexical-table 
+        '(("SET_MISC_BITS" . ((number "1" 4561 . 4562)))
+          ("HAS_TYPE5_KEYSLOTS" . ((number "1" 4812 . 4813)))
+          ("SUPPORT_NON_DTV_CRYPTO" . ((number "1" 3847 . 3848)))
+          ("NEXUS_SECURITY_CACP_INVALID_PIDCHANNEL" . ((number "0xFFFFFFFF" 17341 . 17351)))
+          ("HAS_TWO_HSM_CMD_CHANNELS" . ((number "1" 3529 . 3530)))
+          ("NEXUS_SECURITY_DUMP_KEYSLOTS")
+          ("MAKE_HSM_ERR" (spp-arg-list ("x") 4932 . 4935) . ((semantic-list "(NEXUS_SECURITY_HSM_ERROR | x)" 4936 . 4966)))
+          )
+
+    )
+   (semanticdb-table "nexus_security_module.h"
+    :file "nexus_security_module.h"
+    :fsize 4887
+    :lastmodtime '(21629 55262 716665 45000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D683!src!BSP!drivers!src!refsw!nexus!modules!security!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

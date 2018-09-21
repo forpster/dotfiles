@@ -1,0 +1,73 @@
+;; Object io/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "io/"
+  :tables (list 
+   (semanticdb-table "LoggedInputStream.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.rapid7.io" package nil nil [354 376])
+            ("com.rapid7.log.ILogSink" include nil nil [378 409])
+            ("java.io.IOException" include nil nil [410 437])
+            ("java.io.InputStream" include nil nil [438 465])
+            ("LoggedInputStream" type
+               (:typemodifiers ("public")
+                :superclasses "InputStreamAdapter"
+                :members 
+                  ( ("m_logSink" variable
+                       (:typemodifiers ("protected")
+                        :type "ILogSink")
+                        (reparse-symbol class_member_declaration) [682 711])
+                    ("LoggedInputStream" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("in" variable (:type "InputStream") (reparse-symbol formal_parameters) [741 755])
+                            ("logSink" variable (:type "ILogSink") (reparse-symbol formal_parameters) [757 773]))                          )
+                        (reparse-symbol class_member_declaration) [716 930])
+                    ("read" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [948 1110])
+                    ("read" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("b" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [1144 1152]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1128 1229])
+                    ("read" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("b" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [1263 1271])
+                            ("off" variable (:type "int") (reparse-symbol formal_parameters) [1273 1280])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [1282 1289]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1247 1448]))                  
+                :type "class")
+                nil [619 1450]))          
+    :file "LoggedInputStream.java"
+    :pointmax 1452
+    :fsize 1451
+    :lastmodtime '(22029 24846 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "TimeoutInputStream.java"
+    :major-mode 'java-mode
+    :tags nil
+    :file "TimeoutInputStream.java"
+    :pointmax 4211
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!rapid7!nexpose!src!shared!src!main!java!com!rapid7!io!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,20 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags nil
+      :file "remote_execution_init.py"
+      :pointmax 1935
+      :fsize 1934
+      :lastmodtime '(23216 53377 987253 740000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "remote_execution.py"
+      :fsize 1380
+      :lastmodtime '(22925 26543 652859 632000)))
+  :file "!home!rkirk!rapid7!PyForensicsAgent!agent!jobs!darwin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,641 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "t_console.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("TLOGGER_TCONSOLE_H" variable (:constant-flag t) nil [743 761])
+            ("teloggerbase.h" include (:system-flag t) nil [763 788])
+            ("boost/utility.hpp" include (:system-flag t) nil [789 817])
+            ("boost/scoped_ptr.hpp" include (:system-flag t) nil [818 849])
+            ("TLoggerConsole" type
+               (:superclasses 
+                  ( ("TELoggerBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("implementation" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol classsubparts) [901 922])
+                    ("_imp" variable (:type ("boost::scoped_ptr" type
+                         (:template-specifier 
+                            ( ("implementation" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [927 968])
+                    ("public" label nil (reparse-symbol classsubparts) [1000 1007])
+                    ("TLoggerConsole" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("iaccess" variable
+                               (:pointer 1
+                                :type ("TLoggerInternalAccess" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1027 1058])
+                            ("configSlotId" variable (:type "int") (reparse-symbol arg-sub-list) [1059 1076]))                          
+                        :type ("TLoggerConsole" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1012 1077])
+                    ("configure" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("newConfig" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1105 1134]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1082 1135])
+                    ("deconfigure" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1140 1167])
+                    ("processMessage" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("timestamp" variable
+                               (:reference 1
+                                :type ("timespec" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1200 1220])
+                            ("module" variable
+                               (:pointer 1
+                                :type ("TLoggerModuleMeta" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1221 1247])
+                            ("severity_level" variable (:type ("TLoggerSeverityLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1248 1284])
+                            ("message" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1285 1305])
+                            ("tlg_ctx" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tlogger_ctx" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1306 1333]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1172 1334])
+                    ("acceptsMessage" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("moduleMeta" variable
+                               (:pointer 1
+                                :type ("TLoggerModuleMeta" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1367 1397])
+                            ("severity_level" variable (:type "int") (reparse-symbol arg-sub-list) [1398 1417]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1339 1418])
+                    ("createNewConfigurationSlot" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("module" variable
+                               (:pointer 1
+                                :type ("TLoggerModuleMeta" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1472 1498]))                          
+                        :type ("LoggerConfig" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1423 1499])
+                    ("TLoggerConsole" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1504 1522]))                  
+                :type "class")
+                nil [852 1525]))          
+    :file "t_console.h"
+    :pointmax 1556
+    :fsize 1555
+    :lastmodtime '(21836 32028 96253 766000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("TLOGGER_TCONSOLE_H")
+          )
+
+    )
+   (semanticdb-table "teloggerbase.h"
+    :file "teloggerbase.h"
+    :fsize 2194
+    :lastmodtime '(21836 32028 66253 944000)
+    )
+   (semanticdb-table "tlogger_new2.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("TLOGGER_NEW_H" variable (:constant-flag t) nil [738 751])
+            ("tlogger_global.h" include nil nil [753 780])
+            ("TLogger" variable (:type ("TLOGGERSHARED_EXPORT" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [782 845]))          
+    :file "tlogger_new2.h"
+    :pointmax 871
+    :fsize 870
+    :lastmodtime '(21836 32028 66253 944000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("TLOGGER_NEW_H")
+          )
+
+    )
+   (semanticdb-table "tlogger_global.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("TLOGGER_GLOBAL_H" variable (:constant-flag t) nil [741 757])
+            ("TLOGGERSHARED_EXPORT" variable (:constant-flag t) nil [852 872]))          
+    :file "tlogger_global.h"
+    :pointmax 922
+    :fsize 921
+    :lastmodtime '(21836 32028 96253 766000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("TLOGGER_GLOBAL_H")
+          ("TLOGGERSHARED_EXPORT" . ((symbol "Q_DECL_IMPORT" 873 . 886)))
+          )
+
+    )
+   (semanticdb-table "t_log4cplus_config.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("T_LOG4CPLUS_CONFIG_H" variable (:constant-flag t) nil [745 765])
+            ("tloggermoduleconfig.h" include nil nil [767 799]))          
+    :file "t_log4cplus_config.h"
+    :pointmax 857
+    :fsize 856
+    :lastmodtime '(21836 32028 96253 766000)
+    :unmatched-syntax '((semantic-list 805 . 824) (symbol 801 . 805) (punctuation 822 . 823) (DELETE 806 . 812))
+    :lexical-table 
+        '(("T_LOG4CPLUS_CONFIG_H")
+          )
+
+    )
+   (semanticdb-table "tloggermoduleconfig.h"
+    :file "tloggermoduleconfig.h"
+    :fsize 1264
+    :lastmodtime '(21836 32028 66253 944000)
+    )
+   (semanticdb-table "t_console_config.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("T_CONSOLE_CONFIG_H" variable (:constant-flag t) nil [743 761])
+            ("tloggermoduleconfig.h" include nil nil [763 795])
+            ("TConsoleConfig" type
+               (:superclasses 
+                  ( ("LoggerConfig" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("colour" variable (:type "int") (reparse-symbol classsubparts) [845 856])
+                    ("warningColour" variable (:type "int") (reparse-symbol classsubparts) [861 879])
+                    ("errorColour" variable (:type "int") (reparse-symbol classsubparts) [884 900])
+                    ("errorBlink" variable (:type "int") (reparse-symbol classsubparts) [905 920])
+                    ("TODO" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("more" variable (:type ("add" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [930 949])
+                            ("here" variable (:type ("parameters" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [939 955]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [925 956]))                  
+                :type "class")
+                nil [797 959]))          
+    :file "t_console_config.h"
+    :pointmax 989
+    :fsize 988
+    :lastmodtime '(21836 32028 67253 938000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("T_CONSOLE_CONFIG_H")
+          )
+
+    )
+   (semanticdb-table "i_tlogger_registry_listener.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ITLOGGERREGISTRYLISTENER_H" variable (:constant-flag t) nil [751 777]))          
+    :file "i_tlogger_registry_listener.h"
+    :pointmax 1155
+    :fsize 1154
+    :lastmodtime '(21836 32028 67253 938000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ITLOGGERREGISTRYLISTENER_H")
+          )
+
+    )
+   (semanticdb-table "tloggerscontroller.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("TLOGGERSCONTROLLER_H" variable (:constant-flag t) nil [745 765])
+            ("map" include (:system-flag t) nil [767 781])
+            ("teloggerbase.h" include (:system-flag t) nil [782 807])
+            ("set" include (:system-flag t) nil [808 822])
+            ("TLoggersController" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [851 858])
+                    ("TLoggersController" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("TLoggersController" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [863 884])
+                    ("configure" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("configuration" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [905 939]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [889 940])
+                    ("deconfigure" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [945 964])
+                    ("processMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("timestamp" variable
+                               (:reference 1
+                                :type ("timespec" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [989 1009])
+                            ("module" variable
+                               (:pointer 1
+                                :type ("TLoggerModuleMeta" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1010 1036])
+                            ("severity_level" variable (:type ("TLoggerSeverityLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1037 1073])
+                            ("message" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1074 1094])
+                            ("tlg_ctx" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tlogger_ctx" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1095 1122]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [969 1123])
+                    ("TLoggersController" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1128 1150])
+                    ("acceptsMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("module" variable
+                               (:pointer 1
+                                :type ("TLoggerModuleMeta" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1174 1200])
+                            ("severity_level" variable (:type "int") (reparse-symbol arg-sub-list) [1201 1220]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1155 1221])
+                    ("checkAndUpdateConfiguration" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("module" variable
+                               (:pointer 1
+                                :type ("TLoggerModuleMeta" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1259 1285]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1226 1286])
+                    ("loadConfig" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1291 1309])
+                    ("private" label nil (reparse-symbol classsubparts) [1310 1318])
+                    ("createLogger" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("className" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1355 1385]))                          
+                        :type ("TELoggerBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1327 1386])
+                    ("getTargets" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("configuration" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1407 1441])
+                            ("out_targets" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::pair" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1442 1495]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1391 1496])
+                    ("m_loggers" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("TELoggerBase" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1501 1538])
+                    ("configureModule" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("module" variable
+                               (:pointer 1
+                                :type ("TLoggerModuleMeta" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1568 1594]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1547 1595])
+                    ("m_previous_module" variable
+                       (:pointer 1
+                        :type ("TLoggerModuleMeta" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1600 1637])
+                    ("m_fake_firstModule" variable (:type ("TLoggerModuleMeta" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1642 1679])
+                    ("m_lastConfigVersion" variable (:type "int") (reparse-symbol classsubparts) [1684 1708]))                  
+                :type "class")
+                nil [824 1712]))          
+    :file "tloggerscontroller.h"
+    :pointmax 1745
+    :fsize 1744
+    :lastmodtime '(21836 32028 6254 300000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("TLOGGERSCONTROLLER_H")
+          )
+
+    )
+   (semanticdb-table "tlogger_priv.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("TLOGGER_PRIV_H" variable (:constant-flag t) nil [739 753])
+            ("string" include (:system-flag t) nil [755 772])
+            ("map" include (:system-flag t) nil [773 787])
+            ("vector" include (:system-flag t) nil [788 805])
+            ("QMutex" include (:system-flag t) nil [807 824])
+            ("teloggerbase.h" include (:system-flag t) nil [826 851])
+            ("tloggeraccess.h" include (:system-flag t) nil [852 878])
+            ("tloggerscontroller.h" include (:system-flag t) nil [879 910])
+            ("tloggermodulesregistry.h" include (:system-flag t) nil [911 946])
+            ("tlogger_acc_proc_mutex" variable
+               (:typemodifiers ("extern")
+                :type ("QMutex" type (:type "class") nil nil))
+                nil [948 985])
+            ("tloggger_process_name" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [1004 1056])
+            ("tloggger_pid" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1097 1140])
+            ("tlogger_internal_access" variable
+               (:typemodifiers ("extern")
+                :type ("TLoggerAccess" type (:type "class") nil nil))
+                nil [1190 1244])
+            ("tloggers_controller" variable
+               (:typemodifiers ("extern")
+                :type ("TLoggersController" type (:type "class") nil nil))
+                nil [1245 1295])
+            ("tlogger_config_version_ptr" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type "int")
+                nil [1296 1353])
+            ("tlogger_acc_proc_mutex_lock" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "bool")
+                nil [1356 1398])
+            ("tlogger_acc_proc_mutex_unlock" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1399 1443])
+            ("tlogger_deinit_destr_func_ptr_type" variable
+               (:functionpointer-flag t
+                :type "void")
+                nil [1454 1499])
+            ("tlogger_deinitialization_destructors" variable
+               (:typemodifiers ("extern")
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("tlogger_deinit_destr_func_ptr_type" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1500 1592])
+            ("tlogger_register_deinitialization_destructor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("functionPtr" variable (:type ("tlogger_deinit_destr_func_ptr_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1643 1690]))                  
+                :type "void")
+                nil [1593 1691])
+            ("tlogger_ready" variable
+               (:typemodifiers ("extern")
+                :type "bool")
+                nil [1692 1718])
+            ("tlogger_explicit_ready" variable
+               (:typemodifiers ("extern")
+                :type "bool")
+                nil [1719 1754])
+            ("tlogger_init_base" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("noLock" variable (:type "bool") (reparse-symbol arg-sub-list) [1789 1801]))                  
+                :type "void")
+                nil [1766 1802])
+            ("tlogger_deinit_base" function
+               (:prototype-flag t
+                :type "void")
+                nil [1814 1841])
+            ("checkInitedOrInitBase" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "bool")
+                nil [1842 1878])
+            ("tlogger_strToLevel" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("level" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1910 1931])
+                    ("out_level" variable
+                       (:reference 1
+                        :type ("TLoggerSeverityLevel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1933 1966]))                  
+                :type "bool")
+                nil [1879 1967]))          
+    :file "tlogger_priv.h"
+    :pointmax 2045
+    :fsize 2044
+    :lastmodtime '(21836 32028 67253 938000)
+    :unmatched-syntax '((TYPEDEF 1446 . 1453))
+    :lexical-table 
+        '(("TLOGGER_PRIV_H")
+          )
+
+    )
+   (semanticdb-table "tloggeraccess.h"
+    :file "tloggeraccess.h"
+    :fsize 1282
+    :lastmodtime '(21836 32028 96253 766000)
+    )
+   (semanticdb-table "tloggermodulesregistry.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("TLOGGERMODULESREGISTRY_H" variable (:constant-flag t) nil [749 773])
+            ("string" include (:system-flag t) nil [775 792])
+            ("tlogger/common.h" include (:system-flag t) nil [794 821])
+            ("TLoggerModulesRegistry" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [854 861])
+                    ("TLoggerModulesRegistry" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("TLoggerModulesRegistry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [866 891])
+                    ("registerModule" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("TLoggerModuleMeta" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [916 935]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [896 936])
+                    ("isModuleRegistered" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("module" variable
+                               (:pointer 1
+                                :type ("TLoggerModuleMeta" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1024 1050]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1000 1051])
+                    ("isModuleRegistered" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1080 1104]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1056 1105]))                  
+                :type "class")
+                nil [823 1244]))          
+    :file "tloggermodulesregistry.h"
+    :pointmax 1281
+    :fsize 1280
+    :lastmodtime '(21836 32028 96253 766000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("TLOGGERMODULESREGISTRY_H")
+          )
+
+    )
+   (semanticdb-table "debugmodulesregistry.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("DEBUGMODULESREGISTRY_H" variable (:constant-flag t) nil [747 769])
+            ("string" include (:system-flag t) nil [771 788])
+            ("tlogger/common.h" include (:system-flag t) nil [790 817])
+            ("DebugModulesRegistry" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [852 859])
+                    ("DebugModulesRegistry" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("DebugModulesRegistry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [864 887])
+                    ("registerModule" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("module" variable
+                               (:pointer 1
+                                :type ("TLoggerModuleMeta" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [912 938]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [892 939])
+                    ("registerModule" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [964 988]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [944 989])
+                    ("isModuleRegistered" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("module" variable
+                               (:pointer 1
+                                :type ("TLoggerModuleMeta" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1018 1044]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [994 1045])
+                    ("isModuleRegistered" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1074 1098]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1050 1099])
+                    ("getModuleLocalId" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("module" variable
+                               (:pointer 1
+                                :type ("TLoggerModuleMeta" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1126 1152])
+                            ("out_id" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1153 1165]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1104 1166])
+                    ("getModuleLocalId" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1193 1217])
+                            ("out_id" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1218 1230]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1171 1231]))                  
+                :type "class")
+                nil [819 1234]))          
+    :file "debugmodulesregistry.h"
+    :pointmax 1269
+    :fsize 1268
+    :lastmodtime '(21836 32028 67253 938000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DEBUGMODULESREGISTRY_H")
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!tlogger2!tlogger_src!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

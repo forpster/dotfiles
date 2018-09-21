@@ -1,0 +1,157 @@
+;; Object handlers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "handlers/"
+  :tables (list 
+   (semanticdb-table "pullVODNavigationFile.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QString" include (:system-flag t) nil [1008 1026])
+            ("QStringList" include (:system-flag t) nil [1027 1049])
+            ("QDebug" include (:system-flag t) nil [1050 1067])
+            ("QFileInfo" include (:system-flag t) nil [1068 1088])
+            ("pullVODNavigationFile.h" include nil nil [1089 1123])
+            ("QTime" include (:system-flag t) nil [1124 1140])
+            ("QProcess" include (:system-flag t) nil [1141 1160])
+            ("DVB_META_TIMEOUT" variable (:constant-flag t) nil [1170 1186])
+            ("COMMAND_TIMEOUT" variable (:constant-flag t) nil [1198 1213])
+            ("pullVODNavigationFile" function
+               (:constructor-flag t
+                :parent "pullVODNavigationFile"
+                :arguments 
+                  ( ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1307 1332]))                  
+                :type ("pullVODNavigationFile" type (:type "class") nil nil))
+                nil [1262 1487])
+            ("pullVODNavigationFile" function
+               (:destructor-flag t
+                :parent "pullVODNavigationFile"
+                :type "void")
+                nil [1489 1589])
+            ("cleanUpPipeline" function
+               (:parent "pullVODNavigationFile"
+                :type "void")
+                nil [1592 1818])
+            ("cleanUpFiles" function
+               (:parent "pullVODNavigationFile"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1863 1869]))                  
+                :type "void")
+                nil [1820 2576])
+            ("startGenerateNavigationFile" function
+               (:parent "pullVODNavigationFile"
+                :arguments 
+                  ( ("index" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("quint64" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3633 3656]))                  
+                :type "bool")
+                nil [3575 6099])
+            ("finishGenerateNavigationFile" function
+               (:parent "pullVODNavigationFile"
+                :arguments 
+                  ( ("index" variable (:type ("quint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6209 6224]))                  
+                :type "bool")
+                nil [6150 8617])
+            ("prependToFile" function
+               (:parent "pullVODNavigationFile"
+                :arguments 
+                  ( ("offset" variable
+                       (:constant-flag t
+                        :type ("quint64" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9865 9886])
+                    ("fileName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9887 9912]))                  
+                :type "bool")
+                nil [9821 11683])
+            ("doCommand" function
+               (:parent "pullVODNavigationFile"
+                :arguments 
+                  ( ("command" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11725 11743]))                  
+                :type "bool")
+                nil [11685 12155])
+            ("doAsyncCommand" function
+               (:parent "pullVODNavigationFile"
+                :arguments 
+                  ( ("command" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12202 12220]))                  
+                :type "bool")
+                nil [12157 12984])
+            ("asyncCommandFinished" function
+               (:parent "pullVODNavigationFile"
+                :arguments 
+                  ( ("pGopher" variable
+                       (:pointer 1
+                        :type ("GopherCommand" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13037 13061]))                  
+                :type "void")
+                nil [12986 14212])
+            ("preparePipeline" function
+               (:parent "pullVODNavigationFile"
+                :arguments 
+                  ( ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16375 16400]))                  
+                :type "bool")
+                nil [16331 18004])
+            ("createAndAddProbePump" function
+               (:parent "pullVODNavigationFile"
+                :type "bool")
+                nil [18006 18681])
+            ("createAndAddDvbParser" function
+               (:parent "pullVODNavigationFile"
+                :type "bool")
+                nil [18683 19276])
+            ("pipelineParser" function
+               (:parent "pullVODNavigationFile"
+                :arguments 
+                  ( ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19322 19347]))                  
+                :type "bool")
+                nil [19279 20619])
+            ("callback" function
+               (:parent "pullVODNavigationFile"
+                :arguments 
+                  ( ("message" variable
+                       (:pointer 1
+                        :type ("GstMessage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20672 20693]))                  
+                :type ("GstBusSyncReply" type (:type "class") nil nil))
+                nil [20622 22972]))          
+    :file "pullVODNavigationFile.cpp"
+    :pointmax 22973
+    :fsize 22972
+    :lastmodtime '(21438 22198 819380 840000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DVB_META_TIMEOUT" . ((number "30" 1187 . 1189)))
+          ("COMMAND_TIMEOUT" . ((semantic-list "( 60 )" 1214 . 1220)))
+          )
+
+    )
+   (semanticdb-table "pullVODNavigationFile.h"
+    :file "pullVODNavigationFile.h"
+    :fsize 4329
+    :lastmodtime '(21438 22198 816380 861000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!eventScheduler!handlers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

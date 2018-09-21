@@ -1,0 +1,33 @@
+;; Object unistd/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "unistd/"
+  :tables (list 
+   (semanticdb-table "daemon.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2018 2036])
+            ("features.h" include (:system-flag t) nil [2037 2058])
+            ("fcntl.h" include (:system-flag t) nil [2059 2077])
+            ("paths.h" include (:system-flag t) nil [2078 2096])
+            ("signal.h" include (:system-flag t) nil [2097 2116])
+            ("unistd.h" include (:system-flag t) nil [2117 2136])
+            ("not-cancel.h" include (:system-flag t) nil [2137 2160])
+            ("errno.h" include (:system-flag t) nil [2161 2179])
+            ("STAT" variable (:constant-flag t) nil [2330 2334])
+            ("FSTAT" variable (:constant-flag t) nil [2348 2353]))          
+    :file "daemon.c"
+    :pointmax 4096
+    :fsize 4095
+    :lastmodtime '(20402 937 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("STAT" . ((symbol "stat" 2335 . 2339)))
+          ("FSTAT" . ((symbol "fstat" 2354 . 2359)))
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!OSS!uclibc!uClibc-0.9.33.2!libc!unistd!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

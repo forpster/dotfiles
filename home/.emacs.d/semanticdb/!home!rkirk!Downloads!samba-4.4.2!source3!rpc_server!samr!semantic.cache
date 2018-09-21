@@ -1,0 +1,3140 @@
+;; Object samr/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "samr/"
+  :tables (list 
+   (semanticdb-table "srv_samr_nt.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("includes.h" include nil nil [1420 1441])
+            ("system/passwd.h" include nil nil [1442 1468])
+            ("../libcli/auth/libcli_auth.h" include nil nil [1469 1508])
+            ("ntdomain.h" include nil nil [1509 1530])
+            ("../librpc/gen_ndr/srv_samr.h" include nil nil [1531 1570])
+            ("rpc_server/samr/srv_samr_util.h" include nil nil [1571 1613])
+            ("../lib/crypto/arcfour.h" include nil nil [1614 1648])
+            ("secrets.h" include nil nil [1649 1669])
+            ("rpc_client/init_lsa.h" include nil nil [1670 1702])
+            ("../libcli/security/security.h" include nil nil [1703 1743])
+            ("passdb.h" include nil nil [1744 1763])
+            ("auth.h" include nil nil [1764 1781])
+            ("rpc_server/srv_access_check.h" include nil nil [1782 1822])
+            ("../lib/tsocket/tsocket.h" include nil nil [1823 1858])
+            ("DBGC_CLASS" variable (:constant-flag t) nil [1886 1896])
+            ("SAMR_USR_RIGHTS_WRITE_PW" variable (:constant-flag t) nil [1919 1943])
+            ("SAMR_USR_RIGHTS_CANT_WRITE_PW" variable (:constant-flag t) nil [2058 2087])
+            ("DISP_INFO_CACHE_TIMEOUT" variable (:constant-flag t) nil [2156 2179])
+            ("MAX_SAM_ENTRIES_W2K" variable (:constant-flag t) nil [2192 2211])
+            ("MAX_SAM_ENTRIES_W95" variable (:constant-flag t) nil [2237 2256])
+            ("samr_connect_info" type
+               (:members 
+                  ( ("dummy" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2289 2303]))                  
+                :type "struct")
+                nil [2261 2306])
+            ("samr_domain_info" type
+               (:members 
+                  ( ("sid" variable (:type ("dom_sid" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2335 2354])
+                    ("disp_info" variable
+                       (:pointer 1
+                        :type ("disp_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2356 2384]))                  
+                :type "struct")
+                nil [2308 2387])
+            ("samr_user_info" type
+               (:members 
+                  ( ("sid" variable (:type ("dom_sid" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2414 2433]))                  
+                :type "struct")
+                nil [2389 2436])
+            ("samr_group_info" type
+               (:members 
+                  ( ("sid" variable (:type ("dom_sid" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2464 2483]))                  
+                :type "struct")
+                nil [2438 2486])
+            ("samr_alias_info" type
+               (:members 
+                  ( ("sid" variable (:type ("dom_sid" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2514 2533]))                  
+                :type "struct")
+                nil [2488 2536])
+            ("DISP_INFO" type
+               (:typedef ("disp_info" type (:type "struct") nil nil)
+                :superclasses "disp_info"
+                :type "typedef")
+                nil [2538 3031])
+            ("disp_info" type
+               (:members 
+                  ( ("sid" variable (:type ("dom_sid" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2566 2585])
+                    ("users" variable
+                       (:pointer 1
+                        :type ("pdb_search" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2624 2649])
+                    ("machines" variable
+                       (:pointer 1
+                        :type ("pdb_search" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2679 2707])
+                    ("groups" variable
+                       (:pointer 1
+                        :type ("pdb_search" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2731 2757])
+                    ("aliases" variable
+                       (:pointer 1
+                        :type ("pdb_search" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2799 2826])
+                    ("enum_acb_mask" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2847 2870])
+                    ("enum_users" variable
+                       (:pointer 1
+                        :type ("pdb_search" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2872 2902])
+                    ("cache_timeout_event" variable
+                       (:pointer 1
+                        :type ("tevent_timer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2933 2974]))                  
+                :type "struct")
+                nil [2538 3031])
+            ("sam_generic_mapping" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type ("generic_mapping" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3033 3207])
+            ("dom_generic_mapping" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type ("generic_mapping" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3208 3394])
+            ("usr_generic_mapping" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type ("generic_mapping" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3395 3573])
+            ("usr_nopwchange_generic_mapping" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type ("generic_mapping" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3574 3799])
+            ("grp_generic_mapping" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type ("generic_mapping" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3800 3982])
+            ("ali_generic_mapping" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type ("generic_mapping" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3983 4165])
+            ("make_samr_object_sd" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4343 4359])
+                    ("psd" variable
+                       (:pointer 2
+                        :type ("security_descriptor" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4360 4393])
+                    ("sd_size" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4394 4410])
+                    ("map" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("generic_mapping" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4448 4482])
+                    ("sid" variable
+                       (:pointer 1
+                        :type ("dom_sid" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4492 4512])
+                    ("sid_access" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4513 4534]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [4306 5873])
+            ("get_samr_dispinfo_by_sid" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("psid" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dom_sid" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6094 6121]))                  
+                :type ("DISP_INFO" type (:type "class") nil nil))
+                nil [6051 7949])
+            ("free_samr_cache" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("disp_info" variable
+                       (:pointer 1
+                        :type ("DISP_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8156 8177]))                  
+                :type "void")
+                nil [8128 8631])
+            ("disp_info_cache_idle_timeout_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ev_ctx" variable
+                       (:pointer 1
+                        :type ("tevent_context" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8876 8906])
+                    ("te" variable
+                       (:pointer 1
+                        :type ("tevent_timer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8914 8938])
+                    ("now" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [8946 8965])
+                    ("private_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8973 8992]))                  
+                :type "void")
+                nil [8827 9207])
+            ("set_disp_info_cache_timeout" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("disp_info" variable
+                       (:pointer 1
+                        :type ("DISP_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9431 9452])
+                    ("secs_fromnow" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9453 9473]))                  
+                :type "void")
+                nil [9391 9922])
+            ("force_flush_samr_cache" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sid" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dom_sid" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10203 10229]))                  
+                :type "void")
+                nil [10168 10519])
+            ("samr_clear_sam_passwd" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sam_pass" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10755 10777]))                  
+                :type "void")
+                nil [10721 10955])
+            ("count_sam_users" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("disp_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10989 11012])
+                    ("acct_flags" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11013 11033]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [10957 11548])
+            ("count_sam_groups" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("disp_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11583 11606]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [11550 12116])
+            ("count_sam_aliases" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("disp_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12152 12175]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [12118 12616])
+            ("_samr_Close" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12793 12816])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_Close" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12817 12838]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [12772 12977])
+            ("_samr_OpenDomain" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13164 13187])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_OpenDomain" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13193 13219]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [13138 15186])
+            ("_samr_GetUserPwInfo" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15379 15402])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_GetUserPwInfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15411 15440]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [15350 16757])
+            ("_samr_SetSecurity" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16946 16969])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_SetSecurity" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16976 17003]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [16919 18165])
+            ("check_change_pw_access" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18423 18443])
+                    ("user_sid" variable
+                       (:pointer 1
+                        :type ("dom_sid" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18444 18469]))                  
+                :type "bool")
+                nil [18388 18988])
+            ("_samr_QuerySecurity" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19182 19205])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_QuerySecurity" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19214 19243]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [19153 22260])
+            ("make_user_sam_entry_list" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22500 22516])
+                    ("sam_pp" variable
+                       (:pointer 2
+                        :type ("samr_SamEntry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22523 22553])
+                    ("num_entries" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22560 22581])
+                    ("start_idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22588 22607])
+                    ("entries" variable
+                       (:pointer 1
+                        :type ("samr_displayentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22614 22648]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [22459 23451])
+            ("MAX_SAM_ENTRIES" variable (:constant-flag t) nil [23461 23476])
+            ("_samr_EnumDomainUsers" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23693 23716])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_EnumDomainUsers" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23727 23758]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [23662 26331])
+            ("make_group_sam_entry_list" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26569 26585])
+                    ("sam_pp" variable
+                       (:pointer 2
+                        :type ("samr_SamEntry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26596 26626])
+                    ("num_sam_entries" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26637 26662])
+                    ("entries" variable
+                       (:pointer 1
+                        :type ("samr_displayentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26673 26707]))                  
+                :type "void")
+                nil [26531 27141])
+            ("_samr_EnumDomainGroups" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27340 27363])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_EnumDomainGroups" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27368 27400]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [27308 29178])
+            ("_samr_EnumDomainAliases" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29379 29402])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_EnumDomainAliases" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29408 29441]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [29346 31008])
+            ("init_samr_dispinfo_1" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31228 31244])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DispInfoGeneral" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31254 31285])
+                    ("num_entries" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31295 31316])
+                    ("start_idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31326 31345])
+                    ("entries" variable
+                       (:pointer 1
+                        :type ("samr_displayentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31355 31389]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [31191 32108])
+            ("init_samr_dispinfo_2" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32325 32341])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DispInfoFull" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32351 32379])
+                    ("num_entries" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32389 32410])
+                    ("start_idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32420 32439])
+                    ("entries" variable
+                       (:pointer 1
+                        :type ("samr_displayentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32449 32483]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [32288 33128])
+            ("init_samr_dispinfo_3" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33351 33367])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DispInfoFullGroups" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33377 33411])
+                    ("num_entries" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33421 33442])
+                    ("start_idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33452 33471])
+                    ("entries" variable
+                       (:pointer 1
+                        :type ("samr_displayentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33481 33515]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [33314 34164])
+            ("init_samr_dispinfo_4" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34382 34398])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DispInfoAscii" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34408 34437])
+                    ("num_entries" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34447 34468])
+                    ("start_idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34478 34497])
+                    ("entries" variable
+                       (:pointer 1
+                        :type ("samr_displayentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34507 34541]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [34345 35033])
+            ("init_samr_dispinfo_5" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35251 35267])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DispInfoAscii" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35277 35306])
+                    ("num_entries" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35316 35337])
+                    ("start_idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35347 35366])
+                    ("entries" variable
+                       (:pointer 1
+                        :type ("samr_displayentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35376 35410]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [35214 35902])
+            ("_samr_QueryDisplayInfo" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36101 36124])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_QueryDisplayInfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36129 36161]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [36069 42059])
+            ("_samr_QueryDisplayInfo2" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42252 42275])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_QueryDisplayInfo2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42281 42314]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [42219 42685])
+            ("_samr_QueryDisplayInfo3" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42878 42901])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_QueryDisplayInfo3" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42907 42940]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [42845 43311])
+            ("_samr_QueryAliasInfo" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43506 43529])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_QueryAliasInfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43539 43569]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [43476 45024])
+            ("_samr_LookupNames" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [45213 45236])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_LookupNames" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [45243 45270]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [45186 47088])
+            ("_samr_ChangePasswordUser" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47537 47560])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_ChangePasswordUser" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47567 47601]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [47503 47640])
+            ("_samr_ChangePasswordUser2" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47845 47868])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_ChangePasswordUser2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47876 47911]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [47810 49073])
+            ("_samr_OemChangePasswordUser2" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [49276 49299])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_OemChangePasswordUser2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [49310 49348]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [49238 50546])
+            ("_samr_ChangePasswordUser3" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [50751 50774])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_ChangePasswordUser3" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [50782 50817]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [50716 53603])
+            ("make_samr_lookup_rids" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53817 53833])
+                    ("num_names" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53834 53853])
+                    ("names" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [53860 53879])
+                    ("lsa_name_array_p" variable
+                       (:pointer 2
+                        :type ("lsa_String" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [53886 53923]))                  
+                :type "bool")
+                nil [53783 54373])
+            ("_samr_LookupRids" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [54560 54583])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_LookupRids" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [54589 54615]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [54534 56481])
+            ("_samr_OpenUser" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [56663 56686])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_OpenUser" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [56690 56714]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [56639 60066])
+            ("init_samr_parameters_string" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60264 60284])
+                    ("blob" variable
+                       (:pointer 1
+                        :type ("DATA_BLOB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60294 60310])
+                    ("_r" variable
+                       (:pointer 2
+                        :type ("lsa_BinaryString" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [60320 60349]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [60220 60843])
+            ("get_logon_hours_from_pdb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61052 61072])
+                    ("pw" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [61086 61102]))                  
+                :type ("samr_LogonHours" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [60997 61517])
+            ("get_user_info_1" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61721 61741])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo1" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [61746 61771])
+                    ("pw" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [61776 61792])
+                    ("domain_sid" variable
+                       (:pointer 1
+                        :type ("dom_sid" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [61797 61824]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [61689 62625])
+            ("get_user_info_2" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [62829 62849])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [62854 62879])
+                    ("pw" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [62884 62900]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [62797 63111])
+            ("get_user_info_3" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63315 63335])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo3" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [63340 63365])
+                    ("pw" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [63370 63386])
+                    ("domain_sid" variable
+                       (:pointer 1
+                        :type ("dom_sid" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [63391 63418]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [63283 65375])
+            ("get_user_info_4" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65579 65599])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo4" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [65604 65629])
+                    ("pw" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [65634 65650]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [65547 65735])
+            ("get_user_info_5" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65939 65959])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo5" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [65964 65989])
+                    ("pw" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [65994 66010])
+                    ("domain_sid" variable
+                       (:pointer 1
+                        :type ("dom_sid" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [66015 66042]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [65907 67973])
+            ("get_user_info_6" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68177 68197])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo6" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [68202 68227])
+                    ("pw" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [68232 68248]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [68145 68416])
+            ("get_user_info_7" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68655 68675])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo7" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [68680 68705])
+                    ("smbpass" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [68710 68731]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [68623 68900])
+            ("get_user_info_8" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69104 69124])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo8" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [69129 69154])
+                    ("pw" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [69159 69175]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [69072 69271])
+            ("get_user_info_9" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69509 69529])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo9" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [69534 69559])
+                    ("smbpass" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [69564 69585]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [69477 69658])
+            ("get_user_info_10" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69864 69884])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo10" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [69890 69916])
+                    ("pw" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [69922 69938]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [69831 70108])
+            ("get_user_info_11" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70314 70334])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo11" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [70340 70366])
+                    ("pw" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [70372 70388]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [70281 70491])
+            ("get_user_info_12" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70697 70717])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo12" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [70723 70749])
+                    ("pw" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [70755 70771]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [70664 70874])
+            ("get_user_info_13" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71080 71100])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo13" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [71106 71132])
+                    ("pw" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [71138 71154]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [71047 71253])
+            ("get_user_info_14" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71459 71479])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo14" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [71485 71511])
+                    ("pw" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [71517 71533]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [71426 71636])
+            ("get_user_info_16" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71873 71893])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo16" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [71899 71925])
+                    ("smbpass" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [71931 71952]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [71840 72024])
+            ("get_user_info_17" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72230 72250])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo17" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [72256 72282])
+                    ("pw" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [72288 72304]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [72197 72392])
+            ("get_user_info_18" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [72738 72761])
+                    ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72767 72787])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo18" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [72793 72819])
+                    ("user_sid" variable
+                       (:pointer 1
+                        :type ("dom_sid" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [72825 72850]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [72705 74298])
+            ("get_user_info_20" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74503 74523])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo20" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [74529 74555])
+                    ("sampass" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [74561 74582]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [74470 75205])
+            ("get_user_info_21" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75411 75431])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo21" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [75437 75463])
+                    ("pw" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [75469 75485])
+                    ("domain_sid" variable
+                       (:pointer 1
+                        :type ("dom_sid" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [75491 75518])
+                    ("acc_granted" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75524 75545]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [75378 79124])
+            ("_samr_QueryUserInfo" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [79317 79340])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_QueryUserInfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [79349 79378]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [79288 84794])
+            ("_samr_QueryUserInfo2" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [84959 84982])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_QueryUserInfo2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [84992 85022]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [84929 85189])
+            ("_samr_GetGroupsForUser" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [85388 85411])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_GetGroupsForUser" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [85416 85448]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [85356 88480])
+            ("samr_get_server_role" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [88660 88665]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [88623 88792])
+            ("query_dom_info_1" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88968 88988])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DomInfo1" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [88994 89018]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [88935 90029])
+            ("query_dom_info_2" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90205 90225])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DomGeneralInformation" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [90231 90268])
+                    ("dinfo" variable
+                       (:pointer 1
+                        :type ("samr_domain_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [90274 90305]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [90172 91086])
+            ("query_dom_info_3" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91262 91282])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DomInfo3" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [91288 91312]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [91229 91593])
+            ("query_dom_info_4" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91769 91789])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DomOEMInformation" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [91795 91828]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [91736 91905])
+            ("query_dom_info_5" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [92081 92101])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DomInfo5" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [92107 92131]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [92048 92206])
+            ("query_dom_info_6" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [92382 92402])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DomInfo6" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [92408 92432]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [92349 92623])
+            ("query_dom_info_7" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [92799 92819])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DomInfo7" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [92825 92849]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [92766 92928])
+            ("query_dom_info_8" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [93104 93124])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DomInfo8" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [93130 93154]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [93071 93391])
+            ("query_dom_info_9" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [93567 93587])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DomInfo9" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [93593 93617]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [93534 93693])
+            ("query_dom_info_11" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [93870 93890])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DomGeneralInformation2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [93897 93935])
+                    ("dinfo" variable
+                       (:pointer 1
+                        :type ("samr_domain_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [93942 93973]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [93836 94814])
+            ("query_dom_info_12" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94991 95011])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DomInfo12" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [95018 95043]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [94957 95755])
+            ("query_dom_info_13" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [95932 95952])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DomInfo13" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [95959 95984]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [95898 96263])
+            ("_samr_QueryDomainInfo" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [96460 96483])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_QueryDomainInfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [96494 96525]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [96429 99195])
+            ("can_create" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [99466 99486])
+                    ("new_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [99487 99508]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [99439 100262])
+            ("_samr_CreateUser2" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [100451 100474])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_CreateUser2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [100481 100508]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [100424 104508])
+            ("_samr_CreateUser" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [104669 104692])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_CreateUser" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [104698 104724]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [104643 105081])
+            ("_samr_Connect" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [105262 105285])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_Connect" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [105295 105318]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [105239 106317])
+            ("_samr_Connect2" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [106500 106523])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_Connect2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [106527 106551]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [106476 107946])
+            ("_samr_Connect3" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [108121 108144])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_Connect3" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [108148 108172]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [108097 108359])
+            ("_samr_Connect4" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [108542 108565])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_Connect4" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [108569 108593]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [108518 108780])
+            ("_samr_Connect5" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [108963 108986])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_Connect5" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [108990 109014]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [108939 109459])
+            ("_samr_LookupDomain" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [109655 109678])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_LookupDomain" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [109686 109714]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [109627 110653])
+            ("_samr_EnumDomains" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [110847 110870])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_EnumDomains" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [110877 110904]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [110820 111753])
+            ("_samr_OpenAlias" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [111938 111961])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_OpenAlias" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [111966 111991]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [111913 113768])
+            ("set_user_info_2" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [113960 113980])
+                    ("id2" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [113985 114012])
+                    ("pwd" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [114017 114034]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [113928 114213])
+            ("set_user_info_4" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114405 114425])
+                    ("id4" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo4" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [114430 114457])
+                    ("pwd" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [114462 114479]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [114373 114658])
+            ("set_user_info_6" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114850 114870])
+                    ("id6" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo6" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [114875 114902])
+                    ("pwd" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [114907 114924]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [114818 115103])
+            ("set_user_info_7" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [115295 115315])
+                    ("id7" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo7" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [115320 115347])
+                    ("pwd" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [115352 115369]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [115263 116520])
+            ("set_user_info_8" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [116712 116732])
+                    ("id8" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo8" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [116737 116764])
+                    ("pwd" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [116769 116786]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [116680 116965])
+            ("set_user_info_10" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [117159 117179])
+                    ("id10" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo10" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [117185 117214])
+                    ("pwd" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [117220 117237]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [117126 117420])
+            ("set_user_info_11" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [117614 117634])
+                    ("id11" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo11" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [117640 117669])
+                    ("pwd" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [117675 117692]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [117581 117876])
+            ("set_user_info_12" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118070 118090])
+                    ("id12" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo12" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [118096 118125])
+                    ("pwd" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [118131 118148]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [118037 118332])
+            ("set_user_info_13" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118526 118546])
+                    ("id13" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo13" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [118552 118581])
+                    ("pwd" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [118587 118604]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [118493 118788])
+            ("set_user_info_14" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118982 119002])
+                    ("id14" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo14" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [119008 119037])
+                    ("pwd" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [119043 119060]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [118949 119244])
+            ("set_user_info_16" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [119438 119458])
+                    ("id16" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo16" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [119464 119493])
+                    ("pwd" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [119499 119516]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [119405 119700])
+            ("set_user_info_17" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [119894 119914])
+                    ("id17" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo17" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [119920 119949])
+                    ("pwd" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [119955 119972]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [119861 120156])
+            ("set_user_info_18" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("id18" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo18" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [120350 120379])
+                    ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [120385 120405])
+                    ("session_key" variable
+                       (:pointer 1
+                        :type ("DATA_BLOB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [120411 120434])
+                    ("pwd" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [120440 120457]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [120317 121491])
+            ("set_user_info_20" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [121685 121705])
+                    ("id20" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo20" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [121711 121740])
+                    ("pwd" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [121746 121763]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [121652 121947])
+            ("set_user_info_21" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("id21" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo21" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [122141 122170])
+                    ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [122176 122196])
+                    ("session_key" variable
+                       (:pointer 1
+                        :type ("DATA_BLOB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [122202 122225])
+                    ("pwd" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [122231 122248]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [122108 125658])
+            ("set_user_info_23" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [125852 125872])
+                    ("id23" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo23" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [125878 125907])
+                    ("rhost" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [125913 125931])
+                    ("pwd" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [125937 125954]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [125819 128142])
+            ("set_user_info_pw" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pass" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [128332 128346])
+                    ("rhost" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [128347 128365])
+                    ("pwd" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [128366 128383]))                  
+                :type "bool")
+                nil [128303 129741])
+            ("set_user_info_24" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [129935 129955])
+                    ("rhost" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [129961 129979])
+                    ("id24" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo24" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [129985 130014])
+                    ("pwd" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [130020 130037]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [129902 130421])
+            ("set_user_info_25" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [130615 130635])
+                    ("rhost" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [130641 130659])
+                    ("id25" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo25" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [130665 130694])
+                    ("pwd" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [130700 130717]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [130582 131926])
+            ("set_user_info_26" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [132120 132140])
+                    ("rhost" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [132146 132164])
+                    ("id26" variable
+                       (:pointer 1
+                        :type ("samr_UserInfo26" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [132170 132199])
+                    ("pwd" variable
+                       (:pointer 1
+                        :type ("samu" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [132205 132222]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [132087 132606])
+            ("samr_set_user_info_map_fields_to_access_mask" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fields" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [132797 132813]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [132736 135115])
+            ("_samr_SetUserInfo" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [135303 135326])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_SetUserInfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [135333 135360]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [135276 142169])
+            ("_samr_SetUserInfo2" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [142360 142383])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_SetUserInfo2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [142391 142419]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [142332 142580])
+            ("_samr_GetAliasMembership" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [142785 142808])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_GetAliasMembership" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [142815 142849]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [142751 144277])
+            ("_samr_GetMembersInAlias" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [144480 144503])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_GetMembersInAlias" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [144509 144542]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [144447 145579])
+            ("_samr_QueryGroupMember" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [145780 145803])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_QueryGroupMember" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [145808 145840]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [145748 147148])
+            ("_samr_AddAliasMember" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [147345 147368])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_AddAliasMember" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [147378 147408]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [147315 147979])
+            ("_samr_DeleteAliasMember" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [148182 148205])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DeleteAliasMember" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [148211 148244]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [148149 148842])
+            ("_samr_AddGroupMember" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [149039 149062])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_AddGroupMember" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [149072 149102]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [149009 149786])
+            ("_samr_DeleteGroupMember" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [149989 150012])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DeleteGroupMember" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [150018 150051]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [149956 150852])
+            ("_samr_DeleteUser" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [151041 151064])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DeleteUser" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [151070 151096]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [151015 152469])
+            ("_samr_DeleteDomainGroup" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [152672 152695])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DeleteDomainGroup" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [152701 152734]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [152639 153756])
+            ("_samr_DeleteDomAlias" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [153953 153976])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DeleteDomAlias" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [153986 154016]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [153923 155016])
+            ("_samr_CreateDomainGroup" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [155219 155242])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_CreateDomainGroup" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [155248 155281]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [155186 156511])
+            ("_samr_CreateDomAlias" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [156708 156731])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_CreateDomAlias" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [156741 156771]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [156678 158358])
+            ("_samr_QueryGroupInfo" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [158555 158578])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_QueryGroupInfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [158588 158618]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [158525 160803])
+            ("_samr_SetGroupInfo" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [160996 161019])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_SetGroupInfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [161027 161055]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [160968 162240])
+            ("_samr_SetAliasInfo" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [162433 162456])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_SetAliasInfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [162464 162492]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [162405 165056])
+            ("_samr_GetDomPwInfo" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [165239 165262])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_GetDomPwInfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [165270 165298]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [165211 166163])
+            ("_samr_OpenGroup" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [166350 166373])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_OpenGroup" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [166378 166403]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [166325 168273])
+            ("_samr_RemoveMemberFromForeignDomain" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [168500 168523])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_RemoveMemberFromForeignDomain" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [168534 168579]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [168455 170157])
+            ("_samr_QueryDomainInfo2" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [170356 170379])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_QueryDomainInfo2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [170384 170416]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [170324 170592])
+            ("set_dom_info_1" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [170766 170786])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DomInfo1" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [170797 170821]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [170735 171458])
+            ("set_dom_info_3" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [171632 171652])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DomInfo3" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [171663 171687]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [171601 171867])
+            ("set_dom_info_12" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [172042 172062])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_DomInfo12" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [172074 172099]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [172010 173218])
+            ("_samr_SetDomainInfo" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [173411 173434])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_SetDomainInfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [173443 173472]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [173382 174982])
+            ("_samr_GetDisplayEnumerationIndex" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [175193 175216])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_GetDisplayEnumerationIndex" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [175224 175266]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [175151 178643])
+            ("_samr_GetDisplayEnumerationIndex2" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [178856 178879])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_GetDisplayEnumerationIndex2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [178888 178931]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [178813 179153])
+            ("_samr_RidToSid" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [179328 179351])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_RidToSid" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [179355 179379]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [179304 179828])
+            ("samr_ValidatePassword_Change" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [180026 180046])
+                    ("dom_pw_info" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("samr_PwInfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [180061 180099])
+                    ("req" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("samr_ValidatePasswordReq2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [180114 180158])
+                    ("rep" variable
+                       (:pointer 1
+                        :type ("samr_ValidatePasswordRepCtr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [180173 180213]))                  
+                :type ("samr_ValidationStatus" type (:type "enum") nil nil))
+                nil [179963 180799])
+            ("samr_ValidatePassword_Reset" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mem_ctx" variable
+                       (:pointer 1
+                        :type ("TALLOC_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [180996 181016])
+                    ("dom_pw_info" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("samr_PwInfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [181030 181068])
+                    ("req" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("samr_ValidatePasswordReq3" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [181082 181126])
+                    ("rep" variable
+                       (:pointer 1
+                        :type ("samr_ValidatePasswordRepCtr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [181140 181180]))                  
+                :type ("samr_ValidationStatus" type (:type "enum") nil nil))
+                nil [180934 181766])
+            ("_samr_ValidatePassword" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [181957 181980])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_ValidatePassword" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [181985 182017]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [181925 183351])
+            ("_samr_Shutdown" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [183510 183533])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_Shutdown" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [183537 183561]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [183486 183645])
+            ("_samr_SetMemberAttributesOfGroup" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [183822 183845])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_SetMemberAttributesOfGroup" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [183853 183895]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [183780 183979])
+            ("_samr_TestPrivateFunctionsDomain" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [184156 184179])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_TestPrivateFunctionsDomain" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [184187 184229]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [184114 184313])
+            ("_samr_TestPrivateFunctionsUser" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [184488 184511])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_TestPrivateFunctionsUser" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [184517 184557]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [184448 184641])
+            ("_samr_AddMultipleMembersToAlias" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [184817 184840])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_AddMultipleMembersToAlias" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [184847 184888]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [184776 184972])
+            ("_samr_RemoveMultipleMembersFromAlias" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [185153 185176])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_RemoveMultipleMembersFromAlias" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [185188 185234]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [185107 185318])
+            ("_samr_SetBootKeyInformation" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [185490 185513])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_SetBootKeyInformation" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [185523 185560]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [185453 185644])
+            ("_samr_GetBootKeyInformation" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [185816 185839])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_GetBootKeyInformation" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [185849 185886]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [185779 185970])
+            ("_samr_SetDsrmPassword" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pipes_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [186136 186159])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("samr_SetDsrmPassword" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [186170 186201]))                  
+                :type ("NTSTATUS" type (:type "class") nil nil))
+                nil [186105 186285]))          
+    :file "srv_samr_nt.c"
+    :pointmax 186286
+    :fsize 186286
+    :lastmodtime '(22267 43108 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAX_SAM_ENTRIES_W2K" . ((number "0x400" 2212 . 2217)))
+          ("DBGC_CLASS" . ((symbol "DBGC_RPC_SRV" 1897 . 1909)))
+          ("MAX_SAM_ENTRIES" . ((symbol "MAX_SAM_ENTRIES_W2K" 23477 . 23496)))
+          ("SAMR_USR_RIGHTS_WRITE_PW" . ((semantic-list "( READ_CONTROL_ACCESS		| \\
+		  SAMR_USER_ACCESS_CHANGE_PASSWORD	| \\
+		  SAMR_USER_ACCESS_SET_LOC_COM)" 1948 . 2049)))
+          ("SAMR_USR_RIGHTS_CANT_WRITE_PW" . ((semantic-list "( READ_CONTROL_ACCESS | SAMR_USER_ACCESS_SET_LOC_COM )" 2092 . 2146)))
+          ("DISP_INFO_CACHE_TIMEOUT" . ((number "10" 2180 . 2182)))
+          ("MAX_SAM_ENTRIES_W95" . ((number "50" 2257 . 2259)))
+          )
+
+    )
+   (semanticdb-table "srv_samr_util.h"
+    :file "srv_samr_util.h"
+    :fsize 3234
+    :lastmodtime '(22183 23658 0 0)
+    )
+   )
+  :file "!home!rkirk!Downloads!samba-4.4.2!source3!rpc_server!samr!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

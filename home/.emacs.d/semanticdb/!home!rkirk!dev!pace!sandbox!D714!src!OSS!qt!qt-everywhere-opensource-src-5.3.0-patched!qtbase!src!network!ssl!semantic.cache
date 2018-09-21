@@ -1,0 +1,1615 @@
+;; Object ssl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ssl/"
+  :tables (list 
+   (semanticdb-table "qsslsocket_openssl_p.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QSSLSOCKET_OPENSSL_P_H" variable (:constant-flag t) nil [2863 2885])
+            ("qsslsocket_p.h" include nil nil [3140 3165])
+            ("openssl/asn1.h" include (:system-flag t) nil [3329 3354])
+            ("openssl/bio.h" include (:system-flag t) nil [3355 3379])
+            ("openssl/bn.h" include (:system-flag t) nil [3380 3403])
+            ("openssl/err.h" include (:system-flag t) nil [3404 3428])
+            ("openssl/evp.h" include (:system-flag t) nil [3429 3453])
+            ("openssl/pem.h" include (:system-flag t) nil [3454 3478])
+            ("openssl/pkcs12.h" include (:system-flag t) nil [3479 3506])
+            ("openssl/pkcs7.h" include (:system-flag t) nil [3507 3533])
+            ("openssl/rand.h" include (:system-flag t) nil [3534 3559])
+            ("openssl/ssl.h" include (:system-flag t) nil [3560 3584])
+            ("openssl/stack.h" include (:system-flag t) nil [3585 3611])
+            ("openssl/x509.h" include (:system-flag t) nil [3612 3637])
+            ("openssl/x509v3.h" include (:system-flag t) nil [3638 3665])
+            ("openssl/x509_vfy.h" include (:system-flag t) nil [3666 3695])
+            ("openssl/dsa.h" include (:system-flag t) nil [3696 3720])
+            ("openssl/rsa.h" include (:system-flag t) nil [3721 3745])
+            ("openssl/crypto.h" include (:system-flag t) nil [3746 3773])
+            ("openssl/tls1.h" include (:system-flag t) nil [3847 3872])
+            ("STACK" type
+               (:typedef ("_STACK" type (:type "class") nil nil)
+                :superclasses "_STACK"
+                :type "typedef")
+                nil [3923 3944])
+            ("QSslSocketBackendPrivate" type
+               (:superclasses 
+                  ( ("QSslSocketPrivate" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4066 4073])
+                    ("QSslSocketBackendPrivate" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("QSslSocketBackendPrivate" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4078 4105])
+                    ("QSslSocketBackendPrivate" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4110 4146])
+                    ("initSslContext" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4171 4193])
+                    ("destroySslContext" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4198 4223])
+                    ("ssl" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4228 4237])
+                    ("readBio" variable
+                       (:pointer 1
+                        :type ("BIO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4242 4255])
+                    ("writeBio" variable
+                       (:pointer 1
+                        :type ("BIO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4260 4274])
+                    ("session" variable
+                       (:pointer 1
+                        :type ("SSL_SESSION" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4279 4300])
+                    ("errorList" variable (:type ("QList" type
+                         (:template-specifier 
+                            ( ("QPair" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4305 4339])
+                    ("startClientEncryption" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4380 4409])
+                    ("startServerEncryption" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4414 4443])
+                    ("transmit" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4448 4464])
+                    ("startHandshake" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4469 4491])
+                    ("disconnectFromHost" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4496 4522])
+                    ("disconnected" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4527 4547])
+                    ("sessionCipher" function
+                       (:prototype-flag t
+                        :type ("QSslCipher" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4552 4585])
+                    ("continueHandshake" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4590 4615])
+                    ("checkSslErrors" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4620 4642])
+                    ("setupOpenSslOptions" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("protocol" variable (:type ("QSsl::SslProtocol" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4838 4865])
+                            ("sslOptions" variable (:type ("QSsl::SslOptions" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4866 4894]))                          
+                        :type "long")
+                        (reparse-symbol classsubparts) [4806 4895])
+                    ("QSslCipher_from_SSL_CIPHER" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("cipher" variable
+                               (:pointer 1
+                                :type ("SSL_CIPHER" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4945 4964]))                          
+                        :type ("QSslCipher" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4900 4965])
+                    ("STACKOFX509_to_QSslCertificates" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable (:type ("STACK_OF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5032 5046])
+                            ("" variable (:type ("x509" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5048 5053]))                          
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QSslCertificate" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4970 5054])
+                    ("isMatchingHostname" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("cert" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QSslCertificate" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5090 5118])
+                            ("peerName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5119 5143]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5059 5144])
+                    ("isMatchingHostname" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("cn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5198 5216])
+                            ("hostname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5217 5241]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5167 5242])
+                    ("verify" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("certificateChain" variable (:type ("QList" type
+                                 (:template-specifier 
+                                    ( ("QSslCertificate" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [5278 5318])
+                            ("hostName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5319 5343]))                          
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QSslError" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5247 5344])
+                    ("getErrorsFromOpenSsl" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5349 5387]))                  
+                :type "class")
+                nil [3973 5390]))          
+    :file "qsslsocket_openssl_p.h"
+    :pointmax 5813
+    :fsize 5812
+    :lastmodtime '(21364 62827 0 0)
+    :unmatched-syntax '((symbol 5788 . 5804) (symbol 5149 . 5166) (punctuation 5047 . 5048) (semantic-list 5040 . 5046) (symbol 4788 . 4805) (semantic-list 4053 . 4065) (symbol 4037 . 4053) (symbol 3953 . 3971))
+    :lexical-table 
+        '(("QSSLSOCKET_OPENSSL_P_H")
+          )
+
+    )
+   (semanticdb-table "qsslsocket_p.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QSSLSOCKET_P_H" variable (:constant-flag t) nil [2005 2019])
+            ("qsslsocket.h" include nil nil [2021 2044])
+            ("private/qtcpsocket_p.h" include (:system-flag t) nil [2299 2332])
+            ("qsslkey.h" include nil nil [2333 2353])
+            ("qsslconfiguration_p.h" include nil nil [2354 2386])
+            ("private/qsslcontext_p.h" include (:system-flag t) nil [2387 2421])
+            ("QtCore/qstringlist.h" include (:system-flag t) nil [2423 2454])
+            ("private/qringbuffer_p.h" include (:system-flag t) nil [2456 2490])
+            ("QSslSocketPrivate" type
+               (:superclasses 
+                  ( ("QTcpSocketPrivate" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3563 3570])
+                    ("QSslSocketPrivate" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("QSslSocketPrivate" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3575 3595])
+                    ("QSslSocketPrivate" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3600 3629])
+                    ("init" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3635 3647])
+                    ("initialized" variable (:type "bool") (reparse-symbol classsubparts) [3652 3669])
+                    ("mode" variable (:type ("QSslSocket::SslMode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3675 3700])
+                    ("autoStartHandshake" variable (:type "bool") (reparse-symbol classsubparts) [3705 3729])
+                    ("connectionEncrypted" variable (:type "bool") (reparse-symbol classsubparts) [3734 3759])
+                    ("shutdown" variable (:type "bool") (reparse-symbol classsubparts) [3764 3778])
+                    ("ignoreAllSslErrors" variable (:type "bool") (reparse-symbol classsubparts) [3783 3807])
+                    ("ignoreErrorsList" variable (:type ("QList" type
+                         (:template-specifier 
+                            ( ("QSslError" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3812 3846])
+                    ("readyReadEmittedPointer" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3851 3881])
+                    ("configuration" variable (:type ("QSslConfigurationPrivate" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3887 3926])
+                    ("sslErrors" variable (:type ("QList" type
+                         (:template-specifier 
+                            ( ("QSslError" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3931 3958])
+                    ("sslContextPointer" variable (:type ("QSharedPointer" type
+                         (:template-specifier 
+                            ( ("QSslContext" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3963 4009])
+                    ("verificationPeerName" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4143 4172])
+                    ("allowRootCertOnDemandLoading" variable (:type "bool") (reparse-symbol classsubparts) [4178 4212])
+                    ("s_loadRootCertsOnDemand" variable
+                       (:typemodifiers ("static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4218 4254])
+                    ("supportsSsl" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4260 4286])
+                    ("sslLibraryVersionNumber" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "long")
+                        (reparse-symbol classsubparts) [4291 4329])
+                    ("sslLibraryVersionString" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4334 4375])
+                    ("ensureInitialized" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4380 4412])
+                    ("deinitialize" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4417 4444])
+                    ("defaultCiphers" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QSslCipher" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4449 4491])
+                    ("supportedCiphers" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QSslCipher" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4496 4540])
+                    ("setDefaultCiphers" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("ciphers" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("QSslCipher" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4575 4608]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4545 4609])
+                    ("setDefaultSupportedCiphers" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("ciphers" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("QSslCipher" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4653 4686]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4614 4687])
+                    ("resetDefaultCiphers" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4692 4726])
+                    ("defaultCaCertificates" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QSslCertificate" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4732 4786])
+                    ("systemCaCertificates" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QSslCertificate" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4791 4844])
+                    ("setDefaultCaCertificates" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("certs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("QSslCertificate" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4886 4922]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4849 4923])
+                    ("addDefaultCaCertificates" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4965 4985])
+                            ("format" variable (:type ("QSsl::EncodingFormat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4986 5014])
+                            ("syntax" variable (:type ("QRegExp::PatternSyntax" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5056 5086]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4928 5087])
+                    ("addDefaultCaCertificate" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("cert" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QSslCertificate" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5128 5156]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5092 5157])
+                    ("addDefaultCaCertificates" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("certs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("QSslCertificate" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5199 5235]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5162 5236])
+                    ("plainSocket" variable
+                       (:pointer 1
+                        :type ("QTcpSocket" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5756 5780])
+                    ("createPlainSocket" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("openMode" variable (:type ("QIODevice::OpenMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5808 5837]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5785 5838])
+                    ("pauseSocketNotifiers" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("QSslSocket" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5876 5888]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5843 5889])
+                    ("resumeSocketNotifiers" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("QSslSocket" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5928 5940]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5894 5941])
+                    ("checkSettingSslContext" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("QSslSocket" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6084 6096])
+                            ("" variable (:type ("QSharedPointer" type
+                                 (:template-specifier 
+                                    ( ("QSslContext" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [6097 6125]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6049 6126])
+                    ("sslContext" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("socket" variable
+                               (:pointer 1
+                                :type ("QSslSocket" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6177 6196]))                          
+                        :type ("QSharedPointer" type
+                             (:template-specifier 
+                                ( ("QSslContext" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6131 6197])
+                    ("isPaused" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6202 6224])
+                    ("_q_connectedSlot" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6229 6253])
+                    ("_q_hostFoundSlot" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6258 6282])
+                    ("_q_disconnectedSlot" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6287 6314])
+                    ("_q_stateChangedSlot" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("QAbstractSocket::SocketState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6344 6373]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6319 6374])
+                    ("_q_errorSlot" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("QAbstractSocket::SocketError" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6397 6426]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6379 6427])
+                    ("_q_readyReadSlot" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6432 6456])
+                    ("_q_bytesWrittenSlot" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6486 6493]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6461 6494])
+                    ("_q_flushWriteBuffer" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6499 6526])
+                    ("_q_flushReadBuffer" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6531 6557])
+                    ("_q_resumeImplementation" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6562 6593])
+                    ("unixRootCertDirectories" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QByteArray" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6693 6744])
+                    ("peek" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("data" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6798 6809])
+                            ("maxSize" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6810 6825]))                          
+                        :type ("qint64" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6778 6826])
+                    ("peek" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("maxSize" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6855 6870]))                          
+                        :type ("QByteArray" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6831 6871])
+                    ("startClientEncryption" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [6912 6953])
+                    ("startServerEncryption" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [6958 6999])
+                    ("transmit" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [7004 7032])
+                    ("disconnectFromHost" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [7037 7075])
+                    ("disconnected" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [7080 7112])
+                    ("sessionCipher" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("QSslCipher" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7117 7162])
+                    ("continueHandshake" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [7167 7204])
+                    ("rootCertOnDemandLoadingSupported" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7228 7275])
+                    ("private" label nil (reparse-symbol classsubparts) [7277 7285])
+                    ("ensureLibraryLoaded" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7290 7324])
+                    ("ensureCiphersAndCertsLoaded" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [7329 7371])
+                    ("s_libraryLoaded" variable
+                       (:typemodifiers ("static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7499 7527])
+                    ("s_loadedCiphersAndCerts" variable
+                       (:typemodifiers ("static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7532 7568])
+                    ("protected" label nil (reparse-symbol classsubparts) [7569 7579])
+                    ("verifyErrorsHaveBeenIgnored" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7584 7619])
+                    ("paused" variable (:type "bool") (reparse-symbol classsubparts) [7624 7636]))                  
+                :type "class")
+                nil [3477 7639]))          
+    :file "qsslsocket_p.h"
+    :pointmax 7666
+    :fsize 7665
+    :lastmodtime '(21364 62827 0 0)
+    :unmatched-syntax '((symbol 7641 . 7657) (symbol 7210 . 7227) (semantic-list 3550 . 3562) (symbol 3534 . 3550) (symbol 2742 . 2760))
+    :lexical-table 
+        '(("QSSLSOCKET_P_H")
+          )
+
+    )
+   (semanticdb-table "qsslsocket.h"
+    :file "qsslsocket.h"
+    :fsize 8636
+    :lastmodtime '(21364 62827 0 0)
+    )
+   (semanticdb-table "qsslkey.h"
+    :file "qsslkey.h"
+    :fsize 3757
+    :lastmodtime '(21364 62827 0 0)
+    )
+   (semanticdb-table "qsslconfiguration_p.h"
+    :file "qsslconfiguration_p.h"
+    :fsize 5132
+    :lastmodtime '(21364 62827 0 0)
+    )
+   (semanticdb-table "qsslconfiguration.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QSSLCONFIGURATION_H" variable (:constant-flag t) nil [2923 2942])
+            ("QtCore/qshareddata.h" include (:system-flag t) nil [2944 2975])
+            ("QtNetwork/qsslsocket.h" include (:system-flag t) nil [2976 3009])
+            ("QtNetwork/qssl.h" include (:system-flag t) nil [3010 3037])
+            ("QList" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :prototype t)
+                nil [3078 3111])
+            ("QSslCertificate" type
+               (:prototype t
+                :type "class")
+                nil [3112 3134])
+            ("QSslCipher" type
+               (:prototype t
+                :type "class")
+                nil [3135 3152])
+            ("QSslKey" type
+               (:prototype t
+                :type "class")
+                nil [3153 3167])
+            ("QSslConfigurationPrivate" type
+               (:prototype t
+                :type "class")
+                nil [3169 3200])
+            ("QSslConfiguration" variable (:type ("Q_NETWORK_EXPORT" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [3201 5970]))          
+    :file "qsslconfiguration.h"
+    :pointmax 6095
+    :fsize 6094
+    :lastmodtime '(21364 62827 0 0)
+    :unmatched-syntax '((semantic-list 6045 . 6064) (symbol 6027 . 6045) (symbol 6009 . 6025) (semantic-list 5988 . 6007) (symbol 5972 . 5988) (symbol 3058 . 3076))
+    :lexical-table 
+        '(("QSSLCONFIGURATION_H")
+          )
+
+    )
+   (semanticdb-table "qsslsocket.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("qsslsocket.h" include nil nil [12642 12665])
+            ("qsslcipher.h" include nil nil [12666 12689])
+            ("qsslsocket_openssl_p.h" include nil nil [12690 12723])
+            ("qsslconfiguration_p.h" include nil nil [12724 12756])
+            ("QtCore/qdebug.h" include (:system-flag t) nil [12758 12784])
+            ("QtCore/qdir.h" include (:system-flag t) nil [12785 12809])
+            ("QtCore/qmutex.h" include (:system-flag t) nil [12810 12836])
+            ("QtCore/qelapsedtimer.h" include (:system-flag t) nil [12837 12870])
+            ("QtNetwork/qhostaddress.h" include (:system-flag t) nil [12871 12906])
+            ("QtNetwork/qhostinfo.h" include (:system-flag t) nil [12907 12939])
+            ("qt_timeout_value" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("msecs" variable (:type "int") (reparse-symbol arg-sub-list) [13092 13102])
+                    ("elapsed" variable (:type "int") (reparse-symbol arg-sub-list) [13103 13115]))                  
+                :type "int")
+                nil [13064 13233])
+            ("QSslSocketGlobalData" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [13264 13271])
+                    ("QSslSocketGlobalData" function
+                       (:constructor-flag t
+                        :type ("QSslSocketGlobalData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13276 13340])
+                    ("mutex" variable (:type ("QMutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13346 13359])
+                    ("supportedCiphers" variable (:type ("QList" type
+                         (:template-specifier 
+                            ( ("QSslCipher" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [13364 13399])
+                    ("config" variable (:type ("QExplicitlySharedDataPointer" type
+                         (:template-specifier 
+                            ( ("QSslConfigurationPrivate" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [13404 13466]))                  
+                :type "class")
+                nil [13235 13469])
+            ("QSslSocket" function
+               (:constructor-flag t
+                :parent "QSslSocket"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13755 13771]))                  
+                :type ("QSslSocket" type (:type "class") nil nil))
+                nil [13732 14003])
+            ("QSslSocket" function
+               (:destructor-flag t
+                :parent "QSslSocket"
+                :type "void")
+                nil [14041 14242])
+            ("resume" function
+               (:parent "QSslSocket"
+                :type "void")
+                nil [14614 14805])
+            ("connectToHostEncrypted" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("hostName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16809 16833])
+                    ("port" variable (:type ("quint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16834 16847])
+                    ("mode" variable (:type ("OpenMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16848 16862])
+                    ("protocol" variable (:type ("NetworkLayerProtocol" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16863 16893]))                  
+                :type "void")
+                nil [16769 17390])
+            ("connectToHostEncrypted" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("hostName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17759 17783])
+                    ("port" variable (:type ("quint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17784 17797])
+                    ("sslPeerName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17838 17865])
+                    ("mode" variable (:type ("OpenMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17866 17880])
+                    ("protocol" variable (:type ("NetworkLayerProtocol" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17921 17951]))                  
+                :type "void")
+                nil [17719 18491])
+            ("setSocketDescriptor" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("socketDescriptor" variable (:type ("qintptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18982 19007])
+                    ("state" variable (:type ("SocketState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19008 19026])
+                    ("openMode" variable (:type ("OpenMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19027 19045]))                  
+                :type "bool")
+                nil [18945 19810])
+            ("setSocketOption" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("option" variable (:type ("QAbstractSocket::SocketOption" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19956 19993])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19994 20016]))                  
+                :type "void")
+                nil [19923 20121])
+            ("socketOption" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("option" variable (:type ("QAbstractSocket::SocketOption" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20253 20290]))                  
+                :type ("QVariant" type (:type "class") nil nil))
+                nil [20219 20428])
+            ("mode" function
+               (:parent "QSslSocket"
+                :type ("QSslSocket::SslMode" type (:type "class") nil nil))
+                nil [20748 20843])
+            ("isEncrypted" function
+               (:parent "QSslSocket"
+                :type "bool")
+                nil [21394 21496])
+            ("protocol" function
+               (:parent "QSslSocket"
+                :type ("QSsl::SslProtocol" type (:type "class") nil nil))
+                nil [21613 21728])
+            ("setProtocol" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("protocol" variable (:type ("QSsl::SslProtocol" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21964 21991]))                  
+                :type "void")
+                nil [21935 22058])
+            ("peerVerifyMode" function
+               (:parent "QSslSocket"
+                :type ("QSslSocket::PeerVerifyMode" type (:type "class") nil nil))
+                nil [22573 22709])
+            ("setPeerVerifyMode" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("mode" variable (:type ("QSslSocket::PeerVerifyMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23364 23396]))                  
+                :type "void")
+                nil [23329 23465])
+            ("peerVerifyDepth" function
+               (:parent "QSslSocket"
+                :type "int")
+                nil [23931 24046])
+            ("setPeerVerifyDepth" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("depth" variable (:type "int") (reparse-symbol arg-sub-list) [24562 24572]))                  
+                :type "void")
+                nil [24526 24778])
+            ("peerVerifyName" function
+               (:parent "QSslSocket"
+                :type ("QString" type (:type "class") nil nil))
+                nil [24987 25096])
+            ("setPeerVerifyName" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("hostName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25327 25351]))                  
+                :type "void")
+                nil [25292 25416])
+            ("bytesAvailable" function
+               (:parent "QSslSocket"
+                :type ("qint64" type (:type "class") nil nil))
+                nil [25527 25777])
+            ("bytesToWrite" function
+               (:parent "QSslSocket"
+                :type ("qint64" type (:type "class") nil nil))
+                nil [25907 26115])
+            ("encryptedBytesAvailable" function
+               (:parent "QSslSocket"
+                :type ("qint64" type (:type "class") nil nil))
+                nil [26323 26503])
+            ("encryptedBytesToWrite" function
+               (:parent "QSslSocket"
+                :type ("qint64" type (:type "class") nil nil))
+                nil [26621 26797])
+            ("canReadLine" function
+               (:parent "QSslSocket"
+                :type "bool")
+                nil [26975 27209])
+            ("close" function
+               (:parent "QSslSocket"
+                :type "void")
+                nil [27229 27553])
+            ("atEnd" function
+               (:parent "QSslSocket"
+                :type "bool")
+                nil [27573 27784])
+            ("flush" function
+               (:parent "QSslSocket"
+                :type "bool")
+                nil [28517 28812])
+            ("setReadBufferSize" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("size" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28948 28960]))                  
+                :type "void")
+                nil [28913 29092])
+            ("abort" function
+               (:parent "QSslSocket"
+                :type "void")
+                nil [29326 29515])
+            ("sslConfiguration" function
+               (:parent "QSslSocket"
+                :type ("QSslConfiguration" type (:type "class") nil nil))
+                nil [29966 30349])
+            ("setSslConfiguration" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("configuration" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QSslConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30775 30814]))                  
+                :type "void")
+                nil [30738 32101])
+            ("setLocalCertificateChain" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("localChain" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QSslCertificate" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32332 32373]))                  
+                :type "void")
+                nil [32290 32455])
+            ("localCertificateChain" function
+               (:parent "QSslSocket"
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("QSslCertificate" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [32654 32800])
+            ("setLocalCertificate" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("certificate" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QSslCertificate" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33344 33379]))                  
+                :type "void")
+                nil [33307 33534])
+            ("setLocalCertificate" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33760 33780])
+                    ("format" variable (:type ("QSsl::EncodingFormat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33818 33846]))                  
+                :type "void")
+                nil [33723 34001])
+            ("localCertificate" function
+               (:parent "QSslSocket"
+                :type ("QSslCertificate" type (:type "class") nil nil))
+                nil [34193 34422])
+            ("peerCertificate" function
+               (:parent "QSslSocket"
+                :type ("QSslCertificate" type (:type "class") nil nil))
+                nil [35491 35618])
+            ("peerCertificateChain" function
+               (:parent "QSslSocket"
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("QSslCertificate" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [36562 36706])
+            ("sessionCipher" function
+               (:parent "QSslSocket"
+                :type ("QSslCipher" type (:type "class") nil nil))
+                nil [37326 37432])
+            ("setPrivateKey" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("key" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QSslKey" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37981 38000]))                  
+                :type "void")
+                nil [37950 38064])
+            ("setPrivateKey" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("fileName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38861 38885])
+                    ("algorithm" variable (:type ("QSsl::KeyAlgorithm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38886 38915])
+                    ("format" variable (:type ("QSsl::EncodingFormat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38947 38975])
+                    ("passPhrase" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QByteArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38976 39005]))                  
+                :type "void")
+                nil [38830 39262])
+            ("privateKey" function
+               (:parent "QSslSocket"
+                :type ("QSslKey" type (:type "class") nil nil))
+                nil [39355 39464])
+            ("ciphers" function
+               (:parent "QSslSocket"
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("QSslCipher" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [40771 40884])
+            ("setCiphers" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("ciphers" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QSslCipher" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41262 41295]))                  
+                :type "void")
+                nil [41234 41360])
+            ("setCiphers" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("ciphers" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41972 41995]))                  
+                :type "void")
+                nil [41944 42282])
+            ("setDefaultCiphers" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("ciphers" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QSslCipher" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42739 42772]))                  
+                :type "void")
+                nil [42704 42827])
+            ("defaultCiphers" function
+               (:parent "QSslSocket"
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("QSslCipher" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [43437 43535])
+            ("supportedCiphers" function
+               (:parent "QSslSocket"
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("QSslCipher" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [43758 43860])
+            ("addCaCertificates" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44498 44518])
+                    ("format" variable (:type ("QSsl::EncodingFormat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44519 44547])
+                    ("syntax" variable (:type ("QRegExp::PatternSyntax" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44583 44613]))                  
+                :type "bool")
+                nil [44463 44833])
+            ("addCaCertificate" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("certificate" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QSslCertificate" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45164 45199]))                  
+                :type "void")
+                nil [45130 45276])
+            ("addCaCertificates" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("certificates" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QSslCertificate" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [45610 45653]))                  
+                :type "void")
+                nil [45575 45731])
+            ("setCaCertificates" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("certificates" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QSslCertificate" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [46248 46291]))                  
+                :type "void")
+                nil [46213 46413])
+            ("caCertificates" function
+               (:parent "QSslSocket"
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("QSslCertificate" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [46878 47010])
+            ("addDefaultCaCertificates" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47577 47597])
+                    ("encoding" variable (:type ("QSsl::EncodingFormat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47598 47628])
+                    ("syntax" variable (:type ("QRegExp::PatternSyntax" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47671 47701]))                  
+                :type "bool")
+                nil [47535 47785])
+            ("addDefaultCaCertificate" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("certificate" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QSslCertificate" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48059 48094]))                  
+                :type "void")
+                nil [48018 48159])
+            ("addDefaultCaCertificates" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("certificates" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QSslCertificate" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [48435 48478]))                  
+                :type "void")
+                nil [48393 48545])
+            ("setDefaultCaCertificates" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("certificates" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QSslCertificate" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [49034 49077]))                  
+                :type "void")
+                nil [48992 49144])
+            ("defaultCaCertificates" function
+               (:parent "QSslSocket"
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("QSslCertificate" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [49749 49866])
+            ("systemCaCertificates" function
+               (:parent "QSslSocket"
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("QSslCertificate" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [50262 50439])
+            ("waitForConnected" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("msecs" variable (:type "int") (reparse-symbol arg-sub-list) [50729 50739]))                  
+                :type "bool")
+                nil [50695 51067])
+            ("waitForEncrypted" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("msecs" variable (:type "int") (reparse-symbol arg-sub-list) [51695 51705]))                  
+                :type "bool")
+                nil [51661 52587])
+            ("waitForReadyRead" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("msecs" variable (:type "int") (reparse-symbol arg-sub-list) [52641 52651]))                  
+                :type "bool")
+                nil [52607 54126])
+            ("waitForBytesWritten" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("msecs" variable (:type "int") (reparse-symbol arg-sub-list) [54183 54193]))                  
+                :type "bool")
+                nil [54146 54809])
+            ("waitForDisconnected" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("msecs" variable (:type "int") (reparse-symbol arg-sub-list) [55107 55117]))                  
+                :type "bool")
+                nil [55070 56047])
+            ("sslErrors" function
+               (:parent "QSslSocket"
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("QSslError" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [56324 56426])
+            ("supportsSsl" function
+               (:parent "QSslSocket"
+                :type "bool")
+                nil [56603 56682])
+            ("sslLibraryVersionNumber" function
+               (:parent "QSslSocket"
+                :type "long")
+                nil [56931 57034])
+            ("sslLibraryVersionString" function
+               (:parent "QSslSocket"
+                :type ("QString" type (:type "class") nil nil))
+                nil [57275 57381])
+            ("startClientEncryption" function
+               (:parent "QSslSocket"
+                :type "void")
+                nil [57970 58533])
+            ("startServerEncryption" function
+               (:parent "QSslSocket"
+                :type "void")
+                nil [59462 59868])
+            ("ignoreSslErrors" function
+               (:parent "QSslSocket"
+                :type "void")
+                nil [61038 61131])
+            ("ignoreSslErrors" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("errors" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QSslError" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [61770 61801]))                  
+                :type "void")
+                nil [61737 61860])
+            ("connectToHost" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("hostName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61914 61938])
+                    ("port" variable (:type ("quint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61939 61952])
+                    ("openMode" variable (:type ("OpenMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61953 61971])
+                    ("protocol" variable (:type ("NetworkLayerProtocol" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61972 62002]))                  
+                :type "void")
+                nil [61883 62719])
+            ("disconnectFromHost" function
+               (:parent "QSslSocket"
+                :type "void")
+                nil [62742 63539])
+            ("readData" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [63587 63598])
+                    ("maxlen" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63599 63613]))                  
+                :type ("qint64" type (:type "class") nil nil))
+                nil [63559 64313])
+            ("writeData" function
+               (:parent "QSslSocket"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [64362 64379])
+                    ("len" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64380 64391]))                  
+                :type ("qint64" type (:type "class") nil nil))
+                nil [64333 64878])
+            ("QSslSocketPrivate" function
+               (:constructor-flag t
+                :parent "QSslSocketPrivate"
+                :type ("QSslSocketPrivate" type (:type "class") nil nil))
+                nil [64901 65318])
+            ("QSslSocketPrivate" function
+               (:destructor-flag t
+                :parent "QSslSocketPrivate"
+                :type "void")
+                nil [65341 65384])
+            ("init" function
+               (:parent "QSslSocketPrivate"
+                :type "void")
+                nil [65407 65881])
+            ("defaultCiphers" function
+               (:parent "QSslSocketPrivate"
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("QSslCipher" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [65904 66094])
+            ("supportedCiphers" function
+               (:parent "QSslSocketPrivate"
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("QSslCipher" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [66117 66310])
+            ("setDefaultCiphers" function
+               (:parent "QSslSocketPrivate"
+                :arguments 
+                  ( ("ciphers" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QSslCipher" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [66375 66408]))                  
+                :type "void")
+                nil [66333 66539])
+            ("setDefaultSupportedCiphers" function
+               (:parent "QSslSocketPrivate"
+                :arguments 
+                  ( ("ciphers" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QSslCipher" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [66613 66646]))                  
+                :type "void")
+                nil [66562 66778])
+            ("defaultCaCertificates" function
+               (:parent "QSslSocketPrivate"
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("QSslCertificate" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [66801 67010])
+            ("setDefaultCaCertificates" function
+               (:parent "QSslSocketPrivate"
+                :arguments 
+                  ( ("certs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QSslCertificate" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [67082 67118]))                  
+                :type "void")
+                nil [67033 67448])
+            ("addDefaultCaCertificates" function
+               (:parent "QSslSocketPrivate"
+                :arguments 
+                  ( ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [67520 67540])
+                    ("format" variable (:type ("QSsl::EncodingFormat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67541 67569])
+                    ("syntax" variable (:type ("QRegExp::PatternSyntax" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67619 67649]))                  
+                :type "bool")
+                nil [67471 67979])
+            ("addDefaultCaCertificate" function
+               (:parent "QSslSocketPrivate"
+                :arguments 
+                  ( ("cert" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QSslCertificate" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68050 68078]))                  
+                :type "void")
+                nil [68002 68258])
+            ("addDefaultCaCertificates" function
+               (:parent "QSslSocketPrivate"
+                :arguments 
+                  ( ("certs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("QSslCertificate" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [68330 68366]))                  
+                :type "void")
+                nil [68281 68547])
+            ("defaultConfiguration" function
+               (:parent "QSslConfigurationPrivate"
+                :type ("QSslConfiguration" type (:type "class") nil nil))
+                nil [68570 68790])
+            ("setDefaultConfiguration" function
+               (:parent "QSslConfigurationPrivate"
+                :arguments 
+                  ( ("configuration" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QSslConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68868 68907]))                  
+                :type "void")
+                nil [68813 69196])
+            ("deepCopyDefaultConfiguration" function
+               (:parent "QSslConfigurationPrivate"
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type ("QSslConfigurationPrivate" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69279 69309]))                  
+                :type "void")
+                nil [69219 70102])
+            ("createPlainSocket" function
+               (:parent "QSslSocketPrivate"
+                :arguments 
+                  ( ("openMode" variable (:type ("QIODevice::OpenMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70167 70196]))                  
+                :type "void")
+                nil [70125 72304])
+            ("pauseSocketNotifiers" function
+               (:parent "QSslSocketPrivate"
+                :arguments 
+                  ( ("socket" variable
+                       (:pointer 1
+                        :type ("QSslSocket" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72351 72370]))                  
+                :type "void")
+                nil [72306 72511])
+            ("resumeSocketNotifiers" function
+               (:parent "QSslSocketPrivate"
+                :arguments 
+                  ( ("socket" variable
+                       (:pointer 1
+                        :type ("QSslSocket" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72559 72578]))                  
+                :type "void")
+                nil [72513 72720])
+            ("isPaused" function
+               (:parent "QSslSocketPrivate"
+                :type "bool")
+                nil [72722 72785])
+            ("_q_connectedSlot" function
+               (:parent "QSslSocketPrivate"
+                :type "void")
+                nil [72808 73738])
+            ("_q_hostFoundSlot" function
+               (:parent "QSslSocketPrivate"
+                :type "void")
+                nil [73761 73977])
+            ("_q_disconnectedSlot" function
+               (:parent "QSslSocketPrivate"
+                :type "void")
+                nil [74000 74245])
+            ("_q_stateChangedSlot" function
+               (:parent "QSslSocketPrivate"
+                :arguments 
+                  ( ("state" variable (:type ("QAbstractSocket::SocketState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74312 74347]))                  
+                :type "void")
+                nil [74268 74534])
+            ("_q_errorSlot" function
+               (:parent "QSslSocketPrivate"
+                :arguments 
+                  ( ("error" variable (:type ("QAbstractSocket::SocketError" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74594 74629]))                  
+                :type "void")
+                nil [74557 74966])
+            ("_q_readyReadSlot" function
+               (:parent "QSslSocketPrivate"
+                :type "void")
+                nil [74989 75390])
+            ("_q_bytesWrittenSlot" function
+               (:parent "QSslSocketPrivate"
+                :arguments 
+                  ( ("written" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75457 75472]))                  
+                :type "void")
+                nil [75413 75846])
+            ("_q_flushWriteBuffer" function
+               (:parent "QSslSocketPrivate"
+                :type "void")
+                nil [75869 75991])
+            ("_q_flushReadBuffer" function
+               (:parent "QSslSocketPrivate"
+                :type "void")
+                nil [76014 76179])
+            ("_q_resumeImplementation" function
+               (:parent "QSslSocketPrivate"
+                :type "void")
+                nil [76202 76780])
+            ("verifyErrorsHaveBeenIgnored" function
+               (:parent "QSslSocketPrivate"
+                :type "bool")
+                nil [76803 77677])
+            ("peek" function
+               (:parent "QSslSocketPrivate"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [77731 77742])
+                    ("maxSize" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77743 77758]))                  
+                :type ("qint64" type (:type "class") nil nil))
+                nil [77700 78572])
+            ("peek" function
+               (:parent "QSslSocketPrivate"
+                :arguments 
+                  ( ("maxSize" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78630 78645]))                  
+                :type ("QByteArray" type (:type "class") nil nil))
+                nil [78595 79416])
+            ("rootCertOnDemandLoadingSupported" function
+               (:parent "QSslSocketPrivate"
+                :type "bool")
+                nil [79439 79537])
+            ("unixRootCertDirectories" function
+               (:parent "QSslSocketPrivate"
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("QByteArray" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [79560 80307])
+            ("checkSettingSslContext" function
+               (:parent "QSslSocketPrivate"
+                :arguments 
+                  ( ("socket" variable
+                       (:pointer 1
+                        :type ("QSslSocket" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80377 80396])
+                    ("sslContext" variable (:type ("QSharedPointer" type
+                         (:template-specifier 
+                            ( ("QSslContext" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [80397 80436]))                  
+                :type "void")
+                nil [80330 80552])
+            ("sslContext" function
+               (:parent "QSslSocketPrivate"
+                :arguments 
+                  ( ("socket" variable
+                       (:pointer 1
+                        :type ("QSslSocket" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80633 80652]))                  
+                :type ("QSharedPointer" type
+                     (:template-specifier 
+                        ( ("QSslContext" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [80575 80747])
+            ("moc_qsslsocket.cpp" include nil nil [80767 80796]))          
+    :file "qsslsocket.cpp"
+    :pointmax 80797
+    :fsize 80796
+    :lastmodtime '(21364 62827 0 0)
+    :unmatched-syntax '((symbol 80749 . 80765) (semantic-list 13485 . 13519) (symbol 13470 . 13485) (symbol 12941 . 12959))
+    )
+   (semanticdb-table "qsslcipher.h"
+    :file "qsslcipher.h"
+    :fsize 3273
+    :lastmodtime '(21364 62827 0 0)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D714!src!OSS!qt!qt-everywhere-opensource-src-5.3.0-patched!qtbase!src!network!ssl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

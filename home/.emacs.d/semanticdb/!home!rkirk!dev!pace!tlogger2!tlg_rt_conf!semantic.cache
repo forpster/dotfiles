@@ -1,0 +1,79 @@
+;; Object tlg_rt_conf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tlg_rt_conf/"
+  :tables (list 
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("tlogger/tlogger.h" include (:system-flag t) nil [708 736])
+            ("stdlib.h" include (:system-flag t) nil [737 756])
+            ("QSharedMemory" include (:system-flag t) nil [757 781])
+            ("iostream" include (:system-flag t) nil [782 801])
+            ("unistd.h" include (:system-flag t) nil [802 821])
+            ("sys/ioctl.h" include (:system-flag t) nil [822 844])
+            ("QFile" include (:system-flag t) nil [845 861])
+            ("QFileInfo" include (:system-flag t) nil [862 882])
+            ("QDomDocument" include (:system-flag t) nil [883 906])
+            ("QUrl" include (:system-flag t) nil [907 922])
+            ("tlogger/console/color_map.h" include (:system-flag t) nil [924 962])
+            ("d" variable
+               (:pointer 1
+                :type "int")
+                nil [964 975])
+            ("tlogger_shared_memory" variable
+               (:pointer 1
+                :type ("QSharedMemory" type (:type "class") nil nil))
+                nil [976 1018])
+            ("AAA" variable (:constant-flag t) nil [1030 1033])
+            ("M" variable (:constant-flag t) nil [1058 1059])
+            ("getArg" function
+               (:arguments 
+                  ( ("no" variable (:type "int") (reparse-symbol arg-sub-list) [1104 1111])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1112 1121])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1122 1141]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [1089 1216])
+            ("joinParams" function
+               (:arguments 
+                  ( ("startNo" variable (:type "int") (reparse-symbol arg-sub-list) [1237 1249])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1250 1259])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1260 1279]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [1218 1718])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1732 1741])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1742 1761]))                  
+                :type "int")
+                nil [1723 13028]))          
+    :file "main.cpp"
+    :pointmax 13033
+    :fsize 13032
+    :lastmodtime '(21836 32027 829255 350000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("AAA" . ((number "9" 1034 . 1035)))
+          ("M" (spp-arg-list nil 1059 . 1061))
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!tlogger2!tlg_rt_conf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

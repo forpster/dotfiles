@@ -1,0 +1,18 @@
+;; Object tlogger/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tlogger/"
+  :tables (list 
+   (semanticdb-table "common.h"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "common.h"
+    :pointmax 2770
+    :fsize 2769
+    :lastmodtime '(21836 32028 37254 116000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!dev!pace!tlogger2!tlogger_src!include!api_dummy!tlogger!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

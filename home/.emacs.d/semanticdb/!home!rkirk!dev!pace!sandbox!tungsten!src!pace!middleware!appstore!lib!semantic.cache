@@ -1,0 +1,1679 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "appfilesystem.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QtDebug" include (:system-flag t) nil [797 815])
+            ("QtDBus" include (:system-flag t) nil [816 833])
+            ("DEBUG_LOCAL_ENABLE" variable (:constant-flag t) nil [843 861])
+            ("dsmccInterface.h" include nil nil [894 921])
+            ("appfilesystem.h" include nil nil [992 1018])
+            ("carouseldirectory.h" include nil nil [1019 1049])
+            ("carouseldescriptor.h" include nil nil [1050 1081])
+            ("appstore.h" include nil nil [1082 1103])
+            ("appbundleprocessor.h" include nil nil [1104 1135])
+            ("tlogger/tlogger.h" include nil nil [1137 1165])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1166 1190])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [1191 1241])
+            ("linkage_private_bytes" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "unsigned char")
+                nil [1287 1419])
+            ("linkage_private_length" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [1420 1465])
+            ("hexBase" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [1466 1496])
+            ("TIMEOUT_IN_SECONDS" variable (:constant-flag t) nil [1505 1523])
+            ("AppFileSystem" function
+               (:constructor-flag t
+                :parent "AppFileSystem"
+                :arguments 
+                  ( ("as" variable
+                       (:pointer 1
+                        :type ("AppStore" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1687 1700])
+                    ("dsmcc" variable
+                       (:pointer 1
+                        :type ("DSMCCManagerInterface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1701 1730])
+                    ("cds" variable
+                       (:pointer 1
+                        :type ("CarouselDirectoryService" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1731 1761])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1793 1810]))                  
+                :type ("AppFileSystem" type (:type "class") nil nil))
+                nil [1656 1996])
+            ("AppFileSystem" function
+               (:destructor-flag t
+                :parent "AppFileSystem"
+                :type "void")
+                nil [2110 2167])
+            ("initialize" function
+               (:parent "AppFileSystem"
+                :type "int")
+                nil [2281 3955])
+            ("find_manifest_carousel" function
+               (:parent "AppFileSystem"
+                :type "int")
+                nil [4069 6167])
+            ("carouselDownloadRequest" function
+               (:parent "AppFileSystem"
+                :arguments 
+                  ( ("dvburl" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8150 8166]))                  
+                :type "int")
+                nil [8105 8401])
+            ("requestApplicationBundle" function
+               (:parent "AppFileSystem"
+                :arguments 
+                  ( ("dvburl" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8561 8576])
+                    ("file_path" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8577 8596]))                  
+                :type "int")
+                nil [8515 8844])
+            ("requestLibrary" function
+               (:parent "AppFileSystem"
+                :arguments 
+                  ( ("dvburl" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8994 9009])
+                    ("file_path" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9010 9029]))                  
+                :type "int")
+                nil [8958 9279])
+            ("cancelDownloadRequest" function
+               (:parent "AppFileSystem"
+                :arguments 
+                  ( ("requestid" variable (:type "int") (reparse-symbol arg-sub-list) [9437 9452]))                  
+                :type "void")
+                nil [9393 9527])
+            ("slotFileDownloaded" function
+               (:parent "AppFileSystem"
+                :arguments 
+                  ( ("requestid" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10581 10596])
+                    ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10597 10618]))                  
+                :type "void")
+                nil [10540 11287])
+            ("slotDownloadTimeout" function
+               (:parent "AppFileSystem"
+                :arguments 
+                  ( ("requestid" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11526 11542]))                  
+                :type "void")
+                nil [11484 11778])
+            ("slotFileFailure" function
+               (:parent "AppFileSystem"
+                :arguments 
+                  ( ("requestid" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12022 12038]))                  
+                :type "void")
+                nil [11985 12682])
+            ("cacheFile" function
+               (:parent "AppFileSystem"
+                :arguments 
+                  ( ("url" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12827 12846])
+                    ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12847 12864]))                  
+                :type "int")
+                nil [12796 13303])
+            ("uncacheFile" function
+               (:parent "AppFileSystem"
+                :arguments 
+                  ( ("requestId" variable (:type "int") (reparse-symbol arg-sub-list) [13451 13466]))                  
+                :type "bool")
+                nil [13417 13853])
+            ("clearCache" function
+               (:parent "AppFileSystem"
+                :arguments 
+                  ( ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14000 14017]))                  
+                :type "void")
+                nil [13967 14431])
+            ("printCacheFile" function
+               (:parent "AppFileSystem"
+                :type "void")
+                nil [14545 15018]))          
+    :file "appfilesystem.cpp"
+    :pointmax 15020
+    :fsize 2006
+    :lastmodtime '(21785 11160 829275 968000)
+    :unmatched-syntax '((string 1219 . 1238))
+    :lexical-table 
+        '(("TIMEOUT_IN_SECONDS" . ((number "600" 1524 . 1527)))
+          ("DEBUG_LOCAL_ENABLE")
+          )
+
+    )
+   (semanticdb-table "appfilesystem.h"
+    :file "appfilesystem.h"
+    :fsize 2125
+    :lastmodtime '(21785 11160 851275 806000)
+    )
+   (semanticdb-table "carouseldirectory.h"
+    :file "carouseldirectory.h"
+    :fsize 5765
+    :lastmodtime '(21785 11160 831275 953000)
+    )
+   (semanticdb-table "carouseldescriptor.h"
+    :file "carouseldescriptor.h"
+    :fsize 1178
+    :lastmodtime '(21785 11160 828275 975000)
+    )
+   (semanticdb-table "appstore.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_APPSTORE_H" variable (:constant-flag t) nil [844 855])
+            ("QString" include (:system-flag t) nil [857 875])
+            ("QList" include (:system-flag t) nil [876 892])
+            ("QMutex" include (:system-flag t) nil [893 910])
+            ("applicationstate.h" include nil nil [911 940])
+            ("contentdescriptor.h" include nil nil [941 971])
+            ("iappstore.h" include nil nil [972 994])
+            ("AppFileSystem" type
+               (:prototype t
+                :type "class")
+                nil [996 1016])
+            ("CarouselDirectoryService" type
+               (:prototype t
+                :type "class")
+                nil [1074 1105])
+            ("AppStoreAdaptor" type
+               (:prototype t
+                :type "class")
+                nil [1107 1129])
+            ("AppStoreObserver" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1156 1163])
+                    ("appListChanged" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1167 1199])
+                    ("applicationUpdateAvailable" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("appid" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1246 1262]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1204 1284])
+                    ("applicationRemoved" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("appid" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1323 1339]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1289 1361])
+                    ("applicationVersionRemoved" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("appid" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1407 1422])
+                            ("version" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1423 1441]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1366 1484])
+                    ("cachedFileUpdate" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1521 1537])
+                            ("url" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1538 1552]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1489 1596])
+                    ("applicationToKill" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1634 1651]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1601 1677]))                  
+                :type "class")
+                nil [1131 1682])
+            ("AppStore" type
+               (:superclasses 
+                  ( ("QObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("IAppStore" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1782 1789])
+                    ("AppStore" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("feType" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1805 1818]))                          
+                        :type ("AppStore" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1794 1819])
+                    ("AppStore" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1926 1938])
+                    ("initialize" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1943 1963])
+                    ("registerObserver" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("o" variable
+                               (:pointer 1
+                                :type ("AppStoreObserver" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1991 2012]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1967 2013])
+                    ("unregisterObserver" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("o" variable
+                               (:pointer 1
+                                :type ("AppStoreObserver" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2043 2064]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2017 2065])
+                    ("getObserver" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("AppStoreObserver" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2069 2101])
+                    ("getApplicationCount" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2106 2132])
+                    ("getApplications" function
+                       (:prototype-flag t
+                        :type ("AppList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2136 2163])
+                    ("getLibraries" function
+                       (:prototype-flag t
+                        :type ("LibraryList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2167 2195])
+                    ("getApplicationById" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("appid" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2235 2251]))                          
+                        :type ("AppDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2199 2252])
+                    ("getLibrariesForApp" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("appid" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2289 2305]))                          
+                        :type ("LibraryList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2256 2306])
+                    ("getApplicationPath" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("appid" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2339 2355]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2310 2356])
+                    ("getApplicationParameters" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("appid" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2395 2411]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2360 2412])
+                    ("getApplicationVersion" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("appid" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2448 2464]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2416 2465])
+                    ("getApplicationProvider" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("appid" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2502 2518]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2469 2519])
+                    ("getApplicationChannel" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("appid" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2555 2571]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2523 2572])
+                    ("resetAppstore" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2576 2599])
+                    ("startApplication" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("appid" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2628 2643])
+                            ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2644 2661]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2604 2662])
+                    ("stopApplication" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("appid" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2689 2705]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2666 2706])
+                    ("getMainAppID" function
+                       (:prototype-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2711 2734])
+                    ("getSecondaryAppPath" function
+                       (:prototype-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2738 2768])
+                    ("getWebServerPath" function
+                       (:prototype-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2772 2799])
+                    ("getFEType" function
+                       (:prototype-flag t
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2803 2820])
+                    ("notifyAppListChanged" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2825 2853])
+                    ("notifyApplicationUpdateAvailable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("appid" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2897 2913]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2857 2914])
+                    ("notifyAppRemoved" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("appid" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2942 2958]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2918 2959])
+                    ("notifyAppVersionRemoved" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("appid" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2994 3009])
+                            ("version" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3010 3028]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2963 3029])
+                    ("notifyKillApplication" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3062 3079]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3033 3080])
+                    ("notifyCacheCarouselUpdate" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3084 3117])
+                    ("mutexLock" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3121 3138])
+                    ("mutexUnlock" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3142 3161])
+                    ("public" label nil (reparse-symbol classsubparts) [3232 3245])
+                    ("cacheFile" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("url" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3265 3284])
+                            ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3285 3302]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3249 3303])
+                    ("uncacheFile" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("requestId" variable (:type "int") (reparse-symbol arg-sub-list) [3326 3341]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3307 3342])
+                    ("getCacheCarouselList" function
+                       (:prototype-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3346 3377])
+                    ("notifyCachedFileUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3411 3427])
+                            ("url" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3428 3441]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3381 3442])
+                    ("cacheCarouselListUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cacheCarouselList" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3487 3521]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3456 3522])
+                    ("cachedFileListUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cachedFileList" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3554 3585]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3526 3586])
+                    ("private" label nil (reparse-symbol classsubparts) [3589 3597])
+                    ("update_applist" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3625 3647])
+                    ("m_feType" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3651 3665])
+                    ("m_carousel_directory_service" variable
+                       (:pointer 1
+                        :type ("CarouselDirectoryService" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3669 3724])
+                    ("m_app_file_system" variable
+                       (:pointer 1
+                        :type ("AppFileSystem" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3728 3761])
+                    ("m_observer" variable
+                       (:pointer 1
+                        :type ("AppStoreObserver" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3836 3865])
+                    ("m_tipcAdaptor" variable
+                       (:pointer 1
+                        :type ("AppStoreAdaptor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3869 3900])
+                    ("m_mutex" variable (:type ("QMutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3904 3919])
+                    ("m_applist" variable (:type ("AppList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3930 3948]))                  
+                :type "class")
+                nil [1685 4008]))          
+    :file "appstore.h"
+    :pointmax 4017
+    :fsize 4016
+    :lastmodtime '(21785 11160 830275 960000)
+    :unmatched-syntax '((punctuation 3451 . 3452) (symbol 3444 . 3451) (semantic-list 1767 . 1780) (symbol 1754 . 1766) (symbol 1742 . 1750) (punctuation 1677 . 1678) (punctuation 1596 . 1597) (punctuation 1484 . 1485) (punctuation 1361 . 1362) (punctuation 1284 . 1285) (punctuation 1199 . 1200))
+    :lexical-table 
+        '(("_APPSTORE_H")
+          )
+
+    )
+   (semanticdb-table "appbundleprocessor.h"
+    :file "appbundleprocessor.h"
+    :fsize 1530
+    :lastmodtime '(21785 11160 850275 813000)
+    )
+   (semanticdb-table "appfilesystemfoxtel.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__APP_FILE_SYSTEM_FOXTEL_H" variable (:constant-flag t) nil [870 896])
+            ("QObject" include (:system-flag t) nil [898 916])
+            ("QString" include (:system-flag t) nil [917 935])
+            ("QMap" include (:system-flag t) nil [936 951])
+            ("appfilesystem.h" include nil nil [952 978])
+            ("AppStore" type
+               (:prototype t
+                :type "class")
+                nil [1030 1045])
+            ("DSMCCManagerInterface" type
+               (:prototype t
+                :type "class")
+                nil [1046 1074])
+            ("DVB_LINKAGE_INFO" type
+               (:prototype t
+                :type "struct")
+                nil [1075 1099])
+            ("AppFileSystemFoxtel" type
+               (:superclasses 
+                  ( ("AppFileSystem" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1165 1172])
+                    ("AppFileSystemFoxtel" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("as" variable
+                               (:pointer 1
+                                :type ("AppStore" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1198 1211])
+                            ("cds" variable
+                               (:pointer 1
+                                :type ("CarouselDirectoryService" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1212 1243]))                          
+                        :type ("AppFileSystemFoxtel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1176 1244])
+                    ("AppFileSystemFoxtel" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1248 1271])
+                    ("initialize" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1276 1293])
+                    ("setDSMCCManagerInterface" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dsmcc" variable
+                               (:pointer 1
+                                :type ("DSMCCManagerInterface" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1327 1356]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1297 1357])
+                    ("carouselDownloadRequest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dvburl" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1392 1408]))                          
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1361 1409])
+                    ("requestApplicationBundle" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dvburl" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1445 1460])
+                            ("file_path" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1461 1480]))                          
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1413 1481])
+                    ("requestLibrary" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dvburl" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1507 1522])
+                            ("file_path" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1523 1542]))                          
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1485 1543])
+                    ("requestManifest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("file_path" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1570 1589]))                          
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1547 1590])
+                    ("cancelDownloadRequest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("requestid" variable (:type "int") (reparse-symbol arg-sub-list) [1624 1639]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1595 1640])
+                    ("cacheFile" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("url" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1660 1679])
+                            ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1680 1697]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1644 1698])
+                    ("uncacheFile" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("requestId" variable (:type "int") (reparse-symbol arg-sub-list) [1721 1736]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1702 1737])
+                    ("printCacheFile" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1741 1763])
+                    ("clearCache" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1785 1802]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1767 1803])
+                    ("getCachedFileList" function
+                       (:prototype-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1807 1835])
+                    ("public" label nil (reparse-symbol classsubparts) [1837 1850])
+                    ("slotDownloadTimeout" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("requestId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2420 2436]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2393 2437])
+                    ("slotFileDownloaded" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("requestId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2467 2482])
+                            ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2483 2504]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2441 2505])
+                    ("slotFileFailure" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("requestId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2531 2547]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2509 2548])
+                    ("private" label nil (reparse-symbol classsubparts) [2558 2566])
+                    ("find_manifest_carousel" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2571 2600])
+                    ("m_dsmcc_manager" variable
+                       (:pointer 1
+                        :type ("DSMCCManagerInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2689 2728])
+                    ("m_manifest_request_id" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2813 2840])
+                    ("m_manifestForceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2844 2867])
+                    ("CacheDetails" type
+                       (:typedef ("_cacheDetails" type (:type "struct") nil nil)
+                        :superclasses "_cacheDetails"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2879 2973])
+                    ("_cacheDetails" type
+                       (:members 
+                          ( ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2919 2935])
+                            ("url" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2942 2954]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [2879 2973])
+                    ("m_cacheMap" variable (:type ("QMap" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("CacheDetails" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2978 3013])
+                    ("m_cacheIter" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3042 3063]))                  
+                :type "class")
+                nil [1101 3066]))          
+    :file "appfilesystemfoxtel.h"
+    :pointmax 3075
+    :fsize 3074
+    :lastmodtime '(21785 11160 849275 821000)
+    :unmatched-syntax '((punctuation 3041 . 3042) (punctuation 3040 . 3041) (punctuation 3039 . 3040) (symbol 3027 . 3039) (punctuation 3025 . 3026) (INT 3022 . 3025) (punctuation 3021 . 3022) (symbol 3017 . 3021) (symbol 1155 . 1163))
+    :lexical-table 
+        '(("__APP_FILE_SYSTEM_FOXTEL_H")
+          )
+
+    )
+   (semanticdb-table "iappstore.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("IAPPSTORE" variable (:constant-flag t) nil [27 36])
+            ("iappstoremodelbase.h" include nil nil [39 70])
+            ("IAppStore" type
+               (:superclasses 
+                  ( ("IAppStoreModelBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [119 132])
+                    ("cacheFile" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("url" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [199 218])
+                            ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [219 236]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [175 241])
+                    ("uncacheFile" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("requestId" variable (:type "int") (reparse-symbol arg-sub-list) [272 287]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [245 292])
+                    ("getCacheCarouselList" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [296 339])
+                    ("public" label nil (reparse-symbol classsubparts) [341 348])
+                    ("cacheCarouselListUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cacheCarouselList" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [392 426]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [361 427])
+                    ("cachedFileListUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cachedFileList" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [459 490]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [431 491]))                  
+                :type "class")
+                nil [73 494]))          
+    :file "iappstore.h"
+    :pointmax 574
+    :fsize 573
+    :lastmodtime '(21785 11160 827275 983000)
+    :unmatched-syntax '((semantic-list 516 . 564) (symbol 496 . 515) (string 529 . 562) (punctuation 356 . 357) (symbol 349 . 356))
+    :lexical-table 
+        '(("IAPPSTORE")
+          )
+
+    )
+   (semanticdb-table "iappstoremodelbase.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("IAPPSTOREMODELBASE_H__" variable (:constant-flag t) nil [40 62])
+            ("QObject" include (:system-flag t) nil [64 82])
+            ("QString" include (:system-flag t) nil [83 101])
+            ("QMetaType" include (:system-flag t) nil [102 122])
+            ("QtDBus/QDBusArgument" include (:system-flag t) nil [123 154])
+            ("QtDBus/QDBusMetaType" include (:system-flag t) nil [155 186])
+            ("QDataStream" include (:system-flag t) nil [187 209])
+            ("QDebug" include (:system-flag t) nil [210 227])
+            ("IAppStoreModelBase" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [256 263])
+                    ("IAppStoreModelBase" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("inline" "virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [267 308])
+                    ("toQObject" function
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [384 439])
+                    ("toQObject" function
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [532 605])
+                    ("registerModelWithTipc" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [778 798])
+                            ("model" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [799 815]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [742 876]))                  
+                :type "class")
+                nil [229 886])
+            ("IAppStoreModelBase" function
+               (:destructor-flag t
+                :parent "IAppStoreModelBase"
+                :typemodifiers ("inline")
+                :type "void")
+                nil [888 939]))          
+    :file "iappstoremodelbase.h"
+    :pointmax 973
+    :fsize 972
+    :lastmodtime '(21785 11160 850275 813000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("IAPPSTOREMODELBASE_H__")
+          )
+
+    )
+   (semanticdb-table "appstore.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QtDebug" include (:system-flag t) nil [798 816])
+            ("appstore.h" include nil nil [817 838])
+            ("appfilesystemnull.h" include nil nil [903 933])
+            ("carouseldirectory.h" include nil nil [941 971])
+            ("QMutexLocker" include (:system-flag t) nil [972 995])
+            ("tlogger/tlogger.h" include nil nil [1054 1082])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1083 1107])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [1108 1158])
+            ("AppStoreAdaptor" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1268 1275])
+                    ("AppStoreAdaptor" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1294 1305]))                          
+                        :type ("AppStoreAdaptor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1276 1308]))                  
+                :type "class")
+                nil [1244 1311])
+            ("AppStore" function
+               (:constructor-flag t
+                :parent "AppStore"
+                :arguments 
+                  ( ("feType" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1453 1466]))                  
+                :type ("AppStore" type (:type "class") nil nil))
+                nil [1432 1995])
+            ("initialize" function
+               (:parent "AppStore"
+                :type "void")
+                nil [2459 2895])
+            ("AppStore" function
+               (:destructor-flag t
+                :parent "AppStore"
+                :type "void")
+                nil [3011 3222])
+            ("registerObserver" function
+               (:parent "AppStore"
+                :arguments 
+                  ( ("o" variable
+                       (:pointer 1
+                        :type ("AppStoreObserver" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3370 3391]))                  
+                :type "void")
+                nil [3336 3436])
+            ("unregisterObserver" function
+               (:parent "AppStore"
+                :arguments 
+                  ( ("o" variable
+                       (:pointer 1
+                        :type ("AppStoreObserver" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3586 3607]))                  
+                :type "void")
+                nil [3550 3670])
+            ("getObserver" function
+               (:pointer 1
+                :parent "AppStore"
+                :type ("AppStoreObserver" type (:type "class") nil nil))
+                nil [3784 3873])
+            ("getApplicationCount" function
+               (:parent "AppStore"
+                :type "int")
+                nil [3987 4191])
+            ("getApplications" function
+               (:parent "AppStore"
+                :type ("AppList" type (:type "class") nil nil))
+                nil [4305 4509])
+            ("getLibraries" function
+               (:parent "AppStore"
+                :type ("LibraryList" type (:type "class") nil nil))
+                nil [4623 4744])
+            ("getApplicationById" function
+               (:pointer 1
+                :parent "AppStore"
+                :arguments 
+                  ( ("appid" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4904 4920]))                  
+                :type ("AppDescriptor" type (:type "class") nil nil))
+                nil [4858 5018])
+            ("getLibrariesForApp" function
+               (:parent "AppStore"
+                :arguments 
+                  ( ("appid" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5175 5191]))                  
+                :type ("LibraryList" type (:type "class") nil nil))
+                nil [5132 5528])
+            ("getApplicationPath" function
+               (:parent "AppStore"
+                :arguments 
+                  ( ("appid" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5681 5697]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [5642 5845])
+            ("getApplicationParameters" function
+               (:parent "AppStore"
+                :arguments 
+                  ( ("appid" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6004 6020]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [5959 6405])
+            ("getApplicationVersion" function
+               (:parent "AppStore"
+                :arguments 
+                  ( ("appid" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6561 6577]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [6519 6971])
+            ("getApplicationProvider" function
+               (:parent "AppStore"
+                :arguments 
+                  ( ("appid" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7129 7145]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [7086 7530])
+            ("getApplicationChannel" function
+               (:parent "AppStore"
+                :arguments 
+                  ( ("appid" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7687 7703]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [7645 8263])
+            ("startApplication" function
+               (:parent "AppStore"
+                :arguments 
+                  ( ("appid" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8410 8425])
+                    ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8426 8443]))                  
+                :type "void")
+                nil [8376 8819])
+            ("stopApplication" function
+               (:parent "AppStore"
+                :arguments 
+                  ( ("appid" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8966 8982]))                  
+                :type "void")
+                nil [8933 9531])
+            ("getMainAppID" function
+               (:parent "AppStore"
+                :type ("QString" type (:type "class") nil nil))
+                nil [9645 9759])
+            ("getSecondaryAppPath" function
+               (:parent "AppStore"
+                :type ("QString" type (:type "class") nil nil))
+                nil [9873 10001])
+            ("getWebServerPath" function
+               (:parent "AppStore"
+                :type ("QString" type (:type "class") nil nil))
+                nil [10115 10237])
+            ("getFEType" function
+               (:parent "AppStore"
+                :type ("uint" type (:type "class") nil nil))
+                nil [10351 10423])
+            ("notifyAppListChanged" function
+               (:parent "AppStore"
+                :type "void")
+                nil [10537 10690])
+            ("notifyApplicationUpdateAvailable" function
+               (:parent "AppStore"
+                :arguments 
+                  ( ("appid" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10854 10870]))                  
+                :type "void")
+                nil [10804 10984])
+            ("notifyCacheCarouselUpdate" function
+               (:parent "AppStore"
+                :type "void")
+                nil [11098 11276])
+            ("getCacheCarouselList" function
+               (:parent "AppStore"
+                :type ("QString" type (:type "class") nil nil))
+                nil [11390 11621])
+            ("notifyAppRemoved" function
+               (:parent "AppStore"
+                :arguments 
+                  ( ("appid" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11769 11785]))                  
+                :type "void")
+                nil [11735 11891])
+            ("mutexLock" function
+               (:parent "AppStore"
+                :type "void")
+                nil [12005 12078])
+            ("mutexUnlock" function
+               (:parent "AppStore"
+                :type "void")
+                nil [12192 12269])
+            ("notifyAppVersionRemoved" function
+               (:parent "AppStore"
+                :arguments 
+                  ( ("appid" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12424 12439])
+                    ("version" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12440 12458]))                  
+                :type "void")
+                nil [12383 12580])
+            ("notifyKillApplication" function
+               (:parent "AppStore"
+                :arguments 
+                  ( ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12733 12750]))                  
+                :type "void")
+                nil [12694 12860])
+            ("update_applist" function
+               (:parent "AppStore"
+                :type "void")
+                nil [12975 17362])
+            ("cacheFile" function
+               (:parent "AppStore"
+                :arguments 
+                  ( ("url" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17503 17522])
+                    ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17523 17540]))                  
+                :type "int")
+                nil [17477 17804])
+            ("uncacheFile" function
+               (:parent "AppStore"
+                :arguments 
+                  ( ("requestId" variable (:type "int") (reparse-symbol arg-sub-list) [17947 17962]))                  
+                :type "bool")
+                nil [17918 18222])
+            ("notifyCachedFileUpdate" function
+               (:parent "AppStore"
+                :arguments 
+                  ( ("instanceId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18376 18392])
+                    ("url" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18393 18406]))                  
+                :type "void")
+                nil [18336 18682])
+            ("resetAppstore" function
+               (:parent "AppStore"
+                :type "bool")
+                nil [18796 19307]))          
+    :file "appstore.cpp"
+    :pointmax 19599
+    :fsize 19598
+    :lastmodtime '(21785 11160 851275 806000)
+    :unmatched-syntax '((string 1136 . 1155))
+    )
+   (semanticdb-table "appfilesystemnull.h"
+    :file "appfilesystemnull.h"
+    :fsize 1780
+    :lastmodtime '(21785 11160 850275 813000)
+    )
+   (semanticdb-table "carouseldirectory.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QtDebug" include (:system-flag t) nil [798 816])
+            ("QUrl" include (:system-flag t) nil [817 832])
+            ("QDir" include (:system-flag t) nil [833 848])
+            ("QFile" include (:system-flag t) nil [849 865])
+            ("QTimer" include (:system-flag t) nil [866 883])
+            ("QProcess" include (:system-flag t) nil [884 903])
+            ("appstore.h" include nil nil [904 925])
+            ("carouseldirectory.h" include nil nil [926 956])
+            ("carouseldescriptor.h" include nil nil [957 988])
+            ("contentdescriptor.h" include nil nil [989 1019])
+            ("manifestprocessor.h" include nil nil [1020 1050])
+            ("appfilesystem.h" include nil nil [1051 1077])
+            ("applicationstate.h" include nil nil [1078 1107])
+            ("appbundleprocessor.h" include nil nil [1108 1139])
+            ("configReader.h" include nil nil [1140 1165])
+            ("configPublicDefs.h" include nil nil [1166 1195])
+            ("tlogger/tlogger.h" include nil nil [1197 1225])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1226 1250])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [1251 1301])
+            ("PERSISTENT_FILE_NAME" variable (:constant-flag t) nil [1311 1331])
+            ("BACKUP_FILE" variable (:constant-flag t) nil [1353 1364])
+            ("PERSISTENT_BACKUP_FILE_NAME" variable (:constant-flag t) nil [1394 1421])
+            ("METADATA_PATH" variable (:constant-flag t) nil [1457 1470])
+            ("BUNDLE_PATH" variable (:constant-flag t) nil [1500 1511])
+            ("HddMarkerFile" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type ("QString" type (:type "class") nil nil))
+                nil [1530 1586])
+            ("TIMEOUT_IN_MILLISECONDS" variable (:constant-flag t) nil [1595 1618])
+            ("CarouselDirectoryService" function
+               (:constructor-flag t
+                :parent "CarouselDirectoryService"
+                :type ("CarouselDirectoryService" type (:type "class") nil nil))
+                nil [1755 2454])
+            ("CarouselDirectoryService" function
+               (:destructor-flag t
+                :parent "CarouselDirectoryService"
+                :type "void")
+                nil [2568 2749])
+            ("Initialize" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("AppStore" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2907 2919])
+                    ("afs" variable
+                       (:pointer 1
+                        :type ("AppFileSystem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2920 2940]))                  
+                :type "void")
+                nil [2863 8682])
+            ("getMainAppID" function
+               (:parent "CarouselDirectoryService"
+                :type ("QString" type (:type "class") nil nil))
+                nil [8796 8895])
+            ("getSecondaryAppPath" function
+               (:parent "CarouselDirectoryService"
+                :type ("QString" type (:type "class") nil nil))
+                nil [9009 9122])
+            ("getWebServerPath" function
+               (:parent "CarouselDirectoryService"
+                :type ("QString" type (:type "class") nil nil))
+                nil [9236 9342])
+            ("processManifest" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("manifest_path" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9505 9528]))                  
+                :type "void")
+                nil [9456 11296])
+            ("prepare_for_manifest_parsing" function
+               (:parent "CarouselDirectoryService"
+                :type "void")
+                nil [11410 11790])
+            ("post_manifest_parsing" function
+               (:parent "CarouselDirectoryService"
+                :type "void")
+                nil [11904 14718])
+            ("logLists" function
+               (:parent "CarouselDirectoryService"
+                :type "void")
+                nil [14832 16111])
+            ("appKilled" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("appid" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16269 16284]))                  
+                :type "void")
+                nil [16226 16947])
+            ("getAppCount" function
+               (:parent "CarouselDirectoryService"
+                :type "int")
+                nil [17061 17156])
+            ("getApplicationList" function
+               (:parent "CarouselDirectoryService"
+                :type ("AppList" type (:type "class") nil nil))
+                nil [17270 17369])
+            ("getLibraryList" function
+               (:parent "CarouselDirectoryService"
+                :type ("LibraryList" type (:type "class") nil nil))
+                nil [17483 17582])
+            ("getAppDescriptorByID" function
+               (:pointer 1
+                :parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("appid" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17760 17776]))                  
+                :type ("AppDescriptor" type (:type "class") nil nil))
+                nil [17696 17917])
+            ("getAppDescriptorByIDVersion" function
+               (:pointer 1
+                :parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("appid" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18102 18117])
+                    ("version" variable
+                       (:reference 1
+                        :type ("AppVersion" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18118 18139]))                  
+                :type ("AppDescriptor" type (:type "class") nil nil))
+                nil [18031 18317])
+            ("getLibrariesForApp" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("appid" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18490 18505])
+                    ("allLibsReqListed" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [18506 18530]))                  
+                :type ("LibraryList" type (:type "class") nil nil))
+                nil [18431 19496])
+            ("getLibDescriptorByID" function
+               (:pointer 1
+                :parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("libid" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19678 19694]))                  
+                :type ("LibraryDescriptor" type (:type "class") nil nil))
+                nil [19610 19839])
+            ("getLibDescriptorByNameAndVersion" function
+               (:pointer 1
+                :parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("libname" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20033 20050])
+                    ("version" variable (:type ("AppVersion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20051 20070])
+                    ("exactversion" variable (:type "bool") (reparse-symbol arg-sub-list) [20077 20096]))                  
+                :type ("LibraryDescriptor" type (:type "class") nil nil))
+                nil [19953 20535])
+            ("getMetadataPathForApp" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("appid" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20707 20722])
+                    ("version" variable
+                       (:reference 1
+                        :type ("AppVersion" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20723 20744]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [20649 20934])
+            ("handleAppDescriptor" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("AppDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21101 21119]))                  
+                :type "void")
+                nil [21048 24372])
+            ("request_app_download" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("app" variable
+                       (:pointer 1
+                        :type ("AppDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24540 24559])
+                    ("newurl" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24560 24576]))                  
+                :type "void")
+                nil [24486 25366])
+            ("request_lib_download" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("lib" variable
+                       (:pointer 1
+                        :type ("LibraryDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25534 25557])
+                    ("newurl" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25558 25574]))                  
+                :type "void")
+                nil [25480 26355])
+            ("handleLibDescriptor" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("LibraryDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26522 26544]))                  
+                :type "void")
+                nil [26469 27727])
+            ("getLastUpdateDate" function
+               (:parent "CarouselDirectoryService"
+                :type ("QString" type (:type "class") nil nil))
+                nil [27841 27948])
+            ("getCarouselDescriptorByUrl" function
+               (:pointer 1
+                :parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("url" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28137 28151]))                  
+                :type ("CarouselDescriptor" type (:type "class") nil nil))
+                nil [28062 28315])
+            ("handleCarouselDescriptor" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("CarouselDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28487 28510]))                  
+                :type "void")
+                nil [28429 30097])
+            ("getCacheCarouselList" function
+               (:parent "CarouselDirectoryService"
+                :type ("QString" type (:type "class") nil nil))
+                nil [30211 30612])
+            ("extractApp" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("appid" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30773 30789]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [30726 34848])
+            ("extract_library" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("lib" variable
+                       (:pointer 1
+                        :type ("LibraryDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35014 35038]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [34962 35724])
+            ("delete_app" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("app" variable
+                       (:pointer 1
+                        :type ("AppDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35882 35902]))                  
+                :type "void")
+                nil [35838 36399])
+            ("delete_app_files" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("app" variable
+                       (:pointer 1
+                        :type ("AppDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36563 36583]))                  
+                :type "void")
+                nil [36513 36723])
+            ("markedAppForDeletion" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("id" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36891 36903])
+                    ("version" variable
+                       (:reference 1
+                        :type ("AppVersion" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36904 36925]))                  
+                :type "bool")
+                nil [36837 37525])
+            ("markedLibForDeletion" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("id" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37693 37705])
+                    ("version" variable
+                       (:reference 1
+                        :type ("AppVersion" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37706 37727]))                  
+                :type "bool")
+                nil [37639 38177])
+            ("delete_library" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("lib" variable
+                       (:pointer 1
+                        :type ("LibraryDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38339 38363]))                  
+                :type "void")
+                nil [38291 40189])
+            ("remove_dir" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("dirName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40347 40371]))                  
+                :type "bool")
+                nil [40303 41292])
+            ("app_bundle_path" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("app" variable
+                       (:pointer 1
+                        :type ("AppDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41458 41478]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [41406 41916])
+            ("lib_bundle_path" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("lib" variable
+                       (:pointer 1
+                        :type ("LibraryDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42082 42106]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [42030 42522])
+            ("app_runtime_directory" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("app" variable
+                       (:pointer 1
+                        :type ("AppDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42694 42714]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [42636 42851])
+            ("lib_runtime_directory" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("lib" variable
+                       (:pointer 1
+                        :type ("LibraryDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43023 43047]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [42965 43199])
+            ("base_path" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("cd" variable
+                       (:pointer 1
+                        :type ("ContentDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43359 43382]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [43313 43656])
+            ("metadata_path" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("cd" variable
+                       (:pointer 1
+                        :type ("ContentDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43820 43843]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [43770 44261])
+            ("create_directory" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("path" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44424 44438]))                  
+                :type "int")
+                nil [44375 45182])
+            ("fileDownloaded" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("requestid" variable (:type "int") (reparse-symbol arg-sub-list) [45344 45358])
+                    ("path" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45359 45374]))                  
+                :type "void")
+                nil [45296 46768])
+            ("fileDownloadFailure" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("requestId" variable (:type "int") (reparse-symbol arg-sub-list) [46935 46950]))                  
+                :type "void")
+                nil [46882 47613])
+            ("reRequestDownload" function
+               (:parent "CarouselDirectoryService"
+                :type "void")
+                nil [47727 48189])
+            ("fileDownloadTimeout" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("requestid" variable (:type "int") (reparse-symbol arg-sub-list) [48356 48371]))                  
+                :type "void")
+                nil [48303 50318])
+            ("handle_downloaded_app" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("app" variable
+                       (:pointer 1
+                        :type ("AppDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50487 50506])
+                    ("path" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50507 50522]))                  
+                :type "void")
+                nil [50432 51940])
+            ("deleteOldVersionApp" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("id" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52107 52119]))                  
+                :type "void")
+                nil [52054 53041])
+            ("handle_downloaded_lib" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("lib" variable
+                       (:pointer 1
+                        :type ("LibraryDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53211 53235]))                  
+                :type "void")
+                nil [53156 53397])
+            ("deleteOldVersionLib" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("id" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53564 53576]))                  
+                :type "void")
+                nil [53511 54331])
+            ("check_backup_file" function
+               (:parent "CarouselDirectoryService"
+                :type "bool")
+                nil [54445 55290])
+            ("read_persistent_file" function
+               (:parent "CarouselDirectoryService"
+                :type "void")
+                nil [55404 56921])
+            ("write_persistent_file" function
+               (:parent "CarouselDirectoryService"
+                :type "void")
+                nil [57035 58480])
+            ("is_hdd_path" function
+               (:parent "CarouselDirectoryService"
+                :arguments 
+                  ( ("path" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58639 58653]))                  
+                :type "bool")
+                nil [58594 59174])
+            ("is_marker_file_present" function
+               (:parent "CarouselDirectoryService"
+                :type "bool")
+                nil [59288 59550])
+            ("resetAppstore" function
+               (:parent "CarouselDirectoryService"
+                :type "bool")
+                nil [59664 61163]))          
+    :file "carouseldirectory.cpp"
+    :pointmax 62911
+    :fsize 62910
+    :lastmodtime '(21785 11160 826275 990000)
+    :unmatched-syntax '((string 1561 . 1583) (string 1279 . 1298))
+    :lexical-table 
+        '(("PERSISTENT_FILE_NAME" . ((string "\"persistent\"" 1332 . 1344)))
+          ("BUNDLE_PATH" . ((string "\"/appstore/cache\"" 1512 . 1529)))
+          ("TIMEOUT_IN_MILLISECONDS" . ((number "600000" 1619 . 1625)))
+          ("PERSISTENT_BACKUP_FILE_NAME" . ((string "\"persistent_backup\"" 1422 . 1441)))
+          ("BACKUP_FILE" . ((number "1" 1365 . 1366)))
+          ("METADATA_PATH" . ((string "\"/appstore/metadata\"" 1471 . 1491)))
+          )
+
+    )
+   (semanticdb-table "contentdescriptor.h"
+    :file "contentdescriptor.h"
+    :fsize 3813
+    :lastmodtime '(21785 11160 849275 821000)
+    )
+   (semanticdb-table "manifestprocessor.h"
+    :file "manifestprocessor.h"
+    :fsize 3583
+    :lastmodtime '(21785 11160 828275 975000)
+    )
+   (semanticdb-table "applicationstate.h"
+    :file "applicationstate.h"
+    :fsize 1145
+    :lastmodtime '(21785 11160 827275 983000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!appstore!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

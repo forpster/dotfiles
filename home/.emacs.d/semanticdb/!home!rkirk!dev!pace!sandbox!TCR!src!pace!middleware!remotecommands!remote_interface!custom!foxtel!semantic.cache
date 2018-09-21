@@ -1,0 +1,969 @@
+;; Object foxtel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "foxtel/"
+  :tables (list 
+   (semanticdb-table "remoteCommandFoxtel.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__REMOTE_COMMAND_FOXTEL_H__" variable (:constant-flag t) nil [762 789])
+            ("QVariantMap" include (:system-flag t) nil [791 812])
+            ("QMap" include (:system-flag t) nil [813 827])
+            ("dbus/dbus-glib.h" include (:system-flag t) nil [828 854])
+            ("dbus/dbus-glib-bindings.h" include (:system-flag t) nil [855 890])
+            ("QXmlStreamReader" include (:system-flag t) nil [891 917])
+            ("nfe_api.h" include nil nil [918 937])
+            ("RemoteCommandExecutor" type
+               (:prototype t
+                :type "class")
+                nil [939 967])
+            ("MediaBrowserModel" type
+               (:prototype t
+                :type "class")
+                nil [968 992])
+            ("ServiceListModel" type
+               (:prototype t
+                :type "class")
+                nil [993 1016])
+            ("PlayerModel" type
+               (:prototype t
+                :type "class")
+                nil [1017 1035])
+            ("StorageDeviceModel" type
+               (:prototype t
+                :type "class")
+                nil [1036 1061])
+            ("RecordingsModel" type
+               (:prototype t
+                :type "class")
+                nil [1062 1084])
+            ("ReminderModel" type
+               (:prototype t
+                :type "class")
+                nil [1085 1105])
+            ("RemoteDVR" type
+               (:prototype t
+                :type "class")
+                nil [1106 1122])
+            ("ApplicationManager" type
+               (:prototype t
+                :type "class")
+                nil [1123 1148])
+            ("StaticEventListObject" type
+               (:prototype t
+                :type "class")
+                nil [1149 1177])
+            ("ISchedulerModel" type
+               (:prototype t
+                :type "class")
+                nil [1178 1200])
+            ("FrontEndInterface" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1346 1353])
+                    ("FrontEndInterface" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("FrontEndInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1357 1377])
+                    ("FrontEndInterface" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1381 1410])
+                    ("init" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1414 1425])
+                    ("getTunerDiag" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tunerDiagList" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("QVariantMap" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1448 1483]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1429 1484])
+                    ("private" label nil (reparse-symbol classsubparts) [1486 1494])
+                    ("m_dbusProxyFrontend" variable
+                       (:pointer 1
+                        :type ("DBusGProxy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1498 1530])
+                    ("m_CabTunerCount" variable (:type "int") (reparse-symbol classsubparts) [1534 1554])
+                    ("m_SatTunerCount" variable (:type "int") (reparse-symbol classsubparts) [1558 1578])
+                    ("m_TerTunerCount" variable (:type "int") (reparse-symbol classsubparts) [1582 1602])
+                    ("m_TerTunerOffset" variable (:type "int") (reparse-symbol classsubparts) [1606 1627])
+                    ("m_lastTunedParams" variable (:type ("NFE_Tune" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1631 1658])
+                    ("getTunerCount" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tunerCount" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1682 1699]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1662 1700])
+                    ("getDVBTTunerDiag" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("frontEndId" variable (:type "int") (reparse-symbol arg-sub-list) [1728 1743])
+                            ("feDiagnostics" variable
+                               (:reference 1
+                                :type ("NFE_Diagnostics" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1744 1775])
+                            ("feStatus" variable
+                               (:reference 1
+                                :type ("NFE_Status" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1776 1797])
+                            ("tunerDiagData" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1825 1853]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1704 1854])
+                    ("getDVBT2TunerDiag" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("frontEndId" variable (:type "int") (reparse-symbol arg-sub-list) [1883 1898])
+                            ("feDiagnostics" variable
+                               (:reference 1
+                                :type ("NFE_Diagnostics" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1899 1930])
+                            ("feStatus" variable
+                               (:reference 1
+                                :type ("NFE_Status" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1931 1952])
+                            ("tunerDiagData" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1981 2009]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1858 2010])
+                    ("getDVBSTunerDiag" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("frontEndId" variable (:type "int") (reparse-symbol arg-sub-list) [2038 2053])
+                            ("feDiagnostics" variable
+                               (:reference 1
+                                :type ("NFE_Diagnostics" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2054 2085])
+                            ("feStatus" variable
+                               (:reference 1
+                                :type ("NFE_Status" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2086 2107])
+                            ("tunerDiagData" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2135 2163]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2014 2164])
+                    ("getDVBS2TunerDiag" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("frontEndId" variable (:type "int") (reparse-symbol arg-sub-list) [2193 2208])
+                            ("feDiagnostics" variable
+                               (:reference 1
+                                :type ("NFE_Diagnostics" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2209 2240])
+                            ("feStatus" variable
+                               (:reference 1
+                                :type ("NFE_Status" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2241 2262])
+                            ("tunerDiagData" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2291 2319]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2168 2320])
+                    ("getDVBCTunerDiag" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("frontEndId" variable (:type "int") (reparse-symbol arg-sub-list) [2348 2363])
+                            ("feDiagnostics" variable
+                               (:reference 1
+                                :type ("NFE_Diagnostics" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2364 2395])
+                            ("feStatus" variable
+                               (:reference 1
+                                :type ("NFE_Status" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2396 2417])
+                            ("tunerDiagData" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2445 2473]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2324 2474])
+                    ("getUnknownModeTunerDiag" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("frontEndId" variable (:type "int") (reparse-symbol arg-sub-list) [2509 2524])
+                            ("tunerDiagData" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2525 2553]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2478 2554])
+                    ("isTunerLocked" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tunerState" variable (:type ("NFE_LockState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2579 2605]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2558 2606])
+                    ("getLastTunedFrequency" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("frontEndId" variable (:type "int") (reparse-symbol arg-sub-list) [2639 2655]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2610 2656]))                  
+                :type "class")
+                nil [1320 2659])
+            ("PlannerManagement" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2807 2814])
+                    ("PlannerManagement" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("pRemoteCommandExecutorInstance" variable
+                               (:pointer 1
+                                :type ("RemoteCommandExecutor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2838 2893]))                          
+                        :type ("PlannerManagement" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2818 2894])
+                    ("PlannerManagement" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2898 2927])
+                    ("getPlannerInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("plannerInfo" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("QVariantMap" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2953 2986]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2932 2987])
+                    ("updatePlannerInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eventIdQ" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3015 3033])
+                            ("plannerRuleDef" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3034 3063]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2991 3064])
+                    ("deletePlannerInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eventIdQ" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3092 3111]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3068 3112])
+                    ("private" label nil (reparse-symbol classsubparts) [3114 3122])
+                    ("init" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pRemoteCommandExecutorInstance" variable
+                               (:pointer 1
+                                :type ("RemoteCommandExecutor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3137 3192]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3126 3193])
+                    ("writeScheduledEvents" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eventList" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("QVariantMap" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3225 3255])
+                            ("eventsXml" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3287 3307]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3197 3308])
+                    ("writeMediaBrowserEvents" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eventList" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("QVariantMap" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3343 3373])
+                            ("list" variable
+                               (:reference 1
+                                :type ("QVariantList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3408 3428]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3312 3429])
+                    ("getEventInformation" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("myXmlReader" variable
+                               (:reference 1
+                                :type ("QXmlStreamReader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3460 3490])
+                            ("eventId" variable
+                               (:reference 1
+                                :type ("qint64" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3491 3507])
+                            ("contentId" variable
+                               (:reference 1
+                                :type ("qint64" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3538 3556])
+                            ("startTime" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3557 3572])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3573 3597]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3433 3598])
+                    ("handleUpdateEvent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eventIdQ" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3626 3644])
+                            ("isSeriesLink" variable (:type "bool") (reparse-symbol arg-sub-list) [3645 3663])
+                            ("isProtected" variable
+                               (:reference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [3691 3709])
+                            ("extendTime" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3710 3727]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3602 3728])
+                    ("createEventRuleMap" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eventData" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3758 3781])
+                            ("isSeriesLink" variable (:type "bool") (reparse-symbol arg-sub-list) [3782 3801]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3732 3802])
+                    ("writeScheduledEvents" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eventDetails" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3834 3860])
+                            ("reminderxml" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3861 3883]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3806 3884])
+                    ("getRepeatTypeString" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("type" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3918 3937]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3888 3938])
+                    ("getISODateTime" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [3964 3974])
+                            ("isoDate" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3975 3993]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3942 3994])
+                    ("isRecordingProtected" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("flag" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4029 4043]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3998 4044])
+                    ("getStaticEventDetails" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eventList" variable
+                               (:reference 1
+                                :type ("StaticEventListObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4077 4110])
+                            ("duration" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [4111 4125])
+                            ("ratings" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [4158 4171])
+                            ("genre" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [4172 4183])
+                            ("eventName" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4184 4203])
+                            ("eventDesc" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4204 4225]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4048 4226])
+                    ("getContentTypeString" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("contentType" variable (:type "int") (reparse-symbol arg-sub-list) [4257 4273])
+                            ("sourceType" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4274 4295]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4230 4296])
+                    ("populateRuleType" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("entry" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4324 4349])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4350 4374]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4300 4375])
+                    ("populateEventAction" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("entry" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4406 4431])
+                            ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4432 4456]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4379 4457])
+                    ("updateEvent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eventData" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4479 4502])
+                            ("plannerRuleDef" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4503 4532]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4461 4533])
+                    ("populateGenresList" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eventInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4667 4690])
+                            ("genreId" variable (:type "int") (reparse-symbol arg-sub-list) [4691 4704]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4641 4705])
+                    ("m_pSchedulerModel" variable
+                       (:pointer 1
+                        :type ("ISchedulerModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4748 4790])
+                    ("m_pRecordingsModelInstance" variable
+                       (:pointer 1
+                        :type ("RecordingsModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4794 4844])
+                    ("m_pRemindingsModelInstance" variable
+                       (:pointer 1
+                        :type ("ReminderModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4848 4898])
+                    ("m_pMediaBrowserInstance" variable
+                       (:pointer 1
+                        :type ("MediaBrowserModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4902 4949])
+                    ("m_pRemoteDvrInstance" variable
+                       (:pointer 1
+                        :type ("RemoteDVR" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4957 5001])
+                    ("m_pRemoteCmdExecInstance" variable
+                       (:pointer 1
+                        :type ("RemoteCommandExecutor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5005 5053]))                  
+                :type "class")
+                nil [2781 5057])
+            ("ServiceManagement" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [5213 5220])
+                    ("ServiceManagement" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("pRemoteCommandExecutorInstance" variable
+                               (:pointer 1
+                                :type ("RemoteCommandExecutor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5244 5299]))                          
+                        :type ("ServiceManagement" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5224 5300])
+                    ("ServiceManagement" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [5304 5333])
+                    ("getCurrentProgramme" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("curProg" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5364 5386]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5338 5387])
+                    ("getCurrentViewing" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("curProg" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5415 5436])
+                            ("progContentType" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5437 5463]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5391 5464])
+                    ("setCurrentViewing" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("channelNumber" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5492 5512]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5468 5513])
+                    ("getDVBTServices" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dvbtServices" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("QVariantMap" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5539 5573]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5517 5574])
+                    ("getDisplayChannelNumber" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("contentId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5608 5626]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5578 5627])
+                    ("getContentProviderId" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eventContentId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5662 5685]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5631 5686])
+                    ("getContentTypeString" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("contentType" variable (:type "int") (reparse-symbol arg-sub-list) [5717 5733])
+                            ("sourceType" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5734 5755]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5690 5756])
+                    ("parseEventMetaData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5786 5799])
+                            ("metaData" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5800 5823]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5760 5824])
+                    ("populateGenres" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("staticMap" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5850 5873])
+                            ("curProg" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5874 5896]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5828 5897])
+                    ("private" label nil (reparse-symbol classsubparts) [5899 5907])
+                    ("init" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pRemoteCommandExecutorInstance" variable
+                               (:pointer 1
+                                :type ("RemoteCommandExecutor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5922 5977]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5911 5978])
+                    ("getServiceKey" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("contentId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6005 6023]))                          
+                        :type ("qint64" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5982 6024])
+                    ("populateRating" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("staticMap" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6050 6073])
+                            ("curProg" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6074 6096]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6028 6097])
+                    ("m_pServiceListModelInstance" variable
+                       (:pointer 1
+                        :type ("ServiceListModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6101 6152])
+                    ("m_pPlayerModelInstance" variable
+                       (:pointer 1
+                        :type ("PlayerModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6156 6202]))                  
+                :type "class")
+                nil [5187 6205])
+            ("RemoteCommandFoxtel" type
+               (:superclasses 
+                  ( ("FrontEndInterface" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [6396 6403])
+                    ("RemoteCommandFoxtel" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("RemoteCommandFoxtel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6407 6430])
+                    ("RemoteCommandFoxtel" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("pRemoteCommandExecutorInstance" variable
+                               (:pointer 1
+                                :type ("RemoteCommandExecutor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6456 6511]))                          
+                        :type ("RemoteCommandFoxtel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6434 6512])
+                    ("RemoteCommandFoxtel" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [6516 6547])
+                    ("rCmdGetHDDDiagnostics" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("hddDiag" variable
+                               (:reference 1
+                                :type ("QMap" type
+                                     (:template-specifier 
+                                        ( ("QString" type nil nil nil)
+                                          ("QString" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6580 6613]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6552 6614])
+                    ("rCmdFormatHDD" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6618 6641])
+                    ("rCmdGetTunerDiagnostics" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tuneDiag" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("QVariantMap" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6675 6705]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6645 6706])
+                    ("rCmdGetSytemInformation" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sysInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6740 6762]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6710 6763])
+                    ("rCmdGetStbModel" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("oemModel" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6789 6808]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6767 6809])
+                    ("rCmdGetCurrentProgramme" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("curProg" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6843 6865]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6813 6866])
+                    ("rCmdGetCurrentViewing" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("curProg" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6898 6919])
+                            ("type" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6920 6935]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6870 6936])
+                    ("rCmdSetCurrentViewing" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("channelNumber" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [6968 6988]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6940 6989])
+                    ("rCmdGetDisplayChannelNumber" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("contentId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7028 7046]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6993 7047])
+                    ("rCmdGetContentProviderId" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eventContentId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7086 7109]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7051 7110])
+                    ("rCmdGetContentTypeString" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("contentType" variable (:type "int") (reparse-symbol arg-sub-list) [7145 7161])
+                            ("sourceType" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7162 7183]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7114 7184])
+                    ("rCmdGetDVBTServices" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dvbtServices" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("QVariantMap" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7214 7248]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7188 7249])
+                    ("rCmdGetPlannerInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("plannerInfo" variable
+                               (:reference 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("QVariantMap" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7278 7311]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7253 7312])
+                    ("rCmdIsStandby" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7316 7339])
+                    ("rCmdUpdatePlannerInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eventIdQ" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7371 7389])
+                            ("plannerRuleDef" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7390 7419]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7343 7420])
+                    ("rCmdDeletePlannerInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eventIdQ" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7452 7471]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7424 7472])
+                    ("rCmdPopupMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("appId" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7499 7514])
+                            ("params" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7515 7532]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7476 7533])
+                    ("rCmdSendKeyCode" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("keyCode" variable (:type "int") (reparse-symbol arg-sub-list) [7560 7573]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7537 7574])
+                    ("rCmdEnableDisableRCU" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rcuType" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7605 7618])
+                            ("enableDisable" variable (:type "bool") (reparse-symbol arg-sub-list) [7619 7639]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7578 7640])
+                    ("rCmdPopulateGenres" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("staticMap" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7670 7693])
+                            ("curProg" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7694 7716]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7644 7717])
+                    ("private" label nil (reparse-symbol classsubparts) [7719 7727])
+                    ("createInstances" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pRemoteCommandExecutorInstance" variable
+                               (:pointer 1
+                                :type ("RemoteCommandExecutor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7753 7808]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7731 7809])
+                    ("populateSoftwareVersion" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sysInfo" variable
+                               (:reference 1
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7844 7866]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7813 7867])
+                    ("RemoteCommandFoxtel" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("RemoteCommandFoxtel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7975 8003]))                          
+                        :type ("RemoteCommandFoxtel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7954 8004])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("RemoteCommandFoxtel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8039 8061]))                          
+                        :type ("RemoteCommandFoxtel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8008 8062])
+                    ("m_pRemoteCommandExecutorInstance" variable
+                       (:pointer 1
+                        :type ("RemoteCommandExecutor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8067 8123])
+                    ("m_pStorageDeviceModelInstance" variable
+                       (:pointer 1
+                        :type ("StorageDeviceModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8127 8180])
+                    ("m_pPlannerManagementInstance" variable
+                       (:pointer 1
+                        :type ("PlannerManagement" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8184 8236])
+                    ("m_pServiceManagementInstance" variable
+                       (:pointer 1
+                        :type ("ServiceManagement" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8240 8292]))                  
+                :type "class")
+                nil [6341 8295]))          
+    :file "remoteCommandFoxtel.h"
+    :pointmax 8304
+    :fsize 8303
+    :lastmodtime '(21798 29444 738756 776000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__REMOTE_COMMAND_FOXTEL_H__")
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!TCR!src!pace!middleware!remotecommands!remote_interface!custom!foxtel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

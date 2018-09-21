@@ -1,0 +1,64 @@
+;; Object remotechecks/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "remotechecks/"
+  :tables (list 
+   (semanticdb-table "HeartbleedTest.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.rapid7.nexpose.plugin.http.remotechecks" package nil nil [349 401])
+            ("com.rapid7.config.Configuration" include nil nil [403 442])
+            ("com.rapid7.config.IConfiguration" include nil nil [443 483])
+            ("com.rapid7.doc.Text" include nil nil [484 511])
+            ("com.rapid7.log.ILogSink" include nil nil [512 543])
+            ("com.rapid7.net.ISessionEndpoint" include nil nil [544 583])
+            ("com.rapid7.net.SSLUtils" include nil nil [584 615])
+            ("com.rapid7.nexpose.plugin.AbstractRemoteTest" include nil nil [616 668])
+            ("com.rapid7.nexpose.plugin.vulnck.IVulnerabilityCheckConstants" include nil nil [669 738])
+            ("java.util.Properties" include nil nil [739 767])
+            ("HeartbleedTest" type
+               (:typemodifiers ("public")
+                :superclasses "AbstractRemoteTest"
+                :members 
+                  ( ("performCheck" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [1244 2371])
+                    ("HeartbleedTest" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("endpoint" variable
+                               (:typemodifiers ("final")
+                                :type "ISessionEndpoint")
+                                (reparse-symbol formal_parameters) [2884 2915])
+                            ("config" variable
+                               (:typemodifiers ("final")
+                                :type "Configuration")
+                                (reparse-symbol formal_parameters) [2917 2943])
+                            ("logSink" variable
+                               (:typemodifiers ("final")
+                                :type "ILogSink")
+                                (reparse-symbol formal_parameters) [2945 2967]))                          )
+                        (reparse-symbol class_member_declaration) [2862 3054])
+                    ("m_endpoint" variable
+                       (:typemodifiers ("private" "final")
+                        :type "ISessionEndpoint")
+                        (reparse-symbol class_member_declaration) [3238 3280])
+                    ("m_config" variable
+                       (:typemodifiers ("private" "final")
+                        :type "IConfiguration")
+                        (reparse-symbol class_member_declaration) [3284 3322]))                  
+                :type "class")
+                nil [980 3324]))          
+    :file "HeartbleedTest.java"
+    :pointmax 3325
+    :fsize 3324
+    :lastmodtime '(22029 24845 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!rapid7!nexpose!src!nexpose!plugins!src!main!java!com!rapid7!nexpose!plugin!http!remotechecks!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

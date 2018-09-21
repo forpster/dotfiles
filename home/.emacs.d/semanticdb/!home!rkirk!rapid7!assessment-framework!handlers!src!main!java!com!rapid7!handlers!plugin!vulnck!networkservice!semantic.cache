@@ -1,0 +1,194 @@
+;; Object networkservice/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "networkservice/"
+  :tables
+  (list
+    (semanticdb-table "NetworkServiceQuery.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.rapid7.handlers.plugin.vulnck.networkservice" package nil nil [354 411])
+            ("com.rapid7.framework.plugin.vulnck.IQuery" include nil nil [413 462])
+            ("com.rapid7.util.FastStringBuffer" include nil nil [463 503])
+            ("com.rapid7.util.ObjectUtils" include nil nil [504 539])
+            ("com.google.common.collect.Iterators" include nil nil [540 583])
+            ("java.util.Iterator" include nil nil [584 610])
+            ("NetworkServiceQuery" type
+               (:typemodifiers ("public")
+                :interfaces ("IQuery")
+                :members 
+                  ( ("ANY_PORT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [953 991])
+                    ("ANY_PROTOCOL" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [995 1037])
+                    ("BINDING_NAME" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1041 1090])
+                    ("BINDING_ENDPOINT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1094 1153])
+                    ("BINDING_FP" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1157 1220])
+                    ("BINDING_PROD" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1224 1276])
+                    ("BINDING_FAMILY" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1280 1333])
+                    ("BINDING_VENDOR" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1337 1390])
+                    ("NetworkServiceQuery" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("getFingerprints" variable (:type "boolean") (reparse-symbol formal_parameters) [1946 1969])
+                            ("protocolNames" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1971 1993])
+                            ("productNames" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [2001 2022])
+                            ("vendorNames" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [2024 2044])
+                            ("familyNames" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [2046 2066])
+                            ("port" variable (:type "int") (reparse-symbol formal_parameters) [2068 2076])
+                            ("proto" variable (:type "int") (reparse-symbol formal_parameters) [2078 2087]))                          )
+                        (reparse-symbol class_member_declaration) [1919 2334])
+                    ("NetworkServiceQuery" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("getFingerprints" variable (:type "boolean") (reparse-symbol formal_parameters) [2484 2507]))                          )
+                        (reparse-symbol class_member_declaration) [2457 2595])
+                    ("NetworkServiceQuery" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("getFingerprints" variable (:type "boolean") (reparse-symbol formal_parameters) [2789 2812])
+                            ("protocolName" variable (:type "String") (reparse-symbol formal_parameters) [2814 2833]))                          )
+                        (reparse-symbol class_member_declaration) [2762 2946])
+                    ("NetworkServiceQuery" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("getFingerprints" variable (:type "boolean") (reparse-symbol formal_parameters) [3142 3165])
+                            ("protocolNames" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [3167 3189]))                          )
+                        (reparse-symbol class_member_declaration) [3115 3286])
+                    ("NetworkServiceQuery" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("getFingerprints" variable (:type "boolean") (reparse-symbol formal_parameters) [3498 3521])
+                            ("port" variable (:type "int") (reparse-symbol formal_parameters) [3523 3531])
+                            ("protocol" variable (:type "int") (reparse-symbol formal_parameters) [3533 3545]))                          )
+                        (reparse-symbol class_member_declaration) [3471 3625])
+                    ("NetworkServiceQuery" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("getFingerprints" variable (:type "boolean") (reparse-symbol formal_parameters) [3888 3911])
+                            ("protocolName" variable (:type "String") (reparse-symbol formal_parameters) [3913 3932])
+                            ("port" variable (:type "int") (reparse-symbol formal_parameters) [3934 3942])
+                            ("protocol" variable (:type "int") (reparse-symbol formal_parameters) [3944 3956]))                          )
+                        (reparse-symbol class_member_declaration) [3854 4061])
+                    ("queriesNode" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4140 4198])
+                    ("queriesEndpoint" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4281 4342])
+                    ("getBindings" function
+                       (:typemodifiers ("public")
+                        :type "Iterator")
+                        (reparse-symbol class_member_declaration) [4419 4586])
+                    ("toLHS" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("buf" variable (:type "FastStringBuffer") (reparse-symbol formal_parameters) [4668 4688]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4650 7181])
+                    ("hashCode" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7199 7352])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("o" variable (:type "Object") (reparse-symbol formal_parameters) [7392 7400]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [7370 8145])
+                    ("ms_bindings" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [8329 8472])
+                    ("ms_bindingsNoFP" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [8477 8560])
+                    ("m_getFingerprints" variable
+                       (:typemodifiers ("protected")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [8564 8600])
+                    ("m_protocolNames" variable
+                       (:dereference 1
+                        :typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [8604 8639])
+                    ("m_productNames" variable
+                       (:dereference 1
+                        :typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [8643 8677])
+                    ("m_vendorNames" variable
+                       (:dereference 1
+                        :typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [8681 8714])
+                    ("m_familyNames" variable
+                       (:dereference 1
+                        :typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [8718 8751])
+                    ("m_port" variable
+                       (:typemodifiers ("protected")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8755 8776])
+                    ("m_protocol" variable
+                       (:typemodifiers ("protected")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8780 8805]))                  
+                :type "class")
+                nil [719 8807]))          
+      :file "NetworkServiceQuery.java"
+      :pointmax 8808
+      :fsize 8807
+      :lastmodtime '(22411 27437 0 0)
+      :unmatched-syntax '((PAREN_BLOCK 703 . 718) (IDENTIFIER 686 . 703))))
+  :file "!home!rkirk!rapid7!assessment-framework!handlers!src!main!java!com!rapid7!handlers!plugin!vulnck!networkservice!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

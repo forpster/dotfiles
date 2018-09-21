@@ -1,0 +1,849 @@
+;; Object latens/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "latens/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("SRCS" variable (:default-value ("plugins/latens/latensinitialiser.cpp" "plugins/latens/latensidentifier.cpp" "plugins/latens/latenssecuritycontainer.cpp" "plugins/latens/latenssecuredinfo.cpp")) nil [22 193])
+            ("INCPATH" variable (:default-value ("-Iplugins/latens/interface")) nil [194 231])
+            ("EXPORT_HEADERS" variable (:default-value ("plugins/latens/interface/latenssecuredinfo_public.h")) nil [231 301])
+            ("INCPATH" variable (:default-value ("-I${LATENS_CAS_SDK_INC}")) nil [1066 1101])
+            ("ARCHIVE_LIBS" variable (:default-value ("${LATENS_CAS_SDK_LIB}/lib_latens_vad_app.a")) nil [1101 1160])
+            ("EXPORT_HEADERS" variable (:default-value ("${LATENS_CAS_SDK_INC}/latens_vad_public.h")) nil [1160 1220]))          
+    :file "Makefile"
+    :pointmax 1220
+    :fsize 1219
+    :lastmodtime '(21532 2895 391402 752000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "latensinitialiser.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("latensinitialiser.h" include nil nil [1 31])
+            ("initialisationprovider.h" include nil nil [32 67])
+            ("latensidentifier.h" include nil nil [68 97])
+            ("latenssecuredinfo.h" include nil nil [98 128])
+            ("latenssecuritycontainer.h" include nil nil [129 165])
+            ("tlogger.h" include nil nil [167 187])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [188 212])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [213 260])
+            ("PRIORITY" variable (:constant-flag t) nil [270 278])
+            ("LatensInitialiser::m_registerInstance" variable (:type ("LatensInitialiser" type (:type "class") nil nil)) nil [349 405])
+            ("LatensInitialiser" function
+               (:constructor-flag t
+                :parent "LatensInitialiser"
+                :type ("LatensInitialiser" type (:type "class") nil nil))
+                nil [407 478])
+            ("LatensInitialiser" function
+               (:destructor-flag t
+                :parent "LatensInitialiser"
+                :type "void")
+                nil [480 524])
+            ("getInstance" function
+               (:parent "LatensInitialiser"
+                :type ("LatensInitialiser" type (:type "class") nil nil))
+                nil [614 699])
+            ("initialise" function
+               (:parent "LatensInitialiser"
+                :type "bool")
+                nil [816 1370])
+            ("deinitialise" function
+               (:parent "LatensInitialiser"
+                :type "void")
+                nil [1410 2294])
+            ("initComponents" function
+               (:parent "LatensInitialiser"
+                :type "bool")
+                nil [2399 3427]))          
+    :file "latensinitialiser.cpp"
+    :pointmax 3428
+    :fsize 3427
+    :lastmodtime '(21532 1529 158446 970000)
+    :unmatched-syntax '((string 239 . 258))
+    :lexical-table 
+        '(("PRIORITY" . ((number "0" 279 . 280)))
+          )
+
+    )
+   (semanticdb-table "latensinitialiser.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("LATENS_INITIALISER_H__" variable (:constant-flag t) nil [40 62])
+            ("iinitialiser.h" include nil nil [64 89])
+            ("LatensInitialiser" type
+               (:superclasses 
+                  ( ("IInitialiser" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [139 146])
+                    ("getInstance" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type ("LatensInitialiser" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [150 190])
+                    ("LatensInitialiser" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [194 223])
+                    ("initialise" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [228 254])
+                    ("deinitialise" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [258 286])
+                    ("private" label nil (reparse-symbol classsubparts) [288 296])
+                    ("LatensInitialiser" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("LatensInitialiser" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [300 320])
+                    ("initComponents" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [324 352])
+                    ("m_registerInstance" variable
+                       (:typemodifiers ("static")
+                        :type ("LatensInitialiser" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [357 401]))                  
+                :type "class")
+                nil [91 471]))          
+    :file "latensinitialiser.h"
+    :pointmax 506
+    :fsize 505
+    :lastmodtime '(21532 1529 159446 964000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("LATENS_INITIALISER_H__")
+          )
+
+    )
+   (semanticdb-table "latensidentifier.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("LATENS_IDENTIFIER_H__" variable (:constant-flag t) nil [39 60])
+            ("iidentifier.h" include nil nil [62 86])
+            ("LATENS_OFFSET_IDENTIFIER" variable (:constant-flag t) nil [152 176])
+            ("LATENS_IDENTIFIER_LENGTH" variable (:constant-flag t) nil [187 211])
+            ("LatensIdentifier" type
+               (:superclasses 
+                  ( ("IIdentifier" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [323 330])
+                    ("LatensIdentifier" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("LatensIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [334 353])
+                    ("LatensIdentifier" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [357 385])
+                    ("getIdentifierType" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [390 436])
+                    ("identifyContent" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [469 490])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [491 514])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [515 536]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [440 543])
+                    ("clone" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::auto_ptr" type
+                             (:template-specifier 
+                                ( ("IIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [547 596])
+                    ("private" label nil (reparse-symbol classsubparts) [598 606])
+                    ("LatensIdentifier" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LatensIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [660 684]))                          
+                        :type ("LatensIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [643 685])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LatensIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [717 741]))                          
+                        :type ("LatensIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [689 742])
+                    ("m_latens" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [747 781]))                  
+                :type "class")
+                nil [277 816]))          
+    :file "latensidentifier.h"
+    :pointmax 850
+    :fsize 849
+    :lastmodtime '(21532 1529 157446 975000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("LATENS_IDENTIFIER_H__")
+          ("LATENS_OFFSET_IDENTIFIER" . ((number "0" 177 . 178)))
+          ("LATENS_IDENTIFIER_LENGTH" . ((number "4" 212 . 213)))
+          )
+
+    )
+   (semanticdb-table "latensidentifier.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("latensidentifier.h" include nil nil [1 30])
+            ("m_latens" function
+               (:prototype-flag t
+                :parent "LatensIdentifier"
+                :constant-flag t
+                :type ("std::string" type (:type "class") nil nil))
+                nil [73 126])
+            ("tlogger.h" include nil nil [128 148])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [149 173])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [174 221])
+            ("LatensIdentifier" function
+               (:constructor-flag t
+                :parent "LatensIdentifier"
+                :type ("LatensIdentifier" type (:type "class") nil nil))
+                nil [223 283])
+            ("LatensIdentifier" function
+               (:destructor-flag t
+                :parent "LatensIdentifier"
+                :type "void")
+                nil [285 327])
+            ("getIdentifierType" function
+               (:parent "LatensIdentifier"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [493 572])
+            ("identifyContent" function
+               (:parent "LatensIdentifier"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1020 1041])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1042 1065])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1066 1087]))                  
+                :type "bool")
+                nil [981 2193])
+            ("clone" function
+               (:parent "LatensIdentifier"
+                :type ("std::auto_ptr" type
+                     (:template-specifier 
+                        ( ("IIdentifier" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2301 2437]))          
+    :file "latensidentifier.cpp"
+    :pointmax 2438
+    :fsize 2437
+    :lastmodtime '(21532 1529 159446 964000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "latenssecuritycontainer.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("LATENS_SECURITY_CONTAINER_H__" variable (:constant-flag t) nil [47 76])
+            ("isecurecontent.h" include nil nil [78 105])
+            ("latensidentifier.h" include nil nil [106 135])
+            ("latens_vad_validate_app_ssm_public.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [150 197])
+            ("LatensSecurityContainer" type
+               (:superclasses 
+                  ( ("ISecureContent" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [373 380])
+                    ("LatensSecurityContainer" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("LatensSecurityContainer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [384 410])
+                    ("LatensSecurityContainer" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [414 449])
+                    ("clone" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::auto_ptr" type
+                             (:template-specifier 
+                                ( ("ISecureContent" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [454 506])
+                    ("supportsContentType" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [544 568]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [511 575])
+                    ("getContentType" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [579 622])
+                    ("verify" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [650 671])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [672 695])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [696 717]))                          
+                        :type ("SLSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [626 718])
+                    ("unProtect" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [749 770])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [771 794])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [795 816])
+                            ("outData" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [817 839]))                          
+                        :type ("SLSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [722 840])
+                    ("private" label nil (reparse-symbol classsubparts) [842 850])
+                    ("LatensSecurityContainer" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LatensSecurityContainer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [911 942]))                          
+                        :type ("LatensSecurityContainer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [887 943])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LatensSecurityContainer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [982 1013]))                          
+                        :type ("LatensSecurityContainer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [947 1014])
+                    ("readImageContent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1041 1062])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [1063 1086])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [1087 1108])
+                            ("imageData" variable
+                               (:reference 1
+                                :type ("LATENS_VAD_ARRAYDESCRIPTOR" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1109 1147])
+                            ("allocated" variable
+                               (:reference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [1148 1164]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1019 1171])
+                    ("m_identifier" variable (:type ("LatensIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1176 1206]))                  
+                :type "class")
+                nil [317 1248]))          
+    :file "latenssecuritycontainer.h"
+    :pointmax 1290
+    :fsize 1289
+    :lastmodtime '(21532 1529 158446 970000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("LATENS_SECURITY_CONTAINER_H__")
+          )
+
+    )
+   (semanticdb-table "latenssecuritycontainer.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cstring" include (:system-flag t) nil [1 19])
+            ("latenssecuritycontainer.h" include nil nil [21 57])
+            ("latenssemaphore.h" include nil nil [58 86])
+            ("namedsemaphore.h" include nil nil [87 114])
+            ("arraystreambuf.h" include nil nil [115 142])
+            ("tlogger.h" include nil nil [144 164])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [165 189])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [190 237])
+            ("LatensSecurityContainer" function
+               (:constructor-flag t
+                :parent "LatensSecurityContainer"
+                :type ("LatensSecurityContainer" type (:type "class") nil nil))
+                nil [239 316])
+            ("LatensSecurityContainer" function
+               (:destructor-flag t
+                :parent "LatensSecurityContainer"
+                :type "void")
+                nil [318 374])
+            ("clone" function
+               (:parent "LatensSecurityContainer"
+                :type ("std::auto_ptr" type
+                     (:template-specifier 
+                        ( ("ISecureContent" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [519 677])
+            ("supportsContentType" function
+               (:parent "LatensSecurityContainer"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [936 960]))                  
+                :type "bool")
+                nil [886 1022])
+            ("getContentType" function
+               (:parent "LatensSecurityContainer"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1114 1221])
+            ("verify" function
+               (:parent "LatensSecurityContainer"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1766 1787])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1788 1811])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1812 1833]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [1725 3429])
+            ("unProtect" function
+               (:parent "LatensSecurityContainer"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4066 4087])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [4088 4111])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [4112 4133])
+                    ("outData" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4134 4156]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [4022 4518])
+            ("readImageContent" function
+               (:parent "LatensSecurityContainer"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5142 5163])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [5164 5187])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [5188 5209])
+                    ("imageData" variable
+                       (:reference 1
+                        :type ("LATENS_VAD_ARRAYDESCRIPTOR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5257 5295])
+                    ("allocated" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [5296 5312]))                  
+                :type "bool")
+                nil [5095 6527]))          
+    :file "latenssecuritycontainer.cpp"
+    :pointmax 6528
+    :fsize 6527
+    :lastmodtime '(21532 1529 158446 970000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "latenssecuredinfo.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("LATENS_SECURED_INFO_H__" variable (:constant-flag t) nil [41 64])
+            ("isecuredinfo.h" include nil nil [66 91])
+            ("latensidentifier.h" include nil nil [92 121])
+            ("LatensSecuredInfo" type
+               (:superclasses 
+                  ( ("ISecuredInfo" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [209 216])
+                    ("LatensSecuredInfo" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("LatensSecuredInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [220 240])
+                    ("LatensSecuredInfo" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [244 273])
+                    ("clone" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::auto_ptr" type
+                             (:template-specifier 
+                                ( ("ISecuredInfo" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [278 328])
+                    ("supportsIdentifiedType" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [369 393]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [333 400])
+                    ("getIdentifiedType" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [404 450])
+                    ("getSecuredInfo" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [486 507])
+                            ("startOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [508 531])
+                            ("endOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [532 553])
+                            ("type" variable
+                               (:pointer 1
+                                :type ("SLINFOTYPE" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [554 571])
+                            ("info" variable
+                               (:pointer 2
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [572 584]))                          
+                        :type ("SLSTATUS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [454 585])
+                    ("releaseSecuredInfo" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("info" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [621 632]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [589 639])
+                    ("private" label nil (reparse-symbol classsubparts) [641 649])
+                    ("LatensSecuredInfo" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LatensSecuredInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [704 729]))                          
+                        :type ("LatensSecuredInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [686 730])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LatensSecuredInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [763 788]))                          
+                        :type ("LatensSecuredInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [734 789])
+                    ("m_identifier" variable (:type ("LatensIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [794 824]))                  
+                :type "class")
+                nil [161 868]))          
+    :file "latenssecuredinfo.h"
+    :pointmax 904
+    :fsize 903
+    :lastmodtime '(21532 1529 158446 970000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("LATENS_SECURED_INFO_H__")
+          )
+
+    )
+   (semanticdb-table "latenssecuredinfo.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cassert" include (:system-flag t) nil [1 19])
+            ("cstring" include (:system-flag t) nil [20 38])
+            ("latens_vad_public.h" include nil nil [40 70])
+            ("latenssecuredinfo.h" include nil nil [71 101])
+            ("namedsemaphore.h" include nil nil [102 129])
+            ("latenssemaphore.h" include nil nil [130 158])
+            ("latenssecuredinfo_public.h" include nil nil [159 196])
+            ("tlogger.h" include nil nil [198 218])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [219 243])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [244 291])
+            ("LatensContext" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [369 376])
+                    ("inData" variable (:type ("std::istream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [380 401])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol classsubparts) [405 428])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol classsubparts) [432 453])
+                    ("LatensContext" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [472 493])
+                            ("streamStartOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [494 523])
+                            ("streamEndOffset" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [524 551]))                          
+                        :type ("LatensContext" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [458 637]))                  
+                :type "class")
+                nil [347 641])
+            ("latensRead32BitWord" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pInstance" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1127 1143])
+                    ("pDest" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [1144 1165])
+                    ("numberOf32BitWords" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1166 1199]))                  
+                :type "int")
+                nil [1096 2131])
+            ("LatensSecuredInfo" function
+               (:constructor-flag t
+                :parent "LatensSecuredInfo"
+                :type ("LatensSecuredInfo" type (:type "class") nil nil))
+                nil [2133 2213])
+            ("LatensSecuredInfo" function
+               (:destructor-flag t
+                :parent "LatensSecuredInfo"
+                :type "void")
+                nil [2215 2259])
+            ("clone" function
+               (:parent "LatensSecuredInfo"
+                :type ("std::auto_ptr" type
+                     (:template-specifier 
+                        ( ("ISecuredInfo" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2404 2546])
+            ("supportsIdentifiedType" function
+               (:parent "LatensSecuredInfo"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2800 2824]))                  
+                :type "bool")
+                nil [2753 2886])
+            ("getIdentifiedType" function
+               (:parent "LatensSecuredInfo"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [2978 3082])
+            ("getSecuredInfo" function
+               (:parent "LatensSecuredInfo"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3673 3694])
+                    ("startOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [3695 3718])
+                    ("endOffset" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [3719 3740])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("SLINFOTYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3741 3758])
+                    ("info" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3759 3771]))                  
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [3630 5250])
+            ("releaseSecuredInfo" function
+               (:parent "LatensSecuredInfo"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5430 5441]))                  
+                :type "void")
+                nil [5387 5702]))          
+    :file "latenssecuredinfo.cpp"
+    :pointmax 5703
+    :fsize 5702
+    :lastmodtime '(21532 1529 159446 964000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "latenssemaphore.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("LATENS_SEMAPHORE_H__" variable (:constant-flag t) nil [38 58])
+            ("LATENS_SEMAPHORE" variable (:constant-flag t) nil [68 84])
+            ("LATENS_SEMAPHORE_TIMEOUT" variable (:constant-flag t) nil [155 179]))          
+    :file "latenssemaphore.h"
+    :pointmax 216
+    :fsize 215
+    :lastmodtime '(21532 1529 158446 970000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("LATENS_SEMAPHORE_H__")
+          ("LATENS_SEMAPHORE" . ((string "\"/sl_latens\"" 85 . 97)))
+          ("LATENS_SEMAPHORE_TIMEOUT" . ((number "120" 180 . 183)))
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D713!src!pace!middleware!security-lib!lib!plugins!latens!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

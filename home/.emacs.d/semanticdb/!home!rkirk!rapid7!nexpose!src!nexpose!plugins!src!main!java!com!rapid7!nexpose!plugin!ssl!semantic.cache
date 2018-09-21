@@ -1,0 +1,149 @@
+;; Object ssl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ssl/"
+  :tables (list 
+   (semanticdb-table "SSLCipherTest.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.rapid7.nexpose.plugin.ssl" package nil nil [349 387])
+            ("com.rapid7.config.Configuration" include nil nil [389 428])
+            ("com.rapid7.doc.ListItem" include nil nil [429 460])
+            ("com.rapid7.doc.Paragraph" include nil nil [461 493])
+            ("com.rapid7.doc.Text" include nil nil [494 521])
+            ("com.rapid7.doc.UnorderedList" include nil nil [522 558])
+            ("com.rapid7.nexpose.plugin.ICheckContext" include nil nil [559 606])
+            ("com.rapid7.nexpose.plugin.IDiscreteTest" include nil nil [607 654])
+            ("com.rapid7.nexpose.plugin.vulnck.IVulnerabilityCheckConstants" include nil nil [655 724])
+            ("com.rapid7.nexpose.plugin.vulnck.TestException" include nil nil [725 779])
+            ("java.util.ArrayList" include nil nil [780 807])
+            ("java.util.Arrays" include nil nil [808 832])
+            ("java.util.Collections" include nil nil [833 862])
+            ("java.util.HashMap" include nil nil [863 888])
+            ("java.util.List" include nil nil [889 911])
+            ("java.util.Map" include nil nil [912 933])
+            ("org.apache.axis.utils.StringUtils" include nil nil [934 975])
+            ("SSLCipherTest" type
+               (:typemodifiers ("public")
+                :interfaces ("IDiscreteTest")
+                :members 
+                  ( ("performCheck" function
+                       (:throws ("TestException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("context" variable (:type "ICheckContext") (reparse-symbol formal_parameters) [1455 1476])
+                            ("proof" variable (:type "UnorderedList") (reparse-symbol formal_parameters) [1478 1497]))                          
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [1430 3212])
+                    ("getServiceConfiguration" function
+                       (:throws ("TestException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("context" variable (:type "ICheckContext") (reparse-symbol formal_parameters) [3443 3464]))                          
+                        :type "Configuration")
+                        (reparse-symbol class_member_declaration) [3397 3831])
+                    ("SSLCipherTest" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("" variable (:type "ciphers") (reparse-symbol formal_parameters) [4049 4056])
+                            ("" variable (:type "DHKeySize") (reparse-symbol formal_parameters) [4077 4086]))                          )
+                        (reparse-symbol class_member_declaration) [4006 4219])
+                    ("getCipher" function (:constructor-flag t) (reparse-symbol class_member_declaration) [4247 4296])
+                    ("getDHKeySize" function (:constructor-flag t) (reparse-symbol class_member_declaration) [4324 4374])
+                    ("matchSupportedCiphers" function
+                       (:constructor-flag t
+                        :throws ("TestException")
+                        :arguments 
+                          ( ("" variable (:type "vulnCiphers") (reparse-symbol formal_parameters) [4622 4633])
+                            ("" variable (:type "supportedCiphers") (reparse-symbol formal_parameters) [4648 4664]))                          )
+                        (reparse-symbol class_member_declaration) [4587 4950])
+                    ("getSupportedCiphers" function
+                       (:constructor-flag t
+                        :throws ("TestException")
+                        :arguments 
+                          ( ("cfg" variable (:type "Configuration") (reparse-symbol formal_parameters) [5102 5119])
+                            ("" variable (:type "protocols") (reparse-symbol formal_parameters) [5134 5143]))                          )
+                        (reparse-symbol class_member_declaration) [5082 5868])
+                    ("generateCipherProofList" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("" variable (:type "vulnCiphers") (reparse-symbol formal_parameters) [6027 6038])
+                            ("protocol" variable (:type "String") (reparse-symbol formal_parameters) [6040 6055])
+                            ("protocolList" variable (:type "UnorderedList") (reparse-symbol formal_parameters) [6057 6083]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5977 6588]))                  
+                :type "class")
+                nil [1183 7383]))          
+    :file "SSLCipherTest.java"
+    :pointmax 7385
+    :fsize 7384
+    :lastmodtime '(22036 63716 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "SSLCipherCheckHandler.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.rapid7.nexpose.plugin.ssl" package nil nil [349 387])
+            ("com.rapid7.nexpose.plugin.BaseCheckHandler" include nil nil [389 439])
+            ("com.rapid7.nexpose.plugin.ICheckParseContext" include nil nil [440 492])
+            ("com.rapid7.nexpose.plugin.IDiscreteTest" include nil nil [493 540])
+            ("com.rapid7.nexpose.plugin.vulnck.ITest" include nil nil [541 587])
+            ("com.rapid7.nexpose.plugin.vulnck.TestParseException" include nil nil [588 647])
+            ("com.rapid7.nexpose.util.xml.XMLParseAttributesHelper" include nil nil [648 708])
+            ("com.rapid7.nexpose.util.xml.XMLParseElementHelper" include nil nil [709 766])
+            ("com.rapid7.nexpose.util.xml.XMLParseHelperException" include nil nil [767 826])
+            ("com.google.common.base.Strings" include nil nil [827 865])
+            ("java.util.ArrayList" include nil nil [866 893])
+            ("java.util.HashMap" include nil nil [894 919])
+            ("java.util.List" include nil nil [920 942])
+            ("java.util.Map" include nil nil [943 964])
+            ("org.w3c.dom.Element" include nil nil [965 992])
+            ("SSLCipherCheckHandler" type
+               (:typemodifiers ("public")
+                :superclasses "BaseCheckHandler"
+                :members 
+                  ( ("parse" function
+                       (:throws ("TestParseException")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("context" variable (:type "ICheckParseContext") (reparse-symbol formal_parameters) [2038 2064])
+                            ("check" variable (:type "Element") (reparse-symbol formal_parameters) [2066 2079]))                          
+                        :type "ITest")
+                        (reparse-symbol class_member_declaration) [2016 4379])
+                    ("getElementTagName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [4559 4629])
+                    ("ELEMENT_NAME" variable
+                       (:typemodifiers ("final" "private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [4813 4873])
+                    ("CIPHERS_TAG" variable
+                       (:typemodifiers ("final" "private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [4878 4934])
+                    ("NAME_ATTR" variable
+                       (:typemodifiers ("final" "private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [4939 4986])
+                    ("DH_KEY_SIZE_ATTR" variable
+                       (:typemodifiers ("final" "private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [4991 5050])
+                    ("BINDING_CONF" variable
+                       (:typemodifiers ("final" "protected" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5055 5111]))                  
+                :type "class")
+                nil [1748 5113]))          
+    :file "SSLCipherCheckHandler.java"
+    :pointmax 5114
+    :fsize 5113
+    :lastmodtime '(22038 35094 761319 113000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!rapid7!nexpose!src!nexpose!plugins!src!main!java!com!rapid7!nexpose!plugin!ssl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

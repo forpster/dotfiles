@@ -1,0 +1,1414 @@
+;; Object dvb/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dvb/"
+  :tables (list 
+   (semanticdb-table "dvb_storage_request.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("DVB_STORAGE_REQUEST_H" variable (:constant-flag t) nil [844 865])
+            ("storage_request_base.h" include nil nil [1038 1071])
+            ("dvb_parser.h" include nil nil [1072 1095])
+            ("dvb_network_config_base.h" include nil nil [1096 1132])
+            ("db_base.h" include nil nil [1133 1153])
+            ("dvb_loader_base.h" include nil nil [1154 1182])
+            ("DVB_STORAGE_DATA_TYPE" type
+               (:members 
+                  ( ("DVB_STORAGE_DATA_FIRST" variable
+                       (:constant-flag t
+                        :default-value (1841 1868)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1816 1868])
+                    ("DVB_STORAGE_DATA_NETWORK_CONFIG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1908 1940])
+                    ("DVB_STORAGE_DATA_TIME_OFFSET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1944 1973])
+                    ("DVB_STORAGE_DATA_NETWORK_INFO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1977 2007])
+                    ("DVB_STORAGE_DATA_TRANSPORT_LIST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2011 2043])
+                    ("DVB_STORAGE_DATA_TRANSPORT_LIST_AND_SERVICE_LIST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2047 2096])
+                    ("DVB_STORAGE_DATA_TS_SERVICE_LIST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2100 2133])
+                    ("DVB_STORAGE_DATA_UPDATE_TRANSPORT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2137 2171])
+                    ("DVB_STORAGE_DATA_ADD_TRANSPORT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2175 2206])
+                    ("DVB_STORAGE_DATA_ADD_IF_NEW_TRANSPORT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2210 2248])
+                    ("DVB_STORAGE_DATA_DELETE_TRANSPORT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2252 2286])
+                    ("DVB_STORAGE_DATA_UPDATE_SERVICE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2290 2322])
+                    ("DVB_STORAGE_DATA_UPDATE_SERVICE_CHANNUM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2326 2366])
+                    ("DVB_STORAGE_DATA_UPDATE_SERVICE_EIT_VERSION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2370 2414])
+                    ("DVB_STORAGE_DATA_ADD_SERVICE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2418 2447])
+                    ("DVB_STORAGE_DATA_DELETE_SERVICE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2451 2483])
+                    ("DVB_STORAGE_DATA_UPDATE_EVENT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2487 2517])
+                    ("DVB_STORAGE_DATA_ADD_EVENT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2521 2548])
+                    ("DVB_STORAGE_DATA_EXPIRE_SERVICE_EVENTS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2552 2591])
+                    ("DVB_STORAGE_DATA_EXPIRE_ANY_EVENTS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2595 2630])
+                    ("DVB_STORAGE_DATA_PARTIAL_SERVICE_LIST_TIMESTAMP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2634 2682])
+                    ("DVB_STORAGE_DATA_COMPLETE_SERVICE_LIST_TIMESTAMP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2686 2735])
+                    ("DVB_STORAGE_DATA_PARTIAL_EVENT_LIST_TIMESTAMP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2739 2785])
+                    ("DVB_STORAGE_DATA_FULL_EVENT_LIST_TIMESTAMP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2789 2832])
+                    ("DVB_STORAGE_DATA_META_DATA_TIMESTAMP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2836 2873])
+                    ("DVB_STORAGE_DATA_FLAG_SERVICE_LIST_READY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2877 2918])
+                    ("DVB_STORAGE_DATA_ADD_EVENT_PF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2922 2952])
+                    ("DVB_STORAGE_DATA_UPDATE_EVENT_PF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2956 2989])
+                    ("DVB_STORAGE_DATA_DELETE_EVENT_PF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2993 3026])
+                    ("DVB_STORAGE_DATA_DELETE_ALL_EVENT_PFS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3030 3068])
+                    ("DVB_STORAGE_DATA_GENRE_INFO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3072 3100])
+                    ("DVB_STORAGE_DATA_PARENTAL_RATING_INFO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3104 3142])
+                    ("DVB_STORAGE_DATA_ADD_NETWORK_CHANGE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3146 3182])
+                    ("DVB_STORAGE_DATA_REPLACE_NETWORK_CHANGE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3186 3226])
+                    ("DVB_STORAGE_DATA_ADD_ALL_NETWORK_CHANGES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3230 3271])
+                    ("DVB_STORAGE_DATA_DELETE_NETWORK_CHANGE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3275 3314])
+                    ("DVB_STORAGE_DATA_DELETE_ALL_NETWORK_CHANGES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3318 3362])
+                    ("DVB_STORAGE_DATA_ADD_NETWORK_MESSAGE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3366 3403])
+                    ("DVB_STORAGE_DATA_REPLACE_NETWORK_MESSAGE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3407 3448])
+                    ("DVB_STORAGE_DATA_ADD_ALL_NETWORK_MESSAGES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3452 3494])
+                    ("DVB_STORAGE_DATA_DELETE_NETWORK_MESSAGE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3498 3538])
+                    ("DVB_STORAGE_DATA_DELETE_ALL_NETWORK_MESSAGES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3542 3587])
+                    ("DVB_STORAGE_DATA_UPDATE_LINKAGE_INFO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3591 3628])
+                    ("DVB_STORAGE_DATA_DELETE_LINKAGE_INFO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3632 3669])
+                    ("DVB_STORAGE_DATA_DELETE_LINKAGE_INFO_BY_KEY_RANGE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3673 3723])
+                    ("DVB_STORAGE_DATA_UPDATE_ALL_LINKAGE_INFOS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3727 3769])
+                    ("DVB_STORAGE_DATA_DELETE_ALL_LINKAGE_INFOS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3773 3815])
+                    ("DVB_STORAGE_DATA_ADD_TARGET_REGION_NAME" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3819 3859])
+                    ("DVB_STORAGE_DATA_NOTIFY_SERVICE_LIST_READY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4001 4044])
+                    ("DVB_STORAGE_DATA_NOTIFY_TRANSPORT_LIST_COMPLETE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4137 4185])
+                    ("DVB_STORAGE_DATA_NOTIFY_SERVICE_LIST_UPDATING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4273 4319])
+                    ("DVB_STORAGE_DATA_NOTIFY_EVENT_LIST_PARTIAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4409 4452])
+                    ("DVB_STORAGE_DATA_NOTIFY_EVENT_LIST_COMPLETE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4545 4589])
+                    ("DVB_STORAGE_DATA_NOTIFY_EVENT_LIST_PROGRESS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4681 4725])
+                    ("DVB_STORAGE_DATA_NOTIFY_SERVICE_EVENTS_UPDATED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4817 4864])
+                    ("DVB_STORAGE_DATA_NOTIFY_TS_SERVICE_LIST_UPDATED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4954 5002])
+                    ("DVB_STORAGE_DATA_NOTIFY_TS_SERVICE_LIST_DELETED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5090 5138])
+                    ("DVB_STORAGE_DATA_NOTIFY_SERVICE_UPDATED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5227 5267])
+                    ("DVB_STORAGE_DATA_NOTIFY_SERVICE_DELETED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5363 5403])
+                    ("DVB_STORAGE_DATA_NOTIFY_EVENT_PF_UPDATED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5500 5541])
+                    ("DVB_STORAGE_DATA_NOTIFY_LINKAGE_INFO_UPDATED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5636 5681])
+                    ("DVB_STORAGE_DATA_NOTIFY_LINKAGE_INFO_DELETED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5772 5817])
+                    ("DVB_STORAGE_DATA_NOTIFY_LINKAGE_INFOS_DELETED_BY_KEY_RANGE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5908 5967])
+                    ("DVB_STORAGE_DATA_NOTIFY_ALL_LINKAGE_INFOS_UPDATED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6052 6102])
+                    ("DVB_STORAGE_DATA_NOTIFY_ALL_LINKAGE_INFOS_DELETED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6188 6238])
+                    ("DVB_STORAGE_DATA_NOTIFY_ALL_NETWORK_CHANGES_UPDATED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6324 6376])
+                    ("DVB_STORAGE_DATA_NOTIFY_ALL_NETWORK_CHANGES_DELETED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6460 6512])
+                    ("DVB_STORAGE_DATA_NOTIFY_NETWORK_CHANGE_UPDATED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6596 6643])
+                    ("DVB_STORAGE_DATA_NOTIFY_NETWORK_CHANGE_DELETED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6732 6779])
+                    ("DVB_STORAGE_DATA_NOTIFY_TDT_UPDATED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6869 6905])
+                    ("DVB_STORAGE_DATA_NOTIFY_TDT_LOST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7005 7038])
+                    ("DVB_STORAGE_DATA_NOTIFY_TOT_UPDATED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7141 7177])
+                    ("DVB_STORAGE_DATA_NOTIFY_ALL_TARGET_REGION_NAMES_UPDATED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7304 7360])
+                    ("DVB_STORAGE_DATA_NOTIFY_ALL_TARGET_REGION_NAMES_DELETED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7438 7494])
+                    ("DVB_STORAGE_DATA_LAST_PLUS_ONE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7573 7638]))                  
+                :type "enum")
+                nil [1783 7639])
+            ("NIT_UPDATE_STATE" type
+               (:members 
+                  ( ("NIT_NO_UPDATE" variable
+                       (:constant-flag t
+                        :default-value (7710 7711)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7694 7711])
+                    ("NIT_LCN_UPDATE" variable
+                       (:constant-flag t
+                        :default-value (7770 7773)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7753 7773])
+                    ("NIT_SERVICE_UPDATE" variable
+                       (:constant-flag t
+                        :default-value (7851 7854)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7830 7854])
+                    ("NIT_TRANSPORT_UPDATE" variable
+                       (:constant-flag t
+                        :default-value (7913 7916)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7890 7916])
+                    ("NIT_TRANSPORT_ADD_REMOVE" variable
+                       (:constant-flag t
+                        :default-value (8006 8009)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7979 8009]))                  
+                :type "enum")
+                nil [7666 8080])
+            ("DVB_STORAGE_DATA" type
+               (:superclasses 
+                  ( ("STORAGE_DATA" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [8350 8357])
+                    ("transport_stream_id" variable (:type "unsigned short int") (reparse-symbol classsubparts) [8466 8510])
+                    ("original_network_id" variable (:type "unsigned short int") (reparse-symbol classsubparts) [8514 8558])
+                    ("service_id" variable (:type "unsigned short int") (reparse-symbol classsubparts) [8562 8597])
+                    ("UniqueKey" variable (:type "long int") (reparse-symbol classsubparts) [8615 8635])
+                    ("protected" label nil (reparse-symbol classsubparts) [8640 8650])
+                    ("private" label nil (reparse-symbol classsubparts) [8655 8663]))                  
+                :type "class")
+                nil [8298 8688])
+            ("DVB_GENERAL_STORAGE_DATA" type
+               (:superclasses 
+                  ( ("DVB_STORAGE_DATA" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [8794 8801])
+                    ("protected" label nil (reparse-symbol classsubparts) [8910 8920])
+                    ("private" label nil (reparse-symbol classsubparts) [8925 8933]))                  
+                :type "class")
+                nil [8730 8958])
+            ("DVB_NETWORK_INFO_STORAGE_DATA" type
+               (:superclasses 
+                  ( ("DVB_STORAGE_DATA" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [9074 9081])
+                    ("network_info" variable
+                       (:pointer 1
+                        :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9189 9222])
+                    ("protected" label nil (reparse-symbol classsubparts) [9281 9291])
+                    ("private" label nil (reparse-symbol classsubparts) [9296 9304]))                  
+                :type "class")
+                nil [9005 9329])
+            ("BOUQUET_INFO_STORAGE_DATA" type
+               (:superclasses 
+                  ( ("DVB_STORAGE_DATA" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [9437 9444])
+                    ("bouquet_info" variable
+                       (:pointer 1
+                        :type ("DVB_BOUQUET_INFO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9553 9586])
+                    ("protected" label nil (reparse-symbol classsubparts) [9645 9655])
+                    ("private" label nil (reparse-symbol classsubparts) [9660 9668]))                  
+                :type "class")
+                nil [9372 9693])
+            ("DVB_NETWORK_CONFIG_STORAGE_DATA" type
+               (:superclasses 
+                  ( ("DVB_STORAGE_DATA" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [9809 9816])
+                    ("DVB_NETWORK_CONFIG_STORAGE_DATA" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("DVB_NETWORK_CONFIG_STORAGE_DATA" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9821 9855])
+                    ("DVB_NETWORK_CONFIG_STORAGE_DATA" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [9881 9916])
+                    ("network_config" variable
+                       (:pointer 1
+                        :type ("DVB_NETWORK_CONFIG" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10074 10111])
+                    ("protected" label nil (reparse-symbol classsubparts) [10155 10165])
+                    ("private" label nil (reparse-symbol classsubparts) [10170 10178])
+                    ("DVB_NETWORK_CONFIG_STORAGE_DATA" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("obj" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DVB_NETWORK_CONFIG_STORAGE_DATA" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10214 10257]))                          
+                        :type ("DVB_NETWORK_CONFIG_STORAGE_DATA" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10182 10258])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DVB_NETWORK_CONFIG_STORAGE_DATA" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10326 10366]))                          
+                        :type ("DVB_NETWORK_CONFIG_STORAGE_DATA" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10283 10367]))                  
+                :type "class")
+                nil [9738 10393])
+            ("TIME_OFFSET_STORAGE_DATA" type
+               (:superclasses 
+                  ( ("DVB_STORAGE_DATA" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [10499 10506])
+                    ("time_offset" variable (:type ("LOCAL_TIME_OFFSET" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10615 10647])
+                    ("protected" label nil (reparse-symbol classsubparts) [10678 10688])
+                    ("private" label nil (reparse-symbol classsubparts) [10693 10701]))                  
+                :type "class")
+                nil [10435 10726])
+            ("DVB_TRANSPORT_STREAM_INFO_STORAGE_DATA" type
+               (:superclasses 
+                  ( ("DVB_STORAGE_DATA" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [10860 10867])
+                    ("DVB_TRANSPORT_STREAM_INFO_STORAGE_DATA" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("DVB_TRANSPORT_STREAM_INFO_STORAGE_DATA" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10872 10913])
+                    ("DVB_TRANSPORT_STREAM_INFO_STORAGE_DATA" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [10939 10981])
+                    ("transport_stream_info" variable
+                       (:pointer 1
+                        :type ("DVB_TRANSPORT_STREAM_INFO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11073 11124])
+                    ("protected" label nil (reparse-symbol classsubparts) [11168 11178])
+                    ("private" label nil (reparse-symbol classsubparts) [11183 11191])
+                    ("DVB_TRANSPORT_STREAM_INFO_STORAGE_DATA" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("obj" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DVB_TRANSPORT_STREAM_INFO_STORAGE_DATA" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11234 11284]))                          
+                        :type ("DVB_TRANSPORT_STREAM_INFO_STORAGE_DATA" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11195 11285])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DVB_TRANSPORT_STREAM_INFO_STORAGE_DATA" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11360 11407]))                          
+                        :type ("DVB_TRANSPORT_STREAM_INFO_STORAGE_DATA" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11310 11408]))                  
+                :type "class")
+                nil [10782 11455])
+            ("DVB_SERVICE_INFO_STORAGE_DATA" type
+               (:superclasses 
+                  ( ("DVB_STORAGE_DATA" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [11571 11578])
+                    ("DVB_SERVICE_INFO_STORAGE_DATA" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("DVB_SERVICE_INFO_STORAGE_DATA" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11583 11615])
+                    ("DVB_SERVICE_INFO_STORAGE_DATA" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [11641 11674])
+                    ("service_info" variable
+                       (:pointer 1
+                        :type ("DVB_SERVICE_INFO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11766 11799])
+                    ("protected" label nil (reparse-symbol classsubparts) [11843 11853])
+                    ("private" label nil (reparse-symbol classsubparts) [11858 11866])
+                    ("DVB_SERVICE_INFO_STORAGE_DATA" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("obj" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DVB_SERVICE_INFO_STORAGE_DATA" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11900 11941]))                          
+                        :type ("DVB_SERVICE_INFO_STORAGE_DATA" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11870 11942])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DVB_SERVICE_INFO_STORAGE_DATA" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12008 12046]))                          
+                        :type ("DVB_SERVICE_INFO_STORAGE_DATA" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11967 12047]))                  
+                :type "class")
+                nil [11502 12096])
+            ("DVB_EVENT_INFO_STORAGE_DATA" type
+               (:superclasses 
+                  ( ("DVB_STORAGE_DATA" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [12208 12215])
+                    ("DVB_EVENT_INFO_STORAGE_DATA" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("DVB_EVENT_INFO_STORAGE_DATA" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12220 12250])
+                    ("DVB_EVENT_INFO_STORAGE_DATA" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [12276 12307])
+                    ("event_info" variable
+                       (:pointer 1
+                        :type ("DVB_EVENT_INFO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12399 12428])
+                    ("protected" label nil (reparse-symbol classsubparts) [12472 12482])
+                    ("private" label nil (reparse-symbol classsubparts) [12487 12495])
+                    ("DVB_EVENT_INFO_STORAGE_DATA" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("temp" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DVB_EVENT_INFO_STORAGE_DATA" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12527 12567]))                          
+                        :type ("DVB_EVENT_INFO_STORAGE_DATA" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12499 12568])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DVB_EVENT_INFO_STORAGE_DATA" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12632 12668]))                          
+                        :type ("DVB_EVENT_INFO_STORAGE_DATA" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12593 12669]))                  
+                :type "class")
+                nil [12141 12717])
+            ("DVB_NETWORK_MESSAGE_STORAGE_DATA" type
+               (:superclasses 
+                  ( ("DVB_STORAGE_DATA" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [12839 12846])
+                    ("network_message" variable (:type ("DVB_NETWORK_MESSAGE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12955 12993])
+                    ("protected" label nil (reparse-symbol classsubparts) [13022 13032])
+                    ("private" label nil (reparse-symbol classsubparts) [13037 13045]))                  
+                :type "class")
+                nil [12767 13070])
+            ("DVB_NETWORK_CHANGE_STORAGE_DATA" type
+               (:superclasses 
+                  ( ("DVB_STORAGE_DATA" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [13190 13197])
+                    ("network_change" variable (:type ("DVB_NETWORK_CHANGE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13306 13341])
+                    ("protected" label nil (reparse-symbol classsubparts) [13370 13380])
+                    ("private" label nil (reparse-symbol classsubparts) [13385 13393]))                  
+                :type "class")
+                nil [13119 13418])
+            ("DVB_LINKAGE_INFO_STORAGE_DATA" type
+               (:superclasses 
+                  ( ("DVB_STORAGE_DATA" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [13534 13541])
+                    ("linkage_info" variable (:type ("DVB_LINKAGE_INFO" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13650 13681])
+                    ("protected" label nil (reparse-symbol classsubparts) [13710 13720])
+                    ("private" label nil (reparse-symbol classsubparts) [13725 13733]))                  
+                :type "class")
+                nil [13465 13758])
+            ("DVB_TARGET_REGION_NAME_STORAGE_DATA" type
+               (:superclasses 
+                  ( ("DVB_STORAGE_DATA" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [13886 13893])
+                    ("target_region_name" variable (:type ("DVB_TARGET_REGION_NAME" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14002 14045])
+                    ("protected" label nil (reparse-symbol classsubparts) [14074 14084])
+                    ("private" label nil (reparse-symbol classsubparts) [14089 14097]))                  
+                :type "class")
+                nil [13811 14122])
+            ("DVB_STORAGE_REQUEST" type
+               (:superclasses 
+                  ( ("STORAGE_REQUEST" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [14519 14526])
+                    ("DVB_STORAGE_REQUEST" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("eng" variable
+                               (:reference 1
+                                :type ("ENGINE" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14552 14564])
+                            ("pl_idx" variable (:type "int") (reparse-symbol arg-sub-list) [14565 14576]))                          
+                        :type ("DVB_STORAGE_REQUEST" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14531 14577])
+                    ("DVB_STORAGE_REQUEST" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [14604 14636])
+                    ("signal_data" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("signal_type" variable (:type ("SIGNAL_DATA_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14688 14717])
+                            ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [14718 14729])
+                            ("type" variable (:type "int") (reparse-symbol arg-sub-list) [14730 14739])
+                            ("ServiceID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14740 14763])
+                            ("transport_stream_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14764 14797])
+                            ("original_network_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14798 14831])
+                            ("" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [14832 14854])
+                            ("UniqueKey" variable (:type "int") (reparse-symbol arg-sub-list) [14851 14865])
+                            ("param1" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14866 14886])
+                            ("param2" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14887 14907]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [14661 14908])
+                    ("load_database" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("control_source" variable (:type "int") (reparse-symbol arg-sub-list) [14942 14961]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [14913 14962])
+                    ("sync_read_full_network_info" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [14967 15012])
+                    ("async_update_misc_network_info" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("old_network_info" variable
+                               (:reference 1
+                                :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15062 15097])
+                            ("new_network_info" variable
+                               (:reference 1
+                                :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15098 15133]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [15016 15134])
+                    ("sync_read_transport_streams_and_services" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("tsipv" variable
+                               (:reference 1
+                                :type ("DVB_TRANSPORT_STREAM_INFO_PTR_VECTOR" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15195 15239]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [15139 15240])
+                    ("async_write_linkage_info" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("linkage_info" variable
+                               (:reference 1
+                                :type ("DVB_LINKAGE_INFO_VECTOR" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15285 15323]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [15245 15324])
+                    ("sync_read_linkage_info" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("linkage_info" variable
+                               (:reference 1
+                                :type ("DVB_LINKAGE_INFO_VECTOR" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15366 15404]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [15328 15405])
+                    ("async_update_linkage_info" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("old_linkage_info" variable
+                               (:reference 1
+                                :type ("DVB_LINKAGE_INFO_VECTOR" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15450 15492])
+                            ("new_linkage_info" variable
+                               (:reference 1
+                                :type ("DVB_LINKAGE_INFO_VECTOR" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15493 15535])
+                            ("source_table" variable (:type ("DVB_TABLE_SOURCE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15536 15566]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [15409 15567])
+                    ("async_write_network_changes_and_messages" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("network_change" variable
+                               (:reference 1
+                                :type ("DVB_NETWORK_CHANGE_VECTOR" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15628 15670])
+                            ("network_message" variable
+                               (:reference 1
+                                :type ("DVB_NETWORK_MESSAGE_VECTOR" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15671 15715]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [15572 15716])
+                    ("sync_read_network_changes_and_messages" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("network_change" variable
+                               (:reference 1
+                                :type ("DVB_NETWORK_CHANGE_VECTOR" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15774 15816])
+                            ("network_message" variable
+                               (:reference 1
+                                :type ("DVB_NETWORK_MESSAGE_VECTOR" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15817 15861]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [15720 15862])
+                    ("async_update_network_changes_and_messages" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("old_network_info" variable
+                               (:reference 1
+                                :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15923 15958])
+                            ("new_network_info" variable
+                               (:reference 1
+                                :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15959 15994]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [15866 15995])
+                    ("async_write_target_region_name" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("target_region_name_vec" variable
+                               (:reference 1
+                                :type ("DVB_TARGET_REGION_NAME_VECTOR" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16046 16100]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [16000 16101])
+                    ("sync_read_target_region_name" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("target_region_name_vec" variable
+                               (:reference 1
+                                :type ("DVB_TARGET_REGION_NAME_VECTOR" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16149 16203]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [16105 16204])
+                    ("async_update_transport_stream_nit_version" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("old_network_info" variable
+                               (:reference 1
+                                :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16437 16472])
+                            ("new_network_info" variable
+                               (:reference 1
+                                :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16473 16508])
+                            ("network_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16509 16533]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [16380 16534])
+                    ("async_update_nit_service_list" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("old_network_info" variable
+                               (:reference 1
+                                :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16583 16618])
+                            ("new_network_info" variable
+                               (:reference 1
+                                :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16619 16654])
+                            ("lcn_update" variable (:type "bool") (reparse-symbol arg-sub-list) [16655 16671]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [16538 16672])
+                    ("async_update_nit_transport_list" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("old_network_info" variable
+                               (:reference 1
+                                :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16723 16758])
+                            ("new_network_info" variable
+                               (:reference 1
+                                :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16759 16794]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16676 16795])
+                    ("sync_write_service_list_chanNum" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("network_info" variable
+                               (:reference 1
+                                :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16846 16877]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16799 16878])
+                    ("async_update_service_list_chanNum" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("network_info" variable
+                               (:reference 1
+                                :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16931 16962]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16882 16963])
+                    ("async_update_updated_service_list" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("network_info" variable
+                               (:reference 1
+                                :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17016 17047]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16967 17048])
+                    ("sync_write_freq_scanned_transport_stream_and_service_list_ignore_tsid" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("network_info" variable
+                               (:reference 1
+                                :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17137 17168])
+                            ("tuner_status" variable
+                               (:reference 1
+                                :type ("TUNER_STATUS" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17169 17196])
+                            ("transport_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17197 17223])
+                            ("original_network_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17224 17257]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [17052 17258])
+                    ("sync_write_freq_scanned_transport_stream_and_service_list_with_tsid" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("network_info" variable
+                               (:reference 1
+                                :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17345 17376])
+                            ("tuner_status" variable
+                               (:reference 1
+                                :type ("TUNER_STATUS" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17377 17404])
+                            ("transport_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17405 17431])
+                            ("original_network_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17432 17465]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [17262 17466])
+                    ("async_update_transport_stream_service_list" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("network_info" variable
+                               (:reference 1
+                                :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17528 17559])
+                            ("new_tsi" variable
+                               (:pointer 1
+                                :type ("DVB_TRANSPORT_STREAM_INFO" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17560 17595])
+                            ("transport_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17596 17622])
+                            ("original_network_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17623 17656]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [17470 17657])
+                    ("async_update_service_event_list" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("network_info" variable
+                               (:reference 1
+                                :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17708 17739])
+                            ("svi" variable
+                               (:pointer 1
+                                :type ("DVB_SERVICE_INFO" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17740 17762])
+                            ("eix" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17763 17780])
+                            ("service_id" variable (:type "int") (reparse-symbol arg-sub-list) [17781 17796])
+                            ("transport_id" variable (:type "int") (reparse-symbol arg-sub-list) [17797 17814])
+                            ("original_network_id" variable (:type "int") (reparse-symbol arg-sub-list) [17815 17839])
+                            ("this_table" variable
+                               (:pointer 1
+                                :type ("TABLE_SEARCH_LIST_ITEM" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17840 17875])
+                            ("seg_flags" variable (:type "int") (reparse-symbol arg-sub-list) [17876 17890]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [17661 17891])
+                    ("async_write_nit_scanned_transport" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("tuner_status" variable
+                               (:reference 1
+                                :type ("TUNER_STATUS" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17945 17972])
+                            ("transport_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17973 17999])
+                            ("original_network_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [18000 18033]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [17895 18034])
+                    ("send_event_progress_notification" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("seg_number" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [18087 18111])
+                            ("" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [18112 18134])
+                            ("service_key" variable (:type "int") (reparse-symbol arg-sub-list) [18131 18147]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18039 18148])
+                    ("protected" label nil (reparse-symbol classsubparts) [18153 18163])
+                    ("private" label nil (reparse-symbol classsubparts) [18168 18176]))                  
+                :type "class")
+                nil [14463 18201]))          
+    :file "dvb_storage_request.h"
+    :pointmax 18245
+    :fsize 18244
+    :lastmodtime '(21907 59823 34671 404000)
+    :unmatched-syntax '((symbol 18181 . 18198) (symbol 14102 . 14119) (symbol 13738 . 13755) (symbol 13398 . 13415) (symbol 13050 . 13067) (symbol 12697 . 12714) (symbol 12076 . 12093) (symbol 11435 . 11452) (symbol 10706 . 10723) (symbol 10373 . 10390) (symbol 9673 . 9690) (symbol 9309 . 9326) (symbol 8938 . 8955) (symbol 8668 . 8685) (LONG 8610 . 8614) (UNSIGNED 8601 . 8609))
+    :lexical-table 
+        '(("DVB_STORAGE_REQUEST_H")
+          )
+
+    )
+   (semanticdb-table "dvb_network_config_base.h"
+    :file "dvb_network_config_base.h"
+    :fsize 3530
+    :lastmodtime '(21907 59823 32671 415000)
+    )
+   (semanticdb-table "dvb_loader_base.h"
+    :file "dvb_loader_base.h"
+    :fsize 8862
+    :lastmodtime '(21907 59823 28671 437000)
+    )
+   (semanticdb-table "dvb_storage_request.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("DEBUG_LOCAL_ENABLE" variable (:constant-flag t) nil [993 1011])
+            ("dvb_debug.h" include nil nil [1012 1034])
+            ("dvb_network_config_base.h" include nil nil [1036 1072])
+            ("dvb_engine_base.h" include nil nil [1073 1101])
+            ("dvb_state_control_base_ifc.h" include nil nil [1102 1141])
+            ("dvb_storage_request.h" include nil nil [1143 1175])
+            ("DVB_NETWORK_CONFIG_STORAGE_DATA" function
+               (:constructor-flag t
+                :parent "DVB_NETWORK_CONFIG_STORAGE_DATA"
+                :type ("DVB_NETWORK_CONFIG_STORAGE_DATA" type (:type "class") nil nil))
+                nil [6832 6973])
+            ("DVB_NETWORK_CONFIG_STORAGE_DATA" function
+               (:destructor-flag t
+                :parent "DVB_NETWORK_CONFIG_STORAGE_DATA"
+                :type "void")
+                nil [6975 7156])
+            ("DVB_TRANSPORT_STREAM_INFO_STORAGE_DATA" function
+               (:constructor-flag t
+                :parent "DVB_TRANSPORT_STREAM_INFO_STORAGE_DATA"
+                :type ("DVB_TRANSPORT_STREAM_INFO_STORAGE_DATA" type (:type "class") nil nil))
+                nil [9704 9866])
+            ("DVB_TRANSPORT_STREAM_INFO_STORAGE_DATA" function
+               (:destructor-flag t
+                :parent "DVB_TRANSPORT_STREAM_INFO_STORAGE_DATA"
+                :type "void")
+                nil [9868 10077])
+            ("DVB_SERVICE_INFO_STORAGE_DATA" function
+               (:constructor-flag t
+                :parent "DVB_SERVICE_INFO_STORAGE_DATA"
+                :type ("DVB_SERVICE_INFO_STORAGE_DATA" type (:type "class") nil nil))
+                nil [11488 11623])
+            ("DVB_SERVICE_INFO_STORAGE_DATA" function
+               (:destructor-flag t
+                :parent "DVB_SERVICE_INFO_STORAGE_DATA"
+                :type "void")
+                nil [11625 11798])
+            ("DVB_EVENT_INFO_STORAGE_DATA" function
+               (:constructor-flag t
+                :parent "DVB_EVENT_INFO_STORAGE_DATA"
+                :type ("DVB_EVENT_INFO_STORAGE_DATA" type (:type "class") nil nil))
+                nil [13192 13321])
+            ("DVB_EVENT_INFO_STORAGE_DATA" function
+               (:destructor-flag t
+                :parent "DVB_EVENT_INFO_STORAGE_DATA"
+                :type "void")
+                nil [13323 13488])
+            ("DVB_STORAGE_REQUEST" function
+               (:constructor-flag t
+                :parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("eng" variable
+                       (:reference 1
+                        :type ("ENGINE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19404 19416])
+                    ("pl_idx" variable (:type "int") (reparse-symbol arg-sub-list) [19417 19428]))                  
+                :type ("DVB_STORAGE_REQUEST" type (:type "class") nil nil))
+                nil [19362 19508])
+            ("DVB_STORAGE_REQUEST" function
+               (:destructor-flag t
+                :parent "DVB_STORAGE_REQUEST"
+                :type "void")
+                nil [19510 19603])
+            ("signal_data" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("signal_type" variable (:type ("SIGNAL_DATA_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21175 21204])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [21205 21216])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [21217 21226])
+                    ("ServiceID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21227 21250])
+                    ("transport_stream_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21251 21284])
+                    ("original_network_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21285 21318])
+                    ("" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [21319 21341])
+                    ("UniqueKey" variable (:type "int") (reparse-symbol arg-sub-list) [21338 21352])
+                    ("param1" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21353 21373])
+                    ("param2" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21374 21394]))                  
+                :type "bool")
+                nil [21137 33564])
+            ("load_database" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("control_source" variable (:type "int") (reparse-symbol arg-sub-list) [33970 33989]))                  
+                :type "int")
+                nil [33929 38119])
+            ("sync_read_full_network_info" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :type "bool")
+                nil [38544 40860])
+            ("async_update_misc_network_info" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("old_network_info" variable
+                       (:reference 1
+                        :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41389 41424])
+                    ("new_network_info" variable
+                       (:reference 1
+                        :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41425 41460]))                  
+                :type "bool")
+                nil [41330 42847])
+            ("sync_read_transport_streams_and_services" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("tsipv" variable
+                       (:reference 1
+                        :type ("DVB_TRANSPORT_STREAM_INFO_PTR_VECTOR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43320 43364]))                  
+                :type "bool")
+                nil [43252 45469])
+            ("async_write_linkage_info" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("linkage_info" variable
+                       (:reference 1
+                        :type ("DVB_LINKAGE_INFO_VECTOR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45897 45935]))                  
+                :type "bool")
+                nil [45846 47231])
+            ("sync_read_linkage_info" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("linkage_info" variable
+                       (:reference 1
+                        :type ("DVB_LINKAGE_INFO_VECTOR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47649 47687]))                  
+                :type "bool")
+                nil [47600 48504])
+            ("async_update_linkage_info" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("old_linkage_info" variable
+                       (:reference 1
+                        :type ("DVB_LINKAGE_INFO_VECTOR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49131 49173])
+                    ("new_linkage_info" variable
+                       (:reference 1
+                        :type ("DVB_LINKAGE_INFO_VECTOR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49174 49216])
+                    ("source_table" variable (:type ("DVB_TABLE_SOURCE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49217 49247]))                  
+                :type "bool")
+                nil [49079 52716])
+            ("async_write_network_changes_and_messages" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("network_change" variable
+                       (:reference 1
+                        :type ("DVB_NETWORK_CHANGE_VECTOR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53269 53311])
+                    ("network_message" variable
+                       (:reference 1
+                        :type ("DVB_NETWORK_MESSAGE_VECTOR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53312 53356]))                  
+                :type "bool")
+                nil [53202 54478])
+            ("sync_read_network_changes_and_messages" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("network_change" variable
+                       (:reference 1
+                        :type ("DVB_NETWORK_CHANGE_VECTOR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55032 55074])
+                    ("network_message" variable
+                       (:reference 1
+                        :type ("DVB_NETWORK_MESSAGE_VECTOR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55075 55119]))                  
+                :type "bool")
+                nil [54967 56985])
+            ("async_update_network_changes_and_messages" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("old_network_info" variable
+                       (:reference 1
+                        :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57656 57691])
+                    ("new_network_info" variable
+                       (:reference 1
+                        :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57692 57727]))                  
+                :type "bool")
+                nil [57588 63282])
+            ("async_write_target_region_name" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("target_region_name_vec" variable
+                       (:reference 1
+                        :type ("DVB_TARGET_REGION_NAME_VECTOR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63742 63796]))                  
+                :type "bool")
+                nil [63685 64609])
+            ("sync_read_target_region_name" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("target_region_name_vec" variable
+                       (:reference 1
+                        :type ("DVB_TARGET_REGION_NAME_VECTOR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65066 65120]))                  
+                :type "bool")
+                nil [65011 65998])
+            ("async_update_transport_stream_nit_version" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("old_network_info" variable
+                       (:reference 1
+                        :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66891 66926])
+                    ("new_network_info" variable
+                       (:reference 1
+                        :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66927 66962])
+                    ("network_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [66963 66987]))                  
+                :type "bool")
+                nil [66823 67995])
+            ("async_update_nit_service_list" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("old_network_info" variable
+                       (:reference 1
+                        :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69673 69708])
+                    ("new_network_info" variable
+                       (:reference 1
+                        :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69709 69744])
+                    ("lcn_update" variable (:type "bool") (reparse-symbol arg-sub-list) [69745 69761]))                  
+                :type "int")
+                nil [69618 82240])
+            ("async_update_nit_transport_list" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("old_network_info" variable
+                       (:reference 1
+                        :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83140 83175])
+                    ("new_network_info" variable
+                       (:reference 1
+                        :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83176 83211]))                  
+                :type "void")
+                nil [83082 89754])
+            ("sync_write_service_list_chanNum" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("network_info" variable
+                       (:reference 1
+                        :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90182 90213]))                  
+                :type "void")
+                nil [90124 92573])
+            ("async_update_service_list_chanNum" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("network_info" variable
+                       (:reference 1
+                        :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [93183 93214]))                  
+                :type "void")
+                nil [93123 95884])
+            ("async_update_updated_service_list" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("network_info" variable
+                       (:reference 1
+                        :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [96445 96476]))                  
+                :type "void")
+                nil [96385 99140])
+            ("sync_write_freq_scanned_transport_stream_and_service_list_ignore_tsid" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("network_info" variable
+                       (:reference 1
+                        :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [100498 100529])
+                    ("tuner_status" variable
+                       (:reference 1
+                        :type ("TUNER_STATUS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [100530 100557])
+                    ("transport_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [100558 100584])
+                    ("original_network_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [100585 100618]))                  
+                :type "bool")
+                nil [100401 115598])
+            ("sync_write_freq_scanned_transport_stream_and_service_list_with_tsid" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("network_info" variable
+                       (:reference 1
+                        :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [116957 116988])
+                    ("tuner_status" variable
+                       (:reference 1
+                        :type ("TUNER_STATUS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [116989 117016])
+                    ("transport_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [117017 117043])
+                    ("original_network_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [117044 117077]))                  
+                :type "bool")
+                nil [116863 130864])
+            ("async_write_nit_scanned_transport" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("tuner_status" variable
+                       (:reference 1
+                        :type ("TUNER_STATUS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [131613 131640])
+                    ("transport_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [131641 131667])
+                    ("original_network_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [131668 131701]))                  
+                :type "void")
+                nil [131552 133292])
+            ("async_update_transport_stream_service_list" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("network_info" variable
+                       (:reference 1
+                        :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135083 135114])
+                    ("new_tsi" variable
+                       (:pointer 1
+                        :type ("DVB_TRANSPORT_STREAM_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135115 135150])
+                    ("new_transport_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [135151 135181])
+                    ("new_original_network_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [135182 135219]))                  
+                :type "bool")
+                nil [135013 146195])
+            ("async_update_service_event_list" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("network_info" variable
+                       (:reference 1
+                        :type ("DVB_NETWORK_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147371 147402])
+                    ("svi" variable
+                       (:pointer 1
+                        :type ("DVB_SERVICE_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147403 147425])
+                    ("eix" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [147426 147443])
+                    ("service_id" variable (:type "int") (reparse-symbol arg-sub-list) [147444 147459])
+                    ("transport_id" variable (:type "int") (reparse-symbol arg-sub-list) [147460 147477])
+                    ("original_network_id" variable (:type "int") (reparse-symbol arg-sub-list) [147478 147502])
+                    ("this_table" variable
+                       (:pointer 1
+                        :type ("TABLE_SEARCH_LIST_ITEM" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147503 147538])
+                    ("seg_flags" variable (:type "int") (reparse-symbol arg-sub-list) [147539 147553]))                  
+                :type "void")
+                nil [147313 153685])
+            ("send_event_progress_notification" function
+               (:parent "DVB_STORAGE_REQUEST"
+                :arguments 
+                  ( ("seg_number" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [154212 154236])
+                    ("" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [154237 154259])
+                    ("service_key" variable (:type "int") (reparse-symbol arg-sub-list) [154256 154272]))                  
+                :type "void")
+                nil [154152 155656]))          
+    :file "dvb_storage_request.cpp"
+    :pointmax 155662
+    :fsize 155661
+    :lastmodtime '(21907 59823 32671 415000)
+    :unmatched-syntax '((semantic-list 19043 . 19064) (symbol 19026 . 19043) (semantic-list 17932 . 17963) (symbol 17915 . 17932) (semantic-list 16800 . 16837) (symbol 16783 . 16800) (semantic-list 15669 . 15702) (symbol 15652 . 15669) (semantic-list 14541 . 14575) (symbol 14524 . 14541) (semantic-list 12849 . 12878) (symbol 12832 . 12849) (semantic-list 11139 . 11170) (symbol 11122 . 11139) (semantic-list 9328 . 9368) (symbol 9311 . 9328) (semantic-list 8209 . 8235) (symbol 8192 . 8209) (semantic-list 6477 . 6510) (symbol 6460 . 6477) (semantic-list 5363 . 5390) (symbol 5346 . 5363) (semantic-list 4243 . 4274) (symbol 4226 . 4243) (semantic-list 3133 . 3159) (symbol 3116 . 3133) (semantic-list 2043 . 2061) (symbol 2026 . 2043))
+    :lexical-table 
+        '(("DEBUG_LOCAL_ENABLE")
+          )
+
+    )
+   (semanticdb-table "dvb_engine_base.h"
+    :file "dvb_engine_base.h"
+    :fsize 11272
+    :lastmodtime '(21907 59823 27671 442000)
+    )
+   (semanticdb-table "dvb_state_control_base_ifc.h"
+    :file "dvb_state_control_base_ifc.h"
+    :fsize 16397
+    :lastmodtime '(21907 59823 39671 377000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!TCR!src!pace!middleware!ble2!framework!ble!dvb!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

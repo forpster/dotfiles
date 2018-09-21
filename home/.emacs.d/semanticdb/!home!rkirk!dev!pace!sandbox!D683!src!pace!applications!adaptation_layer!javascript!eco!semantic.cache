@@ -1,0 +1,1263 @@
+;; Object eco/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "eco/"
+  :tables (list 
+   (semanticdb-table "stb_eco_latensCoreEpg.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("tlogger.h" include nil nil [280 300])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [301 325])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [326 379])
+            ("QObjectSharedDataPointer" include (:system-flag t) nil [381 416])
+            ("stb_eco_latensCoreEpg.h" include nil nil [418 452])
+            ("stb_eco_latensCoreSettings.h" include nil nil [453 492])
+            ("staticeventlistobject/staticeventlistobject.h" include nil nil [493 549])
+            ("staticeventlistobject/fasteventlist.h" include nil nil [550 598])
+            ("servicelistmodel/iservicelistmodel.h" include nil nil [599 646])
+            ("eventListModel.h" include nil nil [647 674])
+            ("avobject/iavobject.h" include nil nil [676 707])
+            ("QXmlStreamWriter" include (:system-flag t) nil [842 869])
+            ("QtCore/QXmlStreamReader" include (:system-flag t) nil [870 904])
+            ("QString" include (:system-flag t) nil [905 923])
+            ("QStringList" include (:system-flag t) nil [924 946])
+            ("QVariantMap" include (:system-flag t) nil [947 969])
+            ("QVariantList" include (:system-flag t) nil [970 993])
+            ("configReader.h" include nil nil [1029 1054])
+            ("configWriter.h" include nil nil [1055 1080])
+            ("configPublicDefs.h" include nil nil [1081 1110])
+            ("liveServiceRecordEvent.h" include nil nil [1112 1147])
+            ("liveEventRemindEvent.h" include nil nil [1148 1181])
+            ("currenteventlistobject/currenteventlistobject.h" include nil nil [1183 1241])
+            ("playermodel/iplayermodel.h" include nil nil [1242 1279])
+            ("favlistsmodel/FavListFilter.h" include nil nil [1281 1321])
+            ("INVALID_CHANNEL" variable (:constant-flag t) nil [1331 1346])
+            ("MAX_EVENTS_PER_SEARCH" variable (:constant-flag t) nil [1367 1388])
+            ("THROTTLE_TIME" variable (:constant-flag t) nil [1404 1417])
+            ("EITPF_THROTTLE_TIME" variable (:constant-flag t) nil [1446 1465])
+            ("BLOCK_REASON_NONE" variable (:type "int") nil [1489 1518])
+            ("BLOCK_REASON_RATING" variable (:type "int") nil [1519 1550])
+            ("BLOCK_REASON_CHANNEL" variable (:type "int") nil [1551 1583])
+            ("IS_STATICEVENTLIST_LATEST" variable (:constant-flag t) nil [1802 1827])
+            ("LatensCoreEpg" function
+               (:constructor-flag t
+                :parent "LatensCoreEpg"
+                :arguments 
+                  ( ("constructorParameters" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ConstructorParameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1869 1920]))                  
+                :type ("LatensCoreEpg" type (:type "class") nil nil))
+                nil [1840 6946])
+            ("LatensCoreEpg" function
+               (:destructor-flag t
+                :parent "LatensCoreEpg"
+                :type "void")
+                nil [6948 7308])
+            ("writeXMLRecordAttributes" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("MyXmlStreamer" variable
+                       (:reference 1
+                        :type ("QXmlStreamWriter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20865 20897])
+                    ("event" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("StaticEventListObject::Event" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20936 20978])
+                    ("autoTune" variable (:type "int") (reparse-symbol arg-sub-list) [21017 21030])
+                    ("skipped" variable (:type "bool") (reparse-symbol arg-sub-list) [21069 21082])
+                    ("seriesLink" variable (:type "bool") (reparse-symbol arg-sub-list) [21121 21137])
+                    ("m_userRecordingsEventIds" variable
+                       (:reference 1
+                        :type ("QMap" type
+                             (:template-specifier 
+                                ( ("qint64" type nil nil nil)
+                                  ("quint32" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21176 21226])
+                    ("m_remindersEventIds" variable
+                       (:reference 1
+                        :type ("QMap" type
+                             (:template-specifier 
+                                ( ("qint64" type nil nil nil)
+                                  ("quint32" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21265 21310])
+                    ("avObject" variable
+                       (:pointer 1
+                        :type ("IAVObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21349 21369]))                  
+                :type "void")
+                nil [20827 24517])
+            ("writeXMLRecord" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("MyXmlStreamer" variable
+                       (:reference 1
+                        :type ("QXmlStreamWriter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24970 25002])
+                    ("event" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("StaticEventListObject::Event" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25031 25073])
+                    ("autoTune" variable (:type "int") (reparse-symbol arg-sub-list) [25102 25115])
+                    ("skipped" variable (:type "bool") (reparse-symbol arg-sub-list) [25144 25157])
+                    ("seriesLink" variable (:type "bool") (reparse-symbol arg-sub-list) [25186 25202])
+                    ("m_userRecordingsEventIds" variable
+                       (:reference 1
+                        :type ("QMap" type
+                             (:template-specifier 
+                                ( ("qint64" type nil nil nil)
+                                  ("quint32" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25232 25282])
+                    ("m_remindersEventIds" variable
+                       (:reference 1
+                        :type ("QMap" type
+                             (:template-specifier 
+                                ( ("qint64" type nil nil nil)
+                                  ("quint32" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25311 25356])
+                    ("avObject" variable
+                       (:pointer 1
+                        :type ("IAVObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25385 25405]))                  
+                :type "void")
+                nil [24942 25652])
+            ("writeXMLRecordAttributesCurrent" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("MyXmlStreamer" variable
+                       (:reference 1
+                        :type ("QXmlStreamWriter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25699 25731])
+                    ("event" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CurrentEventListObject::Event" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25770 25813])
+                    ("m_remindersEventIds" variable
+                       (:reference 1
+                        :type ("QMap" type
+                             (:template-specifier 
+                                ( ("qint64" type nil nil nil)
+                                  ("quint32" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25852 25897]))                  
+                :type "void")
+                nil [25654 26823])
+            ("writeXMLRecordExtendedCurrent" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("MyXmlStreamer" variable
+                       (:reference 1
+                        :type ("QXmlStreamWriter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26868 26900])
+                    ("event" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CurrentEventListObject::Event" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26929 26972])
+                    ("m_remindersEventIds" variable
+                       (:reference 1
+                        :type ("QMap" type
+                             (:template-specifier 
+                                ( ("qint64" type nil nil nil)
+                                  ("quint32" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27001 27046])
+                    ("serviceListModel" variable
+                       (:pointer 1
+                        :type ("IServiceListModel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27075 27111]))                  
+                :type "void")
+                nil [26825 29796])
+            ("writeXMLRecordExtended" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("MyXmlStreamer" variable
+                       (:reference 1
+                        :type ("QXmlStreamWriter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29834 29866])
+                    ("event" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("StaticEventListObject::Event" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29895 29937])
+                    ("description" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29966 29986])
+                    ("autoTune" variable (:type "int") (reparse-symbol arg-sub-list) [30015 30028])
+                    ("skipped" variable (:type "bool") (reparse-symbol arg-sub-list) [30057 30070])
+                    ("seriesLinked" variable (:type "bool") (reparse-symbol arg-sub-list) [30099 30117])
+                    ("m_userRecordingsEventIds" variable
+                       (:reference 1
+                        :type ("QMap" type
+                             (:template-specifier 
+                                ( ("qint64" type nil nil nil)
+                                  ("quint32" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30146 30196])
+                    ("m_remindersEventIds" variable
+                       (:reference 1
+                        :type ("QMap" type
+                             (:template-specifier 
+                                ( ("qint64" type nil nil nil)
+                                  ("quint32" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30225 30270])
+                    ("avObject" variable
+                       (:pointer 1
+                        :type ("IAVObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30299 30319])
+                    ("serviceListModel" variable
+                       (:pointer 1
+                        :type ("IServiceListModel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30348 30384]))                  
+                :type "void")
+                nil [29798 35774])
+            ("configureEventXml" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("MyXmlStreamer" variable
+                       (:reference 1
+                        :type ("QXmlStreamWriter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36878 36912]))                  
+                :type "void")
+                nil [36847 37465])
+            ("configureSearchXml" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("MyXmlStreamer" variable
+                       (:reference 1
+                        :type ("QXmlStreamWriter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37721 37755]))                  
+                :type "void")
+                nil [37689 38247])
+            ("getScheduledEventData" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("eventid" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38697 38712])
+                    ("skip" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [38713 38724])
+                    ("seriesLink" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [38725 38742]))                  
+                :type "bool")
+                nil [38655 38823])
+            ("addEpgQuery" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("name" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38856 38869])
+                    ("options" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38870 38890]))                  
+                :type "int")
+                nil [38825 39123])
+            ("getEpgData" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("options" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39163 39183]))                  
+                :type ("QVariantMap" type (:type "class") nil nil))
+                nil [39125 39350])
+            ("getEpgPrograms" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("options" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39394 39414]))                  
+                :type ("QVariantMap" type (:type "class") nil nil))
+                nil [39352 39576])
+            ("getCurrentEpgDataNowNext" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("options" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39630 39650]))                  
+                :type ("QVariantMap" type (:type "class") nil nil))
+                nil [39578 39843])
+            ("getEpgFields" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [39885 39890]))                  
+                :type ("QStringList" type (:type "class") nil nil))
+                nil [39845 40036])
+            ("getEpgData" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("channelId" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41276 41294])
+                    ("startTime" variable (:type "int") (reparse-symbol arg-sub-list) [41295 41309])
+                    ("endTime" variable (:type "int") (reparse-symbol arg-sub-list) [41310 41323]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [41241 42360])
+            ("getEpgDataNowNext" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("channelId" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43584 43602])
+                    ("startTime" variable (:type "int") (reparse-symbol arg-sub-list) [43603 43618]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [43542 44651])
+            ("getCurrentEpgDataNowNext" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("channelId" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44714 44733]))                  
+                :type ("QVariantList" type (:type "class") nil nil))
+                nil [44660 46529])
+            ("getExtendedEpgData" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("channelId" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48197 48215])
+                    ("startTime" variable (:type "int") (reparse-symbol arg-sub-list) [48216 48231]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [48154 49753])
+            ("getEpgCategories" function
+               (:parent "LatensCoreEpg"
+                :type ("QVariantList" type (:type "class") nil nil))
+                nil [49762 50495])
+            ("getEpgGenres" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [50538 50543]))                  
+                :type ("QVariantList" type (:type "class") nil nil))
+                nil [50497 51479])
+            ("getEpgSubGenres" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("genreId" variable (:type "int") (reparse-symbol arg-sub-list) [51525 51537]))                  
+                :type ("QVariantList" type (:type "class") nil nil))
+                nil [51481 51692])
+            ("getEpgSubCategories" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("category" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51883 51900]))                  
+                :type ("QStringList" type (:type "class") nil nil))
+                nil [51836 52102])
+            ("getRadioCategories" function
+               (:parent "LatensCoreEpg"
+                :type ("QStringList" type (:type "class") nil nil))
+                nil [52292 52461])
+            ("getEpgProgramsByCategory" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("categoryId" variable (:type "int") (reparse-symbol arg-sub-list) [52511 52526]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [52462 52694])
+            ("isProgramBlocked" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("channelId" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52734 52752])
+                    ("startTime" variable (:type "int") (reparse-symbol arg-sub-list) [52753 52768]))                  
+                :type "bool")
+                nil [52696 53008])
+            ("isRatingBlocked" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("ratingQ" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53047 53063])
+                    ("subratingQ" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53064 53084]))                  
+                :type "bool")
+                nil [53010 53274])
+            ("getEpgRatings" function
+               (:parent "LatensCoreEpg"
+                :type ("QString" type (:type "class") nil nil))
+                nil [54568 55769])
+            ("getEpgSubRatings" function
+               (:parent "LatensCoreEpg"
+                :type ("QString" type (:type "class") nil nil))
+                nil [55771 56456])
+            ("getStats" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("options" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56502 56522]))                  
+                :type ("QVariantMap" type (:type "class") nil nil))
+                nil [56466 56675])
+            ("getEpgDataAvailable" function
+               (:parent "LatensCoreEpg"
+                :type "int")
+                nil [56705 56802])
+            ("getEpgDataChanged" function
+               (:parent "LatensCoreEpg"
+                :type "int")
+                nil [56804 56897])
+            ("getProgrammeChanged" function
+               (:parent "LatensCoreEpg"
+                :type "int")
+                nil [56899 56993])
+            ("getEitPfDataChanged" function
+               (:parent "LatensCoreEpg"
+                :type "int")
+                nil [56995 57093])
+            ("getProgrammedata" function
+               (:parent "LatensCoreEpg"
+                :type ("QVariantMap" type (:type "class") nil nil))
+                nil [57095 57171])
+            ("getProgrammedataPip" function
+               (:parent "LatensCoreEpg"
+                :type ("QVariantMap" type (:type "class") nil nil))
+                nil [57173 57257])
+            ("cacheUpdate" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("type" variable (:type ("CACHE_UPDATE_TYPE_e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57427 57452])
+                    ("action" variable (:type ("CACHE_UPDATE_ACTION_e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57453 57482])
+                    ("" variable (:type ("QList" type
+                         (:template-specifier 
+                            ( ("ContentID" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [57483 57501]))                  
+                :type "void")
+                nil [57395 62657])
+            ("searchEpgPrograms" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("searchXml" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66297 66316]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [66255 69857])
+            ("searchEpgPrograms" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("searchObj" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69924 69946]))                  
+                :type ("QVariantMap" type (:type "class") nil nil))
+                nil [69879 70139])
+            ("releaseSearchRef" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("searchReference" variable (:type ("qlonglong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70178 70204]))                  
+                :type "int")
+                nil [70142 70321])
+            ("cacheUpdateInUiThread" function
+               (:parent "LatensCoreEpg"
+                :type "void")
+                nil [70323 72057])
+            ("doDataAvailable" function
+               (:parent "LatensCoreEpg"
+                :type "void")
+                nil [72059 72913])
+            ("notifyEitpfDataAvailable" function
+               (:parent "LatensCoreEpg"
+                :type "void")
+                nil [72916 73084])
+            ("checkTimerMain" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [73122 73127]))                  
+                :type "void")
+                nil [73087 73182])
+            ("checkTimerPip" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [73217 73222]))                  
+                :type "void")
+                nil [73183 73277])
+            ("channelChangeSlot" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("videoIndex" variable (:type "int") (reparse-symbol arg-sub-list) [73367 73382]))                  
+                :type "void")
+                nil [73329 74220])
+            ("playbackSessionChanged" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("playbackmode" variable (:type "int") (reparse-symbol arg-sub-list) [74268 74285])
+                    ("videoIndex" variable (:type "int") (reparse-symbol arg-sub-list) [74286 74301]))                  
+                :type "void")
+                nil [74223 77333])
+            ("notifyPlaybackSpeedChanged" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("newPlaybackSpeed" variable (:type "double") (reparse-symbol arg-sub-list) [77384 77408])
+                    ("videoIndex" variable (:type "int") (reparse-symbol arg-sub-list) [77409 77425]))                  
+                :type "void")
+                nil [77335 77853])
+            ("checkForEventChange" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("videoIndex" variable (:type "int") (reparse-symbol arg-sub-list) [77995 78010]))                  
+                :type "void")
+                nil [77955 99983])
+            ("eitPfForceWaitTimeout" function
+               (:parent "LatensCoreEpg"
+                :type "void")
+                nil [99985 101398])
+            ("checkForEventChangeOnLive" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("videoIndex" variable (:type "int") (reparse-symbol arg-sub-list) [101446 101461])
+                    ("type" variable (:type ("CONTENT_TYPE_e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101462 101482])
+                    ("skipUpdateIfNoEvents" variable (:type "bool") (reparse-symbol arg-sub-list) [101483 101509]))                  
+                :type "bool")
+                nil [101400 114514])
+            ("checkForRatingChange" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("videoIndex" variable (:type "int") (reparse-symbol arg-sub-list) [114557 114572])
+                    ("rating" variable (:type "int") (reparse-symbol arg-sub-list) [114573 114584]))                  
+                :type "bool")
+                nil [114516 115381])
+            ("evaluateRatingAboveThreshold" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("videoIndex" variable (:type "int") (reparse-symbol arg-sub-list) [115432 115447]))                  
+                :type "bool")
+                nil [115383 117581])
+            ("evaluateRatingBelowThreshold" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("videoIndex" variable (:type "int") (reparse-symbol arg-sub-list) [117632 117647]))                  
+                :type "bool")
+                nil [117583 119132])
+            ("applyMute" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("videoIndex" variable (:type "int") (reparse-symbol arg-sub-list) [119164 119179])
+                    ("mute" variable (:type "bool") (reparse-symbol arg-sub-list) [119180 119191]))                  
+                :type "void")
+                nil [119134 119303])
+            ("getCurrentPosition" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("videoIndex" variable (:type "int") (reparse-symbol arg-sub-list) [119347 119363]))                  
+                :type "int")
+                nil [119308 119651])
+            ("buildEventChangedJSON" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("eventId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [119696 119711])
+                    ("channelId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [119712 119729])
+                    ("eventName" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [119730 119748])
+                    ("description" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [119749 119769])
+                    ("seriesName" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [119801 119820])
+                    ("startTime" variable (:type "int") (reparse-symbol arg-sub-list) [119821 119835])
+                    ("endTime" variable (:type "int") (reparse-symbol arg-sub-list) [119836 119848])
+                    ("ratingId" variable (:type "int") (reparse-symbol arg-sub-list) [119849 119862])
+                    ("ratingName" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [119863 119882])
+                    ("subRatings" variable (:type ("QList" type
+                         (:template-specifier 
+                            ( ("QPair" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [119914 119954])
+                    ("audioLangs" variable (:type ("QStringList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [119986 120009])
+                    ("subLangs" variable (:type ("QStringList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [120010 120031])
+                    ("ccLangs" variable (:type ("QStringList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [120032 120052])
+                    ("isProgrammeBlocked" variable (:type "bool") (reparse-symbol arg-sub-list) [120053 120077])
+                    ("videoIndex" variable (:type "int") (reparse-symbol arg-sub-list) [120078 120094]))                  
+                :type "void")
+                nil [119653 122405])
+            ("debugFireCallbacks" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("callbackNumber" variable (:type "int") (reparse-symbol arg-sub-list) [122447 122466])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [122467 122476])
+                    ("dataStr" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [122477 122494]))                  
+                :type "void")
+                nil [122407 122573])
+            ("getEventInformation" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("eventId" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [122617 122632])
+                    ("startTime" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [122633 122648])
+                    ("endTime" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [122649 122662])
+                    ("seriesId" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [122663 122681])
+                    ("serviceId" variable
+                       (:reference 1
+                        :type ("qint64" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [122682 122700])
+                    ("eventName" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [122701 122720])
+                    ("seasonId" variable
+                       (:reference 1
+                        :type ("quint32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [122721 122740]))                  
+                :type "bool")
+                nil [122576 123534])
+            ("getSetting_MASTERPIN" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("ret" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [123793 123806]))                  
+                :type "void")
+                nil [123752 123992])
+            ("setSetting_MASTERPIN" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("val" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [124035 124047]))                  
+                :type "void")
+                nil [123994 124116])
+            ("getSetting_ADULTPIN" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("ret" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [124158 124171]))                  
+                :type "void")
+                nil [124118 124356])
+            ("setSetting_ADULTPIN" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("val" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [124398 124410]))                  
+                :type "void")
+                nil [124358 124478])
+            ("getSetting_PC_RATING" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("ret" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [124521 124534]))                  
+                :type "void")
+                nil [124480 124655])
+            ("setSetting_PC_RATING" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("val" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [124698 124710]))                  
+                :type "void")
+                nil [124657 124778])
+            ("getSetting_PC_SUBRATINGS" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("ret" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [124825 124838]))                  
+                :type "void")
+                nil [124780 124886])
+            ("setSetting_PC_SUBRATINGS" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("val" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [124933 124945]))                  
+                :type "void")
+                nil [124888 124993])
+            ("getSetting_PC_BLOCKED_SERVICES" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("ret" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [125046 125059]))                  
+                :type "void")
+                nil [124995 125107])
+            ("setSetting_PC_BLOCKED_SERVICES" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("val" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [125160 125172]))                  
+                :type "void")
+                nil [125109 125220])
+            ("masterPinSettingsUpdated" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("val" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [125267 125279]))                  
+                :type "void")
+                nil [125222 125602])
+            ("parentalPincodeSettingsUpdated" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("val" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [125655 125667]))                  
+                :type "void")
+                nil [125604 125997])
+            ("parentalRatingSettingsUpdated" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("val" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [126049 126061]))                  
+                :type "void")
+                nil [125999 126392])
+            ("getInternalIdFromCobaltEventId" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("eventId" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [126622 126639]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [126567 127026])
+            ("getserviceId" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("channelID" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [127264 127284]))                  
+                :type ("qint64" type (:type "class") nil nil))
+                nil [127228 127544])
+            ("pinEntry" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("videoIndex" variable (:type "int") (reparse-symbol arg-sub-list) [129830 129845]))                  
+                :type "void")
+                nil [129801 130503])
+            ("addFavouriteEvent" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("uniqueContentId" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [130543 130567]))                  
+                :type "int")
+                nil [130506 130763])
+            ("removeFavouriteEvent" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("uniqueContentId" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [130805 130829]))                  
+                :type "int")
+                nil [130765 131027])
+            ("getFavouriteEvents" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("options" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [131076 131096]))                  
+                :type ("QVariantList" type (:type "class") nil nil))
+                nil [131029 131557])
+            ("addFavouriteSeries" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("seriesId" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [131597 131614]))                  
+                :type "int")
+                nil [131559 131804])
+            ("removeFavouriteSeries" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("seriesId" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [131847 131864]))                  
+                :type "int")
+                nil [131806 132056])
+            ("getFavouriteSeries" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("options" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [132105 132125]))                  
+                :type ("QVariantList" type (:type "class") nil nil))
+                nil [132058 132582])
+            ("getFavourites" function
+               (:parent "LatensCoreEpg"
+                :arguments 
+                  ( ("options" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [132626 132646]))                  
+                :type ("QVariantList" type (:type "class") nil nil))
+                nil [132584 133849]))          
+    :file "stb_eco_latensCoreEpg.cpp"
+    :pointmax 133851
+    :fsize 133850
+    :lastmodtime '(21750 63521 496968 878000)
+    :unmatched-syntax '((string 354 . 376))
+    :lexical-table 
+        '(("INVALID_CHANNEL" . ((punctuation "-" 1356 . 1357) (number "1" 1357 . 1358)))
+          ("IS_STATICEVENTLIST_LATEST" . ((semantic-list "(1)" 1828 . 1831)))
+          ("EITPF_THROTTLE_TIME" . ((semantic-list "(10000)" 1466 . 1473)))
+          ("THROTTLE_TIME" . ((semantic-list "(30)" 1418 . 1422)))
+          ("MAX_EVENTS_PER_SEARCH" . ((number "100" 1392 . 1395)))
+          )
+
+    )
+   (semanticdb-table "stb_eco_latensCoreEpg.h"
+    :file "stb_eco_latensCoreEpg.h"
+    :fsize 19763
+    :lastmodtime '(21750 63521 491968 919000)
+    )
+   (semanticdb-table "stb_eco_latensCoreSettings.h"
+    :file "stb_eco_latensCoreSettings.h"
+    :fsize 22906
+    :lastmodtime '(21750 63521 494968 894000)
+    )
+   (semanticdb-table "stb_eco_latensCoreScheduler.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("tlogger.h" include nil nil [213 233])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [234 258])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [259 315])
+            ("eventListModel.h" include nil nil [317 344])
+            ("stb_eco_latensCoreScheduler.h" include nil nil [345 385])
+            ("stb_eco_latensCoreEpg.h" include nil nil [386 420])
+            ("servicelistmodel/iservicelistmodel.h" include nil nil [421 468])
+            ("stb_eco_latensCoreSettings.h" include nil nil [469 508])
+            ("configPublicDefs.h" include nil nil [509 538])
+            ("configReader.h" include nil nil [539 564])
+            ("configWriter.h" include nil nil [565 590])
+            ("QTime" include (:system-flag t) nil [592 608])
+            ("QList" include (:system-flag t) nil [609 625])
+            ("QDate" include (:system-flag t) nil [626 642])
+            ("QtXml" include nil nil [643 659])
+            ("DEFAULT_SCHEDULE_PRIORITY" variable (:constant-flag t) nil [670 695])
+            ("DEFAULT_SCHEDULE_CUST_DATA" variable (:constant-flag t) nil [715 741])
+            ("DEFAULT_SCHEDULE_GUARD_TIME" variable (:constant-flag t) nil [753 780])
+            ("DEFAULT_MAX_NUMBER_OF_EVENTS_PER_RULE" variable (:constant-flag t) nil [791 828])
+            ("LatensCoreScheduler" function
+               (:constructor-flag t
+                :parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("constructorParameters" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ConstructorParameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [873 924])
+                    ("pEpgObject" variable
+                       (:pointer 1
+                        :type ("LatensCoreEpg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [925 952]))                  
+                :type ("LatensCoreScheduler" type (:type "class") nil nil))
+                nil [832 2997])
+            ("deleteRule" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("ruleId" variable (:type "int") (reparse-symbol arg-sub-list) [3036 3048]))                  
+                :type "int")
+                nil [2999 3523])
+            ("newSeasonAvailableSlot" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("seriesId" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3574 3591])
+                    ("seasonId" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3592 3609]))                  
+                :type "void")
+                nil [3525 3852])
+            ("collectNewSeasonInfo" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("idx" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3909 3921]))                  
+                :type ("QVariantMap" type (:type "class") nil nil))
+                nil [3854 4125])
+            ("eventsScheduledChanged" function
+               (:parent "LatensCoreScheduler"
+                :type "void")
+                nil [4127 4277])
+            ("clashDetected" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("type" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4319 4329]))                  
+                :type "void")
+                nil [4279 5710])
+            ("reminderTriggered" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("xmlstring" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8999 9024])
+                    ("customdata" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9024 9050])
+                    ("eventid" variable (:type ("qulonglong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9050 9069]))                  
+                :type "void")
+                nil [8955 16354])
+            ("recordingTriggered" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("xmlstring" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16401 16426]))                  
+                :type "void")
+                nil [16356 23512])
+            ("LatensCoreScheduler" function
+               (:destructor-flag t
+                :parent "LatensCoreScheduler"
+                :type "void")
+                nil [23514 23583])
+            ("deleteEvent" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("eventIdQ" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23945 23963]))                  
+                :type "int")
+                nil [23907 24566])
+            ("writeScheduledEvents" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("eventList" variable
+                       (:reference 1
+                        :type ("QVariantList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24616 24640])
+                    ("reminderxml" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24640 24660]))                  
+                :type "void")
+                nil [24568 39010])
+            ("getScheduledEvents" function
+               (:parent "LatensCoreScheduler"
+                :type ("QVariantMap" type (:type "class") nil nil))
+                nil [39012 39841])
+            ("addEventRule" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("ruleType" variable (:type "int") (reparse-symbol arg-sub-list) [39945 39958])
+                    ("actionType" variable (:type "int") (reparse-symbol arg-sub-list) [39999 40014])
+                    ("ruleTitleQ" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40055 40074])
+                    ("channelId" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40115 40133])
+                    ("startTime" variable (:type "int") (reparse-symbol arg-sub-list) [40174 40188])
+                    ("endTime" variable (:type "int") (reparse-symbol arg-sub-list) [40229 40241])
+                    ("longValIn" variable (:type "int") (reparse-symbol arg-sub-list) [40282 40296])
+                    ("seriesIdQ" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40337 40355])
+                    ("seasonIdQ" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40396 40415]))                  
+                :type "int")
+                nil [39905 42462])
+            ("isRecorderAvailable" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("object" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42511 42530]))                  
+                :type "int")
+                nil [42465 44218])
+            ("addRule" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("ruleDefinition" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44255 44282]))                  
+                :type "int")
+                nil [44221 60400])
+            ("writeScheduledRulesJSON" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("ruleslist" variable
+                       (:reference 1
+                        :type ("QVariantList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60453 60477])
+                    ("rulexml" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60477 60493]))                  
+                :type "void")
+                nil [60402 75212])
+            ("getRulesJSON" function
+               (:parent "LatensCoreScheduler"
+                :type ("QVariantList" type (:type "class") nil nil))
+                nil [75214 75716])
+            ("getRules" function
+               (:parent "LatensCoreScheduler"
+                :type ("QVariantList" type (:type "class") nil nil))
+                nil [75718 75793])
+            ("writeEventJSON" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("eventDetails" variable
+                       (:reference 1
+                        :type ("QVariantMap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75836 75862])
+                    ("rEventXML" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75862 75887]))                  
+                :type "void")
+                nil [75795 88825])
+            ("getEvent" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("eventIdQ" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88870 88888]))                  
+                :type ("QVariantMap" type (:type "class") nil nil))
+                nil [88827 89515])
+            ("setNumberOfEventsPerDynamicRule" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("numberOfEvents" variable (:type "int") (reparse-symbol arg-sub-list) [89575 89595]))                  
+                :type "int")
+                nil [89517 89804])
+            ("addEventRule" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("ruleAction" variable (:type "int") (reparse-symbol arg-sub-list) [89846 89861])
+                    ("channelId" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89902 89920])
+                    ("eventId" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89961 89977])
+                    ("seriesLink" variable (:type "bool") (reparse-symbol arg-sub-list) [90018 90035]))                  
+                :type "int")
+                nil [89806 94447])
+            ("getEventsForRule" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("ruleId" variable (:type "int") (reparse-symbol arg-sub-list) [94501 94512]))                  
+                :type ("QVariantList" type (:type "class") nil nil))
+                nil [94449 94964])
+            ("getRecordStart" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [94995 95099])
+            ("getRecordStop" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [95101 95202])
+            ("getRecordEnd" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [95204 95307])
+            ("getRecordFailure" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [95309 95417])
+            ("getNotifyStart" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [95419 95523])
+            ("getAutotuneStart" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [95525 95633])
+            ("getAutotuneFailure" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [95635 95747])
+            ("getPrenotify" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [95749 95848])
+            ("getClash" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [95850 95941])
+            ("getSynchFailure" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [95943 96049])
+            ("getRetryExpiry" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [96051 96155])
+            ("getTypeRecord" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [96157 96255])
+            ("getTypeNotify" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [96257 96355])
+            ("getTypeAutotune" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [96357 96459])
+            ("getTypeLivePlay" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [96461 96565])
+            ("getRuleTypeBytime" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [96567 96667])
+            ("getRuleTypeByEvent" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [96669 96773])
+            ("getRuleTypeSeries" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [96775 96875])
+            ("getRuleTypeTimeOnce" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [96877 96979])
+            ("getRuleTypeTimeDaily" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [96981 97089])
+            ("getRuleTypeTimeWeekly" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [97091 97201])
+            ("getRuleTypeTimeWeekday" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [97203 97309])
+            ("getRuleTypeTimeWeekend" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [97311 97417])
+            ("getEventScheduleChanged" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [97419 97536])
+            ("getEventNewSeasonAvailable" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [97538 97662])
+            ("getMultipleEvents" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [97664 97759])
+            ("getXMLString" function
+               (:parent "LatensCoreScheduler"
+                :type ("QString" type (:type "class") nil nil))
+                nil [97761 97838])
+            ("getJSONMap" function
+               (:parent "LatensCoreScheduler"
+                :type ("QVariantMap" type (:type "class") nil nil))
+                nil [97840 98230])
+            ("getClashObject" function
+               (:parent "LatensCoreScheduler"
+                :type ("QVariantMap" type (:type "class") nil nil))
+                nil [98232 98547])
+            ("debugFireCallbacks" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("callbackNumber" variable (:type "int") (reparse-symbol arg-sub-list) [98612 98631])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [98632 98641])
+                    ("dataStr" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [98642 98659]))                  
+                :type "void")
+                nil [98566 98714])
+            ("recordingErrorSlot" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("event" variable (:type ("MEDIA_SINK_EVENT_e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [98761 98786])
+                    ("errorCode" variable (:type ("MEDIA_SINK_ERROR_e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [98787 98816])
+                    ("errorText" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [98817 98835]))                  
+                :type "void")
+                nil [98716 99049])
+            ("getSetting_REMINDER_GUARD_TIME" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("ret" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [99108 99121]))                  
+                :type "void")
+                nil [99051 99369])
+            ("setSetting_REMINDER_GUARD_TIME" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("val" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [99428 99440]))                  
+                :type "void")
+                nil [99371 99732])
+            ("reminderGuardTimeSettingsUpdated" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("val" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [99793 99805]))                  
+                :type "void")
+                nil [99734 100147])
+            ("setEventGuardTime" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("eventId" variable (:type "int") (reparse-symbol arg-sub-list) [100193 100205])
+                    ("leadTime" variable (:type "int") (reparse-symbol arg-sub-list) [100206 100219])
+                    ("lagTime" variable (:type "int") (reparse-symbol arg-sub-list) [100220 100232]))                  
+                :type "int")
+                nil [100149 100455])
+            ("setRuleGuardTime" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("ruleId" variable (:type "int") (reparse-symbol arg-sub-list) [100499 100510])
+                    ("leadTime" variable (:type "int") (reparse-symbol arg-sub-list) [100511 100524])
+                    ("lagTime" variable (:type "int") (reparse-symbol arg-sub-list) [100525 100537]))                  
+                :type "int")
+                nil [100457 100973])
+            ("updateEvent" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("eventId" variable (:type "int") (reparse-symbol arg-sub-list) [101257 101269])
+                    ("eventDefinition" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101270 101298]))                  
+                :type "int")
+                nil [101220 102317])
+            ("updateRule" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [102926 102933])
+                    ("ruleDefinition" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [102934 102961]))                  
+                :type "int")
+                nil [102889 106014])
+            ("getClashPoints" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("ruleId" variable (:type "int") (reparse-symbol arg-sub-list) [106098 106109]))                  
+                :type ("QVariantMap" type (:type "class") nil nil))
+                nil [106049 106331])
+            ("getClashOptions" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("ruleId" variable (:type "int") (reparse-symbol arg-sub-list) [106396 106407])
+                    ("num" variable (:type "int") (reparse-symbol arg-sub-list) [106408 106416]))                  
+                :type ("QVariantList" type (:type "class") nil nil))
+                nil [106345 106927])
+            ("getEventRescheduleOption" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("ruleId" variable (:type "int") (reparse-symbol arg-sub-list) [107000 107011]))                  
+                :type ("QVariantMap" type (:type "class") nil nil))
+                nil [106941 107261])
+            ("encodeClashRuleType" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("v" variable
+                       (:reference 1
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107310 107323]))                  
+                :type "void")
+                nil [107263 107834])
+            ("encodeClashReason" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("v" variable
+                       (:reference 1
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107881 107894]))                  
+                :type "void")
+                nil [107836 108283])
+            ("encodeClashRuleAction" function
+               (:parent "LatensCoreScheduler"
+                :arguments 
+                  ( ("v" variable
+                       (:reference 1
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108334 108347]))                  
+                :type "void")
+                nil [108285 108814])
+            ("getRuleTypeRuleRecording" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [108816 108934])
+            ("getRuleTypeUserRecording" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [108935 109053])
+            ("getRuleTypeReminder" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [109054 109167])
+            ("getRuleTypeLivePlay" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [109168 109281])
+            ("getClashReasonAdd" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [109282 109393])
+            ("getClashReasonCancel" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [109394 109508])
+            ("getClashReasonSchedule" function
+               (:parent "LatensCoreScheduler"
+                :type "int")
+                nil [109509 109625]))          
+    :file "stb_eco_latensCoreScheduler.cpp"
+    :pointmax 109626
+    :fsize 109625
+    :lastmodtime '(21750 63521 497968 870000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DEFAULT_SCHEDULE_GUARD_TIME" . ((number "0" 781 . 782)))
+          ("DEFAULT_MAX_NUMBER_OF_EVENTS_PER_RULE" . ((number "1" 829 . 830)))
+          ("DEFAULT_SCHEDULE_PRIORITY" . ((number "0x80000000" 696 . 706)))
+          ("DEFAULT_SCHEDULE_CUST_DATA" . ((string "\"\"" 742 . 744)))
+          )
+
+    )
+   (semanticdb-table "stb_eco_latensCoreScheduler.h"
+    :file "stb_eco_latensCoreScheduler.h"
+    :fsize 11038
+    :lastmodtime '(21750 63521 482968 991000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D683!src!pace!applications!adaptation_layer!javascript!eco!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

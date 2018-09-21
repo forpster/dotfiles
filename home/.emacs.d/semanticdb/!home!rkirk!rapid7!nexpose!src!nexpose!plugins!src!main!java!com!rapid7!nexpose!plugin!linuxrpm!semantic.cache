@@ -1,0 +1,227 @@
+;; Object linuxrpm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "linuxrpm/"
+  :tables (list 
+   (semanticdb-table "RPMVersionCheckHandler.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.rapid7.nexpose.plugin.linuxrpm" package nil nil [354 397])
+            ("com.rapid7.doc.ContainerBlockElement" include nil nil [399 443])
+            ("com.rapid7.doc.IDocElement" include nil nil [444 478])
+            ("com.rapid7.doc.ListItem" include nil nil [479 510])
+            ("com.rapid7.doc.Paragraph" include nil nil [511 543])
+            ("com.rapid7.doc.Text" include nil nil [544 571])
+            ("com.rapid7.doc.UnorderedList" include nil nil [572 608])
+            ("com.rapid7.fingerprint.IVersion" include nil nil [609 648])
+            ("com.rapid7.net.INetworkNode" include nil nil [649 684])
+            ("com.rapid7.nexpose.plugin.ICheckContext" include nil nil [685 732])
+            ("com.rapid7.nexpose.plugin.ICheckHandler" include nil nil [733 780])
+            ("com.rapid7.nexpose.plugin.ICheckParseContext" include nil nil [781 833])
+            ("com.rapid7.nexpose.plugin.vulnck.ITest" include nil nil [834 880])
+            ("com.rapid7.nexpose.plugin.vulnck.ITestResult" include nil nil [881 933])
+            ("com.rapid7.nexpose.plugin.vulnck.IValueTest" include nil nil [934 985])
+            ("com.rapid7.nexpose.plugin.vulnck.IVulnerabilityCheckConstants" include nil nil [986 1055])
+            ("com.rapid7.nexpose.plugin.vulnck.QueryCollection" include nil nil [1056 1112])
+            ("com.rapid7.nexpose.plugin.vulnck.TestException" include nil nil [1113 1167])
+            ("com.rapid7.nexpose.plugin.vulnck.TestParseException" include nil nil [1168 1227])
+            ("com.rapid7.nexpose.plugin.vulnck.ValueTestException" include nil nil [1228 1287])
+            ("com.rapid7.nexpose.plugin.vulnck.ValueTestParseException" include nil nil [1288 1352])
+            ("com.rapid7.nexpose.plugin.vulnck.VulnStatusUtils" include nil nil [1353 1409])
+            ("com.rapid7.nexpose.plugin.vulnck.VulnerabilityTestResult" include nil nil [1410 1474])
+            ("com.rapid7.util.ObjectUtils" include nil nil [1475 1510])
+            ("com.rapid7.xml.XmlTreeWalker" include nil nil [1511 1547])
+            ("java.util.ArrayList" include nil nil [1548 1575])
+            ("java.util.Arrays" include nil nil [1576 1600])
+            ("java.util.Iterator" include nil nil [1601 1627])
+            ("java.util.List" include nil nil [1628 1650])
+            ("java.util.Map" include nil nil [1651 1672])
+            ("org.w3c.dom.Element" include nil nil [1673 1700])
+            ("RPMVersionCheckHandler" type
+               (:typemodifiers ("public")
+                :interfaces ("ICheckHandler")
+                :members 
+                  ( ("parseTest" function
+                       (:throws ("TestParseException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ctx" variable (:type "ICheckParseContext") (reparse-symbol formal_parameters) [2012 2034])
+                            ("eCheck" variable (:type "Element") (reparse-symbol formal_parameters) [2042 2056]))                          
+                        :type "ITest")
+                        (reparse-symbol class_member_declaration) [1982 3732])
+                    ("handle" function
+                       (:throws ("TestException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ctx" variable (:type "ICheckContext") (reparse-symbol formal_parameters) [3770 3787])
+                            ("test" variable (:type "ITest") (reparse-symbol formal_parameters) [3789 3799]))                          
+                        :type "ITestResult")
+                        (reparse-symbol class_member_declaration) [3737 4235])
+                    ("RPMCheckTestResult" type
+                       (:typemodifiers ("private" "static")
+                        :superclasses "VulnerabilityTestResult"
+                        :members 
+                          ( ("m_proof" variable
+                               (:typemodifiers ("private")
+                                :type "IDocElement")
+                                (reparse-symbol class_member_declaration) [4430 4458])
+                            ("RPMCheckTestResult" function
+                               (:constructor-flag t
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("status" variable (:type "byte") (reparse-symbol formal_parameters) [4699 4710])
+                                    ("node" variable (:type "INetworkNode") (reparse-symbol formal_parameters) [4712 4729])
+                                    ("proof" variable (:type "IDocElement") (reparse-symbol formal_parameters) [4731 4748]))                                  )
+                                (reparse-symbol class_member_declaration) [4663 4821])
+                            ("getUniqueId" function
+                               (:typemodifiers ("public")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [4829 4894])
+                            ("generateProof" function
+                               (:typemodifiers ("public")
+                                :type "IDocElement")
+                                (reparse-symbol class_member_declaration) [4902 4977])
+                            ("hashCode" function
+                               (:typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [5001 5120])
+                            ("equals" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("o" variable (:type "Object") (reparse-symbol formal_parameters) [5166 5174]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [5144 5462]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [4304 5467])
+                    ("RPMCheckTest" type
+                       (:typemodifiers ("private" "static")
+                        :interfaces ("ITest")
+                        :members 
+                          ( ("m_tests" variable
+                               (:dereference 1
+                                :typemodifiers ("private")
+                                :type "RPMTest")
+                                (reparse-symbol class_member_declaration) [5606 5632])
+                            ("RPMCheckTest" function
+                               (:constructor-flag t
+                                :typemodifiers ("private")
+                                :arguments 
+                                  ( ("tests" variable
+                                       (:dereference 1
+                                        :type "RPMTest")
+                                        (reparse-symbol formal_parameters) [5778 5793]))                                  )
+                                (reparse-symbol class_member_declaration) [5757 5836])
+                            ("performTest" function
+                               (:throws ("TestException")
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("ctx" variable (:type "ICheckContext") (reparse-symbol formal_parameters) [6115 6132])
+                                    ("rpmDB" variable (:type "Map") (reparse-symbol formal_parameters) [6134 6143])
+                                    ("proof" variable (:type "IDocElement") (reparse-symbol formal_parameters) [6145 6162]))                                  
+                                :type "byte")
+                                (reparse-symbol class_member_declaration) [6081 7405])
+                            ("getElementName" function
+                               (:typemodifiers ("public")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [7413 7487])
+                            ("getPrereqElements" function
+                               (:typemodifiers ("public")
+                                :type "Iterator")
+                                (reparse-symbol class_member_declaration) [7495 7568])
+                            ("supportsBoolOps" function
+                               (:typemodifiers ("public")
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [7576 7646])
+                            ("isInteractive" function
+                               (:typemodifiers ("public")
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [7654 7723])
+                            ("isCredentialed" function
+                               (:typemodifiers ("public")
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [7731 7800])
+                            ("isThreadSafe" function
+                               (:typemodifiers ("public")
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [7824 7891])
+                            ("addQueries" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("qc" variable (:type "QueryCollection") (reparse-symbol formal_parameters) [7922 7940]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [7899 7992])
+                            ("hashCode" function
+                               (:typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [8016 8100])
+                            ("equals" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("o" variable (:type "Object") (reparse-symbol formal_parameters) [8146 8154]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [8124 8608]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [5512 8613])
+                    ("RPMTest" type
+                       (:typemodifiers ("private" "static")
+                        :members 
+                          ( ("m_rpmName" variable
+                               (:typemodifiers ("private")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [8723 8748])
+                            ("m_verTests" variable
+                               (:dereference 1
+                                :typemodifiers ("private")
+                                :type "IValueTest")
+                                (reparse-symbol class_member_declaration) [8798 8830])
+                            ("RPMTest" function
+                               (:constructor-flag t
+                                :typemodifiers ("private")
+                                :arguments 
+                                  ( ("rpmName" variable (:type "String") (reparse-symbol formal_parameters) [9015 9029])
+                                    ("verTests" variable
+                                       (:dereference 1
+                                        :type "IValueTest")
+                                        (reparse-symbol formal_parameters) [9031 9052]))                                  )
+                                (reparse-symbol class_member_declaration) [8999 9131])
+                            ("getRpmName" function
+                               (:typemodifiers ("public")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [9251 9320])
+                            ("performCheck" function
+                               (:throws ("TestException")
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("ctx" variable (:type "ICheckContext") (reparse-symbol formal_parameters) [9585 9602])
+                                    ("rpmDB" variable (:type "Map") (reparse-symbol formal_parameters) [9604 9613])
+                                    ("res" variable (:type "IDocElement") (reparse-symbol formal_parameters) [9615 9630]))                                  
+                                :type "byte")
+                                (reparse-symbol class_member_declaration) [9550 12161])
+                            ("hashCode" function
+                               (:typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [12185 12396])
+                            ("equals" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("o" variable (:type "Object") (reparse-symbol formal_parameters) [12442 12450]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [12420 12759])
+                            ("toString" function
+                               (:typemodifiers ("public")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [12783 13076]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [8650 13081]))                  
+                :type "class")
+                nil [1913 13083]))          
+    :file "RPMVersionCheckHandler.java"
+    :pointmax 13084
+    :fsize 13083
+    :lastmodtime '(22029 24845 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!rapid7!nexpose!src!nexpose!plugins!src!main!java!com!rapid7!nexpose!plugin!linuxrpm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

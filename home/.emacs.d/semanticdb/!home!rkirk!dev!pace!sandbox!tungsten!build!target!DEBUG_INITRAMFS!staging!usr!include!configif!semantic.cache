@@ -1,0 +1,180 @@
+;; Object configif/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "configif/"
+  :tables (list 
+   (semanticdb-table "configWriter.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("CONFIG_WRITER_H" variable (:constant-flag t) nil [33 48])
+            ("pthread.h" include nil nil [50 70])
+            ("configCommon.h" include nil nil [72 97])
+            ("configWriter" type
+               (:superclasses 
+                  ( ("configCommon" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("protected" label nil (reparse-symbol classsubparts) [143 153])
+                    ("writeMutex" variable (:type ("pthread_mutex_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [159 186])
+                    ("configWriter" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("filename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [206 227]))                          
+                        :type ("configWriter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [192 295])
+                    ("addFormattedChild" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("node" variable (:type ("xmlNodePtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [332 348])
+                            ("child" variable (:type ("xmlNodePtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [385 402])
+                            ("level" variable (:type "int") (reparse-symbol arg-sub-list) [438 449])
+                            ("isLeaf" variable (:type "bool") (reparse-symbol arg-sub-list) [488 501])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [502 508]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [301 509])
+                    ("public" label nil (reparse-symbol classsubparts) [510 517])
+                    ("instance" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [553 581]))                          
+                        :type ("configWriter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [523 582])
+                    ("configWriter" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [592 634])
+                    ("start" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [639 653])
+                    ("stop" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [658 671])
+                    ("createNewConfig" function
+                       (:prototype-flag t
+                        :type ("xmlNodePtr" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [677 707])
+                    ("writeVariable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("module" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [770 789])
+                            ("varname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [815 835])
+                            ("type" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [861 878])
+                            ("value" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [903 921]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [750 922])
+                    ("writeVariable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("module" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [948 967])
+                            ("varname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [993 1013])
+                            ("value" variable (:type "long long") (reparse-symbol arg-sub-list) [1038 1054]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [928 1055])
+                    ("writeVariable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("module" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1081 1100])
+                            ("varname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1126 1146])
+                            ("value" variable (:type "int") (reparse-symbol arg-sub-list) [1171 1181]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1061 1182])
+                    ("writeVariable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("module" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1208 1227])
+                            ("varname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1253 1273])
+                            ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [1298 1309]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1188 1310])
+                    ("writeVariable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("module" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1336 1355])
+                            ("varname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1381 1401])
+                            ("text" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1426 1443]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1316 1444]))                  
+                :type "class")
+                nil [99 1448]))          
+    :file "configWriter.h"
+    :pointmax 1457
+    :fsize 1456
+    :lastmodtime '(21338 11812 0 0)
+    :unmatched-syntax '((punctuation 500 . 501) (number 450 . 451) (punctuation 448 . 449))
+    :lexical-table 
+        '(("CONFIG_WRITER_H")
+          )
+
+    )
+   (semanticdb-table "configCommon.h"
+    :file "configCommon.h"
+    :fsize 1097
+    :lastmodtime '(21338 11812 0 0)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!build!target!DEBUG_INITRAMFS!staging!usr!include!configif!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

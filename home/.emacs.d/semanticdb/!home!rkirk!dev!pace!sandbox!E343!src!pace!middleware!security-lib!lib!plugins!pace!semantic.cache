@@ -1,0 +1,234 @@
+;; Object pace/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pace/"
+  :tables (list 
+   (semanticdb-table "keyinitialisation.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("climits" include (:system-flag t) nil [1 19])
+            ("string" include (:system-flag t) nil [20 37])
+            ("fstream" include (:system-flag t) nil [38 56])
+            ("cstdio" include (:system-flag t) nil [57 74])
+            ("cstring" include (:system-flag t) nil [75 93])
+            ("vector" include (:system-flag t) nil [94 111])
+            ("set" include (:system-flag t) nil [112 126])
+            ("cassert" include (:system-flag t) nil [127 145])
+            ("memory" include (:system-flag t) nil [146 163])
+            ("ostream" include (:system-flag t) nil [164 182])
+            ("stdint.h" include (:system-flag t) nil [183 202])
+            ("sys/stat.h" include (:system-flag t) nil [203 224])
+            ("sys/prctl.h" include (:system-flag t) nil [225 247])
+            ("openssl/crypto.h" include (:system-flag t) nil [248 275])
+            ("keyinitialisation.h" include nil nil [277 307])
+            ("paceinitialiser.h" include nil nil [308 336])
+            ("security.h" include nil nil [337 358])
+            ("keymaterialcache.h" include nil nil [359 388])
+            ("procinsmonitor.h" include nil nil [389 416])
+            ("initialisationprovider.h" include nil nil [417 452])
+            ("arraystreambuf.h" include nil nil [453 480])
+            ("kpkkeyprovider.h" include nil nil [481 508])
+            ("tlogger.h" include nil nil [510 530])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [531 555])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [556 603])
+            ("PRIORITY" variable (:constant-flag t) nil [726 734])
+            ("PROCIN_SIZE" variable (:constant-flag t) nil [788 799])
+            ("PROCIN1_TAG" variable (:constant-flag t) nil [811 822])
+            ("PROCIN2_TAG" variable (:constant-flag t) nil [838 849])
+            ("PROCIN3_TAG" variable (:constant-flag t) nil [865 876])
+            ("PROCIN4_TAG" variable (:constant-flag t) nil [892 903])
+            ("PROCIN5_TAG" variable (:constant-flag t) nil [919 930])
+            ("PROCIN6_TAG" variable (:constant-flag t) nil [946 957])
+            ("PROCIN7_TAG" variable (:constant-flag t) nil [973 984])
+            ("PROCIN8_TAG" variable (:constant-flag t) nil [1000 1011])
+            ("PROCIN9_TAG" variable (:constant-flag t) nil [1027 1038])
+            ("PROCIN10_TAG" variable (:constant-flag t) nil [1054 1066])
+            ("PROCIN11_TAG" variable (:constant-flag t) nil [1082 1094])
+            ("PROCIN12_TAG" variable (:constant-flag t) nil [1110 1122])
+            ("CLEAR_KEY_SIZE" variable (:constant-flag t) nil [1174 1188])
+            ("CLEAROK3_TAG" variable (:constant-flag t) nil [1200 1212])
+            ("CLEAROK4_TAG" variable (:constant-flag t) nil [1228 1240])
+            ("CLEAROK5_TAG" variable (:constant-flag t) nil [1256 1268])
+            ("CLEAROK6_TAG" variable (:constant-flag t) nil [1284 1296])
+            ("CLEAROK7_TAG" variable (:constant-flag t) nil [1312 1324])
+            ("CLEAROK8_TAG" variable (:constant-flag t) nil [1340 1352])
+            ("CLEAROK9_TAG" variable (:constant-flag t) nil [1368 1380])
+            ("CLEAROK10_TAG" variable (:constant-flag t) nil [1396 1409])
+            ("CLEAROK11_TAG" variable (:constant-flag t) nil [1425 1438])
+            ("CLEAROK12_TAG" variable (:constant-flag t) nil [1454 1467])
+            ("KPK_OK1" variable (:constant-flag t) nil [1520 1527])
+            ("KPK_OK2" variable (:constant-flag t) nil [1543 1550])
+            ("CUSKEY_INIT_TAG" variable (:constant-flag t) nil [1566 1581])
+            ("CUSKEY_KEYBUNDLE_KEY4_PROCIN" variable (:constant-flag t) nil [1597 1625])
+            ("CUSKEY_KEYBUNDLE_KEY4_PROCIN_SIZE" variable (:constant-flag t) nil [1641 1674])
+            ("fileMonitor" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2079 2091]))                  
+                :type "void")
+                nil [2054 2092])
+            ("KeyInitialisation::m_registerInstance" variable (:type ("KeyInitialisation" type (:type "class") nil nil)) nil [2161 2217])
+            ("KeyInitialisation" function
+               (:constructor-flag t
+                :parent "KeyInitialisation"
+                :type ("KeyInitialisation" type (:type "class") nil nil))
+                nil [2219 2374])
+            ("KeyInitialisation" function
+               (:destructor-flag t
+                :parent "KeyInitialisation"
+                :type "void")
+                nil [2376 2501])
+            ("initialise" function
+               (:parent "KeyInitialisation"
+                :type "bool")
+                nil [2631 3708])
+            ("deinitialise" function
+               (:parent "KeyInitialisation"
+                :type "void")
+                nil [3782 4948])
+            ("setInitialKeyMaterial" function
+               (:parent "KeyInitialisation"
+                :type "bool")
+                nil [5221 8645])
+            ("setProtectedProcinValues" function
+               (:parent "KeyInitialisation"
+                :type "bool")
+                nil [8813 14996])
+            ("startMonitoringThread" function
+               (:parent "KeyInitialisation"
+                :type "bool")
+                nil [15219 16000])
+            ("readProcinValues" function
+               (:parent "KeyInitialisation"
+                :arguments 
+                  ( ("parser" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TlvParser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16344 16368])
+                    ("tags" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("TagKeyMapping" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16369 16408])
+                    ("procinContainer" variable
+                       (:reference 1
+                        :type ("KeyMaterialContainer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16409 16447]))                  
+                :type "bool")
+                nil [16303 17828])
+            ("readKpkValues" function
+               (:parent "KeyInitialisation"
+                :arguments 
+                  ( ("parser" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TlvParser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18241 18265])
+                    ("tags" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("TagKeyMapping" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18266 18305])
+                    ("container" variable
+                       (:reference 1
+                        :type ("KeyMaterialContainer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18306 18338]))                  
+                :type "bool")
+                nil [18203 22590])
+            ("fileMonitor" function
+               (:pointer 1
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22990 23002]))                  
+                :type "void")
+                nil [22972 23383]))          
+    :file "keyinitialisation.cpp"
+    :pointmax 23310
+    :fsize 23383
+    :lastmodtime '(21954 2061 378837 415000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PROCIN2_TAG" . ((number "0x0002" 850 . 856)))
+          ("PROCIN12_TAG" . ((number "0x000C" 1123 . 1129)))
+          ("CLEAROK8_TAG" . ((number "0x0308" 1353 . 1359)))
+          ("CLEAROK4_TAG" . ((number "0x0304" 1241 . 1247)))
+          ("PROCIN7_TAG" . ((number "0x0007" 985 . 991)))
+          ("CUSKEY_KEYBUNDLE_KEY4_PROCIN_SIZE" . ((number "16" 1675 . 1677)))
+          ("PROCIN3_TAG" . ((number "0x0003" 877 . 883)))
+          ("CLEAROK9_TAG" . ((number "0x0309" 1381 . 1387)))
+          ("CLEAR_KEY_SIZE" . ((number "16" 1189 . 1191)))
+          ("CLEAROK5_TAG" . ((number "0x0305" 1269 . 1275)))
+          ("PROCIN8_TAG" . ((number "0x0008" 1012 . 1018)))
+          ("CLEAROK10_TAG" . ((number "0x030A" 1410 . 1416)))
+          ("PROCIN_SIZE" . ((number "16" 800 . 802)))
+          ("PROCIN4_TAG" . ((number "0x0004" 904 . 910)))
+          ("PROCIN10_TAG" . ((number "0x000A" 1067 . 1073)))
+          ("CLEAROK6_TAG" . ((number "0x0306" 1297 . 1303)))
+          ("KPK_OK1" . ((number "0x0003" 1528 . 1534)))
+          ("CUSKEY_INIT_TAG" . ((number "0x1001" 1582 . 1588)))
+          ("PRIORITY" . ((symbol "INT_MIN" 735 . 742)))
+          ("PROCIN9_TAG" . ((number "0x0009" 1039 . 1045)))
+          ("CLEAROK11_TAG" . ((number "0x030B" 1439 . 1445)))
+          ("KPK_OK2" . ((number "0x0004" 1551 . 1557)))
+          ("PROCIN5_TAG" . ((number "0x0005" 931 . 937)))
+          ("PROCIN1_TAG" . ((number "0x0001" 823 . 829)))
+          ("PROCIN11_TAG" . ((number "0x000B" 1095 . 1101)))
+          ("CLEAROK7_TAG" . ((number "0x0307" 1325 . 1331)))
+          ("CLEAROK3_TAG" . ((number "0x0303" 1213 . 1219)))
+          ("CLEAROK12_TAG" . ((number "0x030C" 1468 . 1474)))
+          ("PROCIN6_TAG" . ((number "0x0006" 958 . 964)))
+          ("CUSKEY_KEYBUNDLE_KEY4_PROCIN" . ((number "0x0005" 1626 . 1632)))
+          )
+
+    )
+   (semanticdb-table "keyinitialisation.h"
+    :file "keyinitialisation.h"
+    :fsize 1656
+    :lastmodtime '(21952 39375 390380 14000)
+    )
+   (semanticdb-table "paceinitialiser.h"
+    :file "paceinitialiser.h"
+    :fsize 626
+    :lastmodtime '(21952 39375 392379 988000)
+    )
+   (semanticdb-table "keymaterialcache.h"
+    :file "keymaterialcache.h"
+    :fsize 1831
+    :lastmodtime '(21952 39375 391380 1000)
+    )
+   (semanticdb-table "procinsmonitor.h"
+    :file "procinsmonitor.h"
+    :fsize 1057
+    :lastmodtime '(21952 39375 394379 962000)
+    )
+   (semanticdb-table "kpkkeyprovider.h"
+    :file "kpkkeyprovider.h"
+    :fsize 692
+    :lastmodtime '(21952 39375 393379 975000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!E343!src!pace!middleware!security-lib!lib!plugins!pace!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

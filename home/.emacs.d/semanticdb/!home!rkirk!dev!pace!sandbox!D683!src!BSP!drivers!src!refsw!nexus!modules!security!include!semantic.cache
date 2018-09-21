@@ -1,0 +1,1471 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "nexus_security_datatypes.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NEXUS_SECURITY_DATATYPES_H__" variable (:constant-flag t) nil [2735 2763])
+            ("nexus_types.h" include nil nil [2765 2789])
+            ("NEXUS_SecurityHandle" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_Security_P_Handle"
+                :pointer 1
+                :typedef ("NEXUS_Security_P_Handle" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [2831 2893])
+            ("NEXUS_SECURITY_MAX_KEYSLOT_TYPES" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2903 2935])
+            ("NEXUS_SecurityAlgorithm" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityAlgorithm"
+                :typedef ("NEXUS_SecurityAlgorithm" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [3010 4656])
+            ("NEXUS_SecurityAlgorithm" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityAlgorithm_eDvb" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3053 3082])
+                    ("NEXUS_SecurityAlgorithm_eDvbCsa2" variable
+                       (:constant-flag t
+                        :default-value (3171 3200)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3136 3200])
+                    ("NEXUS_SecurityAlgorithm_eMulti2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3205 3237])
+                    ("NEXUS_SecurityAlgorithm_eDes" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3242 3271])
+                    ("NEXUS_SecurityAlgorithm_e3DesAba" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3276 3309])
+                    ("NEXUS_SecurityAlgorithm_e3DesAbc" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3314 3347])
+                    ("NEXUS_SecurityAlgorithm_eAes" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3352 3381])
+                    ("NEXUS_SecurityAlgorithm_eAes128" variable
+                       (:constant-flag t
+                        :default-value (3420 3449)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3386 3449])
+                    ("NEXUS_SecurityAlgorithm_eAes192" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3454 3486])
+                    ("NEXUS_SecurityAlgorithm_eTivo" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3491 3521])
+                    ("NEXUS_SecurityAlgorithm_eC2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3587 3615])
+                    ("NEXUS_SecurityAlgorithm_eCss" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3620 3649])
+                    ("NEXUS_SecurityAlgorithm_eM6Ke" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3654 3684])
+                    ("NEXUS_SecurityAlgorithm_eM6" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3689 3717])
+                    ("NEXUS_SecurityAlgorithm_eRc4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3748 3777])
+                    ("NEXUS_SecurityAlgorithm_eCbcMac" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3782 3814])
+                    ("NEXUS_SecurityAlgorithm_eWMDrmPd" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3819 3852])
+                    ("NEXUS_SecurityAlgorithm_eAes128G" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3858 3891])
+                    ("NEXUS_SecurityAlgorithm_eHdDVD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3896 3927])
+                    ("NEXUS_SecurityAlgorithm_eBrDVD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3932 3963])
+                    ("NEXUS_SecurityAlgorithm_eDvbCsa3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3969 4002])
+                    ("NEXUS_SecurityAlgorithm_eAsf" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4007 4036])
+                    ("NEXUS_SecurityAlgorithm_eAesCounter" variable
+                       (:constant-flag t
+                        :default-value (4079 4108)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4041 4108])
+                    ("NEXUS_SecurityAlgorithm_eMSMultiSwapMac" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4113 4153])
+                    ("NEXUS_SecurityAlgorithm_eAsa" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4158 4187])
+                    ("NEXUS_SecurityAlgorithm_eReserved0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4240 4275])
+                    ("NEXUS_SecurityAlgorithm_eReserved1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4280 4315])
+                    ("NEXUS_SecurityAlgorithm_eReserved2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4320 4355])
+                    ("NEXUS_SecurityAlgorithm_eReserved3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4360 4395])
+                    ("NEXUS_SecurityAlgorithm_eReserved4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4400 4435])
+                    ("NEXUS_SecurityAlgorithm_eReserved5" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4440 4475])
+                    ("NEXUS_SecurityAlgorithm_eReserved6" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4480 4515])
+                    ("NEXUS_SecurityAlgorithm_eReserved7" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4520 4555])
+                    ("NEXUS_SecurityAlgorithm_eReserved8" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4560 4595])
+                    ("NEXUS_SecurityAlgorithm_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4601 4631]))                  )
+                (reparse-symbol extern-c-contents) [3010 4656])
+            ("NEXUS_SecurityAlgorithmVariant" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityAlgorithmVariant"
+                :typedef ("NEXUS_SecurityAlgorithmVariant" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [4734 5292])
+            ("NEXUS_SecurityAlgorithmVariant" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityAlgorithmVariant_eEcb" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4784 4820])
+                    ("NEXUS_SecurityAlgorithmVariant_eXpt" variable
+                       (:constant-flag t
+                        :default-value (4863 4899)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4825 4899])
+                    ("NEXUS_SecurityAlgorithmVariant_eCbc" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4960 4996])
+                    ("NEXUS_SecurityAlgorithmVariant_ePes" variable
+                       (:constant-flag t
+                        :default-value (5039 5075)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5001 5075])
+                    ("NEXUS_SecurityAlgorithmVariant_eCounter" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5136 5176])
+                    ("NEXUS_SecurityAlgorithmVariant_eRCbc" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5181 5218])
+                    ("NEXUS_SecurityAlgorithmVariant_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5223 5260]))                  )
+                (reparse-symbol extern-c-contents) [4734 5292])
+            ("NEXUS_Security_CustomerMode" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_Security_CustomerMode"
+                :typedef ("NEXUS_Security_CustomerMode" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [5349 5636])
+            ("NEXUS_Security_CustomerMode" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_Security_CustomerMode_eGeneric" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5396 5433])
+                    ("NEXUS_Security_CustomerMode_eReserved1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5438 5477])
+                    ("NEXUS_Security_CustomerMode_eReserved2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5482 5521])
+                    ("NEXUS_Security_CustomerMode_eNativeNonNsk" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5526 5568])
+                    ("NEXUS_Security_CustomerMode_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5573 5607]))                  )
+                (reparse-symbol extern-c-contents) [5349 5636])
+            ("NEXUS_SecurityTerminationMode" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityTerminationMode"
+                :typedef ("NEXUS_SecurityTerminationMode" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [5765 6746])
+            ("NEXUS_SecurityTerminationMode" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityTerminationMode_eClear" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5814 5851])
+                    ("NEXUS_SecurityTerminationMode_eCbcResidual" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5856 5899])
+                    ("NEXUS_SecurityTerminationMode_eBlock" variable
+                       (:constant-flag t
+                        :default-value (5943 5986)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5904 5986])
+                    ("NEXUS_SecurityTerminationMode_eScte52Term" variable
+                       (:constant-flag t
+                        :default-value (6035 6078)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5991 6078])
+                    ("NEXUS_SecurityTerminationMode_eReserved2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6083 6124])
+                    ("NEXUS_SecurityTerminationMode_eCipherStealing" variable
+                       (:constant-flag t
+                        :default-value (6177 6218)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6129 6218])
+                    ("NEXUS_SecurityTerminationMode_eCtsCpcm" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6223 6262])
+                    ("NEXUS_SecurityTerminationMode_eCipherStealingComcast" variable
+                       (:constant-flag t
+                        :default-value (6322 6361)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6267 6361])
+                    ("NEXUS_SecurityTerminationMode_eReserved4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6366 6407])
+                    ("NEXUS_SecurityTerminationMode_eReserved5" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6412 6453])
+                    ("NEXUS_SecurityTerminationMode_eReserved6" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6458 6499])
+                    ("NEXUS_SecurityTerminationMode_eTsAndPacket" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6504 6547])
+                    ("NEXUS_SecurityTerminationMode_ePacket" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6552 6590])
+                    ("NEXUS_SecurityTerminationMode_eCbcMac" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6595 6633])
+                    ("NEXUS_SecurityTerminationMode_eCmac" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6638 6674])
+                    ("NEXUS_SecurityTerminationMode_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6679 6715]))                  )
+                (reparse-symbol extern-c-contents) [5765 6746])
+            ("NEXUS_SecurityCounterMode" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityCounterMode"
+                :typedef ("NEXUS_SecurityCounterMode" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [6749 7116])
+            ("NEXUS_SecurityCounterMode" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityCounterMode_eGenericFullBlocks" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6794 6839])
+                    ("NEXUS_SecurityCounterMode_eGenericAllBlocks" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6844 6888])
+                    ("NEXUS_SecurityCounterMode_eIvPlayBackFullBlocks" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6893 6941])
+                    ("NEXUS_SecurityCounterMode_ePartialBlockInNextPacket" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6946 6998])
+                    ("NEXUS_SecurityCounterMode_eSkipPesHeaderAllBlocks" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7003 7053])
+                    ("NEXUS_SecurityCounterMode_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7058 7090]))                  )
+                (reparse-symbol extern-c-contents) [6749 7116])
+            ("NEXUS_SecurityIVMode" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityIVMode"
+                :typedef ("NEXUS_SecurityIVMode" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [7119 7363])
+            ("NEXUS_SecurityIVMode" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityIVMode_eRegular" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7159 7189])
+                    ("NEXUS_SecurityIVMode_eReserved1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7194 7226])
+                    ("NEXUS_SecurityIVMode_eReserved2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7231 7263])
+                    ("NEXUS_SecurityIVMode_eNoPreProcWriteBack" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7268 7309])
+                    ("NEXUS_SecurityIVMode_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7314 7341]))                  )
+                (reparse-symbol extern-c-contents) [7119 7363])
+            ("NEXUS_SecuritySolitarySelect" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecuritySolitarySelect"
+                :typedef ("NEXUS_SecuritySolitarySelect" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [7365 7856])
+            ("NEXUS_SecuritySolitarySelect" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecuritySolitarySelect_eClear" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7413 7449])
+                    ("NEXUS_SecuritySolitarySelect_eSa" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7454 7487])
+                    ("NEXUS_SecuritySolitarySelect_eCbcXorIv" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7492 7531])
+                    ("NEXUS_SecuritySolitarySelect_eIv1" variable
+                       (:constant-flag t
+                        :default-value (7572 7611)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7536 7611])
+                    ("NEXUS_SecuritySolitarySelect_eReserved3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7616 7656])
+                    ("NEXUS_SecuritySolitarySelect_eXorIv" variable
+                       (:constant-flag t
+                        :default-value (7699 7739)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7661 7739])
+                    ("NEXUS_SecuritySolitarySelect_eReserved4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7745 7785])
+                    ("NEXUS_SecuritySolitarySelect_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7790 7826]))                  )
+                (reparse-symbol extern-c-contents) [7365 7856])
+            ("NEXUS_SecurityAskmModuleID" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityAskmModuleID"
+                :typedef ("NEXUS_SecurityAskmModuleID" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [7997 9745])
+            ("NEXUS_SecurityAskmModuleID" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityAskmModuleID_eZero" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8043 8076])
+                    ("NEXUS_SecurityAskmModuleID_eNSK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8102 8134])
+                    ("NEXUS_SecurityAskmModuleID_eAVK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8164 8196])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8226 8265])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8288 8327])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_5" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8350 8389])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_6" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8412 8451])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_7" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8474 8513])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_8" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8536 8575])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_9" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8598 8637])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_10" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8660 8700])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_11" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8724 8764])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_12" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8788 8828])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_13" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8852 8892])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_14" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8916 8956])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_15" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8980 9020])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_16" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9044 9084])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_17" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9108 9148])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_18" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9172 9212])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_19" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9236 9276])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_20" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9300 9340])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_21" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9364 9404])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_22" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9428 9468])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_23" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9492 9532])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_24" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9556 9596])
+                    ("NEXUS_SecurityAskmModuleID_eModuleID_25" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9620 9660])
+                    ("NEXUS_SecurityAskmModuleID_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9684 9717]))                  )
+                (reparse-symbol extern-c-contents) [7997 9745])
+            ("NEXUS_SECURITY_MAX_HOST_FIRMWARE_KEYLADDER_MODULE_ID" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9756 9808])
+            ("NEXUS_SECURITY_MAX_HOST_HARDWARE_KEYLADDER_MODULE_ID" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9831 9883])
+            ("NEXUS_SECURITY_MAX_SAGE_KEYLADDER_MODULE_ID" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9906 9949])
+            ("NEXUS_SecurityOtpId" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityOtpId"
+                :typedef ("NEXUS_SecurityOtpId" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [10077 10339])
+            ("NEXUS_SecurityOtpId" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityOtpId_eOtpVal" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10116 10144])
+                    ("NEXUS_SecurityOtpId_eOneVal" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10184 10212])
+                    ("NEXUS_SecurityOtpId_eZeroVal" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10238 10267])
+                    ("NEXUS_SecurityOtpId_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10292 10318]))                  )
+                (reparse-symbol extern-c-contents) [10077 10339])
+            ("NEXUS_SecurityKey2Select" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityKey2Select"
+                :typedef ("NEXUS_SecurityKey2Select" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [10446 10667])
+            ("NEXUS_SecurityKey2Select" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityKey2Select_eRealKey" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10490 10524])
+                    ("NEXUS_SecurityKey2Select_eReserved1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10529 10565])
+                    ("NEXUS_SecurityKey2Select_eFixedKey" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10570 10605])
+                    ("NEXUS_SecurityKey2Select_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10610 10641]))                  )
+                (reparse-symbol extern-c-contents) [10446 10667])
+            ("NEXUS_SecurityDvbScrambleLevel" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityDvbScrambleLevel"
+                :typedef ("NEXUS_SecurityDvbScrambleLevel" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [10742 10942])
+            ("NEXUS_SecurityDvbScrambleLevel" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityDvbScrambleLevel_eTs" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10792 10827])
+                    ("NEXUS_SecurityDvbScrambleLevel_ePes" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10832 10868])
+                    ("NEXUS_SecurityDvbScrambleLevel_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10873 10910]))                  )
+                (reparse-symbol extern-c-contents) [10742 10942])
+            ("NEXUS_SecurityAesCounterSize" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityAesCounterSize"
+                :typedef ("NEXUS_SecurityAesCounterSize" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [11012 11378])
+            ("NEXUS_SecurityAesCounterSize" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityAesCounterSize_e32Bits" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11060 11097])
+                    ("NEXUS_SecurityAesCounterSize_e64Bits" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11102 11139])
+                    ("NEXUS_SecurityAesCounterSize_e96Bits" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11144 11181])
+                    ("NEXUS_SecurityAesCounterSize_e128Bits" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11186 11224])
+                    ("NEXUS_SecurityAesCounterSize_e128BitsS" variable
+                       (:constant-flag t
+                        :default-value (11270 11308)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11229 11308])
+                    ("NEXUS_SecurityAesCounterSize_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11313 11348]))                  )
+                (reparse-symbol extern-c-contents) [11012 11378])
+            ("NEXUS_SecurityKeySource" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityKeySource"
+                :typedef ("NEXUS_SecurityKeySource" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [11518 13761])
+            ("NEXUS_SecurityKeySource" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityKeySource_eReserved0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11561 11596])
+                    ("NEXUS_SecurityKeySource_eFirstRam" variable
+                       (:constant-flag t
+                        :default-value (11637 11672)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11601 11672])
+                    ("NEXUS_SecurityKeySource_eReserved1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11677 11712])
+                    ("NEXUS_SecurityKeySource_eSecondRam" variable
+                       (:constant-flag t
+                        :default-value (11754 11789)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11717 11789])
+                    ("NEXUS_SecurityKeySource_eReserved2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11794 11829])
+                    ("NEXUS_SecurityKeySource_eThirdRam" variable
+                       (:constant-flag t
+                        :default-value (11870 11905)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11834 11905])
+                    ("NEXUS_SecurityKeySource_eKey3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11910 11940])
+                    ("NEXUS_SecurityKeySource_eKey3KeyLadder1" variable
+                       (:constant-flag t
+                        :default-value (11987 12017)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11945 12017])
+                    ("NEXUS_SecurityKeySource_eKey4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12022 12052])
+                    ("NEXUS_SecurityKeySource_eKey4KeyLadder1" variable
+                       (:constant-flag t
+                        :default-value (12099 12129)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12057 12129])
+                    ("NEXUS_SecurityKeySource_eKey5" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12134 12164])
+                    ("NEXUS_SecurityKeySource_eKey5KeyLadder1" variable
+                       (:constant-flag t
+                        :default-value (12211 12241)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12169 12241])
+                    ("NEXUS_SecurityKeySource_eReserved6" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12246 12281])
+                    ("NEXUS_SecurityKeySource_eAvCPCW" variable
+                       (:constant-flag t
+                        :default-value (12320 12355)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12286 12355])
+                    ("NEXUS_SecurityKeySource_eKey6" variable
+                       (:constant-flag t
+                        :default-value (12392 12427)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12360 12427])
+                    ("NEXUS_SecurityKeySource_eKey3KeyLadder2" variable
+                       (:constant-flag t
+                        :default-value (12475 12507)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12433 12507])
+                    ("NEXUS_SecurityKeySource_eReserved7" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12512 12547])
+                    ("NEXUS_SecurityKeySource_eAvCW" variable
+                       (:constant-flag t
+                        :default-value (12584 12619)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12552 12619])
+                    ("NEXUS_SecurityKeySource_eKey7" variable
+                       (:constant-flag t
+                        :default-value (12656 12691)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12624 12691])
+                    ("NEXUS_SecurityKeySource_eKey4KeyLadder2" variable
+                       (:constant-flag t
+                        :default-value (12738 12768)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12696 12768])
+                    ("NEXUS_SecurityKeySource_eFirstRamAskm" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12773 12811])
+                    ("NEXUS_SecurityKeySource_eKey5KeyLadder2" variable
+                       (:constant-flag t
+                        :default-value (12858 12896)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12816 12896])
+                    ("NEXUS_SecurityKeySource_ePkl" variable
+                       (:constant-flag t
+                        :default-value (12932 12972)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12901 12972])
+                    ("NEXUS_SecurityKeySource_eSecondRamAskm" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12977 13016])
+                    ("NEXUS_SecurityKeySource_eKey3KeyLadder3" variable
+                       (:constant-flag t
+                        :default-value (13063 13102)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13021 13102])
+                    ("NEXUS_SecurityKeySource_eFirstRamAskm40nm" variable
+                       (:constant-flag t
+                        :default-value (13151 13191)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13107 13191])
+                    ("NEXUS_SecurityKeySource_eThirdRamAskm" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13196 13234])
+                    ("NEXUS_SecurityKeySource_eKey4KeyLadder3" variable
+                       (:constant-flag t
+                        :default-value (13281 13319)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13239 13319])
+                    ("NEXUS_SecurityKeySource_eFek" variable
+                       (:constant-flag t
+                        :default-value (13355 13395)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13324 13395])
+                    ("NEXUS_SecurityKeySource_eFirstRam2048" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13400 13438])
+                    ("NEXUS_SecurityKeySource_eKey5KeyLadder3" variable
+                       (:constant-flag t
+                        :default-value (13485 13523)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13443 13523])
+                    ("NEXUS_SecurityKeySource_eSecondRam2048" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13528 13567])
+                    ("NEXUS_SecurityKeySource_eThirdRam2048" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13572 13610])
+                    ("NEXUS_SecurityKeySource_eFirstRNRam1024" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13615 13655])
+                    ("NEXUS_SecurityKeySource_eSecondRNRam1024" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13660 13701])
+                    ("NEXUS_SecurityKeySource_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13706 13736]))                  )
+                (reparse-symbol extern-c-contents) [11518 13761])
+            ("NEXUS_SecurityOperation" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityOperation"
+                :typedef ("NEXUS_SecurityOperation" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [13817 14049])
+            ("NEXUS_SecurityOperation" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityOperation_eEncrypt" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13860 13893])
+                    ("NEXUS_SecurityOperation_eDecrypt" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13898 13931])
+                    ("NEXUS_SecurityOperation_ePassThrough" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13936 13973])
+                    ("NEXUS_SecurityOperation_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13993 14023]))                  )
+                (reparse-symbol extern-c-contents) [13817 14049])
+            ("NEXUS_SecurityKeyType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityKeyType"
+                :typedef ("NEXUS_SecurityKeyType" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [14117 14592])
+            ("NEXUS_SecurityKeyType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityKeyType_eOdd" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14158 14185])
+                    ("NEXUS_SecurityKeyType_eEven" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14209 14237])
+                    ("NEXUS_SecurityKeyType_eClear" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14261 14290])
+                    ("NEXUS_SecurityKeyType_eIv" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14314 14340])
+                    ("NEXUS_SecurityKeyType_eOddAndEven" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14417 14451])
+                    ("NEXUS_SecurityKeyType_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14541 14569]))                  )
+                (reparse-symbol extern-c-contents) [14117 14592])
+            ("NEXUS_SecurityKeyIVType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityKeyIVType"
+                :typedef ("NEXUS_SecurityKeyIVType" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [14678 14909])
+            ("NEXUS_SecurityKeyIVType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityKeyIVType_eNoIV" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14721 14751])
+                    ("NEXUS_SecurityKeyIVType_eIV" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14756 14784])
+                    ("NEXUS_SecurityKeyIVType_eAesShortIV" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14813 14849])
+                    ("NEXUS_SecurityKeyIVType_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14854 14884]))                  )
+                (reparse-symbol extern-c-contents) [14678 14909])
+            ("NEXUS_SecurityKeyMode" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityKeyMode"
+                :typedef ("NEXUS_SecurityKeyMode" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [14972 15287])
+            ("NEXUS_SecurityKeyMode" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityKeyMode_eRegular" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15013 15044])
+                    ("NEXUS_SecurityKeyMode_eDes56" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15049 15078])
+                    ("NEXUS_SecurityKeyMode_eReserved2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15083 15116])
+                    ("NEXUS_SecurityKeyMode_eReserved3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15121 15154])
+                    ("NEXUS_SecurityKeyMode_eDvbConformance" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15159 15197])
+                    ("NEXUS_SecurityKeyMode_eCwc" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15202 15229])
+                    ("NEXUS_SecurityKeyMode_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15234 15262]))                  )
+                (reparse-symbol extern-c-contents) [14972 15287])
+            ("NEXUS_SecurityAlgorithmConfigDestination" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityAlgorithmConfigDestination"
+                :typedef ("NEXUS_SecurityAlgorithmConfigDestination" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [15384 15899])
+            ("NEXUS_SecurityAlgorithmConfigDestination" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityAlgorithmConfigDestination_eCa" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15444 15489])
+                    ("NEXUS_SecurityAlgorithmConfigDestination_eCps" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15494 15540])
+                    ("NEXUS_SecurityAlgorithmConfigDestination_eCpd" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15545 15591])
+                    ("NEXUS_SecurityAlgorithmConfigDestination_eRmx" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15596 15642])
+                    ("NEXUS_SecurityAlgorithmConfigDestination_eMem2Mem" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15647 15697])
+                    ("NEXUS_SecurityAlgorithmConfigDestination_eMem2Mem2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15702 15753])
+                    ("NEXUS_SecurityAlgorithmConfigDestination_eHdmi" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15758 15805])
+                    ("NEXUS_SecurityAlgorithmConfigDestination_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15810 15857]))                  )
+                (reparse-symbol extern-c-contents) [15384 15899])
+            ("NEXUS_SecurityAlgorithmScPolarity" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityAlgorithmScPolarity"
+                :typedef ("NEXUS_SecurityAlgorithmScPolarity" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [16001 16407])
+            ("NEXUS_SecurityAlgorithmScPolarity" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityAlgorithmScPolarity_eClear" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16054 16095])
+                    ("NEXUS_SecurityAlgorithmScPolarity_eMpegOdd" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16100 16143])
+                    ("NEXUS_SecurityAlgorithmScPolarity_eAtscClear" variable
+                       (:constant-flag t
+                        :default-value (16195 16238)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16148 16238])
+                    ("NEXUS_SecurityAlgorithmScPolarity_eEven" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16243 16283])
+                    ("NEXUS_SecurityAlgorithmScPolarity_eOdd" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16288 16327])
+                    ("NEXUS_SecurityAlgorithmScPolarity_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16332 16372]))                  )
+                (reparse-symbol extern-c-contents) [16001 16407])
+            ("NEXUS_SecurityVirtualKeyladderID" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityVirtualKeyladderID"
+                :typedef ("NEXUS_SecurityVirtualKeyladderID" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [16493 17313])
+            ("NEXUS_SecurityVirtualKeyladderID" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityVirtualKeyladderID_eVKL0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16545 16584])
+                    ("NEXUS_SecurityVirtualKeyladderID_eVKL1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16589 16628])
+                    ("NEXUS_SecurityVirtualKeyladderID_eVKL2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16633 16672])
+                    ("NEXUS_SecurityVirtualKeyladderID_eVKL3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16677 16716])
+                    ("NEXUS_SecurityVirtualKeyladderID_eVKL4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16721 16760])
+                    ("NEXUS_SecurityVirtualKeyladderID_eVKL5" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16765 16804])
+                    ("NEXUS_SecurityVirtualKeyladderID_eVKL6" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16809 16848])
+                    ("NEXUS_SecurityVirtualKeyladderID_eVKL7" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16853 16892])
+                    ("NEXUS_SecurityVirtualKeyladderID_eVKLDummy" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16897 16940])
+                    ("NEXUS_SecurityVirtualKeyladderID_eSWKey" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16945 16985])
+                    ("NEXUS_SecurityVirtualKeyladderID_eReserved11" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16990 17035])
+                    ("NEXUS_SecurityVirtualKeyladderID_eReserved12" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17040 17085])
+                    ("NEXUS_SecurityVirtualKeyladderID_eReserved13" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17090 17135])
+                    ("NEXUS_SecurityVirtualKeyladderID_eReserved14" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17140 17185])
+                    ("NEXUS_SecurityVirtualKeyladderID_eReserved15" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17190 17235])
+                    ("NEXUS_SecurityVirtualKeyladderID_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17240 17279]))                  )
+                (reparse-symbol extern-c-contents) [16493 17313])
+            ("NEXUS_SecurityPacketType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityPacketType"
+                :typedef ("NEXUS_SecurityPacketType" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [17386 17567])
+            ("NEXUS_SecurityPacketType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityPacketType_eGlobal" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17430 17463])
+                    ("NEXUS_SecurityPacketType_eRestricted" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17468 17505])
+                    ("NEXUS_SecurityPacketType_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17510 17541]))                  )
+                (reparse-symbol extern-c-contents) [17386 17567])
+            ("NEXUS_SecurityClientType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityClientType"
+                :typedef ("NEXUS_SecurityClientType" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [17660 17833])
+            ("NEXUS_SecurityClientType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityClientType_eHost" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17704 17735])
+                    ("NEXUS_SecurityClientType_eSage" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17740 17771])
+                    ("NEXUS_SecurityClientType_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17776 17807]))                  )
+                (reparse-symbol extern-c-contents) [17660 17833])
+            ("NEXUS_SecurityAlgorithmSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityAlgorithmSettings"
+                :typedef ("NEXUS_SecurityAlgorithmSettings" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [17910 22710])
+            ("NEXUS_SecurityAlgorithmSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("algorithm" variable (:type ("NEXUS_SecurityAlgorithm" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17963 17997])
+                    ("algorithmVar" variable (:type ("NEXUS_SecurityAlgorithmVariant" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18002 18046])
+                    ("terminationMode" variable (:type ("NEXUS_SecurityTerminationMode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18095 18141])
+                    ("aesCounterMode" variable (:type ("NEXUS_SecurityCounterMode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18203 18248])
+                    ("aesCounterSize" variable (:type ("NEXUS_SecurityAesCounterSize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18288 18333])
+                    ("ivMode" variable (:type ("NEXUS_SecurityIVMode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18389 18426])
+                    ("solitarySelect" variable (:type ("NEXUS_SecuritySolitarySelect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18505 18550])
+                    ("caVendorID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18627 18668])
+                    ("askmModuleID" variable (:type "unsigned int") (reparse-symbol classsubparts) [18768 18811])
+                    ("otpId" variable (:type ("NEXUS_SecurityOtpId" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18902 18938])
+                    ("key2Select" variable (:type ("NEXUS_SecurityKey2Select" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19007 19048])
+                    ("dvbScramLevel" variable (:type ("NEXUS_SecurityDvbScrambleLevel" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19083 19128])
+                    ("keyDestEntryType" variable (:type ("NEXUS_SecurityKeyType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19176 19224])
+                    ("operation" variable (:type ("NEXUS_SecurityOperation" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19275 19309])
+                    ("dest" variable (:type ("NEXUS_SecurityAlgorithmConfigDestination" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19833 19879])
+                    ("keySource" variable (:type ("NEXUS_SecurityKeySource" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19950 19984])
+                    ("bMulti2Config" variable (:type "bool") (reparse-symbol classsubparts) [20072 20100])
+                    ("multi2KeySelect" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20105 20135])
+                    ("multi2RoundCount" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20220 20251])
+                    ("enableExtKey" variable (:type "bool") (reparse-symbol classsubparts) [20257 20275])
+                    ("enableExtIv" variable (:type "bool") (reparse-symbol classsubparts) [20280 20297])
+                    ("bEncryptBeforeRave" variable (:type "bool") (reparse-symbol classsubparts) [20302 20326])
+                    ("bRestrictEnable" variable (:type "bool") (reparse-symbol classsubparts) [20384 20405])
+                    ("bGlobalEnable" variable (:type "bool") (reparse-symbol classsubparts) [20410 20429])
+                    ("modifyScValue" variable
+                       (:dereference 1
+                        :type "bool")
+                        (reparse-symbol classsubparts) [20513 20563])
+                    ("scValue" variable
+                       (:dereference 1
+                        :type ("NEXUS_SecurityAlgorithmScPolarity" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20568 20641])
+                    ("keyOffset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20719 20738])
+                    ("ivOffset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20743 20761])
+                    ("mscLengthSelect" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20766 20791])
+                    ("customerType" variable (:type ("NEXUS_Security_CustomerMode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20796 20837])
+                    ("macRegSelect" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20842 20864])
+                    ("macNonSecureRegRead" variable (:type "bool") (reparse-symbol classsubparts) [20866 20895])
+                    ("IrModEnable" variable (:type "bool") (reparse-symbol classsubparts) [20900 20921])
+                    ("dvbCsa2keyCtrl" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20926 20950])
+                    ("dvbCsa2ivCtrl" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20955 20978])
+                    ("dvbCsa2modEnabled" variable (:type "bool") (reparse-symbol classsubparts) [20983 21010])
+                    ("dvbCsa3dvbcsaVar" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21015 21041])
+                    ("dvbCsa3permutation" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21046 21074])
+                    ("dvbCsa3modXRC" variable (:type "bool") (reparse-symbol classsubparts) [21079 21102])
+                    ("EsModEnable" variable (:type "bool") (reparse-symbol classsubparts) [21107 21128])
+                    ("extIVPtr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21133 21151])
+                    ("extKeyPtr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21156 21175])
+                    ("RpipeFromRregion" variable (:type "bool") (reparse-symbol classsubparts) [21254 21280])
+                    ("RpipeFromGregion" variable (:type "bool") (reparse-symbol classsubparts) [21285 21311])
+                    ("RpipeToRregion" variable (:type "bool") (reparse-symbol classsubparts) [21316 21340])
+                    ("RpipeToGregion" variable (:type "bool") (reparse-symbol classsubparts) [21345 21369])
+                    ("GpipeFromRregion" variable (:type "bool") (reparse-symbol classsubparts) [21374 21400])
+                    ("GpipeFromGregion" variable (:type "bool") (reparse-symbol classsubparts) [21405 21431])
+                    ("GpipeToRregion" variable (:type "bool") (reparse-symbol classsubparts) [21436 21460])
+                    ("GpipeToGregion" variable (:type "bool") (reparse-symbol classsubparts) [21465 21489])
+                    ("bRoutePipeToRestrictedRegion" variable
+                       (:dereference 1
+                        :type "bool")
+                        (reparse-symbol classsubparts) [21624 21689])
+                    ("bScAtscMode" variable (:type "bool") (reparse-symbol classsubparts) [21783 21800])
+                    ("bAtscModEnable" variable (:type "bool") (reparse-symbol classsubparts) [21805 21825])
+                    ("bGlobalDropPktEnable" variable (:type "bool") (reparse-symbol classsubparts) [21830 21856])
+                    ("bRestrictDropPktEnable" variable (:type "bool") (reparse-symbol classsubparts) [21861 21889])
+                    ("bGlobalRegionOverwrite" variable (:type "bool") (reparse-symbol classsubparts) [21894 21922])
+                    ("bRestrictSourceDropPktEnable" variable (:type "bool") (reparse-symbol classsubparts) [21927 21961])
+                    ("bScPolarityEnable" variable (:type "bool") (reparse-symbol classsubparts) [22067 22090])
+                    ("bSynEnable" variable (:type "bool") (reparse-symbol classsubparts) [22095 22111])
+                    ("bCPDDisable" variable (:type "bool") (reparse-symbol classsubparts) [22116 22133])
+                    ("bCPSDisable" variable (:type "bool") (reparse-symbol classsubparts) [22138 22155])
+                    ("mscBitSelect" variable (:type "bool") (reparse-symbol classsubparts) [22237 22255])
+                    ("bDisallowGG" variable (:type "bool") (reparse-symbol classsubparts) [22260 22277])
+                    ("bDisallowGR" variable (:type "bool") (reparse-symbol classsubparts) [22282 22299])
+                    ("bDisallowRG" variable (:type "bool") (reparse-symbol classsubparts) [22304 22321])
+                    ("bDisallowRR" variable (:type "bool") (reparse-symbol classsubparts) [22326 22343])
+                    ("enableTimestamps" variable (:type "bool") (reparse-symbol classsubparts) [22348 22370])
+                    ("testKey2Select" variable (:type "bool") (reparse-symbol classsubparts) [22562 22582]))                  )
+                (reparse-symbol extern-c-contents) [17910 22710])
+            ("NEXUS_SecurityClearKey" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityClearKey"
+                :typedef ("NEXUS_SecurityClearKey" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [22939 23745])
+            ("NEXUS_SecurityClearKey" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("keySize" variable (:type "unsigned int") (reparse-symbol classsubparts) [22983 23004])
+                    ("keyEntryType" variable (:type ("NEXUS_SecurityKeyType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23055 23090])
+                    ("keyIVType" variable (:type ("NEXUS_SecurityKeyIVType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23131 23165])
+                    ("keyMode" variable (:type ("NEXUS_SecurityKeyMode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23195 23227])
+                    ("dest" variable (:type ("NEXUS_SecurityAlgorithmConfigDestination" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23232 23278])
+                    ("sc01Polarity" variable
+                       (:dereference 1
+                        :type ("NEXUS_SecurityAlgorithmScPolarity" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [23348 23426])
+                    ("sc01GlobalMapping" variable (:type ("NEXUS_SecurityAlgorithmScPolarity" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23496 23548])
+                    ("externalKeyPtr" variable (:type "unsigned int") (reparse-symbol classsubparts) [23553 23602])
+                    ("externalIVPtr" variable (:type "unsigned int") (reparse-symbol classsubparts) [23610 23658])
+                    ("keyData" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [23665 23685]))                  )
+                (reparse-symbol extern-c-contents) [22939 23745])
+            ("NEXUS_SecurityMulti2Settings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityMulti2Settings"
+                :typedef ("NEXUS_SecurityMulti2Settings" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [23979 24142])
+            ("NEXUS_SecurityMulti2Settings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("multi2KeySelect" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24029 24054])
+                    ("multi2Rounds" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24059 24080])
+                    ("multi2SysKey" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24085 24110]))                  )
+                (reparse-symbol extern-c-contents) [23979 24142])
+            ("NEXUS_SecurityKeySlotSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityKeySlotSettings"
+                :typedef ("NEXUS_SecurityKeySlotSettings" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [24161 24403])
+            ("NEXUS_SecurityKeySlotSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("keySlotEngine" variable (:type ("NEXUS_SecurityEngine" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24212 24247])
+                    ("keySlotSource" variable (:type ("NEXUS_SecurityKeySource" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24252 24290])
+                    ("keySlotType" variable (:type ("NEXUS_SecurityKeySlotType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24295 24333])
+                    ("client" variable (:type ("NEXUS_SecurityClientType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24338 24370]))                  )
+                (reparse-symbol extern-c-contents) [24161 24403])
+            ("NEXUS_SecurityInvalidateKeyFlag" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityInvalidateKeyFlag"
+                :typedef ("NEXUS_SecurityInvalidateKeyFlag" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [24498 24765])
+            ("NEXUS_SecurityInvalidateKeyFlag" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityInvalidateKeyFlag_eSrcKeyOnly" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24549 24593])
+                    ("NEXUS_SecurityInvalidateKeyFlag_eDestKeyOnly" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24598 24643])
+                    ("NEXUS_SecurityInvalidateKeyFlag_eAllKeys" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24648 24689])
+                    ("NEXUS_SecurityInvalidateKeyFlag_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24694 24732]))                  )
+                (reparse-symbol extern-c-contents) [24498 24765])
+            ("NEXUS_SecurityInvalidateKeySettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityInvalidateKeySettings"
+                :typedef ("NEXUS_SecurityInvalidateKeySettings" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [24898 25378])
+            ("NEXUS_SecurityInvalidateKeySettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("invalidateKeyType" variable (:type ("NEXUS_SecurityInvalidateKeyFlag" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24955 25017])
+                    ("invalidateAllEntries" variable (:type "bool") (reparse-symbol classsubparts) [25019 25084])
+                    ("virtualKeyLadderID" variable (:type ("NEXUS_SecurityVirtualKeyladderID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25089 25152])
+                    ("keySrc" variable (:type ("NEXUS_SecurityKeySource" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25157 25208])
+                    ("keyDestBlckType" variable (:type ("NEXUS_SecurityAlgorithmConfigDestination" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25213 25273])
+                    ("keyDestEntryType" variable (:type ("NEXUS_SecurityKeyType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25278 25339]))                  )
+                (reparse-symbol extern-c-contents) [24898 25378])
+            ("NEXUS_KeySlotTableSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_KeySlotTableSettings"
+                :typedef ("NEXUS_KeySlotTableSettings" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [25619 25797])
+            ("NEXUS_KeySlotTableSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("numKeySlotsForType" variable
+                       (:dereference 1
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [25667 25733])
+                    ("enableMulti2Key" variable (:type "bool") (reparse-symbol classsubparts) [25738 25767]))                  )
+                (reparse-symbol extern-c-contents) [25619 25797])
+            ("NEXUS_SECURITY_G_REGION" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [25953 25976])
+            ("NEXUS_SECURITY_R_REGION_0" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26000 26025])
+            ("NEXUS_SECURITY_R_REGION_1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26047 26072])
+            ("NEXUS_SECURITY_R_REGION_2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26094 26119])
+            ("NEXUS_SECURITY_R_REGION_4" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26141 26166])
+            ("NEXUS_SECURITY_R_REGION_5" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26188 26213])
+            ("NEXUS_SECURITY_R_REGION_6" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26235 26260])
+            ("NEXUS_SECURITY_R_REGION_7" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26282 26307])
+            ("NEXUS_KeySlotGlobalControlWordSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_KeySlotGlobalControlWordSettings"
+                :typedef ("NEXUS_KeySlotGlobalControlWordSettings" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [26637 27085])
+            ("NEXUS_KeySlotGlobalControlWordSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("inputRegion" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26694 26725])
+                    ("rPipeOutput" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26789 26820])
+                    ("gPipeOutput" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26872 26903])
+                    ("encryptBeforeRave" variable (:type "bool") (reparse-symbol classsubparts) [26955 26992]))                  )
+                (reparse-symbol extern-c-contents) [26637 27085])
+            ("NEXUS_SECURITY_HSM_ERROR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [27238 27262]))          
+    :file "nexus_security_datatypes.h"
+    :pointmax 27332
+    :fsize 27331
+    :lastmodtime '(21629 55259 499687 70000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NEXUS_SECURITY_R_REGION_1" . ((number "0x04" 26081 . 26085)))
+          ("NEXUS_SECURITY_R_REGION_2" . ((number "0x08" 26128 . 26132)))
+          ("NEXUS_SECURITY_MAX_SAGE_KEYLADDER_MODULE_ID" . ((number "255" 9969 . 9972)))
+          ("NEXUS_SECURITY_MAX_HOST_HARDWARE_KEYLADDER_MODULE_ID" . ((number "224" 9894 . 9897)))
+          ("NEXUS_SECURITY_R_REGION_4" . ((number "0x10" 26175 . 26179)))
+          ("NEXUS_SECURITY_R_REGION_5" . ((number "0x20" 26222 . 26226)))
+          ("NEXUS_SECURITY_R_REGION_6" . ((number "0x40" 26269 . 26273)))
+          ("NEXUS_SECURITY_R_REGION_7" . ((number "0x80" 26316 . 26320)))
+          ("NEXUS_SECURITY_G_REGION" . ((number "0x01" 25987 . 25991)))
+          ("NEXUS_SECURITY_MAX_KEYSLOT_TYPES" . ((number "8" 2939 . 2940)))
+          ("NEXUS_SECURITY_HSM_ERROR" . ((symbol "NEXUS_MAKE_ERR_CODE" 27263 . 27282) (semantic-list "(0x109, 0)" 27282 . 27292)))
+          ("NEXUS_SECURITY_DATATYPES_H__")
+          ("NEXUS_SECURITY_MAX_HOST_FIRMWARE_KEYLADDER_MODULE_ID" . ((number "127" 9819 . 9822)))
+          ("NEXUS_SECURITY_R_REGION_0" . ((number "0x02" 26034 . 26038)))
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D683!src!BSP!drivers!src!refsw!nexus!modules!security!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

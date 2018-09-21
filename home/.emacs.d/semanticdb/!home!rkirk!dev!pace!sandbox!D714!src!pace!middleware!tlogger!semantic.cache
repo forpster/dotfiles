@@ -1,0 +1,186 @@
+;; Object tlogger/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tlogger/"
+  :tables (list 
+   (semanticdb-table "tlogger.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("unistd.h" include (:system-flag t) nil [717 736])
+            ("tlogger.h" include nil nil [737 757])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [758 782])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [784 822])
+            ("TLOGGER_CONFIG_PATH" variable (:constant-flag t) nil [860 879])
+            ("tlog_perf_C" function
+               (:type "void"
+                :arguments 
+                  ( ("logMessage" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [958 976])
+                    ("loggingModule" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [977 998])
+                    ("loggingFile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [999 1024])
+                    ("loggingLine" variable (:type "int") (reparse-symbol arg-sub-list) [1025 1041])
+                    ("loggingFunction" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1042 1072]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [932 1073])
+            ("tlog_warn_C" function
+               (:type "void"
+                :arguments 
+                  ( ("logMessage" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1103 1121])
+                    ("loggingModule" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1122 1143])
+                    ("loggingFile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1144 1169])
+                    ("loggingLine" variable (:type "int") (reparse-symbol arg-sub-list) [1170 1186])
+                    ("loggingFunction" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1187 1217]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1077 1218])
+            ("tlog_info_C" function
+               (:type "void"
+                :arguments 
+                  ( ("logMessage" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1248 1266])
+                    ("loggingModule" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1267 1288])
+                    ("loggingFile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1289 1314])
+                    ("loggingLine" variable (:type "int") (reparse-symbol arg-sub-list) [1315 1331])
+                    ("loggingFunction" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1332 1362]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1222 1363])
+            ("stringify" variable (:constant-flag t) nil [1375 1384])
+            ("stringify_literal" variable (:constant-flag t) nil [1421 1438])
+            ("tlog_perf_C" function
+               (:arguments 
+                  ( ("logMessage" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6964 6982])
+                    ("loggingModule" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6983 7004])
+                    ("loggingFile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7005 7030])
+                    ("loggingLine" variable (:type "int") (reparse-symbol arg-sub-list) [7031 7047])
+                    ("loggingFunction" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7048 7078]))                  
+                :type "void")
+                nil [6945 7767])
+            ("tlog_warn_C" function
+               (:arguments 
+                  ( ("logMessage" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7987 8005])
+                    ("loggingModule" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8006 8027])
+                    ("loggingFile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8028 8053])
+                    ("loggingLine" variable (:type "int") (reparse-symbol arg-sub-list) [8054 8070])
+                    ("loggingFunction" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8071 8101]))                  
+                :type "void")
+                nil [7968 8730])
+            ("tlog_info_C" function
+               (:arguments 
+                  ( ("logMessage" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8950 8968])
+                    ("loggingModule" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8969 8990])
+                    ("loggingFile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8991 9016])
+                    ("loggingLine" variable (:type "int") (reparse-symbol arg-sub-list) [9017 9033])
+                    ("loggingFunction" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9034 9064]))                  
+                :type "void")
+                nil [8931 9692]))          
+    :file "tlogger.cpp"
+    :pointmax 9787
+    :fsize 9786
+    :lastmodtime '(21566 27810 507803 545000)
+    :unmatched-syntax '((string 810 . 820))
+    :lexical-table 
+        '(("TLOGGER_CONFIG_PATH" . ((string "\"/mnt/ffs/tlogger/configs/\"" 880 . 907)))
+          ("stringify_literal" (spp-arg-list ("x") 1438 . 1443) . ((punctuation "#" 1444 . 1445) (symbol "x" 1446 . 1447)))
+          ("stringify" (spp-arg-list ("x") 1384 . 1389) . ((symbol "stringify_literal" 1390 . 1407) (semantic-list "( x )" 1407 . 1412)))
+          )
+
+    )
+   (semanticdb-table "tlogger.h"
+    :file "tlogger.h"
+    :fsize 27325
+    :lastmodtime '(21566 27810 517803 474000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D714!src!pace!middleware!tlogger!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

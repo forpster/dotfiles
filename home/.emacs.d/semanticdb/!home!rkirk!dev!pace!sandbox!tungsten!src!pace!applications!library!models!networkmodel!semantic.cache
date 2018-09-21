@@ -1,0 +1,1061 @@
+;; Object networkmodel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "networkmodel/"
+  :tables (list 
+   (semanticdb-table "networkmodel_diagnostics.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("networkmodel_diagnostics.h" include nil nil [908 945])
+            ("networkmodel_common.h" include nil nil [946 978])
+            ("NetworkModelDiagnosticsAdaptor" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1306 1313])
+                    ("NetworkModelDiagnosticsAdaptor" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1345 1355]))                          
+                        :type ("NetworkModelDiagnosticsAdaptor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1314 1358]))                  
+                :type "class")
+                nil [1267 1361])
+            ("NetworkModelDiagnostics" function
+               (:constructor-flag t
+                :parent "NetworkModelDiagnostics"
+                :type ("NetworkModelDiagnostics" type (:type "class") nil nil))
+                nil [1930 3031])
+            ("NetworkModelDiagnostics" function
+               (:destructor-flag t
+                :parent "NetworkModelDiagnostics"
+                :type "void")
+                nil [3325 3818])
+            ("startSpeedTest" function
+               (:parent "NetworkModelDiagnostics"
+                :arguments 
+                  ( ("options" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QVariantMap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3865 3892]))                  
+                :type "bool")
+                nil [3820 5219])
+            ("stopSpeedTest" function
+               (:parent "NetworkModelDiagnostics"
+                :type "bool")
+                nil [7272 7625]))          
+    :file "networkmodel_diagnostics.cpp"
+    :pointmax 7626
+    :fsize 7625
+    :lastmodtime '(21907 47760 648542 906000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "networkmodel_diagnostics.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__NETWORK_MODEL_DIAGNOSTICS_H__" variable (:constant-flag t) nil [699 730])
+            ("QtDBus" include (:system-flag t) nil [975 992])
+            ("inetworkmodel_diagnostics.h" include nil nil [994 1032])
+            ("networkmodel.h" include nil nil [1034 1059])
+            ("networkmodel_common.h" include nil nil [1060 1092])
+            ("NetworkModelDiagnosticsAdaptor" type
+               (:prototype t
+                :type "class")
+                nil [2128 2165])
+            ("NetworkModelDiagnostics" type
+               (:superclasses 
+                  ( ("QObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("INetworkModelDiagnostics" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2301 2308])
+                    ("NetworkModelDiagnostics" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("NetworkModelDiagnostics" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2358 2413])
+                    ("NetworkModelDiagnostics" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2462 2497])
+                    ("public" label nil (reparse-symbol classsubparts) [2499 2514])
+                    ("startSpeedTest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("options" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2547 2574]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2519 2575])
+                    ("stopSpeedTest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2580 2609])
+                    ("public" label nil (reparse-symbol classsubparts) [2611 2624])
+                    ("diagSpeedTestComplete" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("speedObj" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2786 2807]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2759 2808])
+                    ("private" label nil (reparse-symbol classsubparts) [2814 2823])
+                    ("m_diagnosticsAdaptor" variable
+                       (:pointer 1
+                        :type ("NetworkModelDiagnosticsAdaptor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2828 2881]))                  
+                :type "class")
+                nil [2166 3114]))          
+    :file "networkmodel_diagnostics.h"
+    :pointmax 3159
+    :fsize 3158
+    :lastmodtime '(21907 45098 881935 214000)
+    :unmatched-syntax '((punctuation 2753 . 2754) (symbol 2746 . 2753) (semantic-list 2273 . 2299) (symbol 2261 . 2273) (symbol 2249 . 2257))
+    :lexical-table 
+        '(("__NETWORK_MODEL_DIAGNOSTICS_H__")
+          )
+
+    )
+   (semanticdb-table "networkmodel_common.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__NETWORK_MODEL_COMMON_H__" variable (:constant-flag t) nil [656 682])
+            ("tlogger.h" include nil nil [927 947])
+            ("QObject" include (:system-flag t) nil [948 966])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [968 992])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [993 1058])
+            ("networkmodlVerifyQtConnect" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sender" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1580 1602])
+                    ("signal" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1603 1622])
+                    ("receiver" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1623 1647])
+                    ("method" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1648 1667])
+                    ("type" variable (:type ("Qt::ConnectionType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1668 1693])
+                    ("" variable (:type ("Qt::AutoConnection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1694 1713]))                  
+                :type "bool")
+                nil [1548 1714]))          
+    :file "networkmodel_common.h"
+    :pointmax 1996
+    :fsize 1995
+    :lastmodtime '(21907 45098 884935 198000)
+    :unmatched-syntax '((punctuation 1692 . 1693) (string 1021 . 1055))
+    :lexical-table 
+        '(("__NETWORK_MODEL_COMMON_H__")
+          )
+
+    )
+   (semanticdb-table "inetworkmodel_diagnostics.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_INETWORK_MODEL_DIAGNOSTICS_H" variable (:constant-flag t) nil [709 738])
+            ("imodelbase.h" include nil nil [984 1007])
+            ("INetworkModelDiagnostics" type
+               (:superclasses 
+                  ( ("IModelBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1977 1984])
+                    ("INetworkModelDiagnostics" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1989 2026])
+                    ("startSpeedTest" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("options" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2060 2087]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2032 2094])
+                    ("stopSpeedTest" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2100 2135]))                  
+                :type "class")
+                nil [1889 2142]))          
+    :file "inetworkmodel_diagnostics.h"
+    :pointmax 2459
+    :fsize 2458
+    :lastmodtime '(21907 45099 166933 617000)
+    :unmatched-syntax '((semantic-list 2163 . 2239) (symbol 2144 . 2163) (string 2190 . 2238) (punctuation 2026 . 2027))
+    :lexical-table 
+        '(("_INETWORK_MODEL_DIAGNOSTICS_H")
+          )
+
+    )
+   (semanticdb-table "networkmodel.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__NETWORK_MODEL_H__" variable (:constant-flag t) nil [666 685])
+            ("QtDBus" include (:system-flag t) nil [930 947])
+            ("inetworkmodel.h" include nil nil [949 975])
+            ("inetworkmodel_ethernetservice.h" include nil nil [976 1018])
+            ("inetworkmodel_wirelessservice.h" include nil nil [1019 1061])
+            ("networkstrategymanagement.h" include nil nil [1063 1101])
+            ("loggingclient.h" include nil nil [1102 1128])
+            ("NetworkModel" type
+               (:superclasses 
+                  ( ("QObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("INetworkModel" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2017 2024])
+                    ("NetworkModel" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("NetworkModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2030 2045])
+                    ("NetworkModel" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2056 2072])
+                    ("getManager" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("INetworkModelManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2077 2120])
+                    ("getSecurity" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("INetworkModelSecurity" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2124 2168])
+                    ("getNetIf" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("INetworkModelNetIf" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2172 2213])
+                    ("getDiagnostics" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("INetworkModelDiagnostics" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2217 2264])
+                    ("getConnectedServiceInfo" function
+                       (:prototype-flag t
+                        :type ("QVariantList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2269 2309])
+                    ("getEthernetInterfaceInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("Ifname" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2352 2369]))                          
+                        :type ("QVariantMap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2313 2370])
+                    ("private" label nil (reparse-symbol classsubparts) [2464 2472])
+                    ("createNetworkModelStrategy" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2476 2510])
+                    ("m_manager" variable
+                       (:pointer 1
+                        :type ("INetworkModelManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2519 2561])
+                    ("m_security" variable
+                       (:pointer 1
+                        :type ("INetworkModelSecurity" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2565 2608])
+                    ("m_netIf" variable
+                       (:pointer 1
+                        :type ("INetworkModelNetIf" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2612 2652])
+                    ("m_diagnostics" variable
+                       (:pointer 1
+                        :type ("INetworkModelDiagnostics" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2656 2702])
+                    ("m_networkStrategy" variable
+                       (:pointer 1
+                        :type ("NetworkStrategyManagement" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2710 2760]))                  
+                :type "class")
+                nil [1958 2857]))          
+    :file "networkmodel.h"
+    :pointmax 2890
+    :fsize 2889
+    :lastmodtime '(21907 45099 166933 617000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__NETWORK_MODEL_H__")
+          )
+
+    )
+   (semanticdb-table "inetworkmodel.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__I_NETWORK_MODEL_H__" variable (:constant-flag t) nil [670 691])
+            ("inetworkmodel_manager.h" include nil nil [937 971])
+            ("inetworkmodel_security.h" include nil nil [972 1007])
+            ("inetworkmodel_netif.h" include nil nil [1008 1040])
+            ("inetworkmodel_diagnostics.h" include nil nil [1041 1079])
+            ("inetworkmodel_technology.h" include nil nil [1080 1117])
+            ("inetworkmodel_wirelessservice.h" include nil nil [1119 1161])
+            ("inetworkmodel_ethernetservice.h" include nil nil [1162 1204])
+            ("NETWORKMODEL_TIPC_MANAGER_PATH" variable
+               (:constant-flag t
+                :type ("QString" type (:type "class") nil nil))
+                nil [1450 1515])
+            ("NETWORKMODEL_TIPC_SECURITY_PATH" variable
+               (:constant-flag t
+                :type ("QString" type (:type "class") nil nil))
+                nil [1516 1582])
+            ("NETWORKMODEL_TIPC_NETIF_PATH" variable
+               (:constant-flag t
+                :type ("QString" type (:type "class") nil nil))
+                nil [1583 1646])
+            ("NETWORKMODEL_TIPC_DIAGNOSTICS_PATH" variable
+               (:constant-flag t
+                :type ("QString" type (:type "class") nil nil))
+                nil [1647 1716])
+            ("NETWORKMODEL_TIPC_PATH_PREFIX" variable
+               (:constant-flag t
+                :type ("QString" type (:type "class") nil nil))
+                nil [1719 1789])
+            ("INetworkModel" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2401 2408])
+                    ("INetworkModel" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("INetworkModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2413 2436])
+                    ("INetworkModel" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("inline" "virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2441 2476])
+                    ("getManager" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("INetworkModelManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2481 2536])
+                    ("getSecurity" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("INetworkModelSecurity" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2540 2596])
+                    ("getNetIf" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("INetworkModelNetIf" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2600 2653])
+                    ("getDiagnostics" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("INetworkModelDiagnostics" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2657 2716])
+                    ("getConnectedServiceInfo" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("QVariantList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2720 2789])
+                    ("getEthernetInterfaceInfo" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("Ifname" variable
+                               (:reference 1
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2858 2875]))                          
+                        :type ("QVariantMap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2793 2880]))                  
+                :type "class")
+                nil [2378 2883])
+            ("INetworkModel" function
+               (:constructor-flag t
+                :parent "INetworkModel"
+                :typemodifiers ("inline")
+                :type ("INetworkModel" type (:type "class") nil nil))
+                nil [2885 2926])
+            ("INetworkModel" function
+               (:destructor-flag t
+                :parent "INetworkModel"
+                :typemodifiers ("inline")
+                :type "void")
+                nil [2928 2971]))          
+    :file "inetworkmodel.h"
+    :pointmax 3005
+    :fsize 3004
+    :lastmodtime '(21907 45098 884935 198000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__I_NETWORK_MODEL_H__")
+          )
+
+    )
+   (semanticdb-table "inetworkmodel_ethernetservice.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_INETWORK_MODEL_ETHERNET_SERVICE_H" variable (:constant-flag t) nil [701 735])
+            ("imodelbase.h" include nil nil [981 1004])
+            ("tnms/iservice.h" include (:system-flag t) nil [1005 1031])
+            ("tnms/servicebase.h" include (:system-flag t) nil [1032 1061])
+            ("INetworkModelEthernetService" type
+               (:superclasses 
+                  ( ("EthernetServiceBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("IModelBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2010 2017])
+                    ("INetworkModelEthernetService" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2074 2115]))                  
+                :type "class")
+                nil [1922 2118]))          
+    :file "inetworkmodel_ethernetservice.h"
+    :pointmax 2273
+    :fsize 2272
+    :lastmodtime '(21907 45098 882935 209000)
+    :unmatched-syntax '((semantic-list 2139 . 2223) (symbol 2120 . 2139) (string 2170 . 2222))
+    :lexical-table 
+        '(("_INETWORK_MODEL_ETHERNET_SERVICE_H")
+          )
+
+    )
+   (semanticdb-table "inetworkmodel_wirelessservice.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_INETWORK_MODEL_WIRELESS_SERVICE_H" variable (:constant-flag t) nil [701 735])
+            ("imodelbase.h" include nil nil [981 1004])
+            ("tnms/iservice.h" include (:system-flag t) nil [1005 1031])
+            ("tnms/servicebase.h" include (:system-flag t) nil [1032 1061])
+            ("INetworkModelWirelessService" type
+               (:superclasses 
+                  ( ("WirelessServiceBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("IModelBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2012 2019])
+                    ("INetworkModelWirelessService" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2076 2117]))                  
+                :type "class")
+                nil [1924 2127]))          
+    :file "inetworkmodel_wirelessservice.h"
+    :pointmax 2282
+    :fsize 2281
+    :lastmodtime '(21907 45099 167933 611000)
+    :unmatched-syntax '((semantic-list 2148 . 2232) (symbol 2129 . 2148) (string 2179 . 2231))
+    :lexical-table 
+        '(("_INETWORK_MODEL_WIRELESS_SERVICE_H")
+          )
+
+    )
+   (semanticdb-table "networkstrategymanagement.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__NETWORKMODEL_STRATEGY__" variable (:constant-flag t) nil [952 977])
+            ("QObject" include (:system-flag t) nil [979 997])
+            ("inetworkmodel.h" include nil nil [998 1024])
+            ("PreferredTechnologyStrategy" type
+               (:prototype t
+                :type "class")
+                nil [1086 1120])
+            ("NetworkPowerManagementStrategy" type
+               (:prototype t
+                :type "class")
+                nil [1121 1158])
+            ("NetworkStrategyManagement" type
+               (:superclasses 
+                  ( ("QObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1222 1229])
+                    ("NetworkStrategyManagement" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("model" variable
+                               (:pointer 1
+                                :type ("INetworkModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1260 1281]))                          
+                        :type ("NetworkStrategyManagement" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1234 1282])
+                    ("NetworkStrategyManagement" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1287 1316])
+                    ("private" label nil (reparse-symbol classsubparts) [1318 1326])
+                    ("m_nwModel" variable
+                       (:pointer 1
+                        :type ("INetworkModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1331 1374])
+                    ("m_techStrategy" variable
+                       (:pointer 1
+                        :type ("PreferredTechnologyStrategy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1384 1431])
+                    ("private" label nil (reparse-symbol classsubparts) [1583 1599])
+                    ("technologyStrategyServiceAdded" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("serviceId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1640 1665]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1604 1666]))                  
+                :type "class")
+                nil [1159 1785]))          
+    :file "networkstrategymanagement.h"
+    :pointmax 1824
+    :fsize 1823
+    :lastmodtime '(21907 45098 883935 203000)
+    :unmatched-syntax '((symbol 1213 . 1221))
+    :lexical-table 
+        '(("__NETWORKMODEL_STRATEGY__")
+          )
+
+    )
+   (semanticdb-table "loggingclient.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__LOGGING_CLIENT_NETWORK_MODEL_H__" variable (:constant-flag t) nil [929 963])
+            ("QObject" include (:system-flag t) nil [965 983])
+            ("QString" include (:system-flag t) nil [984 1002])
+            ("QVariantMap" include (:system-flag t) nil [1003 1025])
+            ("inetworkmodel.h" include nil nil [1027 1053])
+            ("inetworkmodel_manager.h" include nil nil [1054 1088])
+            ("SERVICE_TYPE" variable (:constant-flag t) nil [1098 1110])
+            ("NetworkModelLoggingClient" type
+               (:superclasses 
+                  ( ("QObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1187 1194])
+                    ("NetworkModelLoggingClient" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("model" variable
+                               (:pointer 1
+                                :type ("INetworkModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1224 1245]))                          
+                        :type ("NetworkModelLoggingClient" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1198 1246])
+                    ("NetworkModelLoggingClient" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1250 1279])
+                    ("serviceChanged" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("serviceID" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1306 1324])
+                            ("added" variable (:type "bool") (reparse-symbol arg-sub-list) [1325 1337]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1284 1338])
+                    ("private" label nil (reparse-symbol classsubparts) [1339 1355])
+                    ("LoggingClientServiceAdded" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("serviceID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1390 1415]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1359 1416])
+                    ("LoggingClientServiceRemoved" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("serviceID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1453 1478]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1420 1479])
+                    ("private" label nil (reparse-symbol classsubparts) [1481 1489])
+                    ("m_model" variable
+                       (:pointer 1
+                        :type ("INetworkModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1493 1516])
+                    ("serviceStatusChanged" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable (:type ("QVariantMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1561 1579]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1533 1580]))                  
+                :type "class")
+                nil [1123 1583]))          
+    :file "loggingclient.h"
+    :pointmax 1630
+    :fsize 1629
+    :lastmodtime '(21907 45099 167933 611000)
+    :unmatched-syntax '((punctuation 1528 . 1529) (symbol 1521 . 1528) (symbol 1177 . 1185))
+    :lexical-table 
+        '(("__LOGGING_CLIENT_NETWORK_MODEL_H__")
+          ("SERVICE_TYPE" . ((string "\"ethernet\"" 1111 . 1121)))
+          )
+
+    )
+   (semanticdb-table "inetworkmodel_manager.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_INETWORK_MODEL_MANAGER_H" variable (:constant-flag t) nil [697 722])
+            ("imodelbase.h" include nil nil [969 992])
+            ("tnms/iservicemanager.h" include (:system-flag t) nil [993 1026])
+            ("tnms/iservice.h" include (:system-flag t) nil [1027 1053])
+            ("tnms/servicebase.h" include (:system-flag t) nil [1054 1083])
+            ("inetworkmodel_technology.h" include nil nil [1084 1121])
+            ("INetworkModelManager" type
+               (:superclasses 
+                  ( ("IModelBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("IServiceManager" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2043 2050])
+                    ("getService" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("serviceId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2090 2115]))                          
+                        :type ("ServiceBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2058 2120])
+                    ("getTechnology" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("technologyId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2181 2209]))                          
+                        :type ("INetworkModelTechnology" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2134 2213])
+                    ("INetworkModelManager" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2270 2303]))                  
+                :type "class")
+                nil [1968 2306]))          
+    :file "inetworkmodel_manager.h"
+    :pointmax 2435
+    :fsize 2434
+    :lastmodtime '(21907 45098 883935 203000)
+    :unmatched-syntax '((semantic-list 2327 . 2395) (symbol 2308 . 2327) (string 2350 . 2394))
+    :lexical-table 
+        '(("_INETWORK_MODEL_MANAGER_H")
+          )
+
+    )
+   (semanticdb-table "inetworkmodel_security.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_INETWORK_MODEL_SECURITY_H" variable (:constant-flag t) nil [700 726])
+            ("imodelbase.h" include nil nil [972 995])
+            ("tnms/isecurity.h" include (:system-flag t) nil [996 1023])
+            ("INetworkModelSecurity" type
+               (:superclasses 
+                  ( ("IModelBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("ISecurity" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1942 1949])
+                    ("INetworkModelSecurity" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1954 1988]))                  
+                :type "class")
+                nil [1872 1996]))          
+    :file "inetworkmodel_security.h"
+    :pointmax 2127
+    :fsize 2126
+    :lastmodtime '(21907 45099 166933 617000)
+    :unmatched-syntax '((semantic-list 2017 . 2087) (symbol 1998 . 2017) (string 2041 . 2086))
+    :lexical-table 
+        '(("_INETWORK_MODEL_SECURITY_H")
+          )
+
+    )
+   (semanticdb-table "inetworkmodel_netif.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_INETWORK_MODEL_NETIF_H" variable (:constant-flag t) nil [691 714])
+            ("imodelbase.h" include nil nil [960 983])
+            ("tnms/inetif.h" include (:system-flag t) nil [984 1008])
+            ("INetworkModelNetIf" type
+               (:superclasses 
+                  ( ("IModelBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("INetIf" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1915 1922])
+                    ("INetworkModelNetIf" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1927 1958]))                  
+                :type "class")
+                nil [1851 1966]))          
+    :file "inetworkmodel_netif.h"
+    :pointmax 2088
+    :fsize 2087
+    :lastmodtime '(21907 45099 165933 622000)
+    :unmatched-syntax '((semantic-list 1987 . 2051) (symbol 1968 . 1987) (string 2008 . 2050))
+    :lexical-table 
+        '(("_INETWORK_MODEL_NETIF_H")
+          )
+
+    )
+   (semanticdb-table "inetworkmodel_technology.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_INETWORK_MODEL_TECHNOLOGY_H" variable (:constant-flag t) nil [694 722])
+            ("imodelbase.h" include nil nil [968 991])
+            ("tnms/itechnology.h" include (:system-flag t) nil [992 1021])
+            ("INetworkModelTechnology" type
+               (:superclasses 
+                  ( ("IModelBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("ITechnology" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1948 1955])
+                    ("INetworkModelTechnology" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2012 2048]))                  
+                :type "class")
+                nil [1873 2051]))          
+    :file "inetworkmodel_technology.h"
+    :pointmax 2190
+    :fsize 2189
+    :lastmodtime '(21907 45099 166933 617000)
+    :unmatched-syntax '((semantic-list 2072 . 2146) (symbol 2053 . 2072) (string 2098 . 2145))
+    :lexical-table 
+        '(("_INETWORK_MODEL_TECHNOLOGY_H")
+          )
+
+    )
+   (semanticdb-table "networkmodel_diagnosticsadaptor.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NETWORKMODEL_DIAGNOSTICSADAPTOR_ORIG_H_1433239329" variable (:constant-flag t) nil [492 541])
+            ("QtCore/QObject" include (:system-flag t) nil [543 568])
+            ("QtDBus/QtDBus" include (:system-flag t) nil [569 593])
+            ("QByteArray" type
+               (:prototype t
+                :type "class")
+                nil [594 611])
+            ("QList" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :prototype t)
+                nil [612 642])
+            ("QMap" type
+               (:template 
+                  ( ("Key" type (:type "class") nil nil)
+                    ("Value" type (:type "class") nil nil))                  
+                :type "class"
+                :prototype t)
+                nil [643 687])
+            ("QString" type
+               (:prototype t
+                :type "class")
+                nil [688 702])
+            ("QStringList" type
+               (:prototype t
+                :type "class")
+                nil [703 721])
+            ("QVariant" type
+               (:prototype t
+                :type "class")
+                nil [722 737])
+            ("tipcadaptor.h" include (:system-flag t) nil [820 844])
+            ("NetworkModelDiagnosticsAdaptor" type
+               (:superclasses 
+                  ( ("TipcAdaptor" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1731 1738])
+                    ("NetworkModelDiagnosticsAdaptor" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("parent" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1774 1790]))                          
+                        :type ("NetworkModelDiagnosticsAdaptor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1743 1791])
+                    ("NetworkModelDiagnosticsAdaptor" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1796 1838])
+                    ("public" label nil (reparse-symbol classsubparts) [1840 1847])
+                    ("public" label nil (reparse-symbol classsubparts) [1862 1877])
+                    ("startSpeedTest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("options" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1913 1940]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1893 1941])
+                    ("stopSpeedTest" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1946 1967])
+                    ("diagSpeedTestComplete" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("speedObj" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QVariantMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2021 2049]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1994 2050])
+                    ("protected" label nil (reparse-symbol classsubparts) [2052 2062])
+                    ("handlePropertyGet" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("returnAddress" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2096 2125])
+                            ("propertyName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2159 2187]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2066 2437])
+                    ("handlePropertySet" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("returnAddress" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2472 2501])
+                            ("propertyName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2535 2563])
+                            ("valueSerialisedToByteArray" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QByteArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2597 2642]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2442 2757]))                  
+                :type "class")
+                nil [846 2760]))          
+    :file "networkmodel_diagnosticsadaptor.h"
+    :pointmax 2769
+    :fsize 2768
+    :lastmodtime '(21907 46280 769925 693000)
+    :unmatched-syntax '((punctuation 1977 . 1978) (symbol 1968 . 1977) (semantic-list 1013 . 1730) (symbol 1002 . 1013) (string 1727 . 1729) (string 1700 . 1718) (string 1682 . 1699) (string 1636 . 1681) (string 1596 . 1635) (string 1578 . 1595) (string 1532 . 1577) (string 1441 . 1531) (string 1375 . 1440) (string 1334 . 1374) (string 1316 . 1333) (string 1225 . 1315) (string 1157 . 1224) (string 1109 . 1156) (string 1040 . 1108) (string 1037 . 1039) (string 1014 . 1035) (semantic-list 933 . 997) (symbol 922 . 933) (string 953 . 996) (string 934 . 951) (symbol 909 . 917) (string 953 . 996) (string 934 . 951))
+    :lexical-table 
+        '(("NETWORKMODEL_DIAGNOSTICSADAPTOR_ORIG_H_1433239329")
+          )
+
+    )
+   (semanticdb-table "networkmodel_diagnosticsadaptor.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("networkmodel_diagnosticsadaptor.h" include nil nil [383 427])
+            ("QtCore/QMetaObject" include (:system-flag t) nil [428 457])
+            ("QtCore/QByteArray" include (:system-flag t) nil [458 486])
+            ("QtCore/QList" include (:system-flag t) nil [487 510])
+            ("QtCore/QMap" include (:system-flag t) nil [511 533])
+            ("QtCore/QString" include (:system-flag t) nil [534 559])
+            ("QtCore/QStringList" include (:system-flag t) nil [560 589])
+            ("QtCore/QVariant" include (:system-flag t) nil [590 616])
+            ("NetworkModelDiagnosticsAdaptor" function
+               (:constructor-flag t
+                :parent "NetworkModelDiagnosticsAdaptor"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [755 771]))                  
+                :type ("NetworkModelDiagnosticsAdaptor" type (:type "class") nil nil))
+                nil [692 896])
+            ("NetworkModelDiagnosticsAdaptor" function
+               (:destructor-flag t
+                :parent "NetworkModelDiagnosticsAdaptor"
+                :type "void")
+                nil [898 985])
+            ("startSpeedTest" function
+               (:parent "NetworkModelDiagnosticsAdaptor"
+                :arguments 
+                  ( ("options" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QVariantMap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1039 1066]))                  
+                :type "bool")
+                nil [987 1299])
+            ("stopSpeedTest" function
+               (:parent "NetworkModelDiagnosticsAdaptor"
+                :type "bool")
+                nil [1301 1555]))          
+    :file "networkmodel_diagnosticsadaptor.cpp"
+    :pointmax 1557
+    :fsize 1556
+    :lastmodtime '(21907 46280 770925 688000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "networkmodel_common.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("networkmodel_common.h" include nil nil [886 918])
+            ("networkmodlVerifyQtConnect" function
+               (:arguments 
+                  ( ("sender" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1196 1218])
+                    ("signal" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1219 1238])
+                    ("receiver" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1239 1263])
+                    ("method" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1264 1283])
+                    ("type" variable (:type ("Qt::ConnectionType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1284 1308]))                  
+                :type "bool")
+                nil [1164 1531]))          
+    :file "networkmodel_common.cpp"
+    :pointmax 1533
+    :fsize 1532
+    :lastmodtime '(21907 45099 166933 617000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!applications!library!models!networkmodel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

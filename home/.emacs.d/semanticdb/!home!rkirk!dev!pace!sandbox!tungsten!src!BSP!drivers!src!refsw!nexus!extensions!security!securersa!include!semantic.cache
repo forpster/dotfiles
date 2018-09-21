@@ -1,0 +1,758 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "nexus_security_rsa.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NEXUS_SECURITYRSA_H__" variable (:constant-flag t) nil [3272 3293])
+            ("nexus_security_datatypes.h" include nil nil [3295 3332])
+            ("nexus_security.h" include nil nil [3333 3360])
+            ("KEY_PARAM_SIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3411 3425])
+            ("PROC_LEN_UINT32" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3437 3452])
+            ("IV_LEN_UINT32" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3463 3476])
+            ("NEXUS_Security_MkrId_eId0" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3488 3513])
+            ("NEXUS_Security_MkrId_eId1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3525 3550])
+            ("NEXUS_Security_OtpKeyId_eId0" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3561 3589])
+            ("NEXUS_Security_OtpKeyId_eId1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3600 3628])
+            ("NEXUS_SecurityMkrId" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "unsigned int"
+                :typedef ("unsigned int"))
+                (reparse-symbol extern-c-contents) [3632 3669])
+            ("NEXUS_SecurityOtpKeyId" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "unsigned int"
+                :typedef ("unsigned int"))
+                (reparse-symbol extern-c-contents) [3670 3710])
+            ("NEXUS_SecurityRsaKeySize" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityRsaKeySize"
+                :typedef ("NEXUS_SecurityRsaKeySize" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [3821 4087])
+            ("NEXUS_SecurityRsaKeySize" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_SecurityRsaKeySize_e1024" variable
+                       (:constant-flag t
+                        :default-value (3950 3951)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3917 3951])
+                    ("NEXUS_SecurityRsaKeySize_e2048" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3957 3988])
+                    ("NEXUS_SecurityRsaKeySize_e1280" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3991 4022])
+                    ("NEXUS_SecurityRsaKeySize_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4030 4061]))                  )
+                (reparse-symbol extern-c-contents) [3821 4087])
+            ("NEXUS_SecurityShaType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityShaType"
+                :typedef ("NEXUS_SecurityShaType" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [4091 4249])
+            ("NEXUS_SecurityShaType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_Security_ShaType_eSha1" variable
+                       (:constant-flag t
+                        :default-value (4160 4161)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4129 4161])
+                    ("NEXUS_Security_ShaType_eSha256" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4164 4195])
+                    ("NEXUS_Security_ShaType_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4197 4226]))                  )
+                (reparse-symbol extern-c-contents) [4091 4249])
+            ("NEXUS_SecurityRsa_PaddingType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityRsa_PaddingType"
+                :typedef ("NEXUS_SecurityRsa_PaddingType" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [4251 4438])
+            ("NEXUS_SecurityRsa_PaddingType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_Security_PaddingType_ePKCS1_5" variable
+                       (:constant-flag t
+                        :default-value (4335 4336)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4297 4336])
+                    ("NEXUS_Security_PaddingType_eOAEP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4339 4372])
+                    ("NEXUS_Security_PaddingType_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4374 4407]))                  )
+                (reparse-symbol extern-c-contents) [4251 4438])
+            ("NEXUS_SecurityKpkId" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityKpkId"
+                :typedef ("NEXUS_SecurityKpkId" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [4441 4641])
+            ("NEXUS_SecurityKpkId" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_Security_KpkId_eId0" variable
+                       (:constant-flag t
+                        :default-value (4505 4506)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4477 4506])
+                    ("NEXUS_Security_KpkId_eId1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4509 4535])
+                    ("NEXUS_Security_KpkId_eId2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4537 4563])
+                    ("NEXUS_Security_KpkId_eId3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4565 4591])
+                    ("NEXUS_Security_KpkId_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4593 4620]))                  )
+                (reparse-symbol extern-c-contents) [4441 4641])
+            ("NEXUS_SecurityPubKeyUsage" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityPubKeyUsage"
+                :typedef ("NEXUS_SecurityPubKeyUsage" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [4644 4852])
+            ("NEXUS_SecurityPubKeyUsage" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_Security_PubKeyUsage_eVerifySignedData" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4689 4734])
+                    ("NEXUS_Security_PubKeyUsage_eVerifyCertLoadPubKey" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4739 4788])
+                    ("NEXUS_Security_PubKeyUsage_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4793 4826]))                  )
+                (reparse-symbol extern-c-contents) [4644 4852])
+            ("NEXUS_SecurityKeyLadderOp" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityKeyLadderOp"
+                :typedef ("NEXUS_SecurityKeyLadderOp" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [4854 5044])
+            ("NEXUS_SecurityKeyLadderOp" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_Security_KeyLadderOpt_eAes_Ecb" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4899 4936])
+                    ("NEXUS_Security_KeyLadderOpt_eAes_Cbc" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4941 4978])
+                    ("NEXUS_Security_KeyLadderOpt_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4983 5017]))                  )
+                (reparse-symbol extern-c-contents) [4854 5044])
+            ("NEXUS_SecurityTransformKLType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityTransformKLType"
+                :typedef ("NEXUS_SecurityTransformKLType" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [5048 5296])
+            ("NEXUS_SecurityTransformKLType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("NEXUS_Security_TransformKLType_eNone" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5097 5134])
+                    ("NEXUS_Security_TransformKLType_e3DesAba" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5139 5179])
+                    ("NEXUS_Security_TransformKLType_eAES128" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5184 5223])
+                    ("NEXUS_Security_TransformKLType_eMax" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5228 5265]))                  )
+                (reparse-symbol extern-c-contents) [5048 5296])
+            ("NEXUS_SecurityRsaInitSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityRsaInitSettings"
+                :typedef ("NEXUS_SecurityRsaInitSettings" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [5435 5952])
+            ("NEXUS_SecurityRsaInitSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("hashStorageDataSect" variable (:type "unsigned int") (reparse-symbol classsubparts) [5486 5523])
+                    ("otpKeyDataSect" variable (:type "unsigned int") (reparse-symbol classsubparts) [5607 5639])
+                    ("rsaDataSize" variable (:type "unsigned int") (reparse-symbol classsubparts) [5703 5732])
+                    ("rsaDataAddress" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [5798 5834]))                  )
+                (reparse-symbol extern-c-contents) [5435 5952])
+            ("NEXUS_SecurityRsaKeySettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityRsaKeySettings"
+                :typedef ("NEXUS_SecurityRsaKeySettings" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [6119 8224])
+            ("NEXUS_SecurityRsaKeySettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("rsaKeySize" variable (:type ("NEXUS_SecurityRsaKeySize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6171 6211])
+                    ("rsaKeyIndex" variable (:type "unsigned int") (reparse-symbol classsubparts) [6269 6298])
+                    ("paddingType" variable (:type ("NEXUS_SecurityRsa_PaddingType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6368 6411])
+                    ("encryptedKeyAddress" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [6472 6523])
+                    ("encryptedKeySize" variable (:type "unsigned int") (reparse-symbol classsubparts) [6625 6656])
+                    ("publicKeyAddress" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [6715 6763])
+                    ("verifySignature" variable (:type "bool") (reparse-symbol classsubparts) [6906 6945])
+                    ("rsaPubVKeySize" variable (:type ("NEXUS_SecurityRsaKeySize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7015 7059])
+                    ("rsaPubVKeyIndex" variable (:type "unsigned int") (reparse-symbol classsubparts) [7125 7158])
+                    ("pubKeyUsage" variable (:type ("NEXUS_SecurityPubKeyUsage" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7195 7234])
+                    ("publicVerifyKeyAddress" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [7257 7311])
+                    ("signatureAddress" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [7423 7471])
+                    ("shaType" variable (:type ("NEXUS_SecurityShaType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7573 7605])
+                    ("virtualKeyLadderID" variable (:type ("NEXUS_SecurityVirtualKeyladderID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7709 7761])
+                    ("keyLadderOp" variable (:type ("NEXUS_SecurityKeyLadderOp" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7807 7850])
+                    ("iv" variable
+                       (:dereference 1
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [7934 7967])
+                    ("custKeyH" variable (:type "unsigned int") (reparse-symbol classsubparts) [7992 8016])
+                    ("custKeyL" variable (:type "unsigned int") (reparse-symbol classsubparts) [8021 8045])
+                    ("keyVarH" variable (:type "unsigned int") (reparse-symbol classsubparts) [8050 8073])
+                    ("keyVarL" variable (:type "unsigned int") (reparse-symbol classsubparts) [8078 8101])
+                    ("performTransform" variable (:type "unsigned int") (reparse-symbol classsubparts) [8106 8138])
+                    ("transformKLType" variable (:type ("NEXUS_SecurityTransformKLType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8143 8190]))                  )
+                (reparse-symbol extern-c-contents) [6119 8224])
+            ("NEXUS_SecurityRsaMkrSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityRsaMkrSettings"
+                :typedef ("NEXUS_SecurityRsaMkrSettings" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [8403 9713])
+            ("NEXUS_SecurityRsaMkrSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("rsaKeySize" variable (:type ("NEXUS_SecurityRsaKeySize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8455 8495])
+                    ("rsaKeyIndex" variable (:type "unsigned int") (reparse-symbol classsubparts) [8554 8583])
+                    ("paddingType" variable (:type ("NEXUS_SecurityRsa_PaddingType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8652 8695])
+                    ("encryptedKeyAddress" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [8756 8807])
+                    ("encryptedKeySize" variable (:type "unsigned int") (reparse-symbol classsubparts) [8910 8941])
+                    ("publicKeyAddress" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [9036 9084])
+                    ("keyLadderOp" variable (:type ("NEXUS_SecurityKeyLadderOp" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9273 9316])
+                    ("procIn" variable
+                       (:dereference 1
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [9409 9445])
+                    ("iv" variable
+                       (:dereference 1
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [9502 9532])
+                    ("MkrTransformEnable" variable (:type "unsigned int") (reparse-symbol classsubparts) [9592 9623]))                  )
+                (reparse-symbol extern-c-contents) [8403 9713])
+            ("NEXUS_SecurityRsaVerificationSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityRsaVerificationSettings"
+                :typedef ("NEXUS_SecurityRsaVerificationSettings" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [9850 10880])
+            ("NEXUS_SecurityRsaVerificationSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("rsaKeySize" variable (:type ("NEXUS_SecurityRsaKeySize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9909 9949])
+                    ("dataSize" variable (:type "unsigned int") (reparse-symbol classsubparts) [10059 10094])
+                    ("dataAddress" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [10139 10183])
+                    ("rsaPubVKeySize" variable (:type ("NEXUS_SecurityRsaKeySize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10252 10296])
+                    ("rsaPubVKeyIndex" variable (:type "unsigned int") (reparse-symbol classsubparts) [10362 10395])
+                    ("shaType" variable (:type ("NEXUS_SecurityShaType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10433 10465])
+                    ("publicVerifyKeyAddress" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [10521 10575])
+                    ("signatureAddress" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [10688 10736]))                  )
+                (reparse-symbol extern-c-contents) [9850 10880])
+            ("NEXUS_SecurityRsaLoadPubKeySettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityRsaLoadPubKeySettings"
+                :typedef ("NEXUS_SecurityRsaLoadPubKeySettings" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [11015 12167])
+            ("NEXUS_SecurityRsaLoadPubKeySettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("dataSize" variable (:type "unsigned int") (reparse-symbol classsubparts) [11074 11111])
+                    ("dataOffset" variable (:type "unsigned int") (reparse-symbol classsubparts) [11195 11222])
+                    ("dataAddress" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [11301 11346])
+                    ("destPubKeySize" variable (:type ("NEXUS_SecurityRsaKeySize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11453 11495])
+                    ("rsaPubVKeySize" variable (:type ("NEXUS_SecurityRsaKeySize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11560 11602])
+                    ("rsaPubVKeyIndex" variable (:type "unsigned int") (reparse-symbol classsubparts) [11668 11702])
+                    ("shaType" variable (:type ("NEXUS_SecurityShaType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11741 11775])
+                    ("publicVerifyKeyAddress" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [11830 11875])
+                    ("signatureAddress" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [11986 12024]))                  )
+                (reparse-symbol extern-c-contents) [11015 12167])
+            ("NEXUS_SecurityRsaHostUsageSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityRsaHostUsageSettings"
+                :typedef ("NEXUS_SecurityRsaHostUsageSettings" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [12304 13078])
+            ("NEXUS_SecurityRsaSignSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityRsaHostUsageSettings"
+                :typedef ("NEXUS_SecurityRsaHostUsageSettings" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [12304 13078])
+            ("NEXUS_SecurityRsaHostUsageSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("rsaKeySize" variable (:type ("NEXUS_SecurityRsaKeySize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12360 12399])
+                    ("rsaKeyIndex" variable (:type "unsigned int") (reparse-symbol classsubparts) [12487 12515])
+                    ("dataAddress" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [12611 12652])
+                    ("dataSize" variable (:type "unsigned int") (reparse-symbol classsubparts) [12730 12764])
+                    ("publicKeyAddress" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [12826 12872]))                  )
+                (reparse-symbol extern-c-contents) [12304 13078])
+            ("NEXUS_SecurityRouteRSAKey3" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_SecurityRouteRSAKey3"
+                :typedef ("NEXUS_SecurityRouteRSAKey3" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [13177 13467])
+            ("NEXUS_SecurityRouteRSAKey3" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("keyEntryType" variable (:type ("NEXUS_SecurityKeyType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13226 13261])
+                    ("dest" variable (:type ("NEXUS_SecurityAlgorithmConfigDestination" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13266 13312])
+                    ("virtualKeyLadderID" variable (:type ("NEXUS_SecurityVirtualKeyladderID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13383 13435]))                  )
+                (reparse-symbol extern-c-contents) [13177 13467])
+            ("NEXUS_SecurityRsa_GetDefaultInitSettings" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("pRSAInitSetting" variable
+                       (:pointer 1
+                        :type ("NEXUS_SecurityRsaInitSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13594 13658]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13543 13659])
+            ("NEXUS_SecurityRsa_GetDefaultKeySettings" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("pRSAKeySetting" variable
+                       (:pointer 1
+                        :type ("NEXUS_SecurityRsaKeySettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13711 13773]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13661 13774])
+            ("NEXUS_SecurityRsa_GetDefaultMkrSettings" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("pRSAMkrSetting" variable
+                       (:pointer 1
+                        :type ("NEXUS_SecurityRsaMkrSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13826 13888]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13776 13889])
+            ("NEXUS_SecurityRsa_GetDefaultVerificationSettings" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("pSecureRSAVerification" variable
+                       (:pointer 1
+                        :type ("NEXUS_SecurityRsaVerificationSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13950 14029]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13891 14030])
+            ("NEXUS_SecurityRsa_GetDefaultLoadPubKeySettings" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("pSecureRSALoadPubKeySetting" variable
+                       (:pointer 1
+                        :type ("NEXUS_SecurityRsaLoadPubKeySettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14090 14175]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14033 14176])
+            ("NEXUS_SecurityRsa_GetDefaultSignSettings" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("pSecureRSASign" variable
+                       (:pointer 1
+                        :type ("NEXUS_SecurityRsaSignSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14230 14300]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14179 14301])
+            ("NEXUS_SecurityRsa_GetDefaultHostUsageSettings" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("pSecureRSASign" variable
+                       (:pointer 1
+                        :type ("NEXUS_SecurityRsaHostUsageSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14361 14436]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14305 14437])
+            ("NEXUS_SecurityRsa_PerformInit" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("pSecureRSAInit" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityRsaInitSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14531 14588]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14484 14589])
+            ("NEXUS_SecurityRsa_DecryptCAKey3" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("secureRSAKey" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityRsaKeySettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14708 14760]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14653 14761])
+            ("NEXUS_SecurityRsa_DecryptCPKey3" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("secureRSAKey" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityRsaKeySettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14879 14931]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14824 14932])
+            ("NEXUS_SecurityRsa_DecryptMkr" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("MkrId" variable (:type ("NEXUS_SecurityMkrId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15040 15068])
+                    ("secureRSAMkr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityRsaMkrSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15116 15168]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14994 15169])
+            ("NEXUS_SecurityRsa_DecryptKpk" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("kpkId" variable (:type ("NEXUS_SecurityKpkId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15281 15309])
+                    ("secureRSAKey" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityRsaKeySettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15358 15410]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15232 15411])
+            ("NEXUS_SecurityRsa_KpkDecryptRsa" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("kpkId" variable (:type ("NEXUS_SecurityKpkId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15531 15557])
+                    ("secureRSAKey" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityRsaKeySettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15618 15670]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15482 15671])
+            ("NEXUS_SecurityRsa_KpkDecryptMkr" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("kpkId" variable (:type ("NEXUS_SecurityKpkId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15859 15887])
+                    ("MkrId" variable (:type ("NEXUS_SecurityMkrId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15969 15997])
+                    ("hbesShaCount" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16042 16068])
+                    ("procIn" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [16145 16171])
+                    ("procLenUint32" variable (:type "int") (reparse-symbol arg-sub-list) [16238 16265]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15810 16266])
+            ("NEXUS_SecurityRsa_MkrDecryptMkr" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("MkrId" variable (:type ("NEXUS_SecurityMkrId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16394 16422])
+                    ("procIn" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [16486 16512])
+                    ("procLenUint32" variable (:type "int") (reparse-symbol arg-sub-list) [16578 16607]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16345 16608])
+            ("NEXUS_SecurityRsa_MkrDecryptMkr_2" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("MkrId" variable (:type ("NEXUS_SecurityMkrId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16792 16820])
+                    ("secureRSAMkr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityRsaMkrSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16887 16944]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16741 16945])
+            ("NEXUS_SecurityRsa_LoadSWKeyMkr" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("MkrId" variable (:type ("NEXUS_SecurityMkrId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17052 17080])
+                    ("procIn" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [17126 17152])
+                    ("procLenUint32" variable (:type "int") (reparse-symbol arg-sub-list) [17227 17257]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17004 17258])
+            ("NEXUS_SecurityRsa_ImportMkr" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("MkrId" variable (:type ("NEXUS_SecurityMkrId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17379 17407])
+                    ("OtpKeyId" variable (:type ("NEXUS_SecurityOtpKeyId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17454 17487])
+                    ("procIn" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [17552 17578])
+                    ("procLenUint32" variable (:type "int") (reparse-symbol arg-sub-list) [17642 17672]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17334 17673])
+            ("NEXUS_SecurityRsa_ExportMkr" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("MkrId" variable (:type ("NEXUS_SecurityMkrId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17778 17806])
+                    ("OtpKeyId" variable (:type ("NEXUS_SecurityOtpKeyId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17851 17884])
+                    ("procOut" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [17949 17971])
+                    ("procLenUint32" variable (:type "int") (reparse-symbol arg-sub-list) [18039 18066]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17734 18067])
+            ("NEXUS_SecurityRsa_Verify" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("pSecureRSAVerification" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityRsaVerificationSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18237 18310]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [18195 18311])
+            ("NEXUS_SecurityRsa_VerifyRSAKey" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("pSecureRSAVer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityRsaVerificationSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18454 18516]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [18400 18517])
+            ("NEXUS_SecurityRsa_VerifyAesKey" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("pSecureRSAVer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityRsaVerificationSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18642 18704]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [18588 18705])
+            ("NEXUS_SecurityRsa_LoadPubKey" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("secureRSAKey" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityRsaLoadPubKeySettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18813 18872]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [18763 18873])
+            ("NEXUS_SecurityRsa_HostUsage" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("pSecureRSAHusage" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityRsaHostUsageSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18985 19045])
+                    ("outputBuf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [19051 19105])
+                    ("outputBufferSize" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [19153 19241]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [18940 19242])
+            ("NEXUS_SecurityRsa_Sign" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("pSecureRSASign" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityRsaSignSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19334 19386])
+                    ("pOutputBuf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [19391 19417])
+                    ("outputBufferSize" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [19464 19529]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [19294 19530])
+            ("NEXUS_SecurityRsa_RouteRsaKey3" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("keyHandle" variable (:type ("NEXUS_KeySlotHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19617 19647])
+                    ("pSessionKey" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_SecurityRouteRSAKey3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19652 19703]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [19569 19704]))          
+    :file "nexus_security_rsa.h"
+    :pointmax 19744
+    :fsize 19743
+    :lastmodtime '(21435 60092 644076 423000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("KEY_PARAM_SIZE" . ((number "16" 3426 . 3428)))
+          ("NEXUS_Security_MkrId_eId0" . ((number "0" 3514 . 3515)))
+          ("NEXUS_Security_MkrId_eId1" . ((number "1" 3551 . 3552)))
+          ("NEXUS_Security_OtpKeyId_eId0" . ((number "4" 3590 . 3591)))
+          ("NEXUS_Security_OtpKeyId_eId1" . ((number "6" 3629 . 3630)))
+          ("PROC_LEN_UINT32" . ((number "4" 3453 . 3454)))
+          ("NEXUS_SECURITYRSA_H__")
+          ("IV_LEN_UINT32" . ((number "4" 3477 . 3478)))
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!BSP!drivers!src!refsw!nexus!extensions!security!securersa!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

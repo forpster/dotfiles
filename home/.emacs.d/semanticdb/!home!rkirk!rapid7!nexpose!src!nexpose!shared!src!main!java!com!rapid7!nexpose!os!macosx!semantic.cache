@@ -1,0 +1,214 @@
+;; Object macosx/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "macosx/"
+  :tables
+  (list
+    (semanticdb-table "OSProvider.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.rapid7.nexpose.os.macosx" package nil nil [354 391])
+            ("com.rapid7.os.IOSProvider" include nil nil [393 426])
+            ("com.rapid7.os.IOSVersion" include nil nil [427 459])
+            ("com.rapid7.os.OSException" include nil nil [460 493])
+            ("com.rapid7.os.unix.OSVersion" include nil nil [494 530])
+            ("com.rapid7.util.StringUtils" include nil nil [531 566])
+            ("java.io.BufferedReader" include nil nil [567 597])
+            ("java.io.File" include nil nil [598 618])
+            ("java.io.IOException" include nil nil [619 646])
+            ("java.io.InputStreamReader" include nil nil [647 680])
+            ("java.util.ArrayList" include nil nil [681 708])
+            ("java.util.List" include nil nil [709 731])
+            ("java.util.regex.Pattern" include nil nil [732 763])
+            ("OSProvider" type
+               (:typemodifiers ("public")
+                :superclasses "com.rapid7.nexpose.os.unix.OSProvider"
+                :members 
+                  ( ("OS_MIN_NEW_USER_ID" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [982 1032])
+                    ("OS_NEW_USER_GROUP_ID" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1084 1134])
+                    ("DSCL_CMD" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1161 1206])
+                    ("DSGRP_CMD" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1210 1263])
+                    ("HIDE_USER_CMD" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1267 1398])
+                    ("LAUNCHCTL_CMD" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1402 1457])
+                    ("DAEMON_PREFIX" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1461 1517])
+                    ("DAEMON_STATUS_NOT_RUNNING" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1522 1576])
+                    ("DAEMON_STATUS_RUNNING" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1580 1630])
+                    ("DAEMON_STATUS_UNKNOWN" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1634 1684])
+                    ("newProvider" function
+                       (:throws ("OSException")
+                        :typemodifiers ("public" "static")
+                        :type "IOSProvider")
+                        (reparse-symbol class_member_declaration) [1916 2021])
+                    ("OSProvider" function
+                       (:constructor-flag t
+                        :throws ("OSException")
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [2127 2204])
+                    ("createOSVersion" function
+                       (:throws ("OSException")
+                        :typemodifiers ("public")
+                        :type "IOSVersion")
+                        (reparse-symbol class_member_declaration) [2331 2589])
+                    ("addLocalUser" function
+                       (:throws ("OSException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("userName" variable (:type "String") (reparse-symbol formal_parameters) [3592 3607])
+                            ("password" variable (:type "String") (reparse-symbol formal_parameters) [3609 3624])
+                            ("comment" variable (:type "String") (reparse-symbol formal_parameters) [3626 3640])
+                            ("homeDir" variable (:type "File") (reparse-symbol formal_parameters) [3651 3663]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3564 5420])
+                    ("addLocalUserToGroup" function
+                       (:throws ("OSException" "IOException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("userName" variable (:type "String") (reparse-symbol formal_parameters) [6270 6285])
+                            ("group" variable (:type "String") (reparse-symbol formal_parameters) [6287 6299]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6231 6759])
+                    ("getDaemonStatus" function
+                       (:throws ("OSException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [7027 7038]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7000 7763])
+                    ("startDaemon" function
+                       (:throws ("OSException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [7985 7996]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7961 8149])
+                    ("stopDaemon" function
+                       (:throws ("OSException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [8369 8380]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8346 8532])
+                    ("createDaemon" function
+                       (:throws ("OSException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [8799 8810])
+                            ("startOpts" variable (:type "String") (reparse-symbol formal_parameters) [8812 8828]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8774 9084])
+                    ("deleteDaemon" function
+                       (:throws ("OSException" "IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [9308 9319]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9283 9473])
+                    ("setPerms" function
+                       (:throws ("IOException" "OSException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("filename" variable (:type "String") (reparse-symbol formal_parameters) [9947 9962])
+                            ("perms" variable (:type "String") (reparse-symbol formal_parameters) [9964 9976])
+                            ("recursive" variable (:type "boolean") (reparse-symbol formal_parameters) [9978 9995]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9919 10258])
+                    ("executeCommand" function
+                       (:throws ("IOException" "OSException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("cmd" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [10505 10517]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [10479 10608])
+                    ("executeCommand" function
+                       (:throws ("IOException" "OSException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("cmd" variable (:type "String") (reparse-symbol formal_parameters) [10849 10859]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [10816 10999])
+                    ("executeCommandSuccessfully" function
+                       (:throws ("IOException" "OSException")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("cmd" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [11051 11063]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11004 11331])
+                    ("getCommandOutput" function
+                       (:throws ("IOException" "OSException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("cmd" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [11590 11602]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [11559 12502])
+                    ("getCommandOutput" function
+                       (:throws ("IOException" "OSException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("cmd" variable (:type "String") (reparse-symbol formal_parameters) [12760 12770]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [12729 12910])
+                    ("executeOSCommand" function
+                       (:throws ("IOException" "OSException")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("cmd" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [12951 12963]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [12915 13351])
+                    ("getNextUID" function
+                       (:throws ("IOException" "OSException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("minvalue" variable (:type "int") (reparse-symbol formal_parameters) [13379 13391]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [13356 13909]))                  
+                :type "class")
+                nil [831 13914]))          
+      :file "OSProvider.java"
+      :pointmax 13915
+      :fsize 13914
+      :lastmodtime '(22932 27403 628174 469000)
+      :unmatched-syntax nil))
+  :file "!home!rkirk!rapid7!nexpose!src!nexpose!shared!src!main!java!com!rapid7!nexpose!os!macosx!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

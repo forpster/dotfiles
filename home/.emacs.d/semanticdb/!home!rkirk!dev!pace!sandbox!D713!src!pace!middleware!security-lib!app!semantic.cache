@@ -1,0 +1,199 @@
+;; Object app/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "app/"
+  :tables (list 
+   (semanticdb-table "test.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cstring" include (:system-flag t) nil [1 19])
+            ("iostream" include (:system-flag t) nil [20 39])
+            ("iomanip" include (:system-flag t) nil [40 58])
+            ("vector" include (:system-flag t) nil [59 76])
+            ("stdint.h" include (:system-flag t) nil [77 96])
+            ("nexus_platform.h" include nil nil [98 125])
+            ("nexus_memory.h" include nil nil [126 151])
+            ("nexus_hmac_sha_cmd.h" include nil nil [152 183])
+            ("nexus_keyladder.h" include nil nil [184 212])
+            ("iostream" include (:system-flag t) nil [214 233])
+            ("../lib/arraystreambuf.h" include nil nil [234 268])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [325 345])
+            ("singlepass" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [363 382])
+                    ("keyLen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [383 397])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [398 418])
+                    ("dataLen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [419 434])
+                    ("keyladder" variable (:type "bool") (reparse-symbol arg-sub-list) [435 450]))                  
+                :type "void")
+                nil [347 451])
+            ("multipass" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [467 486])
+                    ("keyLen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [487 501])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [502 522])
+                    ("dataLen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [523 538])
+                    ("keyladder" variable (:type "bool") (reparse-symbol arg-sub-list) [539 554]))                  
+                :type "void")
+                nil [452 555])
+            ("setupKey" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [570 589])
+                    ("keyLen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [590 604]))                  
+                :type "bool")
+                nil [556 605])
+            ("RkStream" type
+               (:superclasses 
+                  ( ("istream" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("ostream" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [657 664])
+                    ("RkStream" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("sb" variable
+                               (:pointer 1
+                                :type ("streambuf" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [686 700]))                          
+                        :type ("RkStream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [677 736]))                  
+                :type "class")
+                nil [607 740])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [751 755])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [756 763]))                  
+                :type "int")
+                nil [742 2330])
+            ("singlepass" function
+               (:arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2348 2367])
+                    ("keyLen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2368 2382])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2383 2403])
+                    ("dataLen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2404 2419])
+                    ("keyladder" variable (:type "bool") (reparse-symbol arg-sub-list) [2420 2435]))                  
+                :type "void")
+                nil [2332 4225])
+            ("multipass" function
+               (:arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4242 4261])
+                    ("keyLen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4262 4276])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4277 4297])
+                    ("dataLen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4298 4313])
+                    ("keyladder" variable (:type "bool") (reparse-symbol arg-sub-list) [4314 4329]))                  
+                :type "void")
+                nil [4227 6684])
+            ("setupKey" function
+               (:arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6700 6719])
+                    ("keyLen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6720 6734]))                  
+                :type "bool")
+                nil [6686 9291]))          
+    :file "test.cpp"
+    :pointmax 9292
+    :fsize 9291
+    :lastmodtime '(21486 6650 12322 208000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("CP" variable (:default-value ("cp")) nil [169 175])
+            ("RM" variable (:default-value ("rm")) nil [175 181])
+            ("CC" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [181 234])
+            ("CXX" variable (:default-value ("mipsel-linux-uclibc-g++" "--sysroot=$(STAGING_PATH)")) nil [234 288])
+            ("LD" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [288 341])
+            ("LIBS" variable (:default-value ("-lpthread")) nil [342 357])
+            ("INCPATH" variable (:default-value ("-I../lib/plugins/foxtel/fsl/include" "-I../lib/plugins/foxtel/fsd/include")) nil [357 437])
+            ("LDFLAGS" variable (:default-value ("$(LDFLAGS)" "-Wl,-O1" "$(LIBS)")) nil [438 475])
+            ("CFLAGS" variable (:default-value ("$(CFLAGS)" "$(CPPFLAGS)")) nil [475 506])
+            ("CFLAGS" variable (:default-value ("-Wall" "-Wextra" "-mips32")) nil [507 539])
+            ("PLATFORM" variable (:default-value ("9$(PLATFORM_BCOM_CHIP)")) nil [540 572])
+            ("NEXUS_PLATFORM" variable (:default-value ("$(PLATFORM)")) nil [572 599])
+            ("$(NEXUS_TOP)/platforms/$(NEXUS_PLATFORM)/build/platform_app.inc" include nil nil [599 671])
+            ("CFLAGS" variable (:default-value ("$(filter-out -pedantic,$(filter-out -std=c89,$(filter-out -Wstrict-prototypes,$(NEXUS_CFLAGS))))" "$(addprefix -I,$(NEXUS_APP_INCLUDE_PATHS))" "$(addprefix -D,$(NEXUS_APP_DEFINES))")) nil [671 858])
+            ("CXXFLAGS" variable (:default-value ("$(CXXFLAGS)" "$(CFLAGS)")) nil [1043 1076])
+            ("SEC_APP_OBJS" variable (:default-value ("test.o" "../lib/arraystreambuf.o")) nil [1077 1124])
+            ("IAN_TEST_OBJS" variable (:default-value ("iantest.o")) nil [1124 1151])
+            ("IAN_TEST2_OBJS" variable (:default-value ("iantest2.o")) nil [1151 1180])
+            ("BURNRSA_OBJS" variable (:default-value ("BurnRSAKeys.o")) nil [1180 1210])
+            ("RK_TEST_OBJS" variable (:default-value ("rktest.o")) nil [1210 1235])
+            ("EXECUTABLES" variable (:default-value ("secapp")) nil [1236 1256])
+            ("EXECUTABLES_INSTALL" variable (:default-value ("$(addprefix $(STAGING_PATH)/usr/bin/, $(EXECUTABLES))")) nil [1256 1331])
+            (".SUFFIXES" function (:arguments (".o" ".c" ".cpp")) nil [1332 1354])
+            (".cpp.o" function nil nil [1355 1410])
+            (".c.o" function nil nil [1411 1461])
+            ("install" function (:arguments ("all")) nil [1462 1530])
+            ("all" function (:arguments ("$(EXECUTABLES)")) nil [1531 1551])
+            ("secapp" function (:arguments ("$(SEC_APP_OBJS)")) nil [1552 1617])
+            ("iantest" function (:arguments ("$(IAN_TEST_OBJS)")) nil [1618 1686])
+            ("iantest2" function (:arguments ("$(IAN_TEST2_OBJS)")) nil [1687 1758])
+            ("BurnRSAKeys" function (:arguments ("$(BURNRSA_OBJS)")) nil [1759 1845])
+            ("rktest" function (:arguments ("$(RK_TEST_OBJS)")) nil [1846 2005])
+            (".PHONY" function (:arguments ("clean")) nil [2006 2020])
+            ("clean" function nil nil [2020 2124]))          
+    :file "Makefile"
+    :pointmax 2124
+    :fsize 2123
+    :lastmodtime '(21486 3122 531479 938000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D713!src!pace!middleware!security-lib!app!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

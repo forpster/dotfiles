@@ -1,0 +1,180 @@
+;; Object interface/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "interface/"
+  :tables (list 
+   (semanticdb-table "owmserviceinterface.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("tlogger.h" include nil nil [836 856])
+            ("tipcconnection.h" include nil nil [857 884])
+            ("owmserviceadaptor.h" include nil nil [885 915])
+            ("owmserviceinterface.h" include nil nil [916 948])
+            ("owmAcquire.h" include nil nil [949 972])
+            ("OWM" using (:type ("OWM" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [973 993])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [994 1018])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [1070 1130])
+            ("OwmServiceInterface" function
+               (:constructor-flag t
+                :parent "OwmServiceInterface"
+                :arguments 
+                  ( ("pOwmAcquireObj" variable
+                       (:pointer 1
+                        :type ("OwmAcquire" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1496 1524]))                  
+                :type ("OwmServiceInterface" type (:type "class") nil nil))
+                nil [1453 3260])
+            ("OwmServiceInterface" function
+               (:destructor-flag t
+                :parent "OwmServiceInterface"
+                :type "void")
+                nil [3509 3673])
+            ("setBoxId" function
+               (:parent "OwmServiceInterface"
+                :arguments 
+                  ( ("boxId" variable
+                       (:reference 1
+                        :type ("QByteArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4073 4092]))                  
+                :type "int")
+                nil [4037 4414])
+            ("setRegionId" function
+               (:parent "OwmServiceInterface"
+                :arguments 
+                  ( ("regionId" variable
+                       (:reference 1
+                        :type ("QByteArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4863 4885]))                  
+                :type "int")
+                nil [4824 5221])
+            ("setPartnerId" function
+               (:parent "OwmServiceInterface"
+                :arguments 
+                  ( ("partnerId" variable
+                       (:reference 1
+                        :type ("QByteArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5677 5700]))                  
+                :type "int")
+                nil [5637 6040])
+            ("setServicePids" function
+               (:parent "OwmServiceInterface"
+                :arguments 
+                  ( ("owmPid" variable (:type "int") (reparse-symbol arg-sub-list) [6512 6523])
+                    ("bpPid" variable (:type "int") (reparse-symbol arg-sub-list) [6524 6535]))                  
+                :type "int")
+                nil [6470 6876])
+            ("setFilter" function
+               (:parent "OwmServiceInterface"
+                :arguments 
+                  ( ("type" variable (:type "int") (reparse-symbol arg-sub-list) [7551 7560])
+                    ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QByteArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7598 7621])
+                    ("sectionType" variable (:type "int") (reparse-symbol arg-sub-list) [7659 7675])
+                    ("pid" variable (:type "int") (reparse-symbol arg-sub-list) [7713 7721])
+                    ("tableId" variable (:type "int") (reparse-symbol arg-sub-list) [7759 7772]))                  
+                :type "int")
+                nil [7514 8558])
+            ("requestMonitoring" function
+               (:parent "OwmServiceInterface"
+                :arguments 
+                  ( ("parserBand" variable (:type "int") (reparse-symbol arg-sub-list) [9355 9370])
+                    ("Pid" variable (:type "int") (reparse-symbol arg-sub-list) [9371 9380]))                  
+                :type "int")
+                nil [9310 9971])
+            ("notify_pipeline_start" function
+               (:parent "OwmServiceInterface"
+                :arguments 
+                  ( ("uuid" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10845 10865])
+                    ("instance" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10866 10880])
+                    ("parser_band" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10881 10898])
+                    ("parser_type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10905 10932])
+                    ("mime_type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10933 10958])
+                    ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10959 10980]))                  
+                :type "void")
+                nil [10795 11298])
+            ("stopMonitoring" function
+               (:parent "OwmServiceInterface"
+                :type "int")
+                nil [11739 12210])
+            ("notify_pipeline_stop" function
+               (:parent "OwmServiceInterface"
+                :arguments 
+                  ( ("uuid" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12755 12775])
+                    ("instance" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12782 12796])
+                    ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12797 12818]))                  
+                :type "void")
+                nil [12706 13060])
+            ("tuneService" function
+               (:parent "OwmServiceInterface"
+                :arguments 
+                  ( ("frontendtype" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13886 13914])
+                    ("parserBand" variable (:type "int") (reparse-symbol arg-sub-list) [13954 13969])
+                    ("frequency" variable (:type "int") (reparse-symbol arg-sub-list) [14009 14023])
+                    ("modulation" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14063 14089])
+                    ("symbol_rate" variable (:type "int") (reparse-symbol arg-sub-list) [14129 14145])
+                    ("code_rate" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14185 14211]))                  
+                :type "int")
+                nil [13847 15256]))          
+    :file "owmserviceinterface.cpp"
+    :pointmax 22351
+    :fsize 22350
+    :lastmodtime '(21798 29436 496822 929000)
+    :unmatched-syntax '((string 1098 . 1127))
+    )
+   (semanticdb-table "owmserviceinterface.h"
+    :file "owmserviceinterface.h"
+    :fsize 4756
+    :lastmodtime '(21798 29436 496822 929000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!TCR!src!pace!middleware!remotecommands!owm!service!interface!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

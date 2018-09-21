@@ -1,0 +1,397 @@
+;; Object secobj/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "secobj/"
+  :tables (list 
+   (semanticdb-table "moc_stb_eco_latensCoreNetwork.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("../stb_eco_latensCoreNetwork.h" include nil nil [358 399])
+            ("qt_meta_data_LatensCoreNetwork" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("uint" type (:type "class") nil nil))
+                nil [758 2381])
+            ("qt_meta_stringdata_LatensCoreNetwork" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [2383 3461])
+            ("qt_static_metacall" function
+               (:parent "LatensCoreNetwork"
+                :arguments 
+                  ( ("_o" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3506 3518])
+                    ("_c" variable (:type ("QMetaObject::Call" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3519 3540])
+                    ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [3541 3549])
+                    ("_a" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3550 3560]))                  
+                :type "void")
+                nil [3463 3637])
+            ("LatensCoreNetwork::staticMetaObjectExtraData" variable
+               (:constant-flag t
+                :type ("QMetaObjectExtraData" type (:type "class") nil nil))
+                nil [3639 3745])
+            ("LatensCoreNetwork::staticMetaObject" variable
+               (:constant-flag t
+                :type ("QMetaObject" type (:type "class") nil nil))
+                nil [3747 3949])
+            ("metaObject" function
+               (:pointer 1
+                :parent "LatensCoreNetwork"
+                :constant-flag t
+                :type ("QMetaObject" type (:type "class") nil nil))
+                nil [4099 4247])
+            ("qt_metacast" function
+               (:pointer 1
+                :parent "LatensCoreNetwork"
+                :arguments 
+                  ( ("_clname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4286 4306]))                  
+                :type "void")
+                nil [4249 4521])
+            ("qt_metacall" function
+               (:parent "LatensCoreNetwork"
+                :arguments 
+                  ( ("_c" variable (:type ("QMetaObject::Call" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4558 4579])
+                    ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [4580 4588])
+                    ("_a" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4589 4599]))                  
+                :type "int")
+                nil [4523 9085])
+            ("qt_meta_data_LatensCoreNetworkManager" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("uint" type (:type "class") nil nil))
+                nil [9086 10166])
+            ("qt_meta_stringdata_LatensCoreNetworkManager" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [10168 10952])
+            ("qt_static_metacall" function
+               (:parent "LatensCoreNetworkManager"
+                :arguments 
+                  ( ("_o" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11004 11016])
+                    ("_c" variable (:type ("QMetaObject::Call" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11017 11038])
+                    ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [11039 11047])
+                    ("_a" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11048 11058]))                  
+                :type "void")
+                nil [10954 12710])
+            ("LatensCoreNetworkManager::staticMetaObjectExtraData" variable
+               (:constant-flag t
+                :type ("QMetaObjectExtraData" type (:type "class") nil nil))
+                nil [12712 12825])
+            ("LatensCoreNetworkManager::staticMetaObject" variable
+               (:constant-flag t
+                :type ("QMetaObject" type (:type "class") nil nil))
+                nil [12827 13050])
+            ("metaObject" function
+               (:pointer 1
+                :parent "LatensCoreNetworkManager"
+                :constant-flag t
+                :type ("QMetaObject" type (:type "class") nil nil))
+                nil [13207 13362])
+            ("qt_metacast" function
+               (:pointer 1
+                :parent "LatensCoreNetworkManager"
+                :arguments 
+                  ( ("_clname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13408 13428]))                  
+                :type "void")
+                nil [13364 13657])
+            ("qt_metacall" function
+               (:parent "LatensCoreNetworkManager"
+                :arguments 
+                  ( ("_c" variable (:type ("QMetaObject::Call" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13701 13722])
+                    ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [13723 13731])
+                    ("_a" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13732 13742]))                  
+                :type "int")
+                nil [13659 15190])
+            ("qt_meta_data_LatensCoreNetworkService" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("uint" type (:type "class") nil nil))
+                nil [15191 16707])
+            ("qt_meta_stringdata_LatensCoreNetworkService" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [16709 18125])
+            ("qt_static_metacall" function
+               (:parent "LatensCoreNetworkService"
+                :arguments 
+                  ( ("_o" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18177 18189])
+                    ("_c" variable (:type ("QMetaObject::Call" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18190 18211])
+                    ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [18212 18220])
+                    ("_a" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18221 18231]))                  
+                :type "void")
+                nil [18127 21848])
+            ("LatensCoreNetworkService::staticMetaObjectExtraData" variable
+               (:constant-flag t
+                :type ("QMetaObjectExtraData" type (:type "class") nil nil))
+                nil [21850 21963])
+            ("LatensCoreNetworkService::staticMetaObject" variable
+               (:constant-flag t
+                :type ("QMetaObject" type (:type "class") nil nil))
+                nil [21965 22188])
+            ("metaObject" function
+               (:pointer 1
+                :parent "LatensCoreNetworkService"
+                :constant-flag t
+                :type ("QMetaObject" type (:type "class") nil nil))
+                nil [22345 22500])
+            ("qt_metacast" function
+               (:pointer 1
+                :parent "LatensCoreNetworkService"
+                :arguments 
+                  ( ("_clname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22546 22566]))                  
+                :type "void")
+                nil [22502 22795])
+            ("qt_metacall" function
+               (:parent "LatensCoreNetworkService"
+                :arguments 
+                  ( ("_c" variable (:type ("QMetaObject::Call" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22839 22860])
+                    ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [22861 22869])
+                    ("_a" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22870 22880]))                  
+                :type "int")
+                nil [22797 24387])
+            ("qt_meta_data_LatensCoreNetworkSecurity" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("uint" type (:type "class") nil nil))
+                nil [24388 25689])
+            ("qt_meta_stringdata_LatensCoreNetworkSecurity" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [25691 26834])
+            ("qt_static_metacall" function
+               (:parent "LatensCoreNetworkSecurity"
+                :arguments 
+                  ( ("_o" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26887 26899])
+                    ("_c" variable (:type ("QMetaObject::Call" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26900 26921])
+                    ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [26922 26930])
+                    ("_a" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [26931 26941]))                  
+                :type "void")
+                nil [26836 29486])
+            ("LatensCoreNetworkSecurity::staticMetaObjectExtraData" variable
+               (:constant-flag t
+                :type ("QMetaObjectExtraData" type (:type "class") nil nil))
+                nil [29488 29602])
+            ("LatensCoreNetworkSecurity::staticMetaObject" variable
+               (:constant-flag t
+                :type ("QMetaObject" type (:type "class") nil nil))
+                nil [29604 29830])
+            ("metaObject" function
+               (:pointer 1
+                :parent "LatensCoreNetworkSecurity"
+                :constant-flag t
+                :type ("QMetaObject" type (:type "class") nil nil))
+                nil [29988 30144])
+            ("qt_metacast" function
+               (:pointer 1
+                :parent "LatensCoreNetworkSecurity"
+                :arguments 
+                  ( ("_clname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30191 30211]))                  
+                :type "void")
+                nil [30146 30442])
+            ("qt_metacall" function
+               (:parent "LatensCoreNetworkSecurity"
+                :arguments 
+                  ( ("_c" variable (:type ("QMetaObject::Call" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30487 30508])
+                    ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [30509 30517])
+                    ("_a" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [30518 30528]))                  
+                :type "int")
+                nil [30444 32235])
+            ("qt_meta_data_LatensCoreNetworkInterface" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("uint" type (:type "class") nil nil))
+                nil [32236 32689])
+            ("qt_meta_stringdata_LatensCoreNetworkInterface" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [32691 32838])
+            ("qt_static_metacall" function
+               (:parent "LatensCoreNetworkInterface"
+                :arguments 
+                  ( ("_o" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32892 32904])
+                    ("_c" variable (:type ("QMetaObject::Call" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32905 32926])
+                    ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [32927 32935])
+                    ("_a" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [32936 32946]))                  
+                :type "void")
+                nil [32840 33325])
+            ("LatensCoreNetworkInterface::staticMetaObjectExtraData" variable
+               (:constant-flag t
+                :type ("QMetaObjectExtraData" type (:type "class") nil nil))
+                nil [33327 33442])
+            ("LatensCoreNetworkInterface::staticMetaObject" variable
+               (:constant-flag t
+                :type ("QMetaObject" type (:type "class") nil nil))
+                nil [33444 33673])
+            ("metaObject" function
+               (:pointer 1
+                :parent "LatensCoreNetworkInterface"
+                :constant-flag t
+                :type ("QMetaObject" type (:type "class") nil nil))
+                nil [33832 33989])
+            ("qt_metacast" function
+               (:pointer 1
+                :parent "LatensCoreNetworkInterface"
+                :arguments 
+                  ( ("_clname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34037 34057]))                  
+                :type "void")
+                nil [33991 34290])
+            ("qt_metacall" function
+               (:parent "LatensCoreNetworkInterface"
+                :arguments 
+                  ( ("_c" variable (:type ("QMetaObject::Call" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34336 34357])
+                    ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [34358 34366])
+                    ("_a" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [34367 34377]))                  
+                :type "int")
+                nil [34292 34625])
+            ("qt_meta_data_LatensCoreNetworkDiagnostics" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("uint" type (:type "class") nil nil))
+                nil [34626 35292])
+            ("qt_meta_stringdata_LatensCoreNetworkDiagnostics" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [35294 35586])
+            ("qt_static_metacall" function
+               (:parent "LatensCoreNetworkDiagnostics"
+                :arguments 
+                  ( ("_o" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35642 35654])
+                    ("_c" variable (:type ("QMetaObject::Call" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35655 35676])
+                    ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [35677 35685])
+                    ("_a" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [35686 35696]))                  
+                :type "void")
+                nil [35588 36325])
+            ("LatensCoreNetworkDiagnostics::staticMetaObjectExtraData" variable
+               (:constant-flag t
+                :type ("QMetaObjectExtraData" type (:type "class") nil nil))
+                nil [36327 36444])
+            ("LatensCoreNetworkDiagnostics::staticMetaObject" variable
+               (:constant-flag t
+                :type ("QMetaObject" type (:type "class") nil nil))
+                nil [36446 36681])
+            ("metaObject" function
+               (:pointer 1
+                :parent "LatensCoreNetworkDiagnostics"
+                :constant-flag t
+                :type ("QMetaObject" type (:type "class") nil nil))
+                nil [36842 37001])
+            ("qt_metacast" function
+               (:pointer 1
+                :parent "LatensCoreNetworkDiagnostics"
+                :arguments 
+                  ( ("_clname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [37051 37071]))                  
+                :type "void")
+                nil [37003 37308])
+            ("qt_metacall" function
+               (:parent "LatensCoreNetworkDiagnostics"
+                :arguments 
+                  ( ("_c" variable (:type ("QMetaObject::Call" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37356 37377])
+                    ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [37378 37386])
+                    ("_a" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [37387 37397]))                  
+                :type "int")
+                nil [37310 38508]))          
+    :file "moc_stb_eco_latensCoreNetwork.cpp"
+    :pointmax 38530
+    :fsize 38529
+    :lastmodtime '(21869 28249 335199 775000)
+    :unmatched-syntax '((symbol 38509 . 38529) (symbol 735 . 757) (string 693 . 726) (symbol 687 . 692) (punctuation 686 . 687) (string 621 . 685) (symbol 615 . 620) (punctuation 614 . 615) (string 559 . 613) (symbol 553 . 558) (punctuation 552 . 553) (string 443 . 517) (symbol 437 . 442) (punctuation 436 . 437))
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!applications!adaptation_layer!javascript!eco!secobj!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

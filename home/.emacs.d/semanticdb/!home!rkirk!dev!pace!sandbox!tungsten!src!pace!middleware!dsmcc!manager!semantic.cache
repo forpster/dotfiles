@@ -1,0 +1,376 @@
+;; Object manager/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "manager/"
+  :tables (list 
+   (semanticdb-table "dsmccManager.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QTimer" include (:system-flag t) nil [1 18])
+            ("QUrl" include (:system-flag t) nil [19 34])
+            ("QDir" include (:system-flag t) nil [35 50])
+            ("QMutexLocker" include (:system-flag t) nil [51 74])
+            ("QDateTime" include (:system-flag t) nil [75 95])
+            ("assert.h" include (:system-flag t) nil [96 115])
+            ("climits" include (:system-flag t) nil [116 134])
+            ("tipcconnection.h" include nil nil [136 163])
+            ("dsmccManager.h" include nil nil [164 189])
+            ("dsmccManager_validation.h" include nil nil [190 226])
+            ("debug_common.h" include nil nil [227 252])
+            ("gophercommand.h" include nil nil [253 279])
+            ("configReader.h" include nil nil [314 339])
+            ("configPublicDefs.h" include nil nil [340 369])
+            ("dsmccCache.h" include nil nil [378 401])
+            ("liveServiceMonitorEvent.h" include nil nil [402 438])
+            ("tag" variable (:type ("QString" type (:type "class") nil nil)) nil [441 471])
+            ("DSMCCManager::s_requestID" variable (:type "int") nil [472 506])
+            ("requestLessThan" function
+               (:arguments 
+                  ( ("a" variable
+                       (:constant-flag t
+                        :type ("DSMCC_REQUEST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [611 633])
+                    ("b" variable
+                       (:constant-flag t
+                        :type ("DSMCC_REQUEST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [634 656]))                  
+                :type "bool")
+                nil [590 697])
+            ("requestGreaterThan" function
+               (:arguments 
+                  ( ("a" variable
+                       (:constant-flag t
+                        :type ("DSMCC_REQUEST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [883 905])
+                    ("b" variable
+                       (:constant-flag t
+                        :type ("DSMCC_REQUEST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [906 928]))                  
+                :type "bool")
+                nil [859 969])
+            ("unnamed" type
+               (:members 
+                  ( ("dsmccManagerInstantiated" variable
+                       (:typemodifiers ("static")
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1063 1108]))                  
+                :type "namespace")
+                nil [1051 1110])
+            ("DSMCCManager" function
+               (:constructor-flag t
+                :parent "DSMCCManager"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1220 1236])
+                    ("pEventListModel" variable
+                       (:pointer 1
+                        :type ("EventListModel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1237 1269])
+                    ("feType" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1270 1282]))                  
+                :type ("DSMCCManager" type (:type "class") nil nil))
+                nil [1193 8493])
+            ("DSMCCManager" function
+               (:destructor-flag t
+                :parent "DSMCCManager"
+                :type "void")
+                nil [8655 8919])
+            ("started" function
+               (:parent "DSMCCManager"
+                :type "void")
+                nil [9081 9461])
+            ("decodeUrl" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("url" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9833 9852])
+                    ("directory" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9853 9878])
+                    ("request" variable (:type ("DSMCC_REQUEST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9879 9901]))                  
+                :type ("dsmcc_manager_error_t" type (:type "class") nil nil))
+                nil [9787 14768])
+            ("isValidLastUpdatedPMT" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("request" variable (:type ("DSMCC_REQUEST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14958 14980]))                  
+                :type "bool")
+                nil [14917 15250])
+            ("getFile" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("url" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15707 15726])
+                    ("priority" variable (:type "int") (reparse-symbol arg-sub-list) [15727 15740])
+                    ("directory" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15741 15766])
+                    ("timeout" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15767 15780]))                  
+                :type ("uint" type (:type "class") nil nil))
+                nil [15680 17494])
+            ("maintainFile" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("url" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17759 17778])
+                    ("directory" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17779 17804])
+                    ("constantMonitoring" variable (:type "bool") (reparse-symbol arg-sub-list) [17805 17829]))                  
+                :type ("uint" type (:type "class") nil nil))
+                nil [17727 19951])
+            ("monitorDirectory" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("url" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20150 20169])
+                    ("constantMonitoring" variable (:type "bool") (reparse-symbol arg-sub-list) [20170 20194]))                  
+                :type ("uint" type (:type "class") nil nil))
+                nil [20114 21631])
+            ("cacheCarouselFile" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("url" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21830 21849]))                  
+                :type ("uint" type (:type "class") nil nil))
+                nil [21793 23304])
+            ("cacheCarouselDirectory" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("url" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23518 23537]))                  
+                :type ("uint" type (:type "class") nil nil))
+                nil [23476 25037])
+            ("onGetFile" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("request" variable (:type ("DSMCC_REQUEST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25228 25250]))                  
+                :type "void")
+                nil [25199 27162])
+            ("onMaintainFile" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("request" variable (:type ("DSMCC_REQUEST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27358 27380]))                  
+                :type "void")
+                nil [27324 28205])
+            ("onMonitorDirectory" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("request" variable (:type ("DSMCC_REQUEST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28405 28427]))                  
+                :type "void")
+                nil [28367 29139])
+            ("onCacheCarouselFile" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("request" variable (:type ("DSMCC_REQUEST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29340 29362]))                  
+                :type "void")
+                nil [29301 31643])
+            ("onCacheCarouselDirectory" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("request" variable (:type ("DSMCC_REQUEST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31849 31871]))                  
+                :type "void")
+                nil [31805 33913])
+            ("setPermissions" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("directory" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34142 34167]))                  
+                :type "void")
+                nil [34108 34677])
+            ("findLowerPriorityActiveRequest" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("loader_key" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34809 34835])
+                    ("priority" variable (:type "int") (reparse-symbol arg-sub-list) [34836 34849])
+                    ("request" variable
+                       (:pointer 1
+                        :type ("DSMCC_REQUEST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34850 34873]))                  
+                :type "bool")
+                nil [34759 35255])
+            ("makeEngineRequest" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("request" variable (:type ("DSMCC_REQUEST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35473 35495]))                  
+                :type ("dsmcc_manager_error_t" type (:type "class") nil nil))
+                nil [35419 38204])
+            ("performRequest" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("request" variable (:type ("DSMCC_REQUEST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38400 38422]))                  
+                :type "void")
+                nil [38366 40570])
+            ("cancelRequest" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("requestId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40685 40700]))                  
+                :type "bool")
+                nil [40652 42257])
+            ("removeRequest" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("requestId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42445 42460])
+                    ("cancelEngineRequest" variable (:type "bool") (reparse-symbol arg-sub-list) [42461 42486])
+                    ("timedout" variable (:type "bool") (reparse-symbol arg-sub-list) [42487 42501]))                  
+                :type "bool")
+                nil [42412 43630])
+            ("startNext" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("loader_key" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43886 43905]))                  
+                :type "void")
+                nil [43857 44806])
+            ("retryRequest" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("requestID" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45001 45016]))                  
+                :type "void")
+                nil [44969 45586])
+            ("onDownloadRejected" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("request" variable (:type ("DSMCC_REQUEST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45786 45808])
+                    ("errorCode" variable (:type "int") (reparse-symbol arg-sub-list) [45809 45823]))                  
+                :type "void")
+                nil [45748 46667])
+            ("engineDownloadComplete" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("requestID" variable (:type "int") (reparse-symbol arg-sub-list) [46906 46920])
+                    ("location" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46921 46945])
+                    ("version" variable
+                       (:constant-flag t
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46946 46965]))                  
+                :type "void")
+                nil [46864 50956])
+            ("engineDownloadFailure" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("requestID" variable (:type "int") (reparse-symbol arg-sub-list) [51159 51173])
+                    ("errorCode" variable (:type "int") (reparse-symbol arg-sub-list) [51174 51188]))                  
+                :type "void")
+                nil [51118 52269])
+            ("engineOnDirectoryListing" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("requestID" variable (:type "int") (reparse-symbol arg-sub-list) [52475 52489])
+                    ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52490 52510])
+                    ("listing" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52511 52534])
+                    ("version" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52535 52548]))                  
+                :type "void")
+                nil [52431 58841])
+            ("updateMonitoredRequests" function
+               (:parent "DSMCCManager"
+                :type "void")
+                nil [59025 61183])
+            ("updateTimeouts" function
+               (:parent "DSMCCManager"
+                :type "void")
+                nil [61273 65017])
+            ("pickupRequests" function
+               (:parent "DSMCCManager"
+                :type "void")
+                nil [65019 65742])
+            ("genLoaderKey" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("triplet" variable (:type ("dvb_triplet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66464 66484])
+                    ("pid" variable (:type "int") (reparse-symbol arg-sub-list) [66485 66493]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [66429 66577])
+            ("searchKeyStr" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("searchKey" variable (:type ("request_search_key" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66614 66643]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [66579 66856])
+            ("getBroadcastType" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("feType" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66904 66916]))                  
+                :type ("BROADCAST_TYPE" type (:type "class") nil nil))
+                nil [66858 67260])
+            ("cancelEvent" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("request" variable (:type ("DSMCC_REQUEST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67373 67395])
+                    ("clearEngineID" variable (:type "bool") (reparse-symbol arg-sub-list) [67396 67415]))                  
+                :type "void")
+                nil [67342 67690])
+            ("determineIfRequestPossible" function
+               (:parent "DSMCCManager"
+                :arguments 
+                  ( ("request" variable (:type ("DSMCC_REQUEST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67818 67840]))                  
+                :type "bool")
+                nil [67772 68056]))          
+    :file "dsmccManager.cpp"
+    :pointmax 68058
+    :fsize 68057
+    :lastmodtime '(21412 3676 788570 776000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "dsmccManager.h"
+    :file "dsmccManager.h"
+    :fsize 8609
+    :lastmodtime '(21412 3676 789570 770000)
+    )
+   (semanticdb-table "dsmccManager_validation.h"
+    :file "dsmccManager_validation.h"
+    :fsize 486
+    :lastmodtime '(21412 3676 771570 889000)
+    )
+   (semanticdb-table "dsmccCache.h"
+    :file "dsmccCache.h"
+    :fsize 1856
+    :lastmodtime '(21412 3676 788570 776000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!dsmcc!manager!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

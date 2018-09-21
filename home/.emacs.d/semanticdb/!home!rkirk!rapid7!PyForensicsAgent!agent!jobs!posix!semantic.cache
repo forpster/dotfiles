@@ -1,0 +1,262 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("agent.jobs.base.remote_execution" include nil nil [1 59])
+            ("agent_common.search" include nil nil [61 138])
+            ("agent_common.safety" include nil nil [139 182])
+            ("agent_common.path" include nil nil [184 208])
+            ("itertools" include nil nil [209 225])
+            ("functools" include nil nil [226 242])
+            ("re" include nil nil [243 252])
+            ("os" include nil nil [253 262])
+            ("find_callback" function (:arguments 
+              ( ("completed" variable nil (reparse-symbol function_parameters) [283 292])
+                ("exit_val" variable nil (reparse-symbol function_parameters) [294 302])
+                ("stdout_fp" variable nil (reparse-symbol function_parameters) [304 313])
+                ("stderr_fp" variable nil (reparse-symbol function_parameters) [315 324])
+                ("logger" variable nil (reparse-symbol function_parameters) [326 332]))              ) nil [265 3097])
+            ("HomeDirectoryCallback" type
+               (:members 
+                  ( ("ETC_PASSWD_REGEX" variable nil (reparse-symbol indented_block_body) [3132 3202])
+                    ("get_home_directory_permissions" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [3260 3263])
+                            ("completed" variable nil (reparse-symbol function_parameters) [3265 3274])
+                            ("exit_val" variable nil (reparse-symbol function_parameters) [3276 3284])
+                            ("stdout_fp" variable nil (reparse-symbol function_parameters) [3286 3295])
+                            ("stderr_fp" variable nil (reparse-symbol function_parameters) [3297 3306])
+                            ("logger" variable nil (reparse-symbol function_parameters) [3308 3314]))                          )
+                        (reparse-symbol indented_block_body) [3208 4245]))                  
+                :type "class")
+                nil [3099 4245])
+            ("SuidFilesCallback" type
+               (:members 
+                  ( ("CHUNK_SIZE" variable nil (reparse-symbol indented_block_body) [4276 4291])
+                    ("FILENAME_REGEX" variable nil (reparse-symbol indented_block_body) [4296 4350])
+                    ("chunks" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [4384 4387])
+                            ("iterable" variable nil (reparse-symbol function_parameters) [4389 4397])
+                            ("chunk_size" variable nil (reparse-symbol function_parameters) [4399 4409]))                          )
+                        (reparse-symbol indented_block_body) [4356 4604])
+                    ("grep_for_shebangs" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [4648 4651])
+                            ("completed" variable nil (reparse-symbol function_parameters) [4653 4662])
+                            ("exit_val" variable nil (reparse-symbol function_parameters) [4664 4672])
+                            ("stdout_fp" variable nil (reparse-symbol function_parameters) [4674 4683])
+                            ("stderr_fp" variable nil (reparse-symbol function_parameters) [4685 4694])
+                            ("logger" variable nil (reparse-symbol function_parameters) [4696 4702]))                          )
+                        (reparse-symbol indented_block_body) [4609 5212]))                  
+                :type "class")
+                nil [4247 5212])
+            ("MoodleCallback" type
+               (:members 
+                  ( ("get_version" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [5273 5276])
+                            ("path" variable nil (reparse-symbol function_parameters) [5278 5282]))                          )
+                        (reparse-symbol indented_block_body) [5240 5708]))                  
+                :type "class")
+                nil [5214 5708])
+            ("TorBrowserCallback" type
+               (:members 
+                  ( ("get_versions" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [5774 5777])
+                            ("path" variable nil (reparse-symbol function_parameters) [5779 5783]))                          )
+                        (reparse-symbol indented_block_body) [5740 5884]))                  
+                :type "class")
+                nil [5710 5884])
+            ("TuxedoCallback" type
+               (:members 
+                  ( ("get_comps" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [5943 5946])
+                            ("path" variable nil (reparse-symbol function_parameters) [5948 5952]))                          )
+                        (reparse-symbol indented_block_body) [5912 6006]))                  
+                :type "class")
+                nil [5886 6006])
+            ("WeblogicCallback" type
+               (:members 
+                  ( ("get_bugsfixed" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [6071 6074])
+                            ("path" variable nil (reparse-symbol function_parameters) [6076 6080]))                          )
+                        (reparse-symbol indented_block_body) [6036 6391])
+                    ("get_ver_patch" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [6431 6434])
+                            ("path" variable nil (reparse-symbol function_parameters) [6436 6440]))                          )
+                        (reparse-symbol indented_block_body) [6396 6686]))                  
+                :type "class")
+                nil [6008 6686])
+            ("JbossCallback" type
+               (:members 
+                  ( ("get_jboss_ver" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [6748 6751])
+                            ("path" variable nil (reparse-symbol function_parameters) [6753 6757]))                          )
+                        (reparse-symbol indented_block_body) [6713 8267])
+                    ("get_jar_ver" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [8305 8308])
+                            ("path" variable nil (reparse-symbol function_parameters) [8310 8314]))                          )
+                        (reparse-symbol indented_block_body) [8272 9737]))                  
+                :type "class")
+                nil [6688 9737])
+            ("VMwareCallback" type
+               (:members 
+                  ( ("\"/etc/vmware\"" code nil (reparse-symbol indented_block_body) [9784 9797])
+                    ("\"/usr/lib/vmware\"" code nil (reparse-symbol indented_block_body) [9821 9838])
+                    ("ETC_DIR_REGEX" variable nil (reparse-symbol indented_block_body) [9844 9899])
+                    ("LIB_DIR_REGEX" variable nil (reparse-symbol indented_block_body) [9904 9976])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [10019 10041]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9995 9999])
+                            ("product" variable nil (reparse-symbol function_parameters) [10001 10008]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [9982 10042])
+                    ("get_version" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10063 10067])
+                            ("completed" variable nil (reparse-symbol function_parameters) [10069 10078])
+                            ("exit_val" variable nil (reparse-symbol function_parameters) [10080 10088])
+                            ("stdout_fp" variable nil (reparse-symbol function_parameters) [10090 10099])
+                            ("stderr_fp" variable nil (reparse-symbol function_parameters) [10101 10110])
+                            ("logger" variable nil (reparse-symbol function_parameters) [10112 10118]))                          )
+                        (reparse-symbol indented_block_body) [10047 10566])
+                    ("fingerprint_modern_vmware" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10601 10605])
+                            ("completed" variable nil (reparse-symbol function_parameters) [10607 10616])
+                            ("exit_val" variable nil (reparse-symbol function_parameters) [10618 10626])
+                            ("stdout_fp" variable nil (reparse-symbol function_parameters) [10628 10637])
+                            ("stderr_fp" variable nil (reparse-symbol function_parameters) [10639 10648])
+                            ("logger" variable nil (reparse-symbol function_parameters) [10650 10656]))                          )
+                        (reparse-symbol indented_block_body) [10571 11052])
+                    ("fingerprint_legacy_vmware" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11087 11091])
+                            ("completed" variable nil (reparse-symbol function_parameters) [11093 11102])
+                            ("exit_val" variable nil (reparse-symbol function_parameters) [11104 11112])
+                            ("stdout_fp" variable nil (reparse-symbol function_parameters) [11114 11123])
+                            ("stderr_fp" variable nil (reparse-symbol function_parameters) [11125 11134])
+                            ("logger" variable nil (reparse-symbol function_parameters) [11136 11142]))                          )
+                        (reparse-symbol indented_block_body) [11057 11739])
+                    ("get_build_number_from_legacy_vmware" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11784 11788])
+                            ("completed" variable nil (reparse-symbol function_parameters) [11790 11799])
+                            ("exit_val" variable nil (reparse-symbol function_parameters) [11801 11809])
+                            ("stdout_fp" variable nil (reparse-symbol function_parameters) [11811 11820])
+                            ("stderr_fp" variable nil (reparse-symbol function_parameters) [11822 11831])
+                            ("logger" variable nil (reparse-symbol function_parameters) [11833 11839])
+                            ("filename" variable nil (reparse-symbol function_parameters) [11841 11849]))                          )
+                        (reparse-symbol indented_block_body) [11744 12554])
+                    ("_parse_etc_dir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12578 12582])
+                            ("stdout_fp" variable nil (reparse-symbol function_parameters) [12584 12593]))                          )
+                        (reparse-symbol indented_block_body) [12559 12856])
+                    ("_parse_lib_dir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12880 12884])
+                            ("stdout_fp" variable nil (reparse-symbol function_parameters) [12886 12895]))                          )
+                        (reparse-symbol indented_block_body) [12861 13158]))                  
+                :type "class")
+                nil [9739 13158])
+            ("VMwarePlayerCallback" type
+               (:superclasses ("VMwareCallback")
+                :members 
+                  ( ("\"vmplayer\"" code nil (reparse-symbol indented_block_body) [13219 13229])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [13263 13327]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13248 13252]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [13235 13328]))                  
+                :type "class")
+                nil [13160 13328])
+            ("VMwareWorkstationCallback" type
+               (:superclasses ("VMwareCallback")
+                :members 
+                  ( ("\"vmware\"" code nil (reparse-symbol indented_block_body) [13394 13402])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [13436 13505]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13421 13425]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [13408 13506]))                  
+                :type "class")
+                nil [13330 13506])
+            ("JarManifestCallback" type
+               (:members 
+                  ( ("get_manifest_contents" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [13581 13584])
+                            ("path" variable nil (reparse-symbol function_parameters) [13586 13590]))                          )
+                        (reparse-symbol indented_block_body) [13538 13914]))                  
+                :type "class")
+                nil [13507 13914])
+            ("JavaJarCallback" type
+               (:members 
+                  ( ("get_pkg_ownership" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [13981 13984])
+                            ("path" variable nil (reparse-symbol function_parameters) [13986 13990]))                          )
+                        (reparse-symbol indented_block_body) [13942 14225]))                  
+                :type "class")
+                nil [13915 14225])
+            ("EXCLUDED_NETWORK_FS_TYPES" variable nil nil [14227 14331])
+            ("COMMANDS" variable nil nil [14334 22343]))          
+      :file "remote_execution_init.py"
+      :pointmax 22344
+      :fsize 22343
+      :lastmodtime '(23270 52088 527077 582000)
+      :unmatched-syntax '((INDENT_BLOCK 12194 . 12282) (NEWLINE 12193 . 12194) (COLON 12192 . 12193) (ELSE 12188 . 12192) (INDENT_BLOCK 12073 . 12172) (NEWLINE 12072 . 12073) (IF 12016 . 12018) (STRING_LITERAL 12060 . 12071) (COLON 12071 . 12072) (INDENT_BLOCK 2894 . 3073) (NEWLINE 2893 . 2894) (COLON 2892 . 2893) (ELIF 2861 . 2865) (INDENT_BLOCK 2581 . 2638) (NEWLINE 2580 . 2581) (STRING_LITERAL 2513 . 2524) (COLON 2579 . 2580) (ELIF 2494 . 2498) (INDENT_BLOCK 2181 . 2245) (NEWLINE 2180 . 2181) (STRING_LITERAL 2114 . 2124) (COLON 2179 . 2180) (ELIF 2095 . 2099) (INDENT_BLOCK 1804 . 1863) (NEWLINE 1803 . 1804) (STRING_LITERAL 1790 . 1802) (COLON 1802 . 1803) (ELIF 1771 . 1775) (INDENT_BLOCK 1499 . 1557) (NEWLINE 1498 . 1499) (STRING_LITERAL 1479 . 1497) (COLON 1497 . 1498) (ELIF 1460 . 1464) (INDENT_BLOCK 1192 . 1252) (NEWLINE 1191 . 1192) (STRING_LITERAL 1177 . 1190) (COLON 1190 . 1191) (ELIF 1158 . 1162) (INDENT_BLOCK 867 . 930) (NEWLINE 866 . 867) (STRING_LITERAL 851 . 865) (COLON 865 . 866) (ELIF 832 . 836) (INDENT_BLOCK 763 . 826) (NEWLINE 762 . 763) (IF 721 . 723) (STRING_LITERAL 738 . 761) (COLON 761 . 762))))
+  :file "!home!rkirk!rapid7!PyForensicsAgent!agent!jobs!posix!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

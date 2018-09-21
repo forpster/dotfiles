@@ -1,0 +1,172 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("CP" variable (:default-value ("cp")) nil [12 18])
+            ("RM" variable (:default-value ("rm")) nil [18 24])
+            ("CC" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [24 77])
+            ("CXX" variable (:default-value ("mipsel-linux-uclibc-g++" "--sysroot=$(STAGING_PATH)")) nil [77 131])
+            ("LD" variable (:default-value ("mipsel-linux-uclibc-gcc" "--sysroot=$(STAGING_PATH)")) nil [131 184])
+            ("LIBS" variable (:default-value ("-lpthread" "-lcrypto")) nil [185 209])
+            ("LDFLAGS_TOOL" variable (:default-value ("$(filter-out -lgtest_main, $(filter-out -lgtest, $(LDFLAGS)))" "-Wl,-O1" "-lpthread")) nil [368 463])
+            ("LDFLAGS" variable (:default-value ("$(filter-out -lsecurity, $(LDFLAGS))" "-Wl,-O1" "$(LIBS)")) nil [614 677])
+            ("CFLAGS" variable (:default-value ("$(CFLAGS)")) nil [678 697])
+            ("CFLAGS" variable (:default-value ("-Wextra" "-mips32")) nil [697 723])
+            ("CXXFLAGS" variable (:default-value ("$(CXXFLAGS)" "$(CFLAGS)" "-I../lib" "-I../lib/plugins/pace/" "-I../lib/plugins/openssl")) nil [809 899])
+            ("EXECUTABLES" variable (:default-value ("sectool" "sectest-keyprovider" "sectest-paceheader" "sectest-tlvparser" "sectest-keymaterial" "sectest-arraystreambuf")) nil [900 1022])
+            ("EXECUTABLES_INSTALL" variable (:default-value ("$(addprefix $(STAGING_PATH)/usr/bin/, $(EXECUTABLES))")) nil [1022 1097])
+            (".SUFFIXES" function (:arguments (".o" ".c" ".cpp")) nil [1098 1120])
+            (".cpp.o" function nil nil [1120 1164])
+            (".c.o" function nil nil [1165 1204])
+            ("all" function (:arguments ("$(EXECUTABLES)")) nil [1205 1225])
+            ("install" function (:arguments ("$(EXECUTABLES)")) nil [1226 1305])
+            ("sectool" function (:arguments ("sectool.o")) nil [1413 1472])
+            ("sectest-keyprovider" function (:arguments ("keyprovider.o")) nil [1495 1590])
+            ("sectest-paceheader" function (:arguments ("paceheader.o" "paceheadercreator.o")) nil [1591 1723])
+            ("sectest-tlvparser" function (:arguments ("tlvparser.o")) nil [1724 1813])
+            ("sectest-keymaterial" function (:arguments ("keymaterial.o")) nil [1814 1909])
+            ("sectest-arraystreambuf" function (:arguments ("sectest-arraystreambuf.o")) nil [1910 2030])
+            (".PHONY" function (:arguments ("clean")) nil [2031 2045])
+            ("clean" function nil nil [2045 2105]))          
+    :file "Makefile"
+    :pointmax 2105
+    :fsize 2104
+    :lastmodtime '(21704 60307 278456 700000)
+    :unmatched-syntax '((shell-command 2053 . 2104) (bol 2052 . 2052) (shell-command 769 . 801) (bol 768 . 768))
+    )
+   (semanticdb-table "tlvparser.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdint.h" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("tlvparser.h" include nil nil [40 62])
+            ("gtest/gtest.h" include nil nil [63 87])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [89 109])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("TlvParser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [309 319])
+                    ("" variable (:type ("GoodData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [320 329]))                  
+                :type "int")
+                nil [304 4878])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("TlvParser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5073 5083])
+                    ("" variable (:type ("EmptyData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5084 5094]))                  
+                :type "int")
+                nil [5068 5326])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("TlvParser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5525 5535])
+                    ("" variable (:type ("MalformedData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5536 5550]))                  
+                :type "int")
+                nil [5520 7049]))          
+    :file "tlvparser.cpp"
+    :pointmax 7050
+    :fsize 7049
+    :lastmodtime '(21704 64920 6671 242000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "keymaterial.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vector" include (:system-flag t) nil [1 18])
+            ("utility" include (:system-flag t) nil [19 37])
+            ("stdint.h" include (:system-flag t) nil [38 57])
+            ("keymaterialcache.h" include nil nil [59 88])
+            ("securitycontainerheadertypes.h" include nil nil [89 130])
+            ("gtest/gtest.h" include nil nil [131 155])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [157 177])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("KeyMaterial" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [497 509])
+                    ("" variable (:type ("ValidKeyMaterial" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [510 527]))                  
+                :type "int")
+                nil [492 1568])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("KeyMaterial" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1632 1644])
+                    ("" variable (:type ("ValidKeyMaterialWithoutParamaters" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1645 1679]))                  
+                :type "int")
+                nil [1627 2159])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("KeyMaterial" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2207 2219])
+                    ("" variable (:type ("Assignments" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2220 2232]))                  
+                :type "int")
+                nil [2202 3974])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("KeyMaterial" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4020 4032])
+                    ("" variable (:type ("LessThanOperator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4033 4050]))                  
+                :type "int")
+                nil [4015 4781])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("KeyMaterial" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4839 4851])
+                    ("" variable (:type ("DerivationAlgorithm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4852 4872]))                  
+                :type "int")
+                nil [4834 5665])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("KeyMaterialCache" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5941 5958])
+                    ("" variable (:type ("EmptyCache" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5959 5970]))                  
+                :type "int")
+                nil [5936 6543])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("KeyMaterialCache" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6550 6567])
+                    ("" variable (:type ("RetrieveValues" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6568 6583]))                  
+                :type "int")
+                nil [6545 8334])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("KeyMaterialCache" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8341 8358])
+                    ("" variable (:type ("UpdateValues" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8359 8372]))                  
+                :type "int")
+                nil [8336 12521])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("SecurityContainerKeyProvider" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12528 12557])
+                    ("" variable (:type ("HardCodedKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12558 12571]))                  
+                :type "int")
+                nil [12523 13338]))          
+    :file "keymaterial.cpp"
+    :pointmax 12073
+    :fsize 13338
+    :lastmodtime '(21711 23698 213818 780000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "keyprovider.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vector" include (:system-flag t) nil [1 18])
+            ("stdint.h" include (:system-flag t) nil [19 38])
+            ("gtest/gtest.h" include nil nil [40 64])
+            ("securitycontainerkeyprovider.h" include nil nil [65 106])
+            ("keymaterialcache.h" include nil nil [107 136])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("SecurityContainerKeyProvider" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [849 878])
+                    ("" variable (:type ("InvalidKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [879 890]))                  
+                :type "int")
+                nil [844 1063]))          
+    :file "keyprovider.cpp"
+    :pointmax 1064
+    :fsize 1063
+    :lastmodtime '(21704 60307 277456 707000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D683!src!pace!middleware!security-lib!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

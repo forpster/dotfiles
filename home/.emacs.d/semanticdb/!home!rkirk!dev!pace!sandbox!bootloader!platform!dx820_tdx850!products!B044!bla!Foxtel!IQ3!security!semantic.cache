@@ -1,0 +1,79 @@
+;; Object security/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "security/"
+  :tables (list 
+   (semanticdb-table "bla_prod_security.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("bla_debug.h" include nil nil [671 693])
+            ("bla_prod_security.h" include nil nil [694 724])
+            ("BLA_SECURITY_SetExecutionLocation" function
+               (:arguments 
+                  ( ("imageData" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [771 790])
+                    ("imageStartLocation" variable
+                       (:pointer 2
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [791 820]))                  
+                :type ("FSL_RETURN" type (:type "class") nil nil))
+                nil [726 961])
+            ("BLA_SECURITY_Decrypt" function
+               (:arguments 
+                  ( ("dataSource" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [995 1015])
+                    ("dataSourceLength" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1016 1042])
+                    ("dataDestination" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1043 1068])
+                    ("destinationDataLength" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1069 1100]))                  
+                :type ("FSL_RETURN" type (:type "class") nil nil))
+                nil [963 2001])
+            ("BLA_SECURITY_Decompress" function
+               (:arguments 
+                  ( ("dataSource" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2038 2058])
+                    ("dataSourceLength" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2059 2085])
+                    ("dataDestination" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2086 2111])
+                    ("destinationDataLength" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2112 2143]))                  
+                :type ("FSL_RETURN" type (:type "class") nil nil))
+                nil [2003 3301])
+            ("BLA_SECURITY_Signature" function
+               (:arguments 
+                  ( ("signedDataSource" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3337 3363])
+                    ("signedDataSourceLength" variable (:type ("L_UINT32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3364 3396])
+                    ("signatureData" variable
+                       (:pointer 1
+                        :type ("L_UINT8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3397 3420])
+                    ("datetimeSecondsEpoch" variable (:type ("L_UINT8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3421 3450]))                  
+                :type ("FSL_RETURN" type (:type "class") nil nil))
+                nil [3303 4526]))          
+    :file "bla_prod_security.c"
+    :pointmax 4527
+    :fsize 4526
+    :lastmodtime '(21302 2976 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "bla_prod_security.h"
+    :file "bla_prod_security.h"
+    :fsize 1310
+    :lastmodtime '(21301 3366 0 0)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!bootloader!platform!dx820_tdx850!products!B044!bla!Foxtel!IQ3!security!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

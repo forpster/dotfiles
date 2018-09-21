@@ -1,0 +1,213 @@
+;; Object rsh/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "rsh/"
+  :tables (list 
+   (semanticdb-table "RExecSession.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.rapid7.net.rsh" package nil nil [354 381])
+            ("com.rapid7.io.InputStreamAdapter" include nil nil [383 423])
+            ("com.rapid7.log.ILogSink" include nil nil [424 455])
+            ("com.rapid7.net.IConnectSocket" include nil nil [456 493])
+            ("com.rapid7.net.IRemoteExecutionResult" include nil nil [494 539])
+            ("com.rapid7.net.IServerSocket" include nil nil [540 576])
+            ("com.rapid7.net.ISession" include nil nil [577 608])
+            ("com.rapid7.net.ISessionEndpoint" include nil nil [609 648])
+            ("com.rapid7.net.RemoteExecutionResult" include nil nil [649 693])
+            ("com.rapid7.net.SSLSocket" include nil nil [694 726])
+            ("com.rapid7.net.TCPServerSocket" include nil nil [727 765])
+            ("com.rapid7.net.TCPSocket" include nil nil [766 798])
+            ("java.io.EOFException" include nil nil [799 827])
+            ("java.io.IOException" include nil nil [828 855])
+            ("java.io.InputStream" include nil nil [856 883])
+            ("java.io.OutputStream" include nil nil [884 912])
+            ("RExecSession" type
+               (:typemodifiers ("public")
+                :interfaces ("ISession")
+                :members 
+                  ( ("RExecSession" function
+                       (:constructor-flag t
+                        :throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ep" variable (:type "ISessionEndpoint") (reparse-symbol formal_parameters) [1472 1491])
+                            ("log" variable (:type "ILogSink") (reparse-symbol formal_parameters) [1493 1505]))                          )
+                        (reparse-symbol class_member_declaration) [1452 1629])
+                    ("open" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("username" variable (:type "String") (reparse-symbol formal_parameters) [1651 1666])
+                            ("password" variable (:type "String") (reparse-symbol formal_parameters) [1668 1683]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1634 3148])
+                    ("execute" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("cmd" variable (:type "String") (reparse-symbol formal_parameters) [3191 3201]))                          
+                        :type "IRemoteExecutionResult")
+                        (reparse-symbol class_member_declaration) [3153 3856])
+                    ("getSessionEndpoint" function
+                       (:typemodifiers ("public")
+                        :type "ISessionEndpoint")
+                        (reparse-symbol class_member_declaration) [4046 4119])
+                    ("cloneSession" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "ISession")
+                        (reparse-symbol class_member_declaration) [4124 4274])
+                    ("setReadTimeout" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("timeoutMS" variable (:type "int") (reparse-symbol formal_parameters) [4306 4319]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4279 4518])
+                    ("close" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "synchronized")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4523 4624])
+                    ("close" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("timeoutMS" variable (:type "long") (reparse-symbol formal_parameters) [4660 4674]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4629 4763])
+                    ("abort" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4768 5105])
+                    ("isOpen" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5110 5166])
+                    ("setLogSink" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("sink" variable (:type "ILogSink") (reparse-symbol formal_parameters) [5194 5207]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5171 5238])
+                    ("getLogSink" function
+                       (:typemodifiers ("public")
+                        :type "ILogSink")
+                        (reparse-symbol class_member_declaration) [5243 5301])
+                    ("finalize" function
+                       (:throws ("Throwable")
+                        :typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5486 5645])
+                    ("checkOpen" function
+                       (:throws ("RExecException")
+                        :typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5718 5879])
+                    ("log" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [5945 5955]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5928 6036])
+                    ("logDebug" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [6121 6131]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6099 6260])
+                    ("RExecRemoteExecutionResult" type
+                       (:typemodifiers ("private")
+                        :superclasses "RemoteExecutionResult"
+                        :members 
+                          ( ("RExecRemoteExecutionResult" function
+                               (:constructor-flag t
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("session" variable (:type "RExecSession") (reparse-symbol formal_parameters) [6577 6597])
+                                    ("rc" variable (:type "Integer") (reparse-symbol formal_parameters) [6599 6609])
+                                    ("stdout" variable (:type "InputStream") (reparse-symbol formal_parameters) [6611 6629])
+                                    ("stderr" variable (:type "InputStream") (reparse-symbol formal_parameters) [6631 6649]))                                  )
+                                (reparse-symbol class_member_declaration) [6533 6732])
+                            ("close" function
+                               (:typemodifiers ("public")
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [6740 6859])
+                            ("m_session" variable
+                               (:typemodifiers ("private")
+                                :type "RExecSession")
+                                (reparse-symbol class_member_declaration) [6867 6898]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [6451 6903])
+                    ("RExecSessionInputStream" type
+                       (:typemodifiers ("private")
+                        :superclasses "InputStreamAdapter"
+                        :members 
+                          ( ("RExecSessionInputStream" function
+                               (:constructor-flag t
+                                :throws ("IOException")
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("in" variable (:type "InputStream") (reparse-symbol formal_parameters) [7150 7164])
+                                    ("session" variable (:type "RExecSession") (reparse-symbol formal_parameters) [7166 7186]))                                  )
+                                (reparse-symbol class_member_declaration) [7119 7281])
+                            ("close" function
+                               (:throws ("IOException")
+                                :typemodifiers ("public")
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [7289 7576])
+                            ("m_session" variable
+                               (:typemodifiers ("private")
+                                :type "RExecSession")
+                                (reparse-symbol class_member_declaration) [7584 7615]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [7043 7620])
+                    ("m_ep" variable
+                       (:typemodifiers ("private")
+                        :type "ISessionEndpoint")
+                        (reparse-symbol class_member_declaration) [7840 7870])
+                    ("m_sock" variable
+                       (:typemodifiers ("private")
+                        :type "TCPSocket")
+                        (reparse-symbol class_member_declaration) [7927 7952])
+                    ("m_stderrSock" variable
+                       (:typemodifiers ("private")
+                        :type "IConnectSocket")
+                        (reparse-symbol class_member_declaration) [7999 8035])
+                    ("m_out" variable
+                       (:typemodifiers ("private")
+                        :type "OutputStream")
+                        (reparse-symbol class_member_declaration) [8075 8102])
+                    ("m_in" variable
+                       (:typemodifiers ("private")
+                        :type "InputStream")
+                        (reparse-symbol class_member_declaration) [8141 8166])
+                    ("m_stderr" variable
+                       (:typemodifiers ("private")
+                        :type "InputStream")
+                        (reparse-symbol class_member_declaration) [8205 8234])
+                    ("m_isOpen" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [8316 8341])
+                    ("m_timeoutMS" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8381 8410])
+                    ("m_log" variable
+                       (:typemodifiers ("private")
+                        :type "ILogSink")
+                        (reparse-symbol class_member_declaration) [8481 8504]))                  
+                :type "class")
+                nil [1127 8506]))          
+    :file "RExecSession.java"
+    :pointmax 8507
+    :fsize 8506
+    :lastmodtime '(22009 22612 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!rapid7!nexpose!src!shared!src!main!java!com!rapid7!net!rsh!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

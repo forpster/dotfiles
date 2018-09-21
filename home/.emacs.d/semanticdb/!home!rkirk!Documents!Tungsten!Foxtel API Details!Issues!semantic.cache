@@ -1,0 +1,26 @@
+;; Object Issues/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Issues/"
+  :tables (list 
+   (semanticdb-table "Attachment1.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("dec_InitRSA" function
+               (:arguments 
+                  ( ("_rsablob" variable
+                       (:pointer 1
+                        :type ("DEC_RSABLOB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [596 618]))                  
+                :type ("FSL_RETURN" type (:type "class") nil nil))
+                nil [573 1375]))          
+    :file "Attachment1.c"
+    :pointmax 1377
+    :fsize 1376
+    :lastmodtime '(21421 18298 608940 52000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!Documents!Tungsten!Foxtel API Details!Issues!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

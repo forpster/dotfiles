@@ -1,0 +1,108 @@
+;; Object networkservice/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "networkservice/"
+  :tables
+  (list
+    (semanticdb-table "Test_NetworkServiceProductTest.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.rapid7.handlers.plugin.vulnck.networkservice" package nil nil [349 406])
+            ("com.rapid7.doc.IDocElement" include nil nil [408 442])
+            ("com.rapid7.fingerprint.IVendorConstants" include nil nil [443 490])
+            ("com.rapid7.fingerprint.IVersion" include nil nil [491 530])
+            ("com.rapid7.fingerprint.Version" include nil nil [531 569])
+            ("com.rapid7.fingerprint.service.IFamilyConstants" include nil nil [570 625])
+            ("com.rapid7.fingerprint.service.IServiceFingerprint" include nil nil [626 684])
+            ("com.rapid7.fingerprint.service.ServiceFingerprint" include nil nil [685 742])
+            ("com.rapid7.framework.plugin.ICheckContext" include nil nil [743 792])
+            ("com.rapid7.framework.plugin.vulnck.IVulnerabilityCheckConstants" include nil nil [793 864])
+            ("com.rapid7.framework.plugin.vulnck.ValueTestException" include nil nil [865 926])
+            ("com.rapid7.handlers.plugin.Test_PluginUtils" include nil nil [927 978])
+            ("com.rapid7.handlers.plugin.vulnck.ValueTest" include nil nil [979 1030])
+            ("java.io.IOException" include nil nil [1031 1058])
+            ("org.junit.Test" include nil nil [1059 1081])
+            ("Test_NetworkServiceProductTest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("shouldNotAllowNullEverything" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1553 1665])
+                    ("shouldNotAllowProductTestsWithoutProduct" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1722 1865])
+                    ("shouldNotAllowComponentTestsWithoutProduct" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1922 2067])
+                    ("shouldNotAllowEmptyProduct" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2124 2246])
+                    ("shouldCorrectlyHandleMismatchedProductName" function
+                       (:throws ("ValueTestException" "IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2260 3154])
+                    ("shouldCorrectlyHandleProductTests" function
+                       (:throws ("ValueTestException" "IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3168 5341])
+                    ("shouldCorrectlyHandleProductAndComponentTests" function
+                       (:throws ("ValueTestException" "IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5355 7426])
+                    ("shouldCorrectlyHandleNullVersion" function
+                       (:throws ("ValueTestException" "IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7440 8827])
+                    ("shouldCorrectlyHandleVendor" function
+                       (:throws ("ValueTestException" "IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8841 10749])
+                    ("shouldCompareVendorForEquality" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10760 11637])
+                    ("shouldCorrectlyHandleFamily" function
+                       (:throws ("ValueTestException" "IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11651 13493])
+                    ("shouldCompareFamilyForEquality" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13507 14403])
+                    ("buildnspt" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("productName" variable (:type "String") (reparse-symbol formal_parameters) [15353 15371])
+                            ("vendor" variable (:type "String") (reparse-symbol formal_parameters) [15373 15386])
+                            ("family" variable (:type "String") (reparse-symbol formal_parameters) [15388 15401])
+                            ("nullVersion" variable (:type "boolean") (reparse-symbol formal_parameters) [15404 15423])
+                            ("productMatchResponses" variable
+                               (:dereference 1
+                                :type "boolean")
+                                (reparse-symbol formal_parameters) [15425 15456])
+                            ("componentName" variable (:type "String") (reparse-symbol formal_parameters) [15458 15478])
+                            ("componentMatchResponses" variable
+                               (:dereference 1
+                                :type "boolean")
+                                (reparse-symbol formal_parameters) [15492 15525]))                          
+                        :type "NetworkServiceProductTest")
+                        (reparse-symbol class_member_declaration) [15309 15974]))                  
+                :type "class")
+                nil [1276 15976]))          
+      :file "Test_NetworkServiceProductTest.java"
+      :pointmax 15977
+      :fsize 15976
+      :lastmodtime '(22517 4977 0 0)
+      :unmatched-syntax '((CLASS 2114 . 2119) (IDENTIFIER 2078 . 2086) (EQ 2087 . 2088) (CLASS 1912 . 1917) (IDENTIFIER 1876 . 1884) (EQ 1885 . 1886) (CLASS 1712 . 1717) (IDENTIFIER 1676 . 1684) (EQ 1685 . 1686) (CLASS 1543 . 1548) (IDENTIFIER 1507 . 1515) (EQ 1516 . 1517) (IDENTIFIER 1209 . 1213) (DOT 1208 . 1209) (IDENTIFIER 1201 . 1208) (DOT 1200 . 1201) (IDENTIFIER 1193 . 1200) (DOT 1192 . 1193) (IMPORT 1175 . 1181) (STATIC 1182 . 1188) (IDENTIFIER 1189 . 1192) (IDENTIFIER 1158 . 1173) (DOT 1157 . 1158) (IDENTIFIER 1151 . 1157) (DOT 1150 . 1151) (IDENTIFIER 1145 . 1150) (DOT 1144 . 1145) (IMPORT 1127 . 1133) (STATIC 1134 . 1140) (IDENTIFIER 1141 . 1144) (IDENTIFIER 1113 . 1125) (DOT 1112 . 1113) (IDENTIFIER 1106 . 1112) (DOT 1105 . 1106) (IDENTIFIER 1100 . 1105) (DOT 1099 . 1100) (IMPORT 1082 . 1088) (STATIC 1089 . 1095) (IDENTIFIER 1096 . 1099))))
+  :file "!home!rkirk!rapid7!assessment-framework!handlers!src!test!java!com!rapid7!handlers!plugin!vulnck!networkservice!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

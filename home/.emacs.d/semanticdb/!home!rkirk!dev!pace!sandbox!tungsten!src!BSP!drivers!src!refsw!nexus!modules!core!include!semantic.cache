@@ -1,0 +1,279 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "nexus_memory.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NEXUS_MEMORY_H__" variable (:constant-flag t) nil [5928 5944])
+            ("nexus_types.h" include nil nil [5946 5970])
+            ("NEXUS_NUM_MEMC_REGIONS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6171 6193])
+            ("NEXUS_MemoryAllocationSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_MemoryAllocationSettings"
+                :typedef ("NEXUS_MemoryAllocationSettings" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [6417 6827])
+            ("NEXUS_MemoryAllocationSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("heap" variable (:type ("NEXUS_HeapHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6469 6491])
+                    ("alignment" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6576 6593]))                  )
+                (reparse-symbol extern-c-contents) [6417 6827])
+            ("NEXUS_MemoryBlockHandle" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_MemoryBlock"
+                :pointer 1
+                :typedef ("NEXUS_MemoryBlock" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [6846 6904])
+            ("NEXUS_MemoryBlockAllocationSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_MemoryBlockAllocationSettings"
+                :typedef ("NEXUS_MemoryBlockAllocationSettings" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [6906 7018])
+            ("NEXUS_MemoryBlockAllocationSettings" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("unused" variable (:type "unsigned int") (reparse-symbol classsubparts) [6963 6979]))                  )
+                (reparse-symbol extern-c-contents) [6906 7018])
+            ("NEXUS_MemoryBlock_GetDefaultAllocationSettings" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("pSettings" variable
+                       (:pointer 1
+                        :type ("NEXUS_MemoryBlockAllocationSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7422 7505]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7365 7506])
+            ("NEXUS_MemoryBlock_Allocate" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_MemoryBlockHandle" type (:type "class") nil nil)
+                :arguments 
+                  ( ("heap" variable (:type ("NEXUS_HeapHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8118 8140])
+                    ("numBytes" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8241 8257])
+                    ("alignment" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8308 8325])
+                    ("pSettings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_MemoryBlockAllocationSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8530 8651]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8016 8652])
+            ("NEXUS_MemoryBlock_Free" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("memoryBlock" variable (:type ("NEXUS_MemoryBlockHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8911 8952]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8878 8953])
+            ("NEXUS_MemoryBlock_Lock" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("memoryBlock" variable (:type ("NEXUS_MemoryBlockHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9194 9230])
+                    ("ppMemory" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9235 9342]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9153 9343])
+            ("NEXUS_MemoryBlock_Unlock" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("memoryBlock" variable (:type ("NEXUS_MemoryBlockHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9580 9621]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9544 9622])
+            ("NEXUS_MemoryBlock_FromAddress" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_MemoryBlockHandle" type (:type "class") nil nil)
+                :arguments 
+                  ( ("pMemory" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9905 10005]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9845 10006])
+            ("NEXUS_Memory_GetDefaultAllocationSettings" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("pSettings" variable
+                       (:pointer 1
+                        :type ("NEXUS_MemoryAllocationSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10396 10474]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10344 10475])
+            ("NEXUS_Memory_Allocate" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("numBytes" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11048 11064])
+                    ("pSettings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_MemoryAllocationSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11138 11186])
+                    ("ppMemory" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11254 11385]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10985 11386])
+            ("NEXUS_Memory_Free" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("pMemory" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11659 11705]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11607 11706])
+            ("NEXUS_Memory_FlushCache" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("pMemory" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12115 12129])
+                    ("numBytes" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12165 12221]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12057 12222])
+            ("NEXUS_MemoryStatus" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "NEXUS_MemoryStatus"
+                :typedef ("NEXUS_MemoryStatus" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [12444 13732])
+            ("NEXUS_MemoryStatus" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("memoryType" variable (:type "unsigned int") (reparse-symbol classsubparts) [12484 12504])
+                    ("memcIndex" variable (:type "unsigned int") (reparse-symbol classsubparts) [12591 12610])
+                    ("offset" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12615 12631])
+                    ("addr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [12670 12684])
+                    ("size" variable (:type "unsigned int") (reparse-symbol classsubparts) [12744 12758])
+                    ("free" variable (:type "unsigned int") (reparse-symbol classsubparts) [12801 12815])
+                    ("alignment" variable (:type "unsigned int") (reparse-symbol classsubparts) [12974 12993])
+                    ("numAllocs" variable (:type "unsigned int") (reparse-symbol classsubparts) [13091 13110])
+                    ("largestFreeBlock" variable (:type "unsigned int") (reparse-symbol classsubparts) [13161 13187])
+                    ("highWatermark" variable (:type "unsigned int") (reparse-symbol classsubparts) [13446 13469])
+                    ("guardBanding" variable (:type "bool") (reparse-symbol classsubparts) [13564 13582]))                  )
+                (reparse-symbol extern-c-contents) [12444 13732])
+            ("NEXUS_Heap_GetStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("heap" variable (:type ("NEXUS_HeapHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13975 13997])
+                    ("pStatus" variable
+                       (:pointer 1
+                        :type ("NEXUS_MemoryStatus" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14002 14047]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13937 14048])
+            ("NEXUS_Heap_GetDefaultDisplayHeapSettings" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("pSettings" variable
+                       (:pointer 1
+                        :type ("NEXUS_DisplayHeapSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14305 14359]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14254 14360])
+            ("NEXUS_Heap_GetDisplayHeapSettings" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("heap" variable (:type ("NEXUS_HeapHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14610 14632])
+                    ("pSettings" variable
+                       (:pointer 1
+                        :type ("NEXUS_DisplayHeapSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14637 14691]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14566 14692])
+            ("NEXUS_Heap_SetDisplayHeapSettings" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_Error" type (:type "class") nil nil)
+                :arguments 
+                  ( ("heap" variable (:type ("NEXUS_HeapHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14945 14967])
+                    ("pSettings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_DisplayHeapSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14972 15020]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14894 15021])
+            ("NEXUS_Heap_Dump" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("heap" variable (:type ("NEXUS_HeapHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15266 15293]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15240 15294])
+            ("NEXUS_Heap_ResetHighWatermark" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("heap" variable (:type ("NEXUS_HeapHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15538 15565]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15498 15566])
+            ("NEXUS_Heap_CreateInternal" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("NEXUS_HeapHandle" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15740 15754]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15636 15755])
+            ("NEXUS_Heap_DestroyInternal" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("heap" variable (:type ("NEXUS_HeapHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15877 15908]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15836 15909])
+            ("NEXUS_Memory_PrintStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16149 16163]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16110 16164]))          
+    :file "nexus_memory.h"
+    :pointmax 16235
+    :fsize 16234
+    :lastmodtime '(21355 47308 195859 141000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NEXUS_MEMORY_H__")
+          ("NEXUS_NUM_MEMC_REGIONS" . ((number "2" 6194 . 6195)))
+          )
+
+    )
+   (semanticdb-table "nexus_types.h"
+    :file "nexus_types.h"
+    :fsize 41878
+    :lastmodtime '(21355 47308 227858 978000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!BSP!drivers!src!refsw!nexus!modules!core!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

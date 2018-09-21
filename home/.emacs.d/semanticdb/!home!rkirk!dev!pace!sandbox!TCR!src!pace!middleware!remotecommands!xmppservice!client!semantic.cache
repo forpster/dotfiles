@@ -1,0 +1,1266 @@
+;; Object client/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "client/"
+  :tables (list 
+   (semanticdb-table "xmpp_stanza.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("XMPP_STANZA_H" variable (:constant-flag t) nil [851 864])
+            ("QString" include (:system-flag t) nil [866 884])
+            ("QMetaType" include (:system-flag t) nil [885 905])
+            ("QDBusMetaType" include (:system-flag t) nil [906 930])
+            ("xmpp_types.h" include nil nil [932 955])
+            ("QDomElement" type
+               (:prototype t
+                :type "class")
+                nil [958 976])
+            ("QXmlStreamWriter" type
+               (:prototype t
+                :type "class")
+                nil [977 1000])
+            ("XmppStanza" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1021 1028])
+                    ("XmppStanza" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("XmppStanza" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1033 1046])
+                    ("XmppStanza" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1050 1064])
+                    ("registerMetaType" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1069 1100])
+                    ("mechanism" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1132 1138]))                          
+                        :type ("XMPP_MECHANISM" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1105 1145])
+                    ("setMechanism" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("mechanism" variable (:type ("XMPP_MECHANISM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1169 1195]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1149 1196])
+                    ("from" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1216 1222]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1201 1229])
+                    ("setFrom" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("from" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1248 1269]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1233 1270])
+                    ("to" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1288 1294]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1275 1301])
+                    ("setTo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("to" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1318 1337]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1305 1338])
+                    ("id" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1356 1362]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1343 1369])
+                    ("setId" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1386 1405]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1373 1406])
+                    ("type" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1428 1434]))                          
+                        :type ("XMPP_TYPE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1411 1441])
+                    ("setType" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("type" variable (:type ("XMPP_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1460 1476]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1445 1477])
+                    ("body" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1497 1503]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1482 1510])
+                    ("setBody" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("body" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1529 1550]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1514 1551])
+                    ("setBody" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("element" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QDomElement" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1570 1598]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1555 1599])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :typemodifiers ("friend")
+                        :arguments 
+                          ( ("argument" variable
+                               (:reference 1
+                                :type ("QDBusArgument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1639 1663])
+                            ("stanza" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("XmppStanza" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1664 1690]))                          
+                        :type ("QDBusArgument" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1604 1691])
+                    (">>" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :typemodifiers ("friend")
+                        :constant-flag t
+                        :arguments 
+                          ( ("argument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QDBusArgument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1736 1766])
+                            ("stanza" variable
+                               (:reference 1
+                                :type ("XmppStanza" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1767 1787]))                          
+                        :type ("QDBusArgument" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1695 1788])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :typemodifiers ("friend")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :type ("QDataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1826 1846])
+                            ("stanza" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("XmppStanza" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1847 1873]))                          
+                        :type ("QDataStream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1793 1874])
+                    (">>" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :typemodifiers ("friend")
+                        :constant-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :type ("QDataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1917 1937])
+                            ("stanza" variable
+                               (:reference 1
+                                :type ("XmppStanza" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1938 1958]))                          
+                        :type ("QDataStream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1878 1959])
+                    ("private" label nil (reparse-symbol classsubparts) [1961 1969])
+                    ("addDomElementToXml" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pStream" variable
+                               (:pointer 1
+                                :type ("QXmlStreamWriter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2000 2026])
+                            ("element" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QDomElement" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2027 2055]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1974 2056])
+                    ("m_mechanism" variable (:type ("XMPP_MECHANISM" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2061 2088])
+                    ("m_type" variable (:type ("XMPP_TYPE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2092 2114])
+                    ("m_from" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2118 2140])
+                    ("m_to" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2144 2164])
+                    ("m_id" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2168 2188])
+                    ("m_body" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2192 2214]))                  
+                :type "class")
+                nil [1002 2217])
+            ("Q_DECLARE_METATYPE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("XmppStanza" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2240 2252]))                  
+                :type "int")
+                nil [2219 2253]))          
+    :file "xmpp_stanza.h"
+    :pointmax 2280
+    :fsize 2317
+    :lastmodtime '(21798 29446 811740 138000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("XMPP_STANZA_H")
+          )
+
+    )
+   (semanticdb-table "xmpp_types.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("XMPP_TYPES_H" variable (:constant-flag t) nil [30 42])
+            ("XMPP_MECHANISM" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("XMPP_MECHANISM_MESSAGE" variable
+                             (:constant-flag t
+                              :default-value (88 89)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [63 89])
+                          ("XMPP_MECHANISM_IQ" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [94 113]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [45 129])
+            ("XMPP_TYPE" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("XMPP_TYPE_ERROR" variable
+                             (:constant-flag t
+                              :default-value (167 168)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [149 168])
+                          ("XMPP_TYPE_GET" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [173 187])
+                          ("XMPP_TYPE_SET" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [191 205])
+                          ("XMPP_TYPE_RESULT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [209 226])
+                          ("XMPP_TYPE_NORMAL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [230 247])
+                          ("XMPP_TYPE_CHAT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [251 266])
+                          ("XMPP_TYPE_INVALID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [270 289]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [131 300])
+            ("XMPP_PRESENCE" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("XMPP_PRESENCE_AVAILABLE" variable
+                             (:constant-flag t
+                              :default-value (346 347)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [320 347])
+                          ("XMPP_PRESENCE_CHAT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [352 371])
+                          ("XMPP_PRESENCE_AWAY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [375 394])
+                          ("XMPP_PRESENCE_DND" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [398 416])
+                          ("XMPP_PRESENCE_XA" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [420 437])
+                          ("XMPP_PRESENCE_UNAVAILABLE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [441 467])
+                          ("XMPP_PRESENCE_PROBE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [471 491])
+                          ("XMPP_PRESENCE_ERROR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [495 515])
+                          ("XMPP_PRESENCE_INVALID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [519 542]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [302 557])
+            ("XMPP_AUTH" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("XMPP_AUTH_DIGEST" variable
+                             (:constant-flag t
+                              :default-value (596 597)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [577 597])
+                          ("XMPP_AUTH_SSL_ONEWAY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [602 623])
+                          ("XMPP_AUTH_SASL_EXTERNAL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [627 651])
+                          ("XMPP_AUTH_SASL_EXTERNAL_HWKEY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [655 685])
+                          ("XMPP_AUTH_SERVERLESS" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [689 711]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [559 722]))          
+    :file "xmpp_types.h"
+    :pointmax 732
+    :fsize 731
+    :lastmodtime '(21798 29446 812740 130000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("XMPP_TYPES_H")
+          )
+
+    )
+   (semanticdb-table "xmpp_stanza.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("xmpp_stanza.h" include nil nil [830 854])
+            ("QDomElement" include (:system-flag t) nil [855 877])
+            ("QXmlStreamWriter" include (:system-flag t) nil [878 905])
+            ("tlogger.h" include nil nil [906 926])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [928 952])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [954 1015])
+            ("XmppStanza" function
+               (:constructor-flag t
+                :parent "XmppStanza"
+                :type ("XmppStanza" type (:type "class") nil nil))
+                nil [1018 1135])
+            ("XmppStanza" function
+               (:destructor-flag t
+                :parent "XmppStanza"
+                :type "void")
+                nil [1137 1166])
+            ("registerMetaType" function
+               (:parent "XmppStanza"
+                :type "void")
+                nil [1168 1298])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("argument" variable
+                       (:reference 1
+                        :type ("QDBusArgument" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1328 1352])
+                    ("stanza" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("XmppStanza" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1353 1379]))                  
+                :type ("QDBusArgument" type (:type "class") nil nil))
+                nil [1300 1643])
+            (">>" function
+               (:operator-flag t
+                :constant-flag t
+                :arguments 
+                  ( ("argument" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QDBusArgument" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1679 1709])
+                    ("stanza" variable
+                       (:reference 1
+                        :type ("XmppStanza" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1710 1730]))                  
+                :type ("QDBusArgument" type (:type "class") nil nil))
+                nil [1645 2081])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("stream" variable
+                       (:reference 1
+                        :type ("QDataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2109 2129])
+                    ("stanza" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("XmppStanza" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2130 2156]))                  
+                :type ("QDataStream" type (:type "class") nil nil))
+                nil [2083 2348])
+            (">>" function
+               (:operator-flag t
+                :constant-flag t
+                :arguments 
+                  ( ("stream" variable
+                       (:reference 1
+                        :type ("QDataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2382 2402])
+                    ("stanza" variable
+                       (:reference 1
+                        :type ("XmppStanza" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2403 2423]))                  
+                :type ("QDataStream" type (:type "class") nil nil))
+                nil [2350 2705])
+            ("mechanism" function
+               (:parent "XmppStanza"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2747 2753]))                  
+                :type ("XMPP_MECHANISM" type (:type "class") nil nil))
+                nil [2708 2786])
+            ("setMechanism" function
+               (:parent "XmppStanza"
+                :arguments 
+                  ( ("mechanism" variable (:type ("XMPP_MECHANISM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2822 2848]))                  
+                :type "void")
+                nil [2790 3066])
+            ("from" function
+               (:parent "XmppStanza"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3097 3103]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [3070 3143])
+            ("setFrom" function
+               (:parent "XmppStanza"
+                :arguments 
+                  ( ("from" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3174 3195]))                  
+                :type "void")
+                nil [3147 3217])
+            ("to" function
+               (:parent "XmppStanza"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3246 3252]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [3221 3290])
+            ("setTo" function
+               (:parent "XmppStanza"
+                :arguments 
+                  ( ("to" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3319 3338]))                  
+                :type "void")
+                nil [3294 3356])
+            ("id" function
+               (:parent "XmppStanza"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3385 3391]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [3360 3429])
+            ("setId" function
+               (:parent "XmppStanza"
+                :arguments 
+                  ( ("id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3458 3477]))                  
+                :type "void")
+                nil [3433 3495])
+            ("type" function
+               (:parent "XmppStanza"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3528 3534]))                  
+                :type ("XMPP_TYPE" type (:type "class") nil nil))
+                nil [3499 3562])
+            ("setType" function
+               (:parent "XmppStanza"
+                :arguments 
+                  ( ("type" variable (:type ("XMPP_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3593 3609]))                  
+                :type "void")
+                nil [3566 3969])
+            ("body" function
+               (:parent "XmppStanza"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4000 4006]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [3973 4046])
+            ("setBody" function
+               (:parent "XmppStanza"
+                :arguments 
+                  ( ("body" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4077 4098]))                  
+                :type "void")
+                nil [4050 4120])
+            ("setBody" function
+               (:parent "XmppStanza"
+                :arguments 
+                  ( ("element" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QDomElement" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4151 4179]))                  
+                :type "void")
+                nil [4124 4313])
+            ("addDomElementToXml" function
+               (:parent "XmppStanza"
+                :arguments 
+                  ( ("pStream" variable
+                       (:pointer 1
+                        :type ("QXmlStreamWriter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4355 4381])
+                    ("element" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QDomElement" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4382 4410]))                  
+                :type "void")
+                nil [4317 5249]))          
+    :file "xmpp_stanza.cpp"
+    :pointmax 5251
+    :fsize 5288
+    :lastmodtime '(21798 29446 811740 138000)
+    :unmatched-syntax '((string 982 . 1012))
+    )
+   (semanticdb-table "xmpp_configuration.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("XMPP_CONFIGURATION_H" variable (:constant-flag t) nil [870 890])
+            ("xmpp_types.h" include nil nil [892 915])
+            ("QtDBus/QtDBus" include (:system-flag t) nil [916 940])
+            ("XmppConfiguration" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [968 975])
+                    ("XmppConfiguration" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("XmppConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [979 999])
+                    ("XmppConfiguration" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("jid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1023 1042])
+                            ("server" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1043 1066]))                          
+                        :type ("XmppConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1003 1067])
+                    ("XmppConfiguration" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("jid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1091 1110])
+                            ("server" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1111 1133])
+                            ("eAuth" variable
+                               (:constant-flag t
+                                :type ("XMPP_AUTH" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1134 1157]))                          
+                        :type ("XmppConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1071 1158])
+                    ("XmppConfiguration" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("eAuth" variable
+                               (:constant-flag t
+                                :type ("XMPP_AUTH" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1182 1205]))                          
+                        :type ("XmppConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1162 1206])
+                    ("XmppConfiguration" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("jid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1230 1249])
+                            ("password" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1250 1274])
+                            ("resource" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1275 1300]))                          
+                        :type ("XmppConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1210 1301])
+                    ("XmppConfiguration" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("XmppConfiguration" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1325 1357]))                          
+                        :type ("XmppConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1305 1358])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("XmppConfiguration" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1393 1425]))                          
+                        :type ("XmppConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1362 1426])
+                    ("XmppConfiguration" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1430 1451])
+                    ("createXmppConfiguration" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("configuration" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1508 1538]))                          
+                        :type ("XmppConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1456 1539])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :typemodifiers ("friend")
+                        :arguments 
+                          ( ("argument" variable
+                               (:reference 1
+                                :type ("QDBusArgument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1579 1603])
+                            ("config" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("XmppConfiguration" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1604 1637]))                          
+                        :type ("QDBusArgument" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1544 1638])
+                    (">>" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :typemodifiers ("friend")
+                        :constant-flag t
+                        :arguments 
+                          ( ("argument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QDBusArgument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1683 1713])
+                            ("config" variable
+                               (:reference 1
+                                :type ("XmppConfiguration" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1714 1741]))                          
+                        :type ("QDBusArgument" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1642 1742])
+                    ("setAuthMethod" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eAuth" variable (:type ("XMPP_AUTH" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1772 1789]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1747 1790])
+                    ("setClientCert" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("clientKeyFile" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1819 1848])
+                            ("clientCertFile" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1849 1880]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1794 1881])
+                    ("setResource" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("resource" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1908 1933]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1885 1934])
+                    ("setNamespace" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("xmlns" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1962 1984]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1938 1985])
+                    ("setIqStanzas" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("iqs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QStringList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2013 2037]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1989 2038])
+                    ("setDescription" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("description" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2068 2096]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2042 2097])
+                    ("getJid" function
+                       (:prototype-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2103 2126])
+                    ("getPassword" function
+                       (:prototype-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2130 2158])
+                    ("clearPassword" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2162 2183])
+                    ("getResource" function
+                       (:prototype-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2187 2215])
+                    ("getAuthMethod" function
+                       (:prototype-flag t
+                        :type ("XMPP_AUTH" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2220 2252])
+                    ("getServer" function
+                       (:prototype-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2256 2282])
+                    ("getClientKeyFile" function
+                       (:prototype-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2286 2319])
+                    ("getClientCertFile" function
+                       (:prototype-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2323 2357])
+                    ("getNamespace" function
+                       (:prototype-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2361 2390])
+                    ("getIqStanzas" function
+                       (:prototype-flag t
+                        :type ("QStringList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2394 2427])
+                    ("getDescription" function
+                       (:prototype-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2431 2462])
+                    ("refreshExternalConfiguration" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2507 2513]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2467 2514])
+                    ("registerMetaType" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2575 2606])
+                    ("getJidFromCertificate" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("certFile" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2651 2676]))                          
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2611 2677])
+                    ("updateHostsFile" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("ipAddress" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2715 2740])
+                            ("hostname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2741 2766]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2681 2767])
+                    ("decodePassword" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2771 2793])
+                    ("private" label nil (reparse-symbol classsubparts) [2794 2802])
+                    ("m_jid" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2806 2820])
+                    ("m_password" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2824 2843])
+                    ("m_resource" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2847 2866])
+                    ("m_eAuth" variable (:type ("XMPP_AUTH" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2871 2889])
+                    ("m_server" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2893 2910])
+                    ("m_clientKeyFile" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2914 2938])
+                    ("m_clientCertFile" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2942 2967])
+                    ("m_namespace" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2972 2996])
+                    ("m_iqStanzas" variable (:type ("QStringList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3000 3024])
+                    ("m_description" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3029 3055]))                  
+                :type "class")
+                nil [942 3058]))          
+    :file "xmpp_configuration.h"
+    :pointmax 3113
+    :fsize 3150
+    :lastmodtime '(21798 29446 811740 138000)
+    :unmatched-syntax '((semantic-list 3079 . 3100) (symbol 3060 . 3078))
+    :lexical-table 
+        '(("XMPP_CONFIGURATION_H")
+          )
+
+    )
+   (semanticdb-table "xmpp_configuration.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("xmpp_configuration.h" include nil nil [843 874])
+            ("openssl/pem.h" include (:system-flag t) nil [876 900])
+            ("openssl/x509v3.h" include (:system-flag t) nil [901 928])
+            ("security.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1064 1085])
+            ("tlogger.h" include nil nil [1116 1136])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1137 1161])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [1163 1224])
+            ("CONFIG_ARG_XMPP_ATTRIB_DOMAIN" variable (:constant-flag t) nil [1266 1295])
+            ("CONFIG_ARG_XMPP_ATTRIB_USER" variable (:constant-flag t) nil [1320 1347])
+            ("CONFIG_ARG_XMPP_ATTRIB_PASSWORD" variable (:constant-flag t) nil [1372 1403])
+            ("CONFIG_ARG_XMPP_ATTRIB_RESOURCE" variable (:constant-flag t) nil [1428 1459])
+            ("CONFIG_ARG_XMPP_ATTRIB_AUTH" variable (:constant-flag t) nil [1484 1511])
+            ("CONFIG_ARG_XMPP_ATTRIB_CLIENTCERT" variable (:constant-flag t) nil [1536 1569])
+            ("CONFIG_ARG_XMPP_ATTRIB_CLIENTKEY" variable (:constant-flag t) nil [1594 1626])
+            ("CONFIG_ARG_XMPP_ATTRIB_IP" variable (:constant-flag t) nil [1651 1676])
+            ("CONFIG_ARG_XMPP_ATTRIB_DESCRIPTION" variable (:constant-flag t) nil [1701 1735])
+            ("CONFIG_ARG_XMPP_AUTH_TYPE_DIGEST" variable (:constant-flag t) nil [1787 1819])
+            ("CONFIG_ARG_XMPP_AUTH_TYPE_ONEWAYSSL" variable (:constant-flag t) nil [1841 1876])
+            ("CONFIG_ARG_XMPP_AUTH_TYPE_EXTERNAL" variable (:constant-flag t) nil [1898 1932])
+            ("CONFIG_ARG_XMPP_AUTH_TYPE_EXTERNAL_HWKEY" variable (:constant-flag t) nil [1954 1994])
+            ("CONFIG_ARG_XMPP_AUTH_TYPE_SERVERLESS" variable (:constant-flag t) nil [2021 2057])
+            ("ETC_HOST" variable (:constant-flag t) nil [2081 2089])
+            ("ETC_HOST_BACKUP" variable (:constant-flag t) nil [2111 2126])
+            ("messagingpasswd" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [2145 2202])
+            ("xmppDomain" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [2203 2245])
+            ("module" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [2246 2289])
+            ("XmppConfiguration" function
+               (:constructor-flag t
+                :parent "XmppConfiguration"
+                :type ("XmppConfiguration" type (:type "class") nil nil))
+                nil [2292 2412])
+            ("XmppConfiguration" function
+               (:constructor-flag t
+                :parent "XmppConfiguration"
+                :arguments 
+                  ( ("jid" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2453 2472])
+                    ("server" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2473 2496]))                  
+                :type ("XmppConfiguration" type (:type "class") nil nil))
+                nil [2414 2581])
+            ("XmppConfiguration" function
+               (:constructor-flag t
+                :parent "XmppConfiguration"
+                :arguments 
+                  ( ("jid" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2622 2641])
+                    ("server" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2642 2664])
+                    ("eAuth" variable
+                       (:constant-flag t
+                        :type ("XMPP_AUTH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2665 2688]))                  
+                :type ("XmppConfiguration" type (:type "class") nil nil))
+                nil [2583 2755])
+            ("XmppConfiguration" function
+               (:constructor-flag t
+                :parent "XmppConfiguration"
+                :arguments 
+                  ( ("eAuth" variable
+                       (:constant-flag t
+                        :type ("XMPP_AUTH" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2796 2819]))                  
+                :type ("XmppConfiguration" type (:type "class") nil nil))
+                nil [2757 2843])
+            ("XmppConfiguration" function
+               (:constructor-flag t
+                :parent "XmppConfiguration"
+                :arguments 
+                  ( ("jid" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2884 2903])
+                    ("password" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2904 2928])
+                    ("resource" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2929 2954]))                  
+                :type ("XmppConfiguration" type (:type "class") nil nil))
+                nil [2845 3222])
+            ("XmppConfiguration" function
+               (:constructor-flag t
+                :parent "XmppConfiguration"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("XmppConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3263 3295]))                  
+                :type ("XmppConfiguration" type (:type "class") nil nil))
+                nil [3224 3672])
+            ("=" function
+               (:operator-flag t
+                :parent "XmppConfiguration"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("XmppConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3724 3756]))                  
+                :type ("XmppConfiguration" type (:type "class") nil nil))
+                nil [3674 4130])
+            ("XmppConfiguration" function
+               (:destructor-flag t
+                :parent "XmppConfiguration"
+                :type "void")
+                nil [4132 4175])
+            ("createXmppConfiguration" function
+               (:pointer 1
+                :parent "XmppConfiguration"
+                :arguments 
+                  ( ("configuration" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4708 4738]))                  
+                :type ("XmppConfiguration" type (:type "class") nil nil))
+                nil [4644 9545])
+            ("setAuthMethod" function
+               (:parent "XmppConfiguration"
+                :arguments 
+                  ( ("eAuth" variable (:type ("XMPP_AUTH" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9588 9605]))                  
+                :type "void")
+                nil [9548 9629])
+            ("setClientCert" function
+               (:parent "XmppConfiguration"
+                :arguments 
+                  ( ("clientKeyFile" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9671 9700])
+                    ("clientCertFile" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9701 9732]))                  
+                :type "void")
+                nil [9631 9810])
+            ("setResource" function
+               (:parent "XmppConfiguration"
+                :arguments 
+                  ( ("resource" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9850 9875]))                  
+                :type "void")
+                nil [9812 9905])
+            ("setNamespace" function
+               (:parent "XmppConfiguration"
+                :arguments 
+                  ( ("xmlns" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9946 9968]))                  
+                :type "void")
+                nil [9907 9996])
+            ("setIqStanzas" function
+               (:parent "XmppConfiguration"
+                :arguments 
+                  ( ("iqs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QStringList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10037 10061]))                  
+                :type "void")
+                nil [9998 10087])
+            ("setDescription" function
+               (:parent "XmppConfiguration"
+                :arguments 
+                  ( ("description" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10130 10158]))                  
+                :type "void")
+                nil [10089 10194])
+            ("getJid" function
+               (:parent "XmppConfiguration"
+                :type ("QString" type (:type "class") nil nil))
+                nil [10196 10258])
+            ("getPassword" function
+               (:parent "XmppConfiguration"
+                :type ("QString" type (:type "class") nil nil))
+                nil [10260 10332])
+            ("clearPassword" function
+               (:parent "XmppConfiguration"
+                :type "void")
+                nil [10334 10400])
+            ("getResource" function
+               (:parent "XmppConfiguration"
+                :type ("QString" type (:type "class") nil nil))
+                nil [10402 10474])
+            ("getAuthMethod" function
+               (:parent "XmppConfiguration"
+                :type ("XMPP_AUTH" type (:type "class") nil nil))
+                nil [10476 10549])
+            ("getServer" function
+               (:parent "XmppConfiguration"
+                :type ("QString" type (:type "class") nil nil))
+                nil [10551 10619])
+            ("getClientKeyFile" function
+               (:parent "XmppConfiguration"
+                :type ("QString" type (:type "class") nil nil))
+                nil [10621 10703])
+            ("getClientCertFile" function
+               (:parent "XmppConfiguration"
+                :type ("QString" type (:type "class") nil nil))
+                nil [10705 10789])
+            ("getNamespace" function
+               (:parent "XmppConfiguration"
+                :type ("QString" type (:type "class") nil nil))
+                nil [10791 10865])
+            ("getIqStanzas" function
+               (:parent "XmppConfiguration"
+                :type ("QStringList" type (:type "class") nil nil))
+                nil [10867 10945])
+            ("getDescription" function
+               (:parent "XmppConfiguration"
+                :type ("QString" type (:type "class") nil nil))
+                nil [10947 11025])
+            ("decodePassword" function
+               (:parent "XmppConfiguration"
+                :type "bool")
+                nil [11027 12402])
+            ("refreshExternalConfiguration" function
+               (:parent "XmppConfiguration"
+                :type "bool")
+                nil [12404 14541])
+            ("registerMetaType" function
+               (:parent "XmppConfiguration"
+                :type "void")
+                nil [14544 14702])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("argument" variable
+                       (:reference 1
+                        :type ("QDBusArgument" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14732 14756])
+                    ("message" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("XmppConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14757 14791]))                  
+                :type ("QDBusArgument" type (:type "class") nil nil))
+                nil [14704 15238])
+            (">>" function
+               (:operator-flag t
+                :constant-flag t
+                :arguments 
+                  ( ("argument" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QDBusArgument" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15274 15304])
+                    ("message" variable
+                       (:reference 1
+                        :type ("XmppConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15305 15333]))                  
+                :type ("QDBusArgument" type (:type "class") nil nil))
+                nil [15240 15819])
+            ("getJidFromCertificate" function
+               (:parent "XmppConfiguration"
+                :arguments 
+                  ( ("certFile" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16250 16275]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [16199 17752])
+            ("updateHostsFile" function
+               (:parent "XmppConfiguration"
+                :arguments 
+                  ( ("ipAddress" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18101 18126])
+                    ("hostname" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18127 18152]))                  
+                :type "void")
+                nil [18059 19545]))          
+    :file "xmpp_configuration.cpp"
+    :pointmax 19547
+    :fsize 19546
+    :lastmodtime '(21798 29446 812740 130000)
+    :unmatched-syntax '((string 1191 . 1221))
+    :lexical-table 
+        '(("CONFIG_ARG_XMPP_AUTH_TYPE_SERVERLESS" . ((string "\"serverless\"" 2058 . 2070)))
+          ("CONFIG_ARG_XMPP_ATTRIB_AUTH" . ((string "\"auth\"" 1521 . 1527)))
+          ("CONFIG_ARG_XMPP_ATTRIB_CLIENTKEY" . ((string "\"clientkey\"" 1631 . 1642)))
+          ("CONFIG_ARG_XMPP_AUTH_TYPE_ONEWAYSSL" . ((string "\"onewayssl\"" 1878 . 1889)))
+          ("CONFIG_ARG_XMPP_ATTRIB_DESCRIPTION" . ((string "\"description\"" 1738 . 1751)))
+          ("ETC_HOST_BACKUP" . ((string "\"/tmp/hosts.tmp\"" 2127 . 2143)))
+          ("CONFIG_ARG_XMPP_ATTRIB_DOMAIN" . ((string "\"domain\"" 1303 . 1311)))
+          ("CONFIG_ARG_XMPP_ATTRIB_USER" . ((string "\"user\"" 1357 . 1363)))
+          ("CONFIG_ARG_XMPP_ATTRIB_PASSWORD" . ((string "\"password\"" 1409 . 1419)))
+          ("CONFIG_ARG_XMPP_ATTRIB_CLIENTCERT" . ((string "\"clientcert\"" 1573 . 1585)))
+          ("ETC_HOST" . ((string "\"/etc/hosts\"" 2090 . 2102)))
+          ("CONFIG_ARG_XMPP_AUTH_TYPE_EXTERNAL" . ((string "\"external\"" 1935 . 1945)))
+          ("CONFIG_ARG_XMPP_ATTRIB_IP" . ((string "\"ip\"" 1688 . 1692)))
+          ("CONFIG_ARG_XMPP_ATTRIB_RESOURCE" . ((string "\"resource\"" 1465 . 1475)))
+          ("CONFIG_ARG_XMPP_AUTH_TYPE_DIGEST" . ((string "\"digest\"" 1824 . 1832)))
+          ("CONFIG_ARG_XMPP_AUTH_TYPE_EXTERNAL_HWKEY" . ((string "\"externalhwkey\"" 1997 . 2012)))
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!TCR!src!pace!middleware!remotecommands!xmppservice!client!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

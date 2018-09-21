@@ -1,0 +1,157 @@
+;; Object speedTester/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "speedTester/"
+  :tables (list 
+   (semanticdb-table "speedTestObject.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("speedTestObject.h" include nil nil [873 901])
+            ("QUrl" include (:system-flag t) nil [902 917])
+            ("QNetworkRequest" include (:system-flag t) nil [918 944])
+            ("QNetworkReply" include (:system-flag t) nil [945 969])
+            ("QDateTime" include (:system-flag t) nil [970 990])
+            ("speedTestDebug.h" include nil nil [991 1018])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1020 1044])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [1045 1101])
+            ("SPEEDTEST_TIME_INTERVAL" variable (:constant-flag t) nil [1599 1622])
+            ("MAX_REDIRECT_COUNT" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type ("uint" type (:type "class") nil nil))
+                nil [1871 1913])
+            ("SpeedTestObject" function
+               (:constructor-flag t
+                :parent "SpeedTestObject"
+                :arguments 
+                  ( ("bufsize" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2964 2980])
+                    ("minSize" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2981 2998]))                  
+                :type ("SpeedTestObject" type (:type "class") nil nil))
+                nil [2929 3820])
+            ("SpeedTestObject" function
+               (:destructor-flag t
+                :parent "SpeedTestObject"
+                :type "void")
+                nil [4107 4665])
+            ("startTest" function
+               (:parent "SpeedTestObject"
+                :arguments 
+                  ( ("url" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4935 4955]))                  
+                :type "bool")
+                nil [4901 5206])
+            ("stopTest" function
+               (:parent "SpeedTestObject"
+                :type "bool")
+                nil [5208 5389])
+            ("getStatus" function
+               (:parent "SpeedTestObject"
+                :type "bool")
+                nil [5391 5650])
+            ("slotStopTest" function
+               (:parent "SpeedTestObject"
+                :type "void")
+                nil [5886 6807])
+            ("slotStartTest" function
+               (:parent "SpeedTestObject"
+                :arguments 
+                  ( ("url" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6847 6867]))                  
+                :type "void")
+                nil [6809 7825])
+            ("downloadFinished" function
+               (:parent "SpeedTestObject"
+                :arguments 
+                  ( ("network_reply" variable
+                       (:pointer 1
+                        :type ("QNetworkReply" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7868 7898]))                  
+                :type "void")
+                nil [7827 10104])
+            ("redirectUrl" function
+               (:parent "SpeedTestObject"
+                :arguments 
+                  ( ("possibleRedirectUrl" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10918 10953])
+                    ("oldRedirectUrl" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10993 11024]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [10879 11332])
+            ("initializeTest" function
+               (:parent "SpeedTestObject"
+                :arguments 
+                  ( ("url" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11390 11410]))                  
+                :type "void")
+                nil [11351 12943])
+            ("calculateSpeed" function
+               (:parent "SpeedTestObject"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12982 12987]))                  
+                :type "void")
+                nil [12945 13474])
+            ("terminateTest" function
+               (:parent "SpeedTestObject"
+                :type "void")
+                nil [13494 14729])
+            ("checkAndSendEvent" function
+               (:parent "SpeedTestObject"
+                :arguments 
+                  ( ("bytes_received" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14787 14809])
+                    ("timetaken" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14810 14828])
+                    ("min" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14829 14841])
+                    ("max" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14842 14854])
+                    ("avg" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14855 14868]))                  
+                :type "void")
+                nil [14745 15247])
+            ("processDownloadInfo" function
+               (:parent "SpeedTestObject"
+                :arguments 
+                  ( ("bytesReceived" variable (:type ("qint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15307 15329]))                  
+                :type "void")
+                nil [15263 16710]))          
+    :file "speedTestObject.cpp"
+    :pointmax 16711
+    :fsize 16710
+    :lastmodtime '(21845 53664 899147 223000)
+    :unmatched-syntax '((string 1073 . 1098) (string 1073 . 1098))
+    :lexical-table 
+        '(("SPEEDTEST_TIME_INTERVAL" . ((semantic-list "(10)" 1623 . 1627)))
+          )
+
+    )
+   (semanticdb-table "speedTestObject.h"
+    :file "speedTestObject.h"
+    :fsize 5006
+    :lastmodtime '(21845 53664 900147 217000)
+    )
+   (semanticdb-table "speedTestDebug.h"
+    :file "speedTestDebug.h"
+    :fsize 2237
+    :lastmodtime '(21845 53664 900147 217000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!D713!src!pace!middleware!speedTester!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

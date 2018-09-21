@@ -1,0 +1,265 @@
+;; Object rpc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "rpc/"
+  :tables (list 
+   (semanticdb-table "ConnectionOrientedPdu.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("rpc" package nil nil [509 521])
+            ("ndr.Format" include nil nil [523 541])
+            ("ndr.NdrBuffer" include nil nil [542 563])
+            ("ndr.NdrObject" include nil nil [564 585])
+            ("ndr.NetworkDataRepresentation" include nil nil [586 623])
+            ("ConnectionOrientedPdu" type
+               (:typemodifiers ("public" "abstract")
+                :interfaces ("ProtocolDataUnit")
+                :superclasses "NdrObject"
+                :members 
+                  ( ("CONNECTION_ORIENTED_MAJOR_VERSION" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [722 784])
+                    ("MUST_RECEIVE_FRAGMENT_SIZE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [790 848])
+                    ("PFC_FIRST_FRAG" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [924 970])
+                    ("PFC_LAST_FRAG" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1045 1090])
+                    ("PFC_PENDING_CANCEL" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1171 1221])
+                    ("PFC_CONC_MPX" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1333 1377])
+                    ("PFC_DID_NOT_EXECUTE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1494 1545])
+                    ("PFC_MAYBE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1680 1721])
+                    ("PFC_OBJECT_UUID" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1901 1948])
+                    ("MAJOR_VERSION_OFFSET" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1954 2003])
+                    ("MINOR_VERSION_OFFSET" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2009 2058])
+                    ("TYPE_OFFSET" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2064 2104])
+                    ("FLAGS_OFFSET" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2110 2151])
+                    ("DATA_REPRESENTATION_OFFSET" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2157 2212])
+                    ("FRAG_LENGTH_OFFSET" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2218 2265])
+                    ("AUTH_LENGTH_OFFSET" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2271 2319])
+                    ("CALL_ID_OFFSET" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2325 2369])
+                    ("HEADER_LENGTH" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2375 2418])
+                    ("minorVersion" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2424 2453])
+                    ("flags" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2459 2510])
+                    ("callIdCounter" variable
+                       (:typemodifiers ("protected" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2516 2555])
+                    ("callId" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2561 2596])
+                    ("useCallIdCounter" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2602 2642])
+                    ("fragLength" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2648 2675])
+                    ("authLength" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2681 2708])
+                    ("format" variable
+                       (:typemodifiers ("private")
+                        :type "Format")
+                        (reparse-symbol class_member_declaration) [2714 2736])
+                    ("getMajorVersion" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2742 2828])
+                    ("getMinorVersion" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2834 2899])
+                    ("setMinorVersion" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("minorVersion" variable (:type "int") (reparse-symbol formal_parameters) [2933 2949]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2905 3000])
+                    ("getFormat" function
+                       (:typemodifiers ("public")
+                        :type "Format")
+                        (reparse-symbol class_member_declaration) [3006 3116])
+                    ("setFormat" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("format" variable (:type "Format") (reparse-symbol formal_parameters) [3144 3157]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3122 3196])
+                    ("getFlags" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3202 3253])
+                    ("setFlags" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("flags" variable (:type "int") (reparse-symbol formal_parameters) [3280 3289]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3259 3326])
+                    ("getFlag" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("flag" variable (:type "int") (reparse-symbol formal_parameters) [3355 3363]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3332 3413])
+                    ("setFlag" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("flag" variable (:type "int") (reparse-symbol formal_parameters) [3439 3447])
+                            ("value" variable (:type "boolean") (reparse-symbol formal_parameters) [3449 3462]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3419 3557])
+                    ("getCallId" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3563 3616])
+                    ("setCallId" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("callId" variable (:type "int") (reparse-symbol formal_parameters) [3644 3654]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3622 3724])
+                    ("getFragmentLength" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3730 3795])
+                    ("setFragmentLength" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("fragLength" variable (:type "int") (reparse-symbol formal_parameters) [3834 3848]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3801 3895])
+                    ("getAuthenticatorLength" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3901 3971])
+                    ("setAuthenticatorLength" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("authLength" variable (:type "int") (reparse-symbol formal_parameters) [4015 4029]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3977 4076])
+                    ("decode" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ndr" variable (:type "NetworkDataRepresentation") (reparse-symbol formal_parameters) [4101 4130])
+                            ("src" variable (:type "NdrBuffer") (reparse-symbol formal_parameters) [4132 4145]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4082 4204])
+                    ("encode" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ndr" variable (:type "NetworkDataRepresentation") (reparse-symbol formal_parameters) [4229 4258])
+                            ("dst" variable (:type "NdrBuffer") (reparse-symbol formal_parameters) [4260 4273]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4210 4725])
+                    ("readPdu" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("ndr" variable (:type "NetworkDataRepresentation") (reparse-symbol formal_parameters) [4754 4783]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4731 4840])
+                    ("writePdu" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("ndr" variable (:type "NetworkDataRepresentation") (reparse-symbol formal_parameters) [4870 4899]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4846 4958])
+                    ("readHeader" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("ndr" variable (:type "NetworkDataRepresentation") (reparse-symbol formal_parameters) [4990 5019]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4964 5704])
+                    ("writeHeader" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("ndr" variable (:type "NetworkDataRepresentation") (reparse-symbol formal_parameters) [5737 5766]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5710 6251])
+                    ("readBody" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("ndr" variable (:type "NetworkDataRepresentation") (reparse-symbol formal_parameters) [6281 6310]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6257 6315])
+                    ("writeBody" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("ndr" variable (:type "NetworkDataRepresentation") (reparse-symbol formal_parameters) [6346 6375]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6321 6380])
+                    ("getType" function
+                       (:typemodifiers ("public" "abstract")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6386 6416]))                  
+                :type "class")
+                nil [625 6419]))          
+    :file "ConnectionOrientedPdu.java"
+    :pointmax 6420
+    :fsize 6651
+    :lastmodtime '(22287 49869 509927 153000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!src!j-interop-code!j-interopdeps!src!rpc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

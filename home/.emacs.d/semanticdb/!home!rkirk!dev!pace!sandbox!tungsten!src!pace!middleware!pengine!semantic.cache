@@ -1,0 +1,434 @@
+;; Object pengine/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pengine/"
+  :tables (list 
+   (semanticdb-table "pengine.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [892 910])
+            ("string.h" include (:system-flag t) nil [913 932])
+            ("unistd.h" include (:system-flag t) nil [933 952])
+            ("stdlib.h" include (:system-flag t) nil [953 972])
+            ("sys/types.h" include (:system-flag t) nil [973 995])
+            ("sys/stat.h" include (:system-flag t) nil [996 1017])
+            ("semaphore.h" include (:system-flag t) nil [1018 1040])
+            ("fcntl.h" include (:system-flag t) nil [1041 1059])
+            ("openssl/bn.h" include (:system-flag t) nil [1061 1084])
+            ("openssl/rsa.h" include (:system-flag t) nil [1085 1109])
+            ("openssl/engine.h" include (:system-flag t) nil [1110 1137])
+            ("openssl/pem.h" include (:system-flag t) nil [1138 1162])
+            ("nexus_platform.h" include nil nil [1163 1190])
+            ("nexus_security_rsa.h" include nil nil [1191 1222])
+            ("common.h" include nil nil [1223 1242])
+            ("ssl_certificate_files.h" include nil nil [1243 1277])
+            ("debug.h" include nil nil [1278 1296])
+            ("RSA_BLOB_FILE" variable (:constant-flag t) nil [1333 1346])
+            ("PS2_BLOB_FILE" variable (:constant-flag t) nil [1431 1444])
+            ("RSA_BLOB_FILE_SIZE" variable (:constant-flag t) nil [1504 1522])
+            ("PS2_BLOB_FILE_SIZE" variable (:constant-flag t) nil [1546 1564])
+            ("PKE2KPK10_OFFSET" variable (:constant-flag t) nil [1588 1604])
+            ("PKE2KPK10_SIZE" variable (:constant-flag t) nil [1627 1641])
+            ("PKE2KPK10SIG_OFFSET" variable (:constant-flag t) nil [1668 1687])
+            ("PKE2KPK10SIG_SIZE" variable (:constant-flag t) nil [1741 1758])
+            ("KPK10PS2_OFFSET" variable (:constant-flag t) nil [1782 1797])
+            ("KPK10PS2_SIZE" variable (:constant-flag t) nil [1861 1874])
+            ("KPK10PS2SIG_OFFSET" variable (:constant-flag t) nil [1902 1920])
+            ("KPK10PS2SIG_SIZE" variable (:constant-flag t) nil [1973 1989])
+            ("RSA_KEY_OFFSET_0" variable (:constant-flag t) nil [2014 2030])
+            ("RSA_KEY_OFFSET_2" variable (:constant-flag t) nil [2068 2084])
+            ("RSA_KEY_OFFSET_3" variable (:constant-flag t) nil [2122 2138])
+            ("MODEL_CERT_ID" variable (:constant-flag t) nil [2176 2189])
+            ("UNIQUE_CERT_ID" variable (:constant-flag t) nil [2217 2231])
+            ("UNKNOWN_CERT_ID" variable (:constant-flag t) nil [2258 2273])
+            ("KEY_INDEX_PS1" variable (:constant-flag t) nil [2300 2313])
+            ("KEY_INDEX_PS2" variable (:constant-flag t) nil [2339 2352])
+            ("PADDING_SUCCESS" variable (:constant-flag t) nil [2378 2393])
+            ("PADDING_FAILURE" variable (:constant-flag t) nil [2417 2432])
+            ("SEMAPHORE_NAME" variable (:constant-flag t) nil [2456 2470])
+            ("SEMAPHORE_MODE" variable (:constant-flag t) nil [2507 2521])
+            ("SEMAPHORE_INIT_VALUE" variable (:constant-flag t) nil [2549 2569])
+            ("UMASK_VALUE" variable (:constant-flag t) nil [2588 2599])
+            ("pengineId" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [2617 2666])
+            ("pengineName" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [2667 2739])
+            ("certId" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2740 2797])
+            ("rsaBlob" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "unsigned char")
+                nil [2798 2844])
+            ("ps2Blob" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "unsigned char")
+                nil [2845 2891])
+            ("defRsaMethods" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("RSA_METHOD" type (:type "class") nil nil))
+                nil [2892 2938])
+            ("engineSem" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("sem_t" type (:type "class") nil nil))
+                nil [2939 2963])
+            ("loadKpk10" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3134 3139]))                  
+                :type "bool")
+                nil [3112 4323])
+            ("loadPs2" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4490 4495]))                  
+                :type "bool")
+                nil [4470 5489])
+            ("freeNexusBlobMemory" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5648 5653]))                  
+                :type "void")
+                nil [5616 6029])
+            ("freeCtx" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("BN_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6175 6187]))                  
+                :type "void")
+                nil [6155 6339])
+            ("freeOpensslBuf" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [6556 6575])
+                    ("num" variable (:type "int") (reparse-symbol arg-sub-list) [6576 6584]))                  
+                :type "void")
+                nil [6529 6757])
+            ("loadKpk10Ps2" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6932 6937]))                  
+                :type "int")
+                nil [6908 7594])
+            ("loadPs2IfNeeded" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7796 7801]))                  
+                :type "int")
+                nil [7769 8505])
+            ("pengineRsaPrivEnc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("flen" variable (:type "int") (reparse-symbol arg-sub-list) [9049 9058])
+                    ("from" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9059 9085])
+                    ("to" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9086 9104])
+                    ("rsa" variable
+                       (:pointer 1
+                        :type ("RSA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9105 9114])
+                    ("padding" variable (:type "int") (reparse-symbol arg-sub-list) [9115 9127]))                  
+                :type "int")
+                nil [9020 15873])
+            ("pengineRsaPubEnc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("flen" variable (:type "int") (reparse-symbol arg-sub-list) [16422 16431])
+                    ("from" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [16432 16458])
+                    ("to" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [16459 16477])
+                    ("rsa" variable
+                       (:pointer 1
+                        :type ("RSA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16478 16487])
+                    ("padding" variable (:type "int") (reparse-symbol arg-sub-list) [16488 16500]))                  
+                :type "int")
+                nil [16394 16576])
+            ("pengineRsaPubDec" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("flen" variable (:type "int") (reparse-symbol arg-sub-list) [17137 17146])
+                    ("from" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [17147 17173])
+                    ("to" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [17174 17192])
+                    ("rsa" variable
+                       (:pointer 1
+                        :type ("RSA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17193 17202])
+                    ("padding" variable (:type "int") (reparse-symbol arg-sub-list) [17203 17215]))                  
+                :type "int")
+                nil [17109 17291])
+            ("pengineRsaModExp" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r0" variable
+                       (:pointer 1
+                        :type ("BIGNUM" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17727 17738])
+                    ("I" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("BIGNUM" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17739 17755])
+                    ("rsa" variable
+                       (:pointer 1
+                        :type ("RSA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17756 17765])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("BN_CTX" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17766 17778]))                  
+                :type "int")
+                nil [17699 17838])
+            ("pengineRsaInit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rsa" variable
+                       (:pointer 1
+                        :type ("RSA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18115 18124]))                  
+                :type "int")
+                nil [18089 18165])
+            ("pengineRsaFinish" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rsa" variable
+                       (:pointer 1
+                        :type ("RSA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18446 18455]))                  
+                :type "int")
+                nil [18418 18498])
+            ("pengineInit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("ENGINE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18714 18724]))                  
+                :type "int")
+                nil [18691 19589])
+            ("pengineFinish" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("ENGINE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19779 19789]))                  
+                :type "int")
+                nil [19754 19969])
+            ("rsaMethods" variable
+               (:typemodifiers ("static")
+                :type ("RSA_METHOD" type (:type "class") nil nil))
+                nil [20069 20716])
+            ("pengineGetRsaMethod" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20934 20939]))                  
+                :type ("RSA_METHOD" type (:type "class") nil nil))
+                nil [20889 21020])
+            ("pengineLoadPrivKey" function
+               (:pointer 1
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("ENGINE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21568 21578])
+                    ("id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21579 21594])
+                    ("ui" variable
+                       (:pointer 1
+                        :type ("UI_METHOD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21595 21609])
+                    ("extra" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [21610 21622]))                  
+                :type ("EVP_PKEY" type (:type "class") nil nil))
+                nil [21539 24868])
+            ("pengineBind" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("ENGINE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25103 25113])
+                    ("id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25114 25129]))                  
+                :type "int")
+                nil [25080 25655]))          
+    :file "pengine.c"
+    :pointmax 25729
+    :fsize 25728
+    :lastmodtime '(21886 41618 338778 969000)
+    :unmatched-syntax '((semantic-list 25712 . 25725) (symbol 25687 . 25712) (semantic-list 25683 . 25685) (symbol 25657 . 25683))
+    :lexical-table 
+        '(("KPK10PS2SIG_SIZE" . ((number "256" 1998 . 2001)))
+          ("RSA_KEY_OFFSET_0" . ((semantic-list "(64 + (0 * 256))" 2039 . 2055)))
+          ("SEMAPHORE_NAME" . ((string "\"/penginesem\"" 2481 . 2494)))
+          ("PS2_BLOB_FILE" . ((string "\"/etc/security/modelkey.bin\"" 1456 . 1484)))
+          ("PS2_BLOB_FILE_SIZE" . ((number "1312" 1571 . 1575)))
+          ("PKE2KPK10SIG_OFFSET" . ((semantic-list "(PKE2KPK10_OFFSET + PKE2KPK10_SIZE)" 1693 . 1728)))
+          ("RSA_KEY_OFFSET_2" . ((semantic-list "(64 + (2 * 256))" 2093 . 2109)))
+          ("UNIQUE_CERT_ID" . ((semantic-list "(1)" 2242 . 2245)))
+          ("RSA_KEY_OFFSET_3" . ((semantic-list "(64 + (3 * 256))" 2147 . 2163)))
+          ("MODEL_CERT_ID" . ((semantic-list "(0)" 2201 . 2204)))
+          ("KPK10PS2SIG_OFFSET" . ((semantic-list "(KPK10PS2_OFFSET + KPK10PS2_SIZE)" 1927 . 1960)))
+          ("SEMAPHORE_INIT_VALUE" . ((number "1" 2574 . 2575)))
+          ("RSA_BLOB_FILE_SIZE" . ((number "2112" 1529 . 1533)))
+          ("PKE2KPK10_OFFSET" . ((number "0" 1613 . 1614)))
+          ("UNKNOWN_CERT_ID" . ((semantic-list "(-1)" 2283 . 2287)))
+          ("SEMAPHORE_MODE" . ((number "0660" 2532 . 2536)))
+          ("UMASK_VALUE" . ((number "6" 2613 . 2614)))
+          ("KPK10PS2_OFFSET" . ((semantic-list "(PKE2KPK10SIG_OFFSET + PKE2KPK10SIG_SIZE)" 1807 . 1848)))
+          ("RSA_BLOB_FILE" . ((string "\"/mnt/ffs/security/rsablob.bin\"" 1358 . 1389)))
+          ("PADDING_SUCCESS" . ((number "1" 2403 . 2404)))
+          ("PADDING_FAILURE" . ((number "0" 2442 . 2443)))
+          ("KPK10PS2_SIZE" . ((number "528" 1886 . 1889)))
+          ("KEY_INDEX_PS1" . ((number "2" 2325 . 2326)))
+          ("PKE2KPK10_SIZE" . ((number "272" 1652 . 1655)))
+          ("PKE2KPK10SIG_SIZE" . ((number "256" 1766 . 1769)))
+          ("KEY_INDEX_PS2" . ((number "4" 2364 . 2365)))
+          )
+
+    )
+   (semanticdb-table "common.h"
+    :file "common.h"
+    :fsize 309
+    :lastmodtime '(21878 42562 61709 723000)
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("CFLAGS" variable (:default-value ("$(PLATFORM_CFLAGS)")) nil [44 73])
+            ("LDFLAGS" variable (:default-value ("$(PLATFORM_LDFLAGS)")) nil [73 104])
+            ("PLATFORM" variable (:default-value ("9$(PLATFORM_BCOM_CHIP)")) nil [104 136])
+            ("NEXUS_PLATFORM" variable (:default-value ("$(PLATFORM)")) nil [136 163])
+            ("$(NEXUS_TOP)/platforms/$(NEXUS_PLATFORM)/build/platform_app.inc" include nil nil [376 448])
+            ("CFLAGS" variable (:default-value ("$(filter-out -pedantic,$(filter-out -std=c89,$(NEXUS_CFLAGS)))" "$(addprefix -I,$(NEXUS_APP_INCLUDE_PATHS))" "$(addprefix -D,$(NEXUS_APP_DEFINES))")) nil [448 601])
+            ("CFLAGS" variable (:default-value ("\"-DRSA_BLOB_FILE=\\\"$(NEXUS_RSA_BLOB_FILE)\\\"\"" "\"-DPS2_BLOB_FILE=\\\"$(NEXUS_PS2_BLOB_FILE)\\\"\"")) nil [602 714])
+            ("LDFLAGS" variable (:default-value ("-lnexus" "-lpthread")) nil [725 754])
+            ("TARGET" variable (:default-value ("libpengine")) nil [754 775])
+            ("TEST_TARGET_1" variable (:default-value ("test_startup_app")) nil [775 809])
+            ("TEST_TARGET_2" variable (:default-value ("test_xmpp_app")) nil [809 840])
+            ("TEST_TARGET_3" variable (:default-value ("test_qt_app")) nil [840 869])
+            ("TEST_SCRIPT" variable (:default-value ("pengine_test.sh")) nil [869 902])
+            (".PHONY" function (:arguments ("all" "clean" "install")) nil [903 929])
+            ("all" function (:arguments ("fsl_test")) nil [954 982])
+            ("lib" function nil nil [983 1281])
+            ("test" function nil nil [1282 1640])
+            ("install" function nil nil [1641 1669])
+            ("clean" function (:arguments ("fsl_test_clean")) nil [1988 2337])
+            ("fsl_test" function nil nil [2338 2502])
+            ("fsl_test_clean" function nil nil [2786 2915]))          
+    :file "Makefile"
+    :pointmax 2778
+    :fsize 1370
+    :lastmodtime '(21878 42562 60709 730000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "common.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [922 940])
+            ("string.h" include (:system-flag t) nil [943 962])
+            ("unistd.h" include (:system-flag t) nil [963 982])
+            ("stdlib.h" include (:system-flag t) nil [983 1002])
+            ("sys/types.h" include (:system-flag t) nil [1003 1025])
+            ("sys/stat.h" include (:system-flag t) nil [1026 1047])
+            ("nexus_platform.h" include nil nil [1048 1075])
+            ("tlogger.h" include nil nil [1076 1096])
+            ("TLOG_DEFINE_MODULE_LOGGER" function
+               (:prototype-flag t
+                :type "int")
+                nil [1097 1144])
+            ("BUFFER_SIZE_ALIGNMENT" variable (:constant-flag t) nil [1159 1180])
+            ("getByteAlignedSize" function
+               (:arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1371 1383]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [1345 1585])
+            ("endianSwap" function
+               (:arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1772 1794])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [1795 1804]))                  
+                :type "void")
+                nil [1756 2046])
+            ("loadNexusBlobFile" function
+               (:arguments 
+                  ( ("buffer" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2356 2379])
+                    ("fileName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2380 2395])
+                    ("blobSize" variable (:type "int") (reparse-symbol arg-sub-list) [2396 2409]))                  
+                :type "int")
+                nil [2334 3671]))          
+    :file "common.c"
+    :pointmax 3672
+    :fsize 3787
+    :lastmodtime '(21878 42562 60709 730000)
+    :unmatched-syntax '((string 1123 . 1142))
+    :lexical-table 
+        '(("BUFFER_SIZE_ALIGNMENT" . ((number "1024" 1184 . 1188)))
+          )
+
+    )
+   (semanticdb-table "debug.h"
+    :file "debug.h"
+    :fsize 1150
+    :lastmodtime '(21878 42562 60709 730000)
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!pengine!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

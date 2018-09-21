@@ -1,0 +1,360 @@
+;; Object main/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "main/"
+  :tables (list 
+   (semanticdb-table "DsmccDataServer.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("DsmccDataServer.h" include nil nil [1 29])
+            ("DsmccDataServer" function
+               (:constructor-flag t
+                :parent "DsmccDataServer"
+                :arguments 
+                  ( ("dsmccIface" variable
+                       (:pointer 1
+                        :type ("dsmccInterface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64 91]))                  
+                :type ("DsmccDataServer" type (:type "class") nil nil))
+                nil [31 231])
+            ("DsmccDataServer" function
+               (:destructor-flag t
+                :parent "DsmccDataServer"
+                :type "void")
+                nil [233 427])
+            ("getDataServerType" function
+               (:parent "DsmccDataServer"
+                :type ("CDC_DOWNLOAD_TYPE" type (:type "class") nil nil))
+                nil [429 542])
+            ("makeRequest" function
+               (:parent "DsmccDataServer"
+                :arguments 
+                  ( ("dataServerReqId" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [579 603])
+                    ("ecoRequestId" variable
+                       (:reference 1
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [640 661])
+                    ("fileUrl" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [697 713]))                  
+                :type "bool")
+                nil [544 1392])
+            ("cancelRequest" function
+               (:parent "DsmccDataServer"
+                :arguments 
+                  ( ("dataServerReqId" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1431 1455]))                  
+                :type "bool")
+                nil [1394 1853])
+            ("maintainFile" function
+               (:parent "DsmccDataServer"
+                :arguments 
+                  ( ("messageType" variable (:type ("EDC_MESSAGE_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2804 2833])
+                    ("constantMonitoring" variable (:type "bool") (reparse-symbol arg-sub-list) [2872 2908]))                  
+                :type "bool")
+                nil [2768 4492])
+            ("canHandleRequest" function
+               (:parent "DsmccDataServer"
+                :arguments 
+                  ( ("fileUrl" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4534 4557]))                  
+                :type "bool")
+                nil [4494 4714]))          
+    :file "DsmccDataServer.cpp"
+    :pointmax 4715
+    :fsize 5473
+    :lastmodtime '(21471 25795 64860 949000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "EpgDownloadManager.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("EpgDownloadManager.h" include nil nil [1 32])
+            ("EpgDownloadManager" function
+               (:constructor-flag t
+                :parent "EpgDownloadManager"
+                :arguments 
+                  ( ("primaryDataServer" variable
+                       (:pointer 1
+                        :type ("DataServerInterface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73 112])
+                    ("secondaryDataServer" variable
+                       (:pointer 1
+                        :type ("DataServerInterface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [152 193])
+                    ("fileSecurity" variable
+                       (:pointer 1
+                        :type ("FileSecurity" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [233 267])
+                    ("binaryManager" variable
+                       (:pointer 1
+                        :type ("EdcBinaryManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [307 342]))                  
+                :type ("EpgDownloadManager" type (:type "class") nil nil))
+                nil [34 1863])
+            ("EpgDownloadManager" function
+               (:destructor-flag t
+                :parent "EpgDownloadManager"
+                :type "void")
+                nil [1865 1996])
+            ("mapRequest" function
+               (:parent "EpgDownloadManager"
+                :arguments 
+                  ( ("fileUrl" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2546 2572])
+                    ("ecoRequestId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2610 2641])
+                    ("msgType" variable (:type ("EDC_MESSAGE_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2679 2705])
+                    ("downloadType" variable (:type ("CDC_DOWNLOAD_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2743 2774])
+                    ("dataServerReqId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2812 2846])
+                    ("isMaintainedFile" variable (:type "bool") (reparse-symbol arg-sub-list) [2884 2919])
+                    ("requestSuccessful" variable (:type "bool") (reparse-symbol arg-sub-list) [2957 2993]))                  
+                :type "bool")
+                nil [2509 3686])
+            ("handleRequestWithUrl" function
+               (:parent "EpgDownloadManager"
+                :arguments 
+                  ( ("fileUrl" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3735 3760])
+                    ("ecoRequestId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3808 3838])
+                    ("msgType" variable (:type ("EDC_MESSAGE_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3886 3911]))                  
+                :type "bool")
+                nil [3688 5458])
+            ("handleDownloadRequest" function
+               (:parent "EpgDownloadManager"
+                :arguments 
+                  ( ("url" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6019 6040])
+                    ("secondaryUrl" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6090 6120])
+                    ("ecoRequestId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6169 6199])
+                    ("msgType" variable (:type ("EDC_MESSAGE_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6248 6273]))                  
+                :type "bool")
+                nil [5971 8016])
+            ("requestMaintainFiles" function
+               (:parent "EpgDownloadManager"
+                :type "void")
+                nil [8529 10304])
+            ("handleTarballResponse" function
+               (:parent "EpgDownloadManager"
+                :arguments 
+                  ( ("fileData" variable
+                       (:reference 1
+                        :type ("QByteArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10661 10682])
+                    ("fileUrl" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10683 10700]))                  
+                :type "bool")
+                nil [10613 12420])
+            ("handleServerResponse" function
+               (:parent "EpgDownloadManager"
+                :arguments 
+                  ( ("requestId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12980 12995])
+                    ("fileUrl" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12996 13012])
+                    ("downloadType" variable (:type "int") (reparse-symbol arg-sub-list) [13013 13030]))                  
+                :type "bool")
+                nil [12933 17578])
+            ("handleUITarball" function
+               (:parent "EpgDownloadManager"
+                :arguments 
+                  ( ("fileUrl" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17815 17838])
+                    ("tarballVersion" variable
+                       (:constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17839 17868]))                  
+                :type "bool")
+                nil [17772 18465])
+            ("deleteDownloadInfo" function
+               (:parent "EpgDownloadManager"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("EpgDownloadInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18921 18943]))                  
+                :type "bool")
+                nil [18876 19546])
+            ("getDownloadInfo" function
+               (:pointer 1
+                :parent "EpgDownloadManager"
+                :arguments 
+                  ( ("dataServerReqId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20011 20032])
+                    ("downloadType" variable (:type ("CDC_DOWNLOAD_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20033 20064]))                  
+                :type ("EpgDownloadInfo" type (:type "class") nil nil))
+                nil [19957 20599])
+            ("handleFailedDownload" function
+               (:parent "EpgDownloadManager"
+                :arguments 
+                  ( ("requestId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21261 21276])
+                    ("downloadType" variable (:type ("CDC_DOWNLOAD_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21277 21308]))                  
+                :type "bool")
+                nil [21214 22972])
+            ("retryFailedRequests" function
+               (:parent "EpgDownloadManager"
+                :type "bool")
+                nil [23485 24188])
+            ("resetMaintainedFiles" function
+               (:parent "EpgDownloadManager"
+                :type "bool")
+                nil [24506 25312])
+            ("ingestFile" function
+               (:parent "EpgDownloadManager"
+                :arguments 
+                  ( ("fileName" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25760 25777])
+                    ("msgType" variable (:type ("EDC_MESSAGE_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25778 25803]))                  
+                :type "void")
+                nil [25723 27916])
+            ("rescanIngest" function
+               (:parent "EpgDownloadManager"
+                :type "void")
+                nil [28327 28712])
+            ("handleRequestSiOnStartup" function
+               (:parent "EpgDownloadManager"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [28955 28960]))                  
+                :type "bool")
+                nil [28904 31138])
+            ("handleFailedDecrypt" function
+               (:parent "EpgDownloadManager"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [32205 32210]))                  
+                :type "void")
+                nil [32159 35718])
+            ("getEpgDownloadMap" function
+               (:pointer 1
+                :parent "EpgDownloadManager"
+                :type ("EpgDownloadMap" type (:type "class") nil nil))
+                nil [35726 35829])
+            ("getMaintainFileTimer" function
+               (:pointer 1
+                :parent "EpgDownloadManager"
+                :type ("QTimer" type (:type "class") nil nil))
+                nil [35831 35936])
+            ("getFailedDownloadTimer" function
+               (:pointer 1
+                :parent "EpgDownloadManager"
+                :type ("QTimer" type (:type "class") nil nil))
+                nil [35938 36047])
+            ("getFailedRequestList" function
+               (:pointer 1
+                :parent "EpgDownloadManager"
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [36049 36158])
+            ("getMaintainedSiReqId" function
+               (:parent "EpgDownloadManager"
+                :type ("uint" type (:type "class") nil nil))
+                nil [36160 36280])
+            ("getMaintainedEpg0ReqId" function
+               (:parent "EpgDownloadManager"
+                :type ("uint" type (:type "class") nil nil))
+                nil [36282 36406])
+            ("getMaintainedTarBallReqId" function
+               (:parent "EpgDownloadManager"
+                :type ("uint" type (:type "class") nil nil))
+                nil [36408 36538])
+            ("setMaintainedSiReqId" function
+               (:parent "EpgDownloadManager"
+                :arguments 
+                  ( ("siReqId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36587 36600]))                  
+                :type "void")
+                nil [36541 36682])
+            ("setMaintainedEpg0ReqId" function
+               (:parent "EpgDownloadManager"
+                :arguments 
+                  ( ("epg0ReqId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36732 36747]))                  
+                :type "void")
+                nil [36684 36833])
+            ("setMaintainedTarBallReqId" function
+               (:parent "EpgDownloadManager"
+                :arguments 
+                  ( ("tarballReqId" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36886 36904]))                  
+                :type "void")
+                nil [36835 36996]))          
+    :file "EpgDownloadManager.cpp"
+    :pointmax 37000
+    :fsize 38300
+    :lastmodtime '(21471 25795 29861 169000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "FileSecurity.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("FileSecurity.h" include nil nil [1 26])
+            ("FileSecurity" function
+               (:constructor-flag t
+                :parent "FileSecurity"
+                :type ("FileSecurity" type (:type "class") nil nil))
+                nil [28 197])
+            ("initSecurity" function
+               (:parent "FileSecurity"
+                :type ("SLSTATUS" type (:type "class") nil nil))
+                nil [199 377])
+            ("decryptData" function
+               (:parent "FileSecurity"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("QByteArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [410 427]))                  
+                :type "bool")
+                nil [379 1218])
+            ("deinitSecurity" function
+               (:parent "FileSecurity"
+                :type "void")
+                nil [1220 1334]))          
+    :file "FileSecurity.cpp"
+    :pointmax 1335
+    :fsize 1334
+    :lastmodtime '(21471 25795 63860 956000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "edc_main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QApplication" include (:system-flag t) nil [1 24])
+            ("QDebug" include (:system-flag t) nil [25 42])
+            ("QThread" include (:system-flag t) nil [43 61])
+            ("QObject" include (:system-flag t) nil [62 80])
+            ("EcoMainListener.h" include nil nil [82 110])
+            ("EpgDownloadManager.h" include nil nil [111 142])
+            ("DataServerResponseHandler.h" include nil nil [143 181])
+            ("DsmccDataServer.h" include nil nil [183 211])
+            ("LegacyDataServer.h" include nil nil [212 241])
+            ("FileSecurity.h" include nil nil [242 267])
+            ("EdcBinaryManager.h" include nil nil [268 297])
+            ("unistd.h" include nil nil [298 317])
+            ("dsmccIfaceMock.h" include nil nil [377 404])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [422 431])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [432 445]))                  
+                :type "int")
+                nil [413 5905]))          
+    :file "edc_main.cpp"
+    :pointmax 5906
+    :fsize 6484
+    :lastmodtime '(21471 25795 29861 169000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!cobaltClient!ecoDataClient!src!main!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

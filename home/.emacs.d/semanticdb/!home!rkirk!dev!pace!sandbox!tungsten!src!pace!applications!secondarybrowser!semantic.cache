@@ -1,0 +1,410 @@
+;; Object secondarybrowser/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "secondarybrowser/"
+  :tables (list 
+   (semanticdb-table "secondarybrowser.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("secondarybrowser.h" include nil nil [2 31])
+            ("manager/clientapplicationmanager.h" include nil nil [32 77])
+            ("appfactory.h" include nil nil [78 101])
+            ("useriohandler/user_input_handler.h" include (:system-flag t) nil [226 271])
+            ("useriohandler/user_input_qws.h" include (:system-flag t) nil [272 313])
+            ("QStackedLayout" include (:system-flag t) nil [314 339])
+            ("QDateTime" include (:system-flag t) nil [340 360])
+            ("ecographicsview.h" include nil nil [362 390])
+            ("ecoview.h" include nil nil [391 411])
+            ("iecoview.h" include nil nil [412 433])
+            ("ecowebpage.h" include nil nil [434 457])
+            ("camodel_sec/camodel.h" include nil nil [459 491])
+            ("camodel_sec/custom/camodeldefault.h" include nil nil [566 612])
+            ("staticeventlist/staticeventlistobject.h" include nil nil [621 671])
+            ("currenteventlist/currenteventlistobject.h" include nil nil [672 724])
+            ("directfb.h" include (:system-flag t) nil [808 829])
+            ("dfb_platform.h" include nil nil [830 855])
+            ("direct/util.h" include (:system-flag t) nil [856 880])
+            ("STRINGIFY" variable (:constant-flag t) nil [897 906])
+            ("TOSTRING" variable (:constant-flag t) nil [921 929])
+            ("QT_OGL_PLF_NAME" variable (:constant-flag t) nil [979 994])
+            ("OGL_CLIENT_ADD" variable (:constant-flag t) nil [1111 1125])
+            ("BASE_DEBUG_PORT" variable (:constant-flag t) nil [1204 1219])
+            ("CACHE_DB" variable (:constant-flag t) nil [1233 1241])
+            ("tlogger/tlogger.h" include nil nil [1259 1287])
+            ("tlogger" using (:type ("tlogger" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1288 1312])
+            ("stb_eco_latensCoreMain.h" include nil nil [1314 1349])
+            ("QHostAddress" include (:system-flag t) nil [1351 1374])
+            ("QNetworkInterface" include (:system-flag t) nil [1375 1403])
+            ("com::pace::Tungsten" using (:type ("com::pace::Tungsten" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2428 2464])
+            ("unnamed" type
+               (:members 
+                  ( ("applicationManager" variable
+                       (:pointer 1
+                        :type ("IApplicationManager" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2481 2521])
+                    ("createView" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("args" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QStringList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3431 3455]))                          
+                        :type ("IEcoView" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3410 4750]))                  
+                :type "namespace")
+                nil [2466 4752])
+            ("SetUpWebInspector" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pView" variable
+                       (:pointer 1
+                        :type ("IEcoView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4784 4800])
+                    ("instanceId" variable (:type "int") (reparse-symbol arg-sub-list) [4801 4816]))                  
+                :type "void")
+                nil [4754 6067])
+            ("initialise" function
+               (:parent "SecondaryBrowserApplication"
+                :type "void")
+                nil [6069 12018])
+            ("UnInitialise" function
+               (:parent "SecondaryBrowserApplication"
+                :type "void")
+                nil [12020 13991])
+            ("slotUpdateWhitelist" function
+               (:parent "SecondaryBrowserApplication"
+                :type "void")
+                nil [13994 14395])
+            ("slotUrlChanged" function
+               (:parent "SecondaryBrowserApplication"
+                :arguments 
+                  ( ("ul" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QUrl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14448 14463]))                  
+                :type "void")
+                nil [14397 14521])
+            ("slotAppPath" function
+               (:parent "SecondaryBrowserApplication"
+                :arguments 
+                  ( ("appPath" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14571 14595]))                  
+                :type "void")
+                nil [14523 15075])
+            ("SecondaryBrowserApplication" function
+               (:constructor-flag t
+                :parent "SecondaryBrowserApplication"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [15135 15144])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15145 15158]))                  
+                :type ("SecondaryBrowserApplication" type (:type "class") nil nil))
+                nil [15078 20522])
+            ("setUpDirectfbClientId" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [21476 21485])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21486 21499])
+                    ("clientid" variable (:type "int") (reparse-symbol arg-sub-list) [21500 21513]))                  
+                :type "void")
+                nil [21442 22317])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [22335 22344])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22345 22358]))                  
+                :type "int")
+                nil [22326 26041]))          
+    :file "secondarybrowser.cpp"
+    :pointmax 26042
+    :fsize 26041
+    :lastmodtime '(21785 11180 66134 238000)
+    :unmatched-syntax '((semantic-list 2389 . 2418) (symbol 2364 . 2389) (string 2390 . 2417))
+    :lexical-table 
+        '(("QT_OGL_PLF_NAME" . ((symbol "eglnullws" 995 . 1004)))
+          ("CACHE_DB" . ((string "\"/tmp/cache.db\"" 1242 . 1257)))
+          ("TOSTRING" (spp-arg-list ("x") 929 . 932) . ((symbol "STRINGIFY" 933 . 942) (semantic-list "(x)" 942 . 945)))
+          ("STRINGIFY" (spp-arg-list ("x") 906 . 909) . ((punctuation "#" 910 . 911) (symbol "x" 911 . 912)))
+          ("OGL_CLIENT_ADD" . ((string "\":clientid=%1\"" 1126 . 1140)))
+          ("BASE_DEBUG_PORT" . ((number "9500" 1220 . 1224)))
+          )
+
+    )
+   (semanticdb-table "secondarybrowser.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SECONDARYBROWSER_H__" variable (:constant-flag t) nil [38 58])
+            ("QApplication" include (:system-flag t) nil [60 83])
+            ("QWidget" include (:system-flag t) nil [84 102])
+            ("QWebFrame" include (:system-flag t) nil [103 123])
+            ("QUrl" include (:system-flag t) nil [124 139])
+            ("QScopedPointer" include (:system-flag t) nil [140 165])
+            ("avobjectinterface.h" include nil nil [167 197])
+            ("configmodelinterface.h" include nil nil [198 231])
+            ("broadcastnetworkmanagerproxy.h" include nil nil [293 334])
+            ("mediabrowsermodelinterface.h" include nil nil [375 414])
+            ("parentalcontrolinterface.h" include nil nil [415 452])
+            ("playermodelinterface.h" include nil nil [453 486])
+            ("recordingsmodelinterface.h" include nil nil [487 524])
+            ("remindermodelinterface.h" include nil nil [525 560])
+            ("servicelistmodelinterface.h" include nil nil [561 599])
+            ("storagedevicemodelinterface.h" include nil nil [600 640])
+            ("dsmccInterface.h" include nil nil [836 863])
+            ("applicationdatabasemodelinterface.h" include nil nil [941 987])
+            ("IApplicationManager" type
+               (:prototype t
+                :type "class")
+                nil [1125 1151])
+            ("IEcoView" type
+               (:prototype t
+                :type "class")
+                nil [1152 1167])
+            ("EcoWebPage" type
+               (:prototype t
+                :type "class")
+                nil [1168 1185])
+            ("QWebFrame" type
+               (:prototype t
+                :type "class")
+                nil [1186 1202])
+            ("LatensCoreMain" type
+               (:prototype t
+                :type "class")
+                nil [1203 1224])
+            ("TungstenNetworkAccessManager" type
+               (:prototype t
+                :type "class")
+                nil [1225 1260])
+            ("CaModel" type
+               (:prototype t
+                :type "class")
+                nil [1261 1275])
+            ("CaModelStrategy" type
+               (:prototype t
+                :type "class")
+                nil [1276 1298])
+            ("FavListModel" type
+               (:prototype t
+                :type "class")
+                nil [1299 1318])
+            ("SecondaryBrowserApplication" type
+               (:superclasses 
+                  ( ("QApplication" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("Q_PROPERTY" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("url" variable (:type ("QUrl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1405 1418])
+                            ("url" variable (:type ("READ" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1414 1428])
+                            ("setUrl" variable (:type ("WRITE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1423 1442])
+                            ("urlChanged" variable (:type ("NOTIFY" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1436 1454]))                          
+                        :type ("Q_OBJECT" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1382 1455])
+                    ("public" label nil (reparse-symbol classsubparts) [1457 1464])
+                    ("SecondaryBrowserApplication" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1496 1505])
+                            ("argv" variable
+                               (:pointer 2
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1506 1518]))                          
+                        :type ("SecondaryBrowserApplication" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1468 1519])
+                    ("url" function (:type ("QUrl" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1524 1579])
+                    ("getEcoView" function
+                       (:pointer 1
+                        :type ("IEcoView" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1584 1643])
+                    ("initialise" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1648 1666])
+                    ("UnInitialise" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1670 1690])
+                    ("public" label nil (reparse-symbol classsubparts) [1692 1705])
+                    ("setUrl" function
+                       (:arguments 
+                          ( ("url" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QUrl" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1721 1737]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1709 1775])
+                    ("slotUpdateWhitelist" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1779 1806])
+                    ("slotAppPath" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("appPath" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1827 1851]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1810 1852])
+                    ("slotUrlChanged" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QUrl" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1876 1889]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1856 1890])
+                    ("urlChanged" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QUrl" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1920 1933]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1904 1934])
+                    ("updateAppPath" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("appPath" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1957 1981]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1938 1982])
+                    ("private" label nil (reparse-symbol classsubparts) [1984 1992])
+                    ("m_applicationManager" variable
+                       (:pointer 1
+                        :type ("IApplicationManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1996 2044])
+                    ("m_tnamManager" variable
+                       (:pointer 1
+                        :type ("TungstenNetworkAccessManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2048 2092])
+                    ("m_rootWidget" variable (:type ("QScopedPointer" type
+                         (:template-specifier 
+                            ( ("QWidget" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2097 2136])
+                    ("m_view" variable
+                       (:pointer 1
+                        :type ("IEcoView" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2140 2173])
+                    ("m_page" variable
+                       (:pointer 1
+                        :type ("EcoWebPage" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2177 2210])
+                    ("m_frame" variable
+                       (:pointer 1
+                        :type ("QWebFrame" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2214 2248])
+                    ("m_connection" variable (:type ("TipcConnection" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2252 2291])
+                    ("m_isInitialised" variable (:type "bool") (reparse-symbol classsubparts) [2295 2337])
+                    ("m_avObject" variable
+                       (:pointer 1
+                        :type ("com::pace::Tungsten::AVObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2341 2403])
+                    ("m_configModel" variable
+                       (:pointer 1
+                        :type ("com::pace::Tungsten::ConfigModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2407 2472])
+                    ("m_broadcastNetworkManagerProxy" variable
+                       (:pointer 1
+                        :type ("BroadcastNetworkManagerProxy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2572 2654])
+                    ("m_mediaBrowserModel" variable
+                       (:pointer 1
+                        :type ("com::pace::Tungsten::MediaBrowserModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2658 2729])
+                    ("m_parentalControl" variable
+                       (:pointer 1
+                        :type ("com::pace::Tungsten::ParentalControl" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2733 2802])
+                    ("m_playerModel" variable
+                       (:pointer 1
+                        :type ("com::pace::Tungsten::PlayerModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2806 2871])
+                    ("m_recordingsModel" variable
+                       (:pointer 1
+                        :type ("com::pace::Tungsten::RecordingsModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2875 2944])
+                    ("m_reminderModel" variable
+                       (:pointer 1
+                        :type ("com::pace::Tungsten::ReminderModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2948 3015])
+                    ("m_serviceListModel" variable
+                       (:pointer 1
+                        :type ("com::pace::Tungsten::ServiceListModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3019 3089])
+                    ("m_storageDeviceModel" variable
+                       (:pointer 1
+                        :type ("com::pace::Tungsten::StorageDeviceModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3093 3165])
+                    ("m_applicationDatabaseModel" variable
+                       (:pointer 1
+                        :type ("com::pace::Tungsten::ApplicationDatabaseModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3284 3362])
+                    ("m_caModelStrategy" variable
+                       (:pointer 1
+                        :type ("CaModelStrategy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3977 4046])
+                    ("m_caModel" variable
+                       (:pointer 1
+                        :type ("CaModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4050 4111])
+                    ("m_db" variable (:type ("QSqlDatabase" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4115 4171])
+                    ("m_latensCoreMain" variable
+                       (:pointer 1
+                        :type ("LatensCoreMain" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4175 4243])
+                    ("Myobject" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4247 4307]))                  
+                :type "class")
+                nil [1321 4314]))          
+    :file "secondarybrowser.h"
+    :pointmax 4347
+    :fsize 4346
+    :lastmodtime '(21785 11180 66134 238000)
+    :unmatched-syntax '((punctuation 1899 . 1900) (symbol 1892 . 1899))
+    :lexical-table 
+        '(("SECONDARYBROWSER_H__")
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!applications!secondarybrowser!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

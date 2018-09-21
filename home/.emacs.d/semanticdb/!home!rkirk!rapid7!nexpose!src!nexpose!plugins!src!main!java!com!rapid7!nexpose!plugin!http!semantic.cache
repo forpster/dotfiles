@@ -1,0 +1,145 @@
+;; Object http/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "http/"
+  :tables (list 
+   (semanticdb-table "StringMatcher.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.rapid7.nexpose.plugin.http" package nil nil [354 393])
+            ("com.rapid7.io.LineInputStream" include nil nil [395 432])
+            ("com.rapid7.log.LoggerConstants" include nil nil [433 471])
+            ("com.rapid7.util.PropertyUtils" include nil nil [472 509])
+            ("gnu.regexp.RE" include nil nil [510 531])
+            ("gnu.regexp.REException" include nil nil [532 562])
+            ("gnu.regexp.RESyntax" include nil nil [563 590])
+            ("java.io.BufferedReader" include nil nil [591 621])
+            ("java.io.IOException" include nil nil [622 649])
+            ("java.util.ArrayList" include nil nil [650 677])
+            ("java.util.Iterator" include nil nil [678 704])
+            ("java.util.List" include nil nil [705 727])
+            ("StringMatcher" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("m_patternsToMatch" variable
+                       (:typemodifiers ("private")
+                        :type "ArrayList")
+                        (reparse-symbol class_member_declaration) [1136 1172])
+                    ("m_andFunctionality" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1394 1429])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1458 1470]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1434 2118])
+                    ("StringMatcher" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [2271 2380])
+                    ("StringMatcher" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("af" variable (:type "boolean") (reparse-symbol formal_parameters) [2618 2628]))                          )
+                        (reparse-symbol class_member_declaration) [2597 2713])
+                    ("StringMatcher" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("pats" variable (:type "List") (reparse-symbol formal_parameters) [2879 2888]))                          )
+                        (reparse-symbol class_member_declaration) [2858 3018])
+                    ("StringMatcher" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("pats" variable (:type "List") (reparse-symbol formal_parameters) [3242 3251])
+                            ("af" variable (:type "boolean") (reparse-symbol formal_parameters) [3253 3263]))                          )
+                        (reparse-symbol class_member_declaration) [3221 3390])
+                    ("addPattern" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("pat" variable (:type "String") (reparse-symbol formal_parameters) [3527 3537]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3504 3753])
+                    ("addIgnoreCasePattern" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("pat" variable (:type "String") (reparse-symbol formal_parameters) [3791 3801]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3758 4041])
+                    ("addListOfPatterns" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("pats" variable (:type "List") (reparse-symbol formal_parameters) [4214 4223]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4184 4464])
+                    ("addArrayOfPatterns" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("pats" variable
+                               (:dereference 1
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [4640 4652]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4609 4881])
+                    ("hasMatch" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("results" variable (:type "String") (reparse-symbol formal_parameters) [4910 4924]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4886 6245])
+                    ("hasMatch" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("results" variable (:type "BufferedReader") (reparse-symbol formal_parameters) [6274 6296]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6250 8899])
+                    ("hasMatch" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("results" variable (:type "LineInputStream") (reparse-symbol formal_parameters) [9044 9067]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [9020 9150])
+                    ("hasMatchAtIndex" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("results" variable (:type "LineInputStream") (reparse-symbol formal_parameters) [9460 9483]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [9433 11736])
+                    ("removeFirstPattern" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11909 11986])
+                    ("removeLastPattern" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12157 12260])
+                    ("MATCHER_LOOKUP_TIMEOUT_MS" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [12493 12662])
+                    ("TIMEOUT_CHECK_FREQUENCY" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [12666 12721]))                  
+                :type "class")
+                nil [1050 12723]))          
+    :file "StringMatcher.java"
+    :pointmax 12724
+    :fsize 12723
+    :lastmodtime '(22038 16399 712615 373000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!rapid7!nexpose!src!nexpose!plugins!src!main!java!com!rapid7!nexpose!plugin!http!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

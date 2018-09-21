@@ -288,7 +288,7 @@
                       (add-hook 'write-contents-hooks 'rok-cleanup nil t)
 		      )))
 (setq auto-mode-alist
-      (append '(("\\.feature$"  . ruby-mode))
+      (append '(("\\.rb$"  . ruby-mode))
               auto-mode-alist))
 
 ; print margin support
@@ -299,3 +299,12 @@
 (setq fci-rule-width 1)
 (add-hook 'java-mode-hook 'fci-mode)
 (add-hook 'lisp-mode-hook 'fci-mode)
+
+; cucumber feature mode
+(require 'feature-mode)
+(add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
+(setq feature-step-search-path "/home/rkirk/rapid7/nexpose/src/internal/private/cucumber/features/**/step_definitions/*steps.rb")
+
+; brah
+(load "~/.emacs.d/bro-mode")
+(require 'bro-mode)

@@ -1,0 +1,139 @@
+;; Object rktest/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "rktest/"
+  :tables (list 
+   (semanticdb-table "rktest.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QCoreApplication" include (:system-flag t) nil [1 28])
+            ("QTimer" include (:system-flag t) nil [29 46])
+            ("QNetworkAccessManager" include (:system-flag t) nil [47 79])
+            ("QString" include (:system-flag t) nil [80 98])
+            ("QDateTime" include (:system-flag t) nil [99 119])
+            ("QMutex" include (:system-flag t) nil [120 137])
+            ("iostream" include (:system-flag t) nil [139 158])
+            ("sys/types.h" include (:system-flag t) nil [159 181])
+            ("unistd.h" include (:system-flag t) nil [182 201])
+            ("sys/syscall.h" include (:system-flag t) nil [202 226])
+            ("rktest.h" include nil nil [228 247])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [249 269])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [280 289])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [290 302]))                  
+                :type "int")
+                nil [271 871])
+            ("test" function
+               (:constructor-flag t
+                :parent "test"
+                :type ("test" type (:type "class") nil nil))
+                nil [973 1361])
+            ("test" function
+               (:destructor-flag t
+                :parent "test"
+                :type "void")
+                nil [1363 1644])
+            ("testPrint" function
+               (:parent "test"
+                :arguments 
+                  ( ("str" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1667 1686]))                  
+                :type "void")
+                nil [1646 1785])
+            ("testThread" function
+               (:destructor-flag t
+                :parent "testThread"
+                :type "void")
+                nil [1873 1979]))          
+    :file "rktest.cpp"
+    :pointmax 1980
+    :fsize 1979
+    :lastmodtime '(21879 2851 491834 224000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "rktest.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("RKTEST_H" variable (:constant-flag t) nil [26 34])
+            ("QObject" include (:system-flag t) nil [36 54])
+            ("QThread" include (:system-flag t) nil [55 73])
+            ("QString" include (:system-flag t) nil [74 92])
+            ("testThread" type
+               (:superclasses 
+                  ( ("QThread" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("Q_OBJECT" variable (:type "int") (reparse-symbol classsubparts) [133 142])
+                    ("public" label nil (reparse-symbol classsubparts) [143 150])
+                    ("testThread" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [154 176]))                  
+                :type "class")
+                nil [94 179])
+            ("test" type
+               (:superclasses 
+                  ( ("QObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("Q_OBJECT" variable (:type "int") (reparse-symbol classsubparts) [214 223])
+                    ("public" label nil (reparse-symbol classsubparts) [224 231])
+                    ("test" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("test" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [235 242])
+                    ("test" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [246 262])
+                    ("public" label nil (reparse-symbol classsubparts) [264 277])
+                    ("testPrint" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [296 315]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [281 316])
+                    ("private" label nil (reparse-symbol classsubparts) [318 326])
+                    ("m_thread" variable
+                       (:pointer 1
+                        :type ("testThread" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [330 351]))                  
+                :type "class")
+                nil [181 354]))          
+    :file "rktest.h"
+    :pointmax 361
+    :fsize 374
+    :lastmodtime '(21878 56920 462608 506000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("RKTEST_H")
+          )
+
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!tungsten!src!pace!middleware!rktest!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

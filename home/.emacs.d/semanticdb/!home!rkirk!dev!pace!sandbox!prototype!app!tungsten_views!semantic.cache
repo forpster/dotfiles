@@ -1,0 +1,108 @@
+;; Object tungsten_views/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tungsten_views/"
+  :tables (list 
+   (semanticdb-table "favourites.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("__author__" variable nil nil [1 24])
+            ("logging" include nil nil [26 40])
+            ("flask_restful" include nil nil [42 88])
+            ("flask_restful" include nil nil [89 109])
+            ("flask" include nil nil [110 135])
+            ("app.models" include nil nil [137 161])
+            ("app.database" include nil nil [162 221])
+            ("sqlalchemy.ext.associationproxy" include nil nil [222 283])
+            ("app.database" include nil nil [284 319])
+            ("app.dml" include nil nil [361 403])
+            ("fav_resource_fields" variable nil nil [454 612])
+            ("FavouriteListResource" type
+               (:superclasses ("TransactionalResource")
+                :members 
+                  ( ("" code nil (reparse-symbol indented_block_body) [684 728])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [741 745])
+                            ("exampleService" variable nil (reparse-symbol function_parameters) [747 761]))                          )
+                        (reparse-symbol indented_block_body) [733 1260])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1275 1279]))                          )
+                        (reparse-symbol indented_block_body) [1266 1393])
+                    ("delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1409 1413]))                          )
+                        (reparse-symbol indented_block_body) [1398 1662]))                  
+                :type "class")
+                nil [615 1662]))          
+    :file "favourites.py"
+    :pointmax 1662
+    :fsize 1675
+    :lastmodtime '(21943 23044 306414 89000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "services.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("logging" include nil nil [1 15])
+            ("flask_restful" include nil nil [17 63])
+            ("flask_restful" include nil nil [64 84])
+            ("flask" include nil nil [85 110])
+            ("app.models" include nil nil [112 136])
+            ("app.database" include nil nil [137 196])
+            ("app.dml" include nil nil [198 240])
+            ("time" include nil nil [241 252])
+            ("log" variable nil nil [255 286])
+            ("svc_resource_fields" variable nil nil [290 676])
+            ("\"\"\"
+ServiceListResource
+
+Description
+Privides the callback functions for the services Flask interface.
+\"\"\"" code nil nil [677 783])
+            ("ServiceListingResource" type
+               (:superclasses ("TransactionalResource")
+                :members 
+                  ( ("" code nil (reparse-symbol indented_block_body) [854 896])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [909 913])
+                            ("exampleService" variable nil (reparse-symbol function_parameters) [915 929]))                          )
+                        (reparse-symbol indented_block_body) [901 1459]))                  
+                :type "class")
+                nil [784 1459])
+            ("\"\"\"
+ServiceListResourceCobalt
+
+Description
+Privides the callback functions for the services Flask interface.
+This extracts the actual service list currently being populated by Cobalt
+\"\"\"" code nil nil [1460 1646])
+            ("tuning_params_fields" variable nil nil [1648 2029])
+            ("svc_resource_fields" variable nil nil [2031 2790])
+            ("ServiceListingResourceCobalt" type
+               (:superclasses ("TransactionalResource")
+                :members 
+                  ( ("" code nil (reparse-symbol indented_block_body) [2868 2916])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2929 2933]))                          )
+                        (reparse-symbol indented_block_body) [2921 3007]))                  
+                :type "class")
+                nil [2792 3007]))          
+    :file "services.py"
+    :pointmax 3007
+    :fsize 3006
+    :lastmodtime '(21943 22849 404855 633000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!rkirk!dev!pace!sandbox!prototype!app!tungsten_views!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
