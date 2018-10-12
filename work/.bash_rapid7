@@ -105,3 +105,9 @@ nex_truncate_logs()
 if [[ $platform == 'linux' ]]; then
     alias idea='/home/rkirk/src/idea-IU-173.4301.25/bin/idea.sh &> /dev/null&'
 fi
+
+# pyenv for agent
+export PATH="~/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
