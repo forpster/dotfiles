@@ -44,4 +44,7 @@ endif
 " F8 to disable indenting!
 :nnoremap <F8> :setl noai nocin nosi inde=<CR>
 
+" sort threads by duration
+```map <F3> :%g!/Duration/d<CR><Esc>:%s/.*Thread:\ //g<CR><Esc>:%s/@\(.\{-}\)\]/,\1/g<CR><Esc>:%s/\[Status: Complete\]//g<CR><Esc>:%s/\[Site:.\{-}\]//g<CR><Esc>:%g!/^\S*\ \{-}\[Dur/d<CR><Esc>:%s/^\(\S*\)\ \{-}\[Duration: \(\d\):\(\d\d\):\(\d\d\)\.\(\d\d\d\)\]/\2,\3,\4,\5,\1/g<CR><Esc>:sort!<CR><Esc>```
+
 set tags=./tags
