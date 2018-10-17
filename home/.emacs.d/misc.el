@@ -14,8 +14,9 @@
 (setq default-directory "~/rapid7/")
 
 ; winpoint remembers buffer position per window rather than just per buffer
-(require 'winpoint)
-(window-point-remember-mode 1)
+; doesn't work with 26.x
+;(require 'winpoint)
+;(window-point-remember-mode 1)
 
 ; use plink as default tramp mode
 ;(setq tramp-default-method "plink"

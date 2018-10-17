@@ -6,9 +6,23 @@
 ;(add-to-list 'default-frame-alist '(left . 950))
 
 ;; set font
-(if (eq window-system 'w32)
-    (set-face-font 'default "-*-Lucida Console-normal-*-*-*-15-*-*-*-*-*-*-*"))
-(set-face-font 'default "-*-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1")
+;(if (eq window-system 'w32)
+;    (set-face-font 'default "-*-Lucida Console-normal-*-*-*-15-*-*-*-*-*-*-*"))
+;(set-face-font 'default "-*-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1")
+;; set default font in initial window and for any new window
+(cond
+ ((string-equal system-type "windows-nt") ; Microsoft Windows
+  (when (member "DejaVu Sans Mono" (font-family-list))
+    (add-to-list 'initial-frame-alist '(font . "DejaVu Sans Mono-10"))
+    (add-to-list 'default-frame-alist '(font . "DejaVu Sans Mono-10"))))
+ ((string-equal system-type "darwin") ; macOS
+  (when (member "Menlo" (font-family-list))
+    (add-to-list 'initial-frame-alist '(font . "Inconsolata"))
+    (add-to-list 'default-frame-alist '(font . "Inconsolata"))))
+ ((string-equal system-type "gnu/linux") ; linux
+  (when (member "DejaVu Sans Mono" (font-family-list))
+    (add-to-list 'initial-frame-alist '(font . "DejaVu Sans Mono-15"))
+    (add-to-list 'default-frame-alist '(font . "DejaVu Sans Mono-15")))))
 
 ;; cursor
 ;(set-cursor-color "white")
