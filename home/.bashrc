@@ -84,3 +84,7 @@ alias tmuxwork='tmux new-session -t work'
 # modern ls is a dick
 export QUOTING_STYLE=literal
 
+if [ -f ~/Documents/graphgl_api_key.txt ]; then
+    export GRAPHQL_API_KEY=$(cat ~/Documents/graphgl_api_key.txt)
+fi
+
