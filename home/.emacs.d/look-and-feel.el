@@ -21,8 +21,8 @@
     (add-to-list 'default-frame-alist '(font . "Inconsolata"))))
  ((string-equal system-type "gnu/linux") ; linux
   (when (member "DejaVu Sans Mono" (font-family-list))
-    (add-to-list 'initial-frame-alist '(font . "DejaVu Sans Mono-15"))
-    (add-to-list 'default-frame-alist '(font . "DejaVu Sans Mono-15")))))
+    (add-to-list 'initial-frame-alist '(font . "DejaVu Sans Mono-12"))
+    (add-to-list 'default-frame-alist '(font . "DejaVu Sans Mono-12")))))
 
 ;; cursor
 ;(set-cursor-color "white")
