@@ -1,0 +1,164 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [353 371])
+            ("stdlib.h" include (:system-flag t) nil [372 391])
+            ("unistd.h" include (:system-flag t) nil [392 411])
+            ("fcntl.h" include (:system-flag t) nil [412 430])
+            ("string.h" include (:system-flag t) nil [431 450])
+            ("sys/time.h" include (:system-flag t) nil [451 472])
+            ("sys/socket.h" include (:system-flag t) nil [473 496])
+            ("netinet/in.h" include (:system-flag t) nil [497 520])
+            ("netinet/ip.h" include (:system-flag t) nil [521 544])
+            ("rt_names.h" include nil nil [546 567])
+            ("utils.h" include nil nil [568 586])
+            ("ip_common.h" include nil nil [587 609])
+            ("json_print.h" include nil nil [610 633])
+            ("NUD_VALID" variable (:constant-flag t) nil [643 652])
+            ("MAX_ROUNDS" variable (:constant-flag t) nil [731 741])
+            ("filter" variable
+               (:typemodifiers ("static")
+                :type ("" type
+                     (:members 
+                        ( ("family" variable (:type "int") (reparse-symbol classsubparts) [763 774])
+                          ("index" variable (:type "int") (reparse-symbol classsubparts) [776 786])
+                          ("state" variable (:type "int") (reparse-symbol classsubparts) [788 798])
+                          ("unused_only" variable (:type "int") (reparse-symbol classsubparts) [800 816])
+                          ("pfx" variable (:type ("inet_prefix" type (:type "class") nil nil)) (reparse-symbol classsubparts) [818 834])
+                          ("flushed" variable (:type "int") (reparse-symbol classsubparts) [836 848])
+                          ("flushb" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [850 863])
+                          ("flushp" variable (:type "int") (reparse-symbol classsubparts) [865 876])
+                          ("flushe" variable (:type "int") (reparse-symbol classsubparts) [878 889])
+                          ("master" variable (:type "int") (reparse-symbol classsubparts) [891 902]))                        
+                      :type "struct")
+                      nil nil))
+                nil [746 912])
+            ("usage" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [932 937]))                  
+                :type "void")
+                nil [914 964])
+            ("usage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [984 989]))                  
+                :type "void")
+                nil [966 1565])
+            ("nud_state_a2n" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("state" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [1592 1612])
+                    ("arg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1613 1629]))                  
+                :type "int")
+                nil [1567 2321])
+            ("flush_update" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2347 2352]))                  
+                :type "int")
+                nil [2323 2509])
+            ("ipneigh_modify" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [2538 2546])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [2547 2557])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2558 2567])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2568 2580]))                  
+                :type "int")
+                nil [2512 4772])
+            ("print_cacheinfo" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ci" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("nda_cacheinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4802 4833]))                  
+                :type "void")
+                nil [4774 5170])
+            ("print_neigh_state" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("nud" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5202 5219]))                  
+                :type "void")
+                nil [5172 5654])
+            ("print_neigh" function
+               (:arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("nlmsghdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5672 5691])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5692 5702]))                  
+                :type "int")
+                nil [5656 9152])
+            ("ipneigh_reset_filter" function
+               (:arguments 
+                  ( ("ifindex" variable (:type "int") (reparse-symbol arg-sub-list) [9180 9192]))                  
+                :type "void")
+                nil [9154 9278])
+            ("do_show_or_flush" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [9308 9317])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9318 9330])
+                    ("flush" variable (:type "int") (reparse-symbol arg-sub-list) [9331 9341]))                  
+                :type "int")
+                nil [9280 12908])
+            ("do_ipneigh" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [12925 12934])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12935 12947]))                  
+                :type "int")
+                nil [12910 13991]))          
+      :file "ipneigh.c"
+      :pointmax 13992
+      :fsize 13991
+      :lastmodtime '(23515 2732 676562 369000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NUD_VALID" . ((semantic-list "(NUD_PERMANENT|NUD_NOARP|NUD_REACHABLE|NUD_PROBE|NUD_STALE|NUD_DELAY)" 653 . 722)))
+          ("MAX_ROUNDS" . ((number "10" 742 . 744)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "ip_common.h"
+      :fsize 4812
+      :lastmodtime '(23515 2732 672562 410000)))
+  :file "!home!rkirk!src!iproute2!ip!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
