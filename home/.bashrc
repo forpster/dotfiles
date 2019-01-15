@@ -91,3 +91,5 @@ if [ -f ~/Documents/graphgl_api_key.txt ]; then
     export GRAPHQL_API_KEY=$(cat ~/Documents/graphgl_api_key.txt)
 fi
 
+# Go version manager
+[[ -s "/home/rkirk/.gvm/scripts/gvm" ]] && source "/home/rkirk/.gvm/scripts/gvm"
