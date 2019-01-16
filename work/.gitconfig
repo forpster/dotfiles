@@ -19,3 +19,5 @@
 	prompt = false
 [core]
 	pager = less -F -X
+[url "git@github.com:"]
+	insteadOf = https://github.com/
