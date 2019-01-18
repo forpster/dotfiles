@@ -62,7 +62,7 @@ fi
 # gitify the prompt
 . ~/src/bash-git-prompt/gitprompt.sh
 
-export PATH=$PATH:$HOME/bin:$HOME/rapid7/awsaml-v1.5.0-linux-x64
+export PATH=$PATH:$HOME/bin
 
 # perlbrew for PT stuff
 #source ~/perl5/perlbrew/etc/bashrc
