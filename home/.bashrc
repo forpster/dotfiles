@@ -58,6 +58,9 @@ fi
 if [ -f ~/.bash_ross ]; then
     . ~/.bash_ross
 fi
+if [ -f ~/.bash_razor ]; then
+    . ~/.bash_razor
+fi
 
 # gitify the prompt
 . ~/src/bash-git-prompt/gitprompt.sh

@@ -1,0 +1,31 @@
+# RAZOR BASHRC SETUP: DO NOT ADD ANYTHING UNDER THIS LINE
+
+# Useful Aliases
+alias mci='mvn clean install'
+alias mciu='mvn clean install -U'
+alias runsvc='target/*-dev/bin/control.sh run'
+alias rundebug='target/*-dev/bin/control.sh debug'
+alias jmpusdb="ssh -L \*:1234:customer-replica.db.razor-resource.razor-prod-1.us-east-1.r7ops.com:3306  ssh.razor-manage.razor-prod-1.us-east-1.r7ops.com"
+alias update-deps='mvn -DprocessDependencyManagement=false -Dincludes=com.rapid7.razor versions:use-latest-releases'
+
+# Java
+export JAVA7_HOME=/usr/lib/jvm/java-7-oracle
+export JAVA8_HOME=/usr/lib/jvm/java-8-oracle
+export JAVA_HOME=$JAVA8_HOME
+export JAVA="$JAVA_HOME/bin/java"
+export PATH=$JAVA_HOME/bin:$PATH
+
+# Maven
+export MAVEN_OPTS="-XX:MaxPermSize=256m"
+
+# GRADLE
+export GRADLE_HOME="/usr/share/gradle/bin"
+
+# NPM
+export NVM_DIR="~/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+export AWS_PROFILE="awsaml-042293964381"
+export AWS_DEFAULT_PROFILE="awsaml-042293964381"
+export PATH=$PATH:/home/razordev/rapid7/razor-scripts/razor
+export PATH="/home/razordev/.rbenv/bin:$PATH"
