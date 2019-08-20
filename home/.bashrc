@@ -96,3 +96,5 @@ fi
 
 # Go version manager
 [[ -s "/home/rkirk/.gvm/scripts/gvm" ]] && source "/home/rkirk/.gvm/scripts/gvm"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
