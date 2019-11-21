@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 GIT_CMD="git fetch -ap && git pull"
 
@@ -27,6 +27,9 @@ do
 done
 
 (cd ~/src/dotfiles && eval $GIT_CMD)
+
+. ~/.bash_rapid7
+clp-tags
 
 # bundle update some of the things
 #echo "cukesrc bundle update"
