@@ -132,10 +132,10 @@ antigen apply
 #   export EDITOR='mvim'
 # fi
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ${HOME}/.fzf.zsh ] && source ${HOME}/.fzf.zsh
 
 # Rapid7
-[ -f ~/.bash_rapid7 ] && source ~/.bash_rapid7
+[ -f ${HOME}/.bash_rapid7 ] && source ${HOME}/.bash_rapid7
 
 # GNU grep
 PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
@@ -151,12 +151,12 @@ alias tmuxwork='tmux new-session -t work'
 # modern ls is a dick
 export QUOTING_STYLE=literal
 
-if [ -f ~/Documents/graphgl_api_key.txt ]; then
-    export GRAPHQL_API_KEY=$(cat ~/Documents/graphgl_api_key.txt)
+if [ -f ${HOME}/Documents/graphgl_api_key.txt ]; then
+    export GRAPHQL_API_KEY=$(cat ${HOME}/Documents/graphgl_api_key.txt)
 fi
 
 # Go version manager
-[[ -s "/home/rkirk/.gvm/scripts/gvm" ]] && source "/home/rkirk/.gvm/scripts/gvm"
+[[ -s "${HOME}./gvm/scripts/gvm" ]] && source "${HOME}/.gvm/scripts/gvm"
 
 # Size of folders
 alias dux='du -sk ./* | sort -n | awk '\''BEGIN{ pref[1]="K"; pref[2]="M"; pref[3]="G";} { total = total + $1; x = $1; y = 1; while( x > 1024 ) { x = (x + 1023)/1024; y++; } printf("%g%s\t%s\n",int(x*10)/10,pref[y],$2); } END { y = 1; while( total > 1024 ) { total = (total + 1023)/1024; y++; } printf("Total: %g%s\n",int(total*10)/10,pref[y]); }'\'''
