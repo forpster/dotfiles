@@ -172,6 +172,3 @@ ZSH_TMUX_AUTOSTART=true
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="${HOME}/.sdkman"
 [[ -s "${HOME}/.sdkman/bin/sdkman-init.sh" ]] && source "${HOME}/.sdkman/bin/sdkman-init.sh"
-
-# fix ssh agent when tmux is detached
-setenv -g SSH_AUTH_SOCK ${HOME}/.ssh/ssh_auth_sock
