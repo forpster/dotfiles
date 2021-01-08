@@ -102,7 +102,7 @@ antigen theme romkatv/powerlevel10k
 antigen bundles <<EOBUNDLES
 git
 command-not-found
-rvm
+rbenv
 alias-finder
 colored-man-pages
 docker
@@ -168,6 +168,9 @@ export PATH=$PATH:$HOME/bin
 
 # Auto start tmux
 ZSH_TMUX_AUTOSTART=true
+
+# rbenv setup
+eval "$(rbenv init -)"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="${HOME}/.sdkman"
