@@ -114,3 +114,6 @@ export PATH="${HOME}/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# Go setup
+export GOPATH=${HOME}/go
+export GOROOT=/usr/local/bin
