@@ -36,9 +36,6 @@ alias fingerprinting-base='cd ~/rapid7/fingerprinting-base'
 alias assessment-core='cd ~/rapid7/assessment-core'
 alias logsink='cd ~/rapid7/logsink'
 
-# for java 11
-alias mvn11='JAVA_HOME="/home/rkirk/rapid7/tools/jdk/jdk-11.0.2" mvn' 
-
 # RFCs
 alias update-rfcs='rsync -avz --delete ftp.rfc-editor.org::rfcs-text-only ~/rapid7/RFCs/rfc && rsync -avz --delete ftp.rfc-editor.org::ids-text-only ~/rapid7/RFCs/ids'
 
@@ -104,16 +101,10 @@ nex_truncate_logs()
     for i in $NEXPOSE_ROOT/deploy/nsc/logs/*.log; do sudo truncate -s 0 $i; done
 }
 
-# to run intellij
-if [[ $platform == 'linux' ]]; then
-    alias idea='/home/rkirk/src/idea-IU-173.4301.25/bin/idea.sh &> /dev/null&'
-fi
-
-# pyenv for agent
-export PATH="${HOME}/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
 # Go setup
-export GOPATH=${HOME}/go
-export GOROOT=/usr/local/bin
+export GOPATH=~/.r7-terraform/vendor
+export GOBIN=~/.r7-terraform/vendor/bin
+export PATH=~/.r7-terraform/vendor/bin:$PATH
+
+# python from brew
+export PATH=/usr/local/opt/python3/libexec/bin:$PATH

@@ -87,6 +87,9 @@ fi
 
 #source $ZSH/oh-my-zsh.sh
 
+# Brew paths
+export PATH="/usr/local/sbin:$PATH"
+
 # Use antigen
 source $HOME/src/antigen/antigen.zsh
 
@@ -102,17 +105,17 @@ antigen theme romkatv/powerlevel10k
 antigen bundles <<EOBUNDLES
 git
 command-not-found
-rbenv
 alias-finder
 colored-man-pages
 docker
 mvn
 tmux
+brew
+asdf
 zsh-interactive-cd
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-completions
-matthieusb/zsh-sdkman
 EOBUNDLES
 
 # Apply bundles
@@ -155,9 +158,6 @@ if [ -f ${HOME}/Documents/graphgl_api_key.txt ]; then
     export GRAPHQL_API_KEY=$(cat ${HOME}/Documents/graphgl_api_key.txt)
 fi
 
-# Go version manager
-[[ -s "${HOME}./gvm/scripts/gvm" ]] && source "${HOME}/.gvm/scripts/gvm"
-
 # Size of folders
 alias dux='du -sk ./* | sort -n | awk '\''BEGIN{ pref[1]="K"; pref[2]="M"; pref[3]="G";} { total = total + $1; x = $1; y = 1; while( x > 1024 ) { x = (x + 1023)/1024; y++; } printf("%g%s\t%s\n",int(x*10)/10,pref[y],$2); } END { y = 1; while( total > 1024 ) { total = (total + 1023)/1024; y++; } printf("Total: %g%s\n",int(total*10)/10,pref[y]); }'\'''
 alias dush="du -sm *|sort -n|tail"
@@ -169,9 +169,5 @@ export PATH=$PATH:$HOME/bin
 # Auto start tmux
 ZSH_TMUX_AUTOSTART=true
 
-# rbenv setup
-eval "$(rbenv init -)"
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="${HOME}/.sdkman"
-[[ -s "${HOME}/.sdkman/bin/sdkman-init.sh" ]] && source "${HOME}/.sdkman/bin/sdkman-init.sh"
+# asdf completion, seems to not load from the asdf plugin not sure why
+[ -f "$ASDF_COMPLETIONS/asdf.bash" ] && . "$ASDF_COMPLETIONS/asdf.bash"
