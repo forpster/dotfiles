@@ -118,9 +118,6 @@ zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-completions
 EOBUNDLES
 
-# Apply bundles
-antigen apply
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -169,5 +166,10 @@ export PATH=$PATH:$HOME/bin
 # Auto start tmux
 ZSH_TMUX_AUTOSTART=true
 
+# Apply bundles
+antigen apply
+
 # asdf completion, seems to not load from the asdf plugin not sure why
 [ -f "$ASDF_COMPLETIONS/asdf.bash" ] && . "$ASDF_COMPLETIONS/asdf.bash"
+# asdf manage JAVA_HOME variable
+. ~/.asdf/plugins/java/set-java-home.zsh
