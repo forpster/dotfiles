@@ -163,8 +163,8 @@ alias remove_emacs_backup='find . -name "*~" -delete'
 alias ec='emacsclient -n'
 export PATH=$PATH:$HOME/bin
 
-# Auto start tmux
-ZSH_TMUX_AUTOSTART=true
+# Auto start tmux, fails under intellij
+#ZSH_TMUX_AUTOSTART=true
 
 # Apply bundles
 antigen apply
