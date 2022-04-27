@@ -176,6 +176,6 @@ setopt rm_star_silent
 antigen apply
 
 # asdf completion, seems to not load from the asdf plugin not sure why
-[ -f "$ASDF_COMPLETIONS/asdf.bash" ] && . "$ASDF_COMPLETIONS/asdf.bash"
+#[ -f "$ASDF_COMPLETIONS/asdf.bash" ] && . "$ASDF_COMPLETIONS/asdf.bash"
 # asdf manage JAVA_HOME variable
 . ~/.asdf/plugins/java/set-java-home.zsh
