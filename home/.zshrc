@@ -166,6 +166,12 @@ export PATH=$PATH:$HOME/bin
 # Auto start tmux, fails under intellij
 #ZSH_TMUX_AUTOSTART=true
 
+# fix awslocal to work with old localstack for LA integrations
+export USE_LEGACY_PORTS=1
+
+# Do not prompt rm to delete files
+setopt rm_star_silent
+
 # Apply bundles
 antigen apply
 

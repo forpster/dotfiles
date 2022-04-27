@@ -19,6 +19,7 @@
 	prompt = false
 [core]
 	pager = less -F -X
+	autocrlf = input
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [pull]
