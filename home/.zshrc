@@ -163,6 +163,9 @@ alias remove_emacs_backup='find . -name "*~" -delete'
 alias ec='emacsclient -n'
 export PATH=$PATH:$HOME/bin
 
+# Add Visual Studio Code (code)
+export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
 # Auto start tmux, fails under intellij
 #ZSH_TMUX_AUTOSTART=true
 
