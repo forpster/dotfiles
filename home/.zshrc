@@ -111,7 +111,6 @@ docker
 mvn
 tmux
 brew
-asdf
 zsh-interactive-cd
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-syntax-highlighting
@@ -163,8 +162,8 @@ alias remove_emacs_backup='find . -name "*~" -delete'
 alias ec='emacsclient -n'
 export PATH=$PATH:$HOME/bin
 
-# Add Visual Studio Code (code)
-export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+# Add Visual Studio Code (code), adding to path broke stuff i dunno
+alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
 
 # Auto start tmux, fails under intellij
 #ZSH_TMUX_AUTOSTART=true
@@ -178,7 +177,14 @@ setopt rm_star_silent
 # Apply bundles
 antigen apply
 
-# asdf completion, seems to not load from the asdf plugin not sure why
-#[ -f "$ASDF_COMPLETIONS/asdf.bash" ] && . "$ASDF_COMPLETIONS/asdf.bash"
+# ASDF
+ASDF_DIR="${ASDF_DIR:-$HOME/.asdf}"
+if [[ ! -f "$ASDF_DIR/asdf.sh" ]]; then
+  brew_prefix="$(brew --prefix asdf)"
+  ASDF_DIR="${brew_prefix}/libexec"
+  unset brew_prefix
+fi
+
+[ -f "$ASDF_DIR/asdf.sh" ] && . "$ASDF_DIR/asdf.sh"
 # asdf manage JAVA_HOME variable
 . ~/.asdf/plugins/java/set-java-home.zsh
