@@ -169,7 +169,7 @@ alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/co
 #ZSH_TMUX_AUTOSTART=true
 
 # fix awslocal to work with old localstack for LA integrations
-export USE_LEGACY_PORTS=1
+#export USE_LEGACY_PORTS=1
 
 # Do not prompt rm to delete files
 setopt rm_star_silent

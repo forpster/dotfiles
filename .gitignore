@@ -9,3 +9,6 @@ home/.emacs.d/semanticdb
 home/.emacs.d/session.*
 home/.emacs.d/url
 home/.emacs.d/var
+
+.DS_Store
+
