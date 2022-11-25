@@ -115,6 +115,7 @@ zsh-interactive-cd
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-completions
+fzf
 EOBUNDLES
 
 # User configuration
@@ -135,6 +136,7 @@ EOBUNDLES
 
 # Rapid7
 [ -f ${HOME}/.bash_rapid7 ] && source ${HOME}/.bash_rapid7
+[ -f ${HOME}/.bash_aws ] && source ${HOME}/.bash_aws
 
 # GNU grep
 PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
