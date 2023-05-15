@@ -190,3 +190,8 @@ fi
 [ -f "$ASDF_DIR/asdf.sh" ] && . "$ASDF_DIR/asdf.sh"
 # asdf manage JAVA_HOME variable
 . ~/.asdf/plugins/java/set-java-home.zsh
+
+# completiton for 1pass cli
+if [ -x /usr/local/bin/op2 ]; then
+    eval "$(op completion zsh)"; compdef _op op
+fi
