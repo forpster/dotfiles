@@ -68,7 +68,7 @@ link_file ${PREFIX}/home/.tmux.conf ~/.tmux.conf
 link_file ${PREFIX}/home/.asdfrc ~/.asdfrc
 
 # git
-link_file ${PREFIX}/home/.gitconfig ~/.gitconfig
+link_file ${PREFIX}/work/.gitconfig ~/.gitconfig
 
 # rapid7 stuff
 link_file ${PREFIX}/home/.bash_rapid7 ~/.bash_rapid7
