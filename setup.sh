@@ -71,5 +71,5 @@ link_file ${PREFIX}/home/.asdfrc ~/.asdfrc
 link_file ${PREFIX}/work/.gitconfig ~/.gitconfig
 
 # rapid7 stuff
-link_file ${PREFIX}/home/.bash_rapid7 ~/.bash_rapid7
+link_file ${PREFIX}/work/.bash_rapid7 ~/.bash_rapid7
 link_file ${PREFIX}/work/.nexpose_helpers ~/.nexpose_helpers
