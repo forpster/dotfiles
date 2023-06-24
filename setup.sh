@@ -51,7 +51,7 @@ fi
 link_file ${PREFIX}/home/.bash_aliases.sh ~/.bash_aliases.sh
 link_file ${PREFIX}/home/.bash_ross ~/.bash_ross
 link_file ${PREFIX}/home/.bashrc ~/.bashrc
-link_file ${PREFIX}/home/.bash_aws ~/.bash_aws
+link_file ${PREFIX}/work/.bash_aws ~/.bash_aws
 link_file ${PREFIX}/home/.p10k.zsh ~/.p10k.zsh
 link_file ${PREFIX}/home/.zprofile ~/.zprofile
 link_file ${PREFIX}/home/.zshrc ~/.zshrc
