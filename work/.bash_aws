@@ -21,7 +21,8 @@ function getec2dnsviaservicename()
     echo "Instance(s):\n$instance"
 }
 
-ecrLogin()
+function ecrLogin()
 {
      aws ecr get-login-password --region $1 | docker login -u AWS --password-stdin "https://$(aws sts get-caller-identity --query 'Account' --output text).dkr.ecr.$1.amazonaws.com"
 }
+
