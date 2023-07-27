@@ -2,6 +2,9 @@
 # nexpose environment
 . ~/rapid7/nexpose/src/environment.sh
 
+# invisibles env
+. ~/.invisibles_functions
+
 platform='unknown'
 unamestr=$(uname)
 if [[ "$unamestr" == 'Linux' ]]; then

@@ -180,6 +180,7 @@ setopt rm_star_silent
 antigen apply
 
 # ASDF
+export ASDF_GOLANG_MOD_VERSION_ENABLED=true
 ASDF_DIR="${ASDF_DIR:-$HOME/.asdf}"
 if [[ ! -f "$ASDF_DIR/asdf.sh" ]]; then
   brew_prefix="$(brew --prefix asdf)"
