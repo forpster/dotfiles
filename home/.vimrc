@@ -53,3 +53,5 @@ set tags=./tags
 autocmd BufNewFile,BufRead *.pck set filetype=xml
 autocmd BufNewFile,BufRead *.vck set filetype=xml
 
+set rtp+=/opt/homebrew/opt/fzf
+

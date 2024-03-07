@@ -180,7 +180,6 @@ setopt rm_star_silent
 antigen apply
 
 # ASDF
-export ASDF_GOLANG_MOD_VERSION_ENABLED=true
 ASDF_DIR="${ASDF_DIR:-$HOME/.asdf}"
 if [[ ! -f "$ASDF_DIR/asdf.sh" ]]; then
   brew_prefix="$(brew --prefix asdf)"
@@ -196,3 +195,10 @@ fi
 if [ -x /usr/local/bin/op2 ]; then
     eval "$(op completion zsh)"; compdef _op op
 fi
+
+# krew kubectl plugin
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+# for protobuf@3 package.... which one do i brew install!!???!!?
+export PATH="/opt/homebrew/opt/protobuf@3/bin:$PATH"
+
