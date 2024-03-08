@@ -22,6 +22,7 @@
 	pager = less -F -X
 	autocrlf = input
 	fsmonitor = true
+	untrackedcache = true
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [pull]
