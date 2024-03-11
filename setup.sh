@@ -74,3 +74,11 @@ link_file ${PREFIX}/work/.gitconfig ~/.gitconfig
 link_file ${PREFIX}/work/.bash_rapid7 ~/.bash_rapid7
 link_file ${PREFIX}/work/.nexpose_helpers ~/.nexpose_helpers
 link_file ${PREFIX}/work/.invisibles_functions ~/.invisibles_functions
+
+# sudoers
+NEXPOSE_SUDOERS=/etc/sudoers.d/nexpose
+if [ is_darwin ]; then
+    sudo sh -c "cp ${PREFIX}/work/nexpose_mac ${NEXPOSE_SUDOERS}; chown root:wheel ${NEXPOSE_SUDOERS}; chmod 440 ${NEXPOSE_SUDOERS}"
+else
+    sudo sh -c "cp ${PREFIX}/work/nexpose_linux ${NEXPOSE_SUDOERS}; chown root:root ${NEXPOSE_SUDOERS}; chmod 440 ${NEXPOSE_SUDOERS}"
+fi

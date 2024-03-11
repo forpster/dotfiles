@@ -1,0 +1,2 @@
+rkirk ALL=(ALL) NOPASSWD: /Users/rkirk/rapid7/nexpose/deploy/nse/nmap/nmap
+
