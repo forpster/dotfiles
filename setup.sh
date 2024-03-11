@@ -40,7 +40,7 @@ link_file ${PREFIX}/bin/wcgrep ${MY_BIN}/wcgrep
 # ssh files
 create_dir ~/.ssh
 chmod 700 ~/.ssh
-if [ is_darwin ]; then
+if is_darwin; then
     link_file ${PREFIX}/home/.ssh/config_mac ~/.ssh/config
 else
     link_file ${PREFIX}/home/.ssh/config ~/.ssh/config
@@ -78,7 +78,7 @@ link_file ${PREFIX}/work/.invisibles_functions ~/.invisibles_functions
 # sudoers
 echo "Updating sudoers.d"
 NEXPOSE_SUDOERS=/etc/sudoers.d/nexpose
-if [ is_darwin ]; then
+if is_darwin; then
     sudo sh -c "cp ${PREFIX}/work/nexpose_mac ${NEXPOSE_SUDOERS}; chown root:wheel ${NEXPOSE_SUDOERS}; chmod 440 ${NEXPOSE_SUDOERS}"
 else
     sudo sh -c "cp ${PREFIX}/work/nexpose_linux ${NEXPOSE_SUDOERS}; chown root:root ${NEXPOSE_SUDOERS}; chmod 440 ${NEXPOSE_SUDOERS}"
