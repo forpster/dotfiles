@@ -227,3 +227,13 @@ export BAT_THEME=tokyonight_night
 function jhssh() {
 	ssh -J $1 $2
 }
+
+# Set up port forward from service to local port
+#
+# Args
+# 	1 - jumphost
+# 	2 - hostname:port to forward
+# 	3 - local port to forward to
+function jhpf() {
+	ssh -A $1 -L $3:$2
+}
