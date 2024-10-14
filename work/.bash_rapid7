@@ -111,3 +111,21 @@ export PATH=~/.r7-terraform/vendor/bin:$PATH
 
 # python from brew
 export PATH=/usr/local/opt/python3/libexec/bin:$PATH
+
+# get scm url from an artifact, e.g. 
+# $ get_artifact_repo_url com.rapid7 metrics
+# https://github.com/rapid7/metrics
+get_artifact_repo_url() {
+  local artifact_group=$1
+  local artifact_name=$2
+
+  if [ -z "$artifact_group" ] || [ -z "$artifact_name" ]; then
+    echo "Error: artifact_group or artifact_name not specified!" >&2
+    echo "Usage: get_artifact_repo_url artifact_group artifact_name" >&2
+    return
+  fi
+
+  #mvn dependency:copy -Dartifact="$artifact_group:$artifact_name:LATEST:pom" -DoutputDirectory=${TMPDIR} -Dmdep.stripVersion=true > /dev/null
+  mvn dependency:copy -Dartifact="$artifact_group:$artifact_name:LATEST:pom" -DoutputDirectory=${TMPDIR} -Dmdep.stripVersion=true
+  xmllint --xpath '/*[local-name()="project"]/*[local-name()="scm"]/*[local-name()="url"]/text()' "/${TMPDIR}/${artifact_name}.pom"
+}

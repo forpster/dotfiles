@@ -106,7 +106,6 @@ antigen bundles <<EOBUNDLES
 git
 command-not-found
 alias-finder
-colored-man-pages
 docker
 mvn
 tmux
@@ -116,6 +115,7 @@ zsh-users/zsh-autosuggestions
 zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-completions
 fzf
+fdellwing/zsh-bat
 EOBUNDLES
 
 # User configuration
@@ -202,3 +202,28 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 # for protobuf@3 package.... which one do i brew install!!???!!?
 export PATH="/opt/homebrew/opt/protobuf@3/bin:$PATH"
 
+# git clone https://github.com/junegunn/fzf-git.sh.git
+# CTRL-GF	Look for git files with fzf
+# CTRL-GB	Look for git branches with fzf
+# CTRL-GT	Look for git tags with fzf
+# CTRL-GR	Look for git remotes with fzf
+# CTRL-GH	Look for git commit hashes with fzf
+# CTRL-GS	Look for git stashes with fzf
+# CTRL-GL	Look for git reflogs with fzf
+# CTRL-GW	Look for git worktrees with fzf
+# CTRL-GE	Look for git for-each-ref with fzf
+[ -f ~/src/fzf-git.sh/fzf-git.sh ] && source ~/src/fzf-git.sh/fzf-git.sh
+
+# ----- Bat (better cat) -----
+# mkdir -p "$(bat --config-dir)/themes"
+# cd "$(bat --config-dir)/themes"
+# curl -O https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/sublime/tokyonight_night.tmTheme
+export BAT_THEME=tokyonight_night
+
+# SSH onto instance through jumphost
+# Args
+# 	1 - jumphost
+# 	2 - instance to ssh onto
+function jhssh() {
+	ssh -J $1 $2
+}
