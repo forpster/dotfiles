@@ -218,7 +218,7 @@ export PATH="/opt/homebrew/opt/protobuf@3/bin:$PATH"
 # mkdir -p "$(bat --config-dir)/themes"
 # cd "$(bat --config-dir)/themes"
 # curl -O https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/sublime/tokyonight_night.tmTheme
-export BAT_THEME=tokyonight_night
+export BAT_THEME_DARK=tokyonight_night
 
 # SSH onto instance through jumphost
 # Args
