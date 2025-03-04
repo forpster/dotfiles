@@ -180,14 +180,9 @@ setopt rm_star_silent
 antigen apply
 
 # ASDF
-ASDF_DIR="${ASDF_DIR:-$HOME/.asdf}"
-if [[ ! -f "$ASDF_DIR/asdf.sh" ]]; then
-  brew_prefix="$(brew --prefix asdf)"
-  ASDF_DIR="${brew_prefix}/libexec"
-  unset brew_prefix
-fi
+export ASDF_DATA_DIR=/Users/rkirk/.asdf
+export PATH="$ASDF_DATA_DIR/shims:$PATH"
 
-[ -f "$ASDF_DIR/asdf.sh" ] && . "$ASDF_DIR/asdf.sh"
 # asdf manage JAVA_HOME variable
 . ~/.asdf/plugins/java/set-java-home.zsh
 
