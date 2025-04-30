@@ -199,6 +199,9 @@ fi
 # krew kubectl plugin
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
+# Put go bin folder on path
+export PATH="$PATH:$(go env GOPATH)/bin"
+
 # git clone https://github.com/junegunn/fzf-git.sh.git
 # CTRL-GF	Look for git files with fzf
 # CTRL-GB	Look for git branches with fzf
