@@ -156,6 +156,11 @@ if [ -f ${HOME}/Documents/graphgl_api_key.txt ]; then
     export GRAPHQL_API_KEY=$(cat ${HOME}/Documents/graphgl_api_key.txt)
 fi
 
+if [ -f ${HOME}/Documents/github_token.txt ]; then
+  export GITHUB_PACKAGES_PULL_USER="rkirk-nos"
+  export GITHUB_PACKAGES_PULL_TOKEN=$(cat ${HOME}/Documents/github_token.txt)
+fi
+
 # Size of folders
 alias dux='du -sk ./* | sort -n | awk '\''BEGIN{ pref[1]="K"; pref[2]="M"; pref[3]="G";} { total = total + $1; x = $1; y = 1; while( x > 1024 ) { x = (x + 1023)/1024; y++; } printf("%g%s\t%s\n",int(x*10)/10,pref[y],$2); } END { y = 1; while( total > 1024 ) { total = (total + 1023)/1024; y++; } printf("Total: %g%s\n",int(total*10)/10,pref[y]); }'\'''
 alias dush="du -sm *|sort -n|tail"
@@ -193,9 +198,6 @@ fi
 
 # krew kubectl plugin
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-
-# for protobuf@3 package.... which one do i brew install!!???!!?
-export PATH="/opt/homebrew/opt/protobuf@3/bin:$PATH"
 
 # git clone https://github.com/junegunn/fzf-git.sh.git
 # CTRL-GF	Look for git files with fzf
