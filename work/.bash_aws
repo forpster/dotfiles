@@ -1,11 +1,5 @@
-# LA account by default
-export AWS_PROFILE=awsaml-982437246452
-export AWS_DEFAULT_PROFILE=awsaml-982437246452
-
 # kube config
 alias kc=kubectl
-# Individual files wasn't working, adding to ~/.kube/config worked better
-#export KUBECONFIG="${KUBECONFIG}:${HOME}/.kube/config:${HOME}/rapid7/tf-live-assessment/production/kubernetes/cluster/eks/kubeconfig-liveassess-k8s-prod-0:${HOME}/rapid7/tf-live-assessment/production/kubernetes/cluster/eks/kubeconfig-liveassess-k8s-prod-1:${HOME}/rapid7/tf-live-assessment/production/kubernetes/cluster/eks/kubeconfig-liveassess-k8s-prod-2:${HOME}/rapid7/tf-live-assessment/production/kubernetes/cluster/eks/kubeconfig-liveassess-k8s-prod-3:${HOME}/rapid7/tf-live-assessment/production/kubernetes/cluster/eks/kubeconfig-liveassess-k8s-prod-4:${HOME}/rapid7/tf-live-assessment/production/kubernetes/cluster/eks/kubeconfig-liveassess-k8s-prod-5:${HOME}/rapid7/tf-live-assessment/production/kubernetes/cluster/eks/kubeconfig-liveassess-k8s-prod-6"
 alias kc0='kc config use-context arn:aws:eks:eu-central-1:982437246452:cluster/liveassess-k8s-prod-0'
 alias kc1='kc config use-context arn:aws:eks:us-east-1:982437246452:cluster/liveassess-k8s-prod-1'
 alias kc2='kc config use-context arn:aws:eks:ap-northeast-1:982437246452:cluster/liveassess-k8s-prod-2'

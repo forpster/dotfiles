@@ -45,4 +45,5 @@
 	repo = /Users/rkirk/upwind/infra-packer-publishing
 	repo = /Users/rkirk/upwind/rdb-service
 	repo = /Users/rkirk/upwind/service-configurations
+	repo = /Users/rkirk/upwind/upwind-agent-devtools
 	repo = /Users/rkirk/upwind/upwind-aws-serverless
