@@ -189,7 +189,7 @@ setopt rm_star_silent
 antigen apply
 
 # ASDF
-export ASDF_DATA_DIR=/Users/rkirk/.asdf
+export ASDF_DATA_DIR=${HOME}/.asdf
 export PATH="$ASDF_DATA_DIR/shims:$PATH"
 
 # asdf manage JAVA_HOME variable
