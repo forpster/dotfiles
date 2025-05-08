@@ -1,7 +1,9 @@
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [ -f /opt/homebrew/bin/brew ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# make brew completitions work
-FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+    # make brew completitions work
+    FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+fi
 
 ##
 # Your previous /Users/rkirk/.zprofile file was backed up as /Users/rkirk/.zprofile.macports-saved_2023-05-19_at_09:48:28
