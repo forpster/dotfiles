@@ -204,6 +204,9 @@ fi
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # Put go bin folder on path
+if [ -e /usr/local/go/bin ]; then
+  export PATH=$PATH:/usr/local/go/bin
+fi
 export PATH="$PATH:$(go env GOPATH)/bin"
 
 # git clone https://github.com/junegunn/fzf-git.sh.git
