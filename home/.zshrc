@@ -245,8 +245,15 @@ function jhpf() {
 	ssh -A $1 -L $3:$2
 }
 
+# for https://github.com/ofirgall/tmux-window-name
+tmux-window-name() {
+	($TMUX_PLUGIN_MANAGER_PATH/tmux-window-name/scripts/rename_session_windows.py &)
+}
+add-zsh-hook chpwd tmux-window-name
+
 # begin upwind
 # aws alias
 alias awsp='export AWS_PROFILE=$(sed -n "s/\[profile \(.*\)\]/\1/gp" ~/.aws/config | fzf)'
 alias login='unset AWS_PROFILE && aws sso login'
+alias grpc-tun="ssh -NR 8209:localhost:8209 -NR 8210:localhost:8210 i-07c9170314499e780"
 # end upwind
