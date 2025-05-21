@@ -258,4 +258,28 @@ fi
 alias awsp='export AWS_PROFILE=$(sed -n "s/\[profile \(.*\)\]/\1/gp" ~/.aws/config | fzf)'
 alias login='unset AWS_PROFILE && aws sso login'
 alias grpc-tun="ssh -NR 8209:localhost:8209 -NR 8210:localhost:8210 i-07c9170314499e780"
+
+export DEV_VM_ID="i-07c9170314499e780"
+
+function dev-vm-up()
+{
+    INSTANCE_ID="${DEV_VM_ID}"
+    REGION="us-east-1"
+
+    aws ec2 start-instances --instance-ids "$INSTANCE_ID" --region $REGION
+
+    echo "Waiting for the instance to be in 'running' state..."
+    aws ec2 wait instance-running --instance-ids "$INSTANCE_ID" --region $REGION
+
+    PUBLIC_IP=$(aws ec2 describe-instances --instance-ids "$INSTANCE_ID" --region $REGION --query "Reservations[*].Instances[*].PublicIpAddress" --output text)
+
+    echo "The public IP address of instance $INSTANCE_ID is: $PUBLIC_IP"
+}
+
+function dev-vm-down()
+{
+    INSTANCE_ID="${DEV_VM_ID}"
+    REGION="us-east-1"
+    aws ec2 stop-instances --instance-ids "$INSTANCE_ID" --region "$REGION"
+}
 # end upwind
