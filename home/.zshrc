@@ -255,11 +255,12 @@ fi
 
 # begin upwind
 # aws alias
+export DEV_VM_ID="i-07c9170314499e780"
+
 alias awsp='export AWS_PROFILE=$(sed -n "s/\[profile \(.*\)\]/\1/gp" ~/.aws/config | fzf)'
 alias login='unset AWS_PROFILE && aws sso login'
-alias grpc-tun="ssh -NR 8209:localhost:8209 -NR 8210:localhost:8210 i-07c9170314499e780"
-
-export DEV_VM_ID="i-07c9170314499e780"
+alias grpc-tun="ssh -NR 8209:localhost:8209 -NR 8210:localhost:8210 ${DEV_VM_ID}"
+alias glp="git log --pretty=format:'%C(yellow)%h|%Cred%ad|%C(cyan)%an|%Cgreen%d %Creset%s' --date=local"
 
 function dev-vm-up()
 {
