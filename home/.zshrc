@@ -138,8 +138,8 @@ EOBUNDLES
 [ -f ${HOME}/.bash_rapid7 ] && source ${HOME}/.bash_rapid7
 [ -f ${HOME}/.bash_aws ] && source ${HOME}/.bash_aws
 
-# GNU grep
-PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
+PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH" # GNU grep etc tools
+[ -d ${HOME}/.local/bin ] && PATH="${HOME}/.local/bin:$PATH"
 export PATH
 
 export EDITOR=vim
