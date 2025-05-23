@@ -255,7 +255,7 @@ fi
 
 # begin upwind
 # aws alias
-export DEV_VM_ID="i-07c9170314499e780"
+export DEV_VM_ID="i-0f62707b5fb2a4baa"
 
 alias awsp='export AWS_PROFILE=$(sed -n "s/\[profile \(.*\)\]/\1/gp" ~/.aws/config | fzf)'
 alias login='unset AWS_PROFILE && aws sso login'
