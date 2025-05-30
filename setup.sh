@@ -75,6 +75,9 @@ link_file ${PREFIX}/work/.gitconfig ~/.gitconfig
 #link_file ${PREFIX}/work/.nexpose_helpers ~/.nexpose_helpers
 #link_file ${PREFIX}/work/.invisibles_functions ~/.invisibles_functions
 
+# upwind specifics
+link_file ${PREFIX}/work/.bash_upwind ~/.bash_upwind
+
 # sudoers
 #echo "Updating sudoers.d"
 #NEXPOSE_SUDOERS=/etc/sudoers.d/nexpose

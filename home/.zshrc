@@ -135,9 +135,9 @@ EOBUNDLES
 
 [ -f ${HOME}/.fzf.zsh ] && source ${HOME}/.fzf.zsh
 
-# Rapid7
 [ -f ${HOME}/.bash_rapid7 ] && source ${HOME}/.bash_rapid7
 [ -f ${HOME}/.bash_aws ] && source ${HOME}/.bash_aws
+[ -f ${HOME}/.bash_upwind ] && source ${HOME}/.bash_upwind
 
 PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH" # GNU grep etc tools
 [ -d ${HOME}/.local/bin ] && PATH="${HOME}/.local/bin:$PATH"
@@ -254,34 +254,8 @@ if [[ -n "${TMUX_PLUGIN_MANAGER_PATH}" ]]; then
   add-zsh-hook chpwd tmux-window-name
 fi
 
-# begin upwind
-# aws alias
-export DEV_VM_ID="i-0f62707b5fb2a4baa"
-
-alias awsp='export AWS_PROFILE=$(sed -n "s/\[profile \(.*\)\]/\1/gp" ~/.aws/config | fzf)'
-alias login='unset AWS_PROFILE && aws sso login'
-alias grpc-tun="ssh -NR 8209:localhost:8209 -NR 8210:localhost:8210 ${DEV_VM_ID}"
-alias glp="git log --pretty=format:'%C(yellow)%h|%Cred%ad|%C(cyan)%an|%Cgreen%d %Creset%s' --date=local"
-
-function dev-vm-up()
-{
-    INSTANCE_ID="${DEV_VM_ID}"
-    REGION="us-east-1"
-
-    aws ec2 start-instances --instance-ids "$INSTANCE_ID" --region $REGION
-
-    echo "Waiting for the instance to be in 'running' state..."
-    aws ec2 wait instance-running --instance-ids "$INSTANCE_ID" --region $REGION
-
-    PUBLIC_IP=$(aws ec2 describe-instances --instance-ids "$INSTANCE_ID" --region $REGION --query "Reservations[*].Instances[*].PublicIpAddress" --output text)
-
-    echo "The public IP address of instance $INSTANCE_ID is: $PUBLIC_IP"
-}
-
-function dev-vm-down()
-{
-    INSTANCE_ID="${DEV_VM_ID}"
-    REGION="us-east-1"
-    aws ec2 stop-instances --instance-ids "$INSTANCE_ID" --region "$REGION"
-}
-# end upwind
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/rkirk/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
