@@ -2,12 +2,14 @@
 
 # aws alias
 export DEV_VM_ID="i-0f62707b5fb2a4baa"
+export UPWIND_KEYS_DIR="${HOME}/upwind/s3-auth-service"
 
 alias awsp='export AWS_PROFILE=$(sed -n "s/\[profile \(.*\)\]/\1/gp" ~/.aws/config | fzf)'
 alias login='aws sso login'
 alias grpc-tun='ssh -NR 8209:localhost:8209 -NR 8210:localhost:8210 ${DEV_VM_ID}'
 alias glp="git log --pretty=format:'%C(yellow)%h|%Cred%ad|%C(cyan)%an|%Cgreen%d %Creset%s' --date=local"
 
+### Dev VM
 function dev-vm-up()
 {
     INSTANCE_ID="${DEV_VM_ID}"
@@ -30,6 +32,7 @@ function dev-vm-down()
     aws ec2 stop-instances --instance-ids "$INSTANCE_ID" --region "$REGION"
 }
 
+### DB Queries
 function multiquery() 
 {
   URL="http://monitoring-receiver.prod.internal:5000/query/"
@@ -41,3 +44,33 @@ function multiquery()
     | jq
 }
 
+### Working with docker images
+# build dockerfile, create image and export file system
+function docker-build-export()
+{
+    docker build -t tempimg .
+    cid=$(docker create tempimg)
+    mkdir -p output
+    docker export "$cid" | tar -C output -xvf -
+    docker rm "$cid"
+    docker rmi tempimg
+}
+
+# Take existing image create filesystem and export it
+# Arg1: name of image/sha
+# Arg2: output folder
+function docker-export()
+{
+    cid=$(docker create $1)
+    docker export ${cid} | tar -xC "$2"
+    docker rm ${cid}
+}
+
+### Repo commands
+## s3-auth-service - get a bearer token
+function genlabstokendev() 
+{
+	UPWIND_AUTH_AUDIENCE="https://agent.upwind.dev"
+	UPWIND_AUTH_ENDPOINT="https://oauth.upwind.dev/oauth/token"
+	curl -fsSL -X POST --url $UPWIND_AUTH_ENDPOINT --data grant_type=client_credentials --data "audience=${UPWIND_AUTH_AUDIENCE}" --data "client_id=${UPWIND_CLIENT_ID}" --data "client_secret=${UPWIND_CLIENT_SECRET}" | jq -r '.access_token' > ${UPWIND_KEYS_DIR}/labstokendev
+}
