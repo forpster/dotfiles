@@ -1,11 +1,13 @@
 # upwind specific config
 
-# aws alias
+# aws 
 export DEV_VM_ID="i-0f62707b5fb2a4baa"
-export UPWIND_KEYS_DIR="${HOME}/upwind/s3-auth-service"
-
+export AWS_REGION="us-east-1"
 alias awsp='export AWS_PROFILE=$(sed -n "s/\[profile \(.*\)\]/\1/gp" ~/.aws/config | fzf)'
 alias login='aws sso login'
+
+# dev
+export UPWIND_KEYS_DIR="${HOME}/upwind/keys"
 alias grpc-tun='ssh -NR 8209:localhost:8209 -NR 8210:localhost:8210 ${DEV_VM_ID}'
 alias glp="git log --pretty=format:'%C(yellow)%h|%Cred%ad|%C(cyan)%an|%Cgreen%d %Creset%s' --date=local"
 
