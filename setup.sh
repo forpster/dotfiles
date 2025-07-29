@@ -70,11 +70,6 @@ link_file ${PREFIX}/home/.asdfrc ~/.asdfrc
 # git
 link_file ${PREFIX}/work/.gitconfig ~/.gitconfig
 
-# rapid7 stuff
-#link_file ${PREFIX}/work/.bash_rapid7 ~/.bash_rapid7
-#link_file ${PREFIX}/work/.nexpose_helpers ~/.nexpose_helpers
-#link_file ${PREFIX}/work/.invisibles_functions ~/.invisibles_functions
-
 # upwind specifics
 link_file ${PREFIX}/work/.bash_upwind ~/.bash_upwind
 
@@ -87,3 +82,9 @@ link_file ${PREFIX}/work/.bash_upwind ~/.bash_upwind
 #    sudo sh -c "cp ${PREFIX}/work/nexpose_linux ${NEXPOSE_SUDOERS}; chown root:root ${NEXPOSE_SUDOERS}; chmod 440 ${NEXPOSE_SUDOERS}"
 #fi
 
+# neovim
+KICKSTART_DIR=~/src/kickstart.nvim
+if [ ! -d "$KICKSTART_DIR" ]; then
+    gh repo clone forpster/kickstart.nvim ~/src/kickstart.nvim
+fi
+link_file ~/src/kickstart.nvim "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
