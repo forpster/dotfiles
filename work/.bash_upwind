@@ -76,3 +76,7 @@ function genlabstokendev()
 	UPWIND_AUTH_ENDPOINT="https://oauth.upwind.dev/oauth/token"
 	curl -fsSL -X POST --url $UPWIND_AUTH_ENDPOINT --data grant_type=client_credentials --data "audience=${UPWIND_AUTH_AUDIENCE}" --data "client_id=${UPWIND_CLIENT_ID}" --data "client_secret=${UPWIND_CLIENT_SECRET}" | jq -r '.access_token' > ${UPWIND_KEYS_DIR}/labstokendev
 }
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
