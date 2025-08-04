@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "ebf5af77-1cfa-4fe9-89ec-17af6dbdb102",
+		"name": "Monolith",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44818830",
+		"_collection_link": "https://rosskirk.postman.co/workspace/Ross-Kirk's-Workspace~ebdf8dd8-e3d7-4041-82f6-1dce4b0461b8/collection/44818830-ebf5af77-1cfa-4fe9-89ec-17af6dbdb102?action=share&source=collection_link&creator=44818830"
+	},
+	"item": [
+		{
+			"name": "Get cloudscanner configs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{monolith}}/v1/organizations/{{org_id}}/cloud-scanner/config?id=ucsc-878a5cc51edff3df",
+					"host": [
+						"{{monolith}}"
+					],
+					"path": [
+						"v1",
+						"organizations",
+						"{{org_id}}",
+						"cloud-scanner",
+						"config"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "ucsc-878a5cc51edff3df"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{monolith}}/healthcheck",
+					"host": [
+						"{{monolith}}"
+					],
+					"path": [
+						"healthcheck"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{bearer_token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					"var authRequest = {",
+					"    url: 'https://oauth.upwind.dev/oauth/token',",
+					"    method: 'POST',",
+					"    header: {",
+					"        'Content-Type': 'application/x-www-form-urlencoded',",
+					"    },",
+					"    body: {",
+					"        mode: 'urlencoded',",
+					"        urlencoded: [",
+					"            { key: 'audience', value: 'https://agent.upwind.dev' },",
+					"            { key: 'client_id', value: pm.collectionVariables.get('client_id') },",
+					"            { key: 'client_secret', value: pm.collectionVariables.get('client_secret') },",
+					"            { key: 'grant_type', value: 'client_credentials' }",
+					"        ]",
+					"    }",
+					"}",
+					"",
+					"pm.sendRequest(authRequest, function (err, res) {",
+					"    if (err) {",
+					"        console.log(err);",
+					"    } else {",
+					"        var jsonData = res.json();",
+					"        pm.collectionVariables.set('bearer_token', jsonData.access_token);",
+					"    }",
+					"});"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "client_id",
+			"value": "pU5kSwDocPL1EQm07oryme3yWmCu6DiN"
+		},
+		{
+			"key": "client_secret",
+			"value": "_bpst4OuH1_e4vwgH8uh159XagWoQNX3INQy2yhvB44veKM3BhpEuitC3di1htC-"
+		},
+		{
+			"key": "bearer_token",
+			"value": ""
+		}
+	]
+}

@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "0ce71f76-1634-456b-8a00-bd6736861e2d",
+		"name": "CLOUDSCANNER_SERVER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44818830",
+		"_collection_link": "https://rosskirk.postman.co/workspace/Ross-Kirk's-Workspace~ebdf8dd8-e3d7-4041-82f6-1dce4b0461b8/collection/44818830-0ce71f76-1634-456b-8a00-bd6736861e2d?action=share&source=collection_link&creator=44818830"
+	},
+	"item": [
+		{
+			"name": "ADD FUNCTION TASKS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{cloudscanner}}/{{org_id}}/addfunctiontasks?cloud-account-id=669892003200&config-id=ucsc-878a5cc51edff3df",
+					"host": [
+						"{{cloudscanner}}"
+					],
+					"path": [
+						"{{org_id}}",
+						"addfunctiontasks"
+					],
+					"query": [
+						{
+							"key": "cloud-account-id",
+							"value": "669892003200"
+						},
+						{
+							"key": "config-id",
+							"value": "ucsc-878a5cc51edff3df"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD TASKS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{cloudscanner}}/{{org_id}}/addtasks?cloud-account-id=669892003200&config-id=ucsc-878a5cc51edff3df",
+					"host": [
+						"{{cloudscanner}}"
+					],
+					"path": [
+						"{{org_id}}",
+						"addtasks"
+					],
+					"query": [
+						{
+							"key": "cloud-account-id",
+							"value": "669892003200"
+						},
+						{
+							"key": "config-id",
+							"value": "ucsc-878a5cc51edff3df"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD TASKS (prod)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkF3VGtYTlM3enNnVDdYb0loUERkVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgudXB3aW5kLmlvLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTA1NTU2MDA4ODU1MDQzNDAzMzI4IiwiYXVkIjpbImh0dHBzOi8vYWdlbnQudXB3aW5kLmlvIiwiaHR0cHM6Ly91cHdpbmRzZWN1cml0eS51cy5hdXRoMC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNzQwNjU4MTMxLCJleHAiOjE3NDA3NDQ1MzEsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJvcmdfaWQiOiJvcmdfSnVIeGRuM2Q1SEdHc1NWbyIsImF6cCI6IktOSEl6SnU0MnptaHFNWmRlRFBwT25BMmJYWEdRODlhIiwicGVybWlzc2lvbnMiOlsiY3JlYXRlOmludml0YXRpb25zIiwiZ2V0OmNsdXN0ZXJDb25uZWN0aXZpdHkiLCJnZXQ6Y2x1c3RlcnNDb25uZWN0aW9uIiwiZ2V0OmNyZWRlbnRpYWxzIiwiZ2V0OmRldGFpbGVkRXZlbnRzIiwiZ2V0OmRldGVjdGlvbnMiLCJnZXQ6ZGV0ZWN0aW9uc0Rhc2hib2FyZFN0YXRzIiwiZ2V0OmRldGVjdGlvbnNNZXRyaWNzIiwiZ2V0OmV2ZW50cyIsImdldDpmbG93c1Rocm91Z2hwdXQiLCJnZXQ6Z2l0aHViQXBwIiwiZ2V0Omhvc3RzQ29ubmVjdGlvbiIsImdldDppbnRlZ3JhdGlvbnMiLCJnZXQ6aW52ZW50b3J5LWNvbW1vbi1rZXlzIiwiZ2V0OmludmVudG9yeS1jb25uZWN0ZWQtYXNzZXRzIiwiZ2V0Om9yZ2FuaXphdGlvbnMiLCJnZXQ6d29ya2xvYWRWaWV3IiwibGlzdDphcHBsaWNhdGlvbnMiLCJsaXN0OmNhbmRpZGF0ZS1jbHVzdGVycyIsImxpc3Q6Y2xpZW50LWNyZWRlbnRpYWxzIiwibGlzdDpkZXRlY3Rpb25zIiwibGlzdDppbnZlbnRvcnktYXNzZXRzIiwibGlzdDppbnZpdGF0aW9ucyIsImxpc3Q6cG9saWNpZXMiLCJsaXN0OnVuY29ubmVjdGVkQ2x1c3RlcnMiLCJsaXN0OnVzZXJzIl19.ioMxx0oqCFbyuMijW60cIvndOOelldp8cXjFygYLFl1Vmc430dXqjTZ6qqf6Bp4O2U1V03ok2oJg1_qzZpqu_4-m-Ge3kuxjqPkJZ91zo6QVoHCoB_aATdAUYEB-SXYAi9Th0zCC2-hSbxqXDXJz-EAQGtMMXf-4QQiWHwDhmbSFipCRMwzPJheFuPTEYDw0gjgaL6VP4Mh2rHAulNXByK5lWMrfu1hqJpR5HSgw7whEM5fOvfnwN0X9FYHwkJXVhMydFZnJvA8Ejom-XFk7ExM69wm35PnIbCMv4RzcN3f9PB3Nsem2YLkgJleCuJ8eKXyyaLmrBO26x9UXS57inA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://cloudscanner.prod.internal:8080/org_JuHxdn3d5HGGsSVo/addtasks?cloud-account-id=260010305737&config-id=ucsc-d4d87dc3c5deb067",
+					"protocol": "http",
+					"host": [
+						"cloudscanner",
+						"prod",
+						"internal"
+					],
+					"port": "8080",
+					"path": [
+						"org_JuHxdn3d5HGGsSVo",
+						"addtasks"
+					],
+					"query": [
+						{
+							"key": "cloud-account-id",
+							"value": "260010305737"
+						},
+						{
+							"key": "config-id",
+							"value": "ucsc-d4d87dc3c5deb067"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ONBOARD STACKS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{cloudscanner}}/{{org_id}}/aws/onboarding",
+					"host": [
+						"{{cloudscanner}}"
+					],
+					"path": [
+						"{{org_id}}",
+						"aws",
+						"onboarding"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{bearer_token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					"var authRequest = {",
+					"    url: 'https://oauth.upwind.dev/oauth/token',",
+					"    method: 'POST',",
+					"    header: {",
+					"        'Content-Type': 'application/x-www-form-urlencoded',",
+					"    },",
+					"    body: {",
+					"        mode: 'urlencoded',",
+					"        urlencoded: [",
+					"            { key: 'audience', value: 'https://agent.upwind.dev' },",
+					"            { key: 'client_id', value: pm.collectionVariables.get('client_id') },",
+					"            { key: 'client_secret', value: pm.collectionVariables.get('client_secret') },",
+					"            { key: 'grant_type', value: 'client_credentials' }",
+					"        ]",
+					"    }",
+					"}",
+					"",
+					"pm.sendRequest(authRequest, function (err, res) {",
+					"    if (err) {",
+					"        console.log(err);",
+					"    } else {",
+					"        var jsonData = res.json();",
+					"        pm.collectionVariables.set('bearer_token', jsonData.access_token);",
+					"    }",
+					"});"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "client_id",
+			"value": "pU5kSwDocPL1EQm07oryme3yWmCu6DiN"
+		},
+		{
+			"key": "client_secret",
+			"value": "_bpst4OuH1_e4vwgH8uh159XagWoQNX3INQy2yhvB44veKM3BhpEuitC3di1htC-"
+		},
+		{
+			"key": "bearer_token",
+			"value": ""
+		}
+	]
+}
