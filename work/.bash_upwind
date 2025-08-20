@@ -46,7 +46,7 @@ function multiquery()
     | jq
 }
 
-org_search () 
+function org_search() 
 {
 	local search_string="$1"
 	if [[ -z "$search_string" ]]
