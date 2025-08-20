@@ -46,6 +46,19 @@ function multiquery()
     | jq
 }
 
+org_search () 
+{
+	local search_string="$1"
+	if [[ -z "$search_string" ]]
+	then
+		echo "Usage: org_search <search_string>"
+		return 1
+	fi
+	URL="http://monitoring-receiver.prod.internal:5000/query/"
+	BODY='{"sql":"SELECT orgId, orgName, clusterName FROM org_db_mappings","orgIds":[],"clusterNames":["coreDb"],"format":"json"}'
+	curl -s -X POST $URL -H 'Content-Type: application/json' -d "$BODY" | jq --arg search "$search_string" '.result.coreDb[] | select((.orgId | test($search; "i")) or (.orgName | test($search; "i")))'
+}
+
 ### Working with docker images
 # build dockerfile, create image and export file system
 function docker-build-export()
