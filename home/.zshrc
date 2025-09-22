@@ -117,6 +117,8 @@ zsh-users/zsh-completions
 fzf
 fdellwing/zsh-bat
 zoxide
+reegnz/jq-zsh-plugin
+rkirk-nos/json-zsh-plugin@main
 EOBUNDLES
 
 # User configuration
@@ -253,6 +255,9 @@ if [[ -n "${TMUX_PLUGIN_MANAGER_PATH}" ]]; then
   }
   add-zsh-hook chpwd tmux-window-name
 fi
+
+# reegnz/jq-zsh-plugin
+# alt +j to start the jq prompt
 
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
 fpath=(/Users/rkirk/.docker/completions $fpath)
