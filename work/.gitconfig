@@ -79,3 +79,4 @@
 	repo = /Users/rkirk/upwind/upwind-aws-serverless
 	repo = /Users/rkirk/upwind/vuln-scanner-s3
 	repo = /Users/rkirk/upwind/vulnerabilities-scanner-v0524
+	repo = /Users/rkirk/upwind/gcp-asset-collector
