@@ -7,6 +7,7 @@ export AWS_PROFILE=dev-power-user # default profile
 alias awsp='export AWS_PROFILE=$(sed -n "s/\[profile \(.*\)\]/\1/gp" ~/.aws/config | fzf)'
 alias login='aws sso login'
 alias aws_creds='eval $(aws configure export-credentials --profile dev-power-user --format env)'
+alias aws_creds_reset='unset AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN AWS_CREDENTIAL_EXPIRATION'
 alias intellij='aws_creds && open -a "IntelliJ IDEA CE"'
 alias compass='aws_creds && open -a "MongoDB Compass"'
 alias git_maintenance='for repo in ~/upwind/* ~/src/* ; [ -d "$repo"/.git ] && (cd "$repo"; git maintenance register) ; done'
