@@ -100,3 +100,5 @@
 	repo = /Users/rkirk/upwind/inventory-ingester
 	repo = /Users/rkirk/upwind/policy-analyzer
 	repo = /Users/rkirk/upwind/workflows-core
+	repo = /Users/rkirk/upwind/cloudscanner-dspm-api
+	repo = /Users/rkirk/upwind/terraform-google-integration-modules
