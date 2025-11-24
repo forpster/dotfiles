@@ -82,6 +82,11 @@ link_file ${PREFIX}/work/.bash_upwind ~/.bash_upwind
 #    sudo sh -c "cp ${PREFIX}/work/nexpose_linux ${NEXPOSE_SUDOERS}; chown root:root ${NEXPOSE_SUDOERS}; chmod 440 ${NEXPOSE_SUDOERS}"
 #fi
 
+# ghostty
+GHOSTTY_DIR="${HOME}/Library/Application Support/com.mitchellh.ghostty"
+create_dir "${GHOSTTY_DIR}"
+link_file ${PREFIX}/home/ghostty/config "${GHOSTTY_DIR}/config"
+
 # neovim
 KICKSTART_DIR=~/src/kickstart.nvim
 if [ ! -d "$KICKSTART_DIR" ]; then
