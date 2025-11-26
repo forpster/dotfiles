@@ -102,3 +102,4 @@
 	repo = /Users/rkirk/upwind/workflows-core
 	repo = /Users/rkirk/upwind/cloudscanner-dspm-api
 	repo = /Users/rkirk/upwind/terraform-google-integration-modules
+	repo = /Users/rkirk/upwind/terraform-azurerm-integration-modules
