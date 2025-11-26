@@ -99,7 +99,7 @@
 	repo = /Users/rkirk/upwind/ingested-processes-handler
 	repo = /Users/rkirk/upwind/inventory-ingester
 	repo = /Users/rkirk/upwind/policy-analyzer
-	repo = /Users/rkirk/upwind/workflows-core
 	repo = /Users/rkirk/upwind/cloudscanner-dspm-api
-	repo = /Users/rkirk/upwind/terraform-google-integration-modules
 	repo = /Users/rkirk/upwind/terraform-azurerm-integration-modules
+	repo = /Users/rkirk/upwind/terraform-google-integration-modules
+	repo = /Users/rkirk/upwind/workflows-core

@@ -1,3 +1,4 @@
+# shellcheck shell=bash
 # upwind specific config
 
 # aws 
@@ -10,7 +11,8 @@ alias aws_creds='eval $(aws configure export-credentials --profile ${AWS_PROFILE
 alias aws_creds_reset='unset AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN AWS_CREDENTIAL_EXPIRATION'
 alias intellij='aws_creds && open -a "IntelliJ IDEA CE" ; sleep 1 ; aws_creds_reset'
 alias compass='aws_creds && open -a "MongoDB Compass" ; sleep 1 ; aws_creds_reset'
-alias git_maintenance='for repo in ~/upwind/* ~/src/* ; [ -d "$repo"/.git ] && (cd "$repo"; git maintenance register) ; done'
+# shellcheck disable=SC2154
+alias git_maintenance='for repo in ~/upwind/* ~/src/* ; do [ -d "${repo:?}"/.git ] && (cd "${repo:?}" && git maintenance register) ; done'
 
 # dev
 export UPWIND_KEYS_DIR="${HOME}/upwind/keys"
@@ -85,9 +87,9 @@ function docker-build-export()
 # Arg2: output folder
 function docker-export()
 {
-    cid=$(docker create $1)
-    docker export ${cid} | tar -xC "$2"
-    docker rm ${cid}
+    cid=$(docker create "$1")
+    docker export "${cid}" | tar -xC "$2"
+    docker rm "${cid}"
 }
 
 ### Repo commands
@@ -96,9 +98,11 @@ function genlabstokendev()
 {
 	UPWIND_AUTH_AUDIENCE="https://agent.upwind.dev"
 	UPWIND_AUTH_ENDPOINT="https://oauth.upwind.dev/oauth/token"
-	curl -fsSL -X POST --url $UPWIND_AUTH_ENDPOINT --data grant_type=client_credentials --data "audience=${UPWIND_AUTH_AUDIENCE}" --data "client_id=${UPWIND_CLIENT_ID}" --data "client_secret=${UPWIND_CLIENT_SECRET}" | jq -r '.access_token' > ${UPWIND_KEYS_DIR}/labstokendev
+	curl -fsSL -X POST --url $UPWIND_AUTH_ENDPOINT --data grant_type=client_credentials --data "audience=${UPWIND_AUTH_AUDIENCE}" --data "client_id=${UPWIND_CLIENT_ID}" --data "client_secret=${UPWIND_CLIENT_SECRET}" | jq -r '.access_token' > "${UPWIND_KEYS_DIR}/labstokendev"
 }
 
 export NVM_DIR="$HOME/.nvm"
+# shellcheck disable=SC1091
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+# shellcheck disable=SC1091
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
