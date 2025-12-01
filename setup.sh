@@ -84,8 +84,10 @@ link_file ${PREFIX}/work/.bash_upwind ~/.bash_upwind
 
 # ghostty
 GHOSTTY_DIR="${HOME}/Library/Application Support/com.mitchellh.ghostty"
-create_dir "${GHOSTTY_DIR}"
-link_file ${PREFIX}/home/ghostty/config "${GHOSTTY_DIR}/config"
+if [ -d "${HOME}/Library/Application Support" ]; then
+    create_dir "${GHOSTTY_DIR}"
+    link_file ${PREFIX}/home/ghostty/config "${GHOSTTY_DIR}/config"
+fi
 
 # neovim
 KICKSTART_DIR=~/src/kickstart.nvim
