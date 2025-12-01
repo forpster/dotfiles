@@ -47,12 +47,30 @@ function multiquery()
 {
   URL="http://monitoring-receiver.prod.internal:5000/query/"
   SQL_QUERY="$1"
-  BODY='{"sql":"'"$SQL_QUERY"'","orgIds":[],"clusterNames":["orgs01","orgs02"],"format":"json"}'
+  BODY='{"sql":"'"$SQL_QUERY"'","orgIds":[],"clusterNames":["orgs01","orgs02","orgs03","orgs04","orgsDemo","orgsPoc"],"format":"json"}'
   curl -X POST "$URL" \
     -H 'Content-Type: application/json' \
     -d "$BODY" \
     | jq
 }
+
+# curl --location 'http://monitoring-receiver.prod.internal:5000/query/' \
+# --header 'Content-Type: application/json' \
+# --data '{
+#   "sql": "SELECT reason, COUNT(*) AS failure_count FROM cloudscanner_image_jobs WHERE state = '\''FAILED'\'' AND createdAt >= NOW() - INTERVAL 24 HOUR GROUP BY reason ORDER BY failure_count DESC;",
+#   "orgIds": [
+#   ],
+#   "clusterNames": [
+#     "orgs01",
+#     "orgsDemo",
+#     "orgsPoc",
+#     "orgs02",
+#     "orgs03"
+#   ],
+#   "format": "json"
+# }
+
+# ' | jq .
 
 function org_search () {
     local search_string="$1" 
@@ -65,9 +83,23 @@ function org_search () {
     URL_EU="http://monitoring-receiver.eu-central-1.prod.internal:5000/query/" 
     URL_ME="http://monitoring-receiver.me-central-1.prod.internal:5000/query/" 
     BODY='{"sql":"SELECT orgId, orgName, clusterName FROM org_db_mappings","orgIds":[],"clusterNames":["coreDb"],"format":"json"}' 
-    curl -s -X POST $URL_US -H 'Content-Type: application/json' -d "$BODY" | jq --arg search "$search_string" '.result.coreDb[] | select((.orgId | test($search; "i")) or (.orgName |  test($search; "i"))) | . + {region: "US"}'
-    curl -s -X POST $URL_EU -H 'Content-Type: application/json' -d "$BODY" | jq --arg search "$search_string" '.result.coreDb[] | select((.orgId | test($search; "i")) or (.orgName |  test($search; "i"))) | . + {region: "EU"}'
-    curl -s -X POST $URL_ME -H 'Content-Type: application/json' -d "$BODY" | jq --arg search "$search_string" '.result.coreDb[] | select((.orgId | test($search; "i")) or (.orgName |  test($search; "i"))) | . + {region: "ME"}'
+    curl -s -X POST $URL_US -H 'Content-Type: application/json' -d "$BODY" | jq --arg search "$search_string" '.result.coreDb[] | select(((.orgId // "") | test($search; "i")) or ((.orgName // "") |  test($search; "i"))) | . + {region: "US"}'
+    curl -s -X POST $URL_EU -H 'Content-Type: application/json' -d "$BODY" | jq --arg search "$search_string" '.result.coreDb[] | select(((.orgId // "") | test($search; "i")) or ((.orgName // "") |  test($search; "i"))) | . + {region: "EU"}'
+    curl -s -X POST $URL_ME -H 'Content-Type: application/json' -d "$BODY" | jq --arg search "$search_string" '.result.coreDb[] | select(((.orgId // "") | test($search; "i")) or ((.orgName // "") |  test($search; "i"))) | . + {region: "ME"}'
+}
+
+function org_search_dev () {
+    local search_string="$1" 
+    if [[ -z "$search_string" ]]
+    then
+            echo "Usage: org_search <search_string>"
+            return 1
+    fi
+    URL_US="http://monitoring-receiver.us-east-1.dev.internal:5000/query/" 
+    URL_EU="http://monitoring-receiver.eu-central-1.dev.internal:5000/query/" 
+    BODY='{"sql":"SELECT orgId, orgName, clusterName FROM org_db_mappings","orgIds":[],"clusterNames":["coreDb"],"format":"json"}' 
+    curl -s -X POST $URL_US -H 'Content-Type: application/json' -d "$BODY" | jq --arg search "$search_string" '.result.coreDb[] | select(((.orgId // "") | test($search; "i")) or ((.orgName // "") |  test($search; "i"))) | . + {region: "US"}'
+    curl -s -X POST $URL_EU -H 'Content-Type: application/json' -d "$BODY" | jq --arg search "$search_string" '.result.coreDb[] | select(((.orgId // "") | test($search; "i")) or ((.orgName // "") |  test($search; "i"))) | . + {region: "EU"}'
 }
 
 ### Working with docker images
@@ -106,3 +138,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 # shellcheck disable=SC1091
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+### Azure VM 
+# Check ip address in /etc/hosts, there is a command in devtools azure/terraform/cloudscanner-dev-vmss/get-publicip.sh to retrieve it
+# ./get-publicip.sh cloudscanner-sandbox rkirk-vmss-ucsc-8f8445ef3b35de2d
+
+alias azure_dev_vm_up='az vmss start --resource-group cloudscanner-sandbox --name rkirk-vmss-ucsc-8f8445ef3b35de2d'
+alias azure_dev_vm_down='az vmss stop --resource-group cloudscanner-sandbox --name rkirk-vmss-ucsc-8f8445ef3b35de2d'
