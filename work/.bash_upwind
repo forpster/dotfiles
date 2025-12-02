@@ -145,3 +145,16 @@ export NVM_DIR="$HOME/.nvm"
 
 alias azure_dev_vm_up='az vmss start --resource-group cloudscanner-sandbox --name rkirk-vmss-ucsc-8f8445ef3b35de2d'
 alias azure_dev_vm_down='az vmss stop --resource-group cloudscanner-sandbox --name rkirk-vmss-ucsc-8f8445ef3b35de2d'
+alias azure_dev_vm_list_ip="az vmss list-instance-public-ips --resource-group cloudscanner-sandbox --name rkirk-vmss-ucsc-8f8445ef3b35de2d | jq -r '.[].ipAddress'"
+function azure_dev_vm_fix_ip()
+{
+    local ip
+    ip=$(az vmss list-instance-public-ips --resource-group cloudscanner-sandbox --name rkirk-vmss-ucsc-8f8445ef3b35de2d | jq -r '.[].ipAddress')
+    if grep -q 'az-rkirk-scaleset' /etc/hosts; then
+        #sudo sed -i.bak "/az-rkirk-scaleset/c\\$ip az-rkirk-scaleset" /etc/hosts
+        sudo sed -i.bak "s/.*az-rkirk-scaleset.*/$ip az-rkirk-scaleset/" /etc/hosts
+    else
+        echo -e "$ip az-rkirk-scaleset" | sudo tee -a /etc/hosts
+    fi
+    echo "Updated /etc/hosts with cloudscanner-dev -> $ip"
+}
