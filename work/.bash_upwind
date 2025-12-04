@@ -1,5 +1,12 @@
 # shellcheck shell=bash
+
 # upwind specific config
+
+# shellcheck disable=SC1091
+export UPWIND_DEV_ORG_ID="org_8xFvjw2CxGPfGjwr"
+if [ -f "${HOME}/Documents/upwind_token.sh" ]; then
+  . "${HOME}/Documents/upwind_token.sh"
+fi
 
 # aws 
 export DEV_VM_ID="i-0f62707b5fb2a4baa"
@@ -151,7 +158,6 @@ function azure_dev_vm_fix_ip()
     local ip
     ip=$(az vmss list-instance-public-ips --resource-group cloudscanner-sandbox --name rkirk-vmss-ucsc-8f8445ef3b35de2d | jq -r '.[].ipAddress')
     if grep -q 'az-rkirk-scaleset' /etc/hosts; then
-        #sudo sed -i.bak "/az-rkirk-scaleset/c\\$ip az-rkirk-scaleset" /etc/hosts
         sudo sed -i.bak "s/.*az-rkirk-scaleset.*/$ip az-rkirk-scaleset/" /etc/hosts
     else
         echo -e "$ip az-rkirk-scaleset" | sudo tee -a /etc/hosts
