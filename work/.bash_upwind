@@ -163,4 +163,24 @@ function azure_dev_vm_fix_ip()
         echo -e "$ip az-rkirk-scaleset" | sudo tee -a /etc/hosts
     fi
     echo "Updated /etc/hosts with cloudscanner-dev -> $ip"
+    
+    # Update SSH config (follow symlink to actual file)
+    local ssh_config_file
+    ssh_config_file=$(readlink -f ~/.ssh/config 2>/dev/null || realpath ~/.ssh/config 2>/dev/null || echo ~/.ssh/config)
+    
+    if grep -q 'Host az-rkirk-scaleset' "$ssh_config_file"; then
+        # Check if HostName line exists for this host
+        if sed -n '/Host az-rkirk-scaleset/,/^Host /p' "$ssh_config_file" | grep -q 'HostName'; then
+            # Update existing HostName
+            sed "/Host az-rkirk-scaleset/,/^Host / s/HostName .*/HostName $ip/" "$ssh_config_file" > "${ssh_config_file}.tmp" && mv "${ssh_config_file}.tmp" "$ssh_config_file"
+        else
+            # Add HostName after Host line
+            sed "/Host az-rkirk-scaleset/a\\
+  HostName $ip
+" "$ssh_config_file" > "${ssh_config_file}.tmp" && mv "${ssh_config_file}.tmp" "$ssh_config_file"
+        fi
+        echo "Updated ~/.ssh/config with az-rkirk-scaleset -> $ip"
+    else
+        echo "Warning: Host az-rkirk-scaleset not found in ~/.ssh/config"
+    fi
 }
