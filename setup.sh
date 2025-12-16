@@ -19,7 +19,7 @@ create_dir () {
     local dirname="$1"
     if [ ! -d "$dirname" ]; then
         echo "Creating dir $dirname"
-        mkdir "$dirname"
+        mkdir -p "$dirname"
     fi
 }
 
@@ -95,3 +95,18 @@ if [ ! -d "$KICKSTART_DIR" ]; then
     gh repo clone forpster/kickstart.nvim ~/src/kickstart.nvim
 fi
 link_file ~/src/kickstart.nvim "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+
+# windsurf
+WINDSURF_DIR="$HOME/.codeium/memories"
+create_dir "${WINDSURF_DIR}"
+# symlink trick doesn't seem to work :( so just copy for now but check if there are differences and warn or copy if not present
+if [[ -f "${WINDSURF_DIR}/global_rules.md" ]]; then
+    if ! diff -w "${PREFIX}"/work/global_rules.md "${WINDSURF_DIR}"/global_rules.md &> /dev/null
+    then
+        echo "Warning: ${WINDSURF_DIR}/global_rules.md differs from source. Please review manually."
+        echo "Run the following cmd: diff -w ${PREFIX}/work/global_rules.md ${WINDSURF_DIR}/global_rules.md"
+    fi
+else
+    cp -v ${PREFIX}/work/global_rules.md "${WINDSURF_DIR}"/global_rules.md
+fi
+
