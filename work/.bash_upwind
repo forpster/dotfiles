@@ -12,7 +12,8 @@ fi
 export DEV_VM_ID="i-0f62707b5fb2a4baa"
 export AWS_REGION="us-east-1"
 export AWS_PROFILE=dev-power-user # default profile
-alias awsp='export AWS_PROFILE=$(sed -n "s/\[profile \(.*\)\]/\1/gp" ~/.aws/config | fzf)'
+alias awsp='export AWS_PROFILE=$(sed -n "s/^\[profile \(.*\)\]/\1/gp" ~/.aws/config | fzf)'
+#alias awsp='export AWS_PROFILE=$(sed -n "s/\[profile \(.*\)\]/\1/gp" ~/.aws/config | fzf)'
 alias login='aws sso login'
 alias aws_creds='eval $(aws configure export-credentials --profile ${AWS_PROFILE} --format env)'
 alias aws_creds_reset='unset AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN AWS_CREDENTIAL_EXPIRATION'
