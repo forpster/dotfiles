@@ -53,6 +53,8 @@
 #theme = Monokai Pro
 #theme = iTerm2 Dark Background
 theme = iTerm2 Default
+#theme = iTerm2 Pastel Dark Background
+minimum-contrast = 3.0
 
 # fonts
 font-thicken = true
