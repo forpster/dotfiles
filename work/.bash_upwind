@@ -8,16 +8,28 @@ if [ -f "${HOME}/Documents/upwind_token.sh" ]; then
   . "${HOME}/Documents/upwind_token.sh"
 fi
 
+function change_dev_org() {
+    if [ -z "$1" ]; then
+        echo "Usage: change_dev_org <org_id>"
+        return 1
+    fi
+    export UPWIND_DEV_ORG_ID="$1"
+    if [ -f "${HOME}/Documents/upwind_token.sh" ]; then
+      . "${HOME}/Documents/upwind_token.sh"
+    fi
+    genlabstokendev
+    echo "Changed UPWIND_DEV_ORG_ID to $UPWIND_DEV_ORG_ID"
+}
+
 # aws 
 export DEV_VM_ID="i-0f62707b5fb2a4baa"
 export AWS_REGION="us-east-1"
 export AWS_PROFILE=dev-power-user # default profile
 alias awsp='export AWS_PROFILE=$(sed -n "s/^\[profile \(.*\)\]/\1/gp" ~/.aws/config | fzf)'
-#alias awsp='export AWS_PROFILE=$(sed -n "s/\[profile \(.*\)\]/\1/gp" ~/.aws/config | fzf)'
 alias login='aws sso login'
 alias aws_creds='eval $(aws configure export-credentials --profile ${AWS_PROFILE} --format env)'
 alias aws_creds_reset='unset AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN AWS_CREDENTIAL_EXPIRATION'
-alias intellij='aws_creds && open -a "IntelliJ IDEA CE" ; sleep 1 ; aws_creds_reset'
+alias intellij='aws_creds && open -a "IntelliJ IDEA" ; sleep 1 ; aws_creds_reset'
 alias compass='aws_creds && open -a "MongoDB Compass" ; sleep 1 ; aws_creds_reset'
 # shellcheck disable=SC2154
 alias git_maintenance='for repo in ~/upwind/* ~/src/* ; do [ -d "${repo:?}"/.git ] && (cd "${repo:?}" && git maintenance register) ; done'
@@ -25,6 +37,7 @@ alias git_maintenance='for repo in ~/upwind/* ~/src/* ; do [ -d "${repo:?}"/.git
 # dev
 export UPWIND_KEYS_DIR="${HOME}/upwind/keys"
 alias grpc-tun='ssh -NR 8209:localhost:8209 -NR 8210:localhost:8210 ${DEV_VM_ID}'
+alias server_port_forward='socat TCP-LISTEN:8209,fork,reuseaddr TCP:cloudscanner.dev.internal:8209'
 alias glp="git log --pretty=format:'%C(yellow)%h|%Cred%ad|%C(cyan)%an|%Cgreen%d %Creset%s' --date=local"
 
 ### Dev VM
