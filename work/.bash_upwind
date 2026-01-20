@@ -36,7 +36,8 @@ alias git_maintenance='for repo in ~/upwind/* ~/src/* ; do [ -d "${repo:?}"/.git
 
 # dev
 export UPWIND_KEYS_DIR="${HOME}/upwind/keys"
-alias grpc-tun='ssh -NR 8209:localhost:8209 -NR 8210:localhost:8210 ${DEV_VM_ID}'
+alias grpc-tun='ssh -NR 8209:localhost:8209 -NR 8210:localhost:8210 -NL 2345:localhost:2345 ${DEV_VM_ID}'
+alias grpc-tun-azure='ssh -NR 8209:localhost:8209 -NR 8210:localhost:8210 -NL 2345:localhost:2345 az-rkirk-scaleset'
 alias server_port_forward='socat TCP-LISTEN:8209,fork,reuseaddr TCP:cloudscanner.dev.internal:8209'
 alias glp="git log --pretty=format:'%C(yellow)%h|%Cred%ad|%C(cyan)%an|%Cgreen%d %Creset%s' --date=local"
 
@@ -197,4 +198,156 @@ function azure_dev_vm_fix_ip()
     else
         echo "Warning: Host az-rkirk-scaleset not found in ~/.ssh/config"
     fi
+}
+
+# RDB Management related stuff
+# rdb_migration_dev_print_payload - used to verify the payload looks good before sending and can post into the #release-infra slack channel
+# rdb_migration_dev - used to create a new migration script in dev in `db_management` DB in the `db_schema_migration_scripts` table
+# rdb_migration_dev_apply - used to apply a migration to all orgs in dev
+
+# Usage: rdb_migration_dev <region> <name> <description> <script> <type>
+#   region: us or eu
+#   name: name of the migration
+#   description: description of the migration
+#   script: the SQL script to run
+#   type: ORGANIZATIONAL or SYSTEM
+function rdb_migration_dev() {
+    if [[ $# -ne 5 ]]; then
+        echo "Usage: rdb_migration_dev <region> <name> <description> <script> <type>"
+        echo "  region: us or eu"
+        echo "  name: name of the migration"
+        echo "  description: description of the migration"
+        echo "  script: the SQL script to run"
+        echo "  type: ORGANIZATIONAL or CORE"
+        return 1
+    fi
+
+    local region="$1"
+    local name="$2"
+    local description="$3"
+    local script="$4"
+    local type="$5"
+    local host
+
+    case "$region" in
+        us)
+            host="rdb-management-service.dev.internal"
+            ;;
+        eu)
+            host="rdb-management-service.eu-central-1.dev.internal"
+            ;;
+        *)
+            echo "Invalid region. Please use 'us' or 'eu'."
+            return 1
+            ;;
+    esac
+
+    if [[ -z "$RDB_MANAGEMENT_SERVICE_TOKEN" ]]; then
+        echo "RDB_MANAGEMENT_SERVICE_TOKEN is not set. Please set it from retrieve secrets for the rdb-management-service."
+        return 1
+    fi
+
+    # Create a JSON payload
+    # Using jq to handle proper JSON escaping
+    local json_payload
+    json_payload=$(jq -n --arg name "$name" --arg description "$description" --arg script "$script" --arg type "$type" \
+    '{
+        "name": $name,
+        "description": $description,
+        "script": $script,
+        "type": $type,
+        "createdBy": "ross.kirk@upwind.io"
+    }')
+
+    curl --location "http://${host}:10200/v1/management/schema-migration-scripts" \
+    --header 'Content-Type: application/json' \
+    --header "Authorization: Bearer $RDB_MANAGEMENT_SERVICE_TOKEN" \
+    --data-raw "$json_payload"
+}
+
+# Usage: rdb_migration_dev_print_payload <name> <description> <script> <type>
+#   name: name of the migration
+#   description: description of the migration
+#   script: the SQL script to run
+#   type: ORGANIZATIONAL or SYSTEM
+function rdb_migration_dev_print_payload() {
+    if [[ $# -ne 4 ]]; then
+        echo "Usage: rdb_migration_dev_print_payload <name> <description> <script> <type>"
+        echo "  name: name of the migration"
+        echo "  description: description of the migration"
+        echo "  script: the SQL script to run"
+        echo "  type: ORGANIZATIONAL or CORE"
+        return 1
+    fi
+
+    local name="$1"
+    local description="$2"
+    local script="$3"
+    local type="$4"
+    local host
+
+    # Create a JSON payload
+    # Using jq to handle proper JSON escaping
+    local json_payload
+    json_payload=$(jq -n --arg name "$name" --arg description "$description" --arg script "$script" --arg type "$type" \
+    '{
+        "name": $name,
+        "description": $description,
+        "script": $script,
+        "type": $type,
+        "createdBy": "ross.kirk@upwind.io"
+    }')
+
+    echo "$json_payload"
+}
+
+# Usage: rdb_migration_dev_apply <region> <type>
+#   region: us or eu
+#   name: name of the migration
+#   description: description of the migration
+#   script: the SQL script to run
+#   type: ORGANIZATIONAL or SYSTEM
+function rdb_migration_dev_apply() {
+    if [[ $# -ne 2 ]]; then
+        echo "Usage: rdb_migration_dev_apply <region> <type>"
+        echo "  region: us or eu"
+        echo "  type: ORGANIZATIONAL or CORE"
+        return 1
+    fi
+
+    local region="$1"
+    local type="$2"
+    local host
+
+    case "$region" in
+        us)
+            host="rdb-management-service.dev.internal"
+            ;;
+        eu)
+            host="rdb-management-service.eu-central-1.dev.internal"
+            ;;
+        *)
+            echo "Invalid region. Please use 'us' or 'eu'."
+            return 1
+            ;;
+    esac
+
+    if [[ -z "$RDB_MANAGEMENT_SERVICE_TOKEN" ]]; then
+        echo "RDB_MANAGEMENT_SERVICE_TOKEN is not set. Please set it from retrieve secrets for the rdb-management-service."
+        return 1
+    fi
+
+    # Create a JSON payload
+    # Using jq to handle proper JSON escaping
+    local json_payload
+    json_payload=$(jq -n --arg name "$name" --arg description "$description" --arg script "$script" --arg type "$type" \
+    '{
+        "orgId": "*",
+        "type": $type
+    }')
+
+    curl --location "http://${host}:10200/v1/management/schema-migration" \
+    --header 'Content-Type: application/json' \
+    --header "Authorization: Bearer $RDB_MANAGEMENT_SERVICE_TOKEN" \
+    --data "$json_payload"
 }
