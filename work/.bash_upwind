@@ -340,11 +340,19 @@ function rdb_migration_dev_apply() {
     # Create a JSON payload
     # Using jq to handle proper JSON escaping
     local json_payload
-    json_payload=$(jq -n --arg name "$name" --arg description "$description" --arg script "$script" --arg type "$type" \
-    '{
-        "orgId": "*",
-        "type": $type
-    }')
+    if [[ "$type" == "ORGANIZATIONAL" ]]; then
+        json_payload=$(jq -n --arg type "$type" '{
+            "orgId": "*",
+            "type": $type
+        }')
+    elif [[ "$type" == "CORE" ]]; then
+        json_payload=$(jq -n --arg type "$type" '{
+            "type": $type
+        }')
+    else
+        echo "Invalid type. Please use 'ORGANIZATIONAL' or 'CORE'."
+        return 1
+    fi
 
     curl --location "http://${host}:10200/v1/management/schema-migration" \
     --header 'Content-Type: application/json' \
