@@ -15,6 +15,7 @@
 
 - For Golang, when mocking prefer to use mockgen where possible
 - For Golang, when adding or modifying code, always ensure that it passes linting
+- For Golang, when coding with booleans do not use `if <variable> == false` use `if !<variable>`
 
 # Testing Specific Rules
 

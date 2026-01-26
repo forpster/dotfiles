@@ -36,6 +36,7 @@ link_file ${PREFIX}/bin/openinemacs.sh ${MY_BIN}/openinemacs.sh
 link_file ${PREFIX}/bin/ssh-agent-autostart.sh ${MY_BIN}/ssh-agent-autostart.sh
 link_file ${PREFIX}/bin/update_all.sh ${MY_BIN}/update_all.sh
 link_file ${PREFIX}/bin/wcgrep ${MY_BIN}/wcgrep
+link_file ${PREFIX}/bin/upwind-aurora-dev-readonly.sh ${MY_BIN}/upwind-aurora-dev-readonly.sh
 
 # ssh files
 create_dir ~/.ssh
