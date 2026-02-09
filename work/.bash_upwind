@@ -40,6 +40,7 @@ alias grpc-tun='ssh -NR 8209:localhost:8209 -NR 8210:localhost:8210 -NL 2345:loc
 alias grpc-tun-azure='ssh -NR 8209:localhost:8209 -NR 8210:localhost:8210 -NL 2345:localhost:2345 az-rkirk-scaleset'
 alias server_port_forward='socat TCP-LISTEN:8209,fork,reuseaddr TCP:cloudscanner.dev.internal:8209'
 alias glp="git log --pretty=format:'%C(yellow)%h|%Cred%ad|%C(cyan)%an|%Cgreen%d %Creset%s' --date=local"
+alias cac_redis_flush="REDISCLI_AUTH=newpassword redis-cli FLUSHALL"
 
 ### Dev VM
 function dev-vm-up()
@@ -204,6 +205,7 @@ function azure_dev_vm_fix_ip()
 # rdb_migration_dev_print_payload - used to verify the payload looks good before sending and can post into the #release-infra slack channel
 # rdb_migration_dev - used to create a new migration script in dev in `db_management` DB in the `db_schema_migration_scripts` table
 # rdb_migration_dev_apply - used to apply a migration to all orgs in dev
+# See https://upwindsecurity.atlassian.net/wiki/spaces/EN/pages/907247624/KB+-+Schema+migration+guidelines for details
 
 # Usage: rdb_migration_dev <region> <name> <description> <script> <type>
 #   region: us or eu

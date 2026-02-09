@@ -103,3 +103,5 @@
 	repo = /Users/rkirk/upwind/terraform-azurerm-integration-modules
 	repo = /Users/rkirk/upwind/terraform-google-integration-modules
 	repo = /Users/rkirk/upwind/workflows-core
+[tag]
+	sort = -v:refname
