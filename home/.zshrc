@@ -162,6 +162,7 @@ fi
 if [ -f ${HOME}/Documents/github_token.txt ]; then
   export GITHUB_PACKAGES_PULL_USER="rkirk-nos"
   export GITHUB_PACKAGES_PULL_TOKEN=$(cat ${HOME}/Documents/github_token.txt)
+  export GITHUB_PERSONAL_ACCESS_TOKEN=$(cat ${HOME}/Documents/github_token.txt)
 fi
 
 # Size of folders
