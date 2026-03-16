@@ -1,0 +1,52 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(xargs:*)",
+      "Bash(comm:*)",
+      "Bash(go vet:*)",
+      "Bash(make lint:*)",
+      "Bash(make fmt:*)",
+      "Bash(make test:*)",
+      "Bash(make integration-test-local:*)",
+      "Bash(make build:*)",
+      "Bash(make all:*)",
+      "Bash(make generate:*)",
+      "Bash(go env:*)",
+      "Bash(go get:*)",
+      "Bash(go mod tidy:*)",
+      "Bash(go build:*)",
+      "Bash(go test:*)",
+      "Bash(go doc:*)",
+      "Bash(go list:*)",
+      "Bash(grep:*)",
+      "Bash(wc:*)",
+      "Bash(gh:*)",
+      "Read(~/upwind/**)",
+      "Edit(~/upwind/**)"
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/scripts/statusline.sh"
+  },
+  "enabledPlugins": {
+    "gopls-lsp@claude-plugins-official": true,
+    "upwind-claude@upwind": true,
+    "superpowers@claude-plugins-official": true,
+    "github@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true,
+    "pyright-lsp@claude-plugins-official": true,
+    "jdtls-lsp@claude-plugins-official": true,
+    "claude-md-management@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "upwind": {
+      "source": {
+        "source": "github",
+        "repo": "upwindsecurity/claude-code-plugin"
+      }
+    }
+  },
+  "defaultMode": "acceptEdits"
+}

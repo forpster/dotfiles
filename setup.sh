@@ -111,3 +111,8 @@ else
     cp -v ${PREFIX}/work/global_rules.md "${WINDSURF_DIR}"/global_rules.md
 fi
 
+# claude code
+create_dir ~/.claude
+link_file ${PREFIX}/home/.claude/settings.json ~/.claude/settings.json
+link_file ${PREFIX}/home/.claude/scripts ~/.claude/scripts
+
