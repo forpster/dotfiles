@@ -119,6 +119,7 @@ fdellwing/zsh-bat
 zoxide
 reegnz/jq-zsh-plugin
 rkirk-nos/json-zsh-plugin@main
+unixorn/autoupdate-antigen.zshplugin
 EOBUNDLES
 
 # User configuration
