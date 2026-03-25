@@ -26,6 +26,19 @@
       "Edit(~/upwind/**)"
     ]
   },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/scripts/prevent-git-commit.sh"
+          }
+        ]
+      }
+    ]
+  },
   "statusLine": {
     "type": "command",
     "command": "~/.claude/scripts/statusline.sh"
@@ -48,18 +61,5 @@
       }
     }
   },
-  "defaultMode": "acceptEdits",
-  "hooks": {
-    "PreToolUse": [
-      {
-        "matcher": "Bash",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "~/.claude/scripts/prevent-git-commit.sh"
-          }
-        ]
-      }
-    ]
-  }
+  "defaultMode": "acceptEdits"
 }

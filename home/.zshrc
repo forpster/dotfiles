@@ -254,6 +254,9 @@ if [[ -n "${TMUX_PLUGIN_MANAGER_PATH}" ]]; then
   add-zsh-hook chpwd tmux-window-name
 fi
 
+# MacOS flush DNS cache
+alias flush_dns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
+
 # reegnz/jq-zsh-plugin
 # alt +j to start the jq prompt
 
