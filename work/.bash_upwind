@@ -66,15 +66,37 @@ function dev-vm-down()
 }
 
 ### DB Queries
-function multiquery() 
+function multiquery()
 {
-  URL="http://monitoring-receiver.prod.internal:5000/query/"
-  SQL_QUERY="$1"
-  BODY='{"sql":"'"$SQL_QUERY"'","orgIds":[],"clusterNames":["orgs01","orgs02","orgs03","orgs04","orgsDemo","orgsPoc"],"format":"json"}'
-  curl -X POST "$URL" \
-    -H 'Content-Type: application/json' \
-    -d "$BODY" \
-    | jq
+    URL="http://monitoring-receiver.us-east-1.prod.internal:5000/query/"
+    SQL_QUERY="$1"
+    BODY=$(jq -n --arg sql "$SQL_QUERY" '{sql: $sql, orgIds: [], clusterNames: ["orgs01","orgs02","orgs03","orgs04","orgsDemo","orgsPoc"], format: "json"}')
+    curl -X POST "$URL" \
+        -H 'Content-Type: application/json' \
+        -d "$BODY" \
+        | jq
+}
+
+function multiquery_eu()
+{
+    URL="http://monitoring-receiver.eu-central-1.prod.internal:5000/query/"
+    SQL_QUERY="$1"
+    BODY=$(jq -n --arg sql "$SQL_QUERY" '{sql: $sql, orgIds: [], clusterNames: ["orgs01","orgs02","orgs03","orgs04","orgsDemo","orgsPoc"], format: "json"}')
+    curl -X POST "$URL" \
+        -H 'Content-Type: application/json' \
+        -d "$BODY" \
+        | jq
+}
+
+function multiquery_me()
+{
+    URL="http://monitoring-receiver.me-central-1.prod.internal:5000/query/"
+    SQL_QUERY="$1"
+    BODY=$(jq -n --arg sql "$SQL_QUERY" '{sql: $sql, orgIds: [], clusterNames: ["orgs01","orgs02","orgs03","orgs04","orgsDemo","orgsPoc"], format: "json"}')
+    curl -X POST "$URL" \
+        -H 'Content-Type: application/json' \
+        -d "$BODY" \
+        | jq
 }
 
 # curl --location 'http://monitoring-receiver.prod.internal:5000/query/' \
