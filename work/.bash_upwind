@@ -27,6 +27,7 @@ export AWS_REGION="us-east-1"
 export AWS_PROFILE=dev-power-user # default profile
 alias awsp='export AWS_PROFILE=$(sed -n "s/^\[profile \(.*\)\]/\1/gp" ~/.aws/config | fzf)'
 alias login='aws sso login --sso-session upwind-sso'
+alias login-no-browser='aws sso login --sso-session upwind-sso --no-browser --use-device-code'
 alias login-dev-saas='aws sso login --sso-session upwind-dev-saas-sso'
 alias login-all='aws sso login --sso-session upwind-sso && aws sso login --sso-session upwind-dev-saas-sso'
 alias aws_creds='eval $(aws configure export-credentials --profile ${AWS_PROFILE} --format env)'
