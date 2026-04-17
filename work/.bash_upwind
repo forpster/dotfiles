@@ -26,7 +26,9 @@ export DEV_VM_ID="i-0f62707b5fb2a4baa"
 export AWS_REGION="us-east-1"
 export AWS_PROFILE=dev-power-user # default profile
 alias awsp='export AWS_PROFILE=$(sed -n "s/^\[profile \(.*\)\]/\1/gp" ~/.aws/config | fzf)'
-alias login='aws sso login'
+alias login='aws sso login --sso-session upwind-sso'
+alias login-dev-saas='aws sso login --sso-session upwind-dev-saas-sso'
+alias login-all='aws sso login --sso-session upwind-sso && aws sso login --sso-session upwind-dev-saas-sso'
 alias aws_creds='eval $(aws configure export-credentials --profile ${AWS_PROFILE} --format env)'
 alias aws_creds_reset='unset AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN AWS_CREDENTIAL_EXPIRATION'
 alias intellij='aws_creds && open -a "IntelliJ IDEA" ; sleep 1 ; aws_creds_reset'
@@ -41,6 +43,10 @@ alias grpc-tun-azure='ssh -NR 8209:localhost:8209 -NR 8210:localhost:8210 -NL 23
 alias server_port_forward='socat TCP-LISTEN:8209,fork,reuseaddr TCP:cloudscanner.dev.internal:8209'
 alias glp="git log --pretty=format:'%C(yellow)%h|%Cred%ad|%C(cyan)%an|%Cgreen%d %Creset%s' --date=local"
 alias cac_redis_flush="REDISCLI_AUTH=newpassword redis-cli FLUSHALL"
+
+# Golang helpers
+## glfix - runs golangci-lint with --fix on only the go files that have changed in the current branch compared to main
+alias glfix='golangci-lint run --fix $(git diff --name-only $(git merge-base main HEAD)..HEAD -- "*.go" | xargs -I{} dirname {} | sort -u | sed "s|^|./|")'
 
 ### Dev VM
 function dev-vm-up()
@@ -383,3 +389,8 @@ function rdb_migration_dev_apply() {
     --header "Authorization: Bearer $RDB_MANAGEMENT_SERVICE_TOKEN" \
     --data "$json_payload"
 }
+
+# Extract all inner content from reports
+alias extract-cloudscanner-reports='for f in *cloudscanner_report_*.json; do jq -r ".fileContent" "$f" | base64 -d | gunzip | jq "." > "${f%.json}_content.json"; done'
+# And this one goes straight to the anchore sbom format
+alias extract-cloudscanner-reports-to-sbom='for f in *cloudscanner_report_*.json; do jq -r ".fileContent" "$f" | base64 -d | gunzip | jq ".scans[0].scan_result.sbom" > "${f%.json}_sbom.json"; done'
